@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yx_dajiesuan_di1",
+    "texture": "40b0d5f1-874d-46c2-bd89-76da49015cce",
+    "atlas": "2dd864ad-1b21-4e23-9ad7-e72a2cac2053",
+    "rect": [
+      2,
+      86,
+      446,
+      85
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      446,
+      85
+    ],
+    "capInsets": [
+      418,
+      0,
+      42,
+      0
+    ]
+  }
+}

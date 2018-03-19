@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Jiaru",
+    "texture": "a83e6b68-4419-4a5b-aed2-fd729c01ade5",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      1009,
+      245
+    ],
+    "offset": [
+      -5.5,
+      3.5
+    ],
+    "originalSize": [
+      1024,
+      256
+    ]
+  }
+}

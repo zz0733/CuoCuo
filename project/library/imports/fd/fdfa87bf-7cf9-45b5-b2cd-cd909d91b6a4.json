@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "paiMianWh",
+    "texture": "73f4c4a2-b2f8-4118-8bdb-debf87814a22",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      1611,
+      502
+    ],
+    "offset": [
+      -2,
+      1
+    ],
+    "originalSize": [
+      1621,
+      510
+    ]
+  }
+}

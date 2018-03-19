@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_boli",
+    "texture": "0984a2d4-db25-49d7-bff0-ab6853b36796",
+    "atlas": "fd8b3e5d-87b1-422d-89fe-e28c2822e2a9",
+    "rect": [
+      167,
+      742,
+      133,
+      252
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      252
+    ],
+    "rotated": 1,
+    "capInsets": [
+      48,
+      54,
+      47,
+      173
+    ]
+  }
+}

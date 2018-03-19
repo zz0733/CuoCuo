@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_gou",
+    "texture": "93e3462d-9ce3-4fb2-9e2c-0d7d18fcee7d",
+    "atlas": "9b75b911-4133-460c-9d54-a748e175cb28",
+    "rect": [
+      122,
+      1231,
+      24,
+      27
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      26,
+      29
+    ]
+  }
+}

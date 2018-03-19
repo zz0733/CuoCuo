@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Caishen",
+    "texture": "8ffe6ad7-f2e8-443a-a211-220eee2e5de9",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      706,
+      114
+    ],
+    "offset": [
+      -157,
+      5
+    ],
+    "originalSize": [
+      1024,
+      128
+    ]
+  }
+}

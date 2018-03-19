@@ -1,0 +1,272 @@
+
+Niuniu_Dazi.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 578, 143
+  size: 34, 6
+  orig: 34, 6
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 463, 78
+  size: 38, 27
+  orig: 38, 27
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 510, 115
+  size: 38, 26
+  orig: 38, 26
+  offset: 0, 0
+  index: -1
+4
+  rotate: true
+  xy: 820, 163
+  size: 34, 28
+  orig: 34, 28
+  offset: 0, 0
+  index: -1
+4Huaniu
+  rotate: false
+  xy: 640, 199
+  size: 105, 55
+  orig: 105, 55
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 463, 48
+  size: 35, 28
+  orig: 35, 28
+  offset: 0, 0
+  index: -1
+5Huaniu
+  rotate: false
+  xy: 747, 199
+  size: 104, 55
+  orig: 105, 55
+  offset: 1, 0
+  index: -1
+5Xiaoniu
+  rotate: false
+  xy: 425, 197
+  size: 107, 57
+  orig: 107, 57
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 550, 112
+  size: 32, 29
+  orig: 32, 29
+  offset: 0, 0
+  index: -1
+7
+  rotate: false
+  xy: 424, 18
+  size: 31, 27
+  orig: 31, 27
+  offset: 0, 0
+  index: -1
+8
+  rotate: false
+  xy: 584, 114
+  size: 25, 27
+  orig: 25, 27
+  offset: 0, 0
+  index: -1
+Dijiguang
+  rotate: false
+  xy: 228, 183
+  size: 195, 71
+  orig: 195, 71
+  offset: 0, 0
+  index: -1
+Diniu
+  rotate: false
+  xy: 386, 26
+  size: 36, 46
+  orig: 36, 46
+  offset: 0, 0
+  index: -1
+Gaoniu
+  rotate: false
+  xy: 424, 95
+  size: 37, 46
+  orig: 37, 46
+  offset: 0, 0
+  index: -1
+HuaniuY
+  rotate: false
+  xy: 228, 129
+  size: 98, 52
+  orig: 98, 52
+  offset: 0, 0
+  index: -1
+Kandou
+  rotate: false
+  xy: 853, 205
+  size: 104, 49
+  orig: 104, 49
+  offset: 0, 0
+  index: -1
+KandouY
+  rotate: false
+  xy: 155, 26
+  size: 81, 53
+  orig: 81, 53
+  offset: 0, 0
+  index: -1
+Niu1Y
+  rotate: false
+  xy: 328, 128
+  size: 82, 53
+  orig: 82, 53
+  offset: 0, 0
+  index: -1
+Niu2Y
+  rotate: true
+  xy: 2, 2
+  size: 77, 52
+  orig: 77, 52
+  offset: 0, 0
+  index: -1
+Niu3Y
+  rotate: true
+  xy: 238, 2
+  size: 79, 53
+  orig: 79, 53
+  offset: 0, 0
+  index: -1
+Niu9
+  rotate: false
+  xy: 959, 208
+  size: 63, 46
+  orig: 63, 46
+  offset: 0, 0
+  index: -1
+NiuFangY
+  rotate: false
+  xy: 425, 143
+  size: 75, 52
+  orig: 75, 52
+  offset: 0, 0
+  index: -1
+Niuniu
+  rotate: false
+  xy: 56, 15
+  size: 97, 64
+  orig: 98, 66
+  offset: 1, 1
+  index: -1
+NiuniuY
+  rotate: false
+  xy: 502, 143
+  size: 74, 52
+  orig: 74, 52
+  offset: 0, 0
+  index: -1
+Niuniuguang
+  rotate: false
+  xy: 2, 81
+  size: 220, 83
+  orig: 220, 83
+  offset: 0, 0
+  index: -1
+Wubeiguang
+  rotate: false
+  xy: 2, 166
+  size: 224, 88
+  orig: 225, 89
+  offset: 1, 0
+  index: -1
+Wuniu
+  rotate: true
+  xy: 293, 2
+  size: 70, 45
+  orig: 70, 45
+  offset: 0, 0
+  index: -1
+WuniuY
+  rotate: false
+  xy: 308, 74
+  size: 78, 52
+  orig: 78, 52
+  offset: 0, 0
+  index: -1
+X1
+  rotate: false
+  xy: 463, 107
+  size: 45, 34
+  orig: 45, 34
+  offset: 0, 0
+  index: -1
+X10
+  rotate: false
+  xy: 224, 83
+  size: 82, 44
+  orig: 82, 44
+  offset: 0, 0
+  index: -1
+X2
+  rotate: false
+  xy: 766, 163
+  size: 52, 34
+  orig: 52, 34
+  offset: 0, 0
+  index: -1
+X3
+  rotate: true
+  xy: 388, 74
+  size: 52, 34
+  orig: 52, 34
+  offset: 0, 0
+  index: -1
+X4
+  rotate: false
+  xy: 711, 163
+  size: 53, 34
+  orig: 53, 34
+  offset: 0, 0
+  index: -1
+X5
+  rotate: true
+  xy: 340, 7
+  size: 65, 44
+  orig: 65, 44
+  offset: 0, 0
+  index: -1
+X6
+  rotate: false
+  xy: 578, 151
+  size: 65, 44
+  orig: 65, 44
+  offset: 0, 0
+  index: -1
+X8
+  rotate: false
+  xy: 645, 153
+  size: 64, 44
+  orig: 64, 44
+  offset: 0, 0
+  index: -1
+Zhadan
+  rotate: false
+  xy: 534, 197
+  size: 104, 57
+  orig: 105, 57
+  offset: 0, 0
+  index: -1
+Zhongniu
+  rotate: false
+  xy: 424, 47
+  size: 37, 46
+  orig: 37, 46
+  offset: 0, 0
+  index: -1

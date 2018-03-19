@@ -1,0 +1,203 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Jiesuan",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "rGWnUYTjXa2lAGLKCy2I6G1GOmk",
+      "spine": "3.5.51",
+      "width": 1336,
+      "height": 929.62,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Quan",
+        "parent": "root",
+        "x": 16.82,
+        "y": 52.16,
+        "scaleX": 0.935,
+        "scaleY": 0.601
+      },
+      {
+        "name": "Guang",
+        "parent": "Quan",
+        "x": -3.97,
+        "y": 2.02,
+        "scaleX": 2.049,
+        "scaleY": 2.049
+      },
+      {
+        "name": "Guang2",
+        "parent": "Quan",
+        "rotation": -11.35,
+        "x": -3.97,
+        "y": 2.02,
+        "scaleX": 2.049,
+        "scaleY": 2.049
+      },
+      {
+        "name": "Kuang",
+        "parent": "root",
+        "x": -2.86,
+        "y": -207.09
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "Kuang"
+      },
+      {
+        "name": "Guang",
+        "bone": "Guang",
+        "attachment": "Guang",
+        "blend": "additive"
+      },
+      {
+        "name": "Guang2",
+        "bone": "Guang2",
+        "color": "ffffffd4",
+        "attachment": "Guang",
+        "blend": "additive"
+      },
+      {
+        "name": "Kuang",
+        "bone": "Kuang"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Guang": {
+          "Guang": {
+            "x": -2.09,
+            "y": 4.81,
+            "width": 524,
+            "height": 507
+          }
+        },
+        "Guang2": {
+          "Guang": {
+            "x": -2.09,
+            "y": 4.81,
+            "width": 524,
+            "height": 507
+          }
+        }
+      }
+    },
+    "animations": {
+      "animation": {
+        "slots": {
+          "Guang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff"
+              },
+              {
+                "time": 3.3333,
+                "color": "ffffff9f"
+              },
+              {
+                "time": 6.6667,
+                "color": "ffffffff"
+              }
+            ]
+          },
+          "Guang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffa14d79"
+              },
+              {
+                "time": 3.3333,
+                "color": "ffac5dd9"
+              },
+              {
+                "time": 6.6667,
+                "color": "ffa14d79"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": -1.8
+              },
+              {
+                "time": 1.6667,
+                "angle": 90
+              },
+              {
+                "time": 3.3333,
+                "angle": 180
+              },
+              {
+                "time": 5,
+                "angle": 270
+              },
+              {
+                "time": 6.6667,
+                "angle": 360
+              }
+            ]
+          },
+          "Guang2": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 281.35
+              },
+              {
+                "time": 1.6667,
+                "angle": 191.35
+              },
+              {
+                "time": 3.3333,
+                "angle": 101.35
+              },
+              {
+                "time": 5,
+                "angle": 11.35
+              },
+              {
+                "time": 6.6667,
+                "angle": 281.35
+              }
+            ]
+          },
+          "Quan": {
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 83.41
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nJiesuan.png\nsize: 1024,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nGuang\n  rotate: false\n  xy: 2, 2\n  size: 524, 507\n  orig: 524, 507\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "c8255f5a-f1c4-46f1-864b-bd511cf21b0b"
+  },
+  "textures": [
+    {
+      "__uuid__": "18aae1f0-6af3-42a3-ac34-863b28a602af"
+    }
+  ],
+  "scale": 1
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gps_touxiangdikuang",
+    "texture": "0984a2d4-db25-49d7-bff0-ab6853b36796",
+    "atlas": "fd8b3e5d-87b1-422d-89fe-e28c2822e2a9",
+    "rect": [
+      252,
+      1730,
+      78,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      80,
+      80
+    ]
+  }
+}

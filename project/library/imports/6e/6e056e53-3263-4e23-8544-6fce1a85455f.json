@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_jilu1",
+    "texture": "40b0d5f1-874d-46c2-bd89-76da49015cce",
+    "atlas": "2dd864ad-1b21-4e23-9ad7-e72a2cac2053",
+    "rect": [
+      680,
+      981,
+      40,
+      43
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      42,
+      43
+    ],
+    "rotated": 1,
+    "capInsets": [
+      16,
+      16,
+      16,
+      20
+    ]
+  }
+}

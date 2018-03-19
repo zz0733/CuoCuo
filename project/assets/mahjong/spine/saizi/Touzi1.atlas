@@ -1,0 +1,174 @@
+
+Touzi1.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+1
+  rotate: false
+  xy: 2, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+11
+  rotate: false
+  xy: 73, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+12
+  rotate: false
+  xy: 144, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+13
+  rotate: false
+  xy: 215, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+14
+  rotate: false
+  xy: 144, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+15
+  rotate: false
+  xy: 215, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+16
+  rotate: false
+  xy: 286, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+2
+  rotate: false
+  xy: 2, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+21
+  rotate: false
+  xy: 215, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+22
+  rotate: false
+  xy: 286, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+23
+  rotate: false
+  xy: 357, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+24
+  rotate: false
+  xy: 286, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+25
+  rotate: false
+  xy: 357, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+26
+  rotate: false
+  xy: 428, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+3
+  rotate: false
+  xy: 73, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+31
+  rotate: false
+  xy: 357, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+32
+  rotate: false
+  xy: 428, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+33
+  rotate: false
+  xy: 499, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+34
+  rotate: false
+  xy: 428, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+35
+  rotate: false
+  xy: 499, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+36
+  rotate: false
+  xy: 570, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+4
+  rotate: false
+  xy: 2, 2
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+5
+  rotate: false
+  xy: 73, 72
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1
+6
+  rotate: false
+  xy: 144, 142
+  size: 69, 68
+  orig: 69, 68
+  offset: 0, 0
+  index: -1

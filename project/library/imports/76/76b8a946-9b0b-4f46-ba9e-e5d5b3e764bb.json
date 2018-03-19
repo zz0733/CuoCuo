@@ -1,0 +1,38 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "zuoIn",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.36666666666666664,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -815,
+            21
+          ]
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            -569,
+            21
+          ]
+        },
+        {
+          "frame": 0.36666666666666664,
+          "value": [
+            -577,
+            21
+          ]
+        }
+      ]
+    }
+  },
+  "events": []
+}

@@ -1,0 +1,12 @@
+PODS:
+  - BMKLocationKit (1.0.1)
+
+DEPENDENCIES:
+  - BMKLocationKit
+
+SPEC CHECKSUMS:
+  BMKLocationKit: b4adffae918758c02bddec7ace8ba5487544bd69
+
+PODFILE CHECKSUM: 50e0014aa5ed3e34b0e5717f0c90d86687d373c7
+
+COCOAPODS: 1.4.0.rc.1

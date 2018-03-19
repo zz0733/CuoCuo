@@ -1,0 +1,28 @@
+{
+  "appKey": "",
+  "appSecret": "",
+  "encryptJs": true,
+  "excludeScenes": [],
+  "includeAnySDK": false,
+  "includeSDKBox": false,
+  "inlineSpriteFrames": true,
+  "inlineSpriteFrames_native": false,
+  "jailbreakPlatform": false,
+  "md5Cache": false,
+  "mergeStartScene": false,
+  "oauthLoginServer": "",
+  "optimizeHotUpdate": false,
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "com.youle.cuocuo",
+  "privateKey": "",
+  "renderMode": "0",
+  "startScene": "6714a913-0406-4bb5-a898-4c7e68ab15a1",
+  "title": "cuocuo",
+  "webOrientation": "auto",
+  "xxteaKey": "e6d5445d-1a5b-4c"
+}

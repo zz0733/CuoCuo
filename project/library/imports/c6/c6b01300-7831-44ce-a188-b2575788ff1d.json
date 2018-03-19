@@ -1,0 +1,285 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Liuju",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "5n/6GwUBhkHQREllsdS6OeMCaB4",
+      "spine": "3.5.46",
+      "width": 1404.56,
+      "height": 384.99,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Motiao",
+        "parent": "root",
+        "x": 777.18,
+        "y": 588.77
+      },
+      {
+        "name": "Zi",
+        "parent": "root",
+        "x": 77.12,
+        "y": 410.28
+      },
+      {
+        "name": "Zi2",
+        "parent": "Zi"
+      }
+    ],
+    "slots": [
+      {
+        "name": "Motiao",
+        "bone": "Motiao",
+        "attachment": "Shuimo4"
+      },
+      {
+        "name": "Zi",
+        "bone": "Zi",
+        "attachment": "Huang"
+      },
+      {
+        "name": "GZi",
+        "bone": "Zi2",
+        "attachment": "Huang",
+        "blend": "additive"
+      }
+    ],
+    "skins": {
+      "default": {
+        "GZi": {
+          "Huang": {
+            "width": 617,
+            "height": 179
+          }
+        },
+        "Motiao": {
+          "Shuimo1": {
+            "width": 792,
+            "height": 234
+          },
+          "Shuimo2": {
+            "width": 792,
+            "height": 234
+          },
+          "Shuimo3": {
+            "width": 792,
+            "height": 234
+          },
+          "Shuimo4": {
+            "width": 792,
+            "height": 234
+          }
+        },
+        "Zi": {
+          "Huang": {
+            "width": 617,
+            "height": 179
+          }
+        }
+      }
+    },
+    "events": {
+      "Jiesuan": {},
+      "Sound": {}
+    },
+    "animations": {
+      "Liuju": {
+        "slots": {
+          "GZi": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.3,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff3c",
+                "curve": [
+                  0,
+                  0.11,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.9333,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Huang"
+              }
+            ]
+          },
+          "Motiao": {
+            "color": [
+              {
+                "time": 1.3333,
+                "color": "ffffffff"
+              },
+              {
+                "time": 1.8333,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Shuimo1"
+              },
+              {
+                "time": 0.0333,
+                "name": "Shuimo2"
+              },
+              {
+                "time": 0.0667,
+                "name": "Shuimo3"
+              },
+              {
+                "time": 0.1,
+                "name": "Shuimo4"
+              },
+              {
+                "time": 0.1333,
+                "name": "Shuimo4"
+              }
+            ]
+          },
+          "Zi": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.2333,
+                "color": "ffffff00",
+                "curve": [
+                  0.001,
+                  0.08,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.3667,
+                "color": "ffffffff",
+                "curve": "stepped"
+              },
+              {
+                "time": 1.3333,
+                "color": "ffffffff"
+              },
+              {
+                "time": 1.8333,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Huang"
+              },
+              {
+                "time": 0.5333,
+                "name": "Huang"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Zi": {
+            "translate": [
+              {
+                "time": 0,
+                "x": -77.91,
+                "y": -306.74,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.2333,
+                "x": -77.91,
+                "y": -306.74
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.85,
+                "y": 0.85,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.2333,
+                "x": 0.85,
+                "y": 0.85,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.5,
+                "x": 0.85,
+                "y": 0.85
+              }
+            ]
+          },
+          "Zi2": {
+            "scale": [
+              {
+                "time": 0.5,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "time": 0.9333,
+                "x": 1.294,
+                "y": 1.294
+              }
+            ]
+          },
+          "Motiao": {
+            "translate": [
+              {
+                "time": 0,
+                "x": -727.04,
+                "y": -475.35
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.8,
+                "y": 0.879
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nimages.png\nsize: 1024,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nCChi\n  rotate: false\n  xy: 2, 121\n  size: 305, 85\n  orig: 309, 85\n  offset: 2, 0\n  index: -1\nChi\n  rotate: false\n  xy: 711, 365\n  size: 268, 79\n  orig: 309, 85\n  offset: 20, 3\n  index: -1\nGGang\n  rotate: false\n  xy: 400, 359\n  size: 309, 85\n  orig: 309, 85\n  offset: 0, 0\n  index: -1\nGang\n  rotate: false\n  xy: 400, 282\n  size: 271, 75\n  orig: 309, 85\n  offset: 19, 5\n  index: -1\nHuang\n  rotate: false\n  xy: 518, 210\n  size: 133, 70\n  orig: 309, 90\n  offset: 88, 11\n  index: -1\nShuimo1\n  rotate: false\n  xy: 347, 173\n  size: 169, 107\n  orig: 396, 117\n  offset: 0, 0\n  index: -1\nShuimo2\n  rotate: false\n  xy: 2, 2\n  size: 265, 117\n  orig: 396, 117\n  offset: 0, 0\n  index: -1\nShuimo3\n  rotate: false\n  xy: 2, 208\n  size: 343, 117\n  orig: 396, 117\n  offset: 0, 0\n  index: -1\nShuimo4\n  rotate: false\n  xy: 2, 327\n  size: 396, 117\n  orig: 396, 117\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "eb756251-c670-4eaf-97e3-65d8bffe3f6c"
+  },
+  "textures": [
+    {
+      "__uuid__": "0e8af4c8-7fe9-4e6a-aa4d-aba6b8c5bd6e"
+    }
+  ],
+  "scale": 1
+}

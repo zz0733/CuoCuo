@@ -1,0 +1,505 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Huguang",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "yRWWD8ercMJ5KKH3xUmpnxujOLA",
+      "spine": "3.5.46",
+      "width": 1600.8,
+      "height": 900,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Guang",
+        "parent": "root",
+        "x": 40.68,
+        "y": -147.91,
+        "scaleX": -1.3,
+        "scaleY": 1.3
+      },
+      {
+        "name": "Huguang",
+        "parent": "root",
+        "x": -208.99,
+        "y": 46.57
+      },
+      {
+        "name": "Pai",
+        "parent": "root",
+        "x": -210.73,
+        "y": -105.29
+      },
+      {
+        "name": "Xian",
+        "parent": "root",
+        "x": -209.4,
+        "y": -89.75
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Pai",
+        "bone": "Pai"
+      },
+      {
+        "name": "Huguang",
+        "bone": "Huguang",
+        "attachment": "Huguang01",
+        "blend": "additive"
+      },
+      {
+        "name": "Guang",
+        "bone": "Guang",
+        "attachment": "Guang9",
+        "blend": "additive"
+      },
+      {
+        "name": "Xian",
+        "bone": "Xian",
+        "attachment": "Xian",
+        "blend": "additive"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Guang": {
+          "Guang1": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang2": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang3": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang4": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang5": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang6": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang7": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang8": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          },
+          "Guang9": {
+            "x": -6.22,
+            "y": 53.54,
+            "width": 98,
+            "height": 182
+          }
+        },
+        "Huguang": {
+          "Huguang01": {
+            "x": 1.08,
+            "y": -10.4,
+            "width": 103,
+            "height": 320
+          },
+          "Huguang02": {
+            "x": 1.08,
+            "y": 6.6,
+            "width": 125,
+            "height": 370
+          },
+          "Huguang03": {
+            "x": 0.58,
+            "y": 16.1,
+            "width": 164,
+            "height": 393
+          },
+          "Huguang04": {
+            "x": 0.58,
+            "y": 16.1,
+            "width": 170,
+            "height": 429
+          },
+          "Huguang05": {
+            "x": -0.92,
+            "y": 22.1,
+            "width": 177,
+            "height": 459
+          },
+          "Huguang06": {
+            "x": 13.58,
+            "y": 29.1,
+            "width": 240,
+            "height": 479
+          },
+          "Huguang07": {
+            "x": 10.58,
+            "y": 37.1,
+            "width": 252,
+            "height": 505
+          },
+          "Huguang08": {
+            "x": 23.08,
+            "y": 62.1,
+            "width": 251,
+            "height": 505
+          },
+          "Huguang09": {
+            "x": 24.58,
+            "y": 63.1,
+            "width": 232,
+            "height": 531
+          },
+          "Huguang10": {
+            "x": 1.08,
+            "y": -10.4,
+            "width": 222,
+            "height": 363
+          },
+          "Huguang11": {
+            "x": -3.92,
+            "y": -19.9,
+            "width": 151,
+            "height": 321
+          },
+          "Huguang12": {
+            "x": -3.42,
+            "y": -14.4,
+            "width": 116,
+            "height": 320
+          },
+          "Huguang13": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 113,
+            "height": 321
+          },
+          "Huguang14": {
+            "x": 0.58,
+            "y": -10.9,
+            "width": 116,
+            "height": 311
+          },
+          "Huguang15": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 113,
+            "height": 298
+          },
+          "Huguang16": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 100,
+            "height": 292
+          },
+          "Huguang17": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 95,
+            "height": 281
+          },
+          "Huguang18": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 90,
+            "height": 276
+          },
+          "Huguang19": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 93,
+            "height": 272
+          },
+          "Huguang20": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 88,
+            "height": 246
+          },
+          "Huguang21": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 89,
+            "height": 219
+          },
+          "Huguang22": {
+            "x": 0.08,
+            "y": -11.9,
+            "width": 77,
+            "height": 94
+          }
+        },
+        "Xian": {
+          "Xian": {
+            "x": -2.04,
+            "y": 270.15,
+            "width": 89,
+            "height": 657
+          }
+        }
+      }
+    },
+    "animations": {
+      "Huguang": {
+        "slots": {
+          "Guang": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.0333,
+                "name": "Guang1"
+              },
+              {
+                "time": 0.1,
+                "name": "Guang2"
+              },
+              {
+                "time": 0.1667,
+                "name": "Guang3"
+              },
+              {
+                "time": 0.2333,
+                "name": "Guang4"
+              },
+              {
+                "time": 0.3,
+                "name": "Guang5"
+              },
+              {
+                "time": 0.3667,
+                "name": "Guang6"
+              },
+              {
+                "time": 0.4333,
+                "name": "Guang7"
+              },
+              {
+                "time": 0.5,
+                "name": "Guang8"
+              },
+              {
+                "time": 0.5667,
+                "name": "Guang9"
+              },
+              {
+                "time": 0.6333,
+                "name": null
+              }
+            ]
+          },
+          "Huguang": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Huguang01"
+              },
+              {
+                "time": 0.0333,
+                "name": "Huguang02"
+              },
+              {
+                "time": 0.0667,
+                "name": "Huguang03"
+              },
+              {
+                "time": 0.1,
+                "name": "Huguang04"
+              },
+              {
+                "time": 0.1333,
+                "name": "Huguang05"
+              },
+              {
+                "time": 0.1667,
+                "name": "Huguang06"
+              },
+              {
+                "time": 0.2,
+                "name": "Huguang07"
+              },
+              {
+                "time": 0.2333,
+                "name": "Huguang08"
+              },
+              {
+                "time": 0.2667,
+                "name": "Huguang09"
+              },
+              {
+                "time": 0.3,
+                "name": "Huguang10"
+              },
+              {
+                "time": 0.3333,
+                "name": "Huguang11"
+              },
+              {
+                "time": 0.3667,
+                "name": "Huguang12"
+              },
+              {
+                "time": 0.4,
+                "name": "Huguang13"
+              },
+              {
+                "time": 0.4333,
+                "name": "Huguang14"
+              },
+              {
+                "time": 0.4667,
+                "name": "Huguang15"
+              },
+              {
+                "time": 0.5,
+                "name": "Huguang16"
+              },
+              {
+                "time": 0.5333,
+                "name": "Huguang17"
+              },
+              {
+                "time": 0.5667,
+                "name": "Huguang18"
+              },
+              {
+                "time": 0.6,
+                "name": "Huguang19"
+              },
+              {
+                "time": 0.6333,
+                "name": "Huguang20"
+              },
+              {
+                "time": 0.6667,
+                "name": "Huguang21"
+              },
+              {
+                "time": 0.7,
+                "name": "Huguang22"
+              },
+              {
+                "time": 0.7333,
+                "name": null
+              }
+            ]
+          },
+          "Pai": {
+            "color": [
+              {
+                "time": 0.0667,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Xian": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffff75"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Huguang": {
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Guang": {
+            "translate": [
+              {
+                "time": 0,
+                "x": -252.16,
+                "y": 56.02
+              }
+            ]
+          },
+          "Xian": {
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.117,
+                "y": 1
+              },
+              {
+                "time": 0.1667,
+                "x": 1,
+                "y": 1.331
+              },
+              {
+                "time": 0.5,
+                "x": 0.104,
+                "y": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nHuguang.png\nsize: 1024,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nGuang1\n  rotate: true\n  xy: 913, 377\n  size: 42, 67\n  orig: 49, 91\n  offset: 5, 1\n  index: -1\nGuang2\n  rotate: true\n  xy: 832, 387\n  size: 45, 79\n  orig: 49, 91\n  offset: 4, 1\n  index: -1\nGuang3\n  rotate: false\n  xy: 698, 361\n  size: 46, 84\n  orig: 49, 91\n  offset: 3, 0\n  index: -1\nGuang4\n  rotate: true\n  xy: 929, 464\n  size: 46, 88\n  orig: 49, 91\n  offset: 3, 3\n  index: -1\nGuang5\n  rotate: true\n  xy: 929, 421\n  size: 41, 86\n  orig: 49, 91\n  offset: 5, 2\n  index: -1\nGuang6\n  rotate: false\n  xy: 414, 2\n  size: 47, 84\n  orig: 49, 91\n  offset: 0, 3\n  index: -1\nGuang7\n  rotate: true\n  xy: 746, 389\n  size: 43, 84\n  orig: 49, 91\n  offset: 4, 4\n  index: -1\nGuang8\n  rotate: true\n  xy: 746, 344\n  size: 43, 72\n  orig: 49, 91\n  offset: 4, 1\n  index: -1\nGuang9\n  rotate: true\n  xy: 820, 342\n  size: 43, 70\n  orig: 49, 91\n  offset: 5, 3\n  index: -1\nHuguang01\n  rotate: true\n  xy: 252, 2\n  size: 52, 160\n  orig: 52, 160\n  offset: 0, 0\n  index: -1\nHuguang02\n  rotate: true\n  xy: 579, 447\n  size: 63, 185\n  orig: 63, 185\n  offset: 0, 0\n  index: -1\nHuguang03\n  rotate: false\n  xy: 365, 88\n  size: 82, 197\n  orig: 82, 197\n  offset: 0, 0\n  index: -1\nHuguang04\n  rotate: true\n  xy: 248, 287\n  size: 85, 215\n  orig: 85, 215\n  offset: 0, 0\n  index: -1\nHuguang05\n  rotate: true\n  xy: 248, 374\n  size: 89, 230\n  orig: 89, 230\n  offset: 0, 0\n  index: -1\nHuguang06\n  rotate: false\n  xy: 2, 2\n  size: 120, 240\n  orig: 120, 240\n  offset: 0, 0\n  index: -1\nHuguang07\n  rotate: false\n  xy: 120, 257\n  size: 126, 253\n  orig: 126, 253\n  offset: 0, 0\n  index: -1\nHuguang08\n  rotate: false\n  xy: 124, 2\n  size: 126, 253\n  orig: 126, 253\n  offset: 0, 0\n  index: -1\nHuguang09\n  rotate: false\n  xy: 2, 244\n  size: 116, 266\n  orig: 116, 266\n  offset: 0, 0\n  index: -1\nHuguang10\n  rotate: false\n  xy: 252, 103\n  size: 111, 182\n  orig: 111, 182\n  offset: 0, 0\n  index: -1\nHuguang11\n  rotate: true\n  xy: 766, 434\n  size: 76, 161\n  orig: 76, 161\n  offset: 0, 0\n  index: -1\nHuguang12\n  rotate: false\n  xy: 480, 303\n  size: 58, 160\n  orig: 58, 160\n  offset: 0, 0\n  index: -1\nHuguang13\n  rotate: false\n  xy: 449, 124\n  size: 57, 161\n  orig: 57, 161\n  offset: 0, 0\n  index: -1\nHuguang14\n  rotate: true\n  xy: 540, 387\n  size: 58, 156\n  orig: 58, 156\n  offset: 0, 0\n  index: -1\nHuguang15\n  rotate: true\n  xy: 540, 328\n  size: 57, 149\n  orig: 57, 149\n  offset: 0, 0\n  index: -1\nHuguang16\n  rotate: true\n  xy: 540, 276\n  size: 50, 146\n  orig: 50, 146\n  offset: 0, 0\n  index: -1\nHuguang17\n  rotate: false\n  xy: 508, 133\n  size: 48, 141\n  orig: 48, 141\n  offset: 0, 0\n  index: -1\nHuguang18\n  rotate: false\n  xy: 558, 136\n  size: 45, 138\n  orig: 45, 138\n  offset: 0, 0\n  index: -1\nHuguang19\n  rotate: false\n  xy: 605, 138\n  size: 47, 136\n  orig: 47, 136\n  offset: 0, 0\n  index: -1\nHuguang20\n  rotate: false\n  xy: 654, 151\n  size: 44, 123\n  orig: 44, 123\n  offset: 0, 0\n  index: -1\nHuguang21\n  rotate: true\n  xy: 252, 56\n  size: 45, 110\n  orig: 45, 110\n  offset: 0, 0\n  index: -1\nHuguang22\n  rotate: false\n  xy: 982, 372\n  size: 39, 47\n  orig: 39, 47\n  offset: 0, 0\n  index: -1\nXian\n  rotate: true\n  xy: 248, 465\n  size: 45, 329\n  orig: 45, 329\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "fd52a4e2-8b22-4d74-847d-3529069d25a7"
+  },
+  "textures": [
+    {
+      "__uuid__": "5c39ee1e-c53c-4ee5-a162-c44b7798d3c6"
+    }
+  ],
+  "scale": 1
+}

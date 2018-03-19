@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "072d6217-abd8-4469-85d6-99343c574d87",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Sangong_Dazi": {
+      "ver": "1.0.3",
+      "uuid": "c3f68b01-3ec8-4fc0-a667-473706bbef89",
+      "rawTextureUuid": "072d6217-abd8-4469-85d6-99343c574d87",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -8,
+      "offsetY": 0,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1004,
+      "height": 124,
+      "rawWidth": 1024,
+      "rawHeight": 128,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

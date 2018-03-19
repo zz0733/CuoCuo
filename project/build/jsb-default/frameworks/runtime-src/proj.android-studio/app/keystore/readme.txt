@@ -1,0 +1,3 @@
+keystore password:youle2014
+alias:youlehymjAndroid
+password:youle2014

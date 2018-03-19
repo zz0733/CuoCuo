@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_xiazhu3",
+    "texture": "93e3462d-9ce3-4fb2-9e2c-0d7d18fcee7d",
+    "atlas": "9b75b911-4133-460c-9d54-a748e175cb28",
+    "rect": [
+      51,
+      1378,
+      102,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      102,
+      90
+    ],
+    "rotated": 1
+  }
+}

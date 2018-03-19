@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "paiju2",
+    "texture": "c33b3bfa-c3fe-4e5e-a95b-78e9f20bf649",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      249,
+      1260
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      255,
+      1264
+    ]
+  }
+}

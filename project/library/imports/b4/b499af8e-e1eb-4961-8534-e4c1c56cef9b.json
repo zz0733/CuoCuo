@@ -1,0 +1,543 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Xuanzhuang",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "G56zNtkS+7wTS/XSX39pyjXsnfA",
+      "spine": "2.1.27",
+      "width": 1334,
+      "height": 750,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Kuang",
+        "parent": "root",
+        "x": 2.82,
+        "y": -2.43,
+        "color": "ffffffff"
+      },
+      {
+        "name": "Guang",
+        "parent": "Kuang",
+        "x": 4.73,
+        "y": 3.23,
+        "color": "ff0022ff"
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Xuanzhuang",
+        "bone": "Kuang",
+        "attachment": "Xuanzhuang",
+        "blend": "additive"
+      },
+      {
+        "name": "Xuanzhuang2",
+        "bone": "Guang",
+        "attachment": "Xuanzhuang",
+        "blend": "additive"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Xuanzhuang": {
+          "Xuanzhuang": {
+            "x": 0.03,
+            "y": 8.99,
+            "scaleX": 0.977,
+            "scaleY": 0.762,
+            "width": 241,
+            "height": 132
+          }
+        },
+        "Xuanzhuang2": {
+          "Xuanzhuang": {
+            "x": -4.7,
+            "y": 5.75,
+            "scaleX": 0.977,
+            "scaleY": 0.762,
+            "width": 241,
+            "height": 132
+          }
+        }
+      }
+    },
+    "animations": {
+      "Ting": {
+        "slots": {
+          "Xuanzhuang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -0.51,
+                "y": -0.51
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Kuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          }
+        }
+      },
+      "Xiao": {
+        "slots": {
+          "Xuanzhuang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Xuanzhuang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Kuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -0.51,
+                "y": -0.51
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          }
+        }
+      },
+      "Zhong": {
+        "slots": {
+          "Xuanzhuang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff"
+              }
+            ]
+          },
+          "Xuanzhuang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1,
+                "color": "ffffff92"
+              },
+              {
+                "time": 0.2,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Kuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -0.51,
+                "y": -0.51
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.1,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "time": 0.5,
+                "x": 1.133,
+                "y": 1.202
+              }
+            ]
+          }
+        }
+      },
+      "Zhongxiao": {
+        "slots": {
+          "Xuanzhuang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4333,
+                "color": "ffffffff",
+                "curve": [
+                  0.25,
+                  0,
+                  1,
+                  0.89
+                ]
+              },
+              {
+                "time": 1.2666,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Xuanzhuang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.0666,
+                "color": "ffffff92"
+              },
+              {
+                "time": 0.1666,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.5333,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Kuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4333,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4333,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4333,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4333,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -0.51,
+                "y": -0.51,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4333,
+                "x": -0.51,
+                "y": -0.51
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.0666,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "time": 0.5333,
+                "x": 1.194,
+                "y": 1.323
+              }
+            ]
+          }
+        }
+      },
+      "Zhuan": {
+        "slots": {
+          "Xuanzhuang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.0666,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Xuanzhuang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.0666,
+                "color": "ffffff1b"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Kuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nXuanzhuang.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nXuanzhuang\n  rotate: false\n  xy: 2, 2\n  size: 241, 132\n  orig: 241, 132\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "7c00f57b-c741-4bdc-a848-5a9e8febb843"
+  },
+  "textures": [
+    {
+      "__uuid__": "6f9579b8-4c16-45bb-ad87-9b1a4118929b"
+    }
+  ],
+  "scale": 1
+}

@@ -1,0 +1,89 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "dating.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "doudizhu": {
+      "__uuid__": "e24578f3-f3b5-45b7-835a-225d0e0394ae"
+    },
+    "gong": {
+      "__uuid__": "48159902-0b63-4973-9494-fcbb8878dc6b"
+    },
+    "shengming": {
+      "__uuid__": "9e1e65fc-f551-4a5e-a5ec-e4d67207751b"
+    },
+    "ty_biankuang_gdyx1": {
+      "__uuid__": "ba723bd0-1650-4639-a86c-fe2d192f434b"
+    },
+    "ty_bikuang_gdyx2": {
+      "__uuid__": "138ebf52-f1bf-4f98-9b4c-8060ef897406"
+    },
+    "ty_dating_anniu1": {
+      "__uuid__": "eae14af4-b524-40b1-bd8f-945d0f1c7303"
+    },
+    "ty_dating_anniu2": {
+      "__uuid__": "a33d415d-fa2b-4beb-ad38-6b65303f1736"
+    },
+    "ty_dating_anniu3": {
+      "__uuid__": "7ac51cb2-89f7-4f60-a17a-ee8d380260bf"
+    },
+    "ty_dating_anniu4": {
+      "__uuid__": "51da7cba-c408-4164-8654-667039e44b2a"
+    },
+    "ty_dating_anniu5": {
+      "__uuid__": "dc147766-cca5-4f76-aafa-7fc2088d90ea"
+    },
+    "ty_dating_di": {
+      "__uuid__": "c2d73e14-9831-4b1d-bc65-7ff8a05b29cd"
+    },
+    "ty_dating_dian": {
+      "__uuid__": "46bac4ce-607c-44a3-a703-995c32de6036"
+    },
+    "ty_dating_renzheng": {
+      "__uuid__": "03284495-d8d6-46b1-867c-9fe3525d709c"
+    },
+    "ty_dikuang_dating1": {
+      "__uuid__": "735e90b8-09e9-42bb-b86f-820c111908af"
+    },
+    "ty_dikuang_dating4": {
+      "__uuid__": "bf0b3a68-8586-4c11-bc32-5d65bb93860b"
+    },
+    "ty_fx_mj1": {
+      "__uuid__": "f9ca215b-5e0e-4dec-b124-46f53f2277fa"
+    },
+    "ty_fx_mj2": {
+      "__uuid__": "65332320-749c-478c-9deb-806c8c48d0d4"
+    },
+    "ty_fx_niuniu": {
+      "__uuid__": "43e017b8-0395-4e57-a0bb-956a5c925b7c"
+    },
+    "ty_fx_sg": {
+      "__uuid__": "6fcfbfa5-f651-4ca6-9b6b-da3701daa8a2"
+    },
+    "ty_fx_wahua": {
+      "__uuid__": "6644b035-5d4e-4232-88fc-e9147c3594d6"
+    },
+    "ty_gonggao1": {
+      "__uuid__": "9fd64d72-cafe-4228-accb-12a9abe96771"
+    },
+    "ty_gonggao2": {
+      "__uuid__": "b76b0836-0122-4b1e-aa73-36871d12aaee"
+    },
+    "ty_jiaan_gdyx": {
+      "__uuid__": "a142300b-ff36-4e6e-9e9c-2a3564ee58fb"
+    },
+    "ty_zi_gdyx 1": {
+      "__uuid__": "68a94ee1-853b-4872-b2b7-6b6d9092dcbc"
+    },
+    "ty_zi_gdyx": {
+      "__uuid__": "bbc07ef9-ac33-47ec-af6a-659b7ca29731"
+    },
+    "ty_zi_gdyx2": {
+      "__uuid__": "9fce22d6-8d74-4d9d-8935-21ed838a5a72"
+    },
+    "wenlingwahua": {
+      "__uuid__": "cd0826ae-3341-41fd-8463-d6826eb8108f"
+    }
+  }
+}

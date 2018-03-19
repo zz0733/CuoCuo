@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Quan",
+    "texture": "fd034dde-8253-4706-add6-9bf920ea1775",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      996,
+      96
+    ],
+    "offset": [
+      -12,
+      14
+    ],
+    "originalSize": [
+      1024,
+      128
+    ]
+  }
+}

@@ -1,0 +1,111 @@
+
+Guangbiao.png
+size: 128,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Guangbiao16
+  rotate: false
+  xy: 45, 116
+  size: 39, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1
+Guangbiao17
+  rotate: false
+  xy: 45, 79
+  size: 37, 35
+  orig: 41, 38
+  offset: 1, 3
+  index: -1
+Guangbiao18
+  rotate: false
+  xy: 88, 148
+  size: 35, 34
+  orig: 41, 38
+  offset: 3, 3
+  index: -1
+Guangbiao19
+  rotate: false
+  xy: 84, 76
+  size: 34, 34
+  orig: 41, 38
+  offset: 3, 3
+  index: -1
+Guangbiao20
+  rotate: false
+  xy: 45, 43
+  size: 34, 34
+  orig: 41, 38
+  offset: 4, 3
+  index: -1
+Guangbiao21
+  rotate: false
+  xy: 86, 112
+  size: 35, 34
+  orig: 41, 38
+  offset: 3, 3
+  index: -1
+Guangbiao22
+  rotate: false
+  xy: 2, 2
+  size: 37, 35
+  orig: 41, 38
+  offset: 3, 3
+  index: -1
+Guangbiao23
+  rotate: false
+  xy: 2, 39
+  size: 39, 35
+  orig: 41, 38
+  offset: 2, 3
+  index: -1
+Guangbiao24
+  rotate: false
+  xy: 2, 187
+  size: 41, 38
+  orig: 41, 38
+  offset: 0, 0
+  index: -1
+Guangbiao25
+  rotate: false
+  xy: 2, 150
+  size: 41, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1
+Guangbiao26
+  rotate: false
+  xy: 45, 190
+  size: 41, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1
+Guangbiao27
+  rotate: false
+  xy: 2, 113
+  size: 41, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1
+Guangbiao28
+  rotate: false
+  xy: 45, 153
+  size: 41, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1
+Guangbiao29
+  rotate: true
+  xy: 88, 184
+  size: 41, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1
+Guangbiao30
+  rotate: false
+  xy: 2, 76
+  size: 41, 35
+  orig: 41, 38
+  offset: 0, 3
+  index: -1

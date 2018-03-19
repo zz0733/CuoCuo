@@ -1,0 +1,502 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Caishen",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "3WIvaI/SlnKcmQmn1MOABfpKuuY",
+      "spine": "3.5.46",
+      "width": 1483.61,
+      "height": 884.64,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Guang",
+        "parent": "root",
+        "x": 701.82,
+        "y": 463.3
+      },
+      {
+        "name": "Guang2",
+        "parent": "root",
+        "x": 701.82,
+        "y": 463.3
+      },
+      {
+        "name": "Zi",
+        "parent": "root",
+        "x": 343.12,
+        "y": 454.97
+      },
+      {
+        "name": "PGZi",
+        "parent": "Zi"
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Guang",
+        "bone": "Guang",
+        "attachment": "Guang",
+        "blend": "additive"
+      },
+      {
+        "name": "Guang4",
+        "bone": "Guang2",
+        "attachment": "Guang",
+        "blend": "additive"
+      },
+      {
+        "name": "MZi",
+        "bone": "Zi"
+      },
+      {
+        "name": "MGZi",
+        "bone": "Zi",
+        "blend": "additive"
+      },
+      {
+        "name": "PZi",
+        "bone": "Zi"
+      },
+      {
+        "name": "PGZi",
+        "bone": "PGZi",
+        "color": "ffffff32",
+        "blend": "additive"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Guang": {
+          "Guang": {
+            "width": 232,
+            "height": 228
+          }
+        },
+        "Guang4": {
+          "Guang": {
+            "width": 232,
+            "height": 228
+          }
+        },
+        "MGZi": {
+          "Zi1": {
+            "width": 330,
+            "height": 203
+          },
+          "Zi3": {
+            "width": 330,
+            "height": 203
+          },
+          "Zi5": {
+            "width": 330,
+            "height": 203
+          }
+        },
+        "MZi": {
+          "Zi1": {
+            "width": 330,
+            "height": 203
+          },
+          "Zi3": {
+            "width": 330,
+            "height": 203
+          },
+          "Zi5": {
+            "width": 330,
+            "height": 203
+          }
+        },
+        "PGZi": {
+          "Zi7": {
+            "width": 330,
+            "height": 203
+          }
+        },
+        "PZi": {
+          "Zi7": {
+            "width": 330,
+            "height": 203
+          }
+        }
+      }
+    },
+    "animations": {
+      "Caishen": {
+        "slots": {
+          "Guang": {
+            "color": [
+              {
+                "time": 0.1333,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.3333,
+                "color": "ffffffcf",
+                "curve": "stepped"
+              },
+              {
+                "time": 1.7667,
+                "color": "ffffffcf"
+              },
+              {
+                "time": 1.9,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.1333,
+                "name": "Guang"
+              }
+            ]
+          },
+          "Guang4": {
+            "color": [
+              {
+                "time": 0.1333,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.3333,
+                "color": "ffd7a2a3"
+              },
+              {
+                "time": 1.7667,
+                "color": "ffffffa6"
+              },
+              {
+                "time": 1.9,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.1333,
+                "name": "Guang"
+              }
+            ]
+          },
+          "MGZi": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffff32"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Zi1"
+              },
+              {
+                "time": 0.0667,
+                "name": "Zi3"
+              },
+              {
+                "time": 0.1333,
+                "name": "Zi5"
+              },
+              {
+                "time": 0.2,
+                "name": null
+              },
+              {
+                "time": 1.7667,
+                "name": null
+              }
+            ]
+          },
+          "MZi": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Zi1"
+              },
+              {
+                "time": 0.0667,
+                "name": "Zi3"
+              },
+              {
+                "time": 0.1333,
+                "name": "Zi5"
+              },
+              {
+                "time": 0.2,
+                "name": null
+              },
+              {
+                "time": 1.7667,
+                "name": null
+              }
+            ]
+          },
+          "PGZi": {
+            "color": [
+              {
+                "time": 1.7,
+                "color": "ffffff32"
+              },
+              {
+                "time": 1.7667,
+                "color": "ffffffd5"
+              },
+              {
+                "time": 1.9667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.2,
+                "name": "Zi7"
+              },
+              {
+                "time": 1.7667,
+                "name": "Zi7"
+              }
+            ]
+          },
+          "PZi": {
+            "color": [
+              {
+                "time": 1.7667,
+                "color": "ffffffff"
+              },
+              {
+                "time": 1.9667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.2,
+                "name": "Zi7"
+              },
+              {
+                "time": 1.7667,
+                "name": "Zi7"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Zi": {
+            "translate": [
+              {
+                "time": 0,
+                "x": -343.43,
+                "y": -479.81
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 1.9333,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "PGZi": {
+            "scale": [
+              {
+                "time": 1.7667,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "time": 1.9667,
+                "x": 1.323,
+                "y": 1.323
+              }
+            ]
+          },
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 270
+              },
+              {
+                "time": 0.6667,
+                "angle": 0
+              },
+              {
+                "time": 1.3333,
+                "angle": 90
+              },
+              {
+                "time": 1.9,
+                "angle": 166.5
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -698.89,
+                "y": -312.28,
+                "curve": "stepped"
+              },
+              {
+                "time": 1.7667,
+                "x": -698.89,
+                "y": -312.28
+              },
+              {
+                "time": 1.8333,
+                "x": -696.24,
+                "y": -344.64
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1.274,
+                "y": 1.274
+              },
+              {
+                "time": 0.3333,
+                "x": 2.84,
+                "y": 2.84,
+                "curve": "stepped"
+              },
+              {
+                "time": 1.7667,
+                "x": 2.84,
+                "y": 2.84
+              },
+              {
+                "time": 2.0667,
+                "x": 1.404,
+                "y": 1.404
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Guang2": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 270
+              },
+              {
+                "time": 0.8333,
+                "angle": 180
+              },
+              {
+                "time": 1.6667,
+                "angle": 90
+              },
+              {
+                "time": 1.9,
+                "angle": 68.58
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -698.89,
+                "y": -312.28,
+                "curve": "stepped"
+              },
+              {
+                "time": 1.7667,
+                "x": -698.89,
+                "y": -312.28
+              },
+              {
+                "time": 1.8333,
+                "x": -696.24,
+                "y": -344.64
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1.274,
+                "y": 1.274
+              },
+              {
+                "time": 0.3333,
+                "x": 2.84,
+                "y": 2.84,
+                "curve": "stepped"
+              },
+              {
+                "time": 1.7667,
+                "x": 2.84,
+                "y": 2.84
+              },
+              {
+                "time": 2.0667,
+                "x": 1.404,
+                "y": 1.404
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nCaishen.png\nsize: 1024,128\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nGuang\n  rotate: false\n  xy: 592, 2\n  size: 116, 114\n  orig: 116, 114\n  offset: 0, 0\n  index: -1\nZi1\n  rotate: false\n  xy: 2, 14\n  size: 165, 102\n  orig: 165, 102\n  offset: 0, 0\n  index: -1\nZi3\n  rotate: false\n  xy: 169, 23\n  size: 151, 93\n  orig: 165, 102\n  offset: 7, 5\n  index: -1\nZi5\n  rotate: false\n  xy: 322, 30\n  size: 138, 86\n  orig: 165, 102\n  offset: 13, 8\n  index: -1\nZi7\n  rotate: false\n  xy: 462, 36\n  size: 128, 80\n  orig: 165, 102\n  offset: 18, 11\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "2f2714b5-bc9e-4c1a-885e-264d0c66898e"
+  },
+  "textures": [
+    {
+      "__uuid__": "8ffe6ad7-f2e8-443a-a211-220eee2e5de9"
+    }
+  ],
+  "scale": 1
+}

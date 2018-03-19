@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wx_share_circle",
+    "texture": "b1372ff4-d4de-4d13-a414-6164b37f8954",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      1000,
+      1779
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1000,
+      1779
+    ]
+  }
+}

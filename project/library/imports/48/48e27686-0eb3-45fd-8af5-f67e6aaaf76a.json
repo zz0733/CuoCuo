@@ -1,0 +1,248 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "paiMianWh.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "card_0_1_1": {
+      "__uuid__": "ee765297-7170-4d1c-89e1-56963b2704e9"
+    },
+    "card_0_1_2": {
+      "__uuid__": "e52b5377-2b21-4644-8ca3-2401695f06ae"
+    },
+    "card_0_1_3": {
+      "__uuid__": "7f7366d6-3487-4915-b14f-34c505dbf863"
+    },
+    "card_0_1_4": {
+      "__uuid__": "42ba2b19-289e-4bb6-9727-274611dd8881"
+    },
+    "card_0_1_5": {
+      "__uuid__": "d4996aea-86d1-4917-8891-13e9a6820262"
+    },
+    "card_0_1_6": {
+      "__uuid__": "de06175c-8609-445c-91ed-1bd01b965a60"
+    },
+    "card_0_2_2": {
+      "__uuid__": "753729a9-c2e4-4361-92fd-52fdd570809d"
+    },
+    "card_0_2_3": {
+      "__uuid__": "69babf0f-7fff-4126-b8b1-2e01466a7795"
+    },
+    "card_0_2_4": {
+      "__uuid__": "c415dc57-a4f9-4e45-ab7f-3519c8deda08"
+    },
+    "card_0_2_5": {
+      "__uuid__": "f6e9526a-92c7-41b9-ab8c-74b335b4b54c"
+    },
+    "card_0_2_6": {
+      "__uuid__": "402f69f5-349b-444d-a2dc-445b4d46566c"
+    },
+    "card_0_3_3": {
+      "__uuid__": "2c73ef0a-0f04-4fb3-b284-db00c3883375"
+    },
+    "card_0_3_4": {
+      "__uuid__": "92d416fe-6068-4b7a-adea-1a35762a853c"
+    },
+    "card_0_3_5": {
+      "__uuid__": "f6799f86-be2a-41ff-bf8e-310b8091cfa2"
+    },
+    "card_0_3_6": {
+      "__uuid__": "a9095fdf-a087-4b94-8b29-9b01a267d4ff"
+    },
+    "card_0_4_4": {
+      "__uuid__": "ab0d35fe-88ae-4550-8ecd-4bf38ead1484"
+    },
+    "card_0_4_5": {
+      "__uuid__": "afaac6ce-8200-4468-b0d0-553c7212b763"
+    },
+    "card_0_4_6": {
+      "__uuid__": "a5ce6f5a-2079-428b-92da-f14b4f22a401"
+    },
+    "card_0_5_5": {
+      "__uuid__": "a7ae362a-026a-46e1-b518-143a1c96a32f"
+    },
+    "card_0_5_6": {
+      "__uuid__": "583d245c-32d7-48b2-a633-bf6e0f7c266d"
+    },
+    "card_0_6_6": {
+      "__uuid__": "4ec1f75d-e75f-4ffe-ab8e-a28e327fd54b"
+    },
+    "card_1_1_1": {
+      "__uuid__": "d8a56f05-9b0a-41a0-a4da-542a3bef5a43"
+    },
+    "card_1_1_2": {
+      "__uuid__": "c26f5af4-cb5b-41dd-8ee7-3274c0e6d3de"
+    },
+    "card_1_1_3": {
+      "__uuid__": "5d872acc-6282-4484-bb91-2d3866092ec6"
+    },
+    "card_1_1_4": {
+      "__uuid__": "026f959a-a652-489b-9dc4-c85e2f661cac"
+    },
+    "card_1_1_5": {
+      "__uuid__": "7d507ee4-11e7-4f6e-b734-49a5db1b34dd"
+    },
+    "card_1_1_6": {
+      "__uuid__": "3cebd04f-61b5-4539-b69a-079af6468b4b"
+    },
+    "card_1_2_2": {
+      "__uuid__": "48a2b2cb-ce75-41f7-834e-b2bde4e24a4d"
+    },
+    "card_1_2_3": {
+      "__uuid__": "675d5df8-5e1f-4fbc-9f16-1a9f2e813c26"
+    },
+    "card_1_2_4": {
+      "__uuid__": "5922693d-7377-4353-a1de-cb9b4e9d345e"
+    },
+    "card_1_2_5": {
+      "__uuid__": "4ffef963-fa0f-44f5-963a-0d672e89c590"
+    },
+    "card_1_2_6": {
+      "__uuid__": "e4cc08be-9268-45b3-b951-09c9763adcc2"
+    },
+    "card_1_3_3": {
+      "__uuid__": "2584491f-a7ab-4303-8d39-9a2f4587275c"
+    },
+    "card_1_3_4": {
+      "__uuid__": "0a157222-0e69-4b42-a30e-22113519bdca"
+    },
+    "card_1_3_5": {
+      "__uuid__": "fdcd6640-32db-48ef-a1aa-64e09959d209"
+    },
+    "card_1_3_6": {
+      "__uuid__": "77f7a04d-0bd8-4c38-bbe5-35e36a18cd60"
+    },
+    "card_1_4_4": {
+      "__uuid__": "7342ba27-a0c1-48d7-9d07-1a5c523fc348"
+    },
+    "card_1_4_5": {
+      "__uuid__": "63e2a61a-f93d-4099-b89b-37d29ff908ba"
+    },
+    "card_1_4_6": {
+      "__uuid__": "5f2c34f3-9593-4a61-8489-751e30984f59"
+    },
+    "card_1_5_5": {
+      "__uuid__": "0559c33f-bee7-4064-86e7-8f0c86cc592e"
+    },
+    "card_1_5_6": {
+      "__uuid__": "e08b2ca3-5e36-4390-b9a7-17aa724bc2ac"
+    },
+    "card_1_6_6": {
+      "__uuid__": "9077f38f-f644-4778-8cdc-d289b9072102"
+    },
+    "card_2_1_1": {
+      "__uuid__": "ea82b3d1-5adb-4f49-8a31-a21ad3b5b532"
+    },
+    "card_2_1_2": {
+      "__uuid__": "1837a4e9-074b-4fb7-a69b-a65ae2c919e3"
+    },
+    "card_2_1_3": {
+      "__uuid__": "debe362e-4ed9-420e-998a-d8b0e345d457"
+    },
+    "card_2_1_4": {
+      "__uuid__": "db1b72a1-0b93-4cf0-a896-99ac085c2187"
+    },
+    "card_2_1_5": {
+      "__uuid__": "1b759776-df12-4260-8d39-ac09685cb671"
+    },
+    "card_2_1_6": {
+      "__uuid__": "b2a010db-17bd-4fcc-861c-5c22ea776bcd"
+    },
+    "card_2_2_2": {
+      "__uuid__": "ededef8e-7fc4-4880-9a16-e72ca7f50384"
+    },
+    "card_2_2_3": {
+      "__uuid__": "0f177581-fe04-4e75-8b47-dd332a947af1"
+    },
+    "card_2_2_4": {
+      "__uuid__": "3214567c-85c0-4229-8ecb-1085aea77b4b"
+    },
+    "card_2_2_5": {
+      "__uuid__": "f23c67e7-a60d-4755-a1e2-be46ef0ec20b"
+    },
+    "card_2_2_6": {
+      "__uuid__": "2cc22cab-939a-4ce7-a7cf-11079715e63c"
+    },
+    "card_2_3_3": {
+      "__uuid__": "c13dbdf2-0ed4-428e-82e3-1d29fe2a3a2e"
+    },
+    "card_2_3_4": {
+      "__uuid__": "2f00a425-2b6d-4899-8bc7-652487f7c21e"
+    },
+    "card_2_3_5": {
+      "__uuid__": "ef3fb200-c0bb-4b82-8d86-2f6a7070fc9e"
+    },
+    "card_2_3_6": {
+      "__uuid__": "13232879-e18b-4a2b-b61d-0a384820cdaf"
+    },
+    "card_2_4_4": {
+      "__uuid__": "9a5724de-8d88-42e9-bce2-a101bb9211d1"
+    },
+    "card_2_4_5": {
+      "__uuid__": "168d5463-8cf3-4640-a050-e60ddfc57dcb"
+    },
+    "card_2_4_6": {
+      "__uuid__": "f9290c4b-4986-4e46-972c-b7a6b2fec462"
+    },
+    "card_2_5_5": {
+      "__uuid__": "1ec65ae1-60e8-4892-9cf9-2f432b258535"
+    },
+    "card_2_5_6": {
+      "__uuid__": "1b57096c-524c-4da8-bc91-800f06d16f51"
+    },
+    "card_2_6_6": {
+      "__uuid__": "3b9bc445-c2cd-48fc-b120-de2c1e3cd209"
+    },
+    "card_autumn": {
+      "__uuid__": "ee7fb02c-9142-490b-a690-e6ce3491402c"
+    },
+    "card_bai": {
+      "__uuid__": "dbd8f382-5cf0-4aa9-a7c9-82b70fa3ebe9"
+    },
+    "card_ju": {
+      "__uuid__": "7f7e84da-1b4d-4697-a998-17ddd38854a7"
+    },
+    "card_lang": {
+      "__uuid__": "0615d33d-8569-4c0a-807d-0e6aa472ec07"
+    },
+    "card_mei": {
+      "__uuid__": "fa70d364-86b0-4faf-9940-f759fa018b0d"
+    },
+    "card_spring": {
+      "__uuid__": "5adc7cfc-c6bb-4210-be40-5084bb338906"
+    },
+    "card_summer": {
+      "__uuid__": "0d9bc4aa-7545-45fd-856d-0578b7fc2a08"
+    },
+    "card_winter": {
+      "__uuid__": "4e0dd823-92c0-4685-9e80-a69f4acfad74"
+    },
+    "card_zhu": {
+      "__uuid__": "e9b33ad7-4346-4b63-aa23-beeed8697ddf"
+    },
+    "shang_shou": {
+      "__uuid__": "978d5598-650d-46b1-bf33-c1d964663b15"
+    },
+    "shang_tang": {
+      "__uuid__": "c918193d-a069-456c-b338-d2d3dd5b0798"
+    },
+    "song": {
+      "__uuid__": "3e4803df-7d47-44c5-b1f7-bdcc9edd03b1"
+    },
+    "xia_shou": {
+      "__uuid__": "f8599068-434e-4f5d-ab44-b3676956017e"
+    },
+    "xia_tang": {
+      "__uuid__": "cfd56325-87e2-4f1a-9dd7-af56227c35bc"
+    },
+    "y_shou": {
+      "__uuid__": "11a178b8-79cd-469f-950e-24b9755f337f"
+    },
+    "z_shou": {
+      "__uuid__": "8c4103f6-af2d-4b0a-a2ca-ff9853571b15"
+    },
+    "zy_heng": {
+      "__uuid__": "93ac4637-fb4d-4d3d-8651-1f12569eeb9a"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "y_shou",
+    "texture": "2e4b9b0b-4eca-4331-9e39-23e0fbae858a",
+    "atlas": "4ba1c278-bd74-4fe3-bf7c-6508aa743e71",
+    "rect": [
+      158,
+      109,
+      29,
+      60
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      29,
+      60
+    ],
+    "rotated": 1
+  }
+}

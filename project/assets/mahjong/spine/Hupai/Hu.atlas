@@ -1,0 +1,104 @@
+
+Hu.png
+size: 256,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Guang1
+  rotate: false
+  xy: 47, 2
+  size: 42, 67
+  orig: 49, 91
+  offset: 5, 1
+  index: -1
+Guang2
+  rotate: true
+  xy: 91, 24
+  size: 45, 79
+  orig: 49, 91
+  offset: 4, 1
+  index: -1
+Guang3
+  rotate: true
+  xy: 100, 116
+  size: 46, 84
+  orig: 49, 91
+  offset: 3, 0
+  index: -1
+Guang4
+  rotate: false
+  xy: 2, 166
+  size: 46, 88
+  orig: 49, 91
+  offset: 3, 3
+  index: -1
+Guang5
+  rotate: true
+  xy: 115, 164
+  size: 41, 86
+  orig: 49, 91
+  offset: 5, 2
+  index: -1
+Guang6
+  rotate: false
+  xy: 51, 85
+  size: 47, 84
+  orig: 49, 91
+  offset: 0, 3
+  index: -1
+Guang7
+  rotate: true
+  xy: 100, 71
+  size: 43, 84
+  orig: 49, 91
+  offset: 4, 4
+  index: -1
+Guang8
+  rotate: false
+  xy: 2, 5
+  size: 43, 72
+  orig: 49, 91
+  offset: 4, 1
+  index: -1
+Guang9
+  rotate: true
+  xy: 172, 26
+  size: 43, 70
+  orig: 49, 91
+  offset: 5, 3
+  index: -1
+Quan1
+  rotate: false
+  xy: 50, 171
+  size: 63, 34
+  orig: 87, 47
+  offset: 12, 7
+  index: -1
+Quan2
+  rotate: true
+  xy: 186, 83
+  size: 79, 44
+  orig: 87, 47
+  offset: 4, 2
+  index: -1
+Quan3
+  rotate: false
+  xy: 50, 207
+  size: 87, 47
+  orig: 87, 47
+  offset: 0, 0
+  index: -1
+Quan4
+  rotate: true
+  xy: 2, 79
+  size: 85, 47
+  orig: 87, 47
+  offset: 1, 0
+  index: -1
+Quan5
+  rotate: false
+  xy: 139, 207
+  size: 87, 47
+  orig: 87, 47
+  offset: 0, 0
+  index: -1

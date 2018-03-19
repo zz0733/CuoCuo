@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Shang",
+    "texture": "bd9dcf4c-947d-426f-b113-7edf352daed3",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      230,
+      113
+    ],
+    "offset": [
+      -10,
+      4.5
+    ],
+    "originalSize": [
+      256,
+      128
+    ]
+  }
+}

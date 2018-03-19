@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Touzi1",
+    "texture": "7fa56eb6-1517-40c1-81ec-878664cd9f38",
+    "atlas": "",
+    "rect": [
+      6,
+      3,
+      631,
+      206
+    ],
+    "offset": [
+      -190.5,
+      22
+    ],
+    "originalSize": [
+      1024,
+      256
+    ]
+  }
+}

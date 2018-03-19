@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zy_tang",
+    "texture": "2e4b9b0b-4eca-4331-9e39-23e0fbae858a",
+    "atlas": "4ba1c278-bd74-4fe3-bf7c-6508aa743e71",
+    "rect": [
+      254,
+      90,
+      44,
+      63
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      44,
+      63
+    ],
+    "rotated": 1
+  }
+}

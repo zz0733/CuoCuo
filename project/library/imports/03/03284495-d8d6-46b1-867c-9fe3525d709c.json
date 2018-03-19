@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dating_renzheng",
+    "texture": "8b523d2d-8659-4ce7-81db-2568e3a58aea",
+    "atlas": "cb8de06e-0e7b-4d49-8f6f-a231862d1216",
+    "rect": [
+      424,
+      1346,
+      76,
+      74
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      78,
+      76
+    ]
+  }
+}

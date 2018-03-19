@@ -1,0 +1,300 @@
+
+Ganghua.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Hua1
+  rotate: false
+  xy: 274, 71
+  size: 59, 55
+  orig: 59, 55
+  offset: 0, 0
+  index: -1
+Hua10
+  rotate: false
+  xy: 410, 91
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+Hua11
+  rotate: false
+  xy: 449, 91
+  size: 37, 35
+  orig: 37, 35
+  offset: 0, 0
+  index: -1
+Hua12
+  rotate: false
+  xy: 366, 9
+  size: 23, 23
+  orig: 23, 23
+  offset: 0, 0
+  index: -1
+Hua13
+  rotate: false
+  xy: 374, 87
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+Hua14
+  rotate: false
+  xy: 285, 2
+  size: 17, 32
+  orig: 17, 32
+  offset: 0, 0
+  index: -1
+Hua15
+  rotate: false
+  xy: 304, 6
+  size: 27, 28
+  orig: 27, 28
+  offset: 0, 0
+  index: -1
+Hua16
+  rotate: false
+  xy: 407, 45
+  size: 22, 20
+  orig: 22, 20
+  offset: 0, 0
+  index: -1
+Hua17
+  rotate: false
+  xy: 335, 85
+  size: 37, 41
+  orig: 37, 41
+  offset: 0, 0
+  index: -1
+Hua18
+  rotate: false
+  xy: 188, 17
+  size: 34, 32
+  orig: 34, 32
+  offset: 0, 0
+  index: -1
+Hua19
+  rotate: false
+  xy: 442, 30
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+Hua2
+  rotate: true
+  xy: 2, 2
+  size: 47, 45
+  orig: 47, 45
+  offset: 0, 0
+  index: -1
+Hua20
+  rotate: false
+  xy: 49, 2
+  size: 44, 47
+  orig: 44, 47
+  offset: 0, 0
+  index: -1
+Hua22
+  rotate: false
+  xy: 407, 3
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+Hua23
+  rotate: false
+  xy: 142, 16
+  size: 44, 33
+  orig: 44, 33
+  offset: 0, 0
+  index: -1
+Hua3
+  rotate: true
+  xy: 374, 64
+  size: 21, 22
+  orig: 21, 22
+  offset: 0, 0
+  index: -1
+Hua4
+  rotate: false
+  xy: 454, 49
+  size: 17, 15
+  orig: 17, 15
+  offset: 0, 0
+  index: -1
+Hua5
+  rotate: false
+  xy: 95, 8
+  size: 45, 41
+  orig: 45, 41
+  offset: 0, 0
+  index: -1
+Hua6
+  rotate: false
+  xy: 224, 22
+  size: 34, 27
+  orig: 34, 27
+  offset: 0, 0
+  index: -1
+Hua7
+  rotate: true
+  xy: 162, 2
+  size: 12, 17
+  orig: 12, 17
+  offset: 0, 0
+  index: -1
+Hua8
+  rotate: false
+  xy: 425, 2
+  size: 17, 17
+  orig: 17, 17
+  offset: 0, 0
+  index: -1
+Hua9
+  rotate: true
+  xy: 335, 64
+  size: 19, 34
+  orig: 19, 34
+  offset: 0, 0
+  index: -1
+Ye11_1
+  rotate: true
+  xy: 391, 9
+  size: 25, 14
+  orig: 25, 14
+  offset: 0, 0
+  index: -1
+Ye11_2
+  rotate: false
+  xy: 461, 32
+  size: 15, 15
+  orig: 15, 15
+  offset: 0, 0
+  index: -1
+Ye13_1
+  rotate: false
+  xy: 224, 2
+  size: 34, 18
+  orig: 34, 18
+  offset: 0, 0
+  index: -1
+Ye13_2
+  rotate: false
+  xy: 407, 20
+  size: 16, 23
+  orig: 16, 23
+  offset: 0, 0
+  index: -1
+Ye1_1
+  rotate: true
+  xy: 488, 93
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+Ye1_2
+  rotate: false
+  xy: 445, 66
+  size: 26, 23
+  orig: 26, 23
+  offset: 0, 0
+  index: -1
+Ye20_1
+  rotate: true
+  xy: 274, 46
+  size: 23, 35
+  orig: 23, 35
+  offset: 0, 0
+  index: -1
+Ye20_2
+  rotate: true
+  xy: 260, 2
+  size: 32, 23
+  orig: 32, 23
+  offset: 0, 0
+  index: -1
+Ye20_3
+  rotate: false
+  xy: 333, 9
+  size: 31, 23
+  orig: 31, 23
+  offset: 0, 0
+  index: -1
+Ye20_4
+  rotate: true
+  xy: 488, 58
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+Ye21
+  rotate: false
+  xy: 389, 36
+  size: 16, 26
+  orig: 16, 26
+  offset: 0, 0
+  index: -1
+Ye22
+  rotate: false
+  xy: 335, 34
+  size: 30, 28
+  orig: 30, 28
+  offset: 0, 0
+  index: -1
+Ye22_1
+  rotate: false
+  xy: 398, 71
+  size: 10, 14
+  orig: 10, 14
+  offset: 0, 0
+  index: -1
+Ye23_1
+  rotate: false
+  xy: 431, 49
+  size: 21, 15
+  orig: 21, 15
+  offset: 0, 0
+  index: -1
+Ye5_1
+  rotate: true
+  xy: 311, 36
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+Ye5_2
+  rotate: false
+  xy: 410, 67
+  size: 33, 22
+  orig: 33, 22
+  offset: 0, 0
+  index: -1
+Ye6_1
+  rotate: true
+  xy: 367, 34
+  size: 28, 20
+  orig: 28, 20
+  offset: 0, 0
+  index: -1
+Ye8_1
+  rotate: false
+  xy: 142, 2
+  size: 18, 12
+  orig: 18, 12
+  offset: 0, 0
+  index: -1
+Ye8_2
+  rotate: true
+  xy: 425, 21
+  size: 22, 15
+  orig: 22, 15
+  offset: 0, 0
+  index: -1
+Zi
+  rotate: false
+  xy: 2, 51
+  size: 270, 75
+  orig: 270, 75
+  offset: 0, 0
+  index: -1

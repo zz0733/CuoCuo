@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_zhuomian2",
+    "texture": "21000746-20d9-44da-8845-9615457e704f",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      934,
+      525
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      934,
+      525
+    ]
+  }
+}

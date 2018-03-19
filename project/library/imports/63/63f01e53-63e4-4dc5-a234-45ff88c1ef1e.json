@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "HHeng",
+    "texture": "5e62c622-e923-43fa-a9b5-c35564cc706f",
+    "atlas": "",
+    "rect": [
+      8,
+      4,
+      962,
+      990
+    ],
+    "offset": [
+      -23,
+      13
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}

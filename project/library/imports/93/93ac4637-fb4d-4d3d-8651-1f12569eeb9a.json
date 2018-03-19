@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zy_heng",
+    "texture": "73f4c4a2-b2f8-4118-8bdb-debf87814a22",
+    "atlas": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a",
+    "rect": [
+      1554,
+      417,
+      58,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      50
+    ]
+  }
+}

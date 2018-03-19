@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Songka",
+    "texture": "65f73811-551f-41b8-ba2f-7beac8eb279f",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      110,
+      119
+    ],
+    "offset": [
+      -7,
+      2.5
+    ],
+    "originalSize": [
+      128,
+      128
+    ]
+  }
+}

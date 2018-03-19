@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Jiesuan",
+    "texture": "18aae1f0-6af3-42a3-ac34-863b28a602af",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      522,
+      505
+    ],
+    "offset": [
+      -248,
+      0.5
+    ],
+    "originalSize": [
+      1024,
+      512
+    ]
+  }
+}

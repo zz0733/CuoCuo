@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "huodong1",
+    "texture": "f76fc612-9d86-4fb6-96b5-7185d0794338",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      717,
+      545
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      717,
+      545
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Bianpao",
+    "texture": "44be7b1a-3dd3-4366-9a58-465adf3566aa",
+    "atlas": "",
+    "rect": [
+      5,
+      5,
+      409,
+      229
+    ],
+    "offset": [
+      -46.5,
+      8.5
+    ],
+    "originalSize": [
+      512,
+      256
+    ]
+  }
+}

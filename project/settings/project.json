@@ -1,0 +1,33 @@
+{
+  "collision-matrix": [
+    [
+      true
+    ]
+  ],
+  "design-resolution-height": 750,
+  "design-resolution-width": 1334,
+  "excluded-modules": [
+    "TiledMap",
+    "DragonBones",
+    "Physics",
+    "Chipmunk"
+  ],
+  "fit-height": true,
+  "fit-width": false,
+  "group-list": [
+    "default"
+  ],
+  "simulator-orientation": true,
+  "simulator-resolution": {
+    "height": 750,
+    "width": 1334
+  },
+  "start-scene": "6714a913-0406-4bb5-a898-4c7e68ab15a1",
+  "use-customize-simulator": false,
+  "use-project-simulator-setting": true,
+  "cocos-analytics": {
+    "enable": false,
+    "appID": "13798",
+    "appSecret": "959b3ac0037d0f3c2fdce94f8421a9b2"
+  }
+}

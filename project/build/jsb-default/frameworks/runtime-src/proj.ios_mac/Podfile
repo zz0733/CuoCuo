@@ -1,0 +1,10 @@
+platform :ios, '10.0' #手机的系统
+
+target 'cuocuo-mobile' do #工程名字
+
+#pod 'WechatOpenSDK' #微信SDK
+#pod 'AFNetworking'
+
+pod 'BMKLocationKit' #百度定位SDK
+
+end

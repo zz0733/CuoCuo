@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_jiesuan_di",
+    "texture": "0d7c644c-4a40-487c-a796-26226b203681",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      667,
+      375
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      667,
+      375
+    ]
+  }
+}

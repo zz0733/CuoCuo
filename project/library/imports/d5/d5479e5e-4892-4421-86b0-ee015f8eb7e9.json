@@ -1,0 +1,404 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Kuang",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "g8/dbK5rf3qpTd9dJnc2eiixgv0",
+      "spine": "3.5.51",
+      "width": 1347.72,
+      "height": 752.4,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Kuang",
+        "parent": "root"
+      },
+      {
+        "name": "Shangkuang",
+        "parent": "Kuang",
+        "rotation": 90,
+        "x": 0.17,
+        "y": 323.4,
+        "scaleY": 1.795
+      },
+      {
+        "name": "Shangkuang2",
+        "parent": "Kuang",
+        "rotation": -90,
+        "x": -1.56,
+        "y": -325.65,
+        "scaleY": 1.795
+      },
+      {
+        "name": "Youkuang",
+        "parent": "Kuang",
+        "x": 615.63,
+        "y": -0.94
+      },
+      {
+        "name": "Zuokuang",
+        "parent": "Kuang",
+        "x": -617.32,
+        "y": -0.94,
+        "scaleX": -1
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Youkuang",
+        "bone": "Youkuang",
+        "attachment": "Kuang6",
+        "blend": "additive"
+      },
+      {
+        "name": "Youkuang5",
+        "bone": "Shangkuang",
+        "attachment": "Kuang6",
+        "blend": "additive"
+      },
+      {
+        "name": "Youkuang7",
+        "bone": "Shangkuang2",
+        "attachment": "Kuang6",
+        "blend": "additive"
+      },
+      {
+        "name": "Youkuang3",
+        "bone": "Zuokuang",
+        "attachment": "Kuang6",
+        "blend": "additive"
+      },
+      {
+        "name": "Youkuang2",
+        "bone": "Youkuang",
+        "color": "ff1400ff",
+        "attachment": "Kuang6"
+      },
+      {
+        "name": "Youkuang6",
+        "bone": "Shangkuang",
+        "color": "ff1400ff",
+        "attachment": "Kuang6"
+      },
+      {
+        "name": "Youkuang8",
+        "bone": "Shangkuang2",
+        "color": "ff1400ff",
+        "attachment": "Kuang6"
+      },
+      {
+        "name": "Youkuang4",
+        "bone": "Zuokuang",
+        "color": "ff1400ff",
+        "attachment": "Kuang6"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Youkuang": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang2": {
+          "Kuang6": {
+            "y": 2.19,
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang3": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang4": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang5": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang6": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang7": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        },
+        "Youkuang8": {
+          "Kuang6": {
+            "width": 101,
+            "height": 750
+          }
+        }
+      }
+    },
+    "animations": {
+      "Kuang": {
+        "bones": {
+          "Youkuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Zuokuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Shangkuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Shangkuang2": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "x": 1,
+                "y": 1
+              }
+            ]
+          },
+          "Kuang": {
+            "scale": [
+              {
+                "time": 0,
+                "x": 1.055,
+                "y": 1.1,
+                "curve": [
+                  0.25,
+                  0,
+                  1,
+                  0.86
+                ]
+              },
+              {
+                "time": 0.5,
+                "x": 1,
+                "y": 1,
+                "curve": [
+                  0,
+                  0.18,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 1,
+                "x": 1.055,
+                "y": 1.1
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nKuang.png\nsize: 128,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nKuang6\n  rotate: false\n  xy: 2, 2\n  size: 101, 750\n  orig: 101, 750\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "99893191-b1a3-4c31-b961-abacf9480bbc"
+  },
+  "textures": [
+    {
+      "__uuid__": "442e4c7f-f243-4d55-bed4-9fb67ebf77fb"
+    }
+  ],
+  "scale": 1
+}

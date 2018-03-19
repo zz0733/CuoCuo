@@ -1,0 +1,366 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "mainBasicAnim",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.5333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "up": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": 120,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.25,
+              "value": -20,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": 10,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -10,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": 5,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "right": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 1344
+            }
+          ]
+        }
+      },
+      "buttom": {
+        "props": {
+          "y": [
+            {
+              "frame": 0,
+              "value": -419,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.25,
+              "value": -264
+            },
+            {
+              "frame": 0.35,
+              "value": -280
+            },
+            {
+              "frame": 0.43333333333333335,
+              "value": -270
+            },
+            {
+              "frame": 0.5,
+              "value": -272
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "left": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -564,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.25,
+              "value": 30,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": -10,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": 15,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -5,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.5,
+              "value": 0
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 0.35,
+              "value": 255
+            }
+          ]
+        }
+      },
+      "buttom/activeBtn": {
+        "props": {}
+      },
+      "right/btnGame1": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -316,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.25,
+              "value": -1316,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": -1276,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -1296,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -1286,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.5,
+              "value": -1290
+            }
+          ]
+        }
+      },
+      "right/btnGame3": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": -316,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.25,
+              "value": -1316,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.35,
+              "value": -1276,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.4166666666666667,
+              "value": -1296,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.4666666666666667,
+              "value": -1286,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.5,
+              "value": -1290
+            }
+          ],
+          "opacity": []
+        }
+      },
+      "right/btnGame2": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 32
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 32,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": -968,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": -928,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.45,
+              "value": -948,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.5,
+              "value": -938,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": -942
+            }
+          ]
+        }
+      },
+      "right/btnGameMore": {
+        "props": {
+          "x": [
+            {
+              "frame": 0,
+              "value": 32
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": 32,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": -968,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": -928,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.45,
+              "value": -948,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.5,
+              "value": -938,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": -942
+            }
+          ]
+        }
+      },
+      "right/btnGame4": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                32,
+                -92
+              ]
+            },
+            {
+              "frame": 0.03333333333333333,
+              "value": [
+                32,
+                -92
+              ]
+            },
+            {
+              "frame": 0.25,
+              "value": [
+                -618.9,
+                -92
+              ]
+            },
+            {
+              "frame": 0.2833333333333333,
+              "value": [
+                -968,
+                -92
+              ]
+            },
+            {
+              "frame": 0.38333333333333336,
+              "value": [
+                -928,
+                -92
+              ]
+            },
+            {
+              "frame": 0.45,
+              "value": [
+                -948,
+                -92
+              ]
+            },
+            {
+              "frame": 0.5,
+              "value": [
+                -938,
+                -92
+              ]
+            },
+            {
+              "frame": 0.5333333333333333,
+              "value": [
+                -942,
+                -92
+              ]
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}

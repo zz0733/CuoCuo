@@ -1,0 +1,2 @@
+﻿INT_ID,INT_Type,STR_HuoDong,STR_Desc,INT_ItemType,INT_OpCnt,INT_Start,INT_Deadline,INT_MaxTimes,Remark_OpCnt,Remark_Start
+1,1,day_share,每日分享送房卡,3,30,1516870200,1516870800,1,1/25/2018 16:50,1/25/2018 17:00

@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_anniu_tishi",
+    "texture": "0984a2d4-db25-49d7-bff0-ab6853b36796",
+    "atlas": "fd8b3e5d-87b1-422d-89fe-e28c2822e2a9",
+    "rect": [
+      438,
+      1465,
+      70,
+      71
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      72,
+      73
+    ],
+    "rotated": 1
+  }
+}

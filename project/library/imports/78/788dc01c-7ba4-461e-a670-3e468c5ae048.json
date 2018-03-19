@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Xuanzhuang",
+    "texture": "6f9579b8-4c16-45bb-ad87-9b1a4118929b",
+    "atlas": "",
+    "rect": [
+      3,
+      3,
+      239,
+      130
+    ],
+    "offset": [
+      -5.5,
+      60
+    ],
+    "originalSize": [
+      256,
+      256
+    ]
+  }
+}

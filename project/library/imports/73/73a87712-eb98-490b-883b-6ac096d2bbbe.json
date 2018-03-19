@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Zhuang",
+    "texture": "8b9a8ee8-be26-44a6-ba7a-ea6cda6b3da7",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      246,
+      232
+    ],
+    "offset": [
+      -3,
+      10
+    ],
+    "originalSize": [
+      256,
+      256
+    ]
+  }
+}

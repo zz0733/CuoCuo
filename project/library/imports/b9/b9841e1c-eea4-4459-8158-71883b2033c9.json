@@ -1,0 +1,140 @@
+{
+  "__type__": "cc.BitmapFont",
+  "_name": "shop_0",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "fntDataStr": "",
+  "spriteFrame": {
+    "__uuid__": "45c80034-947b-49dd-b519-95fbadf312e4"
+  },
+  "fontSize": 32,
+  "_fntConfig": {
+    "commonHeight": 32,
+    "fontSize": 32,
+    "atlasName": "shop_0_0.png",
+    "fontDefDictionary": {
+      "48": {
+        "rect": {
+          "x": 43,
+          "y": 0,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "49": {
+        "rect": {
+          "x": 84,
+          "y": 0,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "50": {
+        "rect": {
+          "x": 125,
+          "y": 0,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "51": {
+        "rect": {
+          "x": 166,
+          "y": 0,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "52": {
+        "rect": {
+          "x": 207,
+          "y": 0,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "53": {
+        "rect": {
+          "x": 0,
+          "y": 55,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "54": {
+        "rect": {
+          "x": 41,
+          "y": 55,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "55": {
+        "rect": {
+          "x": 82,
+          "y": 55,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "56": {
+        "rect": {
+          "x": 123,
+          "y": 55,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "57": {
+        "rect": {
+          "x": 164,
+          "y": 55,
+          "width": 40,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 40
+      },
+      "122": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "width": 42,
+          "height": 54
+        },
+        "xOffset": 0,
+        "yOffset": 0,
+        "xAdvance": 42
+      }
+    },
+    "kerningDict": {}
+  }
+}

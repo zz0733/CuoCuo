@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_liaotian_di3",
+    "texture": "0984a2d4-db25-49d7-bff0-ab6853b36796",
+    "atlas": "fd8b3e5d-87b1-422d-89fe-e28c2822e2a9",
+    "rect": [
+      328,
+      1275,
+      112,
+      106
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      112,
+      106
+    ],
+    "rotated": 1,
+    "capInsets": [
+      9,
+      9,
+      9,
+      9
+    ]
+  }
+}

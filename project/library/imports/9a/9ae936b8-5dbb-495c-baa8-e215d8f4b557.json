@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "mj_red_0",
+    "texture": "4a2f6dc4-cb06-4118-8a83-bdc506485439",
+    "atlas": "",
+    "rect": [
+      1,
+      0,
+      245,
+      77
+    ],
+    "offset": [
+      -4.5,
+      16.5
+    ],
+    "originalSize": [
+      256,
+      110
+    ]
+  }
+}

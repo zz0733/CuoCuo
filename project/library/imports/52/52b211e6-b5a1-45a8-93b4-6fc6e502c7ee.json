@@ -1,0 +1,849 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Tuanying",
+  "_objFlags": 0,
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "9hZcns2ktLKxcDwgvxirZxzlfHY",
+      "spine": "3.5.51",
+      "width": 0,
+      "height": 0,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Anniu",
+        "parent": "root",
+        "x": 1.7,
+        "y": -81.59,
+        "color": "ffffffff"
+      },
+      {
+        "name": "Tuan",
+        "parent": "Anniu",
+        "x": 198.69,
+        "y": 98.33,
+        "color": "ffffffff"
+      },
+      {
+        "name": "Tuanying",
+        "parent": "Tuan",
+        "rotation": 1.07,
+        "x": -218.73,
+        "y": -19.21,
+        "color": "000000ff"
+      }
+    ],
+    "slots": [
+      {
+        "name": "Tuanying",
+        "bone": "Tuanying",
+        "color": "0000005b",
+        "attachment": "Wahua",
+        "blend": "multiply"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Tuanying": {
+          "Huangyanmajiang": {
+            "x": -2.17,
+            "y": 28.64,
+            "width": 246,
+            "height": 197
+          },
+          "Niuniu": {
+            "x": 18.83,
+            "y": 20.14,
+            "width": 294,
+            "height": 210
+          },
+          "Sangong": {
+            "x": -1.17,
+            "y": 29.14,
+            "width": 309,
+            "height": 190
+          },
+          "Wahua": {
+            "x": 14.98,
+            "y": 16.43,
+            "width": 288,
+            "height": 184
+          },
+          "Wenlinlingmajiang": {
+            "x": 1.83,
+            "y": 26.64,
+            "width": 261,
+            "height": 222
+          }
+        }
+      }
+    },
+    "animations": {
+      "Huangyan_ying": {
+        "slots": {
+          "Tuanying": {
+            "color": [
+              {
+                "time": 0,
+                "color": "0000005b"
+              },
+              {
+                "time": 1,
+                "color": "00000050"
+              },
+              {
+                "time": 1.6667,
+                "color": "0000005b",
+                "curve": "stepped"
+              },
+              {
+                "time": 3.9,
+                "color": "0000005b"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Huangyanmajiang"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuanying": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -4.31,
+                "y": -1.44
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Niuniu_ying": {
+        "slots": {
+          "Tuanying": {
+            "color": [
+              {
+                "time": 0,
+                "color": "0000005b"
+              },
+              {
+                "time": 1,
+                "color": "0000003d"
+              },
+              {
+                "time": 1.6667,
+                "color": "0000005b",
+                "curve": "stepped"
+              },
+              {
+                "time": 3.9,
+                "color": "0000005b"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Niuniu"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuanying": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Sangong_ying": {
+        "slots": {
+          "Tuanying": {
+            "color": [
+              {
+                "time": 0,
+                "color": "0000005b"
+              },
+              {
+                "time": 1,
+                "color": "0000003d"
+              },
+              {
+                "time": 1.6667,
+                "color": "0000005b",
+                "curve": "stepped"
+              },
+              {
+                "time": 3.9,
+                "color": "0000005b"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Sangong"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuanying": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 5.35,
+                "y": -2.67
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Wahua_ying": {
+        "slots": {
+          "Tuanying": {
+            "color": [
+              {
+                "time": 0,
+                "color": "0000005b"
+              },
+              {
+                "time": 1,
+                "color": "0000003d"
+              },
+              {
+                "time": 1.6667,
+                "color": "0000005b",
+                "curve": "stepped"
+              },
+              {
+                "time": 3.9,
+                "color": "0000005b"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Wahua"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuanying": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Wenling_ying": {
+        "slots": {
+          "Tuanying": {
+            "color": [
+              {
+                "time": 0,
+                "color": "0000005b"
+              },
+              {
+                "time": 1,
+                "color": "0000003d"
+              },
+              {
+                "time": 1.6667,
+                "color": "0000005b",
+                "curve": "stepped"
+              },
+              {
+                "time": 3.9,
+                "color": "0000005b"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Wenlinlingmajiang"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuanying": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Tuan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nDaanniu.png\nsize: 1024,1024\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nGengduoyouxi\n  rotate: false\n  xy: 648, 571\n  size: 289, 204\n  orig: 298, 209\n  offset: 8, 1\n  index: -1\nGuang\n  rotate: true\n  xy: 629, 69\n  size: 113, 211\n  orig: 115, 213\n  offset: 1, 1\n  index: -1\nGuang1\n  rotate: false\n  xy: 1014, 3\n  size: 3, 11\n  orig: 5, 13\n  offset: 1, 1\n  index: -1\nGuang10\n  rotate: false\n  xy: 847, 82\n  size: 3, 100\n  orig: 5, 102\n  offset: 1, 1\n  index: -1\nGuang106\n  rotate: false\n  xy: 768, 6\n  size: 120, 3\n  orig: 122, 5\n  offset: 1, 1\n  index: -1\nGuang107\n  rotate: true\n  xy: 842, 72\n  size: 110, 3\n  orig: 112, 5\n  offset: 1, 1\n  index: -1\nGuang108\n  rotate: true\n  xy: 852, 82\n  size: 100, 3\n  orig: 102, 5\n  offset: 1, 1\n  index: -1\nGuang11\n  rotate: false\n  xy: 336, 400\n  size: 2, 110\n  orig: 4, 112\n  offset: 1, 1\n  index: -1\nGuang110\n  rotate: true\n  xy: 1004, 243\n  size: 80, 3\n  orig: 82, 5\n  offset: 1, 1\n  index: -1\nGuang111\n  rotate: false\n  xy: 488, 266\n  size: 70, 3\n  orig: 72, 5\n  offset: 1, 1\n  index: -1\nGuang112\n  rotate: true\n  xy: 1019, 263\n  size: 60, 3\n  orig: 62, 5\n  offset: 1, 1\n  index: -1\nGuang113\n  rotate: true\n  xy: 933, 519\n  size: 50, 3\n  orig: 52, 5\n  offset: 1, 1\n  index: -1\nGuang114\n  rotate: true\n  xy: 1004, 468\n  size: 40, 3\n  orig: 42, 5\n  offset: 1, 1\n  index: -1\nGuang115\n  rotate: true\n  xy: 1014, 16\n  size: 30, 3\n  orig: 32, 5\n  offset: 1, 1\n  index: -1\nGuang116\n  rotate: true\n  xy: 1019, 3\n  size: 20, 3\n  orig: 22, 5\n  offset: 1, 1\n  index: -1\nGuang117\n  rotate: true\n  xy: 1019, 251\n  size: 10, 3\n  orig: 12, 5\n  offset: 1, 1\n  index: -1\nGuang12\n  rotate: true\n  xy: 768, 2\n  size: 2, 120\n  orig: 4, 122\n  offset: 1, 1\n  index: -1\nGuang16\n  rotate: true\n  xy: 381, 9\n  size: 2, 150\n  orig: 4, 152\n  offset: 1, 1\n  index: -1\nGuang2\n  rotate: false\n  xy: 1019, 25\n  size: 3, 21\n  orig: 5, 23\n  offset: 1, 1\n  index: -1\nGuang20\n  rotate: true\n  xy: 336, 265\n  size: 4, 150\n  orig: 6, 152\n  offset: 1, 1\n  index: -1\nGuang21\n  rotate: false\n  xy: 1009, 615\n  size: 13, 160\n  orig: 15, 162\n  offset: 1, 1\n  index: -1\nGuang28\n  rotate: true\n  xy: 929, 86\n  size: 84, 90\n  orig: 86, 92\n  offset: 1, 1\n  index: -1\nGuang3\n  rotate: false\n  xy: 918, 387\n  size: 3, 31\n  orig: 5, 33\n  offset: 1, 1\n  index: -1\nGuang4\n  rotate: false\n  xy: 999, 467\n  size: 3, 41\n  orig: 5, 43\n  offset: 1, 1\n  index: -1\nGuang5\n  rotate: false\n  xy: 928, 518\n  size: 3, 51\n  orig: 5, 53\n  offset: 1, 1\n  index: -1\nGuang50\n  rotate: true\n  xy: 1017, 872\n  size: 150, 3\n  orig: 152, 5\n  offset: 1, 1\n  index: -1\nGuang51\n  rotate: true\n  xy: 340, 614\n  size: 150, 7\n  orig: 152, 9\n  offset: 1, 1\n  index: -1\nGuang54\n  rotate: false\n  xy: 896, 48\n  size: 126, 36\n  orig: 128, 38\n  offset: 1, 1\n  index: -1\nGuang6\n  rotate: false\n  xy: 1014, 262\n  size: 3, 61\n  orig: 5, 63\n  offset: 1, 1\n  index: -1\nGuang62\n  rotate: true\n  xy: 896, 2\n  size: 44, 116\n  orig: 46, 118\n  offset: 1, 1\n  index: -1\nGuang66\n  rotate: true\n  xy: 226, 2\n  size: 6, 152\n  orig: 8, 154\n  offset: 1, 1\n  index: -1\nGuang67\n  rotate: true\n  xy: 381, 13\n  size: 3, 150\n  orig: 5, 152\n  offset: 1, 1\n  index: -1\nGuang7\n  rotate: false\n  xy: 1009, 252\n  size: 3, 71\n  orig: 5, 73\n  offset: 1, 1\n  index: -1\nGuang73\n  rotate: false\n  xy: 918, 420\n  size: 8, 149\n  orig: 10, 151\n  offset: 1, 1\n  index: -1\nGuang79\n  rotate: true\n  xy: 929, 172\n  size: 68, 93\n  orig: 70, 95\n  offset: 1, 1\n  index: -1\nGuang8\n  rotate: false\n  xy: 999, 242\n  size: 3, 81\n  orig: 5, 83\n  offset: 1, 1\n  index: -1\nGuang86\n  rotate: true\n  xy: 999, 325\n  size: 138, 23\n  orig: 140, 25\n  offset: 1, 1\n  index: -1\nGuang87\n  rotate: true\n  xy: 1009, 465\n  size: 148, 13\n  orig: 150, 15\n  offset: 1, 1\n  index: -1\nGuang88\n  rotate: false\n  xy: 226, 10\n  size: 153, 6\n  orig: 155, 8\n  offset: 1, 1\n  index: -1\nGuang89\n  rotate: false\n  xy: 380, 4\n  size: 150, 3\n  orig: 152, 5\n  offset: 1, 1\n  index: -1\nGuang9\n  rotate: false\n  xy: 1017, 779\n  size: 3, 91\n  orig: 5, 93\n  offset: 1, 1\n  index: -1\nHuanghuangyan\n  rotate: true\n  xy: 560, 4\n  size: 265, 67\n  orig: 267, 69\n  offset: 1, 1\n  index: -1\nHuangkuang\n  rotate: false\n  xy: 349, 777\n  size: 332, 245\n  orig: 334, 247\n  offset: 1, 1\n  index: -1\nHuangniuniu1\n  rotate: true\n  xy: 604, 306\n  size: 91, 21\n  orig: 93, 23\n  offset: 1, 1\n  index: -1\nHuangwahua\n  rotate: true\n  xy: 939, 510\n  size: 265, 68\n  orig: 265, 68\n  offset: 0, 0\n  index: -1\nHuangwahua1\n  rotate: false\n  xy: 336, 300\n  size: 265, 27\n  orig: 265, 27\n  offset: 0, 0\n  index: -1\nHuangwenlingmajiang\n  rotate: false\n  xy: 336, 329\n  size: 266, 68\n  orig: 266, 68\n  offset: 0, 0\n  index: -1\nHuangwenlingmajiang1\n  rotate: false\n  xy: 336, 271\n  size: 265, 27\n  orig: 266, 27\n  offset: 0, 0\n  index: -1\nHuangyanmajiang\n  rotate: false\n  xy: 629, 184\n  size: 229, 184\n  orig: 246, 197\n  offset: 16, 12\n  index: -1\nKuang\n  rotate: false\n  xy: 2, 766\n  size: 345, 256\n  orig: 347, 258\n  offset: 1, 1\n  index: -1\nKuangying\n  rotate: false\n  xy: 2, 512\n  size: 336, 252\n  orig: 338, 254\n  offset: 1, 1\n  index: -1\nLangkuang\n  rotate: false\n  xy: 2, 265\n  size: 332, 245\n  orig: 334, 247\n  offset: 1, 1\n  index: -1\nLanhuangyan\n  rotate: true\n  xy: 860, 103\n  size: 265, 67\n  orig: 267, 69\n  offset: 1, 1\n  index: -1\nLanwahua1\n  rotate: false\n  xy: 629, 40\n  size: 265, 27\n  orig: 265, 27\n  offset: 0, 0\n  index: -1\nLanwenlingmajiang\n  rotate: true\n  xy: 929, 242\n  size: 266, 68\n  orig: 266, 68\n  offset: 0, 0\n  index: -1\nLanwenlingmajiang1\n  rotate: false\n  xy: 629, 11\n  size: 265, 27\n  orig: 266, 27\n  offset: 0, 0\n  index: -1\nLvkuang\n  rotate: false\n  xy: 683, 777\n  size: 332, 245\n  orig: 334, 247\n  offset: 1, 1\n  index: -1\nNiuniu\n  rotate: false\n  xy: 630, 370\n  size: 286, 199\n  orig: 294, 210\n  offset: 7, 10\n  index: -1\nSangong\n  rotate: false\n  xy: 349, 585\n  size: 297, 190\n  orig: 309, 190\n  offset: 12, 0\n  index: -1\nWahua\n  rotate: false\n  xy: 340, 399\n  size: 288, 184\n  orig: 288, 184\n  offset: 0, 0\n  index: -1\nWenlinlingmajiang\n  rotate: true\n  xy: 2, 2\n  size: 261, 222\n  orig: 261, 222\n  offset: 0, 0\n  index: -1\nXian\n  rotate: false\n  xy: 629, 2\n  size: 137, 7\n  orig: 137, 7\n  offset: 0, 0\n  index: -1\nZikuang\n  rotate: false\n  xy: 226, 18\n  size: 332, 245\n  orig: 334, 247\n  offset: 1, 1\n  index: -1\n\nDaanniu2.png\nsize: 1024,512\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nGuang100\n  rotate: false\n  xy: 644, 8\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang101\n  rotate: false\n  xy: 644, 4\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang102\n  rotate: false\n  xy: 726, 182\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang103\n  rotate: false\n  xy: 772, 276\n  size: 150, 3\n  orig: 152, 5\n  offset: 1, 1\n  index: -1\nGuang104\n  rotate: false\n  xy: 2, 13\n  size: 140, 3\n  orig: 142, 5\n  offset: 1, 1\n  index: -1\nGuang105\n  rotate: false\n  xy: 864, 215\n  size: 130, 3\n  orig: 132, 5\n  offset: 1, 1\n  index: -1\nGuang109\n  rotate: false\n  xy: 492, 2\n  size: 90, 3\n  orig: 92, 5\n  offset: 1, 1\n  index: -1\nGuang13\n  rotate: true\n  xy: 343, 8\n  size: 2, 130\n  orig: 4, 132\n  offset: 1, 1\n  index: -1\nGuang14\n  rotate: true\n  xy: 2, 9\n  size: 2, 140\n  orig: 4, 142\n  offset: 1, 1\n  index: -1\nGuang15\n  rotate: true\n  xy: 343, 4\n  size: 2, 147\n  orig: 4, 149\n  offset: 1, 1\n  index: -1\nGuang17\n  rotate: true\n  xy: 448, 125\n  size: 2, 149\n  orig: 4, 151\n  offset: 1, 1\n  index: -1\nGuang18\n  rotate: true\n  xy: 804, 482\n  size: 2, 150\n  orig: 4, 152\n  offset: 1, 1\n  index: -1\nGuang19\n  rotate: true\n  xy: 448, 27\n  size: 2, 147\n  orig: 4, 149\n  offset: 1, 1\n  index: -1\nGuang22\n  rotate: true\n  xy: 804, 486\n  size: 24, 151\n  orig: 26, 153\n  offset: 1, 1\n  index: -1\nGuang23\n  rotate: true\n  xy: 147, 70\n  size: 34, 141\n  orig: 36, 143\n  offset: 1, 1\n  index: -1\nGuang24\n  rotate: true\n  xy: 536, 392\n  size: 44, 130\n  orig: 46, 132\n  offset: 1, 1\n  index: -1\nGuang25\n  rotate: false\n  xy: 290, 136\n  size: 54, 120\n  orig: 56, 122\n  offset: 1, 1\n  index: -1\nGuang26\n  rotate: true\n  xy: 414, 262\n  size: 64, 110\n  orig: 66, 112\n  offset: 1, 1\n  index: -1\nGuang27\n  rotate: true\n  xy: 693, 384\n  size: 74, 100\n  orig: 76, 102\n  offset: 1, 1\n  index: -1\nGuang29\n  rotate: false\n  xy: 504, 175\n  size: 94, 80\n  orig: 96, 82\n  offset: 1, 1\n  index: -1\nGuang30\n  rotate: false\n  xy: 795, 382\n  size: 104, 70\n  orig: 106, 72\n  offset: 1, 1\n  index: -1\nGuang31\n  rotate: true\n  xy: 346, 142\n  size: 114, 60\n  orig: 116, 62\n  offset: 1, 1\n  index: -1\nGuang32\n  rotate: false\n  xy: 526, 275\n  size: 124, 50\n  orig: 126, 52\n  offset: 1, 1\n  index: -1\nGuang33\n  rotate: false\n  xy: 536, 350\n  size: 134, 40\n  orig: 136, 42\n  offset: 1, 1\n  index: -1\nGuang34\n  rotate: false\n  xy: 797, 454\n  size: 144, 26\n  orig: 146, 28\n  offset: 1, 1\n  index: -1\nGuang35\n  rotate: false\n  xy: 537, 438\n  size: 154, 20\n  orig: 156, 22\n  offset: 1, 1\n  index: -1\nGuang36\n  rotate: false\n  xy: 772, 272\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang37\n  rotate: false\n  xy: 448, 121\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang38\n  rotate: false\n  xy: 448, 117\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang39\n  rotate: false\n  xy: 448, 113\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang40\n  rotate: false\n  xy: 448, 109\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang41\n  rotate: false\n  xy: 448, 105\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang42\n  rotate: false\n  xy: 448, 101\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang43\n  rotate: false\n  xy: 448, 23\n  size: 148, 2\n  orig: 150, 4\n  offset: 1, 1\n  index: -1\nGuang44\n  rotate: false\n  xy: 448, 97\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang45\n  rotate: false\n  xy: 448, 93\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang46\n  rotate: false\n  xy: 448, 89\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang47\n  rotate: false\n  xy: 475, 11\n  size: 147, 2\n  orig: 149, 4\n  offset: 1, 1\n  index: -1\nGuang48\n  rotate: false\n  xy: 448, 85\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang49\n  rotate: false\n  xy: 448, 81\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang52\n  rotate: false\n  xy: 526, 257\n  size: 141, 16\n  orig: 143, 18\n  offset: 1, 1\n  index: -1\nGuang53\n  rotate: false\n  xy: 670, 319\n  size: 136, 26\n  orig: 138, 28\n  offset: 1, 1\n  index: -1\nGuang55\n  rotate: false\n  xy: 808, 299\n  size: 116, 46\n  orig: 118, 48\n  offset: 1, 1\n  index: -1\nGuang56\n  rotate: true\n  xy: 446, 154\n  size: 106, 56\n  orig: 108, 58\n  offset: 1, 1\n  index: -1\nGuang57\n  rotate: false\n  xy: 147, 2\n  size: 96, 66\n  orig: 98, 68\n  offset: 1, 1\n  index: -1\nGuang58\n  rotate: true\n  xy: 600, 169\n  size: 86, 76\n  orig: 88, 78\n  offset: 1, 1\n  index: -1\nGuang59\n  rotate: false\n  xy: 678, 187\n  size: 76, 86\n  orig: 78, 88\n  offset: 1, 1\n  index: -1\nGuang60\n  rotate: true\n  xy: 245, 2\n  size: 66, 96\n  orig: 68, 98\n  offset: 1, 1\n  index: -1\nGuang61\n  rotate: true\n  xy: 756, 214\n  size: 56, 106\n  orig: 58, 108\n  offset: 1, 1\n  index: -1\nGuang63\n  rotate: false\n  xy: 408, 130\n  size: 36, 126\n  orig: 38, 128\n  offset: 1, 1\n  index: -1\nGuang64\n  rotate: true\n  xy: 756, 186\n  size: 26, 136\n  orig: 28, 138\n  offset: 1, 1\n  index: -1\nGuang65\n  rotate: true\n  xy: 772, 281\n  size: 16, 146\n  orig: 18, 148\n  offset: 1, 1\n  index: -1\nGuang68\n  rotate: true\n  xy: 448, 19\n  size: 2, 150\n  orig: 4, 152\n  offset: 1, 1\n  index: -1\nGuang69\n  rotate: true\n  xy: 448, 15\n  size: 2, 150\n  orig: 4, 152\n  offset: 1, 1\n  index: -1\nGuang70\n  rotate: true\n  xy: 492, 7\n  size: 2, 150\n  orig: 4, 152\n  offset: 1, 1\n  index: -1\nGuang71\n  rotate: true\n  xy: 574, 52\n  size: 2, 150\n  orig: 4, 152\n  offset: 1, 1\n  index: -1\nGuang72\n  rotate: true\n  xy: 2, 4\n  size: 3, 134\n  orig: 5, 136\n  offset: 1, 1\n  index: -1\nGuang74\n  rotate: true\n  xy: 2, 18\n  size: 15, 143\n  orig: 17, 145\n  offset: 1, 1\n  index: -1\nGuang75\n  rotate: true\n  xy: 448, 31\n  size: 25, 124\n  orig: 27, 126\n  offset: 1, 1\n  index: -1\nGuang76\n  rotate: true\n  xy: 672, 347\n  size: 35, 119\n  orig: 37, 121\n  offset: 1, 1\n  index: -1\nGuang77\n  rotate: true\n  xy: 894, 167\n  size: 46, 110\n  orig: 48, 112\n  offset: 1, 1\n  index: -1\nGuang78\n  rotate: true\n  xy: 343, 12\n  size: 57, 103\n  orig: 59, 105\n  offset: 1, 1\n  index: -1\nGuang80\n  rotate: true\n  xy: 943, 402\n  size: 78, 79\n  orig: 80, 81\n  offset: 1, 1\n  index: -1\nGuang81\n  rotate: true\n  xy: 600, 79\n  size: 88, 73\n  orig: 90, 75\n  offset: 1, 1\n  index: -1\nGuang82\n  rotate: false\n  xy: 290, 71\n  size: 98, 63\n  orig: 100, 65\n  offset: 1, 1\n  index: -1\nGuang83\n  rotate: false\n  xy: 864, 220\n  size: 108, 50\n  orig: 110, 52\n  offset: 1, 1\n  index: -1\nGuang84\n  rotate: false\n  xy: 652, 275\n  size: 118, 42\n  orig: 120, 44\n  offset: 1, 1\n  index: -1\nGuang85\n  rotate: false\n  xy: 793, 347\n  size: 128, 33\n  orig: 130, 35\n  offset: 1, 1\n  index: -1\nGuang90\n  rotate: false\n  xy: 574, 48\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang91\n  rotate: false\n  xy: 574, 44\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang92\n  rotate: false\n  xy: 574, 40\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang93\n  rotate: false\n  xy: 574, 36\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang94\n  rotate: false\n  xy: 574, 32\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang95\n  rotate: false\n  xy: 597, 28\n  size: 149, 2\n  orig: 151, 4\n  offset: 1, 1\n  index: -1\nGuang96\n  rotate: false\n  xy: 598, 24\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang97\n  rotate: false\n  xy: 600, 20\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang98\n  rotate: false\n  xy: 600, 16\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nGuang99\n  rotate: false\n  xy: 624, 12\n  size: 150, 2\n  orig: 152, 4\n  offset: 1, 1\n  index: -1\nHuanghuangyan1\n  rotate: false\n  xy: 537, 460\n  size: 258, 21\n  orig: 260, 23\n  offset: 1, 1\n  index: -1\nHuangniuniu\n  rotate: false\n  xy: 2, 178\n  size: 143, 71\n  orig: 145, 73\n  offset: 1, 1\n  index: -1\nHuangsangong\n  rotate: false\n  xy: 2, 35\n  size: 143, 68\n  orig: 145, 70\n  offset: 1, 1\n  index: -1\nHuangsangong1\n  rotate: false\n  xy: 529, 327\n  size: 139, 21\n  orig: 141, 23\n  offset: 1, 1\n  index: -1\nLanhuangyan1\n  rotate: false\n  xy: 2, 251\n  size: 258, 21\n  orig: 260, 23\n  offset: 1, 1\n  index: -1\nLanniuniu\n  rotate: false\n  xy: 2, 105\n  size: 143, 71\n  orig: 145, 73\n  offset: 1, 1\n  index: -1\nLanniuniu1\n  rotate: false\n  xy: 504, 152\n  size: 91, 21\n  orig: 93, 23\n  offset: 1, 1\n  index: -1\nLansangong\n  rotate: false\n  xy: 269, 258\n  size: 143, 68\n  orig: 145, 70\n  offset: 1, 1\n  index: -1\nLansangong1\n  rotate: false\n  xy: 446, 129\n  size: 139, 21\n  orig: 141, 23\n  offset: 1, 1\n  index: -1\nLanwahua\n  rotate: false\n  xy: 2, 372\n  size: 265, 68\n  orig: 265, 68\n  offset: 0, 0\n  index: -1\nLvyouxi\n  rotate: false\n  xy: 269, 374\n  size: 265, 66\n  orig: 267, 68\n  offset: 1, 1\n  index: -1\nLvyouxi1\n  rotate: false\n  xy: 269, 351\n  size: 263, 21\n  orig: 265, 23\n  offset: 1, 1\n  index: -1\nZihuangyan\n  rotate: false\n  xy: 2, 303\n  size: 265, 67\n  orig: 267, 69\n  offset: 1, 1\n  index: -1\nZihuangyan1\n  rotate: false\n  xy: 269, 328\n  size: 258, 21\n  orig: 260, 23\n  offset: 1, 1\n  index: -1\nZiniuniu\n  rotate: true\n  xy: 147, 106\n  size: 143, 71\n  orig: 145, 73\n  offset: 1, 1\n  index: -1\nZiniuniu1\n  rotate: false\n  xy: 589, 56\n  size: 91, 21\n  orig: 93, 23\n  offset: 1, 1\n  index: -1\nZisangong\n  rotate: true\n  xy: 220, 106\n  size: 143, 68\n  orig: 145, 70\n  offset: 1, 1\n  index: -1\nZisangong1\n  rotate: false\n  xy: 448, 58\n  size: 139, 21\n  orig: 141, 23\n  offset: 1, 1\n  index: -1\nZiwahua\n  rotate: false\n  xy: 270, 442\n  size: 265, 68\n  orig: 265, 68\n  offset: 0, 0\n  index: -1\nZiwahua1\n  rotate: false\n  xy: 537, 483\n  size: 265, 27\n  orig: 265, 27\n  offset: 0, 0\n  index: -1\nZiwenlingmajiang\n  rotate: false\n  xy: 2, 442\n  size: 266, 68\n  orig: 266, 68\n  offset: 0, 0\n  index: -1\nZiwenlingmajiang1\n  rotate: false\n  xy: 2, 274\n  size: 265, 27\n  orig: 266, 27\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "d5718a2d-51c9-4fbc-a5e5-07cd9d91713e"
+  },
+  "textures": [
+    {
+      "__uuid__": "47b7ca93-40bb-43d3-bee9-db251fad31d2"
+    },
+    {
+      "__uuid__": "f2572132-ebc2-4c29-80eb-ce60ce8fc4a7"
+    }
+  ],
+  "scale": 1
+}

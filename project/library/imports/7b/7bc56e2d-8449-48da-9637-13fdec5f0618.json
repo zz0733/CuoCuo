@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Ganghua",
+    "texture": "2e1d767a-6d69-495e-95c1-bead1cf6f34b",
+    "atlas": "",
+    "rect": [
+      2,
+      3,
+      507,
+      123
+    ],
+    "offset": [
+      -0.5,
+      -0.5
+    ],
+    "originalSize": [
+      512,
+      128
+    ]
+  }
+}

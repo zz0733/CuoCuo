@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "SShu",
+    "texture": "07750073-df63-4d17-a702-81b278789211",
+    "atlas": "",
+    "rect": [
+      4,
+      8,
+      990,
+      962
+    ],
+    "offset": [
+      -13,
+      23
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_fx_mj1",
+    "texture": "8b523d2d-8659-4ce7-81db-2568e3a58aea",
+    "atlas": "cb8de06e-0e7b-4d49-8f6f-a231862d1216",
+    "rect": [
+      328,
+      1346,
+      94,
+      76
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      94,
+      78
+    ]
+  }
+}

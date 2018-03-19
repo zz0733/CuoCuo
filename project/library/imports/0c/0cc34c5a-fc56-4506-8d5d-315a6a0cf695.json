@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Guangbiao",
+    "texture": "e51c371f-7224-4a95-a22e-c852d03e1b73",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      121,
+      223
+    ],
+    "offset": [
+      -1.5,
+      14.5
+    ],
+    "originalSize": [
+      128,
+      256
+    ]
+  }
+}

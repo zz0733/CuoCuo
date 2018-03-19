@@ -1,0 +1,69 @@
+
+images.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+CChi
+  rotate: false
+  xy: 2, 121
+  size: 305, 85
+  orig: 309, 85
+  offset: 2, 0
+  index: -1
+Chi
+  rotate: false
+  xy: 711, 365
+  size: 268, 79
+  orig: 309, 85
+  offset: 20, 3
+  index: -1
+GGang
+  rotate: false
+  xy: 400, 359
+  size: 309, 85
+  orig: 309, 85
+  offset: 0, 0
+  index: -1
+Gang
+  rotate: false
+  xy: 400, 282
+  size: 271, 75
+  orig: 309, 85
+  offset: 19, 5
+  index: -1
+Huang
+  rotate: false
+  xy: 518, 210
+  size: 133, 70
+  orig: 309, 90
+  offset: 88, 11
+  index: -1
+Shuimo1
+  rotate: false
+  xy: 347, 173
+  size: 169, 107
+  orig: 396, 117
+  offset: 0, 0
+  index: -1
+Shuimo2
+  rotate: false
+  xy: 2, 2
+  size: 265, 117
+  orig: 396, 117
+  offset: 0, 0
+  index: -1
+Shuimo3
+  rotate: false
+  xy: 2, 208
+  size: 343, 117
+  orig: 396, 117
+  offset: 0, 0
+  index: -1
+Shuimo4
+  rotate: false
+  xy: 2, 327
+  size: 396, 117
+  orig: 396, 117
+  offset: 0, 0
+  index: -1

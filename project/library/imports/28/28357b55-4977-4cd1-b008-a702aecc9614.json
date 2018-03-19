@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Shu2",
+    "texture": "4d1896ab-c5da-47aa-a283-f695f3c668ce",
+    "atlas": "",
+    "rect": [
+      4,
+      8,
+      990,
+      962
+    ],
+    "offset": [
+      -13,
+      23
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}
