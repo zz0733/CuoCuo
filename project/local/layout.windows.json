@@ -5,9 +5,9 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 42,
+      "x": 76,
       "y": 22,
-      "width": 1238,
+      "width": 1280,
       "height": 720,
       "layout": {
         "children": [
@@ -39,29 +39,13 @@
           {
             "children": [
               {
+                "active": 0,
                 "children": [
-                  {
-                    "active": 0,
-                    "children": [
-                      "scene"
-                    ],
-                    "height": 326,
-                    "type": "panel",
-                    "width": 511
-                  },
-                  {
-                    "active": 0,
-                    "children": [
-                      "node-library"
-                    ],
-                    "height": 326,
-                    "type": "panel",
-                    "width": 204
-                  }
+                  "scene"
                 ],
-                "height": 326,
-                "type": "dock-h",
-                "width": 718
+                "height": 400,
+                "type": "panel",
+                "width": 760
               },
               {
                 "active": 0,
@@ -69,14 +53,14 @@
                   "console",
                   "timeline"
                 ],
-                "height": 300,
+                "height": 226,
                 "type": "panel",
-                "width": 718
+                "width": 760
               }
             ],
             "height": 629,
             "type": "dock-v",
-            "width": 718
+            "width": 760
           },
           {
             "active": 0,
@@ -91,7 +75,6 @@
         "type": "dock-h"
       },
       "panels": [
-        "node-library",
         "console",
         "inspector",
         "hierarchy",
@@ -101,5 +84,12 @@
       ]
     }
   },
-  "panels": {}
+  "panels": {
+    "preferences": {
+      "x": 646,
+      "y": 268,
+      "width": 564,
+      "height": 548
+    }
+  }
 }

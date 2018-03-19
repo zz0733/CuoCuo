@@ -1,76 +1,52 @@
-2018-03-19T08:03:38.438Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-19T08:03:38.443Z - normal: checking language setting...
-2018-03-19T08:03:38.444Z - normal: Language: zh
-2018-03-19T08:03:39.877Z - success: protocol editor-framework registered
-2018-03-19T08:03:39.877Z - success: protocol app registered
-2018-03-19T08:03:39.878Z - success: protocol theme registered
-2018-03-19T08:03:39.878Z - success: protocol packages registered
-2018-03-19T08:03:39.878Z - success: protocol unpack registerred
-2018-03-19T08:03:39.878Z - success: protocol disable-commonjs registerred
-2018-03-19T08:03:40.179Z - normal: connected!
-2018-03-19T08:03:40.182Z - normal: Check project /Users/wangzili/Desktop/CuoCuo/cuocuo/project
-2018-03-19T08:03:40.194Z - normal: Initializing Cocos2d
-2018-03-19T08:03:40.495Z - normal: Initializing Asset Database
-2018-03-19T08:03:40.552Z - success: protocol uuid registerred
-2018-03-19T08:03:40.552Z - success: protocol db registerred
-2018-03-19T08:03:40.553Z - success: protocol thumbnail registerred
-2018-03-19T08:03:40.553Z - normal: Loading editor/builtin packages
-2018-03-19T08:03:40.595Z - success: anysdk loaded
-2018-03-19T08:03:40.816Z - success: assets loaded
-2018-03-19T08:03:40.822Z - success: builder loaded
-2018-03-19T08:03:40.826Z - success: cocos-analytics loaded
-2018-03-19T08:03:40.834Z - success: console loaded
-2018-03-19T08:03:40.843Z - success: hierarchy loaded
-2018-03-19T08:03:40.850Z - success: inspector loaded
-2018-03-19T08:03:40.852Z - success: keystore loaded
-2018-03-19T08:03:40.860Z - success: node-library loaded
-2018-03-19T08:03:40.864Z - success: package-asset loaded
-2018-03-19T08:03:40.868Z - success: preferences loaded
-2018-03-19T08:03:40.874Z - success: project-exporter loaded
-2018-03-19T08:03:40.900Z - success: project-importer loaded
-2018-03-19T08:03:40.905Z - success: project-settings loaded
-2018-03-19T08:03:40.913Z - success: ui-kit loaded
-2018-03-19T08:03:40.924Z - success: ui-grid loaded
-2018-03-19T08:03:40.931Z - success: scene loaded
-2018-03-19T08:03:40.934Z - success: sprite-editor loaded
-2018-03-19T08:03:40.945Z - success: store loaded
-2018-03-19T08:03:40.956Z - success: timeline loaded
-2018-03-19T08:03:40.957Z - normal: Loading builtin packages
-2018-03-19T08:03:40.964Z - success: asset-db-debugger loaded
-2018-03-19T08:03:40.966Z - success: color-picker loaded
-2018-03-19T08:03:40.973Z - success: package-manager loaded
-2018-03-19T08:03:40.984Z - success: sdkbox loaded
-2018-03-19T08:03:40.991Z - success: tester loaded
-2018-03-19T08:03:41.000Z - success: ui-kit-preview-extra loaded
-2018-03-19T08:03:41.012Z - success: ui-kit-preview loaded
-2018-03-19T08:03:41.019Z - success: ui-tree loaded
-2018-03-19T08:03:42.856Z - normal: Initializing project /Users/wangzili/Desktop/CuoCuo/cuocuo/project
-2018-03-19T08:03:42.860Z - normal: Loading packages
-2018-03-19T08:03:42.882Z - warn: The profile of the panel (creator-luacpp-support) needs to be moved to the package root
-2018-03-19T08:03:42.885Z - normal: [LuaCPP Support] version 0.3
-2018-03-19T08:03:42.887Z - success: creator-luacpp-support loaded
-2018-03-19T08:03:42.893Z - warn: The profile of the panel (download-all) needs to be moved to the package root
-2018-03-19T08:03:42.895Z - success: download-all loaded
-2018-03-19T08:03:42.905Z - success: hot-update-tools loaded
-2018-03-19T08:03:42.913Z - normal: package load
-2018-03-19T08:03:42.914Z - success: json-lint loaded
-2018-03-19T08:03:42.918Z - error: Failed to add menu to 扩展,
-          a menu item 扩展/JSONLint you tried to add already exists
-    at Menu.add (/Applications/CocosCreator_1.70.app/Contents/Resources/app.asar/editor-framework/lib/main/menu.js:1:4597)
-    at Object.MainMenu.add (/Applications/CocosCreator_1.70.app/Contents/Resources/app.asar/editor-framework/lib/main/main-menu.js:1:4273)
-    at Async.series.a (/Applications/CocosCreator_1.70.app/Contents/Resources/app.asar/editor-framework/lib/main/package.js:1:2770)
-    at /Applications/CocosCreator_1.70.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:718:13
-    at Immediate.iterate (/Applications/CocosCreator_1.70.app/Contents/Resources/app.asar/node_modules/async/lib/async.js:262:13)
-    at runCallback (timers.js:672:20)
-    at tryOnImmediate (timers.js:645:5)
-    at processImmediate [as _immediateCallback] (timers.js:617:5)
-2018-03-19T08:03:42.919Z - failed: Failed to load panel "panel" from "json-lint", the panelID json-lint already exists
-2018-03-19T08:03:42.919Z - normal: package load
-2018-03-19T08:03:42.920Z - success: json-lint loaded
-2018-03-19T08:03:42.934Z - success: plugin-matchvs loaded
-2018-03-19T08:03:42.945Z - success: resource loaded
-2018-03-19T08:03:43.083Z - success: unpack-textureatlas loaded
-2018-03-19T08:03:43.083Z - normal: Watching packages
-2018-03-19T08:03:43.250Z - normal: Run Application
-2018-03-19T08:04:47.894Z - success: preview server running at http://localhost:7456
-2018-03-19T08:04:57.347Z - normal: 1.7.0
+2018-03-19T07:37:43.341Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-19T07:37:43.353Z - normal: checking language setting...
+2018-03-19T07:37:43.354Z - normal: Language: zh
+2018-03-19T07:37:45.924Z - success: protocol editor-framework registered
+2018-03-19T07:37:45.924Z - success: protocol app registered
+2018-03-19T07:37:45.925Z - success: protocol theme registered
+2018-03-19T07:37:45.925Z - success: protocol packages registered
+2018-03-19T07:37:45.925Z - success: protocol unpack registerred
+2018-03-19T07:37:45.925Z - success: protocol disable-commonjs registerred
+2018-03-19T07:37:46.207Z - normal: connected!
+2018-03-19T07:37:46.210Z - normal: Check project /Users/youle/Desktop/project
+2018-03-19T07:37:46.215Z - normal: Initializing Cocos2d
+2018-03-19T07:37:46.908Z - normal: Initializing Asset Database
+2018-03-19T07:37:47.047Z - success: protocol uuid registerred
+2018-03-19T07:37:47.048Z - success: protocol db registerred
+2018-03-19T07:37:47.048Z - success: protocol thumbnail registerred
+2018-03-19T07:37:47.049Z - normal: Loading editor/builtin packages
+2018-03-19T07:37:47.138Z - success: anysdk loaded
+2018-03-19T07:37:47.556Z - success: assets loaded
+2018-03-19T07:37:47.574Z - success: builder loaded
+2018-03-19T07:37:47.585Z - success: cocos-analytics loaded
+2018-03-19T07:37:47.604Z - success: console loaded
+2018-03-19T07:37:47.623Z - success: hierarchy loaded
+2018-03-19T07:37:47.641Z - success: inspector loaded
+2018-03-19T07:37:47.649Z - success: keystore loaded
+2018-03-19T07:37:47.661Z - success: node-library loaded
+2018-03-19T07:37:47.665Z - success: package-asset loaded
+2018-03-19T07:37:47.671Z - success: preferences loaded
+2018-03-19T07:37:47.682Z - success: project-exporter loaded
+2018-03-19T07:37:47.738Z - success: project-importer loaded
+2018-03-19T07:37:47.754Z - success: project-settings loaded
+2018-03-19T07:37:47.769Z - success: ui-kit loaded
+2018-03-19T07:37:47.790Z - success: ui-grid loaded
+2018-03-19T07:37:47.808Z - success: scene loaded
+2018-03-19T07:37:47.815Z - success: sprite-editor loaded
+2018-03-19T07:37:47.833Z - success: store loaded
+2018-03-19T07:37:47.853Z - success: timeline loaded
+2018-03-19T07:37:47.854Z - normal: Loading builtin packages
+2018-03-19T07:37:47.870Z - success: asset-db-debugger loaded
+2018-03-19T07:37:47.872Z - success: color-picker loaded
+2018-03-19T07:37:47.887Z - success: package-manager loaded
+2018-03-19T07:37:47.905Z - success: sdkbox loaded
+2018-03-19T07:37:47.918Z - success: tester loaded
+2018-03-19T07:37:47.934Z - success: ui-kit-preview-extra loaded
+2018-03-19T07:37:47.943Z - success: ui-kit-preview loaded
+2018-03-19T07:37:47.952Z - success: ui-tree loaded
+2018-03-19T07:37:51.207Z - normal: Initializing project /Users/youle/Desktop/project
+2018-03-19T07:37:51.215Z - normal: Loading packages
+2018-03-19T07:37:51.225Z - normal: Watching packages
+2018-03-19T07:37:51.263Z - normal: Run Application
+2018-03-19T07:38:35.879Z - success: preview server running at http://localhost:7456
+2018-03-19T07:39:03.093Z - normal: 1.7.0
