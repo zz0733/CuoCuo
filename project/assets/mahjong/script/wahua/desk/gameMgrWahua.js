@@ -1,10 +1,3 @@
-const JiaWeiEnum = cc.Enum({
-    tianjia: 0,
-    dijia: 1,
-    yinpai: 2,
-    changsan: 3,
-});
-const JiaWeiArr = ['tianjia', 'dijia', 'yinpai', 'changsan'];
 const WhUtils = require('whUtils');
 
 cc.Class({
@@ -51,6 +44,7 @@ cc.Class({
 
     start() {
         this.reconnet();
+
     },
 
     registerListener() {
@@ -130,12 +124,38 @@ cc.Class({
     reconnet() {
         let roomInfo = fun.db.getData('RoomInfo');
         if(!roomInfo.userMap) return;
-        let selfReadyState = roomInfo.userMap[this._userId].currentState;
+        let roomRule = roomInfo.roomRule;
+        let userMap = roomInfo.userMap;
+        let selfReadyState = userMap[this._userId].currentState;
         this.setReadyState(selfReadyState === 0 ? true : false);
-        if (roomInfo.roomRule.nowZhuangjia) {
-            this.setJiaWeiShow(roomInfo.roomRule.nowZhuangjia);
+        if (roomRule.nowZhuangjia) {
+            this.setJiaWeiShow(roomRule.nowZhuangjia);
         }
+        if (roomRule.rollChessDice) {
+            this.showYaoZhang(roomRule.rollChessDice, true);
+        }
+        for (let id in userMap) {
+            if (!userMap[id].alreadyChess) return;
+            this.showCardById(id, userMap[id].alreadyChess);
+        }
+    },
 
+    showYaoZhang(yaozhang, isReconnet) {
+        let yzNode = this.node.getChildByName('yaozhang');
+        for (let i=0; i<yaozhang.length; ++i) {
+            let yz = WhUtils.getCardById(yaozhang[i]);
+            let yzCard = yzNode.getChildByName('card'+(i+1)).getComponent(cc.Sprite);
+            yzCard.spriteFrame = this.paiMianAltas.getSpriteFrame(yz);
+        }
+        if (isReconnet) {
+            yzNode.active = true;
+        }
+    },
+
+    showCardById(id, cards) {
+        let seat = this.getSeatByUserId(id);
+        if(!seat) return;
+        seat.ui.setCardShow(cards);
     },
 
     setReadyState(flag) {
@@ -146,6 +166,7 @@ cc.Class({
     },
 
     setJiaWeiShow(id) {
+        this.node.getChildByName('roomDescScrollView').active = false;
         let tSeat = this.getSeatByUserId(id);
         let tPos = tSeat.pos;
         let newSeat = new Array(); // 0-天家 1-地家 2-银牌 3-长三
@@ -239,17 +260,18 @@ cc.Class({
         cc.log('onBankerIn--------', data);
         this._gameStatu = 2;
         this.setJiaWeiShow(data.Zhuangjia);
-        this.node.getChildByName('roomDescScrollView').active = false;
+        this.setReadyState(false);
+        for(let i=0; i<this._seat.length; ++i){
+            if (this._seat[i]) {
+                this._seat[i].ui.showReady(false);
+            }
+        }
     },
 
     onRockCardIn(data) {
         cc.log('onRockCardIn--------', data);
         let yzNode = this.node.getChildByName('yaozhang');
-        for (let i=0; i<data.rollChessDice.length; ++i) {
-            let yz = WhUtils.getCardById(data.rollChessDice[i]);
-            let yzCard = yzNode.getChildByName('card'+(i+1)).getComponent(cc.Sprite);
-            yzCard.spriteFrame = this.paiMianAltas.getSpriteFrame(yz);
-        }
+        this.showYaoZhang(data.rollChessDice);
         let szCallback = function(){
             yzNode.active = true;
         };
@@ -268,6 +290,7 @@ cc.Class({
 
     onStartGameIn(data) {
         cc.log('onStartGameIn--------', data);
+        this.showCardById(this._userId, data.alreadyChess);
     },
 
     onPlayCardIn(data) {

@@ -1,4 +1,11 @@
+const SeatEnum = cc.Enum({
+    xia: 0,
+    you: 1,
+    shang: 2,
+    zuo: 3,
+});
 const JiaWeiArr = ['tianjia', 'dijia', 'yinpai', 'changsan'];
+const WhDefine = require('whDefine');
 
 cc.Class({
     extends: cc.Component,
@@ -73,6 +80,41 @@ cc.Class({
             type: cc.Node,
             default: null,
         },
+
+        xiaPaiPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
+        shangPaiPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
+        zuoPaiPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
+        youPaiPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
+        xiaPengPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
+        shangPengPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
+        hengPengPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
     },
 
     onLoad () {
@@ -107,7 +149,81 @@ cc.Class({
         if(data.currentState === 1){
             this.showReady(true);
         }
+        this._uipos = uipos;
+        this.initPool();
         fun.event.dispatch('wahuaInitCompleted', uipos);
+    },
+
+    gameDestory() {
+        this._cardPool = [];
+    },
+
+    initPool() {
+        cc.log('--- 1.this._uipos: ', this._uipos)
+        let paiPerfabName = 'xiaPaiPrefab';
+        switch(this._uipos){
+            case SeatEnum.xia:
+                paiPerfabName = 'xiaPaiPrefab';
+                break;
+            case SeatEnum.you:
+                paiPerfabName = 'youPaiPrefab';
+                break;
+            case SeatEnum.shang:
+                paiPerfabName = 'shangPaiPrefab';
+                break;
+            case SeatEnum.zuo:
+                paiPerfabName = 'zuoPaiPrefab';
+                break;
+            default:
+                cc.error(' --- this._uipos no exit. ---');
+                break;
+        }
+        cc.log('--- pos, paiPerfabName: ', pos, paiPerfabName);
+        this._cardPool = new cc.NodePool();
+        for (let i=0; i<WhDefine.InitCardsNumber; ++i) {
+            let pai = cc.instantiate(this[paiPerfabName]);
+            this._cardPool.put(pai);
+        }
+    },
+
+    setXiaPai(cards) {
+        this._xiaPaiArr = new Array();
+        for(let i=0; i<cards.length; ++i){
+            this._xiaPaiArr[i] = this._xiaPai.get();
+            this._xiaPaiArr[i].setPosition(cc.p(i*80, 0));
+            this._xiaPaiArr[i].parent = this.node;
+            let pai = this._xiaPaiArr[i].getChildByName('content').getComponent(cc.Sprite);
+            pai.spriteFrame = this.paiMianAltas.getSpriteFrame(cards);
+        }
+    },
+    setYouPai(cards) {
+
+    },
+    setShangPai(cards) {
+
+    },
+    setZuoPai(cards) {
+
+    },
+
+    setCardShow(cards) {
+        cc.log('--- 2.this._uipos: ', this._uipos)
+        switch(this._uipos){
+            case SeatEnum.xia:
+                this.setXiaPai(cards);
+                break;
+            case SeatEnum.you:
+                this.setYouPai(cards);
+                break;
+            case SeatEnum.shang:
+                this.setShangPai(cards);
+                break;
+            case SeatEnum.zuo:
+                this.setZuoPai(cards);
+                break;
+            default:
+                break;
+        }
     },
 
     setScore(score = 0) {
