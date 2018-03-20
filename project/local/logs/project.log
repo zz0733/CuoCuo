@@ -1,52 +1,55 @@
-2018-03-19T07:37:43.341Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-19T07:37:43.353Z - normal: checking language setting...
-2018-03-19T07:37:43.354Z - normal: Language: zh
-2018-03-19T07:37:45.924Z - success: protocol editor-framework registered
-2018-03-19T07:37:45.924Z - success: protocol app registered
-2018-03-19T07:37:45.925Z - success: protocol theme registered
-2018-03-19T07:37:45.925Z - success: protocol packages registered
-2018-03-19T07:37:45.925Z - success: protocol unpack registerred
-2018-03-19T07:37:45.925Z - success: protocol disable-commonjs registerred
-2018-03-19T07:37:46.207Z - normal: connected!
-2018-03-19T07:37:46.210Z - normal: Check project /Users/youle/Desktop/project
-2018-03-19T07:37:46.215Z - normal: Initializing Cocos2d
-2018-03-19T07:37:46.908Z - normal: Initializing Asset Database
-2018-03-19T07:37:47.047Z - success: protocol uuid registerred
-2018-03-19T07:37:47.048Z - success: protocol db registerred
-2018-03-19T07:37:47.048Z - success: protocol thumbnail registerred
-2018-03-19T07:37:47.049Z - normal: Loading editor/builtin packages
-2018-03-19T07:37:47.138Z - success: anysdk loaded
-2018-03-19T07:37:47.556Z - success: assets loaded
-2018-03-19T07:37:47.574Z - success: builder loaded
-2018-03-19T07:37:47.585Z - success: cocos-analytics loaded
-2018-03-19T07:37:47.604Z - success: console loaded
-2018-03-19T07:37:47.623Z - success: hierarchy loaded
-2018-03-19T07:37:47.641Z - success: inspector loaded
-2018-03-19T07:37:47.649Z - success: keystore loaded
-2018-03-19T07:37:47.661Z - success: node-library loaded
-2018-03-19T07:37:47.665Z - success: package-asset loaded
-2018-03-19T07:37:47.671Z - success: preferences loaded
-2018-03-19T07:37:47.682Z - success: project-exporter loaded
-2018-03-19T07:37:47.738Z - success: project-importer loaded
-2018-03-19T07:37:47.754Z - success: project-settings loaded
-2018-03-19T07:37:47.769Z - success: ui-kit loaded
-2018-03-19T07:37:47.790Z - success: ui-grid loaded
-2018-03-19T07:37:47.808Z - success: scene loaded
-2018-03-19T07:37:47.815Z - success: sprite-editor loaded
-2018-03-19T07:37:47.833Z - success: store loaded
-2018-03-19T07:37:47.853Z - success: timeline loaded
-2018-03-19T07:37:47.854Z - normal: Loading builtin packages
-2018-03-19T07:37:47.870Z - success: asset-db-debugger loaded
-2018-03-19T07:37:47.872Z - success: color-picker loaded
-2018-03-19T07:37:47.887Z - success: package-manager loaded
-2018-03-19T07:37:47.905Z - success: sdkbox loaded
-2018-03-19T07:37:47.918Z - success: tester loaded
-2018-03-19T07:37:47.934Z - success: ui-kit-preview-extra loaded
-2018-03-19T07:37:47.943Z - success: ui-kit-preview loaded
-2018-03-19T07:37:47.952Z - success: ui-tree loaded
-2018-03-19T07:37:51.207Z - normal: Initializing project /Users/youle/Desktop/project
-2018-03-19T07:37:51.215Z - normal: Loading packages
-2018-03-19T07:37:51.225Z - normal: Watching packages
-2018-03-19T07:37:51.263Z - normal: Run Application
-2018-03-19T07:38:35.879Z - success: preview server running at http://localhost:7456
-2018-03-19T07:39:03.093Z - normal: 1.7.0
+2018-03-20T05:32:09.447Z - normal: Load ~/.CocosCreator/settings.json
+2018-03-20T05:32:09.456Z - normal: checking language setting...
+2018-03-20T05:32:09.456Z - normal: Language: zh
+2018-03-20T05:32:12.171Z - success: protocol editor-framework registered
+2018-03-20T05:32:12.172Z - success: protocol app registered
+2018-03-20T05:32:12.172Z - success: protocol theme registered
+2018-03-20T05:32:12.172Z - success: protocol packages registered
+2018-03-20T05:32:12.173Z - success: protocol unpack registerred
+2018-03-20T05:32:12.173Z - success: protocol disable-commonjs registerred
+2018-03-20T05:32:12.446Z - normal: connected!
+2018-03-20T05:32:12.450Z - normal: Check project /Users/youle/Desktop/project
+2018-03-20T05:32:12.457Z - normal: Initializing Cocos2d
+2018-03-20T05:32:13.074Z - normal: Initializing Asset Database
+2018-03-20T05:32:13.216Z - success: protocol uuid registerred
+2018-03-20T05:32:13.218Z - success: protocol db registerred
+2018-03-20T05:32:13.219Z - success: protocol thumbnail registerred
+2018-03-20T05:32:13.219Z - normal: Loading editor/builtin packages
+2018-03-20T05:32:13.339Z - success: anysdk loaded
+2018-03-20T05:32:13.828Z - success: assets loaded
+2018-03-20T05:32:13.841Z - success: builder loaded
+2018-03-20T05:32:13.846Z - success: cocos-analytics loaded
+2018-03-20T05:32:13.859Z - success: console loaded
+2018-03-20T05:32:13.871Z - success: hierarchy loaded
+2018-03-20T05:32:13.887Z - success: inspector loaded
+2018-03-20T05:32:13.891Z - success: keystore loaded
+2018-03-20T05:32:13.902Z - success: node-library loaded
+2018-03-20T05:32:13.907Z - success: package-asset loaded
+2018-03-20T05:32:13.911Z - success: preferences loaded
+2018-03-20T05:32:13.921Z - success: project-exporter loaded
+2018-03-20T05:32:13.962Z - success: project-importer loaded
+2018-03-20T05:32:13.969Z - success: project-settings loaded
+2018-03-20T05:32:13.977Z - success: ui-kit loaded
+2018-03-20T05:32:13.991Z - success: ui-grid loaded
+2018-03-20T05:32:14.000Z - success: scene loaded
+2018-03-20T05:32:14.003Z - success: sprite-editor loaded
+2018-03-20T05:32:14.014Z - success: store loaded
+2018-03-20T05:32:14.059Z - success: timeline loaded
+2018-03-20T05:32:14.060Z - normal: Loading builtin packages
+2018-03-20T05:32:14.077Z - success: asset-db-debugger loaded
+2018-03-20T05:32:14.080Z - success: color-picker loaded
+2018-03-20T05:32:14.098Z - success: package-manager loaded
+2018-03-20T05:32:14.121Z - success: sdkbox loaded
+2018-03-20T05:32:14.133Z - success: tester loaded
+2018-03-20T05:32:14.144Z - success: ui-kit-preview-extra loaded
+2018-03-20T05:32:14.154Z - success: ui-kit-preview loaded
+2018-03-20T05:32:14.162Z - success: ui-tree loaded
+2018-03-20T05:32:18.399Z - normal: Initializing project /Users/youle/Desktop/project
+2018-03-20T05:32:18.405Z - normal: Loading packages
+2018-03-20T05:32:18.425Z - success: clean loaded
+2018-03-20T05:32:18.480Z - success: resource loaded
+2018-03-20T05:32:18.665Z - success: unpack-textureatlas loaded
+2018-03-20T05:32:18.667Z - normal: Watching packages
+2018-03-20T05:32:18.716Z - normal: Run Application
+2018-03-20T05:32:27.971Z - success: preview server running at http://localhost:7456
+2018-03-20T05:32:41.240Z - normal: 1.7.0

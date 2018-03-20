@@ -1,3 +1,9 @@
+/******
+ *麻将游戏
+ * 事件管理
+ 数据驱动部分
+ 再分发ui渲染
+ ******/
 var GameDefine      = require("mjGameDefine");
 // var NetMessageMgr   = require("NetMessageMgr");
 ////var Audio.           = require("Audio");
@@ -357,6 +363,7 @@ GameManager.initPlayerData = function (playerDeskList) {
 // /* ---------------- Start Net Message --------------------------*/
 //当玩家进入房间
 GameManager.onUserEnterRoom = function(playerInfo, PlayerIdx){
+	cc.YL.info("玩家进入房间onUserEnterRoom");
 	playerInfo.OnLine = true;
 	mjDataMgr.getInstance().setPlayerData(playerInfo, PlayerIdx);
 	this.creatPlayer(PlayerIdx);
@@ -430,6 +437,7 @@ GameManager.initReplayPai = function(paiData){
 }
 
 GameManager.initStartPai = function(paiData){
+	cc.YL.info("黄岩麻将开始发牌initStartPai");
 	var totalList  = paiData.TileCount;
 	this.startPaiData = [];
 	var meDeskIndex = mjDataMgr.getInstance().get(mjDataMgr.KEYS.SELFID);

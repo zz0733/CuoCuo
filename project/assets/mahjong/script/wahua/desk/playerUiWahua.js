@@ -6,6 +6,7 @@ const SeatEnum = cc.Enum({
 });
 const JiaWeiArr = ['tianjia', 'dijia', 'yinpai', 'changsan'];
 const WhDefine = require('whDefine');
+const WhUtils = require('whUtils');
 
 cc.Class({
     extends: cc.Component,
@@ -115,10 +116,21 @@ cc.Class({
             type: cc.Prefab,
             default: null,
         },
+
+        paiMianAltas: {
+            type: cc.SpriteAtlas,
+            default: null,
+        },
     },
 
     onLoad () {
         this.setWait();
+        let paiNode = this.node.getChildByName('paiNode');
+        this.shouPaiNode = paiNode.getChildByName('shouPai');
+        this.pengGangNode = paiNode.getChildByName('pengGang');
+        this.dachuPaiNode = paiNode.getChildByName('dachuPai');
+        this._cardPool = new cc.NodePool();
+        this._paiArray = new Array();
     },
 
     setWait() {
@@ -132,11 +144,8 @@ cc.Class({
     },
 
     setData(data, uipos) {
-        //imageUrl || UserHeadUrl
-        //ip
-        //userId || UserId
-
         this.data = data;
+        fun.utils.loadUrlRes(data.imageUrl, this.node.getChildByName('icon'));
         this.nameLabel.string = data.userName + ' ' + data.userId;
         this.scoreLabel.string = data.score || 0 // totalScore;
         this.node.getChildByName('name').active = true;
@@ -154,12 +163,14 @@ cc.Class({
         fun.event.dispatch('wahuaInitCompleted', uipos);
     },
 
-    gameDestory() {
+    onDestroy() {
         this._cardPool = [];
+        this._paiArray = [];
     },
 
     initPool() {
-        cc.log('--- 1.this._uipos: ', this._uipos)
+        if (this._initFlag) return;
+        this._initFlag = true;
         let paiPerfabName = 'xiaPaiPrefab';
         switch(this._uipos){
             case SeatEnum.xia:
@@ -175,11 +186,8 @@ cc.Class({
                 paiPerfabName = 'zuoPaiPrefab';
                 break;
             default:
-                cc.error(' --- this._uipos no exit. ---');
                 break;
         }
-        cc.log('--- pos, paiPerfabName: ', pos, paiPerfabName);
-        this._cardPool = new cc.NodePool();
         for (let i=0; i<WhDefine.InitCardsNumber; ++i) {
             let pai = cc.instantiate(this[paiPerfabName]);
             this._cardPool.put(pai);
@@ -187,13 +195,13 @@ cc.Class({
     },
 
     setXiaPai(cards) {
-        this._xiaPaiArr = new Array();
-        for(let i=0; i<cards.length; ++i){
-            this._xiaPaiArr[i] = this._xiaPai.get();
-            this._xiaPaiArr[i].setPosition(cc.p(i*80, 0));
-            this._xiaPaiArr[i].parent = this.node;
-            let pai = this._xiaPaiArr[i].getChildByName('content').getComponent(cc.Sprite);
-            pai.spriteFrame = this.paiMianAltas.getSpriteFrame(cards);
+        for(let i=0; i<cards.length+1; ++i){
+            this._paiArray[i] = this._cardPool.get();
+            this._paiArray[i].setPosition(cc.p(i*60 + 20, -30));
+            this._paiArray[i].parent = this.shouPaiNode;
+            let pai = WhUtils.getCardById(cards[i]);
+            let card = this._paiArray[i].getChildByName('content').getComponent(cc.Sprite);
+            card.spriteFrame = this.paiMianAltas.getSpriteFrame(pai);
         }
     },
     setYouPai(cards) {
@@ -207,7 +215,6 @@ cc.Class({
     },
 
     setCardShow(cards) {
-        cc.log('--- 2.this._uipos: ', this._uipos)
         switch(this._uipos){
             case SeatEnum.xia:
                 this.setXiaPai(cards);

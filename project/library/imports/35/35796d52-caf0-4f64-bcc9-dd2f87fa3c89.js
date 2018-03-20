@@ -82,6 +82,7 @@ cc.Class({
 
         this._isTestnet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.test] ? true : false;
         this._isIntranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet] ? true : false;
+        cc.YL._isTestServer = this._isTestnet || this._isIntranet; // 保存当前的服务器类型，是否是测试
         this._isRelease = fun.gameCfg.releaseType === gameConst.releaseType.release ? true : false;
         this._isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple ? true : false;
         if (cc.sys.isNative) {

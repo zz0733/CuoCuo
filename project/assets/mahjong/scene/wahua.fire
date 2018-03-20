@@ -6980,6 +6980,30 @@
     },
     "waitNode": {
       "__id__": 132
+    },
+    "xiaPaiPrefab": {
+      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+    },
+    "shangPaiPrefab": {
+      "__uuid__": "7008fef0-031d-4ab6-a0f6-4b3ec0ddf9b3"
+    },
+    "zuoPaiPrefab": {
+      "__uuid__": "3860846b-832e-4aa0-be05-bef19ed8e8c3"
+    },
+    "youPaiPrefab": {
+      "__uuid__": "78392d53-79e7-4e54-8b3f-5f674a41c60e"
+    },
+    "xiaPengPrefab": {
+      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
+    },
+    "shangPengPrefab": {
+      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
+    },
+    "hengPengPrefab": {
+      "__uuid__": "53da2498-9a60-4bf9-9620-b3cecf6a5e8f"
+    },
+    "paiMianAltas": {
+      "__uuid__": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a"
     }
   },
   {
@@ -9183,6 +9207,30 @@
     },
     "waitNode": {
       "__id__": 186
+    },
+    "xiaPaiPrefab": {
+      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+    },
+    "shangPaiPrefab": {
+      "__uuid__": "7008fef0-031d-4ab6-a0f6-4b3ec0ddf9b3"
+    },
+    "zuoPaiPrefab": {
+      "__uuid__": "3860846b-832e-4aa0-be05-bef19ed8e8c3"
+    },
+    "youPaiPrefab": {
+      "__uuid__": "78392d53-79e7-4e54-8b3f-5f674a41c60e"
+    },
+    "xiaPengPrefab": {
+      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
+    },
+    "shangPengPrefab": {
+      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
+    },
+    "hengPengPrefab": {
+      "__uuid__": "53da2498-9a60-4bf9-9620-b3cecf6a5e8f"
+    },
+    "paiMianAltas": {
+      "__uuid__": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a"
     }
   },
   {
@@ -11386,6 +11434,30 @@
     },
     "waitNode": {
       "__id__": 240
+    },
+    "xiaPaiPrefab": {
+      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+    },
+    "shangPaiPrefab": {
+      "__uuid__": "7008fef0-031d-4ab6-a0f6-4b3ec0ddf9b3"
+    },
+    "zuoPaiPrefab": {
+      "__uuid__": "3860846b-832e-4aa0-be05-bef19ed8e8c3"
+    },
+    "youPaiPrefab": {
+      "__uuid__": "78392d53-79e7-4e54-8b3f-5f674a41c60e"
+    },
+    "xiaPengPrefab": {
+      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
+    },
+    "shangPengPrefab": {
+      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
+    },
+    "hengPengPrefab": {
+      "__uuid__": "53da2498-9a60-4bf9-9620-b3cecf6a5e8f"
+    },
+    "paiMianAltas": {
+      "__uuid__": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a"
     }
   },
   {
@@ -13589,6 +13661,30 @@
     },
     "waitNode": {
       "__id__": 296
+    },
+    "xiaPaiPrefab": {
+      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+    },
+    "shangPaiPrefab": {
+      "__uuid__": "7008fef0-031d-4ab6-a0f6-4b3ec0ddf9b3"
+    },
+    "zuoPaiPrefab": {
+      "__uuid__": "3860846b-832e-4aa0-be05-bef19ed8e8c3"
+    },
+    "youPaiPrefab": {
+      "__uuid__": "78392d53-79e7-4e54-8b3f-5f674a41c60e"
+    },
+    "xiaPengPrefab": {
+      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
+    },
+    "shangPengPrefab": {
+      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
+    },
+    "hengPengPrefab": {
+      "__uuid__": "53da2498-9a60-4bf9-9620-b3cecf6a5e8f"
+    },
+    "paiMianAltas": {
+      "__uuid__": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a"
     }
   },
   {
@@ -18614,27 +18710,6 @@
     },
     "paiMianAltas": {
       "__uuid__": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a"
-    },
-    "xiaPaiPrefab": {
-      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
-    },
-    "shangPaiPrefab": {
-      "__uuid__": "7008fef0-031d-4ab6-a0f6-4b3ec0ddf9b3"
-    },
-    "zuoPaiPrefab": {
-      "__uuid__": "3860846b-832e-4aa0-be05-bef19ed8e8c3"
-    },
-    "youPaiPrefab": {
-      "__uuid__": "78392d53-79e7-4e54-8b3f-5f674a41c60e"
-    },
-    "xiaPengPrefab": {
-      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
-    },
-    "shangPengPrefab": {
-      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
-    },
-    "hengPengPrefab": {
-      "__uuid__": "53da2498-9a60-4bf9-9620-b3cecf6a5e8f"
     }
   }
 ]

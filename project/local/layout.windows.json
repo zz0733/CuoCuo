@@ -5,10 +5,10 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
-      "x": 76,
+      "x": 54,
       "y": 22,
-      "width": 1280,
-      "height": 720,
+      "width": 1238,
+      "height": 1058,
       "layout": {
         "children": [
           {
@@ -18,7 +18,7 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 300,
+                "height": 462,
                 "type": "panel",
                 "width": 204
               },
@@ -27,12 +27,12 @@
                 "children": [
                   "assets"
                 ],
-                "height": 326,
+                "height": 502,
                 "type": "panel",
                 "width": 204
               }
             ],
-            "height": 629,
+            "height": 967,
             "type": "dock-v",
             "width": 204
           },
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 400,
+                "height": 615,
                 "type": "panel",
-                "width": 760
+                "width": 718
               },
               {
                 "active": 0,
@@ -53,21 +53,21 @@
                   "console",
                   "timeline"
                 ],
-                "height": 226,
+                "height": 349,
                 "type": "panel",
-                "width": 760
+                "width": 718
               }
             ],
-            "height": 629,
+            "height": 967,
             "type": "dock-v",
-            "width": 760
+            "width": 718
           },
           {
             "active": 0,
             "children": [
               "inspector"
             ],
-            "height": 629,
+            "height": 967,
             "type": "panel",
             "width": 304
           }
@@ -90,6 +90,12 @@
       "y": 268,
       "width": 564,
       "height": 548
+    },
+    "store": {
+      "x": 58,
+      "y": 26,
+      "width": 1022,
+      "height": 737
     }
   }
 }

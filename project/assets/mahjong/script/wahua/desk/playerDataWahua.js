@@ -25,6 +25,8 @@ cc.Class({
         let userInfo = fun.db.getData('UserInfo');
         userInfo.userId = userInfo.UserId.toString();
         userInfo.userName = userInfo.UserName;
+        userInfo.ip = userInfo.Ip;
+        userInfo.imageUrl = userInfo.UserHeadUrl;
         this._userId = userInfo.userId;
         let isUserMap = (userMap && userMap[this._userId]) ? true : false;
         this._sort = 0;

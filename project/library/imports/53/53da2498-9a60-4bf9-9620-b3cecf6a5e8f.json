@@ -1,16 +1,17 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "",
+    "_name": "whHengPeng",
     "_objFlags": 0,
     "_rawFiles": null,
     "data": {
       "__id__": 1
-    }
+    },
+    "asyncLoadAssets": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "whXiaPai",
+    "_name": "whHengPeng",
     "_objFlags": 0,
     "_parent": null,
     "_children": [
@@ -43,18 +44,18 @@
     "_cascadeOpacityEnabled": true,
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 0.5,
       "y": 0.5
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 92,
-      "height": 138
+      "width": 58,
+      "height": 50
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 0.7,
-    "_scaleY": 0.7,
+    "_scaleX": 1,
+    "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -69,14 +70,14 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "content",
+    "_name": "zuo",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
     "_children": [],
     "_tag": -1,
-    "_active": true,
+    "_active": false,
     "_components": [
       {
         "__id__": 3
@@ -97,22 +98,22 @@
     "_cascadeOpacityEnabled": true,
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 0.5,
       "y": 0.5
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 84,
-      "height": 100
+      "width": 87,
+      "height": 125
     },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_rotationX": 90,
+    "_rotationY": 90,
+    "_scaleX": 0.5,
+    "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 5,
-      "y": -12
+      "x": 4,
+      "y": 8
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -130,10 +131,10 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "ee765297-7170-4d1c-89e1-56963b2704e9"
+      "__uuid__": "e52b5377-2b21-4644-8ca3-2401695f06ae"
     },
     "_type": 0,
-    "_sizeMode": 0,
+    "_sizeMode": 1,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -155,21 +156,21 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+      "__id__": 0
     },
-    "fileId": "22DoPGNzhApLANOUGF09BC",
+    "fileId": "29deAgmQpADr6kM1PP1sZV",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "song",
+    "_name": "you",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
     },
     "_children": [],
     "_tag": -1,
-    "_active": false,
+    "_active": true,
     "_components": [
       {
         "__id__": 6
@@ -195,17 +196,17 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 51,
-      "height": 51
+      "width": 87,
+      "height": 125
     },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_rotationX": 270,
+    "_rotationY": 270,
+    "_scaleX": 0.5,
+    "_scaleY": 0.5,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 29.5,
-      "y": 17.8
+      "x": -4,
+      "y": 9
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -223,7 +224,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "3e4803df-7d47-44c5-b1f7-bdcc9edd03b1"
+      "__uuid__": "e52b5377-2b21-4644-8ca3-2401695f06ae"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -248,9 +249,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+      "__id__": 0
     },
-    "fileId": "eakLVwS/lA+JS+XvKIOBeu",
+    "fileId": "3bDTgXCrlNJrr9GTgClVOF",
     "sync": false
   },
   {
@@ -262,7 +263,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "56589508-3275-4824-9cdb-e28d335aa498"
+      "__uuid__": "93ac4637-fb4d-4d3d-8651-1f12569eeb9a"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -278,7 +279,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_atlas": {
-      "__uuid__": "4ba1c278-bd74-4fe3-bf7c-6508aa743e71"
+      "__uuid__": "48e27686-0eb3-45fd-8af5-f67e6aaaf76a"
     }
   },
   {
@@ -287,9 +288,9 @@
       "__id__": 1
     },
     "asset": {
-      "__uuid__": "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1"
+      "__id__": 0
     },
-    "fileId": "b28eVJAdJJGbqrD4xw2I4H",
+    "fileId": "71LNL5mt5MMrs62VYtWmk9",
     "sync": false
   }
 ]

@@ -31,11 +31,9 @@ cc.Class({
         var saizi = cc.instantiate(this.saiziPerfab);
         saizi.parent = this.node;
         saizi.getComponent('mjSaiziUI').wahuaPlay(data.point, function () {
-            saizi.removeFromParent();
-            cc.log('--- 1. saizi: ', saizi);
             data.callback();
+            saizi.destroy();
         }, this);
-        cc.log('--- 2. saizi: ', saizi);
     },
     initDisbandRoom: function initDisbandRoom() {
         cc.log('--- initDisbandRoom ---');

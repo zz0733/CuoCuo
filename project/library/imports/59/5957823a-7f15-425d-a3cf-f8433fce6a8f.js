@@ -4,7 +4,15 @@ cc._RF.push(module, '59578I6fxVCXaPP+EM/zmqP', 'playerUiWahua');
 
 'use strict';
 
+var SeatEnum = cc.Enum({
+    xia: 0,
+    you: 1,
+    shang: 2,
+    zuo: 3
+});
 var JiaWeiArr = ['tianjia', 'dijia', 'yinpai', 'changsan'];
+var WhDefine = require('whDefine');
+var WhUtils = require('whUtils');
 
 cc.Class({
     extends: cc.Component,
@@ -78,11 +86,57 @@ cc.Class({
         waitNode: {
             type: cc.Node,
             default: null
+        },
+
+        xiaPaiPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        shangPaiPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        zuoPaiPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        youPaiPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        xiaPengPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        shangPengPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        hengPengPrefab: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        paiMianAltas: {
+            type: cc.SpriteAtlas,
+            default: null
         }
     },
 
     onLoad: function onLoad() {
         this.setWait();
+        var paiNode = this.node.getChildByName('paiNode');
+        this.shouPaiNode = paiNode.getChildByName('shouPai');
+        this.pengGangNode = paiNode.getChildByName('pengGang');
+        this.dachuPaiNode = paiNode.getChildByName('dachuPai');
+        this._cardPool = new cc.NodePool();
+        this._paiArray = new Array();
     },
     setWait: function setWait() {
         this.iconSp.SpriteFrame = this.orignalIcon;
@@ -94,11 +148,8 @@ cc.Class({
         this.waitNode.active = true;
     },
     setData: function setData(data, uipos) {
-        //imageUrl || UserHeadUrl
-        //ip
-        //userId || UserId
-
         this.data = data;
+        fun.utils.loadUrlRes(data.imageUrl, this.node.getChildByName('icon'));
         this.nameLabel.string = data.userName + ' ' + data.userId;
         this.scoreLabel.string = data.score || 0; // totalScore;
         this.node.getChildByName('name').active = true;
@@ -112,7 +163,69 @@ cc.Class({
         if (data.currentState === 1) {
             this.showReady(true);
         }
+        this._uipos = uipos;
+        this.initPool();
         fun.event.dispatch('wahuaInitCompleted', uipos);
+    },
+    onDestroy: function onDestroy() {
+        this._cardPool = [];
+        this._paiArray = [];
+    },
+    initPool: function initPool() {
+        if (this._initFlag) return;
+        this._initFlag = true;
+        var paiPerfabName = 'xiaPaiPrefab';
+        switch (this._uipos) {
+            case SeatEnum.xia:
+                paiPerfabName = 'xiaPaiPrefab';
+                break;
+            case SeatEnum.you:
+                paiPerfabName = 'youPaiPrefab';
+                break;
+            case SeatEnum.shang:
+                paiPerfabName = 'shangPaiPrefab';
+                break;
+            case SeatEnum.zuo:
+                paiPerfabName = 'zuoPaiPrefab';
+                break;
+            default:
+                break;
+        }
+        for (var i = 0; i < WhDefine.InitCardsNumber; ++i) {
+            var pai = cc.instantiate(this[paiPerfabName]);
+            this._cardPool.put(pai);
+        }
+    },
+    setXiaPai: function setXiaPai(cards) {
+        for (var i = 0; i < cards.length + 1; ++i) {
+            this._paiArray[i] = this._cardPool.get();
+            this._paiArray[i].setPosition(cc.p(i * 60 + 20, -30));
+            this._paiArray[i].parent = this.shouPaiNode;
+            var pai = WhUtils.getCardById(cards[i]);
+            var card = this._paiArray[i].getChildByName('content').getComponent(cc.Sprite);
+            card.spriteFrame = this.paiMianAltas.getSpriteFrame(pai);
+        }
+    },
+    setYouPai: function setYouPai(cards) {},
+    setShangPai: function setShangPai(cards) {},
+    setZuoPai: function setZuoPai(cards) {},
+    setCardShow: function setCardShow(cards) {
+        switch (this._uipos) {
+            case SeatEnum.xia:
+                this.setXiaPai(cards);
+                break;
+            case SeatEnum.you:
+                this.setYouPai(cards);
+                break;
+            case SeatEnum.shang:
+                this.setShangPai(cards);
+                break;
+            case SeatEnum.zuo:
+                this.setZuoPai(cards);
+                break;
+            default:
+                break;
+        }
     },
     setScore: function setScore() {
         var score = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
