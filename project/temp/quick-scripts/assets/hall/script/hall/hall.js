@@ -315,20 +315,18 @@ cc.Class({
         switch (index) {
             case 0:
                 fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangHuangYan }, function (data) {
-                    if (data.Total !== undefined) {
-                        var hyNode = cc.instantiate(this.createMajiangRoomHY);
-                        hyNode.parent = this.node;
-                        hyNode.getComponent('createMajiangRoom').showRoomCard(data.Total);
-                    }
+                    // if (data.RetCode && data.RetCode !== 0) return;
+                    var hyNode = cc.instantiate(this.createMajiangRoomHY);
+                    hyNode.parent = this.node;
+                    hyNode.getComponent('createMajiangRoom').showRoomCard(data);
                 }.bind(this));
                 break;
             case 1:
                 fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangWenLing }, function (data) {
-                    if (data.Total !== undefined) {
-                        var wlNode = cc.instantiate(this.createMajiangRoomWL);
-                        wlNode.parent = this.node;
-                        wlNode.getComponent('createMajiangRoom').showRoomCard(data.Total);
-                    }
+                    // if (data.RetCode && data.RetCode !== 0) return;
+                    var wlNode = cc.instantiate(this.createMajiangRoomWL);
+                    wlNode.parent = this.node;
+                    wlNode.getComponent('createMajiangRoom').showRoomCard(data);
                 }.bind(this));
                 break;
             case 2:

@@ -50,11 +50,11 @@ var whUtils = {
 			}
 			bc = PaiId[newId - 1];
 			var name = 'card_' + a + '_' + bc;
-			cc.log('=== 非花牌 id, name: ', id, name);
+			// cc.log('=== 非花牌 id, name: ', id, name);
 			return name;
 		} else {
 			var _name = 'card_' + HuaPai[id - 126 - 1];
-			cc.log('=== 花牌 id, name: ', id, _name);
+			// cc.log('=== 花牌 id, name: ', id, name)
 			return _name;
 		}
 		return false;

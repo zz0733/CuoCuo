@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "DDZ_BackGround",
+    "texture": "253ec01d-a634-4b93-a711-79edf58feed2",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      2668,
+      1500
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      2668,
+      1500
+    ]
+  }
+}

@@ -44,11 +44,11 @@ let whUtils = {
 			}
 			bc = PaiId[newId-1];
 			let name = 'card_' + a + '_' + bc;
-			cc.log('=== 非花牌 id, name: ', id, name);
+			// cc.log('=== 非花牌 id, name: ', id, name);
 			return name
 		} else {
 			let name = 'card_' + HuaPai[id-126-1];
-			cc.log('=== 花牌 id, name: ', id, name)
+			// cc.log('=== 花牌 id, name: ', id, name)
 			return name;
 		}
 		return false;

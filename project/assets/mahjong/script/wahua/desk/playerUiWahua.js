@@ -195,9 +195,11 @@ cc.Class({
     },
 
     setXiaPai(cards) {
-        for(let i=0; i<cards.length+1; ++i){
+        for(let i=0; i<cards.length; ++i){
             this._paiArray[i] = this._cardPool.get();
-            this._paiArray[i].setPosition(cc.p(i*60 + 20, -30));
+            let posx = (WhDefine.InitCardsNumber - cards.length + i) * 60 + 20;
+            // let posx = -100 - ((10 - (i + 1)) * 60);
+            this._paiArray[i].setPosition(cc.p(posx, -30));
             this._paiArray[i].parent = this.shouPaiNode;
             let pai = WhUtils.getCardById(cards[i]);
             let card = this._paiArray[i].getChildByName('content').getComponent(cc.Sprite);
@@ -205,10 +207,20 @@ cc.Class({
         }
     },
     setYouPai(cards) {
-
+        for(let i=0; i<cards.length; ++i){
+            this._paiArray[i] = this._cardPool.get();
+            let posy = (WhDefine.InitCardsNumber - cards.length + i) * 30;
+            this._paiArray[i].setPosition(cc.p(0, posy));
+            this._paiArray[i].parent = this.shouPaiNode;
+        }
     },
     setShangPai(cards) {
-
+        for(let i=0; i<cards.length; ++i){
+            this._paiArray[i] = this._cardPool.get();
+            let posx = (WhDefine.InitCardsNumber - cards.length - i) * 34 + 100;
+            this._paiArray[i].setPosition(cc.p(posx, -10));
+            this._paiArray[i].parent = this.shouPaiNode;
+        }
     },
     setZuoPai(cards) {
 

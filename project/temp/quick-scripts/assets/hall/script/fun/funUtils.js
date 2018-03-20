@@ -245,6 +245,14 @@ var utils = {
         if (btnNode.getComponent(cc.Button)) {
             btnNode.getComponent(cc.Button).enabled = isEnabled;
         }
+    },
+
+    getMinMaxByArray: function getMinMaxByArray(type, data) {
+        if (type === 'min') {
+            return Math.min.apply(Math, data);
+        } else {
+            return Math.max.apply(Math, data);
+        }
     }
 };
 

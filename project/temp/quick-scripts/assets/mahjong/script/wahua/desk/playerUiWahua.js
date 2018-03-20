@@ -197,17 +197,33 @@ cc.Class({
         }
     },
     setXiaPai: function setXiaPai(cards) {
-        for (var i = 0; i < cards.length + 1; ++i) {
+        for (var i = 0; i < cards.length; ++i) {
             this._paiArray[i] = this._cardPool.get();
-            this._paiArray[i].setPosition(cc.p(i * 60 + 20, -30));
+            var posx = (WhDefine.InitCardsNumber - cards.length + i) * 60 + 20;
+            // let posx = -100 - ((10 - (i + 1)) * 60);
+            this._paiArray[i].setPosition(cc.p(posx, -30));
             this._paiArray[i].parent = this.shouPaiNode;
             var pai = WhUtils.getCardById(cards[i]);
             var card = this._paiArray[i].getChildByName('content').getComponent(cc.Sprite);
             card.spriteFrame = this.paiMianAltas.getSpriteFrame(pai);
         }
     },
-    setYouPai: function setYouPai(cards) {},
-    setShangPai: function setShangPai(cards) {},
+    setYouPai: function setYouPai(cards) {
+        for (var i = 0; i < cards.length; ++i) {
+            this._paiArray[i] = this._cardPool.get();
+            var posy = (WhDefine.InitCardsNumber - cards.length + i) * 30;
+            this._paiArray[i].setPosition(cc.p(0, posy));
+            this._paiArray[i].parent = this.shouPaiNode;
+        }
+    },
+    setShangPai: function setShangPai(cards) {
+        for (var i = 0; i < cards.length; ++i) {
+            this._paiArray[i] = this._cardPool.get();
+            var posx = (WhDefine.InitCardsNumber - cards.length - i) * 34 + 100;
+            this._paiArray[i].setPosition(cc.p(posx, -10));
+            this._paiArray[i].parent = this.shouPaiNode;
+        }
+    },
     setZuoPai: function setZuoPai(cards) {},
     setCardShow: function setCardShow(cards) {
         switch (this._uipos) {

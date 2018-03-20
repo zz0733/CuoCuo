@@ -114,8 +114,8 @@
       "__id__": 2
     },
     "_enabled": true,
-    "loginUrl": 2,
-    "loginType": 0,
+    "loginUrl": 0,
+    "loginType": 1,
     "enableUpdate": true,
     "voiceLanguage": 0,
     "soundValume": 0.8,

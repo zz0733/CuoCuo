@@ -247,6 +247,14 @@ let utils = {
             btnNode.getComponent(cc.Button).enabled = isEnabled;
         }
     },
+
+    getMinMaxByArray(type, data) {
+        if (type === 'min') {
+            return Math.min.apply(Math, data);
+        } else {
+            return Math.max.apply(Math, data);
+        }
+    },
 };
 
 module.exports = utils;

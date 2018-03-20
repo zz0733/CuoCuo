@@ -270,6 +270,11 @@ cc.Class({
         store: cc.Prefab,
         roomCard: cc.Label,
         needCardL : cc.Label,
+        freeCardL : cc.Label,
+        freeTimeBox: cc.Node,
+        freeBtn: cc.Node,
+        freeTimeL : cc.Label,
+        detailPrefab: cc.Prefab,
     },
 
     onLoad () {
@@ -322,8 +327,31 @@ cc.Class({
         }
     },
 
-    showRoomCard(num){
-        this.roomCard.string = num;
+    showRoomCard(data){
+        this.roomCard.string = data.TollCardCnt || 0;
+        this.freeBtn.on('click', function(){
+            let detail = cc.instantiate(this.detailPrefab);
+            detail.parent = this.node;
+            detail.getComponent('freeCardDetail').setDetail(data.FreeCardList);
+        }.bind(this));
+        if (!data.FreeCardList || data.FreeCardList.length === 0) {
+            this.freeCardL.string = 0;
+            this.freeTimeBox.active = false;
+        } else {
+            this.freeTimeBox.active = true;
+            let minTime = data.FreeCardList[0].ExpiredAt, freeCard = data.FreeCardList[0].Cnt;
+            for (let i in data.FreeCardList) {
+                let time = data.FreeCardList[i].ExpiredAt;
+                if (minTime > time) {
+                    minTime = time;
+                    freeCard = data.FreeCardList[i].Cnt;
+                }
+            }
+            let t = new Date(minTime * 1000);
+            let date = t.getFullYear().toString().substr(2, 2) + '年' + (t.getMonth()+1) + '月' + t.getDate() + '日';
+            this.freeTimeL.string = date + '过期';
+            this.freeCardL.string = freeCard;
+        }
     },
 
     onBtnCloseClick () {
