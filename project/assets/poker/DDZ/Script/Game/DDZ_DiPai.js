@@ -7,40 +7,20 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
 //  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
-/********
- * 单张手牌的挂载
- * 注册touch事件
- * 手牌初始化
- * 运动等
- * *******/
+
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-    },
+    properties: {},
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
-
-    start () {
-
+    onLoad () {
+        this._childScale = 0.23;
+        this._diPaiArr = [];
+        this._diPaiPosArr = [cc.p(-100, 349.5), cc.p(-60, 349.5), cc.p(-20, 349.5)];
     },
+
 
     // update (dt) {},
 });

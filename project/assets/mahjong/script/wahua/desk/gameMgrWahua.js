@@ -28,10 +28,10 @@ cc.Class({
     onLoad () {
         fun.event.dispatch('Zhuanquan', {flag: false});
         fun.net.setGameMsgCfg(require('WahuaCfg'));
-        this._userId = fun.db.getData('UserInfo').UserId;
+        this._userId = fun.db.getData('UserInfo').UserId.toString();
         let roomInfo = fun.db.getData('RoomInfo');
         this._gameStatu = roomInfo.roomRule.gameStatu;
-        this._isRoomOwner = (this._userId.toString() === roomInfo.roomRule.roomOwner);
+        this._isRoomOwner = (this._userId === roomInfo.roomRule.roomOwner);
         this._playerNum = roomInfo.roomRule.playerNum;
         this._seat = new Array();
         this._seatDir = ['xia', 'you', 'shang', 'zuo'];
@@ -68,6 +68,7 @@ cc.Class({
         fun.net.listen('OneAccount', this.onOneAccountIn.bind(this));
         fun.net.listen('QuitRoom', this.onQuitRoomIn.bind(this));
         fun.net.listen('AllAccount', this.onAllAccountIn.bind(this));
+        fun.net.listen('EscapeFlower', this.onEscapeFlowerIn.bind(this));
 
         fun.event.add('gameMgrWahuaInitCompleted', 'wahuaInitCompleted', this.updateSeats.bind(this));
         fun.event.add('gameMgrWahuaQuitFromSetting', 'wahuaQuitFromSetting', this.onBtnExitClick.bind(this));
@@ -93,6 +94,7 @@ cc.Class({
         fun.net.rmListen('OneAccount');
         fun.net.rmListen('QuitRoom');
         fun.net.rmListen('AllAccount');
+        fun.net.rmListen('EscapeFlower');
 
         fun.event.remove('gameMgrWahuaInitCompleted');
         fun.event.remove('gameMgrWahuaQuitFromSetting');
@@ -244,7 +246,6 @@ cc.Class({
     },
 
     onReadyIn(data) {
-        cc.log('onReadyIn--------', data);
         if (!data.ready) return;
         let seat = this.getSeatByUserId(data.ready);
         if (!seat) return;
@@ -252,12 +253,10 @@ cc.Class({
     },
 
     onReadyNextIn(data) {
-        cc.log('onReadyNextIn--------', data);
         this.setReadyState(true);
     },
 
     onBankerIn(data) {
-        cc.log('onBankerIn--------', data);
         this._gameStatu = 2;
         this.setJiaWeiShow(data.Zhuangjia);
         this.setReadyState(false);
@@ -269,7 +268,6 @@ cc.Class({
     },
 
     onRockCardIn(data) {
-        cc.log('onRockCardIn--------', data);
         let yzNode = this.node.getChildByName('yaozhang');
         this.showYaoZhang(data.rollChessDice);
         let szCallback = function(){
@@ -281,44 +279,46 @@ cc.Class({
     },
 
     onUserRefreshIn(data) {
-        cc.log('onUserRefreshIn--------', data);
+        cc.log('onUserRefreshIn--------');
     },
 
     onNoneOpsIn(data) {
-        cc.log('onNoneOpsIn--------', data);
+        cc.log('onNoneOpsIn--------');
     },
 
     onStartGameIn(data) {
-        cc.log('onStartGameIn--------', data);
         this.showCardById(this._userId, data.alreadyChess);
     },
 
+    onEscapeFlowerIn(data) {
+        cc.log('onEscapeFlowerIn--------');
+    },
+
     onPlayCardIn(data) {
-        cc.log('onPlayCardIn--------', data);
+        cc.log('onPlayCardIn--------');
     },
 
     onDrawCardIn(data) {
-        cc.log('onDrawCardIn--------', data);
+        cc.log('onDrawCardIn--------');
     },
 
     onOpsAcceptIn(data) {
-        cc.log('onOpsAcceptIn--------', data);
+        cc.log('onOpsAcceptIn--------');
     },
 
     onRepairCardIn(data) {
-        cc.log('onRepairCardIn--------', data);
+        cc.log('onRepairCardIn--------');
     },
 
     onOneAccountIn(data) {
-        cc.log('onOneAccountIn--------', data);
+        cc.log('onOneAccountIn--------');
     },
 
     onAllAccountIn(data) {
-        cc.log('onAllAccountIn--------', data);
+        cc.log('onAllAccountIn--------');
     },
 
     onDisbandRoomIn(data) {
-        cc.log('onDisbandRoomIn--------', data);
         this.exitRoom();
     },
 
@@ -329,11 +329,11 @@ cc.Class({
     },
 
     onDisbandRoomVoteIn(data) {
-        cc.log('onDisbandRoomVoteIn--------', data);
+        fun.event.dispatch('wahuaDisbandRoom', data.applyStatu);
     },
 
     onDisbandRoomResultIn(data) {
-        cc.log("DisbandRoomResult---------------", data);
+        cc.log("DisbandRoomResult---------------");
     },
 
     onOffLineIn(data) {

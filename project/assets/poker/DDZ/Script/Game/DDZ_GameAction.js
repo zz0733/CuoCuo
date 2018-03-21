@@ -7,35 +7,13 @@
  * 出牌
  * 过牌等
  * *********/
+var GameAction = cc.Class({});
 
-cc.Class({
-    extends: cc.Component,
+GameAction.StartFaPai = function (data){
+    var pokerArr = cc.YL.DDZTools.SortPoker(data);
+    var selfHandPokerNode = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    selfHandPokerNode.getComponent("DDZ_PlayerSelfPoker").initHandPoker(pokerArr);
+};
 
-    properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-    },
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    start () {
-
-    },
-
-    // update (dt) {},
-});
+module.exports = GameAction;
+cc.YL.GameAction = GameAction;

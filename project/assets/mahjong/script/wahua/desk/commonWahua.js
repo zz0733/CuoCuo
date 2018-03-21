@@ -32,15 +32,13 @@ cc.Class({
         }, this);
     },
 
-    initDisbandRoom() {
+    initDisbandRoom(data) {
         cc.log('--- initDisbandRoom ---')
         if (!this.disbandRoom) {
             this.disbandRoom = cc.instantiate(this.disbandRoomPerfab);
             this.disbandRoom.parent = this.node;
-            this.disbandRoom.getComponent('mjVotingPopUI').enabled = false;
-            // this.disbandRoom.addComponent('wahuaVotingPopUI');
         }
-
+        this.disbandRoom.getComponent('whVotingPopUI').setData(data);
     },
 
 });

@@ -26,11 +26,15 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
-
-    start () {
+    onLoad () {
 
     },
 
-    // update (dt) {},
+
+
+   Test: function(){
+        //测试按钮
+       var TestArr = [6,2,3,4,5,7,8,23,33,45,1,12,13,14,13,13,13,13,1,1];
+        cc.YL.GameAction.StartFaPai(TestArr);
+   }
 });

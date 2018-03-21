@@ -432,5 +432,7 @@ cc.Class({
         fun.event.remove('HallNewMailId');
         Audio.stopMusic();
     },
-
+    TestBtn: function(){
+        cc.director.loadScene("DDZ_GameScene");
+    },
 });

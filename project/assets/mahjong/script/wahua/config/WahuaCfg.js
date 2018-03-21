@@ -34,6 +34,8 @@ const WahuaCfg = {
 
 	AllAccount: {id: "AllAccount", desc: "总结算", req: 424, rsp: 524, notify: 624,},
 
+	EscapeFlower: {id: "EscapeFlower", desc: "桃花或者过", req: 425, rsp: 525, notify: 625,},
+
 };
 
 module.exports = WahuaCfg;

@@ -227,6 +227,7 @@ cc.Class({
     },
 
     setCardShow(cards) {
+        cc.log('--- this._uipos: ', this._uipos)
         switch(this._uipos){
             case SeatEnum.xia:
                 this.setXiaPai(cards);

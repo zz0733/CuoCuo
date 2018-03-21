@@ -1,12 +1,3 @@
-// Learn cc.Class:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/class/index.html
-// Learn Attribute:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/reference/attributes/index.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 
 cc.Class({
     extends: cc.Component,
@@ -14,25 +5,47 @@ cc.Class({
     properties: {
         _selfPlayerHandPoker: [],
         _scale: 1,
-        _pos: cc.p(0, -193),
         _pokerMargin: 50,
+        pokerPrefab:{
+            type:cc.Prefab,
+            default:null,
+        }
     },
 
-    // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-        this.node.setPosition(this._pos);
+        this._pos = cc.p(30, -193);
+        this._cardsList = [];
+        this._cardsPool = new cc.NodePool();
+        for (var i = 0; i < 20; i++) {
+            var card = cc.instantiate(this.pokerPrefab);
+            this._cardsPool.put(card);
+        }
+        this.node.getComponent(cc.Layout).spacingX = this._pokerMargin;
     },
-
+    clearHandPoker: function(){
+        for (var i = 0; i < this._cardsList.length; i++) {
+            this._cardsPool.put(this._cardsList[i]);
+        }
+        this._cardsList.splice(0,this._cardsList.length);
+    },
     initHandPoker: function (handPokerList) {
-        this._selfPlayerHandPoker = this.sortHnadPoker(handPokerList);
+        this.clearHandPoker();
+        this._selfPlayerHandPoker = handPokerList;
         this._updateHandPoker(this._selfPlayerHandPoker);
     },
     _updateHandPoker: function (pokerList) {
+        for(var i = 0; i < pokerList.length; i++){
+            var pokerNode = this._cardsPool.get();
+            pokerNode.getComponent("DDZ_Poker").initPoker(pokerList[i]);
+            pokerNode.setScale(this._scale);
+            pokerNode.setPositionY(0);
+            pokerNode.setTag(i);
+            this.node.addChild(pokerNode);
+            this._cardsList.push(pokerNode);
 
+        }
+        this.node.setPosition(this._pos);
     },
-    sortHnadPoker: function(){
-        var temp = [];
-        return temp;
-    },
+
 });

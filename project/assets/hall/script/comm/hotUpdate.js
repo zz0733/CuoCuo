@@ -191,6 +191,12 @@ cc.Class({
                 break;
             case jsb.EventAssetsManager.UPDATE_PROGRESSION:
                 if(!this._getTotalBytes && event.getTotalBytes() !== 0){
+                    console.log('--- event: ', event);
+                    console.log('--- getTotalBytes: ', event.getTotalBytes());
+                    console.log('--- getTotalFiles: ', event.getTotalFiles());
+                    console.log('--- getPercent: ', event.getPercent());
+                    console.log('--- getPercentByFile: ', event.getPercentByFile());
+                    console.log('--- getMessage: ', event.getMessage());
                     this.updatePanel.getComponent('updatePanel').setSourceSize(event.getTotalBytes()/(1024*1024));
                     this._getTotalBytes = true;
                 }
