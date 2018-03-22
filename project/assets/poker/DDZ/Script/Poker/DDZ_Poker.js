@@ -36,7 +36,7 @@ cc.Class({
         this.bindNode();
         this.pokerID = ID;
         var newPokerValue = cc.YL.cardValueTrans.TransPokerValue(10);
-        this._frontNode.getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(newPokerValue+"");
+        this._frontNode.getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(newPokerValue.value+"");
         this._bgNode.active = false;
         this._frontNode.active = true;
         this._ownerSign.active = false;

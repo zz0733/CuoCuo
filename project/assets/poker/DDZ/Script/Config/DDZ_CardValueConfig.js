@@ -12,8 +12,10 @@ CardValueTrans.TransPokerValue = function (PokerID) {
 CardValueTrans._transPoker = function (PokerID) {
     var _color = this.pokerColorArr[parseInt((PokerID - 1) / 13)];
     var _value = (PokerID - 1) % 13;
-    cc.YL.log("扑克牌的花色%s和牌值%s", _color, _value);
-    return _value;
+    return {
+        value : _value,
+        color : _color,
+    };
 };
 cc.YL.cardValueTrans = CardValueTrans;
 module.exports = CardValueTrans;

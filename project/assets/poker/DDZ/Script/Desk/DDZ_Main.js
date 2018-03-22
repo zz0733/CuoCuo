@@ -34,7 +34,10 @@ cc.Class({
 
    Test: function(){
         //测试按钮
-       var TestArr = [6,2,3,4,5,7,8,23,33,45,1,12,13,14,13,13,13,13,1,1];
+       var TestArr = [3,3,4,4,5,6,7,8,5,6,7,8];
         cc.YL.GameAction.StartFaPai(TestArr);
+   },
+   Test_1: function () {
+       cc.YL.PokerTip.startAnalysis();
    }
 });

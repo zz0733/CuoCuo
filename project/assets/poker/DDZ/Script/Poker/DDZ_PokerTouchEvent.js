@@ -37,7 +37,7 @@ cc.Class({
         this.node.on("touchmove", this.onMoveTouch.bind(this), this.node);
         this.node.on("touchstart", this.onStartTouch.bind(this), this.node);
         this.pokerSourceHeight = 0;
-        this.pokerUpHeight = 15;
+        this.pokerUpHeight = 20;
         this.pokerSpacing = 50;
         this.clickFirstPos = 147.5;
         this.posYMin = 80;

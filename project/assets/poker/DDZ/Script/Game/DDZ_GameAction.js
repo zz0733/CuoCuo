@@ -13,6 +13,7 @@ GameAction.StartFaPai = function (data){
     var pokerArr = cc.YL.DDZTools.SortPoker(data);
     var selfHandPokerNode = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     selfHandPokerNode.getComponent("DDZ_PlayerSelfPoker").initHandPoker(pokerArr);
+    cc.YL.DDZHandPokerList = pokerArr;
 };
 
 module.exports = GameAction;
