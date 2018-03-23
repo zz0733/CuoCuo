@@ -9,11 +9,9 @@
  * *********/
 var GameAction = cc.Class({});
 
-GameAction.StartFaPai = function (data){
-    var pokerArr = cc.YL.DDZTools.SortPoker(data);
+GameAction.StartFaPai = function (pokerArr){
     var selfHandPokerNode = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     selfHandPokerNode.getComponent("DDZ_PlayerSelfPoker").initHandPoker(pokerArr);
-    cc.YL.DDZHandPokerList = pokerArr;
 };
 
 module.exports = GameAction;

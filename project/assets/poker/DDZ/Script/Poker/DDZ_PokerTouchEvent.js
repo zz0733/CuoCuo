@@ -42,7 +42,7 @@ cc.Class({
         this.clickFirstPos = 147.5;
         this.posYMin = 80;
         this.posYMax = 285;
-        this.playerOutPokerArr = [];
+        cc.YL.playerOutPokerArr = [];
 
     },
     update: function () {
@@ -117,11 +117,11 @@ cc.Class({
                 }
             }
         }
-        this.playerOutPokerArr = [];
+        cc.YL.playerOutPokerArr = [];
         var children = this.node.parent.getChildByName("HandPoker").children;
         for(var i = 0; i < children.length;i++){
             if(children[i].y == this.pokerUpHeight){
-                this.playerOutPokerArr.push(children[i].getComponent("DDZ_Poker").pokerID);
+                cc.YL.playerOutPokerArr.push(children[i].getComponent("DDZ_Poker").pokerID);
             }
         }
 
