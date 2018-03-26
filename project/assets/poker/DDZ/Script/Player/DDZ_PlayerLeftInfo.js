@@ -1,12 +1,3 @@
-// Learn cc.Class:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/class/index.html
-// Learn Attribute:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/reference/attributes/index.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
 /******* 左边玩家
  * 除牌以外的其他相关操作
  * 渲染头像，分数，聊天等
@@ -15,30 +6,35 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        // message ddz_base_playerInfo {
+        //     optional int64 userId = 1; //ID
+        //     optional string nickName = 2; //昵称
+        //     optional int32 sex = 3; //性别
+        //     optional string headUrl = 4; //头像
+        //     optional int32 coin = 5; //分数（金币）
+        //     optional playerGameStatus status = 6; //游戏状态
+        //     optional bool isReady = 7; //是否准备
+        //     optional bool isBreak = 8; //是否掉线
+        //     optional bool isLeave = 9; //是否离开
+        //     optional int32 score = 10; //分数
+        //     optional string ip = 11; //玩家IP
+        // }
     },
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    start () {
+    onLoad () {
+        this.playerInfo = null;
+    },
+    initLeftPlayerNode: function(data){
+        this.playerInfo = data;
+        this.clearNodeUI();
+        this.initNodeUI(data);
+    },
+    clearNodeUI: function(){
 
     },
+    initNodeUI: function(){
 
-    // update (dt) {},
+    },
+    showAndHideReady: function(isReady){
+
+    },
 });

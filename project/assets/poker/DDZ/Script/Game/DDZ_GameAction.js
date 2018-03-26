@@ -15,4 +15,4 @@ GameAction.StartFaPai = function (pokerArr){
 };
 
 module.exports = GameAction;
-cc.YL.GameAction = GameAction;
+cc.YL.DDZGameAction = GameAction;

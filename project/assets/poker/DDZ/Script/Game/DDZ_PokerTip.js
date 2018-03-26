@@ -1,32 +1,3 @@
-/**********
- * 客户端本地的提示处理
- * **********/
-/*************
- *  牌类型枚举
- *  分为
- *  王炸 炸弹 单张 对子 三张 三带一 三带二 顺子 连对 飞机 四带二
- *  王炸最大，可以打任意其他的牌。 　　
- *  炸弹比王炸小，比其他牌大。
- *  都是炸弹时按牌的分值比大小。 　　
- *  除王炸和炸弹外，其他牌必须要牌型相同且总张数相同才能比大小。 　　
- *  单牌按分值比大小，依次是：大王 > 小王 >2>A>K>Q>J>10>9>8>7>6>5>4>3 ，不分花色。 　　
- *  对牌、三张牌都按分值比大小。 　　顺牌按最大的一张牌的分值来比大小。 　
- *  飞机带翅膀和四带二按其中的三顺和四张部分来比，带的牌不影响大小。
- *
- *  *******/
-/***
- * 如果是单张》10》》》找手牌数组就可以
- * 如果是对子》9》》》找对子，三张，四张，王炸数组就可以
- * 如果是三张》》8》》找三张，四张，王炸数组就可以
- * 如果是四张》》》11》找炸弹，王炸数组就可以
- * 如果是顺子》》5》》找顺子数组
- * 如果是连对》》4》》找连对数组
- * 如果是三带一》7》》三张，单张数组
- * 如果是三带二》6》》三张，对子数组
- * 如果是四带二》1》》四张，对子数组
- * 如果是飞机带单张》3》》三张，四张，单张，对子数组
- * 如果是飞机带对子》1》》三张，四张，对子数组
- * ****/
 var pokerTip = cc.Class({});
 pokerTip.typeEnum = {
     "王炸": 12,
@@ -52,6 +23,10 @@ pokerTip.startAnalysis = function () {
     this.threePoint = null;
     this.shunZiPoint = null;
     this.doubleShunZiPoint = null;
+    this.threeAndOnePoint = null;
+    this.threeAndTwoPoint = null;
+    this.fourAndTwoPoint = null;
+    this.flyPoint = null;
     for (var i = 0; i < tempArr.length; i++) {
         this.handPokerList.push(tempArr[i].Num);
     }
@@ -65,6 +40,7 @@ pokerTip.analysis = function () {
     this.rocket();
     this.shunzi();
     this.doubleshunzi();
+    this.fly();
 
 };
 pokerTip.single = function () {
@@ -149,7 +125,8 @@ pokerTip.shunzi = function () {
     var tempArr = this.zipArr(this.handPokerList);
     for (var i = 0; i < tempArr.length; i++) {
         for (var j = 4; j < 12; j++) {
-            if (tempArr[i] + j == tempArr[i + j] && i + j <= tempArr.length - 1) {
+            if (tempArr[i] + j == tempArr[i + j] && i + j <= tempArr.length - 1
+                && tempArr[i] <= 10) {
                 this.shunZiArr.push({
                     min: tempArr[i],
                     max: tempArr[i + j],
@@ -179,8 +156,40 @@ pokerTip.doubleshunzi = function () {
     this.doubleShunZiArr = [];
     for (var i = 0; i < newArr.length; i++) {
         for (var j = 2; j < 10; j++) {
-            if (newArr[i] + j == newArr[i + j] && i + j <= newArr.length - 1) {
+            if (newArr[i] + j == newArr[i + j] && i + j <= newArr.length - 1
+                && newArr[i] <= 12) {
                 this.doubleShunZiArr.push({
+                    min: newArr[i],
+                    max: newArr[i + j],
+                    len: j + 1,
+                });
+            }
+        }
+    }
+};
+pokerTip.fly = function () {
+    this.flyArr = []; //
+    var tempArr = this.handPokerList;
+    for (var i = 0; i < tempArr.length; i++) {
+        var times = 0;
+        for (var j = 0; j < tempArr.length; j++) {
+            if (tempArr[i] == tempArr[j]) {
+                times++;
+            }
+        }
+        if (times >= 3) {
+            this.flyArr.push(tempArr[i]);
+        }
+    }
+    this.flyArr = this.zipArr(this.flyArr);
+    // 现在的可作为连对使用的元素选出了
+    var newArr = this.flyArr;
+    this.flyArr = [];
+    for (var i = 0; i < newArr.length; i++) {
+        for (var j = 1; j < 7; j++) {
+            if (newArr[i] + j == newArr[i + j] && i + j <= newArr.length - 1
+                && newArr[i] <= 13) {
+                this.flyArr.push({
                     min: newArr[i],
                     max: newArr[i + j],
                     len: j + 1,
@@ -214,17 +223,87 @@ pokerTip.clickTipsBtn = function (type, num, list) {
 
     switch (this.lastPokerType) {
         case 1: {
+            var tipFourAndTowCardArr = [];
+            var doubleCard = null;
+            for (var i = 0; i < this.fourArr.length; i++) {
+                if (this.fourArr[i] > this.lastPokerList[0]) {
+                    tipFourAndTowCardArr.push(this.fourArr[i]);
+                }
+            }
+            if (this.rocketArr) {
+                tipFourAndTowCardArr.push(this.rocketArr[0]);
+                tipFourAndTowCardArr.push(this.rocketArr[1]);
+            }
+            tipFourAndTowCardArr = cc.YL.DDZTools.SortPoker(tipFourAndTowCardArr);
+            if (this.doubleArr.length != 0) {
+                doubleCard = this.doubleArr[0];
+                var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+                var isDone = false;
+                for (var j = 0; j < pokerRoot.children.length; j++) {
+                    if (doubleCard == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && isDone == false) {
+                        this.fourAndTwoAction(tipFourAndTowCardArr, pokerRoot.children[j], pokerRoot.children[j + 1]);
+                        isDone = true;
+                    }
+                }
+
+            }
 
             break;
         }
         case 2: {
+            //飞机对子
+            var tipFlyWithDoubleCardArr = [];
+            for (var i = 0; i < this.flyArr.length; i++) {
+                if (this.flyArr[i].min > this.lastPokerList[0] && this.flyArr[i].len == this.lastPokerNum) {
+                    tipFlyWithDoubleCardArr.push(this.flyArr[i]);
+                }
+            }
+            if (this.rocketArr.length == 2) {
+                tipFlyWithDoubleCardArr.push({
+                    min: this.rocketArr[0],
+                    max: this.rocketArr[1],
+                    len: 2,
+                });
+            }
+
+            this.flyWithAction(tipFlyWithDoubleCardArr);
             break;
         }
         case 3: {
+            //飞机单张
+            var tipFlyWithOneCardArr = [];
+            for (var i = 0; i < this.flyArr.length; i++) {
+                if (this.flyArr[i].min > this.lastPokerList[0] && this.flyArr[i].len == this.lastPokerNum) {
+                    tipFlyWithOneCardArr.push(this.flyArr[i]);
+                }
+            }
+            if (this.rocketArr.length == 2) {
+                tipFlyWithOneCardArr.push({
+                    min: this.rocketArr[0],
+                    max: this.rocketArr[1],
+                    len: 2,
+                });
+            }
+            this.flyWithAction(tipFlyWithOneCardArr);
             break;
         }
         case 4: {
             //连对
+            var tipDoubleShunziCardArr = [];
+            for (var i = 0; i < this.doubleShunZiArr.length; i++) {
+                if (this.doubleShunZiArr[i].min > this.lastPokerList[0] && this.doubleShunZiArr[i].len == this.lastPokerNum) {
+                    tipDoubleShunziCardArr.push(this.doubleShunZiArr[i]);
+                }
+            }
+            if (this.rocketArr.length == 2) {
+                tipDoubleShunziCardArr.push({
+                    min: this.rocketArr[0],
+                    max: this.rocketArr[1],
+                    len: 2,
+                });
+            }
+            this.doubleShunZiAction(tipDoubleShunziCardArr);
             break;
         }
         case 5: {
@@ -235,20 +314,84 @@ pokerTip.clickTipsBtn = function (type, num, list) {
                     tipShunziCardArr.push(this.shunZiArr[i]);
                 }
             }
-            if (this.rocketArr) {
+            if (this.rocketArr.length == 2) {
                 tipShunziCardArr.push({
                     min: this.rocketArr[0],
                     max: this.rocketArr[1],
                     len: 2,
                 });
             }
+
             this.shunZiAction(tipShunziCardArr);
             break;
         }
         case 6: {
+            // 三带二
+            var tipThreeAndTwoCardArr = [];
+            var doubleCard = null;
+            for (var i = 0; i < this.threeArr.length; i++) {
+                if (this.threeArr[i] > this.lastPokerList[0]) {
+                    tipThreeAndTwoCardArr.push(this.threeArr[i]);
+                }
+            }
+            for (var i = 0; i < this.fourArr.length; i++) {
+                if (this.fourArr[i] > this.lastPokerList[0]) {
+                    tipThreeAndTwoCardArr.push(this.fourArr[i]);
+                }
+            }
+            if (this.rocketArr) {
+                tipThreeAndTwoCardArr.push(this.rocketArr[0]);
+                tipThreeAndTwoCardArr.push(this.rocketArr[1]);
+            }
+            tipThreeAndTwoCardArr = cc.YL.DDZTools.SortPoker(tipThreeAndTwoCardArr);
+            if (this.doubleArr.length != 0) {
+                doubleCard = this.doubleArr[0];
+                var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+                var isDone = false;
+                for (var j = 0; j < pokerRoot.children.length; j++) {
+                    if (doubleCard == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && isDone == false) {
+                        this.threeAndTwoAction(tipThreeAndTwoCardArr, pokerRoot.children[j], pokerRoot.children[j + 1]);
+                        isDone = true;
+                    }
+                }
+
+            }
             break;
         }
         case 7: {
+            //三带一
+            var tipThreeAndOneCardArr = [];
+            var singleCard = null;
+            for (var i = 0; i < this.threeArr.length; i++) {
+                if (this.threeArr[i] > this.lastPokerList[0]) {
+                    tipThreeAndOneCardArr.push(this.threeArr[i]);
+                }
+            }
+            for (var i = 0; i < this.fourArr.length; i++) {
+                if (this.fourArr[i] > this.lastPokerList[0]) {
+                    tipThreeAndOneCardArr.push(this.fourArr[i]);
+                }
+            }
+            if (this.rocketArr) {
+                tipThreeAndOneCardArr.push(this.rocketArr[0]);
+                tipThreeAndOneCardArr.push(this.rocketArr[1]);
+            }
+            tipThreeAndOneCardArr = cc.YL.DDZTools.SortPoker(tipThreeAndOneCardArr);
+            if (this.singleArr.length != 0) {
+                singleCard = this.singleArr[0];
+                var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+                var isDone = false;
+                for (var j = 0; j < pokerRoot.children.length; j++) {
+                    if (singleCard == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && isDone == false) {
+                        this.threeAndOneAction(tipThreeAndOneCardArr, pokerRoot.children[j]);
+                        isDone = true;
+                    }
+                }
+
+            }
+
             break;
         }
         case 8: {
@@ -267,6 +410,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
                 tipThreeCardArr.push(this.rocketArr[0]);
                 tipThreeCardArr.push(this.rocketArr[1]);
             }
+            tipThreeCardArr = cc.YL.DDZTools.SortPoker(tipThreeCardArr);
             this.threeAction(tipThreeCardArr);
             break;
         }
@@ -291,6 +435,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
                 tipDoubleCardArr.push(this.rocketArr[0]);
                 tipDoubleCardArr.push(this.rocketArr[1]);
             }
+            tipDoubleCardArr = cc.YL.DDZTools.SortPoker(tipDoubleCardArr);
             this.doubleAction(tipDoubleCardArr);
             break;
         }
@@ -320,6 +465,8 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             break;
         }
         case 12: {
+            //王炸。没大的过得
+
             break;
         }
         default: {
@@ -345,16 +492,14 @@ pokerTip.singleAction = function (list) {
                 if (this.singlePoint == null) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
-                        pokerRoot.children[j].y = 20;
-                        cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
+                        this.pokerUpAction(j, 0);
                         this.singlePoint = list[i];
                         isDone = true;
                     }
                 } else if (list[i] > this.singlePoint) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
-                        pokerRoot.children[j].y = 20;
-                        cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
+                        this.pokerUpAction(j, 0);
                         this.singlePoint = list[i];
                         this.singlePoint == list[list.length - 1] ? this.singlePoint = null : this.singlePoint;
                         isDone = true;
@@ -376,20 +521,14 @@ pokerTip.doubleAction = function (list) {
                 if (this.doublePoint == null) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
-                        pokerRoot.children[j].y = 20;
-                        pokerRoot.children[j + 1].y = 20;
-                        cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                        cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+                        this.pokerUpAction(j, 1);
                         this.doublePoint = list[i];
                         isDone = true;
                     }
                 } else if (list[i] > this.doublePoint) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
-                        pokerRoot.children[j].y = 20;
-                        pokerRoot.children[j + 1].y = 20;
-                        cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                        cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+                        this.pokerUpAction(j, 1);
                         this.doublePoint = list[i];
                         this.doublePoint == list[list.length - 1] ? this.doublePoint = null : this.doublePoint;
                         if (this.doublePoint == 53 || this.doublePoint == 54) {
@@ -415,38 +554,23 @@ pokerTip.threeAction = function (list) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
                         if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 1);
                             this.threePoint = list[i];
                         } else {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            pokerRoot.children[j + 2].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 2].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 2);
                             this.threePoint = list[i];
                         }
                         isDone = true;
+
                     }
                 } else if (list[i] > this.threePoint) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
                         if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 1);
                             this.threePoint = list[i];
                         } else {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            pokerRoot.children[j + 2].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 2].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 2);
                             this.threePoint = list[i];
                         }
                         this.threePoint == list[list.length - 1] ? this.threePoint = null : this.threePoint;
@@ -459,8 +583,8 @@ pokerTip.threeAction = function (list) {
 
             }
         }
-
     }
+
 };
 pokerTip.fourAction = function (list) {
     this.initPokerNode();
@@ -473,20 +597,10 @@ pokerTip.fourAction = function (list) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
                         if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 1);
                             this.fourPoint = list[i];
                         } else {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            pokerRoot.children[j + 2].y = 20;
-                            pokerRoot.children[j + 3].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 2].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 3].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 3);
                             this.fourPoint = list[i];
                         }
                         isDone = true;
@@ -495,20 +609,10 @@ pokerTip.fourAction = function (list) {
                     if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
                         && pokerRoot.children[j].y == 0) {
                         if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 1);
                             this.fourPoint = list[i];
                         } else {
-                            pokerRoot.children[j].y = 20;
-                            pokerRoot.children[j + 1].y = 20;
-                            pokerRoot.children[j + 2].y = 20;
-                            pokerRoot.children[j + 3].y = 20;
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 2].getComponent("DDZ_Poker").pokerID);
-                            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 3].getComponent("DDZ_Poker").pokerID);
+                            this.pokerUpAction(j, 3);
                             this.fourPoint = list[i];
                         }
                         this.fourPoint == list[list.length - 1] ? this.fourPoint = null : this.fourPoint;
@@ -527,14 +631,409 @@ pokerTip.fourAction = function (list) {
 pokerTip.shunZiAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    var isDone = false;
     for (var i = 0; i < list.length; i++) {
-        for (var j = 0; j < pokerRoot.children.length; j++) {
-            if(list[i].min = pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum){
+        if (isDone == false) {
+            for (var j = 0; j < pokerRoot.children.length; j++) {
+                if (this.shunZiPoint == null) {
+                    if (list[i].min == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum) {
+                        // 找到最小的
+                        this.shunZiPoint = list[i].min;
+                        if (this.shunZiPoint == 53 || this.shunZiPoint == 54) {
+                            this.pokerUpAction(j, 1);
+                        } else {
+                            var times = 0;
+                            for (var k = j; k < pokerRoot.children.length; k++) {
+                                if (pokerRoot.children[k].y == 0
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum == list[i].min + times
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum <= list[i].max
+                                    && times + 1 <= list[i].len) {
+                                    this.pokerUpAction(k, 0);
+                                    times++;
+                                }
+                            }
+                            isDone = true;
+                        }
+                        this.shunZiPoint == list[list.length - 1].min ? this.shunZiPoint = null : this.shunZiPoint;
+                        if (this.shunZiPoint == 53 || this.shunZiPoint == 54) {
+                            this.shunZiPoint = null;
+                        }
+                    }
+                } else if (list[i].min > this.shunZiPoint) {
+                    if (list[i].min == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum) {
+                        this.shunZiPoint = list[i].min;
+                        if (this.shunZiPoint == 53 || this.shunZiPoint == 54) {
+                            this.pokerUpAction(j, 1);
+                        } else {
+                            var times = 0;
+                            for (var k = j; k < pokerRoot.children.length; k++) {
+                                if (pokerRoot.children[k].y == 0
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum == list[i].min + times
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum <= list[i].max
+                                    && times + 1 <= list[i].len) {
+                                    this.pokerUpAction(k, 0);
+                                    times++;
+                                }
+                            }
+                            isDone = true;
+                        }
+                        this.shunZiPoint == list[list.length - 1].min ? this.shunZiPoint = null : this.shunZiPoint;
+                        if (this.shunZiPoint == 53 || this.shunZiPoint == 54) {
+                            this.shunZiPoint = null;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+pokerTip.doubleShunZiAction = function (list) {
+    this.initPokerNode();
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    var isDone = false;
+    for (var i = 0; i < list.length; i++) {
+        if (isDone == false) {
+            for (var j = 0; j < pokerRoot.children.length; j++) {
+                if (this.doubleShunZiPoint == null) {
+                    if (list[i].min == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum) {
+                        // 找到最小的
+                        this.doubleShunZiPoint = list[i].min;
+                        if (this.doubleShunZiPoint == 53 || this.doubleShunZiPoint == 54) {
+                            this.pokerUpAction(j, 1);
+                            isDone = true;
+                        } else {
+                            var times = 0;
+                            for (var k = j; k < pokerRoot.children.length; k++) {
+                                if (pokerRoot.children[k].y == 0
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum == list[i].min + times
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum <= list[i].max
+                                    && times + 1 <= list[i].len) {
+                                    this.pokerUpAction(k, 1);
+                                    times++;
+                                }
+                            }
+                            isDone = true;
+                        }
+                        this.doubleShunZiPoint == list[list.length - 1].min ? this.doubleShunZiPoint = null : this.doubleShunZiPoint;
+                        if (this.doubleShunZiPoint == 53 || this.doubleShunZiPoint == 54) {
+                            this.doubleShunZiPoint = null;
+                        }
+                    }
+                } else if (list[i].min > this.doubleShunZiPoint) {
+                    if (list[i].min == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum) {
+                        this.doubleShunZiPoint = list[i].min;
+                        if (this.doubleShunZiPoint == 53 || this.doubleShunZiPoint == 54) {
+                            this.pokerUpAction(j, 1);
+                            isDone = true;
+                        } else {
+                            var times = 0;
+                            for (var k = j; k < pokerRoot.children.length; k++) {
+                                if (pokerRoot.children[k].y == 0
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum == list[i].min + times
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum <= list[i].max
+                                    && times + 1 <= list[i].len) {
+                                    this.pokerUpAction(k, 1);
+                                    times++;
+                                }
+                            }
+                            isDone = true;
+                        }
+                        this.doubleShunZiPoint == list[list.length - 1].min ? this.doubleShunZiPoint = null : this.doubleShunZiPoint;
+                        if (this.doubleShunZiPoint == 53 || this.doubleShunZiPoint == 54) {
+                            this.doubleShunZiPoint = null;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+pokerTip.threeAndOneAction = function (list, sigleCard) {
+    this.initPokerNode();
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    var isDone = false;
+    for (var i = 0; i < list.length; i++) {
+        if (isDone == false) {
+            for (var j = 0; j < pokerRoot.children.length; j++) {
+                if (this.threeAndOnePoint == null) {
+                    if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && pokerRoot.children[j].y == 0) {
+                        if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
+                            this.pokerUpAction(j, 1);
+                            this.threeAndOnePoint = list[i];
+                        } else {
+                            this.pokerUpAction(j, 2);
+                            sigleCard.y = 20;
+                            cc.YL.playerOutPokerArr.push(sigleCard.getComponent("DDZ_Poker").pokerID);
+                            this.threeAndOnePoint = list[i];
+                        }
+                        isDone = true;
+
+                    }
+                } else if (list[i] > this.threeAndOnePoint) {
+                    if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && pokerRoot.children[j].y == 0) {
+                        if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
+                            this.pokerUpAction(j, 1);
+                            this.threeAndOnePoint = list[i];
+                        } else {
+                            this.pokerUpAction(j, 2);
+                            sigleCard.y = 20;
+                            cc.YL.playerOutPokerArr.push(sigleCard.getComponent("DDZ_Poker").pokerID);
+                            this.threeAndOnePoint = list[i];
+                        }
+                        this.threeAndOnePoint == list[list.length - 1] ? this.threeAndOnePoint = null : this.threeAndOnePoint;
+                        if (this.threeAndOnePoint == 53 || this.threeAndOnePoint == 54) {
+                            this.threeAndOnePoint = null;
+                        }
+                        isDone = true;
+                    }
+                }
 
             }
         }
+    }
+
+};
+pokerTip.threeAndTwoAction = function (list, double, double_1) {
+    this.initPokerNode();
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    var isDone = false;
+    for (var i = 0; i < list.length; i++) {
+        if (isDone == false) {
+            for (var j = 0; j < pokerRoot.children.length; j++) {
+                if (this.threeAndTwoPoint == null) {
+                    if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && pokerRoot.children[j].y == 0) {
+                        if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
+                            this.pokerUpAction(j, 1);
+                            this.threeAndTwoPoint = list[i];
+                        } else {
+                            this.pokerUpAction(j, 2);
+                            double.y = 20;
+                            cc.YL.playerOutPokerArr.push(double.getComponent("DDZ_Poker").pokerID);
+                            double_1.y = 20;
+                            cc.YL.playerOutPokerArr.push(double_1.getComponent("DDZ_Poker").pokerID);
+                            this.threeAndTwoPoint = list[i];
+                        }
+                        isDone = true;
+
+                    }
+                } else if (list[i] > this.threeAndTwoPoint) {
+                    if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && pokerRoot.children[j].y == 0) {
+                        if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
+                            this.pokerUpAction(j, 1);
+                            this.threeAndTwoPoint = list[i];
+                        } else {
+                            this.pokerUpAction(j, 2);
+                            double.y = 20;
+                            cc.YL.playerOutPokerArr.push(double.getComponent("DDZ_Poker").pokerID);
+                            double_1.y = 20;
+                            cc.YL.playerOutPokerArr.push(double_1.getComponent("DDZ_Poker").pokerID);
+                            this.threeAndTwoPoint = list[i];
+                        }
+                        this.threeAndTwoPoint == list[list.length - 1] ? this.threeAndTwoPoint = null : this.threeAndTwoPoint;
+                        if (this.threeAndTwoPoint == 53 || this.threeAndTwoPoint == 54) {
+                            this.threeAndTwoPoint = null;
+                        }
+                        isDone = true;
+                    }
+                }
+
+            }
+        }
+    }
+    for (var j = 0; j < pokerRoot.children.length; j++) {
+        if (double == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+            && pokerRoot.children[j].y == 0) {
+            pokerRoot.children[j].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[j + 1].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[j + 1].getComponent("DDZ_Poker").pokerID);
+            break;
+        }
+    }
+};
+pokerTip.fourAndTwoAction = function (list, double, double_1) {
+    this.initPokerNode();
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    var isDone = false;
+    for (var i = 0; i < list.length; i++) {
+        if (isDone == false) {
+            for (var j = 0; j < pokerRoot.children.length; j++) {
+                if (this.fourAndTwoPoint == null) {
+                    if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && pokerRoot.children[j].y == 0) {
+                        if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
+                            this.pokerUpAction(j, 1);
+                            this.fourAndTwoPoint = list[i];
+                        } else {
+                            this.pokerUpAction(j, 3);
+                            double.y = 20;
+                            cc.YL.playerOutPokerArr.push(double.getComponent("DDZ_Poker").pokerID);
+                            double_1.y = 20;
+                            cc.YL.playerOutPokerArr.push(double_1.getComponent("DDZ_Poker").pokerID);
+                            this.fourAndTwoPoint = list[i];
+                        }
+                        isDone = true;
+                    }
+                } else if (list[i] > this.fourAndTwoPoint) {
+                    if (list[i] == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum
+                        && pokerRoot.children[j].y == 0) {
+                        if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == 53) {
+                            this.pokerUpAction(j, 1);
+                            this.fourAndTwoPoint = list[i];
+                        } else {
+                            this.pokerUpAction(j, 3);
+                            double.y = 20;
+                            cc.YL.playerOutPokerArr.push(double.getComponent("DDZ_Poker").pokerID);
+                            double_1.y = 20;
+                            cc.YL.playerOutPokerArr.push(double_1.getComponent("DDZ_Poker").pokerID);
+                            this.fourAndTwoPoint = list[i];
+                        }
+                        this.fourAndTwoPoint == list[list.length - 1] ? this.fourAndTwoPoint = null : this.fourAndTwoPoint;
+                        if (this.fourAndTwoPoint == 53 || this.fourAndTwoPoint == 54) {
+                            this.fourAndTwoPoint = null;
+                        }
+                        isDone = true;
+                    }
+                }
+
+            }
+        }
+    }
+
+};
+pokerTip.flyWithAction = function (list) {
+    this.initPokerNode();
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    var isDone = false;
+    for (var i = 0; i < list.length; i++) {
+        if (isDone == false) {
+            for (var j = 0; j < pokerRoot.children.length; j++) {
+                if (this.flyPoint == null) {
+                    if (list[i].min == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum) {
+                        // 找到最小的
+                        this.flyPoint = list[i].min;
+                        if (this.flyPoint == 53 || this.flyPoint == 54) {
+                            this.pokerUpAction(j, 1);
+                            isDone = true;
+                        } else {
+                            var times = 0;
+                            for (var k = j; k < pokerRoot.children.length; k++) {
+                                if (pokerRoot.children[k].y == 0
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum == list[i].min + times
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum <= list[i].max
+                                    && times + 1 <= list[i].len) {
+                                    this.pokerUpAction(k, 2);
+                                    times++;
+                                }
+                            }
+                            isDone = true;
+                            this.findOtherCard();
+                        }
+                        this.flyPoint == list[list.length - 1].min ? this.flyPoint = null : this.flyPoint;
+                        if (this.flyPoint == 53 || this.flyPoint == 54) {
+                            this.flyPoint = null;
+                        }
+                    }
+                } else if (list[i].min > this.flyPoint) {
+                    if (list[i].min == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum) {
+                        this.flyPoint = list[i].min;
+                        if (this.flyPoint == 53 || this.flyPoint == 54) {
+                            this.pokerUpAction(j, 1);
+                            isDone = true;
+                        } else {
+                            var times = 0;
+                            for (var k = j; k < pokerRoot.children.length; k++) {
+                                if (pokerRoot.children[k].y == 0
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum == list[i].min + times
+                                    && pokerRoot.children[k].getComponent("DDZ_Poker").pokerNum <= list[i].max
+                                    && times + 1 <= list[i].len) {
+                                    this.pokerUpAction(k, 2);
+                                    times++;
+                                }
+                            }
+                            isDone = true;
+                            this.findOtherCard();
+                        }
+                        this.flyPoint == list[list.length - 1].min ? this.flyPoint = null : this.flyPoint;
+                        if (this.flyPoint == 53 || this.flyPoint == 54) {
+                            this.flyPoint = null;
+                        }
+                    }
+                }
+            }
+        }
+    }
+};
+pokerTip.pokerUpAction = function (pokerIndex, num) {
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    switch (num) {
+        case 0: {
+            pokerRoot.children[pokerIndex].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
+            break;
+        }
+        case 1: {
+            pokerRoot.children[pokerIndex].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[pokerIndex + 1].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 1].getComponent("DDZ_Poker").pokerID);
+            break;
+        }
+        case 2: {
+            pokerRoot.children[pokerIndex].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[pokerIndex + 1].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 1].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[pokerIndex + 2].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 2].getComponent("DDZ_Poker").pokerID);
+            break;
+        }
+        case 3: {
+            pokerRoot.children[pokerIndex].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[pokerIndex + 1].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 1].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[pokerIndex + 2].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 2].getComponent("DDZ_Poker").pokerID);
+            pokerRoot.children[pokerIndex + 3].y = 20;
+            cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 3].getComponent("DDZ_Poker").pokerID);
+            break;
+        }
 
     }
+
+};
+pokerTip.findOtherCard = function () {
+    var type = this.lastPokerType;
+    var pokerNum = type == 2 ? this.lastPokerNum * 2 : this.lastPokerNum;
+    var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+    // type:2为对子
+    var newArr = [];
+    for (var i = 0; i < this.singleArr.length; i++) {
+        newArr.push(this.singleArr[i]);
+    }
+    for (var i = 0; i < this.doubleArr.length; i++) {
+        newArr.push(this.doubleArr[i]);
+    }
+    newArr = this.zipArr(newArr);
+    newArr = cc.YL.DDZTools.SortPoker(newArr);
+    var times = 0;
+    for (var i = 0; i < newArr.length; i++) {
+        for (var j = 0; j < pokerRoot.children.length; j++) {
+            if (pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum == newArr[i]
+                && pokerRoot.children[j].y == 0
+                && times < pokerNum) {
+                pokerRoot.children[j].y = 20;
+                cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
+                times++;
+            }
+        }
+    }
+
 };
 cc.YL.PokerTip = pokerTip;
 module.exports = pokerTip;

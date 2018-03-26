@@ -1,0 +1,18 @@
+syntax = "proto2";
+
+package msg;
+
+enum ddzErrorCode {
+    NOERROR = 0; //
+
+    CREATEFAIL = -100; //创建房间失败
+    CREATEFAIL_EXIST_IN_THE_DESK = -101; //创建房间失败，已经在房间中
+    CREATEFAIL_LACK_OF_ROOM_CARD = -102; //创建房间失败，房卡不足
+    CREATEFAIL_LACK_OF_GPS = -103; //创建房间失败，没有GPS信息
+
+    ENTERFAIL = -110; //进入房间失败
+    ENTERFAIL_ROOM_FULL = -111; //加入房间失败, 房间已满
+
+    DISSOLVEFAIL = -120; //解散房间失败
+
+}

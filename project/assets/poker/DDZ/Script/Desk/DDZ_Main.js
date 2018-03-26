@@ -27,22 +27,24 @@ cc.Class({
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
-
+        cc.YL.DDZEventManager.init();//网络事件注册初始化
     },
-
+    onDestroy(){
+        cc.YL.DDZEventManager.destroy();//网络事件取消注册
+    },
 
 
    Test: function(){
         //测试按钮
-       var TestArr = [1,14,27,40,53,54,52,39,13,26,3,5,6,7,8,9];
-        cc.YL.GameAction.StartFaPai(TestArr);
+       var TestArr = [3,4,5,16,17,18,28,29,30,31,41,42,43,44,54,53,50,25];
+        cc.YL.DDZGameAction.StartFaPai(TestArr);
    },
    Test_1: function () {
        cc.YL.PokerTip.startAnalysis();
 
    },
     Test_2: function () {
-        cc.YL.PokerTip.clickTipsBtn(11,3,[3,3,3,3]);
+        cc.YL.PokerTip.clickTipsBtn(2,2,[3,3,3,4,4,4,5,6]);
 
     }
 });

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package msg;
+import public "ddz_base.proto";
+
+//聊天
+message ddz_desk_send_msg_req {
+
+}
+
+message ddz_desk_send_msg_ack {
+    optional Header retMsg = 1;
+}
