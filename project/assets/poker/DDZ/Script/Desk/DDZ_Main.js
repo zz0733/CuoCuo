@@ -71,14 +71,16 @@ cc.Class({
         this.selfNodeComp.clearNodeUI();
         this.rightNodeComp.clearNodeUI();
         this.leftNodeComp.clearNodeUI();
+        this.BtnNode.removeAllChildren();
     },
-    GameOverUI: function(){
+    GameOverUI: function () {
         this.selfHandPokerNodeComp.clearHandPoker();
         this.rightHandPokerNodeComp.cleanHandPokerCount();
         this.leftHandPokerNodeComp.cleanHandPokerCount();
         this.selfOutNodeComp.clearOutPoker();
         this.rightOutNodeComp.clearOutPoker();
         this.leftOutNodeComp.clearOutPoker();
+        this.BtnNode.removeAllChildren();
     },
     initRoomInfo: function (data) {
         var roomInfo = cc.find("DDZ_UIROOT/MainNode/BtnNode/RoomInfo/RoomNum");
@@ -106,6 +108,16 @@ cc.Class({
 
     onPhoneBatteryEvent: function (msg) {
 
+    },
+    initReady: function () {
+        this.BtnNode.removeAllChildren();
+        var readyPre = this.BtnNode.getComponent("DDZ_PlayerBtn").ready;
+        var readyNode = this.BtnNode.getChildByName("DDZ_Ready") ?
+            this.BtnNode.getChildByName("DDZ_Ready") :
+            cc.instantiate(readyPre);
+        this.BtnNode.getChildByName("DDZ_Ready") ?
+            this.BtnNode.getChildByName("DDZ_Ready").active = true :
+            this.BtnNode.addChild(readyNode);
     },
     initDiFen: function (data) {
         var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Difen/Num");
@@ -138,10 +150,12 @@ cc.Class({
         this.selfNodeComp = this.selfNode.getComponent("DDZ_PlayerSelfInfo");
         this.rightNodeComp = this.rightNode.getComponent("DDZ_PlayerRightInfo");
         this.leftNodeComp = this.leftNode.getComponent("DDZ_PlayerLeftInfo");
+        this.BtnNode = cc.find("DDZ_UIROOT/MainNode/PlayerBtnNode");
     },
     /*************************************界面的按钮交互**************************************/
     onClickSetting: function () {
         cc.YL.log("设置按钮");
+
     },
 
     onClickMessage: function () {
