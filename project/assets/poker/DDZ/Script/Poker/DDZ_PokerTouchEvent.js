@@ -40,8 +40,8 @@ cc.Class({
         this.pokerUpHeight = 20;
         this.pokerSpacing = 50;
         this.clickFirstPos = 147.5;
-        this.posYMin = 80;
-        this.posYMax = 285;
+        this.posYMin = 20;
+        this.posYMax = 230;
         cc.YL.playerOutPokerArr = [];
 
     },

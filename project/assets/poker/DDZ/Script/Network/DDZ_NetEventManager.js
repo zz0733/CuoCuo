@@ -77,6 +77,7 @@ DDZ_EventManager.PID_DESKINFO = function (msg) {
     cc.YL.DDZGameManager.initDeskByData(msg);
 };
 DDZ_EventManager.PID_PLAYERINFO = function (msg) {
+    cc.YL.PlayerInfo = msg;
     cc.YL.DDZGameManager.initPlayerNode(msg);
 };
 DDZ_EventManager.PID_READY_ACK = function (msg) {
@@ -92,57 +93,66 @@ DDZ_EventManager.PID_OPENING = function (msg) {
     cc.YL.DDZGameManager.gameOpen(msg);
 };
 DDZ_EventManager.PID_HANDPOKER_INFO = function (msg) {
+    cc.YL.DDZGameManager.handPokerManager(msg);
     // 手牌信息
 };
 DDZ_EventManager.PID_JIAOFEN = function (msg) {
     // 叫分开始广播
+    cc.YL.DDZGameManager.startJiaoFen(msg);
 };
 DDZ_EventManager.PID_JIAOFEN_ACK = function (msg) {
     // 叫分ack
     if (msg.retMsg < 0) {
         cc.YL.err("msg.retMsg", msg.retMsg);
     } else {
-
+        cc.YL.DDZGameManager.updateJiaoFen(msg);
     }
 };
 DDZ_EventManager.PID_JIABEI = function (msg) {
     // 加倍开始广播
+    cc.YL.DDZGameManager.startJiaBei(msg);
+
 };
 DDZ_EventManager.PID_JIABEI_ACK = function (msg) {
     // 加倍ack
     if (msg.retMsg < 0) {
         cc.YL.err("msg.retMsg", msg.retMsg);
     } else {
-
+        cc.YL.DDZGameManager.updateJiaBei(msg);
     }
 };
 DDZ_EventManager.PID_SEND_DIPAI = function (msg) {
     // 底牌广播
+    cc.YL.DDZGameManager.showDiPai(msg);
 };
 DDZ_EventManager.PID_OUTCARD_ACK = function (msg) {
     // 出牌ack
-    if (msg.retMsg < 0) {
-        cc.YL.err("msg.retMsg", msg.retMsg);
+    if (msg.isOk  == false) {
+        cc.YL.err("msg.isOk false 出牌失败");
     } else {
-        cc.YL.PokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
+        cc.YL.DDZGameManager.playerOutCard(msg);
+
     }
 };
 DDZ_EventManager.PID_OVERTURN = function (msg) {
     // 操作overturn
+    cc.YL.DDZGameManager.overTurn(msg);
 };
 DDZ_EventManager.PID_PASS_ACK = function (msg) {
     // 过牌ack
-    if (msg.retMsg < 0) {
-        cc.YL.err("msg.retMsg", msg.retMsg);
+    if (msg.isOk < 0) {
+        cc.YL.err("msg.isOk", msg.isOk);
     } else {
-
+        cc.YL.DDZGameManager.showPass(msg);
     }
 };
 DDZ_EventManager.PID_ROUNDRESULT = function (msg) {
     // 单局结算
+    cc.YL.DDZGameManager.showOneGameOver(msg);
 };
 DDZ_EventManager.PID_LOTTERY = function (msg) {
     // 全局结算
+    cc.YL.DDZGameManager.showAllGameOver(msg);
 };
 DDZ_EventManager.PID_SENDMSG_ACK = function (msg) {
     // 发送消息ack

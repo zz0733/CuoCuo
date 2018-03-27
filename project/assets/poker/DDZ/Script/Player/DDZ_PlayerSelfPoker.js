@@ -2,7 +2,8 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        _selfPlayerHandPoker: [],
+        selfPlayerHandPoker: [],
+        handPokerIDs: [],
         _scale: 1,
         _pokerMargin: 50,
         pokerPrefab: {
@@ -13,7 +14,7 @@ cc.Class({
 
 
     onLoad () {
-        this._pos = cc.p(30, -193);
+        this._pos = cc.p(30, -250);
         this._cardsList = [];
         this._cardsPool = new cc.NodePool();
         for (var i = 0; i < 20; i++) {
@@ -23,6 +24,9 @@ cc.Class({
         this.node.getComponent(cc.Layout).spacingX = this._pokerMargin;
     },
     clearHandPoker: function () {
+        if (!this._cardsList) {
+            return;
+        }
         for (var i = 0; i < this._cardsList.length; i++) {
             this._cardsPool.put(this._cardsList[i]);
         }
@@ -30,18 +34,21 @@ cc.Class({
     },
     initHandPoker: function (handPokerListID) {
         this.clearHandPoker();
-        this._selfPlayerHandPoker = [];
+        this.handPokerIDs = handPokerListID;
+        this.selfPlayerHandPoker = [];
         handPokerListID = cc.YL.DDZTools.SortPoker(handPokerListID);
         for (var i = 0; i < handPokerListID.length; i++) {
             var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(handPokerListID[i]);
-            this._selfPlayerHandPoker.push(pokerObj);
+            this.selfPlayerHandPoker.push(pokerObj);
         }
-        this._selfPlayerHandPoker = this._sortPokerArrObj(this._selfPlayerHandPoker);
-        cc.YL.DDZHandPokerList = this._selfPlayerHandPoker;
-        this._updateHandPoker(this._selfPlayerHandPoker);
+        this.selfPlayerHandPoker = this._sortPokerArrObj(this.selfPlayerHandPoker);
+        cc.YL.DDZHandPokerList = this.selfPlayerHandPoker;
+        this._updateHandPoker(this.selfPlayerHandPoker);
     },
-    _sortPokerArrObj: function(selfPlayerHandPoker){
-        return selfPlayerHandPoker.sort(function (a, b) { return a.Num - b.Num });
+    _sortPokerArrObj: function (selfPlayerHandPoker) {
+        return selfPlayerHandPoker.sort(function (a, b) {
+            return a.Num - b.Num
+        });
 
     },
     _updateHandPoker: function (pokerList) {

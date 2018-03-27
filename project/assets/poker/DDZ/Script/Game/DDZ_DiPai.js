@@ -11,16 +11,30 @@
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
-
-    // LIFE-CYCLE CALLBACKS:
-
-    onLoad () {
-        this._childScale = 0.23;
-        this._diPaiArr = [];
-        this._diPaiPosArr = [cc.p(-100, 349.5), cc.p(-60, 349.5), cc.p(-20, 349.5)];
+    properties: {
+        pokerPre: cc.Prefab,
     },
 
 
-    // update (dt) {},
+    onLoad () {
+        this._childScale = 0.25;
+        this._diPaiArr = [];
+        this._diPaiPosArr = [cc.p(-41, 0), cc.p(0, 0), cc.p(41, 0)];
+    },
+
+    clearDiPai: function () {
+        this.node.removeAllChildren();
+        this.node.active = false;
+    },
+    initDiPai: function (list) {
+        var lists = cc.YL.DDZTools.SortPoker(list);
+        this._diPaiArr = lists;
+        for (var i = 0; i < lists.length; i++) {
+            var newNode = cc.instantiate(this.pokerPre);
+            newNode.setScale(this._childScale);
+            newNode.setPosition(this._diPaiPosArr[i]);
+        }
+        this.node.active = true;
+
+    },
 });
