@@ -3,6 +3,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        playerInfo:null,
         // message ddz_base_playerInfo {
         //     optional int64 userId = 1; //ID
         //     optional string nickName = 2; //昵称
@@ -20,11 +21,14 @@ cc.Class({
 
     onLoad () {
         this.playerInfo = null;
+        this.BtnNode = cc.find("DDZ_UIROOT/MainNode/PlayerBtnNode");
     },
     initRightPlayerNode: function(data){
+        this.node.active = true;
         this.playerInfo = data;
         this.clearNodeUI();
         this.initNodeUI(data);
+        this.showAndHideReady(data.isReady);
     },
     clearNodeUI: function () {
         this.node.getChildByName("HeadNode").getComponent(cc.Sprite).spriteFrame = null;
@@ -39,9 +43,12 @@ cc.Class({
         this.node.getChildByName("ID").getComponent(cc.Label).string = data.userId;
         this.node.getChildByName("NickNameBG").getChildByName("Name").getComponent(cc.Label).string = data.nickName;
         this.node.getChildByName("NickNameBG").getChildByName("Num").getComponent(cc.Label).string = data.coin;
+        this.node.getChildByName("Rate").active = false;
     },
     showAndHideReady: function(isReady){
-
+        if(isReady == true && cc.YL.DDZDeskInfo.status <= 2){
+            this.node.getChildByName("Word").getComponent(cc.Label).string = "准备";
+        }
     },
     showDiZhuIcon: function (isDiZhu) {
         this.isDiZhu = isDiZhu;
@@ -49,5 +56,13 @@ cc.Class({
     },
     onClickPlayerInfo: function(){
         cc.YL.log("显示玩家的信息");
+        cc.find("DDZ_UIROOT/MainNode").getComponent("DDZ_Main").initPlayerInfoNode(this.playerInfo,2);
     },
+    showRate: function(){
+        this.node.getChildByName("Rate").active = true;
+    },
+    clearRate: function(){
+        this.node.getChildByName("Rate").active = false;
+    },
+
 });

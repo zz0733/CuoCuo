@@ -75,7 +75,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "0",
+    "_name": "2",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -124,7 +124,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -130,
+      "x": 130,
       "y": 0
     },
     "_skewX": 0,
@@ -204,7 +204,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "提示",
+    "_N$string": "不出",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -218,7 +218,7 @@
     "asset": {
       "__uuid__": "892da0df-30e6-4a20-9cdf-705bad0b5330"
     },
-    "fileId": "97YuagMy1CPI9UosnPCgTp",
+    "fileId": "15LZDh8qlJAY1MTWTzjCxQ",
     "sync": false
   },
   {
@@ -315,7 +315,7 @@
       "__id__": 1
     },
     "component": "DDZ_OutCard",
-    "handler": "onClickTiShiCard",
+    "handler": "onClickPassCard",
     "customEventData": ""
   },
   {
@@ -326,12 +326,12 @@
     "asset": {
       "__uuid__": "892da0df-30e6-4a20-9cdf-705bad0b5330"
     },
-    "fileId": "dd8Xq0VU9GMLoJwlQSLq5C",
+    "fileId": "8esnL+gx1HDImx4sWOcF7i",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "1",
+    "_name": "0",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -380,7 +380,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -130,
       "y": 0
     },
     "_skewX": 0,
@@ -460,7 +460,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "出牌",
+    "_N$string": "提示",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -474,7 +474,7 @@
     "asset": {
       "__uuid__": "892da0df-30e6-4a20-9cdf-705bad0b5330"
     },
-    "fileId": "21GtcvV4lG9pwEASPRCSIB",
+    "fileId": "97YuagMy1CPI9UosnPCgTp",
     "sync": false
   },
   {
@@ -571,7 +571,7 @@
       "__id__": 1
     },
     "component": "DDZ_OutCard",
-    "handler": "onClickOutCard",
+    "handler": "onClickTiShiCard",
     "customEventData": ""
   },
   {
@@ -582,12 +582,12 @@
     "asset": {
       "__uuid__": "892da0df-30e6-4a20-9cdf-705bad0b5330"
     },
-    "fileId": "570tlz73hAmLpJqIxZxOej",
+    "fileId": "dd8Xq0VU9GMLoJwlQSLq5C",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "2",
+    "_name": "1",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -636,7 +636,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 130,
+      "x": 0,
       "y": 0
     },
     "_skewX": 0,
@@ -716,7 +716,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "过",
+    "_N$string": "出牌",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -730,7 +730,7 @@
     "asset": {
       "__uuid__": "892da0df-30e6-4a20-9cdf-705bad0b5330"
     },
-    "fileId": "15LZDh8qlJAY1MTWTzjCxQ",
+    "fileId": "21GtcvV4lG9pwEASPRCSIB",
     "sync": false
   },
   {
@@ -827,7 +827,7 @@
       "__id__": 1
     },
     "component": "DDZ_OutCard",
-    "handler": "onClickPassCard",
+    "handler": "onClickOutCard",
     "customEventData": ""
   },
   {
@@ -838,7 +838,7 @@
     "asset": {
       "__uuid__": "892da0df-30e6-4a20-9cdf-705bad0b5330"
     },
-    "fileId": "8esnL+gx1HDImx4sWOcF7i",
+    "fileId": "570tlz73hAmLpJqIxZxOej",
     "sync": false
   },
   {

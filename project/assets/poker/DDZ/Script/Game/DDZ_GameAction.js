@@ -37,32 +37,48 @@ GameAction.bindNodeName = function () {
 GameAction.startJiaoFen = function (data) {
     // 开始叫分的操作
     // 初始化叫分的预制
+    //广播
     this.bindNodeName();
     this.BtnNode.removeAllChildren();
-    var jiaoFenPre = this.BtnNode.getComponent("DDZ_PlayerBtn").JiaoFen;
-    var jiaoFenNode = this.BtnNode.getChildByName("DDZ_JiaoFen") ?
-        this.BtnNode.getChildByName("DDZ_JiaoFen") :
-        cc.instantiate(jiaoFenPre);
-    this.BtnNode.getChildByName("DDZ_JiaoFen") ?
-        this.BtnNode.getChildByName("DDZ_JiaoFen").active = true :
-        this.BtnNode.addChild(jiaoFenNode);
-
-
+    if (data.retMsg.userId == this.selfID) {
+        var jiaoFenPre = this.BtnNode.getComponent("DDZ_PlayerBtn").JiaoFen;
+        var jiaoFenNode = this.BtnNode.getChildByName("DDZ_JiaoFen") ?
+            this.BtnNode.getChildByName("DDZ_JiaoFen") :
+            cc.instantiate(jiaoFenPre);
+        this.BtnNode.getChildByName("DDZ_JiaoFen") ?
+            this.BtnNode.getChildByName("DDZ_JiaoFen").active = true :
+            this.BtnNode.addChild(jiaoFenNode);
+        jiaoFenNode.getComponent("DDZ_JiaoFen").initJIaoFenUI(data);
+    }
+    if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
+        this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "叫分中";
+    }
+    if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
+        this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "叫分中";
+    }
 };
 GameAction.updateJiaoFen = function (data) {
-    // 叫分的操作
+    // 更新叫分的操作ack
     this.bindNodeName();
-    if (this.selfID == data.userId) {
+    if (this.selfID == data.retMsg.userId) {
         if (this.BtnNode.getChildByName("DDZ_JiaoFen")) {
             this.BtnNode.getChildByName("DDZ_JiaoFen").active = false;
             this.BtnNode.getChildByName("DDZ_JiaoFen").destroy();
         }
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
-
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
-
+        data.fen != 0
+            ? this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "叫" + data.fen + "分"
+            : this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "不叫";
     }
-
+    if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
+        data.fen != 0
+            ? this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "叫" + data.fen + "分"
+            : this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "不叫";
+    }
+    if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
+        data.fen != 0
+            ? this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "叫" + data.fen + "分"
+            : this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "不叫";
+    }
 };
 GameAction.endJiaoFen = function () {
     // 结束叫分的操作
@@ -76,29 +92,44 @@ GameAction.startJiaBei = function (data) {
     // 开始加倍的操作
     // 初始化加倍的预制
     this.bindNodeName();
-    var jiaBeiPre = this.BtnNode.getComponent("DDZ_PlayerBtn").JiaBei;
-    this.BtnNode.removeAllChildren();
-    var jiaBeiNode = this.BtnNode.getChildByName("DDZ_JiaBei") ?
-        this.BtnNode.getChildByName("DDZ_JiaBei") :
-        cc.instantiate(jiaBeiPre);
-    this.BtnNode.getChildByName("DDZ_JiaBei") ?
-        this.BtnNode.getChildByName("DDZ_JiaBei").active = true :
-        this.BtnNode.addChild(jiaBeiNode);
+    if (data.retMsg.userId = this.selfID) {
+        var jiaBeiPre = this.BtnNode.getComponent("DDZ_PlayerBtn").JiaBei;
+        this.BtnNode.removeAllChildren();
+        var jiaBeiNode = this.BtnNode.getChildByName("DDZ_JiaBei") ?
+            this.BtnNode.getChildByName("DDZ_JiaBei") :
+            cc.instantiate(jiaBeiPre);
+        this.BtnNode.getChildByName("DDZ_JiaBei") ?
+            this.BtnNode.getChildByName("DDZ_JiaBei").active = true :
+            this.BtnNode.addChild(jiaBeiNode);
+
+    }
 
 
 };
 GameAction.updateJiaBei = function (data) {
     // 加倍的操作
     this.bindNodeName();
-    if (this.selfID == data.userId) {
+    if (this.selfID == data.retMsg.userId) {
         if (this.BtnNode.getChildByName("DDZ_JiaBei")) {
             this.BtnNode.getChildByName("DDZ_JiaBei").active = false;
             this.BtnNode.getChildByName("DDZ_JiaBei").destroy();
         }
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
-
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
-
+        data.jiaBeiResult == true ?
+            this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "加倍" :
+            this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "不加倍";
+        this.selfNodeComp.showRate();
+    }
+    if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
+        data.jiaBeiResult == true ?
+            this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "加倍" :
+            this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "不加倍";
+        this.rightNodeComp.showRate();
+    }
+    if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
+        data.jiaBeiResult == true ?
+            this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "加倍" :
+            this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "不加倍";
+        this.leftNodeComp.showRate();
     }
 
 };
@@ -122,15 +153,16 @@ GameAction.removeDiPai = function () {
     node.getComponent("DDZ_DiPai").clearDiPai();
 };
 GameAction.overTurn = function (data) {
+    cc.YL.info("收到overturn 当前操作玩家", data.activeUser);
     // optional int64 activeUser = 1; //该谁操作
     // optional playerActType actType = 2;
     // optional int32 actTime = 3; // 操作时间
     // optional bool canOut = 4; //是否大得起上家出的牌
     this.bindNodeName();
-    if (this.selfID == data.activerUser) {
+    if (this.selfID == data.activeUser) {
         this.BtnNode.removeAllChildren();
         if (data.canOut == false) {
-            var passPre = this.BtnNode.getComponent("DDZ_Pass").pass;
+            var passPre = this.BtnNode.getComponent("DDZ_PlayerBtn").pass;
             var passNode = this.BtnNode.getChildByName("DDZ_Pass") ?
                 this.BtnNode.getChildByName("DDZ_Pass") :
                 cc.instantiate(passPre);
@@ -138,7 +170,7 @@ GameAction.overTurn = function (data) {
                 this.BtnNode.getChildByName("DDZ_Pass").active = true :
                 this.BtnNode.addChild(passNode);
         } else {
-            var outCardPre = this.BtnNode.getComponent("DDZ_OutCard").outCard;
+            var outCardPre = this.BtnNode.getComponent("DDZ_PlayerBtn").outCard;
             var outCardNode = this.BtnNode.getChildByName("DDZ_OutCard") ?
                 this.BtnNode.getChildByName("DDZ_OutCard") :
                 cc.instantiate(outCardPre);
@@ -146,9 +178,9 @@ GameAction.overTurn = function (data) {
                 this.BtnNode.getChildByName("DDZ_OutCard").active = true :
                 this.BtnNode.addChild(outCardNode);
         }
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
+    } else if (data.userId == cc.YL.DDZrightPlayerInfo.userId) {
 
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
+    } else if (data.userId == cc.YL.DDZleftPlayerInfo.userId) {
 
     }
 };
@@ -160,17 +192,14 @@ GameAction.showPass = function (data) {
     this.bindNodeName();
     if (this.selfID == data.activerUser) {
 
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
+    }
+    if (data.userId == cc.YL.DDZrightPlayerInfo.userId) {
 
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
+    }
+    if (data.userId == cc.YL.DDZleftPlayerInfo.userId) {
 
     }
 };
-GameAction.showOneGameOver = function (data) {
 
-};
-GameAction.showAllGameOver = function (data) {
-
-};
 module.exports = GameAction;
 cc.YL.DDZGameAction = GameAction;

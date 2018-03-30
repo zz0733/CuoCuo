@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package msg;
+package ylproto;
 import public "ddz_base.proto";
 
 //聊天

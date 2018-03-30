@@ -22,16 +22,12 @@ cc.Class({
         fun.net.send("PID_OUTCARD_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             paiIds:  cc.YL.playerOutPokerArr,
-        }, function () {
-            cc.YL.log("出牌发送OK");
-        }.bind(this));
+        });
     },
     onClickPassCard: function(){
         fun.net.send("PID_PASS_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
-        }, function () {
-            cc.YL.log("过牌发送OK");
-        }.bind(this));
+        });
     },
     onClickTiShiCard: function(){
         cc.YL.PokerTip.clickTipsBtn(2, 2, [3, 3, 3, 4, 4, 4, 5, 6]);

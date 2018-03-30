@@ -44,6 +44,7 @@ cc.Class({
         this.selfPlayerHandPoker = this._sortPokerArrObj(this.selfPlayerHandPoker);
         cc.YL.DDZHandPokerList = this.selfPlayerHandPoker;
         this._updateHandPoker(this.selfPlayerHandPoker);
+        cc.YL.PokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
     },
     _sortPokerArrObj: function (selfPlayerHandPoker) {
         return selfPlayerHandPoker.sort(function (a, b) {

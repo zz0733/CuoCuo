@@ -38,7 +38,7 @@ cc.Class({
         this.pokerTypeArr = object.typeArr;
         this.pokerValue = object.valueArr;
         this.pokerNum = object.Num;
-        cc.YL.info("initPoker扑克牌的ID:%s，type:%s，图集名:%s，值:%s",this.pokerID,this.pokerTypeArr,this.pokerValue,this.pokerNum);
+        // cc.YL.info("initPoker扑克牌的ID:%s，type:%s，图集名:%s，值:%s",this.pokerID,this.pokerTypeArr,this.pokerValue,this.pokerNum);
         if(this.pokerTypeArr == "00"){
             this._frontNode.getChildByName("typeBig").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerValue);
             this._frontNode.getChildByName("typeBig").setPosition(cc.p(0,0));

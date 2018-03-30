@@ -42,35 +42,57 @@ DDZGameManager.initPlayerNode = function (data) {
     if (this.selfID == data.userId) {
         // 玩家自己的消息信息
         this.selfNodeComp.initSelfPlayerNode(data);
+        cc.YL.DDZselfPlayerInfo = data;
+        cc.YL.info("现在的playerinfo",cc.YL.DDZrightPlayerInfo,cc.YL.DDZleftPlayerInfo);
+        if(!cc.YL.DDZrightPlayerInfo){
+            cc.YL.DDZrightPlayerInfo = {
+                userId: 0,
+            };
+        }
+        if(!cc.YL.DDZleftPlayerInfo){
+            cc.YL.DDZleftPlayerInfo = {
+                userId: 0,
+            };
+        }
     } else {
-        if (this.selfNodeComp.playerInfo.index == 2) {
-            if (data.index == 3) {
-                this.rightNodeComp.initRightPlayerNode(data);
-            } else if (data.index == 1) {
-                this.leftNodeComp.initLeftPlayerNode(data);
-            }
-        } else if (this.selfNodeComp.playerInfo.index == 1) {
+        if (cc.YL.selfIndex == 1) {
             if (data.index == 2) {
                 this.rightNodeComp.initRightPlayerNode(data);
-            } else if (data.index == 3) {
+                cc.YL.DDZrightPlayerInfo = data;
+            } else if (data.index == 0) {
                 this.leftNodeComp.initLeftPlayerNode(data);
+                cc.YL.DDZleftPlayerInfo = data;
             }
-        } else if (this.selfNodeComp.playerInfo.index == 3) {
+        }
+        if (cc.YL.selfIndex == 0) {
             if (data.index == 1) {
                 this.rightNodeComp.initRightPlayerNode(data);
+                cc.YL.DDZrightPlayerInfo = data;
             } else if (data.index == 2) {
                 this.leftNodeComp.initLeftPlayerNode(data);
+                cc.YL.DDZleftPlayerInfo = data;
+            }
+        }
+        if (cc.YL.selfIndex == 2) {
+            if (data.index == 0) {
+                this.rightNodeComp.initRightPlayerNode(data);
+                cc.YL.DDZrightPlayerInfo = data;
+            } else if (data.index == 1) {
+                this.leftNodeComp.initLeftPlayerNode(data);
+                cc.YL.DDZleftPlayerInfo = data;
             }
         }
     }
 };
 DDZGameManager.updateReady = function (data) {
     this.bindNodeValue();
-    if (this.selfID == data.userId) {
+    if (this.selfID == data.retMsg.userId) {
         this.selfNodeComp.showAndHideReady(data.isReadyOk);
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
+    }
+    if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         this.rightNodeComp.showAndHideReady(data.isReadyOk);
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
+    }
+    if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
         this.leftNodeComp.showAndHideReady(data.isReadyOk);
     }
 };
@@ -79,29 +101,46 @@ DDZGameManager.gameOpen = function (data) {
     //data.second // 倒计时时间
     var UIROOT = cc.find("DDZ_UIROOT");
     UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").updateRoomInfo(data.currentRound);
+    cc.YL.info("当前局数", data.currentRound);
 };
 DDZGameManager.handPokerManager = function (data) {
     this.bindNodeValue();
     if (this.selfID == data.userId) {
         this.selfHandPokerNodeComp.initHandPoker(data.handPokers);
-        this.selfOutNodeComp.initOutPoker(data.paiCount.outPais);
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
-        this.rightHandPokerNodeComp.initHandPokerCount(data.paiCount.paiCounts);
-        this.rightOutNodeComp.initOutPoker(data.paiCount.outPais);
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
-        this.leftHandPokerNodeComp.initHandPokerCount(data.paiCount.paiCounts);
-        this.leftOutNodeComp.initOutPoker(data.paiCount.outPais);
+        for (var i = 0; i < data.paiCount.length; i++) {
+            cc.YL.info("渲染玩家手牌数和出的牌", data.paiCount[i].userId);
+            if (data.paiCount[i].userId == this.selfID) {
+                this.selfOutNodeComp.initOutPoker(data.paiCount.outPais);
+                //todo
+            }
+            if (data.paiCount[i].userId == cc.YL.DDZrightPlayerInfo.userId) {
+                this.rightHandPokerNodeComp.initHandPokerCount(data.paiCount[i].paiCounts);
+                this.rightOutNodeComp.initOutPoker(data.paiCount[i].outPais);
+                //todo
+            }
+            if (data.paiCount[i].userId == cc.YL.DDZleftPlayerInfo.userId) {
+                this.leftHandPokerNodeComp.initHandPokerCount(data.paiCount[i].paiCounts);
+                this.leftOutNodeComp.initOutPoker(data.paiCount[i].outPais);
+                //todo
+            }
+        }
     }
 };
 DDZGameManager.startJiaoFen = function (data) {
     // 开始叫分
     cc.YL.DDZGameAction.startJiaoFen(data);
+    this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "";
 };
 DDZGameManager.updateJiaoFen = function (data) {
     cc.YL.DDZGameAction.updateJiaoFen(data);
 };
 DDZGameManager.startJiaBei = function (data) {
-    // 开始叫分
+    // 开始加倍
+    this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "";
     cc.YL.DDZGameAction.endJiaoFen();
     cc.YL.DDZGameAction.startJiaBei(data);
 };
@@ -110,12 +149,25 @@ DDZGameManager.updateJiaBei = function (data) {
 };
 DDZGameManager.showDiPai = function (data) {
     this.bindNodeValue();
+    cc.YL.DDZGameAction.endJiaoFen();
     if (this.selfID == data.diZhuId) {
+        cc.YL.warn("玩家自己是地主");
         this.selfNodeComp.showDiZhuIcon(true);
-    } else if (data.diZhuId == this.rightNodeComp.playerInfo.userId) {
+        var oldCard = this.selfHandPokerNodeComp.handPokerIDs;
+        for (var i = 0; i < data.diPais.length; i++) {
+            oldCard.push(data.diPais[i]);
+        }
+        this.selfHandPokerNodeComp.initHandPoker(oldCard);
+    }
+    if (data.diZhuId == cc.YL.DDZrightPlayerInfo.userId) {
+        cc.YL.warn("右边是地主");
         this.rightNodeComp.showDiZhuIcon(true);
-    } else if (data.diZhuId == this.leftNodeComp.playerInfo.userId) {
+        this.rightHandPokerNodeComp.initHandPokerCount(this.rightHandPokerNodeComp.cardNum + 3);
+    }
+    if (data.diZhuId == cc.YL.DDZleftPlayerInfo.userId) {
+        cc.YL.warn("左边是地主");
         this.leftNodeComp.showDiZhuIcon(true);
+        this.leftHandPokerNodeComp.initHandPokerCount(this.leftHandPokerNodeComp.cardNum + 3);
     }
     cc.YL.DDZGameAction.showDiPai(data);
 };
@@ -136,24 +188,31 @@ DDZGameManager.playerOutCard = function (data) {
             }
         }
         this.selfHandPokerNodeComp.initHandPoker(this.selfHandPokerNodeComp.handPokerIDs);
-        this.selfOutNodeComp.initOutPoker(data.paiIds);
+        this.selfOutNodeComp.initOutPoker(data.paiIds,data.outType);
         cc.YL.PokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
-    } else if (data.userId == this.rightNodeComp.playerInfo.userId) {
+    }
+    if (data.userId == cc.YL.DDZrightPlayerInfo.userId) {
         this.rightHandPokerNodeComp.initHandPokerCount(this.rightHandPokerNodeComp.cardNum - data.paiIds.length);
-        this.rightOutNodeComp.initOutPoker(data.paiIds);
-    } else if (data.userId == this.leftNodeComp.playerInfo.userId) {
+        this.rightOutNodeComp.initOutPoker(data.paiIds,data.outType);
+    }
+    if (data.userId == cc.YL.DDZleftPlayerInfo.userId) {
         this.leftHandPokerNodeComp.initHandPokerCount(this.leftHandPokerNodeComp.cardNum - data.paiIds.length);
-        this.leftOutNodeComp.initOutPoker(data.paiIds);
+        this.leftOutNodeComp.initOutPoker(data.paiIds,data.outType);
     }
 };
 DDZGameManager.overTurn = function (data) {
+    this.selfNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    this.rightNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    this.leftNode.getChildByName("Word").getComponent(cc.Label).string = "";
+    cc.YL.DDZGameAction.endJiaoFen();
+    cc.YL.DDZGameAction.endJiaBei();
     cc.YL.DDZGameAction.overTurn(data);
 };
 DDZGameManager.showOneGameOver = function (data) {
-    cc.YL.DDZGameAction.showOneGameOver(data);
 };
 DDZGameManager.showAllGameOver = function (data) {
-    cc.YL.DDZGameAction.showAllGameOver(data);
+    var UIROOT = cc.find("DDZ_UIROOT");
+    UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showAllGameOver(data);
 };
 module.exports = DDZGameManager;
 cc.YL.DDZGameManager = DDZGameManager;

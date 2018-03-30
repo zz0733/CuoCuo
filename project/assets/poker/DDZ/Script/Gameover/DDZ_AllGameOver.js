@@ -16,21 +16,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        item: cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -40,6 +26,12 @@ cc.Class({
     start () {
 
     },
-
-    // update (dt) {},
+    initAllGameOverNode: function (data) {
+        this.node.getChildByName("BG").getChildByName("Mid").removeAllChildren();
+        for (var i = 0; i < data.length; i++) {
+            var itemNode = cc.instantiate(this.item);
+            this.node.getChildByName("BG").getChildByName("Mid").addChild(itemNode);
+            itemNode.getComponent("DDZ_AllGameOverItem").initItemNode(data[i]);
+        }
+    },
 });

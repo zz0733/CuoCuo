@@ -1,17 +1,20 @@
 var pokerTip = cc.Class({});
 pokerTip.typeEnum = {
-    "王炸": 12,
+    "王炸": 14,
     "炸弹": 11,
-    "单张": 10,
-    "对子": 9,
-    "三张": 8,
-    "三带一": 7,
-    "三带二": 6,
-    "顺子": 5,
-    "连对": 4,
-    "飞机带单张": 3,
-    "飞机带对子": 2,
-    "四带二": 1,
+    "单张": 1,
+    "对子": 2,
+    "三张": 3,
+    "三带一": 4,
+    "三带二": 5,
+    "顺子": 6,
+    "连对": 7,
+    "飞机不带":8,
+    "飞机带单张": 9,
+    "飞机带对子": 10,
+    "四带二": 12,
+    "四带两张":13,
+
 };
 
 pokerTip.startAnalysis = function () {
@@ -222,7 +225,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
     this.lastPokerList = cc.YL.DDZTools.SortPoker(list); // 牌的数组
 
     switch (this.lastPokerType) {
-        case 1: {
+        case 12: {
             var tipFourAndTowCardArr = [];
             var doubleCard = null;
             for (var i = 0; i < this.fourArr.length; i++) {
@@ -251,7 +254,24 @@ pokerTip.clickTipsBtn = function (type, num, list) {
 
             break;
         }
-        case 2: {
+        case 8:{
+            var tipFlyCardArr = [];
+            for (var i = 0; i < this.flyArr.length; i++) {
+                if (this.flyArr[i].min > this.lastPokerList[0] && this.flyArr[i].len == this.lastPokerNum) {
+                    tipFlyCardArr.push(this.flyArr[i]);
+                }
+            }
+            if (this.rocketArr.length == 2) {
+                tipFlyCardArr.push({
+                    min: this.rocketArr[0],
+                    max: this.rocketArr[1],
+                    len: 2,
+                });
+            }
+            this.flyWithAction(tipFlyCardArr,false,null);
+            break;
+        }
+        case 10: {
             //飞机对子
             var tipFlyWithDoubleCardArr = [];
             for (var i = 0; i < this.flyArr.length; i++) {
@@ -267,10 +287,10 @@ pokerTip.clickTipsBtn = function (type, num, list) {
                 });
             }
 
-            this.flyWithAction(tipFlyWithDoubleCardArr);
+            this.flyWithAction(tipFlyWithDoubleCardArr,true,2);
             break;
         }
-        case 3: {
+        case 9: {
             //飞机单张
             var tipFlyWithOneCardArr = [];
             for (var i = 0; i < this.flyArr.length; i++) {
@@ -285,10 +305,10 @@ pokerTip.clickTipsBtn = function (type, num, list) {
                     len: 2,
                 });
             }
-            this.flyWithAction(tipFlyWithOneCardArr);
+            this.flyWithAction(tipFlyWithOneCardArr,true,1);
             break;
         }
-        case 4: {
+        case 7: {
             //连对
             var tipDoubleShunziCardArr = [];
             for (var i = 0; i < this.doubleShunZiArr.length; i++) {
@@ -306,7 +326,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             this.doubleShunZiAction(tipDoubleShunziCardArr);
             break;
         }
-        case 5: {
+        case 6: {
             //顺子
             var tipShunziCardArr = [];
             for (var i = 0; i < this.shunZiArr.length; i++) {
@@ -325,7 +345,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             this.shunZiAction(tipShunziCardArr);
             break;
         }
-        case 6: {
+        case 5: {
             // 三带二
             var tipThreeAndTwoCardArr = [];
             var doubleCard = null;
@@ -359,7 +379,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             }
             break;
         }
-        case 7: {
+        case 4: {
             //三带一
             var tipThreeAndOneCardArr = [];
             var singleCard = null;
@@ -394,7 +414,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
 
             break;
         }
-        case 8: {
+        case 3: {
             var tipThreeCardArr = [];
             for (var i = 0; i < this.threeArr.length; i++) {
                 if (this.threeArr[i] > this.lastPokerList[0]) {
@@ -414,7 +434,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             this.threeAction(tipThreeCardArr);
             break;
         }
-        case 9: {
+        case 2: {
             var tipDoubleCardArr = [];
             for (var i = 0; i < this.doubleArr.length; i++) {
                 if (this.doubleArr[i] > this.lastPokerList[0]) {
@@ -439,7 +459,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             this.doubleAction(tipDoubleCardArr);
             break;
         }
-        case 10: {
+        case 1: {
             // 单张
             var tipSingleCardArr = [];
             for (var i = 0; i < this.handPokerList.length; i++) {
@@ -464,7 +484,7 @@ pokerTip.clickTipsBtn = function (type, num, list) {
             this.fourAction(tipFourCardArr);
             break;
         }
-        case 12: {
+        case 14: {
             //王炸。没大的过得
 
             break;
@@ -905,7 +925,7 @@ pokerTip.fourAndTwoAction = function (list, double, double_1) {
     }
 
 };
-pokerTip.flyWithAction = function (list) {
+pokerTip.flyWithAction = function (list,isOther,type) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -931,7 +951,10 @@ pokerTip.flyWithAction = function (list) {
                                 }
                             }
                             isDone = true;
-                            this.findOtherCard();
+                            if(isOther == true){
+                                this.findOtherCard(type);
+                            }
+
                         }
                         this.flyPoint == list[list.length - 1].min ? this.flyPoint = null : this.flyPoint;
                         if (this.flyPoint == 53 || this.flyPoint == 54) {
@@ -956,7 +979,9 @@ pokerTip.flyWithAction = function (list) {
                                 }
                             }
                             isDone = true;
-                            this.findOtherCard();
+                            if(isOther == true){
+                                this.findOtherCard(type);
+                            }
                         }
                         this.flyPoint == list[list.length - 1].min ? this.flyPoint = null : this.flyPoint;
                         if (this.flyPoint == 53 || this.flyPoint == 54) {

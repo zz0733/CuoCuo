@@ -52,6 +52,7 @@ DDZ_EventManager.destroy = function () {
 };
 DDZ_EventManager.PID_HEARTBEAT = function (msg) {
     //心跳包
+
 };
 DDZ_EventManager.PID_CREATEROOM_ACK = function (msg) {
     //创建房间ack
@@ -67,8 +68,7 @@ DDZ_EventManager.PID_ENTERROOM_ACK = function (msg) {
     if (msg.retMsg < 0) {
         cc.YL.err("msg.retMsg", msg.retMsg);
     } else {
-        cc.YL.log("进入房间成功，跳转场景");
-        cc.YL.DDZGameManager.LoadScene("DDZ_GameScene");
+
     }
 };
 DDZ_EventManager.PID_DESKINFO = function (msg) {
@@ -77,7 +77,7 @@ DDZ_EventManager.PID_DESKINFO = function (msg) {
     cc.YL.DDZGameManager.initDeskByData(msg);
 };
 DDZ_EventManager.PID_PLAYERINFO = function (msg) {
-    cc.YL.PlayerInfo = msg;
+
     cc.YL.DDZGameManager.initPlayerNode(msg);
 };
 DDZ_EventManager.PID_READY_ACK = function (msg) {
@@ -90,15 +90,18 @@ DDZ_EventManager.PID_READY_ACK = function (msg) {
 };
 DDZ_EventManager.PID_OPENING = function (msg) {
     // 开局
+    cc.YL.DDZDeskInfo.status = 3;
     cc.YL.DDZGameManager.gameOpen(msg);
 };
 DDZ_EventManager.PID_HANDPOKER_INFO = function (msg) {
     cc.YL.DDZGameManager.handPokerManager(msg);
     // 手牌信息
+    cc.YL.DDZDeskInfo.status = 3;
 };
 DDZ_EventManager.PID_JIAOFEN = function (msg) {
     // 叫分开始广播
     cc.YL.DDZGameManager.startJiaoFen(msg);
+    cc.YL.DDZDeskInfo.status = 4;
 };
 DDZ_EventManager.PID_JIAOFEN_ACK = function (msg) {
     // 叫分ack
@@ -111,6 +114,7 @@ DDZ_EventManager.PID_JIAOFEN_ACK = function (msg) {
 DDZ_EventManager.PID_JIABEI = function (msg) {
     // 加倍开始广播
     cc.YL.DDZGameManager.startJiaBei(msg);
+    cc.YL.DDZDeskInfo.status = 5;
 
 };
 DDZ_EventManager.PID_JIABEI_ACK = function (msg) {
@@ -137,6 +141,7 @@ DDZ_EventManager.PID_OUTCARD_ACK = function (msg) {
 DDZ_EventManager.PID_OVERTURN = function (msg) {
     // 操作overturn
     cc.YL.DDZGameManager.overTurn(msg);
+    cc.YL.DDZDeskInfo.status = 6;
 };
 DDZ_EventManager.PID_PASS_ACK = function (msg) {
     // 过牌ack
@@ -149,10 +154,12 @@ DDZ_EventManager.PID_PASS_ACK = function (msg) {
 DDZ_EventManager.PID_ROUNDRESULT = function (msg) {
     // 单局结算
     cc.YL.DDZGameManager.showOneGameOver(msg);
+    cc.YL.DDZDeskInfo.status =  7;
 };
 DDZ_EventManager.PID_LOTTERY = function (msg) {
     // 全局结算
     cc.YL.DDZGameManager.showAllGameOver(msg);
+    cc.YL.DDZDeskInfo.status = 8;
 };
 DDZ_EventManager.PID_SENDMSG_ACK = function (msg) {
     // 发送消息ack

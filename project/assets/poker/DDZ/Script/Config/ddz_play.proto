@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package msg;
+package ylproto;
 import public "ddz_base.proto";
 
 //准备
@@ -21,6 +21,8 @@ message ddz_play_opening {
 
 //进入叫分阶段的广播
 message ddz_play_jiaoFen {
+    optional Header retMsg = 1; //包含叫分阶段第一个叫分的玩家
+    repeated jiaoFenOption option = 2; //可以叫分的选项
 
 }
 
@@ -32,12 +34,13 @@ message ddz_play_jiaoFen_req {
 
 message ddz_play_jiaoFen_ack {
     optional Header retMsg = 1;
-    optional bool isOk = 2;
+    optional jiaoFenOption fen = 2; //叫了多少分
+    optional bool isOk = 3;
 }
 
 //进入加倍阶段的广播
 message ddz_play_jiaBei {
-
+    optional Header retMsg = 1; //Header中的userId为地主id
 }
 
 //玩家请求加倍
@@ -47,8 +50,9 @@ message ddz_play_jiaBei_req {
 }
 
 message ddz_play_jiaBei_ack {
-    optional int64 userId = 1;
-    optional bool isOk = 2;
+    optional Header retMsg = 1;
+    optional bool jiaBeiResult = 2; //加倍结果
+    optional bool isOk = 3;
 }
 
 //玩家出牌的请求
@@ -58,10 +62,11 @@ message ddz_play_outCards_req {
 }
 
 message ddz_play_outCards_ack {
-    optional int64 userId = 1;
+    optional Header retMsg = 1;
     optional bool isOk = 2;
     repeated int32 paiIds = 3; //出牌IDs
     optional outPaiType outType = 4; // 出牌类型
+    optional int32 remainPaiCount = 5; //剩余手牌的张数
 }
 
 message ddz_play_overturn {

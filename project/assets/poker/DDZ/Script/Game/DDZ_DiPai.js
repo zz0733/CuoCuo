@@ -30,9 +30,12 @@ cc.Class({
         var lists = cc.YL.DDZTools.SortPoker(list);
         this._diPaiArr = lists;
         for (var i = 0; i < lists.length; i++) {
+            var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(lists[i]);
             var newNode = cc.instantiate(this.pokerPre);
             newNode.setScale(this._childScale);
             newNode.setPosition(this._diPaiPosArr[i]);
+            newNode.getComponent("DDZ_Poker").initPoker(pokerObj);
+            this.node.addChild(newNode);
         }
         this.node.active = true;
 

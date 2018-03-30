@@ -72,7 +72,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "0",
+    "_name": "1",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -121,7 +121,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -65,
+      "x": 65,
       "y": 0
     },
     "_skewX": 0,
@@ -201,7 +201,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "不加倍",
+    "_N$string": "加倍",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -215,7 +215,7 @@
     "asset": {
       "__uuid__": "474c5e98-878e-4a8b-9334-8f6d6e7cd822"
     },
-    "fileId": "8fpHaiLLhIYIwG34tJz0ra",
+    "fileId": "93oyutvspNjqAgqf16c9O5",
     "sync": false
   },
   {
@@ -312,7 +312,7 @@
       "__id__": 1
     },
     "component": "DDZ_JiaBei",
-    "handler": "onClickNoJiaBei",
+    "handler": "onClickJiaBei",
     "customEventData": ""
   },
   {
@@ -323,12 +323,12 @@
     "asset": {
       "__uuid__": "474c5e98-878e-4a8b-9334-8f6d6e7cd822"
     },
-    "fileId": "23EQodLB5Oob6QcZxbMYHr",
+    "fileId": "2b2rn/wmdFiIMLYYsrLD34",
     "sync": false
   },
   {
     "__type__": "cc.Node",
-    "_name": "1",
+    "_name": "0",
     "_objFlags": 0,
     "_parent": {
       "__id__": 1
@@ -377,7 +377,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 65,
+      "x": -65,
       "y": 0
     },
     "_skewX": 0,
@@ -457,7 +457,7 @@
     "_N$file": null,
     "_isSystemFontUsed": true,
     "_spacingX": 0,
-    "_N$string": "加倍",
+    "_N$string": "不加倍",
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -471,7 +471,7 @@
     "asset": {
       "__uuid__": "474c5e98-878e-4a8b-9334-8f6d6e7cd822"
     },
-    "fileId": "93oyutvspNjqAgqf16c9O5",
+    "fileId": "8fpHaiLLhIYIwG34tJz0ra",
     "sync": false
   },
   {
@@ -568,7 +568,7 @@
       "__id__": 1
     },
     "component": "DDZ_JiaBei",
-    "handler": "onClickJiaBei",
+    "handler": "onClickNoJiaBei",
     "customEventData": ""
   },
   {
@@ -579,7 +579,7 @@
     "asset": {
       "__uuid__": "474c5e98-878e-4a8b-9334-8f6d6e7cd822"
     },
-    "fileId": "2b2rn/wmdFiIMLYYsrLD34",
+    "fileId": "23EQodLB5Oob6QcZxbMYHr",
     "sync": false
   },
   {

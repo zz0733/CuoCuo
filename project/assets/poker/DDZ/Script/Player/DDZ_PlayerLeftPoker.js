@@ -27,6 +27,7 @@ cc.Class({
 
     },
     initHandPokerCount: function(cardNum){
+        cc.YL.info("左边玩家的手牌数",cardNum);
         this.cardNum = cardNum;
         this.node.getChildByName("CardBG").getChildByName("Num").getComponent(cc.Label).string = this.cardNum;
         this.node.getChildByName("CardBG").active = true;

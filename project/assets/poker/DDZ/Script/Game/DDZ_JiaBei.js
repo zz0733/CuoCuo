@@ -16,16 +16,12 @@ cc.Class({
         fun.net.send("PID_JIABEI_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             isJiaBei: true,
-        }, function () {
-            cc.YL.log("加倍发送OK");
-        }.bind(this));
+        });
     },
     onClickNoJiaBei: function () {
         fun.net.send("PID_JIABEI_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             isJiaBei: false,
-        }, function () {
-            cc.YL.log("不加倍发送OK");
-        }.bind(this));
+        });
     },
 });

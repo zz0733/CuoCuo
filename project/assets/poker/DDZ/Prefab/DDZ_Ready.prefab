@@ -305,8 +305,8 @@
     "target": {
       "__id__": 1
     },
-    "component": "DDZ_JiaBei",
-    "handler": "onClickNoJiaBei",
+    "component": "DDZ_Ready",
+    "handler": "onClickReady",
     "customEventData": ""
   },
   {

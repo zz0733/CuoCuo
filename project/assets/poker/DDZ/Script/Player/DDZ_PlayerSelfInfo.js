@@ -1,25 +1,31 @@
 cc.Class({
     extends: cc.Component,
 
-    properties: {},
+    properties: {
+        playerInfo:null,
+    },
 
-    // message ddz_base_playerInfo {
-    //     optional int64 userId = 1; //ID
-    //     optional string nickName = 2; //昵称
-    //     optional int32 sex = 3; //性别
-    //     optional string headUrl = 4; //头像
-    //     optional int32 coin = 5; //分数（金币）
-    //     optional playerGameStatus status = 6; //游戏状态
-    //     optional bool isReady = 7; //是否准备
-    //     optional bool isBreak = 8; //是否掉线
-    //     optional bool isLeave = 9; //是否离开
-    //     optional int32 score = 10; //分数
-    //     optional string ip = 11; //玩家IP
-    // }
+    //玩家信息
+//     message ddz_base_playerInfo {
+//     optional int64 userId = 1; //ID
+//     optional string nickName = 2; //昵称
+//     optional int32 sex = 3; //性别
+//     optional string headUrl = 4; //头像
+//     optional int32 coin = 5; //分数（金币）
+//     optional playerGameStatus status = 6; //游戏状态
+//     optional bool isReady = 7; //是否准备
+//     optional bool isBreak = 8; //是否掉线
+//     optional bool isLeave = 9; //是否离开
+//     optional int32 score = 10; //分数
+//     optional string ip = 11; //玩家IP
+//     optional int32 index = 12; //玩家的座位
+// }
     onLoad () {
         this.playerInfo = null;
+        this.BtnNode = cc.find("DDZ_UIROOT/MainNode/PlayerBtnNode");
     },
     initSelfPlayerNode: function (data) {
+        this.node.active = true;
         this.playerInfo = data;
         this.clearNodeUI();
         this.initNodeUI(data);
@@ -37,8 +43,15 @@ cc.Class({
         this.node.getChildByName("ID").getComponent(cc.Label).string = data.userId;
         this.node.getChildByName("NickNameBG").getChildByName("Name").getComponent(cc.Label).string = data.nickName;
         this.node.getChildByName("CoinBG").getChildByName("Num").getComponent(cc.Label).string = data.coin;
+        this.node.getChildByName("Rate").active = false;
     },
     showAndHideReady: function (isReady) {
+        if( this.BtnNode.getChildByName("DDZ_Ready")){
+            this.BtnNode.getChildByName("DDZ_Ready").active = !isReady;
+        }
+        if(isReady == true){
+            this.node.getChildByName("Word").getComponent(cc.Label).string = "准备";
+        }
 
     },
     showDiZhuIcon: function (isDiZhu) {
@@ -47,5 +60,13 @@ cc.Class({
     },
     onClickPlayerInfo: function(){
         cc.YL.log("显示玩家的信息");
+        cc.find("DDZ_UIROOT/MainNode").getComponent("DDZ_Main").initPlayerInfoNode(this.playerInfo,1);
     },
+    showRate: function(){
+        this.node.getChildByName("Rate").active = true;
+    },
+    clearRate: function(){
+        this.node.getChildByName("Rate").active = false;
+    },
+
 });
