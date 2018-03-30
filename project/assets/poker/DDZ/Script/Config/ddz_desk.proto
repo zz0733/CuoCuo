@@ -11,3 +11,25 @@ message ddz_desk_send_msg_req {
 message ddz_desk_send_msg_ack {
     optional Header retMsg = 1;
 }
+
+//申请解散房间的msg
+message ddz_desk_dissolve_req {
+    optional int64 userId = 1; //申请解散玩家的ID
+}
+
+//广播玩家是否同意
+message ddz_desk_dissolveBro {
+    optional Header retMsg = 1;
+    optional bool isAgree = 2; //是否同意解散房间
+}
+
+//回复解散房间的请求，
+message ddz_desk_dissolve_reply {
+    optional int64 userId = 1; //
+    optional bool isAgree = 2; //是否同意
+}
+
+//解散房间成功后发的消息，广播
+message ddz_desk_dissolveDesk {
+    optional Header retMsg = 1;
+}

@@ -82,16 +82,49 @@ message ddz_play_pass_req {
 }
 
 message ddz_play_pass_ack {
-    optional int64 userId = 1;
+    optional Header retMsg = 1;
     optional bool isOk = 2;
+}
+
+message ddz_play_userRoundLotteryInfo {
+    optional int64 userId = 1;
+    optional int32 score = 2; //单局得分
+    optional int32 totalScore = 3; //总得分
+    optional int32 rate = 4; //倍数
+    optional int32 boomCount = 5; //炸弹数量
+    optional bool isWinner = 6; //是否是赢家
+    repeated int32 handPokers = 7; //手牌
+    repeated int32 remainPokers = 8; //剩余手牌
+    optional bool isDiZhu = 9; //是否是地主
+    optional string extend = 10; //扩展字段
 }
 
 //单局结算
 message ddz_play_roundResult {
-    //todo
+    repeated ddz_play_userRoundLotteryInfo usersRoundLotteryInfo = 1;
+    optional int32 currentRound = 2; //当前局数
+    optional int32 roundLimit = 3; //总的局数
+    optional uint32 password = 4;
+}
+
+message ddz_play_userLotteryInfo {
+    optional int64 userId = 1; //玩家ID
+    optional string headUrl = 2; //头像
+    optional string nickName = 3; //昵称
+    optional int32 boomCount = 4; //炸弹数量
+    optional int32 airCount = 5; //飞机数量
+    optional int32 lianDuiCount = 6; //连对数量
+    optional int32 springCount = 7; //春天数量
+    optional int32 score = 8; //积分
+    optional bool isChampion = 9; //是否是冠军
+    optional int32 expendCardsCount = 10; //房卡消耗
+    optional int32 remainCardsCount = 11; //剩余房卡数
 }
 
 //全局结算
 message ddz_play_lottery {
-    //todo
+    optional Header retMsg = 1;
+    repeated ddz_play_userLotteryInfo usersLotteryInfo = 2; //所有玩家的结算信息
+    optional int32 round = 3; //当前第几局ai
+    optional uint32 password = 4; //房间号
 }

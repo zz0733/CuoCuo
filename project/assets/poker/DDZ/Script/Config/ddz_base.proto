@@ -8,31 +8,36 @@ enum ddz_proto_id {
     PID_CREATEROOM_ACK = 209;
     PID_ENTERROOM_REQ = 110; //加入房间
     PID_ENTERROOM_ACK = 210;
-    PID_DESKINFO = 1005; //牌桌信息
-    PID_PLAYERINFO = 1006; //玩家信息
-    PID_READY_REQ = 1007; //请求准备
-    PID_READY_ACK = 1008;
-    PID_OPENING = 1009; //开局
-    PID_HANDPOKER_INFO = 1010; //手牌情况
-    PID_JIAOFEN = 1011; //进入叫分阶段的广播
-    PID_JIAOFEN_REQ = 1012; //叫分
-    PID_JIAOFEN_ACK = 1013;
-    PID_JIABEI = 1014; //进入加倍阶段的广播
-    PID_JIABEI_REQ = 1015; //加倍
-    PID_JIABEI_ACK = 1016;
-    PID_SEND_DIPAI = 1017; //发送底牌
-    PID_OUTCARD_REQ = 1018; //出牌
-    PID_OUTCARD_ACK = 1019;
-    PID_OVERTURN = 1020;
-    PID_PASS_REQ = 1021; //要不起
-    PID_PASS_ACK = 1022;
-    PID_ROUNDRESULT = 1023; //单局结算
-    PID_LOTTERY = 1024; //全局结算
+    PID_DESKINFO = 605; //牌桌信息
+    PID_PLAYERINFO = 606; //玩家信息
+    PID_READY_REQ = 607; //请求准备
+    PID_READY_ACK = 608;
+    PID_OPENING = 609; //开局
+    PID_HANDPOKER_INFO = 610; //手牌情况
+    PID_JIAOFEN = 611; //进入叫分阶段的广播
+    PID_JIAOFEN_REQ = 612; //叫分
+    PID_JIAOFEN_ACK = 613;
+    PID_JIABEI = 614; //进入加倍阶段的广播
+    PID_JIABEI_REQ = 615; //加倍
+    PID_JIABEI_ACK = 616;
+    PID_SEND_DIPAI = 617; //发送底牌
+    PID_OUTCARD_REQ = 618; //出牌
+    PID_OUTCARD_ACK = 619;
+    PID_OVERTURN = 620;
+    PID_PASS_REQ = 621; //要不起
+    PID_PASS_ACK = 622;
+    PID_ROUNDRESULT = 623; //单局结算
+    PID_LOTTERY = 624; //全局结算
+    PID_DISSOLVE_REQ = 625; //申请解散房间
+    PID_DISSOLVE_BRO = 626; //广播意见结果
+    PID_DISSOLVE_REPLY = 627; //回复同意还是拒绝解散房间
+    PID_DISSOLVE_DESK = 628; //解散房间成功后的消息
 
 
     PID_SENDMSG_REQ = 108; //聊天
     PID_SENDMSG_ACK = 208; //
     PID_CHATNOTIFY = 308;
+    PID_BREAK = 312; // 掉线
 }
 
 //游戏type
@@ -65,17 +70,24 @@ enum roomType {
     FRIEND = 1;
 }
 
+enum jiaBeiType {
+    NO_OPERATE = 0; //未操作
+    JIA_BEI = 1; //加倍
+    BU_JIA_BEI = 2; //不加倍
+}
+
 //玩家游戏状态
 enum playerGameStatus {
     PLAYERINIT = 1; //初始状态
     PLAYERREADY = 2; //准备
     PLAYERJIAOFEN = 3; //叫分
     PLAYERJIABEI = 4; //加倍
-    PLAYERPASS = 5; //过牌
-    PLAYEROUTCARDS = 6; //出牌
-    PLAYERROUNDLOTTER = 7;
-    PLAYERENDLOTTERY = 8;
-    PLAYERFINISH = 9; //结束
+    PLAYERPLAY = 5; //正常PLAY阶段
+    PLAYERPASS = 6; //过牌
+    PLAYEROUTCARDS = 7; //出牌
+    PLAYERROUNDLOTTER = 8;
+    PLAYERENDLOTTERY = 9;
+    PLAYERFINISH = 10; //结束
 }
 
 //桌内游戏状态
@@ -119,9 +131,9 @@ enum outPaiType {
     FEI_JI = 8; //飞机不带
     FEI_JI_DAI_DAN = 9; //飞机带单牌
     FEI_JI_DAI_DUI = 10; //飞机带对子
-    BOOM = 11; //炸弹
-    SI_DAI_ER = 12; //四带二（两张单牌）
-    SI_DAI_SI = 13; //四带四（两对）
+    SI_DAI_ER = 11; //四带二（两张单牌）
+    SI_DAI_SI = 12; //四带四（两对）
+    BOOM = 13; //炸弹
     SUPER_BOOM = 14; //王炸
 }
 
@@ -130,6 +142,12 @@ enum playerActType {
     PLAYER_JIA_BEI = 2;
     PLAYER_OUT_CARDS = 3; //出牌
     PLAYER_PASS = 4; //过
+}
+
+enum disApplyStatus {
+    NO_ACT = 0;
+    AGREE = 1;
+    DISAGREE = 2;
 }
 
 //返回码
@@ -144,7 +162,6 @@ message ddz_base_heartBeat {
 }
 
 message ddz_base_roomInfo {
-    optional int32 gameType = 1; //哪个游戏
     optional paymentMode payMode = 2; //支付方式
     optional int32 playerNum = 3; //玩家人数
     optional baseFen base = 4; //底分
@@ -160,8 +177,9 @@ message ddz_base_roomInfo {
 //创建房间
 message ddz_base_createRoom_req {
     optional int64 userId = 1; //玩家ID
-    optional ddz_base_roomInfo roomInfo = 2; //创建房间的选项
-    optional string gpsInfo = 3; //GPS信息，如果创建房间勾选GPS，则需要填GPS信息
+    optional int32 gameType = 2; //哪个游戏
+    optional ddz_base_roomInfo roomInfo = 3; //创建房间的选项
+    optional string gpsInfo = 4; //GPS信息，如果创建房间勾选GPS，则需要填GPS信息
 }
 
 //创建房间的回复
@@ -171,8 +189,8 @@ message ddz_base_createRoom_ack {
 
 //请求进入房间
 message ddz_base_enterRoom_req {
-    optional uint32 password = 1; //房间号
-    optional string gpsInfo = 2; //GPS信息
+    optional uint32 roomId = 1; //房间号
+    optional string address = 2; //GPS信息
 }
 
 //进入房间的回复
@@ -194,6 +212,7 @@ message ddz_base_playerInfo {
     optional int32 score = 10; //分数
     optional string ip = 11; //玩家IP
     optional int32 index = 12; //玩家的座位
+    optional int32 isJiaBei = 13; //玩家是否加倍
 }
 
 //牌桌Info
@@ -220,4 +239,8 @@ message ddz_base_playerPokersInfo {
     optional int64 userId = 1; //玩家ID
     repeated int32 handPokers = 2; //手牌ID
     repeated player_pai_count paiCount = 4; //玩家手牌数量
+}
+
+message ddz_base_break {
+    optional Header retMsg = 1; //包含掉线玩家的ID
 }

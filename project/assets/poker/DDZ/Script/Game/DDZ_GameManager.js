@@ -209,6 +209,8 @@ DDZGameManager.overTurn = function (data) {
     cc.YL.DDZGameAction.overTurn(data);
 };
 DDZGameManager.showOneGameOver = function (data) {
+    var UIROOT = cc.find("DDZ_UIROOT");
+    UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showOneGameOver(data);
 };
 DDZGameManager.showAllGameOver = function (data) {
     var UIROOT = cc.find("DDZ_UIROOT");

@@ -29,9 +29,20 @@ cc.Class({
         // },
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
+    //     message ddz_play_userLotteryInfo {
+//     optional int64 userId = 1; //玩家ID
+//     optional string headUrl = 2; //头像
+//     optional string nickName = 3; //昵称
+//     optional int32 boomCount = 4; //炸弹数量
+//     optional int32 airCount = 5; //飞机数量
+//     optional int32 lianDuiCount = 6; //连对数量
+//     optional int32 springCount = 7; //春天数量
+//     optional int32 score = 8; //积分
+//     optional bool isChampion = 9; //是否是冠军
+//     optional int32 expendCardsCount = 10; //房卡消耗
+//     optional int32 remainCardsCount = 11; //剩余房卡数
+// }
+//
 
     start () {
 

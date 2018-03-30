@@ -170,6 +170,15 @@ cc.Class({
             this.node.addChild(allGameOverNode);
         allGameOverNode.getComponent("DDZ_AllGameOver").initAllGameOverNode(data);
     },
+    showOneGameOver: function(data){
+        var oneGameOverNode = this.node.getChildByName("DDZ_OneGameOver") ?
+            this.node.getChildByName("DDZ_OneGameOver") :
+            cc.instantiate(this.oneGameOverNode);
+        this.node.getChildByName("DDZ_OneGameOver") ?
+            this.node.getChildByName("DDZ_OneGameOver").active = true:
+            this.node.addChild(oneGameOverNode);
+        oneGameOverNode.getComponent("DDZ_OneGameOver").initNodeForSimple(data);
+    },
     bindNodeValue: function () {
         this.selfID = fun.db.getData('UserInfo').UserId;
         this.selfNode = cc.find("DDZ_UIROOT/MainNode/SelfPlayerInfo");

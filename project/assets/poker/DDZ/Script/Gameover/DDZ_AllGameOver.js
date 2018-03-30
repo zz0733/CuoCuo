@@ -19,19 +19,26 @@ cc.Class({
         item: cc.Prefab,
     },
 
-    // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+// //全局结算
+// message ddz_play_lottery {
+//     optional Header retMsg = 1;
+//     repeated ddz_play_userLotteryInfo usersLotteryInfo = 2; //所有玩家的结算信息
+//     optional int32 round = 3; //当前第几局ai
+//     optional uint32 password = 4; //房间号
+// }
 
     start () {
 
     },
     initAllGameOverNode: function (data) {
         this.node.getChildByName("BG").getChildByName("Mid").removeAllChildren();
-        for (var i = 0; i < data.length; i++) {
+        for (var i = 0; i < data.usersLotteryInfo.length; i++) {
             var itemNode = cc.instantiate(this.item);
             this.node.getChildByName("BG").getChildByName("Mid").addChild(itemNode);
-            itemNode.getComponent("DDZ_AllGameOverItem").initItemNode(data[i]);
+            itemNode.getComponent("DDZ_AllGameOverItem").initItemNode(data.usersLotteryInfo[i]);
         }
+        this.node.getChildByName("BG").getChildByName("Top").getChildByName("TimeBG").getChildByName("time").getComponent(cc.Label).string
+            = cc.YL.DDZ_Osdate.LocalTimeString().toString();
     },
 });

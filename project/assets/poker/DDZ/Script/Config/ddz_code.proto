@@ -16,6 +16,8 @@ enum ddzErrorCode {
     ENTERFAIL_LACK_OF_GPS = -113; //进入房间失败,请打GPS开定位！
 
     DISSOLVEFAIL = -120; //解散房间失败
+    DISSOLVEFAIL_NOT_DISSOLVE_STATUS = -121; //解散房间失败，房间不处于解散状态！
+    DISSOLVEFAIL_REPEATE_REQ = -122; //重复请求
 
     READYFAIL = -130; //准备失败
     READYFAIL_WRONG_STATUS = -131; //准备失败，当前状态无法准备！
@@ -42,4 +44,17 @@ enum ddzErrorCode {
     OUTCARDSFAIL_CANNOT_SANZHANG = -148; //出牌失败，不能出三张！
 
     JIAOFENFAIL_NOONE_JIAO_FEN = -149; //叫分失败，没人叫分
+
+    PASSFAIL = -150; //请求过牌失败
+    PASSFAIL_WRONG_DESK_STATUS = -151; //过牌失败，DESK状态错误
+    PASSFAIL_NOT_ACTIVE_USER = -152; //过牌失败，不是活动玩家
+    PASSFAIL_SHOULD_ACT_OUT = -153; //过牌失败，该出牌
+
+    OPENINGFAIL_GET_DIPAI_FAIL = -160; //开局失败，获取底牌失败...
+
+    SENDMSGFAIL = -161; //发送消息失败
+    SENDMSGFAIL_NOT_FOUND_DESK = -162; //发送消息失败，未找到指定房间！
+
+    LOTTERYFAIL_LOST_BILL = -163; //结算失败，账单丢失
+    LOTTERYFAIL_WRONG_STATUS = -164;//结算失败，状态错误
 }
