@@ -59,10 +59,31 @@ cc.Class({
             pokerNode.setScale(this._scale);
             pokerNode.setPositionY(0);
             pokerNode.setTag(i);
+            if (cc.YL.loaderID == cc.YL.DDZselfPlayerInfo.userId) {
+                pokerNode.getChildByName("OwnerSign").active = true;
+            } else {
+                pokerNode.getChildByName("OwnerSign").active = false;
+            }
             this.node.addChild(pokerNode);
             this._cardsList.push(pokerNode);
         }
         this.node.setPosition(this._pos);
     },
+    setTouchEvent: function (isTouch) {
+        if(isTouch == false){
+            this.node.parent.getChildByName("HandPokerTouch").active = false;
+            var children = this.node.children;
+            for (var i = 0; i < children.length; i++) {
+                children[i].getChildByName("Cover").active = true;
+            }
+        }else{
+            this.node.parent.getChildByName("HandPokerTouch").active = true;
+            var children = this.node.children;
+            for (var i = 0; i < children.length; i++) {
+                children[i].getChildByName("Cover").active = false;
+            }
+        }
 
+
+    },
 });

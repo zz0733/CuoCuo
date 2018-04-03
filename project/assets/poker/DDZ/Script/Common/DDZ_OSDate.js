@@ -35,5 +35,20 @@ OSDate.LocalTimeString = function () {
         + seperator2 + second;
     return currentdate;
 };
+OSDate.showTime = function(){
+    var date = new Date();
+    var seperator2 = ":";
+    var hour = date.getHours();
+    var min = date.getMinutes();
+
+    if(hour >= 0 && hour <= 9){
+        hour = "0" + hour;
+    }
+    if(min >= 0 && min <= 9){
+        min = "0" + min;
+    }
+    var currentdate =  hour + seperator2 + min;
+    return currentdate;
+};
 cc.YL.DDZ_Osdate = OSDate;
 module.exports = OSDate;

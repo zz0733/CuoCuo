@@ -114,6 +114,32 @@ cc.Class({
             type: cc.Prefab,
             default: null,
         },
+
+        freeCardL: {
+            type: cc.Label,
+            default: null,
+        },
+
+        freeTimeBox: {
+            type: cc.Node,
+            default: null,
+        },
+
+        freeBtn: {
+            type: cc.Node,
+            default: null,
+        },
+
+        freeTimeL: {
+            type: cc.Label,
+            default: null,
+        },
+
+        detailPrefab: {
+            type: cc.Prefab,
+            default: null,
+        },
+
     },
 
     onLoad () {
@@ -248,6 +274,33 @@ cc.Class({
 
     onBtnRechargeClick() {
         cc.instantiate(this.storePre).parent = this.node;
+    },
+
+    showRoomCard(data, gameType) {
+        this.currentCardLabel.string = data.TollCardCnt || 0;
+        this.freeBtn.on('click', function () {
+            let detail = cc.instantiate(this.detailPrefab);
+            detail.parent = this.node;
+            detail.getComponent('freeCardDetail').setDetail(data.FreeCardList, gameType);
+        }.bind(this));
+        if (!data.FreeCardList || data.FreeCardList.length === 0) {
+            this.freeCardL.string = 0;
+            this.freeTimeBox.active = false;
+        } else {
+            this.freeTimeBox.active = true;
+            let minTime = data.FreeCardList[0].ExpiredAt, freeCard = data.FreeCardList[0].Cnt;
+            for (let i in data.FreeCardList) {
+                let time = data.FreeCardList[i].ExpiredAt;
+                if (minTime > time) {
+                    minTime = time;
+                    freeCard = data.FreeCardList[i].Cnt;
+                }
+            }
+            let t = new Date(minTime * 1000);
+            let date = t.getFullYear().toString().substr(2, 2) + '年' + (t.getMonth() + 1) + '月' + t.getDate() + '日';
+            this.freeTimeL.string = date + '过期';
+            this.freeCardL.string = freeCard;
+        }
     },
 
     onBtnCreateRoomClick() {

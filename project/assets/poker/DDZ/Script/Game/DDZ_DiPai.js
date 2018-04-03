@@ -24,9 +24,11 @@ cc.Class({
 
     clearDiPai: function () {
         this.node.removeAllChildren();
+        this.node.parent.getChildByName("GameInfo").getChildByName("DiPaiBack").active = true;
         this.node.active = false;
     },
     initDiPai: function (list) {
+        this.node.parent.getChildByName("GameInfo").getChildByName("DiPaiBack").active = false;
         var lists = cc.YL.DDZTools.SortPoker(list);
         this._diPaiArr = lists;
         for (var i = 0; i < lists.length; i++) {

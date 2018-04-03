@@ -1,9 +1,7 @@
-
 cc.Class({
     extends: cc.Component,
 
-    properties: {
-    },
+    properties: {},
 
 
 //玩家出牌的请求
@@ -18,18 +16,27 @@ cc.Class({
     start () {
 
     },
-    onClickOutCard: function(){
+    initBtnStatus:function (isNew) {
+        if(isNew == true){
+            this.node.getChildByName("0").active = false;
+            this.node.getChildByName("2").active = false;
+        }else{
+            this.node.getChildByName("0").active = true;
+            this.node.getChildByName("2").active = true;
+        }
+    },
+    onClickOutCard: function () {
         fun.net.send("PID_OUTCARD_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
-            paiIds:  cc.YL.playerOutPokerArr,
+            paiIds: cc.YL.playerOutPokerArr,
         });
     },
-    onClickPassCard: function(){
+    onClickPassCard: function () {
         fun.net.send("PID_PASS_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
         });
     },
-    onClickTiShiCard: function(){
-        cc.YL.PokerTip.clickTipsBtn(2, 2, [3, 3, 3, 4, 4, 4, 5, 6]);
+    onClickTiShiCard: function () {
+        cc.YL.PokerTip.clickTipsBtn(cc.YL.lastOutCardData.outType, cc.YL.lastOutCardData.paiIds.length, cc.YL.lastOutCardData.paiIds);
     },
 });

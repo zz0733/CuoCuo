@@ -17,6 +17,7 @@ cc.Class({
 
     properties: {
         item: cc.Prefab,
+
     },
 
 
@@ -40,5 +41,10 @@ cc.Class({
         }
         this.node.getChildByName("BG").getChildByName("Top").getChildByName("TimeBG").getChildByName("time").getComponent(cc.Label).string
             = cc.YL.DDZ_Osdate.LocalTimeString().toString();
+        this.node.getChildByName("BG").getChildByName("Buttom").getChildByName("RoomInfo").getChildByName("Lun").getComponent(cc.Label).string
+            = "第" + data.round + "局";
+        this.node.getChildByName("BG").getChildByName("Buttom").getChildByName("RoomInfo").getChildByName("PassWord").getComponent(cc.Label).string
+            = data.password;
     },
 });
+// RoomInfo

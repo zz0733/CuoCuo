@@ -4,19 +4,7 @@ cc.Class({
 
     properties: {
         playerInfo:null,
-        // message ddz_base_playerInfo {
-        //     optional int64 userId = 1; //ID
-        //     optional string nickName = 2; //昵称
-        //     optional int32 sex = 3; //性别
-        //     optional string headUrl = 4; //头像
-        //     optional int32 coin = 5; //分数（金币）
-        //     optional playerGameStatus status = 6; //游戏状态
-        //     optional bool isReady = 7; //是否准备
-        //     optional bool isBreak = 8; //是否掉线
-        //     optional bool isLeave = 9; //是否离开
-        //     optional int32 score = 10; //分数
-        //     optional string ip = 11; //玩家IP
-        // }
+        txtAtlas: cc.SpriteAtlas,
     },
 
     onLoad () {
@@ -64,5 +52,23 @@ cc.Class({
     clearRate: function(){
         this.node.getChildByName("Rate").active = false;
     },
+    updateOutWord: function(strType){
+        // 不出 1 dz_zt0000
+        // 加倍 2 dz_zt00
+        // 不叫 3 dz_zt0
+        // 一分 4 dz_zt1
+        // 2分  5 dz_zt2
+        // 3分  5 dz_zt3
+        // 6分  5 dz_zt4
+        // 9分  5 dz_zt5
+        var fileNameArr = ["","dz_zt0000","dz_zt00","dz_zt0","dz_zt1","dz_zt2","dz_zt3","dz_zt4","dz_zt5"];
+        var atlas = this.txtAtlas;
+        if(strType == 0 || !strType){
+            this.node.getChildByName("ShowWord").active = false;
+        }else{
+            this.node.getChildByName("ShowWord").active = true;
+            this.node.getChildByName("ShowWord").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame(fileNameArr[strType]);
+        }
 
+    },
 });

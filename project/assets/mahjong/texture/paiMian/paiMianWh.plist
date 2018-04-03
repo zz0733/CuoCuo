@@ -7,7 +7,7 @@
             <key>card_0_1_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,2},{87,125}}</string>
+                <string>{{662,447},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,11 +20,11 @@
             <key>card_0_1_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1356,383},{87,125}}</string>
+                <string>{{535,447},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -33,7 +33,7 @@
             <key>card_0_1_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1337,256},{87,125}}</string>
+                <string>{{466,891},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +46,7 @@
             <key>card_0_1_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1342,2},{87,125}}</string>
+                <string>{{447,764},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +59,7 @@
             <key>card_0_1_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1337,129},{87,125}}</string>
+                <string>{{447,637},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +72,7 @@
             <key>card_0_1_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1267,383},{87,125}}</string>
+                <string>{{377,891},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,7 +85,7 @@
             <key>card_0_2_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1248,256},{87,125}}</string>
+                <string>{{358,764},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -98,7 +98,7 @@
             <key>card_0_2_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1253,2},{87,125}}</string>
+                <string>{{358,637},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,7 +111,7 @@
             <key>card_0_2_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1248,129},{87,125}}</string>
+                <string>{{288,891},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +124,7 @@
             <key>card_0_2_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1178,383},{87,125}}</string>
+                <string>{{269,764},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,7 +137,7 @@
             <key>card_0_2_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1159,256},{87,125}}</string>
+                <string>{{269,637},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -150,7 +150,7 @@
             <key>card_0_3_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1164,2},{87,125}}</string>
+                <string>{{900,510},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +163,7 @@
             <key>card_0_3_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1159,129},{87,125}}</string>
+                <string>{{811,434},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -176,11 +176,11 @@
             <key>card_0_3_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1089,383},{87,125}}</string>
+                <string>{{684,358},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -189,11 +189,11 @@
             <key>card_0_3_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1070,256},{87,125}}</string>
+                <string>{{557,358},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -202,7 +202,7 @@
             <key>card_0_4_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1075,2},{87,125}}</string>
+                <string>{{269,510},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -215,11 +215,11 @@
             <key>card_0_4_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1070,129},{87,125}}</string>
+                <string>{{430,358},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -228,7 +228,7 @@
             <key>card_0_4_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1000,383},{87,125}}</string>
+                <string>{{900,383},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -241,7 +241,7 @@
             <key>card_0_5_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{981,256},{87,125}}</string>
+                <string>{{811,307},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -254,11 +254,11 @@
             <key>card_0_5_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{986,2},{87,125}}</string>
+                <string>{{684,269},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -267,11 +267,11 @@
             <key>card_0_6_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{981,129},{87,125}}</string>
+                <string>{{557,269},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -280,7 +280,7 @@
             <key>card_1_1_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{911,383},{87,125}}</string>
+                <string>{{269,383},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -293,11 +293,11 @@
             <key>card_1_1_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{892,256},{87,125}}</string>
+                <string>{{430,269},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -306,7 +306,7 @@
             <key>card_1_1_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{897,2},{87,125}}</string>
+                <string>{{915,256},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -319,7 +319,7 @@
             <key>card_1_1_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{892,129},{87,125}}</string>
+                <string>{{826,180},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -332,11 +332,11 @@
             <key>card_1_1_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{822,383},{87,125}}</string>
+                <string>{{699,180},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -345,11 +345,11 @@
             <key>card_1_1_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{803,256},{87,125}}</string>
+                <string>{{572,180},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -358,303 +358,17 @@
             <key>card_1_2_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{808,2},{87,125}}</string>
+                <string>{{445,180},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
             <key>card_1_2_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{803,129},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_2_4.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{733,383},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_2_5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{714,256},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_2_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{719,2},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_3_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{714,129},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_3_4.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{644,383},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_3_5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{625,256},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_3_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{630,2},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_4_4.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{625,129},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_4_5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{555,383},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_4_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{536,256},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_5_5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{541,2},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_5_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{536,129},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_1_6_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{466,383},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_1_1.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{447,256},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_1_2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{452,2},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_1_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{447,129},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_1_4.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{377,383},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_1_5.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{358,256},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_1_6.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{363,2},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_2_2.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{358,129},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_2_3.png</key>
-            <dict>
-                <key>frame</key>
-                <string>{{288,383},{87,125}}</string>
-                <key>offset</key>
-                <string>{0,0}</string>
-                <key>rotated</key>
-                <false/>
-                <key>sourceColorRect</key>
-                <string>{{0,0},{87,125}}</string>
-                <key>sourceSize</key>
-                <string>{87,125}</string>
-            </dict>
-            <key>card_2_2_4.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{269,256},{87,125}}</string>
@@ -667,10 +381,10 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_2_5.png</key>
+            <key>card_1_2_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{274,2},{87,125}}</string>
+                <string>{{923,129},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -680,10 +394,75 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_2_6.png</key>
+            <key>card_1_2_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{269,129},{87,125}}</string>
+                <string>{{796,91},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_2_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{669,91},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_3_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{542,91},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_3_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{415,91},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_3_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{288,91},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_3_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{923,2},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -693,10 +472,75 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_3_3.png</key>
+            <key>card_1_4_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{199,383},{87,125}}</string>
+                <string>{{796,2},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_4_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{669,2},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_4_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{542,2},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_5_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{415,2},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_5_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{288,2},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_1_6_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{199,891},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -706,7 +550,59 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_3_4.png</key>
+            <key>card_2_1_1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{180,764},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_1_2.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{180,637},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_1_3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{180,510},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_1_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{180,383},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_1_5.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{180,256},{87,125}}</string>
@@ -719,7 +615,7 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_3_5.png</key>
+            <key>card_2_1_6.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{185,2},{87,125}}</string>
@@ -732,7 +628,7 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_3_6.png</key>
+            <key>card_2_2_2.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{180,129},{87,125}}</string>
@@ -745,10 +641,10 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_4_4.png</key>
+            <key>card_2_2_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{96,2},{87,125}}</string>
+                <string>{{91,777},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -758,7 +654,46 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_4_5.png</key>
+            <key>card_2_2_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{91,650},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_2_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{91,523},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_2_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{91,396},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_3_3.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{91,269},{87,125}}</string>
@@ -771,7 +706,20 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_4_6.png</key>
+            <key>card_2_3_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{96,2},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_3_5.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{91,142},{87,125}}</string>
@@ -784,14 +732,66 @@
                 <key>sourceSize</key>
                 <string>{87,125}</string>
             </dict>
-            <key>card_2_5_5.png</key>
+            <key>card_2_3_6.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{72,396},{87,125}}</string>
+                <string>{{72,904},{87,125}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_4_4.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,777},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_4_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,650},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_4_6.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,523},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{87,125}}</string>
+                <key>sourceSize</key>
+                <string>{87,125}</string>
+            </dict>
+            <key>card_2_5_5.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,396},{87,125}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{87,125}}</string>
                 <key>sourceSize</key>
@@ -826,7 +826,7 @@
             <key>card_autumn.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,379},{70,86}}</string>
+                <string>{{622,536},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -839,7 +839,7 @@
             <key>card_bai.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1533,345},{70,86}}</string>
+                <string>{{534,561},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -852,7 +852,7 @@
             <key>card_ju.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,307},{70,86}}</string>
+                <string>{{446,561},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -865,7 +865,7 @@
             <key>card_lang.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1533,273},{70,86}}</string>
+                <string>{{358,561},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -878,11 +878,11 @@
             <key>card_mei.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,235},{70,86}}</string>
+                <string>{{358,428},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,86}}</string>
                 <key>sourceSize</key>
@@ -891,11 +891,11 @@
             <key>card_spring.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1533,201},{70,86}}</string>
+                <string>{{358,340},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,86}}</string>
                 <key>sourceSize</key>
@@ -904,11 +904,11 @@
             <key>card_summer.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,163},{70,86}}</string>
+                <string>{{358,252},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{70,86}}</string>
                 <key>sourceSize</key>
@@ -917,7 +917,7 @@
             <key>card_winter.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1533,129},{70,86}}</string>
+                <string>{{357,180},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -930,7 +930,7 @@
             <key>card_zhu.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,91},{70,86}}</string>
+                <string>{{269,180},{70,86}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -943,11 +943,11 @@
             <key>shang_shou.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1572,65},{42,62}}</string>
+                <string>{{421,516},{42,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{42,62}}</string>
                 <key>sourceSize</key>
@@ -956,11 +956,11 @@
             <key>shang_tang.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1572,2},{43,61}}</string>
+                <string>{{358,516},{43,61}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{43,61}}</string>
                 <key>sourceSize</key>
@@ -969,7 +969,7 @@
             <key>song.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1501,451},{51,51}}</string>
+                <string>{{482,447},{51,51}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -995,7 +995,7 @@
             <key>xia_tang.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,396},{68,105}}</string>
+                <string>{{2,904},{68,105}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -1008,11 +1008,11 @@
             <key>y_shou.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1473,451},{26,55}}</string>
+                <string>{{129,993},{26,55}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{26,55}}</string>
                 <key>sourceSize</key>
@@ -1021,11 +1021,11 @@
             <key>z_shou.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1445,451},{26,55}}</string>
+                <string>{{72,993},{26,55}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{26,55}}</string>
                 <key>sourceSize</key>
@@ -1034,11 +1034,11 @@
             <key>zy_heng.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{1554,417},{58,50}}</string>
+                <string>{{430,447},{58,50}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{58,50}}</string>
                 <key>sourceSize</key>
@@ -1052,9 +1052,9 @@
             <key>realTextureFileName</key>
             <string>paiMianWh.png</string>
             <key>size</key>
-            <string>{1621,510}</string>
+            <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:f07a09731e7c6918eb32c5eaf0567983$</string>
+            <string>$TexturePacker:SmartUpdate:ffb30aefa69880e609d592f5e29c6f78$</string>
             <key>textureFileName</key>
             <string>paiMianWh.png</string>
         </dict>

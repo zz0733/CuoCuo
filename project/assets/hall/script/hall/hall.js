@@ -13,21 +13,24 @@ cc.Class({
             default: null,
         },
 
-        createSanGongRoomPre : {
+        createSanGongRoomPre: {
             type: cc.Prefab,
             default: null,
         },
 
-        createNiuNiuRoomPre : {
+        createNiuNiuRoomPre: {
             type: cc.Prefab,
             default: null,
         },
 
-        createRoomWahua : {
+        createRoomWahua: {
             type: cc.Prefab,
             default: null,
         },
-
+        createRoomDDZ: {
+            type: cc.Prefab,
+            default: null,
+        },
         zhanjiLayerPre: {
             type: cc.Prefab,
             default: null,
@@ -71,7 +74,7 @@ cc.Class({
 
     onLoad () {
         //测试
-            
+
         //
 
         this._isTestnet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.test] ? true : false;
@@ -87,7 +90,7 @@ cc.Class({
         this.addEnterRoomHandle(gameConst.gameType.maJiangHuangYan, this.mahjongEnterRoomHandle.bind(this));
         this.addEnterRoomHandle(gameConst.gameType.maJiangWenLing, this.mahjongEnterRoomHandle.bind(this));
         this.addEnterRoomHandle(gameConst.gameType.digFlower, this.digFlowerEnterRoomHandle.bind(this));
-        
+
         fun.net.setGameMsgCfg({});
         fun.gameCfg.voiceLanguage = cc.sys.localStorage.getItem('voiceLanguage') || fun.gameCfg.voiceLanguage;
         let valumeData = cc.sys.localStorage.getItem('valumeData');
@@ -111,13 +114,13 @@ cc.Class({
         } else {
             if (!this._isIntranet && !this._isTestnet) {
                 let initNode = this.node;
-                setTimeout(function(){
+                setTimeout(function () {
                     if (!fun.db.getNeedNotice()) {
                         let notice = initNode.getChildByName('notice');
                         notice.getComponent(cc.Animation).play('popScaleAnim');
                         notice.active = true;
                         fun.db.setNeedNotice(true);
-                        notice.getChildByName('back').getChildByName('btnClose').on('click', function(){
+                        notice.getChildByName('back').getChildByName('btnClose').on('click', function () {
                             let animState = notice.getComponent(cc.Animation).play('popScaleOut');
                             animState.once('finished', function () {
                                 notice.active = false;
@@ -162,11 +165,15 @@ cc.Class({
 
         let applePayStr = JSON.parse(cc.sys.localStorage.getItem('applePayReceiptStr'));
         this.onPhonePayResultAck(applePayStr);
-        
+        fun.net.setGameMsgCfg(require("DDZ_MsgConfig"));
+        fun.net.listen('PID_DESKINFO', this.PID_DESKINFO.bind(this));
+        fun.net.listen('PID_PLAYERINFO', this.PID_PLAYERINFO.bind(this));
+        cc.YL.DDZPlayerInfoList = [];
+
     },
 
     appleReview () {
-        if(this._isApple){
+        if (this._isApple) {
             let buttom = this.node.getChildByName('mainBasic').getChildByName('buttom');
             buttom.getChildByName('recordBtn').setPositionX(-420);
             buttom.getChildByName('activeBtn').setPositionX(-140);
@@ -189,16 +196,16 @@ cc.Class({
 
     onPhonePayResultAck (msg) {
         if (msg && msg.check) {
-            fun.net.pSend('ApPay', {ReceiptStr: msg.receipt}, function(data){
+            fun.net.pSend('ApPay', {ReceiptStr: msg.receipt}, function (data) {
                 if (data.RetCode && data.RetCode !== 0) {
-                    setTimeout(function(){
+                    setTimeout(function () {
                         this.onPhonePayResultAck(msg);
                     }.bind(this), 5000);
                 } else {
                     if (data.Status && data.Status === 1) {
                         cc.sys.localStorage.setItem('applePayReceiptStr', JSON.stringify({check: false}));
                     } else {
-                        setTimeout(function(){
+                        setTimeout(function () {
                             this.onPhonePayResultAck(msg);
                         }.bind(this), 5000);
                     }
@@ -213,14 +220,14 @@ cc.Class({
 
     enterRoom(roomId = 0) {
         fun.event.dispatch('Zhuanquan', {flag: true, text: '加入房间中，请稍后...'});
-        fun.net.pSend('EnterRoom', {RoomId: roomId, Address: fun.db.getData('UserInfo').location}, function(rsp) {
-            if(rsp.GameType && this.enterRoomHandle[rsp.GameType]){
+        fun.net.pSend('EnterRoom', {RoomId: roomId, Address: fun.db.getData('UserInfo').location}, function (rsp) {
+            if (rsp.GameType && this.enterRoomHandle[rsp.GameType]) {
                 this.enterRoomHandle[rsp.GameType](rsp);
-            }else {
-                fun.event.dispatch('MinSingleButtonPop', {contentStr: gameConst.pRetCode[rsp.RetCode]}); 
+            } else {
+                fun.event.dispatch('MinSingleButtonPop', {contentStr: gameConst.pRetCode[rsp.RetCode]});
                 fun.event.dispatch('Zhuanquan', {flag: false});
             }
-           
+
         }.bind(this));
     },
 
@@ -245,26 +252,30 @@ cc.Class({
     },
 
     mahjongEnterRoomHandle(data) {
-        var codeCfg = {}; 
+        var codeCfg = {};
         var mjGameDefine = require("mjGameDefine");
-        if(data.GameType == gameConst.gameType.maJiangHuangYan){
+        if (data.GameType == gameConst.gameType.maJiangHuangYan) {
             codeCfg = mjGameDefine.HYRETCODE;
-        }else if(data.GameType == gameConst.gameType.maJiangWenLing){
+        } else if (data.GameType == gameConst.gameType.maJiangWenLing) {
             codeCfg = mjGameDefine.WLRETCODE;
         }
-        if(!data.RetCode){
+        if (!data.RetCode) {
             data.EnterRoom = 'enter';
             fun.db.setData('RoomInfo', data);
             cc.director.loadScene(gameConst.gameTypeSceneNameMap[data.GameType]);
-        }else {
+        } else {
             var self = this;
             //房卡不足，跳转商店
-            if(data.RetCode == 19){
-                var gotoStore= function(){
+            if (data.RetCode == 19) {
+                var gotoStore = function () {
                     self.showStore(data.GameType);
                 };
-                fun.event.dispatch('MinSingleButtonPop', {contentStr: codeCfg[data.RetCode], okBtnStr:"前往充值", okCb: gotoStore});
-            }else {
+                fun.event.dispatch('MinSingleButtonPop', {
+                    contentStr: codeCfg[data.RetCode],
+                    okBtnStr: "前往充值",
+                    okCb: gotoStore
+                });
+            } else {
                 fun.event.dispatch('MinSingleButtonPop', {contentStr: codeCfg[data.RetCode]});
             }
             fun.event.dispatch('Zhuanquan', {flag: false});
@@ -274,7 +285,7 @@ cc.Class({
     showStore(gameType){
         let isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple ? true : false;
         let isIntranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet] ? true : false;
-        if(isApple || isIntranet){
+        if (isApple || isIntranet) {
             let store = cc.instantiate(this.storePre);
             store.parent = this.node;
             store.getComponent('store').setGameType(gameType);
@@ -285,7 +296,7 @@ cc.Class({
 
     onRenzhengBtnClick () {
         Audio.playEffect('hall', 'button_nomal.mp3');
-        if(this._isApple){
+        if (this._isApple) {
             fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
         }
         return;
@@ -294,7 +305,7 @@ cc.Class({
     },
 
     onHeadClick () {
-        
+
     },
 
     showUserInfo (data) {
@@ -323,32 +334,40 @@ cc.Class({
         Audio.playEffect('hall', 'button_nomal.mp3');
         switch (index) {
             case 0:
-                fun.net.pSend('RoomCard', {GameType: gameConst.gameType.maJiangHuangYan}, function(data) {
-                    // if (data.RetCode && data.RetCode !== 0) return;
+                fun.net.pSend('RoomCard', {GameType: gameConst.gameType.maJiangHuangYan}, function (data) {
+                    if (data.RetCode && data.RetCode !== 0) return;
                     var hyNode = cc.instantiate(this.createMajiangRoomHY);
                     hyNode.parent = this.node;
-                    hyNode.getComponent('createMajiangRoom').showRoomCard(data);
-                }.bind(this));    
+                    hyNode.getComponent('createMajiangRoom').showRoomCard(data, gameConst.gameType.maJiangHuangYan);
+                }.bind(this));
                 break;
             case 1:
-                fun.net.pSend('RoomCard', {GameType: gameConst.gameType.maJiangWenLing}, function(data) {
-                    // if (data.RetCode && data.RetCode !== 0) return;
+                fun.net.pSend('RoomCard', {GameType: gameConst.gameType.maJiangWenLing}, function (data) {
+                    if (data.RetCode && data.RetCode !== 0) return;
                     var wlNode = cc.instantiate(this.createMajiangRoomWL);
                     wlNode.parent = this.node;
-                    wlNode.getComponent('createMajiangRoom').showRoomCard(data);
+                    wlNode.getComponent('createMajiangRoom').showRoomCard(data, gameConst.gameType.maJiangWenLing);
                 }.bind(this));
                 break;
             case 2:
                 // fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
                 // return;
-                let nnNode = cc.instantiate(this.createRoomWahua);
-                nnNode.parent = this.node;
+                fun.net.pSend('RoomCard', {GameType: gameConst.gameType.digFlower}, function (data) {
+                    if (data.RetCode && data.RetCode !== 0) return;
+                    let whNode = cc.instantiate(this.createRoomWahua);
+                    whNode.parent = this.node;
+                    whNode.getComponent('createWahuaRoom').showRoomCard(data, gameConst.gameType.digFlower);
+                }.bind(this));
+                // let whNode = cc.instantiate(this.createRoomWahua);
+                // whNode.parent = this.node;
                 break;
             case 3:
-                fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
-                return;
-                let sgNode = cc.instantiate(this.createSanGongRoomPre);
-                sgNode.parent = this.node;
+                // fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
+                // return;
+                // let sgNode = cc.instantiate(this.createSanGongRoomPre);
+                // sgNode.parent = this.node;
+                let DDZNode = cc.instantiate(this.createRoomDDZ);
+                DDZNode.parent = this.node;
                 break;
         }
     },
@@ -364,7 +383,7 @@ cc.Class({
     onRecordBtnClick() {
         Audio.playEffect('hall', 'button_nomal.mp3');
         const gameType = gameConst.gameType.maJiangHuangYan;
-        fun.net.pSend('StandingBrief', {GameType: gameType, Start: 0}, function(data) {
+        fun.net.pSend('StandingBrief', {GameType: gameType, Start: 0}, function (data) {
             let zhanjiLayer = cc.instantiate(this.zhanjiLayerPre);
             zhanjiLayer.parent = this.node;
             zhanjiLayer.getComponent('zhanjiLayer').init(gameType, data);
@@ -373,8 +392,8 @@ cc.Class({
 
     onShareBtnClick() {
         Audio.playEffect('hall', 'button_nomal.mp3');
-        fun.net.pSend('GoodCnt', {Type: gameConst.itemCsv.voucher}, function(data){
-            if(data.RetCode && data.RetCode !== 0){
+        fun.net.pSend('GoodCnt', {Type: gameConst.itemCsv.voucher}, function (data) {
+            if (data.RetCode && data.RetCode !== 0) {
                 fun.event.dispatch('MinSingleButtonPop', {contentStr: '查询兑换券失败!'});
                 return;
             }
@@ -431,8 +450,20 @@ cc.Class({
         fun.event.remove('HallEnterRoomId');
         fun.event.remove('HallNewMailId');
         Audio.stopMusic();
+        fun.net.rmListen('PID_DESKINFO');
+        fun.net.rmListen('PID_PLAYERINFO');
     },
-    TestBtn: function(){
+    PID_DESKINFO: function (data) {
+        cc.YL.DDZDeskInfo = data;
         cc.director.loadScene("DDZ_GameScene");
+    },
+    PID_PLAYERINFO: function (data) {
+        if(data.userId == fun.db.getData('UserInfo').UserId){
+            cc.YL.DDZselfPlayerInfo = data;
+            cc.YL.selfIndex = data.index;
+            cc.YL.info("玩家自己的index",cc.YL.selfIndex);
+        }else{
+            cc.YL.DDZPlayerInfoList.push(data);
+        }
     },
 });

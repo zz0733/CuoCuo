@@ -12,21 +12,8 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        atlas: cc.SpriteAtlas,
+
     },
 
     //     message ddz_play_userLotteryInfo {
@@ -47,11 +34,11 @@ cc.Class({
     start () {
 
     },
-    initItemNode: function(data){
+    initItemNode: function (data) {
         this.bindNode();
         this.initUI(data);
     },
-    bindNode: function(){
+    bindNode: function () {
         this.headNode = this.node.getChildByName("HeadNode");
         this.totalInfoNode = this.node.getChildByName("TotalInfo");
         this.totalCoinNode = this.node.getChildByName("TotalCoin");
@@ -59,7 +46,6 @@ cc.Class({
         this.IDNode = this.headNode.getChildByName("IDBG").getChildByName("ID");
         this.headSprNode = this.headNode.getChildByName("HeadSpr");
         this.nickNameNode = this.headNode.getChildByName("nickName");
-        this.winParNode = this.headNode.getChildByName("winPar");
         this.winIconNode = this.headNode.getChildByName("WinIcon");
         this.zadan = this.totalInfoNode.getChildByName("title1").getChildByName("Num");
         this.feiji = this.totalInfoNode.getChildByName("title2").getChildByName("Num");
@@ -70,8 +56,25 @@ cc.Class({
         this.leaveFangKa = this.fangKaNode.getChildByName("cardSpr_1").getChildByName("Num");
 
     },
-    initUI: function(data){
+    initUI: function (data) {
         fun.utils.loadUrlRes(data.headUrl, this.headSprNode);// 头像
+        if(data.isChampion == true){
+            this.winIconNode.active = true;
+            this.node.getComponent(cc.Sprite).spriteFrame = this.atlas.getSpriteFrame("dz_dajiesuan_di2");
+        }else{
+            this.winIconNode.active = false;
+            this.node.getComponent(cc.Sprite).spriteFrame = this.atlas.getSpriteFrame("dz_dajiesuan_di1");
+        }
+        this.IDNode.getComponent(cc.Label).string  = data.userId;
+        this.nickNameNode.getComponent(cc.Label).string = data.nickName;
+        this.zadan.getComponent(cc.Label).string = data.boomCount;
+        this.feiji.getComponent(cc.Label).string = data.airCount;
+        this.liandui.getComponent(cc.Label).string = data.lianDuiCount;
+        this.spring.getComponent(cc.Label).string = data.springCount;
+        this.totalCoin.getComponent(cc.Label).string = data.score;
+        this.useFangKa.getComponent(cc.Label).string = data.expendCardsCount;
+        this.leaveFangKa.getComponent(cc.Label).string = data.remainCardsCount;
+
     },
     // update (dt) {},
 });

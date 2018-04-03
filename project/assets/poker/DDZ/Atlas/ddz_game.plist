@@ -43,6 +43,45 @@
                 <key>sourceSize</key>
                 <string>{199,100}</string>
             </dict>
+            <key>dz_jiesuan_icon.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{261,336},{119,119}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{119,119}}</string>
+                <key>sourceSize</key>
+                <string>{119,119}</string>
+            </dict>
+            <key>dz_jiesuan_icon1.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{180,486},{108,23}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{108,23}}</string>
+                <key>sourceSize</key>
+                <string>{108,23}</string>
+            </dict>
+            <key>dz_liaotiankuang.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{290,223},{130,89}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{130,89}}</string>
+                <key>sourceSize</key>
+                <string>{130,89}</string>
+            </dict>
             <key>dz_zt.png</key>
             <dict>
                 <key>frame</key>
@@ -59,11 +98,11 @@
             <key>dz_zt0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{261,65},{146,79}}</string>
+                <string>{{206,65},{146,79}}</string>
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{2,0},{146,79}}</string>
                 <key>sourceSize</key>
@@ -98,7 +137,7 @@
             <key>dz_zt1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{394,268},{121,76}}</string>
+                <string>{{206,213},{121,76}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -111,11 +150,11 @@
             <key>dz_zt2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{261,146},{131,77}}</string>
+                <string>{{423,135},{131,77}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,1},{131,77}}</string>
                 <key>sourceSize</key>
@@ -124,11 +163,11 @@
             <key>dz_zt3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{409,135},{131,78}}</string>
+                <string>{{290,65},{131,78}}</string>
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,0},{131,78}}</string>
                 <key>sourceSize</key>
@@ -150,7 +189,7 @@
             <key>dz_zt5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{261,225},{131,76}}</string>
+                <string>{{290,145},{131,76}}</string>
                 <key>offset</key>
                 <string>{-1,1}</string>
                 <key>rotated</key>
@@ -170,7 +209,7 @@
             <key>size</key>
             <string>{512,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:64cc540a6a691e9ff04ac4aece074282$</string>
+            <string>$TexturePacker:SmartUpdate:52ada1fbb9d0be592830c95f51dff419$</string>
             <key>textureFileName</key>
             <string>ddz_game.png</string>
         </dict>

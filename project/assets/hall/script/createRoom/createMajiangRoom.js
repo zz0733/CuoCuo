@@ -318,6 +318,8 @@ cc.Class({
     },
 
     showStore(gameType){
+        fun.event.dispatch('MinSingleButtonPop', { contentStr: '公测期间，免费畅玩！' });
+        return;
         if (fun.gameCfg.releaseType === gameConst.releaseType.release) {
             fun.event.dispatch('MinSingleButtonPop', {contentStr: '公测期间，免费畅玩！'});
         } else {
@@ -327,31 +329,31 @@ cc.Class({
         }
     },
 
-    showRoomCard(data){
-        this.roomCard.string = data.TollCardCnt || 0;
-        this.freeBtn.on('click', function(){
+    showRoomCard(data, gameType){
+        this.roomCard.string = data.TollCardCnt || data.Total || 0;
+        this.freeBtn.on('click', function () {
             let detail = cc.instantiate(this.detailPrefab);
             detail.parent = this.node;
-            detail.getComponent('freeCardDetail').setDetail(data.FreeCardList);
+            detail.getComponent('freeCardDetail').setDetail(data.FreeCardList || undefined, gameType);
         }.bind(this));
         if (!data.FreeCardList || data.FreeCardList.length === 0) {
             this.freeCardL.string = 0;
             this.freeTimeBox.active = false;
-        } else {
-            this.freeTimeBox.active = true;
-            let minTime = data.FreeCardList[0].ExpiredAt, freeCard = data.FreeCardList[0].Cnt;
-            for (let i in data.FreeCardList) {
-                let time = data.FreeCardList[i].ExpiredAt;
-                if (minTime > time) {
-                    minTime = time;
-                    freeCard = data.FreeCardList[i].Cnt;
-                }
-            }
-            let t = new Date(minTime * 1000);
-            let date = t.getFullYear().toString().substr(2, 2) + '年' + (t.getMonth()+1) + '月' + t.getDate() + '日';
-            this.freeTimeL.string = date + '过期';
-            this.freeCardL.string = freeCard;
+            return;
         }
+        this.freeTimeBox.active = true;
+        let minTime = data.FreeCardList[0].ExpiredAt, totalFreeCard = 0;
+        for (let i in data.FreeCardList) {
+            let time = data.FreeCardList[i].ExpiredAt;
+            totalFreeCard += data.FreeCardList[i].Cnt;
+            if (minTime > time) {
+                minTime = time;
+            }
+        }
+        let t = new Date(minTime * 1000);
+        let date = t.getFullYear().toString().substr(2, 2) + '年' + (t.getMonth() + 1) + '月' + t.getDate() + '日';
+        this.freeTimeL.string = date + '过期';
+        this.freeCardL.string = totalFreeCard;
     },
 
     onBtnCloseClick () {

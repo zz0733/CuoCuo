@@ -240,6 +240,11 @@ cc.Class({
             var posX = i * 50;
             pokerNode.setPosition(posX, 0);
             pokerNode.setTag(posX);
+            if(cc.YL.loaderID == cc.YL.DDZleftPlayerInfo.userId){
+                pokerNode.getChildByName("OwnerSign").active = true;
+            }else{
+                pokerNode.getChildByName("OwnerSign").active = false;
+            }
             if (animaType != 0) {
                 this.node.active = false;
             }

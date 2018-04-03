@@ -225,6 +225,7 @@ cc.Class({
     initPoker: function (ID) {
         var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(ID);
         var newNode = cc.instantiate(this.pokerPre);
+
         newNode.getComponent("DDZ_Poker").initPoker(pokerObj);
         this.node.addChild(newNode);
         return newNode;
@@ -238,6 +239,11 @@ cc.Class({
             pokerNode.setTag(posX);
             if(animaType != 0){
                 this.node.active = false;
+            }
+            if(cc.YL.loaderID == cc.YL.DDZselfPlayerInfo.userId){
+                pokerNode.getChildByName("OwnerSign").active = true;
+            }else{
+                pokerNode.getChildByName("OwnerSign").active = false;
             }
         }
         this.showSpecialAnim(animaType);

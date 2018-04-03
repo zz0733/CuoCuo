@@ -1,26 +1,37 @@
-const version = 'version:2.0.6.6953';
+const version = 'version:2.0.6.7030';
 /*苹果审核
-    更新时间：2018年3月6日
-    更新版本：2.0.6.6927
-    更新内容：
-    1.优化游戏体验
-    :::4.0.1
+ 更新时间：2018年3月6日
+ 更新版本：2.0.6.6927
+ 更新内容：
+ 1.优化游戏体验
+ :::4.0.1
 
-    Bundle Identifier: com.youle2011.hymajiang
-    Version: 2.0.8
-    Build: 2.0.8
-*/
-/*
-    更新时间：2018年3月9日
-    更新版本：2.0.6.6953
-    更新内容：
-    1.优化游戏体验
-    :::4.0.1
+ Bundle Identifier: com.youle2011.hymajiang
+ Version: 2.0.8
+ Build: 2.0.8
+ */
+/*苹果审核
+ 更新时间：2018年3月9日
+ 更新版本：2.0.6.6953
+ 更新内容：
+ 1.优化游戏体验
+ :::4.0.1
 
-    Bundle Identifier: com.youle2011.hymajiang
-    Version: 2.0.9
-    Build: 2.0.9
-*/
+ Bundle Identifier: com.youle2011.hymajiang
+ Version: 2.0.9
+ Build: 2.0.9
+ */
+/*渔船用户
+ 更新时间：2018年3月26日
+ 更新版本：2.0.6.7030
+ 更新内容：
+ 1.优化游戏体验
+ :::3.0.10
+
+ Bundle Identifier: com.scyoule.cuocuo
+ Version: 2.0.10
+ Build: 2.0.10
+ */
 
 const logLevel = cc.Enum({
     none: 0,
@@ -40,7 +51,7 @@ const logTags = {
     login: logLevel.info,
     hotUpdate: logLevel.info,
     hall: logLevel.verbose,
-    mj : logLevel.verbose,
+    mj: logLevel.verbose,
 };
 
 const forceUpdateUrl = cc.Enum({
@@ -49,11 +60,13 @@ const forceUpdateUrl = cc.Enum({
 });
 
 const loginUrl = [
-    'ws://192.168.1.77:9999/ws',    //内网
+    'ws://192.168.1.77:9999/ws',
+    // 'ws://118.31.23.181:9901/ws',    //内网 ws://192.168.1.77:9999/ws
     'ws://am.fmgames.cn:29990/ws',  //外网 'ws://70.103.170.210:29990/ws'
-    'ws://121.42.39.15:9901/ws',    //测试
-    'ws://121.42.39.15:9901/ws',    //苹果审核上架
+    'ws://118.31.23.181:9901/ws',   //测试
+    'ws://118.31.23.181:9901/ws',   //苹果审核上架  以前 ws://121.42.39.15:9901/ws
 ];
+
 const loginUrlType = cc.Enum({
     intranet: 0,
     extranet: 1,
@@ -87,6 +100,7 @@ const gameType = cc.Enum({
     maJiangHuangYan: 3,
     niuNiu: 4,
     digFlower: 5,
+    DDZ: 6,
 });
 
 const gameTypeSceneNameMap = {
@@ -95,6 +109,7 @@ const gameTypeSceneNameMap = {
     [gameType.sanGong]: "puke",
     [gameType.niuNiu]: "puke",
     [gameType.digFlower]: "wahua",
+    [gameType.DDZ]: "DouDiZhu",
 };
 
 const gameTypeZhNameMap = {
@@ -103,6 +118,7 @@ const gameTypeZhNameMap = {
     [gameType.sanGong]: "三公",
     [gameType.niuNiu]: "牛牛",
     [gameType.digFlower]: "温岭挖花",
+    [gameType.DDZ]: "斗地主",
 };
 
 const wltest = {
@@ -145,22 +161,22 @@ const itemCsv = cc.Enum({
     voucher: 3
 });
 
-const pRetCode  = {
-    1 :"服务器忙",
-    2 :"非法游戏类型",
-    3 :"登录失败",
-    4 :"使用第三方登录",
-    5 :"非法第三方平台",
-    6 :"重复登录",
-    7 :"非法认证名",
-    8 :"非法认证号",
-    9 :"认证失败",
-    10 :"服务未开启",
-    11 :"服务停止",
-    12 :"非法房间号",
-    13 :"房间未找到",
-    14 :"已在房间中",
-    15 :"已在另一个房间中",
+const pRetCode = {
+    1: "服务器忙",
+    2: "非法游戏类型",
+    3: "登录失败",
+    4: "使用第三方登录",
+    5: "非法第三方平台",
+    6: "重复登录",
+    7: "非法认证名",
+    8: "非法认证号",
+    9: "认证失败",
+    10: "服务未开启",
+    11: "服务停止",
+    12: "非法房间号",
+    13: "房间未找到",
+    14: "已在房间中",
+    15: "已在另一个房间中",
 };
 
 module.exports = {

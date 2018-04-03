@@ -10,6 +10,7 @@ cc.Class({
         playerInfoNode: cc.Prefab,
         oneGameOverNode: cc.Prefab,
         allGameOverNode: cc.Prefab,
+        roomAtlas: cc.SpriteAtlas,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -25,6 +26,9 @@ cc.Class({
             this.initDeskUI(cc.YL.DDZDeskInfo);
         }
         this.initPlayerNode();
+    },
+    update(){
+        this.mobileInfoNode.getChildByName("Time").getComponent(cc.Label).string = cc.YL.DDZ_Osdate.showTime();
     },
     onDestroy(){
         cc.YL.DDZEventManager.destroy();//网络事件取消注册
@@ -44,9 +48,9 @@ cc.Class({
             }
 
         }
-        if (cc.YL.playerInfoList) {
-            for (var i = 0; i < cc.YL.playerInfoList.length; i++) {
-                cc.YL.DDZGameManager.initPlayerNode(cc.YL.playerInfoList[i]);
+        if (cc.YL.DDZPlayerInfoList) {
+            for (var i = 0; i < cc.YL.DDZPlayerInfoList.length; i++) {
+                cc.YL.DDZGameManager.initPlayerNode(cc.YL.DDZPlayerInfoList[i]);
             }
         }
     },
@@ -114,11 +118,31 @@ cc.Class({
         roomInfo.getComponent(cc.Label).string = "";
     },
     onPhoneNetEvent: function (msg) {
+        var atlas = this.roomAtlas;
+        if (msg.status == 5) {
+            this.mobileInfoNode.getChildByName("Wifi").active = true;
+            this.mobileInfoNode.getChildByName("Net").active = false;
+            this.mobileInfoNode.getChildByName("Wifi").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame("wifi_" + msg.strength);
+
+        } else if (msg.status == 0) {
+            this.mobileInfoNode.getChildByName("Wifi").active = false;
+            this.mobileInfoNode.getChildByName("Net").active = false;
+            this.mobileInfoNode.getChildByName("Wifi").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame("xinhao5");
+        } else {
+            this.mobileInfoNode.getChildByName("Wifi").active = false;
+            this.mobileInfoNode.getChildByName("Net").active = true;
+            var singleArr = ["xinhao5","xinhao4","xinhao3","xinhao2","xinhao1"];
+            this.mobileInfoNode.getChildByName("Wifi").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame(singleArr[msg.signal]);
+        }
+
 
     },
 
     onPhoneBatteryEvent: function (msg) {
-
+        msg.status == 2 ?
+            this.mobileInfoNode.getChildByName("Battery").getChildByName("isCharge").active = true :
+            this.mobileInfoNode.getChildByName("Battery").getChildByName("isCharge").active = false;
+        this.mobileInfoNode.getChildByName("Battery").getChildByName("BatteryIn").width = (msg.level / 39) * 39;
     },
     initReady: function (isReady) {
         if (isReady == true) {
@@ -152,30 +176,31 @@ cc.Class({
         var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Beishu/Num");
         node.getComponent(cc.Label).string = "";
     },
-    initPlayerInfoNode: function (info,index) {
+    initPlayerInfoNode: function (info, index) {
         var playerInfoNode = this.chatNode.getChildByName("DDZ_playerinfoNode") ?
             this.chatNode.getChildByName("DDZ_playerinfoNode") :
             cc.instantiate(this.playerInfoNode);
         this.chatNode.getChildByName("DDZ_playerinfoNode") ?
             this.chatNode.getChildByName("DDZ_playerinfoNode").active = true :
             this.chatNode.addChild(playerInfoNode);
-        playerInfoNode.getComponent("DDZ_PlayerInfoNode").initNode(info,index);
+        playerInfoNode.getComponent("DDZ_PlayerInfoNode").initNode(info, index);
     },
-    showAllGameOver: function(data){
+    showAllGameOver: function (data) {
         var allGameOverNode = this.node.getChildByName("DDZ_AllGameOver") ?
             this.node.getChildByName("DDZ_AllGameOver") :
             cc.instantiate(this.allGameOverNode);
         this.node.getChildByName("DDZ_AllGameOver") ?
-            this.node.getChildByName("DDZ_AllGameOver").active = true:
+            this.node.getChildByName("DDZ_AllGameOver").active = true :
             this.node.addChild(allGameOverNode);
         allGameOverNode.getComponent("DDZ_AllGameOver").initAllGameOverNode(data);
     },
-    showOneGameOver: function(data){
+    showOneGameOver: function (data) {
+        this.GameOverUI();
         var oneGameOverNode = this.node.getChildByName("DDZ_OneGameOver") ?
             this.node.getChildByName("DDZ_OneGameOver") :
             cc.instantiate(this.oneGameOverNode);
         this.node.getChildByName("DDZ_OneGameOver") ?
-            this.node.getChildByName("DDZ_OneGameOver").active = true:
+            this.node.getChildByName("DDZ_OneGameOver").active = true :
             this.node.addChild(oneGameOverNode);
         oneGameOverNode.getComponent("DDZ_OneGameOver").initNodeForSimple(data);
     },
@@ -205,6 +230,7 @@ cc.Class({
         this.BtnNode = cc.find("DDZ_UIROOT/MainNode/PlayerBtnNode");
         this.ruleInfoNode = cc.find("DDZ_UIROOT/MainNode/RuleInfo/BG");
         this.chatNode = cc.find("DDZ_UIROOT/MainNode/ChatRoot");
+        this.mobileInfoNode = cc.find("DDZ_UIROOT/MainNode/BtnNode/MobileInfo");
     },
     /*************************************界面的按钮交互**************************************/
     onClickSetting: function () {
@@ -230,12 +256,11 @@ cc.Class({
         this.ruleInfoNode.parent.setPosition(-1334, 0);
         this.ruleInfoNode.parent.runAction(cc.moveTo(0.1, cc.p(0, 0)));
         event.target.active = false;
-        setTimeout(function () {
-            event.target.active = true;
-        }.bind(this), 100);
+
 
     },
     onClickCloseRule: function () {
+        cc.find("DDZ_UIROOT/MainNode/BtnNode/Rule").active = true;
         this.ruleInfoNode.parent.stopAllActions();
         this.ruleInfoNode.parent.setPosition(0, 0);
         this.ruleInfoNode.parent.runAction(cc.moveTo(0.1, cc.p(-1334, 0)));

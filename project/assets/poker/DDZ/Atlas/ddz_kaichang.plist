@@ -7,11 +7,11 @@
             <key>dz_bei.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{49,213},{35,36}}</string>
+                <string>{{215,101},{35,36}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{35,36}}</string>
                 <key>sourceSize</key>
@@ -20,7 +20,7 @@
             <key>dz_dizhu.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{183,89},{75,60}}</string>
+                <string>{{46,148},{75,60}}</string>
                 <key>offset</key>
                 <string>{-1,0}</string>
                 <key>rotated</key>
@@ -33,7 +33,7 @@
             <key>dz_guize1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{148,89},{33,161}}</string>
+                <string>{{2,2},{33,161}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,11 +46,11 @@
             <key>dz_guize2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,169},{42,83}}</string>
+                <string>{{2,165},{42,83}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{1,1},{42,83}}</string>
                 <key>sourceSize</key>
@@ -59,20 +59,20 @@
             <key>dz_icon1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{108,108}}</string>
+                <string>{{94,2},{119,119}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
                 <false/>
                 <key>sourceColorRect</key>
-                <string>{{0,0},{108,108}}</string>
+                <string>{{0,0},{119,119}}</string>
                 <key>sourceSize</key>
-                <string>{108,108}</string>
+                <string>{119,119}</string>
             </dict>
             <key>dz_icon2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{112,64},{108,23}}</string>
+                <string>{{46,225},{108,23}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -85,11 +85,11 @@
             <key>dz_icon3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{112,2},{115,60}}</string>
+                <string>{{156,138},{115,60}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{115,60}}</string>
                 <key>sourceSize</key>
@@ -98,7 +98,7 @@
             <key>dz_icon4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{86,221},{30,30}}</string>
+                <string>{{218,138},{30,30}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -111,11 +111,11 @@
             <key>dz_shengpai.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,213},{36,45}}</string>
+                <string>{{215,54},{36,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{36,45}}</string>
                 <key>sourceSize</key>
@@ -124,7 +124,7 @@
             <key>dz_zhuapai.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{87,169},{37,50}}</string>
+                <string>{{215,2},{37,50}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -137,11 +137,11 @@
             <key>dz_zhuapai1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,112},{144,55}}</string>
+                <string>{{37,2},{144,55}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{144,55}}</string>
                 <key>sourceSize</key>
@@ -157,7 +157,7 @@
             <key>size</key>
             <string>{256,256}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:2645e43327f07dfe6d93416089526485$</string>
+            <string>$TexturePacker:SmartUpdate:afb510767753fad70cd7996dd7e59d15$</string>
             <key>textureFileName</key>
             <string>ddz_kaichang.png</string>
         </dict>

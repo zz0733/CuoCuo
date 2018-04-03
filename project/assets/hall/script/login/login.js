@@ -49,7 +49,8 @@
             this.ykLoginBtn.active = true;
         } else {
             this.wxLoginBtn.active = true;
-            this.ykLoginBtn.active = true;
+            this.wxLoginBtn.setPositionX(0);
+            this.ykLoginBtn.active = false;
         }
     },
 
@@ -64,8 +65,11 @@
                 this.wxLoginBtn.active = true;
                 this.wxLoginBtn.setPositionX(0);
                 this.ykLoginBtn.active = false;
-            } else {
+            } else if (cc.sys.os === cc.sys.OS_IOS) {
                 this.isWxAppInstalled(require('JSPhoneWeChat').WxAppIsInstalled());
+            } else {
+                this.wxLoginBtn.active = true;
+                this.ykLoginBtn.active = true;
             }
             if (fun.gameCfg.loginType === gameConst.loginType.ID) {
                 this.editBox.active = true;

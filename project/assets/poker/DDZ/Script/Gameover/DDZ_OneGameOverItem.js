@@ -1,32 +1,9 @@
-// Learn cc.Class:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/class.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/class/index.html
-// Learn Attribute:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/reference/attributes.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/reference/attributes/index.html
-// Learn life-cycle callbacks:
-//  - [Chinese] http://www.cocos.com/docs/creator/scripting/life-cycle-callbacks.html
-//  - [English] http://www.cocos2d-x.org/docs/editors_and_tools/creator-chapters/scripting/life-cycle-callbacks/index.html
-
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        pokerPre: cc.Prefab,
+        atlas: cc.SpriteAtlas,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -36,6 +13,45 @@ cc.Class({
     start () {
 
     },
-
+    initItem: function (data, headUrl, nickname) {
+        // optional int64 userId = 1;
+//             optional int32 score = 2; //单局得分
+//             optional int32 totalScore = 3; //总得分
+//             optional int32 rate = 4; //倍数
+//             optional int32 boomCount = 5; //炸弹数量
+//             optional bool isWinner = 6; //是否是赢家
+//             repeated int32 handPokers = 7; //手牌
+//             repeated int32 remainPokers = 8; //剩余手牌
+//             optional bool isDiZhu = 9; //是否是地主
+//             optional string extend = 10; //扩展字段
+        if (data.isDiZhu == true) {
+            this.node.getChildByName("Icon").getComponent(cc.Sprite).spriteFrame = this.atlas.getSpriteFrame("dz_xiaojiesuan1");
+            this.node.getChildByName("Icon").getChildByName("Word").getComponent(cc.Label).string = "地主"
+        } else {
+            this.node.getChildByName("Icon").getComponent(cc.Sprite).spriteFrame = null;
+            this.node.getChildByName("Icon").getChildByName("Word").getComponent(cc.Label).string = "农民"
+        }
+        fun.utils.loadUrlRes(headUrl, this.node.getChildByName("PlayerInfoBG").getChildByName("Head"));// 头像
+        this.node.getChildByName("PlayerInfoBG").getChildByName("ID").getComponent(cc.Label).string = data.userId;
+        this.node.getChildByName("PlayerInfoBG").getChildByName("Name").getComponent(cc.Label).string = nickname;
+        for (var i = 0; i < data.handPokers.length; i++) {
+            var pokerNode = this.initPoker(data.handPokers[i]);
+            this.node.getChildByName("PokerBG").getChildByName("HandPoker").addChild(pokerNode);
+            var posX = 0 + i * 50;
+            pokerNode.setPosition(posX, 0);
+            pokerNode.setTag(posX);
+        }
+        this.node.getChildByName("PokerBG").getChildByName("GameInfo").getComponent(cc.Label).string = data.extend;
+        this.node.getChildByName("PokerBG").getChildByName("DiFen").getChildByName("Num").getComponent(cc.Label).string
+            = cc.YL.DDZDeskInfo.roomInfo.base;
+        this.node.getChildByName("PokerBG").getChildByName("BeiShu").getChildByName("Num").getComponent(cc.Label).string = data.rate;
+        this.node.getChildByName("PokerBG").getChildByName("JiFen").getChildByName("Num").getComponent(cc.Label).string = data.score;
+    },
+    initPoker: function (ID) {
+        var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(ID);
+        var newNode = cc.instantiate(this.pokerPre);
+        newNode.getComponent("DDZ_Poker").initPoker(pokerObj);
+        return newNode;
+    },
     // update (dt) {},
 });

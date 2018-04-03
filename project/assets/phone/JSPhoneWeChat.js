@@ -77,7 +77,7 @@ let wechat = {
     WxReShareResult : function(result){
         console.log('---* js WxReShareResult *---');
         console.log('result: ' + result);
-        fun.event.dispatch('PhoneWeChatShareResult', result);
+        fun.event.dispatch('PhoneWeChatShareResult', result === '0' ? false : result);
     },
     //-- 服务器返回 微信支付结果 android-true/false ios-1/0
     WxRePayResult : function(result){

@@ -437,7 +437,6 @@ GameManager.initReplayPai = function(paiData){
 }
 
 GameManager.initStartPai = function(paiData){
-	cc.YL.info("黄岩麻将开始发牌initStartPai");
 	var totalList  = paiData.TileCount;
 	this.startPaiData = [];
 	var meDeskIndex = mjDataMgr.getInstance().get(mjDataMgr.KEYS.SELFID);

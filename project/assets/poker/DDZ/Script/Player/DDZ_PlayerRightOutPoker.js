@@ -255,6 +255,11 @@ cc.Class({
             if (animaType != 0) {
                 this.node.active = false;
             }
+            if(cc.YL.loaderID == cc.YL.DDZrightPlayerInfo.userId){
+                pokerNode.getChildByName("OwnerSign").active = true;
+            }else{
+                pokerNode.getChildByName("OwnerSign").active = false;
+            }
         }
         this.showSpecialAnim(animaType);
     },
@@ -267,10 +272,9 @@ cc.Class({
         switch (animaType) {
             case 1: {
                 var childNodeList = this.node.children;
-                var startPosX = -50 * (childNodeList.length - 1) ;
                 this.node.active = true;
                 for (var i = 0; i < childNodeList.length; i++) {
-                    childNodeList[i].setPositionX(startPosX);
+                    childNodeList[i].setPositionX(0);
                     childNodeList[i].stopAllActions();
                     childNodeList[i].runAction(cc.moveTo(0.15 + i * 0.02, childNodeList[i].getTag(), 0).easing(cc.easeBackOut()));
                 }
@@ -278,10 +282,9 @@ cc.Class({
             }
             case 2: {
                 var childNodeList = this.node.children;
-                var startPosX = -50 * (childNodeList.length - 1) ;
                 this.node.active = true;
                 for (var i = 0; i < childNodeList.length; i++) {
-                    childNodeList[i].setPositionX(startPosX);
+                    childNodeList[i].setPositionX(0);
                     childNodeList[i].stopAllActions();
                     childNodeList[i].runAction(cc.moveTo(0.15 + i * 0.02, childNodeList[i].getTag(), 0).easing(cc.easeBackOut()));
                 }

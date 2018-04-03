@@ -134,6 +134,7 @@ DDZ_EventManager.PID_OUTCARD_ACK = function (msg) {
     if (msg.isOk  == false) {
         cc.YL.err("msg.isOk false 出牌失败");
     } else {
+        cc.YL.lastOutCardData = msg;
         cc.YL.DDZGameManager.playerOutCard(msg);
 
     }
