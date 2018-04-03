@@ -80,7 +80,7 @@ cc.Class({
         // 9分  5 dz_zt5
         var fileNameArr = ["","dz_zt0000","dz_zt00","dz_zt0","dz_zt1","dz_zt2","dz_zt3","dz_zt4","dz_zt5"];
         var atlas = this.txtAtlas;
-        if(strType == 0 || !strType){
+        if(strType == 0 ){
             this.node.getChildByName("ShowWord").active = false;
         }else{
             this.node.getChildByName("ShowWord").active = true;

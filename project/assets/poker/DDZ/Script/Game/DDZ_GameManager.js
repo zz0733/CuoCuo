@@ -43,6 +43,10 @@ DDZGameManager.initPlayerNode = function (data) {
     if (this.selfID == data.userId) {
         // 玩家自己的消息信息
         this.selfNodeComp.initSelfPlayerNode(data);
+        if (cc.YL.DDZDeskInfo.status <= 2) {
+            var UIROOT = cc.find("DDZ_UIROOT");
+            UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initReady(cc.YL.DDZselfPlayerInfo.isReady);// 准备的按钮初始化
+        }
         cc.YL.DDZselfPlayerInfo = data;
         cc.YL.info("现在的playerinfo",cc.YL.DDZrightPlayerInfo,cc.YL.DDZleftPlayerInfo);
         if(!cc.YL.DDZrightPlayerInfo){
@@ -56,7 +60,6 @@ DDZGameManager.initPlayerNode = function (data) {
             };
         }
     } else {
-
         if (cc.YL.selfIndex == 1) {
             if (data.index == 2) {
                 this.rightNodeComp.initRightPlayerNode(data);
@@ -199,7 +202,7 @@ DDZGameManager.playerOutCard = function (data) {
         }
         this.selfHandPokerNodeComp.initHandPoker(this.selfHandPokerNodeComp.handPokerIDs);
         this.selfOutNodeComp.initOutPoker(data.paiIds,data.outType);
-        cc.YL.PokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
+        cc.YL.DDZPokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
     }
     if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         this.rightHandPokerNodeComp.initHandPokerCount(data.remainPaiCount);
@@ -224,8 +227,14 @@ DDZGameManager.showOneGameOver = function (data) {
 
 };
 DDZGameManager.showAllGameOver = function (data) {
-    var UIROOT = cc.find("DDZ_UIROOT");
-    UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showAllGameOver(data);
+    cc.YL.info("是否是中途解散",data.isNormalEnd);
+    if(data.isNormalEnd == false){
+        var UIROOT = cc.find("DDZ_UIROOT");
+        UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showAllGameOver(data);
+    }else{
+        cc.YL.DDZAllGameOverData = data;
+    }
+
 };
 module.exports = DDZGameManager;
 cc.YL.DDZGameManager = DDZGameManager;

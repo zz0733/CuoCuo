@@ -19,10 +19,6 @@ cc.Class({
         item: cc.Prefab,
         winFont: cc.Font,
         loseFont: cc.Font,
-        diZhuWin: cc.Texture2D,
-        diZhuLose: cc.Texture2D,
-        famWin: cc.Texture2D,
-        famLose: cc.Texture2D,
         Atlas: cc.SpriteAtlas,
     },
 
@@ -50,8 +46,21 @@ cc.Class({
 //         }
     },
     initNodeForSimple: function (data) {
+        if(data.isSpring){
+            this.node.getChildByName("Spring").active = true;
+            this.node.getChildByName("Spring").setScale(0);
+            this.node.getChildByName("Spring").stopAllActions();
+            this.node.getChildByName("Spring").runAction(cc.sequence(cc.scaleTo(1,1.5),cc.scaleTo(0.2,1).easing(cc.easeBackOut())));
+        }
+        setTimeout(function () {
+            this.initFirstUI(data);
+        }.bind(this),data.isSpring == true ? 1500 : 10);
+
+    },
+    initFirstUI: function(data){
         this.selfID = fun.db.getData('UserInfo').UserId;
         this.firstNode = this.node.getChildByName("First");
+        this.node.getChildByName("Spring").active = false;
         this.firstNode.active = true;
         this.node.getChildByName("Second").active = false;
         this.selfNode = this.firstNode.getChildByName("Self");
@@ -71,22 +80,24 @@ cc.Class({
                 this.initLeft(data.usersRoundLotteryInfo[i]);
             }
         }
-
     },
-
     initSelf: function (data) {
         var list = data.remainPokers;
-        var startPosX = (list.length - 1) * (-25);
-        for (var i = 0; i < list.length; i++) {
-            var pokerNode = this.initPoker(list[i]);
-            this.selfNode.getChildByName("Poker").addChild(pokerNode);
-            var posX = startPosX + i * 50;
-            pokerNode.setPosition(posX, 0);
-            pokerNode.setTag(posX);
+        if(list){
+            list = cc.YL.DDZTools.SortPoker(list);
+            var startPosX = (list.length - 1) * (-25);
+            for (var i = 0; i < list.length; i++) {
+                var pokerNode = this.initPoker(list[i]);
+                this.selfNode.getChildByName("Poker").addChild(pokerNode);
+                var posX = startPosX + i * 50;
+                pokerNode.setPosition(posX, 0);
+                pokerNode.setTag(posX);
+            }
         }
+
         data.isWinner == true ?
             this.selfNode.getChildByName("Num").getComponent(cc.Label).string = "+" + data.score :
-            this.selfNode.getChildByName("Num").getComponent(cc.Label).string = "-" + data.score;
+            this.selfNode.getChildByName("Num").getComponent(cc.Label).string =  data.score;
         data.isWinner == true ?
             this.selfNode.getChildByName("Num").getComponent(cc.Label).Font = this.winFont :
             this.selfNode.getChildByName("Num").getComponent(cc.Label).Font = this.loseFont;
@@ -94,45 +105,70 @@ cc.Class({
 
     initRight: function (data) {
         var list = data.remainPokers;
-        list = list.reverse();
-        for (var i = 0; i < list.length; i++) {
-            var pokerNode = this.initPoker(list[i]);
-            var posX = -(i * 50);
-            pokerNode.setPosition(posX, 0);
-            this.rightNode.getChildByName("Poker").addChild(pokerNode);
-            pokerNode.zIndex = list.length - i;
-            pokerNode.setTag(posX);
+        if(list){
+            list = cc.YL.DDZTools.SortPoker(list);
+            list = list.reverse();
+            for (var i = 0; i < list.length; i++) {
+                var pokerNode = this.initPoker(list[i]);
+                if(i > 10){
+                    var posX = -((i - 11) * 50);
+                    pokerNode.setPosition(posX, -100);
+                    pokerNode.zIndex = 50 - i;
+                }else{
+                    var posX = -(i * 50);
+                    pokerNode.setPosition(posX, 0);
+                    pokerNode.zIndex = list.length - i;
+                }
+                this.rightNode.getChildByName("Poker").addChild(pokerNode);
+                // pokerNode.zIndex = list.length - i;
+                pokerNode.setTag(posX);
+            }
+
         }
-        data.isWinner == true  ?
+        data.isWinner == true ?
             this.rightNode.getChildByName("Num").getComponent(cc.Label).string = "+" + data.score :
-            this.rightNode.getChildByName("Num").getComponent(cc.Label).string = "-" + data.score;
+            this.rightNode.getChildByName("Num").getComponent(cc.Label).string =  data.score;
         data.isWinner == true ?
             this.rightNode.getChildByName("Num").getComponent(cc.Label).Font = this.winFont :
             this.rightNode.getChildByName("Num").getComponent(cc.Label).Font = this.loseFont;
+
     },
 
     initLeft: function (data) {
         var list = data.remainPokers;
-        for (var i = 0; i < list.length; i++) {
-            var pokerNode = this.initPoker(list[i]);
-            this.leftNode.getChildByName("Poker").addChild(pokerNode);
-            var posX = i * 50;
-            pokerNode.setPosition(posX, 0);
-            pokerNode.setTag(posX);
+        if(list){
+            list = cc.YL.DDZTools.SortPoker(list);
+            for (var i = 0; i < list.length; i++) {
+                var pokerNode = this.initPoker(list[i]);
+                this.leftNode.getChildByName("Poker").addChild(pokerNode);
+                if(i > 10){
+                    var posX = (i - 11) * 50;
+                    pokerNode.setPosition(posX, -100);
+                }else{
+                    var posX = i * 50;
+                    pokerNode.setPosition(posX, 0);
+                }
+                pokerNode.setTag(posX);
 
+            }
         }
         data.isWinner == true ?
             this.leftNode.getChildByName("Num").getComponent(cc.Label).string = "+" + data.score :
-            this.leftNode.getChildByName("Num").getComponent(cc.Label).string = "-" + data.score;
-        data.isWinner == true  ?
-            this.leftNode.getChildByName("Num").getComponent(cc.Label).Font = this.winFont :
-            this.leftNode.getChildByName("Num").getComponent(cc.Label).Font = this.loseFont;
+            this.leftNode.getChildByName("Num").getComponent(cc.Label).string = data.score;
+        data.isWinner == true ?
+            this.leftNode.getChildByName("Num").getComponent(cc.Label).font = this.winFont :
+            this.leftNode.getChildByName("Num").getComponent(cc.Label).font = this.loseFont;
     },
 
     onClickContinue: function () {
-        fun.net.send("PID_READY_REQ", {
-            userId: fun.db.getData('UserInfo').UserId,
-        });
+        if (cc.YL.DDZAllGameOverData) {
+            var UIROOT = cc.find("DDZ_UIROOT");
+            UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showAllGameOver(cc.YL.DDZAllGameOverData);
+        } else {
+            fun.net.send("PID_READY_REQ", {
+                userId: fun.db.getData('UserInfo').UserId,
+            });
+        }
         this.node.active = false;
         this.node.destroy();
     },
@@ -148,46 +184,63 @@ cc.Class({
         return newNode;
     },
     initIcon: function (data) {
+        this.firstNode.getChildByName("ShowWinOrLose").active = true;
+        var isShow = false;
+        for(var i = 0; i< this.firstNode.getChildByName("ShowWinOrLose").children.length;i++){
+            this.firstNode.getChildByName("ShowWinOrLose").children[i].active = false;
+        }
+        if(isShow == true){
+            return;
+        }
         if (data.isDiZhu == true) {
             data.isWinner == true ?
-                this.firstNode.getChildByName("ShowWinOrLose").getComponent(cc.Sprite).spriteFrame = this.diZhuWin :
-                this.firstNode.getChildByName("ShowWinOrLose").getComponent(cc.Sprite).spriteFrame = this.diZhuLose;
+                this.firstNode.getChildByName("ShowWinOrLose").getChildByName("1").active = true :
+                this.firstNode.getChildByName("ShowWinOrLose").getChildByName("2").active = true;
         } else {
-            data.isWinner == true  ?
-                this.firstNode.getChildByName("ShowWinOrLose").getComponent(cc.Sprite).spriteFrame = this.famWin :
-                this.firstNode.getChildByName("ShowWinOrLose").getComponent(cc.Sprite).spriteFrame = this.famLose;
+            data.isWinner == true ?
+                this.firstNode.getChildByName("ShowWinOrLose").getChildByName("3").active = true :
+                this.firstNode.getChildByName("ShowWinOrLose").getChildByName("4").active = true;
         }
+        this.firstNode.getChildByName("ShowWinOrLose").stopAllActions();
+        this.firstNode.getChildByName("ShowWinOrLose").setScale(0);
+        this.firstNode.getChildByName("ShowWinOrLose").runAction(cc.scaleTo(0.9,1.2).easing(cc.easeBackOut()));
+        setTimeout(function () {
+            this.firstNode.getChildByName("ShowWinOrLose").active = false;
+            isShow = true;
+        }.bind(this),2000);
     },
     /***********************************第一个界面***************************************/
 
 
     /***********************************第二个界面***************************************/
     initSecondUI: function (data) {
+        this.node.getChildByName("Spring").active = false;
         this.ButtomNode = this.node.getChildByName("Second").getChildByName("Buttom");
         this.MidNode = this.node.getChildByName("Second").getChildByName("Mid");
         this.TopNode = this.node.getChildByName("Second").getChildByName("Top");
         this.initTitle();
         this.initButtomInfo(data);
-        this.initItem();
+        this.initItem(data);
     },
     initTitle: function () {
         if (this.isWin == true) {
             this.TopNode.getChildByName("Title").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan5");
-            this.TopNode.getChildByName("Title2").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan5");
-            this.TopNode.getChildByName("Word").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan6");
+            this.TopNode.getChildByName("Title").getChildByName("Title2").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan5");
+            this.TopNode.getChildByName("Title").getChildByName("Word").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan6");
         } else {
             this.TopNode.getChildByName("Title").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan3");
-            this.TopNode.getChildByName("Title2").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan3");
-            this.TopNode.getChildByName("Word").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan4");
+            this.TopNode.getChildByName("Title").getChildByName("Title2").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan3");
+            this.TopNode.getChildByName("Title").getChildByName("Word").getComponent(cc.Sprite).spriteFrame = this.Atlas.getSpriteFrame("dz_xiaojiesuan4");
         }
     },
     initButtomInfo: function (data) {
         this.TopNode.getChildByName("TimeBG").getChildByName("time").getComponent(cc.Label).string = cc.YL.DDZ_Osdate.LocalTimeString();
         this.ButtomNode.getChildByName("RoomInfo").getChildByName("lun").getComponent(cc.Label).string = "第" + data.currentRound + "局";
-        this.ButtomNode.getChildByName("RoomInfo").getChildByName("PassWord").getComponent(cc.Label).string = "房号:" + data.password ;
+        this.ButtomNode.getChildByName("RoomInfo").getChildByName("PassWord").getComponent(cc.Label).string = "房号:" + data.password;
     },
-    initItem: function(data){
-        for(var i = 0; i< data.usersRoundLotteryInfo.length;i++){
+    initItem: function (data) {
+        this.MidNode.removeAllChildren();
+        for (var i = 0; i < data.usersRoundLotteryInfo.length; i++) {
             var itemNode = cc.instantiate(this.item);
             this.MidNode.addChild(itemNode);
             var headUrl = null;
@@ -204,10 +257,10 @@ cc.Class({
                 headUrl = cc.YL.DDZleftPlayerInfo.headUrl;
                 nickName = cc.YL.DDZleftPlayerInfo.nickName;
             }
-            itemNode.getComponent("DDZ_OneGameOverItem").initItem(data.usersRoundLotteryInfo[i],headUrl);
+            itemNode.getComponent("DDZ_OneGameOverItem").initItem(data.usersRoundLotteryInfo[i], headUrl,nickName);
         }
     },
-    onClickBack: function(){
+    onClickBack: function () {
         this.firstNode.active = true;
         this.node.getChildByName("Second").active = false;
     },

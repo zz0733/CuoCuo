@@ -34,8 +34,10 @@ cc.Class({
         fun.utils.loadUrlRes(headUrl, this.node.getChildByName("PlayerInfoBG").getChildByName("Head"));// 头像
         this.node.getChildByName("PlayerInfoBG").getChildByName("ID").getComponent(cc.Label).string = data.userId;
         this.node.getChildByName("PlayerInfoBG").getChildByName("Name").getComponent(cc.Label).string = nickname;
-        for (var i = 0; i < data.handPokers.length; i++) {
-            var pokerNode = this.initPoker(data.handPokers[i]);
+        var pokers = data.handPokers;
+        pokers = cc.YL.DDZTools.SortPoker(pokers);
+        for (var i = 0; i < pokers.length; i++) {
+            var pokerNode = this.initPoker(pokers[i]);
             this.node.getChildByName("PokerBG").getChildByName("HandPoker").addChild(pokerNode);
             var posX = 0 + i * 50;
             pokerNode.setPosition(posX, 0);
@@ -45,7 +47,13 @@ cc.Class({
         this.node.getChildByName("PokerBG").getChildByName("DiFen").getChildByName("Num").getComponent(cc.Label).string
             = cc.YL.DDZDeskInfo.roomInfo.base;
         this.node.getChildByName("PokerBG").getChildByName("BeiShu").getChildByName("Num").getComponent(cc.Label).string = data.rate;
-        this.node.getChildByName("PokerBG").getChildByName("JiFen").getChildByName("Num").getComponent(cc.Label).string = data.score;
+        if(data.score >= 0){
+            this.node.getChildByName("PokerBG").getChildByName("JiFen").getChildByName("Num").getComponent(cc.Label).string = "+" +data.score;
+            this.node.getChildByName("PokerBG").getChildByName("JiFen").getChildByName("Num").color  = new cc.Color(255,237,85);
+        }else {
+            this.node.getChildByName("PokerBG").getChildByName("JiFen").getChildByName("Num").getComponent(cc.Label).string = "-" + data.score;
+            this.node.getChildByName("PokerBG").getChildByName("JiFen").getChildByName("Num").color  = new cc.Color(157,186,244);
+        }
     },
     initPoker: function (ID) {
         var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(ID);

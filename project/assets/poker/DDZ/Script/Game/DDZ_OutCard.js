@@ -37,6 +37,6 @@ cc.Class({
         });
     },
     onClickTiShiCard: function () {
-        cc.YL.PokerTip.clickTipsBtn(cc.YL.lastOutCardData.outType, cc.YL.lastOutCardData.paiIds.length, cc.YL.lastOutCardData.paiIds);
+        cc.YL.DDZPokerTip.clickTipsBtn(cc.YL.lastOutCardData.outType, cc.YL.lastOutCardData.paiIds.length, cc.YL.lastOutCardData.paiIds);
     },
 });

@@ -42,6 +42,7 @@ const exporText = {
     [gameConst.gameType.maJiangHuangYan]: huangYanText,
     [gameConst.gameType.sanGong]: porkText,
     [gameConst.gameType.niuNiu]: porkText,
+    [gameConst.gameType.DDZ]:porkText,
 };
 
 const emoji = [

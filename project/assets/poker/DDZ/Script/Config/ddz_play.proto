@@ -74,6 +74,8 @@ message ddz_play_overturn {
     optional playerActType actType = 2;
     optional int32 actTime = 3; // 操作时间
     optional bool canOut = 4; //是否大得起上家出的牌
+    optional bool isNewRound = 5; //是否是新的一圈
+    optional int32 rate = 6; //倍数
 }
 
 //玩家要不起，请求过
@@ -105,6 +107,7 @@ message ddz_play_roundResult {
     optional int32 currentRound = 2; //当前局数
     optional int32 roundLimit = 3; //总的局数
     optional uint32 password = 4;
+    optional bool isSpring = 5; //是否是春天
 }
 
 message ddz_play_userLotteryInfo {
@@ -125,6 +128,17 @@ message ddz_play_userLotteryInfo {
 message ddz_play_lottery {
     optional Header retMsg = 1;
     repeated ddz_play_userLotteryInfo usersLotteryInfo = 2; //所有玩家的结算信息
-    optional int32 round = 3; //当前第几局ai
+    optional int32 round = 3; //当前第几局
     optional uint32 password = 4; //房间号
+    optional bool isNormalEnd = 5; //是否是正常结束
+}
+
+//登录验证
+message ddz_play_login_gameServer {
+    optional int64 userId = 1;
+}
+
+message ddz_play_login_gameServer_ack {
+    optional Header retMsg = 1;
+    optional bool isOk = 2;
 }

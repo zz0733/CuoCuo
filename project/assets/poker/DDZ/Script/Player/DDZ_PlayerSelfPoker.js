@@ -9,28 +9,18 @@ cc.Class({
         pokerPrefab: {
             type: cc.Prefab,
             default: null,
-        }
+        },
     },
 
 
     onLoad () {
         this._pos = cc.p(30, -250);
         this._cardsList = [];
-        this._cardsPool = new cc.NodePool();
-        for (var i = 0; i < 20; i++) {
-            var card = cc.instantiate(this.pokerPrefab);
-            this._cardsPool.put(card);
-        }
         this.node.getComponent(cc.Layout).spacingX = this._pokerMargin;
     },
     clearHandPoker: function () {
-        if (!this._cardsList) {
-            return;
-        }
-        for (var i = 0; i < this._cardsList.length; i++) {
-            this._cardsPool.put(this._cardsList[i]);
-        }
-        this._cardsList.splice(0, this._cardsList.length);
+        this.node.removeAllChildren();
+        this._cardsList= [];
     },
     initHandPoker: function (handPokerListID) {
         this.clearHandPoker();
@@ -44,7 +34,7 @@ cc.Class({
         this.selfPlayerHandPoker = this._sortPokerArrObj(this.selfPlayerHandPoker);
         cc.YL.DDZHandPokerList = this.selfPlayerHandPoker;
         this._updateHandPoker(this.selfPlayerHandPoker);
-        cc.YL.PokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
+        cc.YL.DDZPokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
     },
     _sortPokerArrObj: function (selfPlayerHandPoker) {
         return selfPlayerHandPoker.sort(function (a, b) {
@@ -54,12 +44,18 @@ cc.Class({
     },
     _updateHandPoker: function (pokerList) {
         for (var i = 0; i < pokerList.length; i++) {
-            var pokerNode = this._cardsPool.get();
+            var pokerNode = cc.instantiate(this.pokerPrefab);
             pokerNode.getComponent("DDZ_Poker").initPoker(pokerList[i]);
             pokerNode.setScale(this._scale);
             pokerNode.setPositionY(0);
             pokerNode.setTag(i);
-            if (cc.YL.loaderID == cc.YL.DDZselfPlayerInfo.userId) {
+            if (i == (pokerList.length - 1 )) {
+                pokerNode.getChildByName("Front").getChildByName("typeBig").active = true;
+            } else {
+                pokerNode.getChildByName("Front").getChildByName("typeBig").active = false;
+            }
+            if (cc.YL.loaderID == cc.YL.DDZselfPlayerInfo.userId
+                && i == (pokerList.length - 1 )) {
                 pokerNode.getChildByName("OwnerSign").active = true;
             } else {
                 pokerNode.getChildByName("OwnerSign").active = false;
@@ -70,13 +66,13 @@ cc.Class({
         this.node.setPosition(this._pos);
     },
     setTouchEvent: function (isTouch) {
-        if(isTouch == false){
+        if (isTouch == false) {
             this.node.parent.getChildByName("HandPokerTouch").active = false;
             var children = this.node.children;
             for (var i = 0; i < children.length; i++) {
                 children[i].getChildByName("Cover").active = true;
             }
-        }else{
+        } else {
             this.node.parent.getChildByName("HandPokerTouch").active = true;
             var children = this.node.children;
             for (var i = 0; i < children.length; i++) {

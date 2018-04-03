@@ -55,6 +55,8 @@ const DDZ_MsgConfig = {
     PID_SENDMSG_ACK: {id: "PID_SENDMSG_ACK", desc: "服务端→客户端 PID_SENDMSG_ACK", req: 626, rsp: 0, notify: 626,},
 
     PID_CHATNOTIFY: {id: "PID_CHATNOTIFY", desc: "服务端->客户端　PID_CHATNOTIFY", req: 308, rsp: 0, notify: 308,},
+    PID_LOGINSERVER: {id: "PID_LOGINSERVER", desc: "服务端->客户端　PID_LOGINSERVER", req: 629, rsp: 0, notify: 629,},
+    PID_LOGINSERVER_ACK: {id: "PID_LOGINSERVER_ACK", desc: "服务端->客户端　PID_LOGINSERVER_ACK", req: 630, rsp: 0, notify: 630,},
 
 
 };

@@ -40,13 +40,13 @@ cc.Class({
         this.pokerNum = object.Num;
         // cc.YL.info("initPoker扑克牌的ID:%s，type:%s，图集名:%s，值:%s",this.pokerID,this.pokerTypeArr,this.pokerValue,this.pokerNum);
         if(this.pokerTypeArr == "00"){
-            this._frontNode.getChildByName("typeBig").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerValue);
-            this._frontNode.getChildByName("typeBig").setPosition(cc.p(0,0));
-            this._frontNode.getChildByName("typeBig").width = 154;
-            this._frontNode.getChildByName("typeBig").height = 208;
-            this._frontNode.getChildByName("typeBig").setScale(0.9);
-            this._frontNode.getChildByName("typeBig").active = true;
-            this._frontNode.getChildByName("typeSmall").active = false;
+            this._frontNode.getChildByName("typeSmall").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerValue);
+            this._frontNode.getChildByName("typeSmall").setPosition(cc.p(0,0));
+            this._frontNode.getChildByName("typeSmall").width = 154;
+            this._frontNode.getChildByName("typeSmall").height = 208;
+            this._frontNode.getChildByName("typeSmall").setScale(0.9);
+            this._frontNode.getChildByName("typeSmall").active = true;
+            this._frontNode.getChildByName("typeBig").active = false;
             this._frontNode.getChildByName("Num").active = false;
 
         } else {

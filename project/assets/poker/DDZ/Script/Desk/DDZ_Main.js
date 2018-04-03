@@ -11,6 +11,10 @@ cc.Class({
         oneGameOverNode: cc.Prefab,
         allGameOverNode: cc.Prefab,
         roomAtlas: cc.SpriteAtlas,
+        settingPre: cc.Prefab,
+        leavePre: cc.Prefab,
+        leavePopPre: cc.Prefab,
+        chatPre:cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -22,10 +26,13 @@ cc.Class({
         require("JSPhoneNetBattery").getNetBatteryStatus();
         this.bindNodeValue();
         this.reconnctAndJoinUI();
-        if (cc.YL.DDZDeskInfo) {
-            this.initDeskUI(cc.YL.DDZDeskInfo);
-        }
-        this.initPlayerNode();
+        fun.net.send("PID_LOGINSERVER", {
+            userId: fun.db.getData('UserInfo').UserId,
+        });
+        cc.YL.DDZPlayerInfoList = [];
+        fun.db.setData('RoomInfo', {
+            GameType:6,
+        });
     },
     update(){
         this.mobileInfoNode.getChildByName("Time").getComponent(cc.Label).string = cc.YL.DDZ_Osdate.showTime();
@@ -40,20 +47,7 @@ cc.Class({
         this.initRate();
         this.initRuleInfo();
     },
-    initPlayerNode: function () {
-        if (cc.YL.DDZselfPlayerInfo) {
-            cc.YL.DDZGameManager.initPlayerNode(cc.YL.DDZselfPlayerInfo);
-            if (cc.YL.DDZDeskInfo.status <= 2) {
-                this.initReady(cc.YL.DDZselfPlayerInfo.isReady);// 准备的按钮初始化
-            }
 
-        }
-        if (cc.YL.DDZPlayerInfoList) {
-            for (var i = 0; i < cc.YL.DDZPlayerInfoList.length; i++) {
-                cc.YL.DDZGameManager.initPlayerNode(cc.YL.DDZPlayerInfoList[i]);
-            }
-        }
-    },
     initRuleInfo: function () {
         var payTypeArr = ["", "平均支付", "冠军支付", "房主支付"];
         var ruleList = [payTypeArr[cc.YL.DDZDeskInfo.roomInfo.payMode], "封顶:" + cc.YL.DDZDeskInfo.roomInfo.boomLimit];
@@ -75,6 +69,7 @@ cc.Class({
     },
     reconnctAndJoinUI: function () {
         // 断线重连和初次加载场景，ui的defaul状态
+        this.clearRate();
         this.clearDiFen();
         this.clearRoomInfo();
         this.selfHandPokerNodeComp.clearHandPoker();
@@ -96,6 +91,8 @@ cc.Class({
         this.rightOutNodeComp.clearOutPoker();
         this.leftOutNodeComp.clearOutPoker();
         this.BtnNode.removeAllChildren();
+        this.clearRate();
+        this.clearDiFen();
     },
     initRoomInfo: function (data) {
         var roomInfo = cc.find("DDZ_UIROOT/MainNode/BtnNode/RoomInfo/RoomNum");
@@ -168,9 +165,9 @@ cc.Class({
         var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Difen/Num");
         node.getComponent(cc.Label).string = "";
     },
-    initRate: function () {
+    initRate: function (rate) {
         var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Beishu/Num");
-        node.getComponent(cc.Label).string = 1 + "";
+        node.getComponent(cc.Label).string = rate + "";
     },
     clearRate: function () {
         var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Beishu/Num");
@@ -186,6 +183,7 @@ cc.Class({
         playerInfoNode.getComponent("DDZ_PlayerInfoNode").initNode(info, index);
     },
     showAllGameOver: function (data) {
+        this.GameOverUI();
         var allGameOverNode = this.node.getChildByName("DDZ_AllGameOver") ?
             this.node.getChildByName("DDZ_AllGameOver") :
             cc.instantiate(this.allGameOverNode);
@@ -235,19 +233,35 @@ cc.Class({
     /*************************************界面的按钮交互**************************************/
     onClickSetting: function () {
         cc.YL.log("设置按钮");
+        var settingNode = this.node.getChildByName("set") ?
+            this.node.getChildByName("set") :
+            cc.instantiate(this.settingPre);
+        this.node.getChildByName("set") ?
+            this.node.getChildByName("set").active = true :
+            this.node.addChild(settingNode);
 
     },
 
     onClickMessage: function () {
         cc.YL.log("消息按钮");
+        var messageNode = this.node.getChildByName("chat") ?
+            this.node.getChildByName("chat") :
+            cc.instantiate(this.chatPre);
+        this.node.getChildByName("chat") ?
+            this.node.getChildByName("chat").active = true :
+            this.node.addChild(messageNode);
     },
 
-    onClickVoice: function () {
-        cc.YL.log("语音按钮");
-    },
+
 
     onClickLeave: function () {
         cc.YL.log("离开按钮");
+        var leaveNode = this.node.getChildByName("DDZ_voting") ?
+            this.node.getChildByName("DDZ_voting") :
+            cc.instantiate(this.leavePre);
+        this.node.getChildByName("DDZ_voting") ?
+            this.node.getChildByName("DDZ_voting").active = true :
+            this.node.addChild(leaveNode);
     },
 
     onClickRule: function (event) {

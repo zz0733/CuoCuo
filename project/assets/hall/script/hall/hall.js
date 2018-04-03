@@ -90,7 +90,7 @@ cc.Class({
         this.addEnterRoomHandle(gameConst.gameType.maJiangHuangYan, this.mahjongEnterRoomHandle.bind(this));
         this.addEnterRoomHandle(gameConst.gameType.maJiangWenLing, this.mahjongEnterRoomHandle.bind(this));
         this.addEnterRoomHandle(gameConst.gameType.digFlower, this.digFlowerEnterRoomHandle.bind(this));
-
+        this.addEnterRoomHandle(gameConst.gameType.DDZ, this.DDZEnterRoomHandle.bind(this));
         fun.net.setGameMsgCfg({});
         fun.gameCfg.voiceLanguage = cc.sys.localStorage.getItem('voiceLanguage') || fun.gameCfg.voiceLanguage;
         let valumeData = cc.sys.localStorage.getItem('valumeData');
@@ -165,10 +165,7 @@ cc.Class({
 
         let applePayStr = JSON.parse(cc.sys.localStorage.getItem('applePayReceiptStr'));
         this.onPhonePayResultAck(applePayStr);
-        fun.net.setGameMsgCfg(require("DDZ_MsgConfig"));
-        fun.net.listen('PID_DESKINFO', this.PID_DESKINFO.bind(this));
-        fun.net.listen('PID_PLAYERINFO', this.PID_PLAYERINFO.bind(this));
-        cc.YL.DDZPlayerInfoList = [];
+
 
     },
 
@@ -250,7 +247,9 @@ cc.Class({
             fun.event.dispatch('Zhuanquan', {flag: false});
         }
     },
-
+    DDZEnterRoomHandle: function(data){
+        cc.director.loadScene("DDZ_GameScene");
+    },
     mahjongEnterRoomHandle(data) {
         var codeCfg = {};
         var mjGameDefine = require("mjGameDefine");
@@ -450,20 +449,7 @@ cc.Class({
         fun.event.remove('HallEnterRoomId');
         fun.event.remove('HallNewMailId');
         Audio.stopMusic();
-        fun.net.rmListen('PID_DESKINFO');
-        fun.net.rmListen('PID_PLAYERINFO');
+
     },
-    PID_DESKINFO: function (data) {
-        cc.YL.DDZDeskInfo = data;
-        cc.director.loadScene("DDZ_GameScene");
-    },
-    PID_PLAYERINFO: function (data) {
-        if(data.userId == fun.db.getData('UserInfo').UserId){
-            cc.YL.DDZselfPlayerInfo = data;
-            cc.YL.selfIndex = data.index;
-            cc.YL.info("玩家自己的index",cc.YL.selfIndex);
-        }else{
-            cc.YL.DDZPlayerInfoList.push(data);
-        }
-    },
+
 });

@@ -221,13 +221,15 @@ cc.Class({
             userId:fun.db.getData('UserInfo').UserId,
             gpsInfo: gpsInfo,
         };
+
         fun.utils.saveCreateRoomData(createInfo);
         fun.event.dispatch('Zhuanquan', {flag: true, text: "创建房间中，请稍后..."});
         fun.net.pSend('CreateRoom', createInfo, function (msg) {
             if(msg.RetCode < 0){
                 fun.event.dispatch('Zhuanquan', {flag: false});
             }else{
-                cc.YL.network("创建房间发送成功");
+                cc.YL.network("创建房间成功");
+                cc.director.loadScene("DDZ_GameScene");
             }
         });
     },

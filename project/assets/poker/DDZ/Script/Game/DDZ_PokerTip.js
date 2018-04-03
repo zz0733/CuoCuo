@@ -1,5 +1,5 @@
-var pokerTip = cc.Class({});
-pokerTip.typeEnum = {
+var DDZPokerTip = cc.Class({});
+DDZPokerTip.typeEnum = {
     "王炸": 14,
     "炸弹": 11,
     "单张": 1,
@@ -17,7 +17,7 @@ pokerTip.typeEnum = {
 
 };
 
-pokerTip.startAnalysis = function () {
+DDZPokerTip.startAnalysis = function () {
 
     var tempArr = cc.YL.DDZHandPokerList;
     this.handPokerList = [];
@@ -35,7 +35,7 @@ pokerTip.startAnalysis = function () {
     }
     this.analysis();
 };
-pokerTip.analysis = function () {
+DDZPokerTip.analysis = function () {
     this.single();
     this.double();
     this.three();
@@ -46,7 +46,7 @@ pokerTip.analysis = function () {
     this.fly();
 
 };
-pokerTip.single = function () {
+DDZPokerTip.single = function () {
     var tempArr = this.handPokerList;
     this.singleArr = []; //  单张数组
     for (var i = 0; i < tempArr.length; i++) {
@@ -62,7 +62,7 @@ pokerTip.single = function () {
     }
     this.singleArr = this.zipArr(this.singleArr);
 };
-pokerTip.double = function () {
+DDZPokerTip.double = function () {
     this.doubleArr = []; //  对子数组
     var tempArr = this.handPokerList;
     for (var i = 0; i < tempArr.length; i++) {
@@ -78,7 +78,7 @@ pokerTip.double = function () {
     }
     this.doubleArr = this.zipArr(this.doubleArr);
 };
-pokerTip.three = function () {
+DDZPokerTip.three = function () {
     this.threeArr = []; // 三张数组
     var tempArr = this.handPokerList;
     for (var i = 0; i < tempArr.length; i++) {
@@ -94,7 +94,7 @@ pokerTip.three = function () {
     }
     this.threeArr = this.zipArr(this.threeArr);
 };
-pokerTip.four = function () {
+DDZPokerTip.four = function () {
     this.fourArr = []; //  四张数组
     var tempArr = this.handPokerList;
     for (var i = 0; i < tempArr.length; i++) {
@@ -110,7 +110,7 @@ pokerTip.four = function () {
     }
     this.fourArr = this.zipArr(this.fourArr);
 };
-pokerTip.rocket = function () {
+DDZPokerTip.rocket = function () {
     this.rocketArr = []; //  王炸的数组
     var tempArr = this.handPokerList;
     for (var i = 0; i < tempArr.length; i++) {
@@ -123,7 +123,7 @@ pokerTip.rocket = function () {
         this.rocketArr = [];
     }
 };
-pokerTip.shunzi = function () {
+DDZPokerTip.shunzi = function () {
     this.shunZiArr = []; // 顺子的数
     var tempArr = this.zipArr(this.handPokerList);
     for (var i = 0; i < tempArr.length; i++) {
@@ -139,7 +139,7 @@ pokerTip.shunzi = function () {
         }
     }
 };
-pokerTip.doubleshunzi = function () {
+DDZPokerTip.doubleshunzi = function () {
     this.doubleShunZiArr = []; // 连对的数组
     var tempArr = this.handPokerList;
     for (var i = 0; i < tempArr.length; i++) {
@@ -170,7 +170,7 @@ pokerTip.doubleshunzi = function () {
         }
     }
 };
-pokerTip.fly = function () {
+DDZPokerTip.fly = function () {
     this.flyArr = []; //
     var tempArr = this.handPokerList;
     for (var i = 0; i < tempArr.length; i++) {
@@ -201,7 +201,7 @@ pokerTip.fly = function () {
         }
     }
 };
-pokerTip.zipArr = function (arr) {
+DDZPokerTip.zipArr = function (arr) {
     var tempArr = [];
     for (var i = 0; i < arr.length; i++) {
         for (var j = i + 1; j < arr.length; j++) {
@@ -218,7 +218,7 @@ pokerTip.zipArr = function (arr) {
 
 /**************通过上家玩家的出牌，提示牌****************/
 
-pokerTip.clickTipsBtn = function (type, num, list) {
+DDZPokerTip.clickTipsBtn = function (type, num, list) {
     cc.YL.info("点击了提示按钮数据为", type, num, list);
     this.lastPokerType = type; // 牌的类型
     this.lastPokerNum = num;//牌的张数
@@ -495,14 +495,14 @@ pokerTip.clickTipsBtn = function (type, num, list) {
 
     }
 };
-pokerTip.initPokerNode = function () {
+DDZPokerTip.initPokerNode = function () {
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     cc.YL.playerOutPokerArr = [];
     for (var i = 0; i < pokerRoot.children.length; i++) {
         pokerRoot.children[i].y = 0;
     }
 };
-pokerTip.singleAction = function (list) {
+DDZPokerTip.singleAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -531,7 +531,7 @@ pokerTip.singleAction = function (list) {
 
     }
 };
-pokerTip.doubleAction = function (list) {
+DDZPokerTip.doubleAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -563,7 +563,7 @@ pokerTip.doubleAction = function (list) {
 
     }
 };
-pokerTip.threeAction = function (list) {
+DDZPokerTip.threeAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -606,7 +606,7 @@ pokerTip.threeAction = function (list) {
     }
 
 };
-pokerTip.fourAction = function (list) {
+DDZPokerTip.fourAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -648,7 +648,7 @@ pokerTip.fourAction = function (list) {
 
     }
 };
-pokerTip.shunZiAction = function (list) {
+DDZPokerTip.shunZiAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -707,7 +707,7 @@ pokerTip.shunZiAction = function (list) {
         }
     }
 };
-pokerTip.doubleShunZiAction = function (list) {
+DDZPokerTip.doubleShunZiAction = function (list) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -768,7 +768,7 @@ pokerTip.doubleShunZiAction = function (list) {
         }
     }
 };
-pokerTip.threeAndOneAction = function (list, sigleCard) {
+DDZPokerTip.threeAndOneAction = function (list, sigleCard) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -815,7 +815,7 @@ pokerTip.threeAndOneAction = function (list, sigleCard) {
     }
 
 };
-pokerTip.threeAndTwoAction = function (list, double, double_1) {
+DDZPokerTip.threeAndTwoAction = function (list, double, double_1) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -875,7 +875,7 @@ pokerTip.threeAndTwoAction = function (list, double, double_1) {
         }
     }
 };
-pokerTip.fourAndTwoAction = function (list, double, double_1) {
+DDZPokerTip.fourAndTwoAction = function (list, double, double_1) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -925,7 +925,7 @@ pokerTip.fourAndTwoAction = function (list, double, double_1) {
     }
 
 };
-pokerTip.flyWithAction = function (list,isOther,type) {
+DDZPokerTip.flyWithAction = function (list,isOther,type) {
     this.initPokerNode();
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     var isDone = false;
@@ -993,7 +993,7 @@ pokerTip.flyWithAction = function (list,isOther,type) {
         }
     }
 };
-pokerTip.pokerUpAction = function (pokerIndex, num) {
+DDZPokerTip.pokerUpAction = function (pokerIndex, num) {
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
     switch (num) {
         case 0: {
@@ -1032,7 +1032,7 @@ pokerTip.pokerUpAction = function (pokerIndex, num) {
     }
 
 };
-pokerTip.findOtherCard = function () {
+DDZPokerTip.findOtherCard = function () {
     var type = this.lastPokerType;
     var pokerNum = type == 2 ? this.lastPokerNum * 2 : this.lastPokerNum;
     var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
@@ -1060,5 +1060,5 @@ pokerTip.findOtherCard = function () {
     }
 
 };
-cc.YL.PokerTip = pokerTip;
-module.exports = pokerTip;
+cc.YL.DDZPokerTip = DDZPokerTip;
+module.exports = DDZPokerTip;

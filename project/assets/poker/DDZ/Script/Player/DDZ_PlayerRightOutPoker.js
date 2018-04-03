@@ -255,7 +255,13 @@ cc.Class({
             if (animaType != 0) {
                 this.node.active = false;
             }
-            if(cc.YL.loaderID == cc.YL.DDZrightPlayerInfo.userId){
+            if(i == 0){
+                pokerNode.getChildByName("Front").getChildByName("typeBig").active = true;
+            }else{
+                pokerNode.getChildByName("Front").getChildByName("typeBig").active = false;
+            }
+            if(cc.YL.loaderID == cc.YL.DDZrightPlayerInfo.userId
+            && i == 0){
                 pokerNode.getChildByName("OwnerSign").active = true;
             }else{
                 pokerNode.getChildByName("OwnerSign").active = false;

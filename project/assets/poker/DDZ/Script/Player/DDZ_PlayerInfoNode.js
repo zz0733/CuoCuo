@@ -12,9 +12,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        selfPos: cc.p(-304,-128),
-        rightPos:cc.p(304,202),
-        leftPos:cc.p(-304,202),
+        GPSPre: cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -24,59 +22,115 @@ cc.Class({
     start () {
 
     },
-    initNode: function(playerInfo,index){
+    initNode: function (playerInfo, index) {
         this.initByData(playerInfo);
-        switch (index){
-            case 1:{
-                this.node.getChildByName("BG").setPositionX(this.selfPos);
+        this.selfPos = cc.p(-304, -128);
+        this.rightPos = cc.p(304, 202);
+        this.leftPos = cc.p(-304, 202);
+        switch (index) {
+            case 1: {
+                this.node.getChildByName("BG").setPosition(this.selfPos);
                 this.node.getChildByName("BG").getChildByName("Buttom").active = false;
                 break;
             }
-            case 2:{
-                this.node.getChildByName("BG").setPositionX(this.rightPos);
+            case 2: {
+                this.node.getChildByName("BG").setPosition(this.rightPos);
+                this.toID = cc.YL.DDZrightPlayerInfo.userId;
                 break;
             }
-            case 3:{
-                this.node.getChildByName("BG").setPositionX(this.leftPos);
+            case 3: {
+                this.node.getChildByName("BG").setPosition(this.leftPos);
+                this.toID = cc.YL.DDZleftPlayerInfo.userId;
                 break;
             }
         }
     },
-    initByData: function(data){
-        this.node.getChildByName("BG").getChildByName("Top").
-        getChildByName("nickName").getComponent(cc.Label).string  = "昵称: "+data.nickName.toString();
-        this.node.getChildByName("BG").getChildByName("Top").
-        getChildByName("ID").getComponent(cc.Label).string  = "ID: " + data.userId.toString();
-        this.node.getChildByName("BG").getChildByName("Mid").
-        getChildByName("Distance").getComponent(cc.Label).string  = "IP: " + data.ip.toString();
+    initByData: function (data) {
+        this.node.getChildByName("BG").getChildByName("Top").getChildByName("nickName").getComponent(cc.Label).string = "昵称: " + data.nickName.toString();
+        this.node.getChildByName("BG").getChildByName("Top").getChildByName("ID").getComponent(cc.Label).string = "ID: " + data.userId.toString();
+        this.node.getChildByName("BG").getChildByName("Mid").getChildByName("Distance").getComponent(cc.Label).string = "IP: " + data.ip.toString();
 
     },
-    onClickGPSDetail: function(){
+    onClickGPSDetail: function () {
         cc.YL.log("点击打开GPS详情");
+        var rootUI = cc.find("DDZ_UIROOT/MainNode");
+        var gpsNode = rootUI.getChildByName("playerMap") ?
+            rootUI.getChildByName("playerMap") :
+            cc.instantiate(this.GPSPre);
+        rootUI.getChildByName("playerMap") ?
+            rootUI.getChildByName("playerMap").active = true :
+            rootUI.addChild(gpsNode);
+        var playerinfos = this.playerInfos();
+        gpsNode.getComponent("playerMap").show(playerinfos);
     },
-    onClickTools: function(event,custom){
-        switch (custom){
-            case "1":{
-                //玫瑰
-                break;
-            }
-            case "2":{
-                //kiss
-                break;
-            }
-            case "3":{
-                //鸡蛋
-                break;
-            }
-            case "4":{
-                //拖鞋
-                break;
-            }
+    onClickTools: function (event, custom) {
+        var outside = {
+            content: custom,
+            from: fun.db.getData('UserInfo').UserId,
+            to: this.toID,
+            chatType: "interact"
         }
+        fun.net.pSend("Chat", outside);
     },
-    onCloseNode: function(){
+    onCloseNode: function () {
         this.node.active = false;
         this.node.destroy();
+    },
+    playerInfos: function () {
+        var tempArr = [];
+        if (cc.YL.DDZselfPlayerInfo) {
+            tempArr.push({
+                Address: null,
+                Feng: null,
+                HeadUrl: cc.YL.DDZselfPlayerInfo.headUrl,
+                Ip:cc.YL.DDZselfPlayerInfo.ip,
+                Sex:cc.YL.DDZselfPlayerInfo.sex,
+                UserId:cc.YL.DDZselfPlayerInfo.userId,
+                Name:cc.YL.DDZselfPlayerInfo.nickName,
+                name:cc.YL.DDZselfPlayerInfo.nickName,
+                showName:cc.YL.DDZselfPlayerInfo.nickName,
+                PlayerIdx: cc.YL.DDZselfPlayerInfo.index,
+                Icon:"",
+                isSelfPlayed:true,
+                isTruePlayer:true,
+            });
+        }
+        if (cc.YL.DDZrightPlayerInfo) {
+            tempArr.push({
+                Address: null,
+                Feng: null,
+                HeadUrl: cc.YL.DDZrightPlayerInfo.headUrl,
+                Ip:cc.YL.DDZrightPlayerInfo.ip,
+                Sex:cc.YL.DDZrightPlayerInfo.sex,
+                UserId:cc.YL.DDZrightPlayerInfo.userId,
+                Name:cc.YL.DDZrightPlayerInfo.nickName,
+                name:cc.YL.DDZrightPlayerInfo.nickName,
+                showName:cc.YL.DDZrightPlayerInfo.nickName,
+                PlayerIdx: cc.YL.DDZrightPlayerInfo.index,
+                Icon:"",
+                isSelfPlayed:false,
+                isTruePlayer:true,
+            });
+        }
+        if (cc.YL.DDZleftPlayerInfo) {
+            tempArr.push({
+                Address: null,
+                Feng: null,
+                HeadUrl: cc.YL.DDZleftPlayerInfo.headUrl,
+                Ip:cc.YL.DDZleftPlayerInfo.ip,
+                Sex:cc.YL.DDZleftPlayerInfo.sex,
+                UserId:cc.YL.DDZleftPlayerInfo.userId,
+                Name:cc.YL.DDZleftPlayerInfo.nickName,
+                name:cc.YL.DDZleftPlayerInfo.nickName,
+                showName:cc.YL.DDZleftPlayerInfo.nickName,
+                PlayerIdx: cc.YL.DDZleftPlayerInfo.index,
+                Icon:"",
+                isSelfPlayed:false,
+                isTruePlayer:true,
+            });
+        }
+        return tempArr;
+
     },
     // update (dt) {},
 });

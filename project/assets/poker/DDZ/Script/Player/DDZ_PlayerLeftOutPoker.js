@@ -240,7 +240,13 @@ cc.Class({
             var posX = i * 50;
             pokerNode.setPosition(posX, 0);
             pokerNode.setTag(posX);
-            if(cc.YL.loaderID == cc.YL.DDZleftPlayerInfo.userId){
+            if(i == (list.length -1 )){
+                pokerNode.getChildByName("Front").getChildByName("typeBig").active = true;
+            }else{
+                pokerNode.getChildByName("Front").getChildByName("typeBig").active = false;
+            }
+            if(cc.YL.loaderID == cc.YL.DDZleftPlayerInfo.userId
+            && i == (list.length -1 )){
                 pokerNode.getChildByName("OwnerSign").active = true;
             }else{
                 pokerNode.getChildByName("OwnerSign").active = false;

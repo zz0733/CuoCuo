@@ -32,6 +32,8 @@ enum ddz_proto_id {
     PID_DISSOLVE_BRO = 626; //广播意见结果
     PID_DISSOLVE_REPLY = 627; //回复同意还是拒绝解散房间
     PID_DISSOLVE_DESK = 628; //解散房间成功后的消息
+    PID_LOGINSERVER = 629; //登录验证
+    PID_LOGINSERVER_ACK = 630;
 
 
     PID_SENDMSG_REQ = 108; //聊天
@@ -123,16 +125,16 @@ enum outPaiType {
     UNKNOWN_TYPE = 0; //未知牌型，错误牌型
     DAN_PAI = 1; //单牌
     DUI_ZI = 2; //对子
-    SAN_ZHANG = 3; //三不带
+    SAN_BU_DAI = 3; //三不带
     SAN_DAI_YI = 4; //三带单牌
-    SAN_DAI_ER = 5; //三带一对
+    SAN_DAI_DUI = 5; //三带一对
     SHUN_ZI = 6; //顺子
     LIAN_DUI = 7; //连对
-    FEI_JI = 8; //飞机不带
+    FEI_JI_BU_DAI = 8; //飞机不带
     FEI_JI_DAI_DAN = 9; //飞机带单牌
     FEI_JI_DAI_DUI = 10; //飞机带对子
-    SI_DAI_ER = 11; //四带二（两张单牌）
-    SI_DAI_SI = 12; //四带四（两对）
+    SI_DAI_DAN = 11; //四带二（两张单牌）
+    SI_DAI_DUI = 12; //四带四（两对）
     BOOM = 13; //炸弹
     SUPER_BOOM = 14; //王炸
 }
@@ -213,6 +215,7 @@ message ddz_base_playerInfo {
     optional string ip = 11; //玩家IP
     optional int32 index = 12; //玩家的座位
     optional int32 isJiaBei = 13; //玩家是否加倍
+    optional int32 isJiaoFen = 14; //玩家是否叫分
 }
 
 //牌桌Info
@@ -220,6 +223,9 @@ message ddz_base_deskInfo {
     optional uint32 password = 1; // 房间号
     optional deskGameStatus status = 2;
     optional ddz_base_roomInfo roomInfo = 3; //房间信息
+    optional int32 diZhuFen = 4; //地主叫的分数
+    optional int64 diZhu = 5; //谁是地主
+    optional int64 activeUser = 6; //当前活动玩家
 }
 
 //3张底牌

@@ -26,6 +26,7 @@ DDZ_EventManager.init = function () {
     fun.net.listen('PID_LOTTERY', this.PID_LOTTERY.bind(this));
     fun.net.listen('PID_SENDMSG_ACK', this.PID_SENDMSG_ACK.bind(this));
     fun.net.listen('PID_CHATNOTIFY', this.PID_CHATNOTIFY.bind(this));
+    fun.net.listen('PID_LOGINSERVER_ACK', this.PID_LOGINSERVER_ACK.bind(this));
 
 };
 DDZ_EventManager.destroy = function () {
@@ -49,7 +50,13 @@ DDZ_EventManager.destroy = function () {
     fun.net.rmListen('PID_LOTTERY');
     fun.net.rmListen('PID_SENDMSG_ACK');
     fun.net.rmListen('PID_CHATNOTIFY');
+    fun.net.rmListen('PID_LOGINSERVER_ACK');
 };
+DDZ_EventManager.PID_LOGINSERVER_ACK = function(msg){
+    if(msg.isOk == false){
+        cc.YL.err("登录失败");
+    }
+},
 DDZ_EventManager.PID_HEARTBEAT = function (msg) {
     //心跳包
 
@@ -77,8 +84,20 @@ DDZ_EventManager.PID_DESKINFO = function (msg) {
     cc.YL.DDZGameManager.initDeskByData(msg);
 };
 DDZ_EventManager.PID_PLAYERINFO = function (msg) {
-
-    cc.YL.DDZGameManager.initPlayerNode(msg);
+    if(msg.userId == fun.db.getData('UserInfo').UserId){
+        cc.YL.DDZselfPlayerInfo = msg;
+        cc.YL.selfIndex = msg.index;
+        cc.YL.DDZGameManager.initPlayerNode(msg);
+        for(var i = 0; i < cc.YL.DDZPlayerInfoList.length;i++){
+            cc.YL.DDZGameManager.initPlayerNode(cc.YL.DDZPlayerInfoList[i]);
+        }
+    }else{
+        if(cc.YL.selfIndex == 0 ||cc.YL.selfIndex == 1|| cc.YL.selfIndex == 2){
+            cc.YL.DDZGameManager.initPlayerNode(msg);
+        }else{
+            cc.YL.DDZPlayerInfoList.push(msg);
+        }
+    }
 };
 DDZ_EventManager.PID_READY_ACK = function (msg) {
     // 准备ack
@@ -141,6 +160,7 @@ DDZ_EventManager.PID_OUTCARD_ACK = function (msg) {
 };
 DDZ_EventManager.PID_OVERTURN = function (msg) {
     // 操作overturn
+    cc.YL.DDZPokerTip.analysis();
     cc.YL.DDZGameManager.overTurn(msg);
     cc.YL.DDZDeskInfo.status = 6;
 };

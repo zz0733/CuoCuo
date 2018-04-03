@@ -161,6 +161,8 @@ GameAction.overTurn = function (data) {
     this.bindNodeName();
     this.selfHandPokerNodeComp.setTouchEvent(true);
     if (this.selfID == data.activeUser) {
+        var UIROOT = cc.find("DDZ_UIROOT");
+        UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initRate(data.rate);
         this.BtnNode.removeAllChildren();
         this.selfOutNode.removeAllChildren();
         if (data.canOut == false) {
