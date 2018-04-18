@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Wangzha2",
+    "texture": "28eb80cf-2d61-43e4-b33b-4ecc7cacb6e7",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      982,
+      908
+    ],
+    "offset": [
+      -19,
+      56
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}

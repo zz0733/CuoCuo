@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_anniu_out",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      499,
+      291,
+      70,
+      73
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      70,
+      73
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "DDZ_HeadScale",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 0.2,
+  "sample": 60,
+  "speed": 0.1,
+  "wrapMode": 2,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 255
+        },
+        {
+          "frame": 0.05,
+          "value": 200
+        },
+        {
+          "frame": 0.1,
+          "value": 100
+        },
+        {
+          "frame": 0.15,
+          "value": 200
+        },
+        {
+          "frame": 0.2,
+          "value": 254
+        }
+      ]
+    }
+  },
+  "events": []
+}

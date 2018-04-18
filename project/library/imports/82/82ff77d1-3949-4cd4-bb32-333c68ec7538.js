@@ -51,8 +51,17 @@ cc.Class({
         this.clips = this.animation.getClips();
         this.btnView.on('click', this.onBtnViewClick, this);
         this.btnClose.on('click', this.onBtnCloseClick, this);
+        //todo
+        // let intranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet] ? true : false;
+        var ddz = this.toggleGroupNode.getChildByName('DDZ');
+        // if (intranet) {
+        //     ddz.active = true;
+        // } else {
+        ddz.active = false;
+        // }
     },
     init: function init(gameType, data) {
+        cc.YL.info("战绩gametype", gameType, data);
         this.toggleGroupNode.children.forEach(function (toggleNode) {
             toggleNode.getComponentInChildren('zhanjiScv').init();
             if (gameType === gameConst.gameType[toggleNode.name]) {

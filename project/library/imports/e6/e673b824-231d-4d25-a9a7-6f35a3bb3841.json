@@ -6,7 +6,7 @@
     "atlas": "5eeaebae-98e7-4baf-bff1-03879de744a0",
     "rect": [
       2,
-      244,
+      298,
       71,
       57
     ],
@@ -17,6 +17,7 @@
     "originalSize": [
       71,
       57
-    ]
+    ],
+    "rotated": 1
   }
 }

@@ -15,12 +15,14 @@ cc.Class({
         toolsPre:cc.Prefab,
         textPre: cc.Prefab,
         emojiPre:cc.Prefab,
+        voicePre:cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     onLoad () {
         this.initMessage();
+
     },
     onDestroy(){
         this.cleanMessage();
@@ -49,17 +51,41 @@ cc.Class({
     },
     onVoiceAck: function (data) {
         // 语音播放
+        this.selfID = fun.db.getData('UserInfo').UserId;
+        cc.YL.info("ddz收到语音消息",data.length,data.from,this.selfID);
+        this.selfPos = cc.p(-513,-141);
+        this.rightPos = cc.p(518, 212);
+        this.leftPos = cc.p(-506, 219);
+        var voice = cc.instantiate(this.voicePre);
+        this.node.addChild(voice);
+        voice.getChildByName("Voice").getComponent(sp.Skeleton).animation = "animation";
+        if (this.selfID == data.from) {
+            voice.setPosition( this.selfPos );
+        }
+        if (data.from == cc.YL.DDZrightPlayerInfo.userId) {
+            voice.setPosition( this.rightPos );
+            voice.setScale(-1,1);
+        }
+        if (data.from == cc.YL.DDZleftPlayerInfo.userId) {
+            voice.setPosition( this.leftPos );
+        }
+        cc.YL.info("开始播放语音",voice.x,voice.y,voice.parent.name);
+        setTimeout(function(){
+            voice.active = false;
+            voice.removeFromParent();
+        }.bind(this),data.length * 1000);
+
     },
     showMsg: function(data){
-        this.selfPos = cc.p(-420,-129);
-        this.rightPos = cc.p(530, 186);
-        this.leftPos = cc.p(-528, 201);
+        this.selfPos = cc.p(-557,-141);
+        this.rightPos = cc.p(562, 212);
+        this.leftPos = cc.p(-555, 211);
         if (this.selfID == data.from) {
             var text = cc.instantiate(this.textPre);
             this.node.addChild(text);
             text.getChildByName("text").getComponent(cc.Label).string = data.content.toString();
-            text.getChildByName("text").width = data.content.length * 40;
-            text.width =  data.content.length * 40;
+            text.getChildByName("text").width = data.content.length * 26;
+            text.width =  data.content.length * 26 + 26;
             text.setPosition(this.selfPos);
             setTimeout(function () {
                 text.active = false;
@@ -70,9 +96,13 @@ cc.Class({
             var text_3 = cc.instantiate(this.textPre);
             this.node.addChild(text_3);
             text_3.getChildByName("text").getComponent(cc.Label).string = data.content.toString();
-            text_3.getChildByName("text").width = data.content.length * 40;
-            text_3.width =  data.content.length * 40;
+            text_3.getChildByName("text").width = data.content.length * 26;
+            text_3.width =  data.content.length * 26 + 26;
             text_3.setPosition(this.rightPos);
+            text_3.setScale(-1,1);
+            text_3.getChildByName("text").setScale(-1,1);
+            var posX =  text_3.getChildByName("text").getPositionX();
+            text_3.getChildByName("text").setPositionX(posX + data.content.length * 26);
             setTimeout(function () {
                 text_3.active = false;
                 text_3.removeFromParent();
@@ -82,25 +112,27 @@ cc.Class({
             var text_2 = cc.instantiate(this.textPre);
             this.node.addChild(text_2);
             text_2.getChildByName("text").getComponent(cc.Label).string = data.content.toString();
-            text_2.getChildByName("text").width = data.content.length * 40;
-            text_2.width =  data.content.length * 40;
+            text_2.getChildByName("text").width = data.content.length * 26;
+            text_2.width =  data.content.length * 26 + 26;
             text_2.setPosition(this.leftPos);
             setTimeout(function () {
                 text_2.active = false;
                 text_2.removeFromParent();
             }.bind(this),2000);
         }
+        cc.YL.DDZAudio.playMsgMusic(data.from,parseInt(data.index+1));
     },
     showEmoji: function(data){
-        this.selfPos = cc.p(-420,-129);
-        this.rightPos = cc.p(530, 186);
-        this.leftPos = cc.p(-528, 201);
+        this.selfPos = cc.p(-602,-202);
+        this.rightPos = cc.p(588, 149);
+        this.leftPos = cc.p(-588, 149);
         if (this.selfID == data.from) {
             var emoji = cc.instantiate(this.emojiPre);
             this.node.addChild(emoji);
             var anim = emoji.getComponent(sp.Skeleton);
             anim.animation = data.content;
             emoji.setPosition(this.selfPos);
+            emoji.setScale(1.3);
             setTimeout(function () {
                 emoji.active = false;
                 emoji.removeFromParent();
@@ -112,6 +144,7 @@ cc.Class({
             var anim = emoji_2.getComponent(sp.Skeleton);
             anim.animation = data.content;
             emoji_2.setPosition(this.rightPos);
+            emoji_2.setScale(1.3);
             setTimeout(function () {
                 emoji_2.active = false;
                 emoji_2.removeFromParent();
@@ -123,6 +156,7 @@ cc.Class({
             var anim = emoji_3.getComponent(sp.Skeleton);
             anim.animation = data.content;
             emoji_3.setPosition(this.leftPos);
+            emoji_3.setScale(1.3);
             setTimeout(function () {
                 emoji_3.active = false;
                 emoji_3.removeFromParent();
@@ -153,12 +187,9 @@ cc.Class({
         if (data.to == cc.YL.DDZleftPlayerInfo.userId) {
             endPos = this.leftPos;
         }
-        if(this.node.getChildByName("interact")){
-            var toolsNode = this.node.getChildByName("interact")
-        }else{
-            var toolsNode = cc.instantiate(this.toolsPre);
-            this.node.addChild(toolsNode);
-        }
-        toolsNode.getComponent('interact').show(data, startPos, endPos);
+        var toolsNode = cc.instantiate(this.toolsPre);
+        this.node.addChild(toolsNode);
+        toolsNode.getComponent('interact').show(data, startPos, endPos,true);
     },
+
 });

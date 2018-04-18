@@ -1,0 +1,27 @@
+
+Songka.png
+size: 128,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Fangka
+  rotate: false
+  xy: 2, 45
+  size: 103, 76
+  orig: 105, 78
+  offset: 1, 1
+  index: -1
+Guang
+  rotate: true
+  xy: 2, 2
+  size: 41, 72
+  orig: 41, 72
+  offset: 0, 0
+  index: -1
+Xing
+  rotate: false
+  xy: 76, 6
+  size: 36, 37
+  orig: 42, 43
+  offset: 3, 3
+  index: -1

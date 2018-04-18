@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_biaoti_lingque",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      145,
+      384,
+      218,
+      64
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      218,
+      64
+    ]
+  }
+}

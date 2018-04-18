@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_anniu_b",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      167,
+      247,
+      130,
+      55
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      132,
+      57
+    ],
+    "rotated": 1
+  }
+}

@@ -1,0 +1,114 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "mjSaiziPrefab",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "saizi",
+    "_children": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "2192bt5kd1KTaStw6QG7wSM",
+        "node": {
+          "__id__": 1
+        },
+        "sai1N": {
+          "__id__": 2
+        },
+        "sai2N": {
+          "__id__": 3
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "cbYS3ITl5HC5WEVjgUbfSR"
+      },
+      "fileId": "4e2e3h2+V5BaqrLfqZnXFdx"
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "sai1",
+    "_parent": {
+      "__id__": 1
+    },
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 2
+        },
+        "defaultAnimation": 4,
+        "loop": false,
+        "_N$skeletonData": {
+          "__uuid__": "877N++YJtAf7y22z848O9+"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "cbYS3ITl5HC5WEVjgUbfSR"
+      },
+      "fileId": "333466peC9IGqJQ4W3D6swg"
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -15
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "sai2",
+    "_parent": {
+      "__id__": 1
+    },
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 3
+        },
+        "defaultAnimation": 3,
+        "loop": false,
+        "_N$skeletonData": {
+          "__uuid__": "877N++YJtAf7y22z848O9+"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "cbYS3ITl5HC5WEVjgUbfSR"
+      },
+      "fileId": "3c3ddVkg39An6v/9REPlXs7"
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 110
+    }
+  }
+]

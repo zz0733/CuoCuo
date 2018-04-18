@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_fk_niuniu",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      800,
+      576,
+      92,
+      78
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      94,
+      78
+    ],
+    "rotated": 1
+  }
+}

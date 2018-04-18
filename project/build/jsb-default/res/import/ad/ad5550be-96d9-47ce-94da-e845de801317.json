@@ -1,0 +1,1597 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Anniu",
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "3rVnesDTCaIKxc75bqYAYUXM8O8",
+      "spine": "3.5.46",
+      "width": 1333,
+      "height": 751,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Anniu",
+        "parent": "root",
+        "x": 178.97,
+        "y": 24.61,
+        "color": "ffffffff"
+      },
+      {
+        "name": "Anniu_guang",
+        "parent": "Anniu",
+        "y": 58.64,
+        "scaleX": 1.061,
+        "scaleY": 1.061,
+        "color": "ff0000ff"
+      },
+      {
+        "name": "Huan",
+        "parent": "Anniu",
+        "x": 0.38,
+        "y": 59.55,
+        "scaleX": 2.794,
+        "scaleY": 2.794,
+        "color": "00ff24ff"
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Anniu",
+        "bone": "Anniu",
+        "attachment": "Hu"
+      },
+      {
+        "name": "Anniu_guang",
+        "bone": "Anniu_guang",
+        "blend": "screen"
+      },
+      {
+        "name": "Anniu_guang2",
+        "bone": "Anniu_guang",
+        "blend": "additive"
+      },
+      {
+        "name": "Huan",
+        "bone": "Huan",
+        "attachment": "Huan9",
+        "blend": "screen"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Anniu": {
+          "Chi": {
+            "x": -0.73,
+            "y": 51.31,
+            "width": 165,
+            "height": 170
+          },
+          "Gang": {
+            "x": -0.73,
+            "y": 51.31,
+            "width": 165,
+            "height": 170
+          },
+          "Guo": {
+            "x": -0.73,
+            "y": 51.31,
+            "width": 165,
+            "height": 170
+          },
+          "Hu": {
+            "x": -0.73,
+            "y": 51.31,
+            "width": 165,
+            "height": 170
+          },
+          "Peng": {
+            "x": -0.73,
+            "y": 51.31,
+            "width": 165,
+            "height": 170
+          }
+        },
+        "Anniu_guang": {
+          "Chi": {
+            "x": -0.73,
+            "y": -7.33,
+            "width": 165,
+            "height": 170
+          },
+          "Gang": {
+            "x": -0.73,
+            "y": -7.33,
+            "width": 165,
+            "height": 170
+          },
+          "Guo": {
+            "x": -0.73,
+            "y": -7.33,
+            "width": 165,
+            "height": 170
+          },
+          "Peng": {
+            "x": -0.73,
+            "y": -7.33,
+            "width": 165,
+            "height": 170
+          }
+        },
+        "Anniu_guang2": {
+          "Hu": {
+            "x": -0.73,
+            "y": -7.33,
+            "width": 165,
+            "height": 170
+          }
+        },
+        "Huan": {
+          "Huan1": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan2": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan3": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan4": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan5": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan6": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan7": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan8": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan9": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan10": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan11": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan12": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          },
+          "Huan13": {
+            "x": -0.53,
+            "y": -1.58,
+            "width": 59,
+            "height": 60
+          }
+        }
+      }
+    },
+    "animations": {
+      "Chi": {
+        "slots": {
+          "Anniu": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Chi"
+              },
+              {
+                "time": 0.8667,
+                "name": "Chi"
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": [
+                  0,
+                  0.26,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffff4f"
+              },
+              {
+                "time": 0.6667,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Chi"
+              },
+              {
+                "time": 0.8667,
+                "name": "Chi"
+              }
+            ]
+          },
+          "Huan": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.8667,
+                "name": null
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -178.18,
+                "y": -79.71,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": -178.18,
+                "y": -79.71
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": [
+                  0,
+                  0.27,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.6667,
+                "x": 1.233,
+                "y": 1.233,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1.233,
+                "y": 1.233
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Huan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Gang": {
+        "slots": {
+          "Anniu": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Gang"
+              },
+              {
+                "time": 0.8667,
+                "name": "Gang"
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": [
+                  0,
+                  0.26,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffff4f"
+              },
+              {
+                "time": 0.6667,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Gang"
+              },
+              {
+                "time": 0.8667,
+                "name": "Gang"
+              }
+            ]
+          },
+          "Huan": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.8667,
+                "name": null
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -178.18,
+                "y": -79.71,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": -178.18,
+                "y": -79.71
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": [
+                  0,
+                  0.27,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.6667,
+                "x": 1.233,
+                "y": 1.233,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1.233,
+                "y": 1.233
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Huan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Guo": {
+        "slots": {
+          "Anniu": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Guo"
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Guo"
+              }
+            ]
+          },
+          "Huan": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -178.18,
+                "y": -79.71
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Huan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Hu": {
+        "slots": {
+          "Anniu": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Hu"
+              },
+              {
+                "time": 0.8667,
+                "name": "Hu"
+              }
+            ]
+          },
+          "Anniu_guang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": [
+                  0,
+                  0.26,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffff7c"
+              },
+              {
+                "time": 0.6667,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Hu"
+              },
+              {
+                "time": 0.8667,
+                "name": "Hu"
+              }
+            ]
+          },
+          "Huan": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ff00005e",
+                "curve": [
+                  0,
+                  0.3,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.3333,
+                "color": "fa4e4e69"
+              },
+              {
+                "time": 0.8667,
+                "color": "ff00005e"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Huan1"
+              },
+              {
+                "time": 0.0667,
+                "name": "Huan2"
+              },
+              {
+                "time": 0.1333,
+                "name": "Huan3"
+              },
+              {
+                "time": 0.2,
+                "name": "Huan4"
+              },
+              {
+                "time": 0.2667,
+                "name": "Huan5"
+              },
+              {
+                "time": 0.3333,
+                "name": "Huan6"
+              },
+              {
+                "time": 0.4,
+                "name": "Huan7"
+              },
+              {
+                "time": 0.4667,
+                "name": "Huan8"
+              },
+              {
+                "time": 0.5333,
+                "name": "Huan9"
+              },
+              {
+                "time": 0.6,
+                "name": "Huan10"
+              },
+              {
+                "time": 0.6667,
+                "name": "Huan11"
+              },
+              {
+                "time": 0.7333,
+                "name": "Huan12"
+              },
+              {
+                "time": 0.8,
+                "name": "Huan13"
+              },
+              {
+                "time": 0.8667,
+                "name": "Huan1"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -178.18,
+                "y": -79.71,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": -178.18,
+                "y": -79.71
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": [
+                  0,
+                  0.27,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.6667,
+                "x": 1.233,
+                "y": 1.233,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1.233,
+                "y": 1.233
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Huan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      },
+      "Peng": {
+        "slots": {
+          "Anniu": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Peng"
+              },
+              {
+                "time": 0.8667,
+                "name": "Peng"
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": [
+                  0,
+                  0.26,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.1667,
+                "color": "ffffff4f"
+              },
+              {
+                "time": 0.6667,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Peng"
+              },
+              {
+                "time": 0.8667,
+                "name": "Peng"
+              }
+            ]
+          },
+          "Huan": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.8667,
+                "name": null
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -178.18,
+                "y": -79.71,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": -178.18,
+                "y": -79.71
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Anniu_guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": [
+                  0,
+                  0.27,
+                  0.75,
+                  1
+                ]
+              },
+              {
+                "time": 0.6667,
+                "x": 1.233,
+                "y": 1.233,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1.233,
+                "y": 1.233
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Huan": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8667,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nAnniu.png\nsize: 1024,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nChi\n  rotate: false\n  xy: 2, 63\n  size: 165, 170\n  orig: 165, 170\n  offset: 0, 0\n  index: -1\nGang\n  rotate: false\n  xy: 169, 63\n  size: 165, 170\n  orig: 165, 170\n  offset: 0, 0\n  index: -1\nGuo\n  rotate: false\n  xy: 336, 63\n  size: 165, 170\n  orig: 165, 170\n  offset: 0, 0\n  index: -1\nHu\n  rotate: false\n  xy: 670, 64\n  size: 165, 169\n  orig: 165, 170\n  offset: 0, 0\n  index: -1\nHuan1\n  rotate: false\n  xy: 837, 177\n  size: 59, 56\n  orig: 59, 60\n  offset: 0, 3\n  index: -1\nHuan10\n  rotate: false\n  xy: 2, 2\n  size: 57, 59\n  orig: 59, 60\n  offset: 2, 0\n  index: -1\nHuan11\n  rotate: false\n  xy: 61, 3\n  size: 57, 58\n  orig: 59, 60\n  offset: 2, 1\n  index: -1\nHuan12\n  rotate: false\n  xy: 355, 5\n  size: 56, 56\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nHuan13\n  rotate: false\n  xy: 957, 177\n  size: 57, 56\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nHuan2\n  rotate: false\n  xy: 837, 119\n  size: 57, 56\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nHuan3\n  rotate: false\n  xy: 179, 6\n  size: 57, 55\n  orig: 59, 60\n  offset: 2, 4\n  index: -1\nHuan4\n  rotate: false\n  xy: 898, 177\n  size: 57, 56\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nHuan5\n  rotate: false\n  xy: 120, 5\n  size: 57, 56\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nHuan6\n  rotate: false\n  xy: 955, 119\n  size: 56, 56\n  orig: 59, 60\n  offset: 3, 3\n  index: -1\nHuan7\n  rotate: true\n  xy: 297, 6\n  size: 55, 56\n  orig: 59, 60\n  offset: 3, 4\n  index: -1\nHuan8\n  rotate: false\n  xy: 896, 119\n  size: 57, 56\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nHuan9\n  rotate: false\n  xy: 238, 6\n  size: 57, 55\n  orig: 59, 60\n  offset: 2, 3\n  index: -1\nPeng\n  rotate: false\n  xy: 503, 63\n  size: 165, 170\n  orig: 165, 170\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "854xUrbmZPiqBc2x9WHhUl"
+  },
+  "textures": [
+    {
+      "__uuid__": "665MLl8ENPBZdD0iaXX+AF"
+    }
+  ]
+}

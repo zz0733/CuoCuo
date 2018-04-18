@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_fenxiang",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      493,
+      434,
+      85,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      85,
+      88
+    ],
+    "rotated": 1
+  }
+}

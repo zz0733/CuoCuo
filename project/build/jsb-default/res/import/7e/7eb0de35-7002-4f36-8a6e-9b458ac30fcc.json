@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "anniu_hui1",
+    "texture": "a9c+BYF3tKXqw96fOJksyB",
+    "rect": [
+      344,
+      463,
+      81,
+      84
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      83,
+      86
+    ],
+    "rotated": 1
+  }
+}

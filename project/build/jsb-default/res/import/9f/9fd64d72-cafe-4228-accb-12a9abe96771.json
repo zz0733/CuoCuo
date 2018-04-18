@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_gonggao1",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      454,
+      269,
+      698,
+      62
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      700,
+      64
+    ],
+    "rotated": 1
+  }
+}

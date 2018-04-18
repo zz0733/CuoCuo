@@ -96,6 +96,28 @@
       "spriteType": "normal",
       "subMetas": {}
     },
+    "dz_dajiesuan_di3.png": {
+      "ver": "1.0.3",
+      "uuid": "1c49243b-ca84-41dc-a54f-3d11ac748576",
+      "rawTextureUuid": "bf62de56-1ceb-46bb-a3e2-1d40eb66e59e",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 213,
+      "trimY": 168,
+      "width": 31,
+      "height": 27,
+      "rawWidth": 31,
+      "rawHeight": 27,
+      "borderTop": 11,
+      "borderBottom": 11,
+      "borderLeft": 13,
+      "borderRight": 13,
+      "spriteType": "normal",
+      "subMetas": {}
+    },
     "dz_dajiesuan_t3.png": {
       "ver": "1.0.3",
       "uuid": "a34281b0-deeb-47e1-bd01-647bb127574f",

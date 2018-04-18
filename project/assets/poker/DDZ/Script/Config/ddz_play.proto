@@ -69,13 +69,18 @@ message ddz_play_outCards_ack {
     optional int32 remainPaiCount = 5; //剩余手牌的张数
 }
 
+message ddz_play_rate {
+    optional int64 userId = 1; //ID
+    optional int32 rate = 2; //倍数
+}
+
 message ddz_play_overturn {
     optional int64 activeUser = 1; //该谁操作
     optional playerActType actType = 2;
     optional int32 actTime = 3; // 操作时间
     optional bool canOut = 4; //是否大得起上家出的牌
     optional bool isNewRound = 5; //是否是新的一圈
-    optional int32 rate = 6; //倍数
+    repeated ddz_play_rate playerRate = 6; //每个玩家的倍数
 }
 
 //玩家要不起，请求过
@@ -108,6 +113,8 @@ message ddz_play_roundResult {
     optional int32 roundLimit = 3; //总的局数
     optional uint32 password = 4;
     optional bool isSpring = 5; //是否是春天
+    optional bool isReverseSpring = 6; //是否是反春
+    //diFen
 }
 
 message ddz_play_userLotteryInfo {

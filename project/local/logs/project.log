@@ -1,66 +1,80 @@
-2018-03-20T08:46:36.796Z - normal: Load ~/.CocosCreator/settings.json
-2018-03-20T08:46:36.803Z - normal: checking language setting...
-2018-03-20T08:46:36.803Z - normal: Language: zh
-2018-03-20T08:46:38.687Z - success: protocol editor-framework registered
-2018-03-20T08:46:38.687Z - success: protocol app registered
-2018-03-20T08:46:38.687Z - success: protocol theme registered
-2018-03-20T08:46:38.687Z - success: protocol packages registered
-2018-03-20T08:46:38.688Z - success: protocol unpack registerred
-2018-03-20T08:46:38.688Z - success: protocol disable-commonjs registerred
-2018-03-20T08:46:38.957Z - normal: connected!
-2018-03-20T08:46:38.960Z - normal: Check project /Users/youle/Desktop/project
-2018-03-20T08:46:38.963Z - normal: Initializing Cocos2d
-2018-03-20T08:46:39.287Z - normal: Initializing Asset Database
-2018-03-20T08:46:39.362Z - success: protocol uuid registerred
-2018-03-20T08:46:39.362Z - success: protocol db registerred
-2018-03-20T08:46:39.362Z - success: protocol thumbnail registerred
-2018-03-20T08:46:39.363Z - normal: Loading editor/builtin packages
-2018-03-20T08:46:39.393Z - success: anysdk loaded
-2018-03-20T08:46:39.583Z - success: assets loaded
-2018-03-20T08:46:39.590Z - success: builder loaded
-2018-03-20T08:46:39.593Z - success: cocos-analytics loaded
-2018-03-20T08:46:39.600Z - success: console loaded
-2018-03-20T08:46:39.607Z - success: hierarchy loaded
-2018-03-20T08:46:39.614Z - success: inspector loaded
-2018-03-20T08:46:39.616Z - success: keystore loaded
-2018-03-20T08:46:39.623Z - success: node-library loaded
-2018-03-20T08:46:39.626Z - success: package-asset loaded
-2018-03-20T08:46:39.629Z - success: preferences loaded
-2018-03-20T08:46:39.634Z - success: project-exporter loaded
-2018-03-20T08:46:39.660Z - success: project-importer loaded
-2018-03-20T08:46:39.668Z - success: project-settings loaded
-2018-03-20T08:46:39.674Z - success: ui-kit loaded
-2018-03-20T08:46:39.682Z - success: ui-grid loaded
-2018-03-20T08:46:39.689Z - success: scene loaded
-2018-03-20T08:46:39.690Z - success: sprite-editor loaded
-2018-03-20T08:46:39.699Z - success: store loaded
-2018-03-20T08:46:39.707Z - success: timeline loaded
-2018-03-20T08:46:39.708Z - normal: Loading builtin packages
-2018-03-20T08:46:39.715Z - success: asset-db-debugger loaded
-2018-03-20T08:46:39.716Z - success: color-picker loaded
-2018-03-20T08:46:39.721Z - success: package-manager loaded
-2018-03-20T08:46:39.729Z - success: sdkbox loaded
-2018-03-20T08:46:39.735Z - success: tester loaded
-2018-03-20T08:46:39.741Z - success: ui-kit-preview-extra loaded
-2018-03-20T08:46:39.747Z - success: ui-kit-preview loaded
-2018-03-20T08:46:39.753Z - success: ui-tree loaded
-2018-03-20T08:46:41.085Z - normal: Initializing project /Users/youle/Desktop/project
-2018-03-20T08:46:41.090Z - normal: Loading packages
-2018-03-20T08:46:41.103Z - success: clean loaded
-2018-03-20T08:46:41.108Z - success: resource loaded
-2018-03-20T08:46:41.212Z - success: unpack-textureatlas loaded
-2018-03-20T08:46:41.212Z - normal: Watching packages
-2018-03-20T08:46:41.245Z - normal: Run Application
-2018-03-20T08:46:45.394Z - success: preview server running at http://localhost:7456
-2018-03-20T08:46:57.513Z - normal: 1.7.0
-2018-03-20T09:18:13.912Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:27608
-2018-03-20T09:21:35.575Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:32085
-2018-03-20T09:24:06.189Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:35243
-2018-03-20T09:25:10.481Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36207
-2018-03-20T09:25:10.483Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36210
-2018-03-20T09:25:10.484Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36212
-2018-03-20T09:25:57.683Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36910
-2018-03-20T09:25:57.685Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36914
-2018-03-20T09:25:57.687Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:36916
-2018-03-20T09:36:44.343Z - warn: Error: ipc timeout. message: scene:query-node, session: scene@renderer:46657
-2018-03-20T10:33:01.362Z - info: shutdown preview server
+2018-04-17T05:30:25.069Z - normal: Load ~/.CocosCreator/settings.json
+2018-04-17T05:30:25.076Z - normal: checking language setting...
+2018-04-17T05:30:25.076Z - normal: Language: zh
+2018-04-17T05:30:27.325Z - success: protocol editor-framework registered
+2018-04-17T05:30:27.326Z - success: protocol app registered
+2018-04-17T05:30:27.326Z - success: protocol theme registered
+2018-04-17T05:30:27.326Z - success: protocol packages registered
+2018-04-17T05:30:27.327Z - success: protocol unpack registerred
+2018-04-17T05:30:27.327Z - success: protocol disable-commonjs registerred
+2018-04-17T05:30:27.630Z - normal: connected!
+2018-04-17T05:30:27.634Z - normal: Check project /Users/youle/Desktop/project
+2018-04-17T05:30:27.638Z - normal: Initializing Cocos2d
+2018-04-17T05:30:28.389Z - normal: Initializing Asset Database
+2018-04-17T05:30:28.504Z - success: protocol uuid registerred
+2018-04-17T05:30:28.505Z - success: protocol db registerred
+2018-04-17T05:30:28.505Z - success: protocol thumbnail registerred
+2018-04-17T05:30:28.505Z - normal: Loading editor/builtin packages
+2018-04-17T05:30:28.593Z - success: anysdk loaded
+2018-04-17T05:30:28.974Z - success: assets loaded
+2018-04-17T05:30:28.990Z - success: builder loaded
+2018-04-17T05:30:28.995Z - success: cocos-analytics loaded
+2018-04-17T05:30:29.054Z - success: console loaded
+2018-04-17T05:30:29.065Z - success: hierarchy loaded
+2018-04-17T05:30:29.077Z - success: inspector loaded
+2018-04-17T05:30:29.080Z - success: keystore loaded
+2018-04-17T05:30:29.091Z - success: node-library loaded
+2018-04-17T05:30:29.095Z - success: package-asset loaded
+2018-04-17T05:30:29.099Z - success: preferences loaded
+2018-04-17T05:30:29.107Z - success: project-exporter loaded
+2018-04-17T05:30:29.196Z - success: project-importer loaded
+2018-04-17T05:30:29.204Z - success: project-settings loaded
+2018-04-17T05:30:29.213Z - success: ui-kit loaded
+2018-04-17T05:30:29.225Z - success: ui-grid loaded
+2018-04-17T05:30:29.261Z - success: scene loaded
+2018-04-17T05:30:29.263Z - success: sprite-editor loaded
+2018-04-17T05:30:29.298Z - success: store loaded
+2018-04-17T05:30:29.312Z - success: timeline loaded
+2018-04-17T05:30:29.312Z - normal: Loading builtin packages
+2018-04-17T05:30:29.321Z - success: asset-db-debugger loaded
+2018-04-17T05:30:29.323Z - success: color-picker loaded
+2018-04-17T05:30:29.333Z - success: package-manager loaded
+2018-04-17T05:30:29.350Z - success: sdkbox loaded
+2018-04-17T05:30:29.360Z - success: tester loaded
+2018-04-17T05:30:29.373Z - success: ui-kit-preview-extra loaded
+2018-04-17T05:30:29.381Z - success: ui-kit-preview loaded
+2018-04-17T05:30:29.388Z - success: ui-tree loaded
+2018-04-17T05:30:32.878Z - normal: Initializing project /Users/youle/Desktop/project
+2018-04-17T05:30:32.883Z - normal: Loading packages
+2018-04-17T05:30:32.905Z - success: clean loaded
+2018-04-17T05:30:32.913Z - success: resource loaded
+2018-04-17T05:30:33.088Z - success: unpack-textureatlas loaded
+2018-04-17T05:30:33.089Z - normal: Watching packages
+2018-04-17T05:30:33.143Z - normal: Run Application
+2018-04-17T05:30:42.703Z - success: preview server running at http://localhost:7456
+2018-04-17T05:30:53.472Z - normal: 1.7.0
+2018-04-17T09:56:18.375Z - failed: load script [/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js] failed : ReferenceError: qw is not defined
+    at __define (/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:56:1)
+    at /Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:61:13
+    at Object.<anonymous> (/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:68:11)
+    at Object.<anonymous> (/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:71:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-04-17T09:56:44.355Z - normal: connected!
+2018-04-17T09:56:50.161Z - normal: 1.7.0
+2018-04-17T09:56:53.692Z - failed: load script [/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js] failed : ReferenceError: qw is not defined
+    at __define (/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:56:1)
+    at /Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:61:13
+    at Object.<anonymous> (/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:68:11)
+    at Object.<anonymous> (/Users/youle/Desktop/project/temp/quick-scripts/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js:71:3)
+    at Module._compile (module.js:571:32)
+    at Object.Module._extensions..js (module.js:580:10)
+    at Module.load (module.js:488:32)
+    at tryModuleLoad (module.js:447:12)
+    at Function.Module._load (module.js:439:3)
+    at Module.require (module.js:498:17)
+2018-04-17T10:33:35.472Z - info: shutdown preview server

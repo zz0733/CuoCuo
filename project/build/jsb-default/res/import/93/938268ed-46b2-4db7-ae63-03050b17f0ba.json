@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wl_xuankuang1",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      53,
+      2,
+      375,
+      112
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      375,
+      112
+    ],
+    "rotated": 1,
+    "capInsets": [
+      162,
+      0,
+      38,
+      0
+    ]
+  }
+}

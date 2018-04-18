@@ -6,14 +6,11 @@
  ******/
 var GameDefine      = require("mjGameDefine");
 // var NetMessageMgr   = require("NetMessageMgr");
-////var Audio.           = require("Audio");
 // var NetProtocolList = require("NetProtocolList");
 var ReconnectMgr  = require("mjReconnectMgr");
 var mjNetMgr        = require("mjNetMgr")
 var mjDataMgr       = require("mjDataMgr");
 var log             = cc.log;
-
-// var FromPhone       = require("FromPhone");
 
 
 var GameManager     = {};
@@ -34,11 +31,6 @@ GameManager.initGame = function(playerDeskList, gameUICB){
 }
 
 
-
-
-
-
-
 GameManager.reSetPlayerStatus = function(){
 	var pos            = this.ReconnentData.ChuPlayer;
 	var deskType       =mjDataMgr.get(mjDataMgr.KEYS.POSIDS)[pos];
@@ -54,7 +46,6 @@ GameManager.reSetPlayerStatus = function(){
 	player.reSetDapaiData(this.ReconnentData.CurrentChuTile);	
 
 }
-
 
 
 GameManager.initGameCount = function(){
@@ -163,8 +154,6 @@ GameManager.onFaPaiAnimEnd   = function(){
 }
 
 
-
-
 GameManager.onKaishiAnimEnd = function(){
 	this.isStartAnim = false;
 	this.gameUICB.hidePaiHitzone();
@@ -198,7 +187,6 @@ GameManager.onKaishiAnimEnd = function(){
 	
 // 	log("---showBuhuaAnim---1-", this.ShowHuaList.slice());
 // }
-
 
 
 GameManager.reCheckBuHua = function(){
@@ -287,7 +275,6 @@ GameManager.initDirectionNodeList = function(){
 	nodeList[DirectionType.BEI]  = this.gameUICB.getCurDirectionN("bei");
 	this.directionNodeList       = nodeList;
 }
-
 
 
 //给牌排序
@@ -640,7 +627,6 @@ GameManager.reserFanPai = function(){
 }
 
 
-
 GameManager.addLiujuCount = function(){
 	this.liujupaiCount += 1;
 }
@@ -728,7 +714,6 @@ GameManager.ChuPai = function(player, data){
 }
 
 
-
 GameManager.getPlayerByPaiData = function(data){
 	if(data.UserId !== undefined){
 		return this.getplayerByUserID(data.UserId);
@@ -785,8 +770,6 @@ GameManager.showEatUI  = function(data){
 }
 
 
-
-
 //过牌
 GameManager.guoPaiToServer = function(){
 	var content = {
@@ -836,7 +819,6 @@ GameManager.PengPaiAckMessage = function(data){
 		this.setLastPaiResult(GameDefine.EATPAI_TYPE.PengPai);
 	}
 }
-
 
 
 //某人碰||杠||胡||吃牌了
@@ -1480,12 +1462,6 @@ GameManager.onPaiTimeChange = function(data){
 }
 
 
-
-
 // /* ---------------- End Net Message --------------------------*/
 
-
 module.exports = GameManager;
-
-
-

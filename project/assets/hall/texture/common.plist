@@ -33,7 +33,7 @@
             <key>cjRoom1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{853,875},{65,65}}</string>
+                <string>{{836,829},{65,65}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -98,11 +98,11 @@
             <key>mail_duihuan.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{880,656},{91,77}}</string>
+                <string>{{836,736},{91,77}}</string>
                 <key>offset</key>
                 <string>{0,1}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{1,0},{91,77}}</string>
                 <key>sourceSize</key>
@@ -111,7 +111,7 @@
             <key>sg_cj_anniu1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{836,805},{67,68}}</string>
+                <string>{{922,893},{67,68}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -124,7 +124,7 @@
             <key>sg_cj_anniu2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{836,735},{67,68}}</string>
+                <string>{{853,896},{67,68}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -761,7 +761,7 @@
             <key>ty_fk_ddz.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{880,576},{92,78}}</string>
+                <string>{{880,656},{92,78}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -774,6 +774,19 @@
             <key>ty_fk_huangyan.png</key>
             <dict>
                 <key>frame</key>
+                <string>{{880,576},{92,78}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{1,0},{92,78}}</string>
+                <key>sourceSize</key>
+                <string>{94,78}</string>
+            </dict>
+            <key>ty_fk_niuniu.png</key>
+            <dict>
+                <key>frame</key>
                 <string>{{800,576},{92,78}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
@@ -784,7 +797,7 @@
                 <key>sourceSize</key>
                 <string>{94,78}</string>
             </dict>
-            <key>ty_fk_niuniu.png</key>
+            <key>ty_fk_sg.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{720,608},{92,78}}</string>
@@ -797,7 +810,7 @@
                 <key>sourceSize</key>
                 <string>{94,78}</string>
             </dict>
-            <key>ty_fk_sg.png</key>
+            <key>ty_fk_sichuang.png</key>
             <dict>
                 <key>frame</key>
                 <string>{{640,608},{92,78}}</string>
@@ -943,7 +956,7 @@
             <key>ty_shezhi_c.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{905,799},{62,62}}</string>
+                <string>{{915,736},{62,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -956,7 +969,7 @@
             <key>ty_shezhi_d.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{920,735},{62,62}}</string>
+                <string>{{903,829},{62,62}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -1171,7 +1184,7 @@
             <key>size</key>
             <string>{1024,1024}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:6a6d831bbe08e4a56bdf630f608b16b5$</string>
+            <string>$TexturePacker:SmartUpdate:eed7f15bbb9a7c8c4161aa840284d2cb$</string>
             <key>textureFileName</key>
             <string>common.png</string>
         </dict>

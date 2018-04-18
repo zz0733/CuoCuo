@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Baojing",
+    "texture": "4ba708a5-a54b-4e2e-9740-e51006c64bf7",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      106,
+      60
+    ],
+    "offset": [
+      -9,
+      0
+    ],
+    "originalSize": [
+      128,
+      64
+    ]
+  }
+}

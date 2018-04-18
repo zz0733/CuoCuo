@@ -330,6 +330,14 @@ cc.Class({
     },
 
     showRoomCard(data, gameType){
+        let isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher ? true : false;
+        if (isFisher) {
+            let cardShowN = this.node.getChildByName('back').getChildByName('down').getChildByName('cardShow');
+            cardShowN.getChildByName('xskback').active = false;
+            cardShowN.getChildByName('fkback').active = true;
+            cardShowN.getChildByName('xianshika').active = false;
+            return;
+        }
         this.roomCard.string = data.TollCardCnt || data.Total || 0;
         this.freeBtn.on('click', function () {
             let detail = cc.instantiate(this.detailPrefab);

@@ -1,0 +1,47 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "ddz_kaichang.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "diaoxian": {
+      "__uuid__": "3d63931b-c151-4903-a92c-32fcf0b6699d"
+    },
+    "dz_bei": {
+      "__uuid__": "7b81c898-2c3a-4335-85c5-ba47c3169e3f"
+    },
+    "dz_dizhu": {
+      "__uuid__": "9cb3692a-6ce8-4fb4-a425-bda2ab99bcb8"
+    },
+    "dz_guize1": {
+      "__uuid__": "8c81ffc9-917d-4730-99ec-276de89415d6"
+    },
+    "dz_guize2": {
+      "__uuid__": "242f42bc-8f10-4652-bb52-a4e2b70ebb6f"
+    },
+    "dz_icon1": {
+      "__uuid__": "9356f0b2-bef3-44aa-bc40-7fe8819b2c88"
+    },
+    "dz_icon2": {
+      "__uuid__": "08ba73ce-3a46-4815-8746-5a8c28366b93"
+    },
+    "dz_icon3": {
+      "__uuid__": "272aa6c1-4766-4673-a8d4-7e1f6d5be937"
+    },
+    "dz_icon4": {
+      "__uuid__": "cf6659bb-ffcb-4976-b7ad-987410a4415f"
+    },
+    "dz_shengpai": {
+      "__uuid__": "a4fe5a67-2f26-46df-8fd4-197354136793"
+    },
+    "dz_zhuapai": {
+      "__uuid__": "2a0d8385-a370-4027-95e0-6bb6e0eee573"
+    },
+    "dz_zhuapai1": {
+      "__uuid__": "393439da-f04b-48a5-9d12-5d5b35c60bbe"
+    },
+    "lixiandikuang": {
+      "__uuid__": "b841cbf8-98c2-466d-8696-e394e2f7a51e"
+    }
+  }
+}

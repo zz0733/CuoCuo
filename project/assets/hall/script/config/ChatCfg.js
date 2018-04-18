@@ -36,13 +36,25 @@ const porkText = [
     '庄上霉，下重锤！',
     '唉，又是一个豌豆庄！',
 ];
-
+const DDZText = [
+    "老天爷，赐我一把好牌吧",
+    "嘿嘿，这把稳赢了",
+    "快点吧，我等到花儿都谢了",
+    "别催，别催，我好好想想怎么打",
+    "唉呀，全是套路",
+    "你的牌打的太好了",
+    "怎么又断线了？网络这么差啊？",
+    "别吵，别吵，好好打牌",
+    "不好意思，我要离开一下",
+    "不要走，决战到天亮",
+    "胆子这么大，这牌都敢打！",
+];
 const exporText = {
     [gameConst.gameType.maJiangWenLing]: wenLingText,
     [gameConst.gameType.maJiangHuangYan]: huangYanText,
     [gameConst.gameType.sanGong]: porkText,
     [gameConst.gameType.niuNiu]: porkText,
-    [gameConst.gameType.DDZ]:porkText,
+    [gameConst.gameType.DDZ]: DDZText,
 };
 
 const emoji = [

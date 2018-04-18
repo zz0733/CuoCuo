@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_zhuozi",
+    "texture": "dfu4J2TY1Lcr36mDWLCTZm",
+    "rect": [
+      0,
+      0,
+      1001,
+      563
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1001,
+      563
+    ]
+  }
+}

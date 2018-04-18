@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yingshuzi_0",
+    "texture": "01A9V8i2VHRpzPamYG1GHN",
+    "rect": [
+      1,
+      0,
+      248,
+      91
+    ],
+    "offset": [
+      -3,
+      14.5
+    ],
+    "originalSize": [
+      256,
+      120
+    ]
+  }
+}

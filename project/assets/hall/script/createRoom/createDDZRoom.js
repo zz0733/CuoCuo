@@ -20,6 +20,9 @@ cc.Class({
     onEnable () {
         this.animation.play("popScaleAnim");
     },
+    Destroy(){
+        fun.event.dispatch('Zhuanquan', false);
+    },
     bindNode: function () {
         this.downNode = this.node.getChildByName("back").getChildByName("down");
         this.fangFeiNode = this.downNode.getChildByName("fangfeiBox");
@@ -34,33 +37,82 @@ cc.Class({
         this.animation = this.node.getComponent(cc.Animation)
     },
     initUI: function () {
-        this.initFangFeiToggle();
-        this.initDiZhuFenToggle();
-        this.initRenShuToggle();
-        this.initWanFaToggle();
-        this.initFengDingToggle();
-        this.initGPSToggle();
-        this.initJuShu();
-    },
-    initJuShu: function(){
-        this.jushu = 8;
-        this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = 8 +"";
-    },
-    initGPSToggle: function () {
-        this.isGPS = false;
-        this.GPSNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
-    },
-    initDiZhuFenToggle: function () {
-        this.diZhuFen = 1;
-        this.diZhuFenNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
-        this.diZhuFenNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+        this.DDZCreateInfo = JSON.parse(cc.sys.localStorage.getItem("DDZCreateRoomInfo"));
+        if (this.DDZCreateInfo) {
+            this.initFangFeiToggle(this.DDZCreateInfo.roomInfo.payMode);
+            this.initDiZhuFenToggle(this.DDZCreateInfo.roomInfo.base);
+            this.initRenShuToggle();
+            this.initWanFaToggle(this.DDZCreateInfo.roomInfo.canDouble,this.DDZCreateInfo.roomInfo.canSanDaiDui,this.DDZCreateInfo.roomInfo.canSiDaiDui);
+            this.initFengDingToggle(this.DDZCreateInfo.roomInfo.boomLimit);
+            this.initGPSToggle(this.DDZCreateInfo.roomInfo.needGPS);
+            this.initJuShu(this.DDZCreateInfo.roomInfo.RoundLimit);
+        }else {
+            this.initFangFeiToggle();
+            this.initDiZhuFenToggle();
+            this.initRenShuToggle();
+            this.initWanFaToggle();
+            this.initFengDingToggle();
+            this.initGPSToggle();
+            this.initJuShu();
+        }
 
     },
-    initFangFeiToggle: function () {
-        this.fangfei = 3;
-        this.fangFeiNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
-        this.fangFeiNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
-        this.fangFeiNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+    initJuShu: function (jushu) {
+        if(jushu){
+            this.jushu = jushu;
+            this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = jushu + "";
+        }else {
+            this.jushu = 8;
+            this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = 8 + "";
+        }
+
+    },
+    initGPSToggle: function (isGPS) {
+        if(isGPS == true){
+            this.isGPS = true;
+            this.GPSNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+        }else{
+            this.isGPS = false;
+            this.GPSNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
+        }
+    },
+    initDiZhuFenToggle: function (base) {
+        if (base == 1) {
+            this.diZhuFen = 1;
+            this.diZhuFenNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+            this.diZhuFenNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+        } else if (base == 3) {
+            this.diZhuFen = 3;
+            this.diZhuFenNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
+            this.diZhuFenNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = true;
+        }else {
+            this.diZhuFen = 1;
+            this.diZhuFenNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+            this.diZhuFenNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+        }
+    },
+    initFangFeiToggle: function (fangfei) {
+        if (fangfei == 1) {
+            this.fangfei = 1;
+            this.fangFeiNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;//房主支付
+            this.fangFeiNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = true;//平均支付
+            this.fangFeiNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;//冠军支付
+        } else if (fangfei == 2) {
+            this.fangfei = 2;
+            this.fangFeiNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;//房主支付
+            this.fangFeiNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;//平均支付
+            this.fangFeiNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = true;//冠军支付
+        } else if (fangfei == 3) {
+            this.fangfei = 3;
+            this.fangFeiNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;//房主支付
+            this.fangFeiNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;//平均支付
+            this.fangFeiNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;//冠军支付
+        } else {
+            this.fangfei = 3;
+            this.fangFeiNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+            this.fangFeiNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+            this.fangFeiNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+        }
     },
     initRenShuToggle: function () {
         this.renshu = 3;
@@ -70,20 +122,52 @@ cc.Class({
         //todo 暂时只有三人的
 
     },
-    initWanFaToggle: function () {
-        this.isThreeAndOne = false;
-        this.isFourAndTwo = false;
-        this.isDouble = false;
-        this.wanFaNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
-        this.wanFaNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
-        this.wanFaNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
-
+    initWanFaToggle: function (double,san ,si) {
+        if(double == true){
+            this.isDouble = true;
+            this.wanFaNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = true;
+        }else{
+            this.isDouble = false;
+            this.wanFaNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+        }
+        if(san == true){
+            this.isThreeAndOne = true;
+            this.wanFaNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+        }else{
+            this.isThreeAndOne = false;
+            this.wanFaNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
+        }
+        if(si == true){
+            this.isFourAndTwo = true;
+            this.wanFaNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = true;
+        }else {
+            this.isFourAndTwo = false;
+            this.wanFaNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+        }
     },
-    initFengDingToggle: function () {
-        this.fengDing = 4;
-        this.fengDingNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
-        this.fengDingNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
-        this.fengDingNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+    initFengDingToggle: function (fengding) {
+        if(fengding == 4){
+            this.fengDing = 4;
+            this.fengDingNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+            this.fengDingNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+            this.fengDingNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+        }else if(fengding == 5){
+            this.fengDing = 5;
+            this.fengDingNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
+            this.fengDingNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = true;
+            this.fengDingNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+        }else if(fengding == 6){
+            this.fengDing = 6;
+            this.fengDingNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = false;
+            this.fengDingNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+            this.fengDingNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = true;
+        }else{
+            this.fengDing = 4;
+            this.fengDingNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked = true;
+            this.fengDingNode.getChildByName("toggle2").getComponent(cc.Toggle).isChecked = false;
+            this.fengDingNode.getChildByName("toggle3").getComponent(cc.Toggle).isChecked = false;
+        }
+
     },
     /****************点击事件处理**********/
     onClickDiZhuFenToggle: function (event, custom) {
@@ -148,14 +232,14 @@ cc.Class({
     onClickGPSToggle: function (event, custom) {
         this.isGPS = this.GPSNode.getChildByName("toggle1").getComponent(cc.Toggle).isChecked;
     },
-    onClickJuShu: function(event, custom){
-      if(custom == "1"){
-          this.jushu = this.jushu == 24 ? 24 : this.jushu + 8;
-          this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = this.jushu  +"";
-      }else if(custom == "2"){
-          this.jushu = this.jushu == 8 ? 8 : this.jushu - 8;
-          this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = this.jushu  +"";
-      }
+    onClickJuShu: function (event, custom) {
+        if (custom == "1") {
+            this.jushu = this.jushu == 24 ? 24 : this.jushu + 8;
+            this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = this.jushu + "";
+        } else if (custom == "2") {
+            this.jushu = this.jushu == 8 ? 8 : this.jushu - 8;
+            this.jushuNode.getChildByName("box").getChildByName("num").getComponent(cc.Label).string = this.jushu + "";
+        }
     },
 
     onBtnCloseClick () {
@@ -169,18 +253,22 @@ cc.Class({
         cc.instantiate(this.storePre).parent = this.node;
     },
 
-    onClickDetails: function(){
+    onClickDetails: function () {
         let detail = cc.instantiate(this.detailPrefab);
         detail.parent = this.node;
-        detail.getComponent('freeCardDetail').setDetail(data.FreeCardList, gameType);
+        detail.getComponent('freeCardDetail').setDetail(this.showData.FreeCardList, this._gameType);
     },
-    showRoomCard(data) {
-        this.currentCardLabel.string = data.TollCardCnt || 0;
+    showRoomCard(data, gameType) {
+        this.showData = data;
+        this._gameType = gameType;
+        this.node.getChildByName("back").getChildByName("down").getChildByName("fangKaBox").getChildByName("card").getComponent(cc.Label).string = data.TollCardCnt || 0;
+        var freeTimeBox = this.node.getChildByName("back").getChildByName("down").getChildByName("time");
+        var freeCardL = this.node.getChildByName("back").getChildByName("down").getChildByName("fangKaBox").getChildByName("cardlimited");
         if (!data.FreeCardList || data.FreeCardList.length === 0) {
-            this.freeCardL.string = 0;
-            this.freeTimeBox.active = false;
+            freeCardL.getComponent(cc.Label).string = 0;
+            freeTimeBox.active = false;
         } else {
-            this.freeTimeBox.active = true;
+            freeTimeBox.active = true;
             let minTime = data.FreeCardList[0].ExpiredAt, freeCard = data.FreeCardList[0].Cnt;
             for (let i in data.FreeCardList) {
                 let time = data.FreeCardList[i].ExpiredAt;
@@ -191,44 +279,42 @@ cc.Class({
             }
             let t = new Date(minTime * 1000);
             let date = t.getFullYear().toString().substr(2, 2) + '年' + (t.getMonth() + 1) + '月' + t.getDate() + '日';
-            this.freeTimeL.string = date + '过期';
-            this.freeCardL.string = freeCard;
+            freeTimeBox.getChildByName("time").getComponent(cc.Label).string = date + '过期';
+            freeCardL.getComponent(cc.Label).string = freeCard;
         }
     },
 
     onBtnCreateRoomClick() {
         var DDZRoomInfo = {
-            gameType : 6,
-            payMode : this.fangfei,
-            playerNum : this.renshu,
+            gameType: 6,
+            payMode: this.fangfei,
+            playerNum: this.renshu,
             base: this.diZhuFen,
             boomLimit: this.fengDing,
-            playMode:null,
+            playMode: null,
             canSanDaiDui: this.isThreeAndOne,
             canSiDaiDui: this.isFourAndTwo,
-            canDouble:this.isDouble,
-            RoundLimit:this.jushu,
-            needGPS:this.isGPS,
+            canDouble: this.isDouble,
+            RoundLimit: this.jushu,
+            needGPS: this.isGPS,
         };
-        if(this.isGPS){
-            var gpsInfo = JSON.parse(fun.db.getData('UserInfo').location);
-        }else{
-            var gpsInfo = "";
+        if (this.isGPS) {
+            var gpsInfo = fun.db.getData('UserInfo').location;
+        } else {
+            var gpsInfo = {};
         }
         var createInfo = {
-            GameType : 6,
+            GameType: 6,
             roomInfo: DDZRoomInfo,
-            userId:fun.db.getData('UserInfo').UserId,
+            userId: fun.db.getData('UserInfo').UserId,
             gpsInfo: gpsInfo,
         };
-
-        fun.utils.saveCreateRoomData(createInfo);
+        cc.sys.localStorage.setItem("DDZCreateRoomInfo", JSON.stringify(createInfo));
         fun.event.dispatch('Zhuanquan', {flag: true, text: "创建房间中，请稍后..."});
         fun.net.pSend('CreateRoom', createInfo, function (msg) {
-            if(msg.RetCode < 0){
-                fun.event.dispatch('Zhuanquan', {flag: false});
-            }else{
-                cc.YL.network("创建房间成功");
+            if (msg.RetCode > 0 && msg.RetCode <= 15) {
+                fun.event.dispatch('Zhuanquan', false);
+            } else {
                 cc.director.loadScene("DDZ_GameScene");
             }
         });

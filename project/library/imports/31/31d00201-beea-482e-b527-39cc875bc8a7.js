@@ -79,7 +79,7 @@ cc.Class({
             return;
         }
         this.voiceHint = cc.instantiate(this.voiceHintPre);
-        this.voiceHint.parent = cc.director.getScene().getChildByName('Canvas');
+        this.voiceHint.parent = cc.director.getScene().getChildByName('Canvas') || cc.director.getScene().getChildByName('DDZ_UIROOT') || cc.director.getScene().getChildByName('DDZ_Replay');
         this.voiceHintCtr = this.voiceHint.getComponent('voiceHint');
         this.voiceHintCtr.showMove();
         this.sumTime = 0;
@@ -115,14 +115,21 @@ cc.Class({
         if (!this.bgResN) {
             return;
         }
+        if (!this.queueMgr) {
+            return;
+        }
         if (this.queueMgr.isCanRecord()) {
             this.bgResN._showNormal();
-        }{
+        }
+        {
             this.bgResN._showHide();
         }
     },
     update: function update(dt) {
         this.checkHide();
+        if (!this.queueMgr) {
+            return;
+        }
         this.queueMgr.update(dt);
         if (!this.touching) {
             return;

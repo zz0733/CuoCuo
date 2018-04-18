@@ -1,0 +1,89 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "popScaleOut",
+  "_duration": 0.2,
+  "curveData": {
+    "paths": {
+      "hitzone": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 155
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 155
+            },
+            {
+              "frame": 0.2,
+              "value": 0
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1.1
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1.1
+            }
+          ]
+        }
+      },
+      "back": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 1.1,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.2,
+              "value": 0.7
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 1.1,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.2,
+              "value": 0.7
+            }
+          ],
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 255
+            },
+            {
+              "frame": 0.11666666666666667,
+              "value": 255
+            },
+            {
+              "frame": 0.2,
+              "value": 0
+            }
+          ]
+        }
+      }
+    }
+  }
+}

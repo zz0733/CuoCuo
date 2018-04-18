@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_jiesuan_icon1",
+    "texture": "a9c+BYF3tKXqw96fOJksyB",
+    "rect": [
+      154,
+      241,
+      108,
+      23
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      108,
+      23
+    ],
+    "rotated": 1
+  }
+}

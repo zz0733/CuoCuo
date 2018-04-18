@@ -1,0 +1,44 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "mjOptEftPrefab",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "gangTagPrefab",
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 1
+        },
+        "defaultAnimation": "Hunyise",
+        "loop": false,
+        "_N$skeletonData": {
+          "__uuid__": "c4/GdF3adK+7R0qzIpnAHh"
+        },
+        "_N$timeScale": 1.6
+      },
+      {
+        "__type__": "ef0a7mGJM5PUJwxj8c1CjOP",
+        "node": {
+          "__id__": 1
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "44pdLyHfNGSLoFiXWEYatN"
+      },
+      "fileId": "ff413mCOJhDI4Z/f/q2p4kj"
+    }
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_fangweinan",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      700,
+      972,
+      132,
+      50
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      134,
+      52
+    ]
+  }
+}

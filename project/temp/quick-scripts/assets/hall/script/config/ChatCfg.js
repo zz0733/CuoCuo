@@ -15,8 +15,8 @@ var wenLingText = ['等一下，我上个厕所！', '神经啊，快等到过�
 var huangYanText = ['快点嘛！又少打两把了！', '稍等一下，我想想打哪张牌！', '你们小心点，我听牌了！', '不要走！决战到天亮！', '你这牌也打的太好了！', '等下，我上个厕所！', '好久都没胡过牌了！', '今天的手气太差了,输惨了！'];
 
 var porkText = ['嘿，今天的牌好到爆！', '同志们，走起，走起哦！', '喂，快点亮牌吧，等到花都谢了！', '哎呦，你们太厉害了！', '顺儿郎当，庄刮四方！', '哎呀，今天的手气太差了！', '庄上霉，下重锤！', '唉，又是一个豌豆庄！'];
-
-var exporText = (_exporText = {}, _defineProperty(_exporText, gameConst.gameType.maJiangWenLing, wenLingText), _defineProperty(_exporText, gameConst.gameType.maJiangHuangYan, huangYanText), _defineProperty(_exporText, gameConst.gameType.sanGong, porkText), _defineProperty(_exporText, gameConst.gameType.niuNiu, porkText), _exporText);
+var DDZText = ["老天爷，赐我一把好牌吧", "嘿嘿，这把稳赢了", "快点吧，我等到花儿都谢了", "别催，别催，我好好想想怎么打", "唉呀，全是套路", "你的牌打的太好了", "怎么又断线了？网络这么差啊？", "别吵，别吵，好好打牌", "不好意思，我要离开一下", "不要走，决战到天亮", "胆子这么大，这牌都敢打！"];
+var exporText = (_exporText = {}, _defineProperty(_exporText, gameConst.gameType.maJiangWenLing, wenLingText), _defineProperty(_exporText, gameConst.gameType.maJiangHuangYan, huangYanText), _defineProperty(_exporText, gameConst.gameType.sanGong, porkText), _defineProperty(_exporText, gameConst.gameType.niuNiu, porkText), _defineProperty(_exporText, gameConst.gameType.DDZ, DDZText), _exporText);
 
 var emoji = ['jianxiao', 'fadai', 'han', 'ku', 'kubile', 'kuxiao', 'yun', 'bishi', 'tu', 'wabishi', 'shengqi', 'zan'];
 

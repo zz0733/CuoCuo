@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "GPS",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      412,
+      89,
+      56,
+      41
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      43
+    ]
+  }
+}

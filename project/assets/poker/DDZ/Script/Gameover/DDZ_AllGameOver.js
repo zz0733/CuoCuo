@@ -45,12 +45,18 @@ cc.Class({
             = "第" + data.round + "局";
         this.node.getChildByName("BG").getChildByName("Buttom").getChildByName("RoomInfo").getChildByName("PassWord").getComponent(cc.Label).string
             = data.password;
+        cc.YL.DDZAllGameOverData = null;
     },
     onShareClick: function(){
-
+        require("JSPhoneWeChat").WxShareFriendScreen();
     },
-    onClickExitClick: function(){
+    onClickExitClick: function(event){
+        cc.YL.DDZAudio.playBtnClick();
         cc.director.loadScene("hall");
+        fun.db.setData('RoomInfo', {
+            GameType: 0,
+        });
+        event.target.active = false;
     },
 });
 // RoomInfo

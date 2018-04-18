@@ -32,8 +32,10 @@ enum ddz_proto_id {
     PID_DISSOLVE_BRO = 626; //广播意见结果
     PID_DISSOLVE_REPLY = 627; //回复同意还是拒绝解散房间
     PID_DISSOLVE_DESK = 628; //解散房间成功后的消息
-    PID_LOGINSERVER = 629; //登录验证
+    PID_LOGINSERVER_REQ = 629; //登录验证
     PID_LOGINSERVER_ACK = 630;
+    PID_LEAVEDESK_REQ = 631; //离开的请求
+    PID_LEAVEDESK_ACK = 632; //离开的回复
 
 
     PID_SENDMSG_REQ = 108; //聊天
@@ -198,6 +200,7 @@ message ddz_base_enterRoom_req {
 //进入房间的回复
 message ddz_base_enterRoom_ack {
     optional Header retMsg = 1;
+    optional int32 GameType = 2;
 }
 
 //玩家信息
@@ -216,6 +219,7 @@ message ddz_base_playerInfo {
     optional int32 index = 12; //玩家的座位
     optional int32 isJiaBei = 13; //玩家是否加倍
     optional int32 isJiaoFen = 14; //玩家是否叫分
+    optional string gps = 15; //玩家GPS信息
 }
 
 //牌桌Info
@@ -226,6 +230,7 @@ message ddz_base_deskInfo {
     optional int32 diZhuFen = 4; //地主叫的分数
     optional int64 diZhu = 5; //谁是地主
     optional int64 activeUser = 6; //当前活动玩家
+    //diFen
 }
 
 //3张底牌

@@ -113,6 +113,21 @@ cc.Class({
     }), _defineProperty(_properties, 'storePre', {
         type: cc.Prefab,
         default: null
+    }), _defineProperty(_properties, 'freeCardL', {
+        type: cc.Label,
+        default: null
+    }), _defineProperty(_properties, 'freeTimeBox', {
+        type: cc.Node,
+        default: null
+    }), _defineProperty(_properties, 'freeBtn', {
+        type: cc.Node,
+        default: null
+    }), _defineProperty(_properties, 'freeTimeL', {
+        type: cc.Label,
+        default: null
+    }), _defineProperty(_properties, 'detailPrefab', {
+        type: cc.Prefab,
+        default: null
     }), _properties),
 
     onLoad: function onLoad() {
@@ -242,6 +257,33 @@ cc.Class({
     },
     onBtnRechargeClick: function onBtnRechargeClick() {
         cc.instantiate(this.storePre).parent = this.node;
+    },
+    showRoomCard: function showRoomCard(data, gameType) {
+        this.currentCardLabel.string = data.TollCardCnt || 0;
+        this.freeBtn.on('click', function () {
+            var detail = cc.instantiate(this.detailPrefab);
+            detail.parent = this.node;
+            detail.getComponent('freeCardDetail').setDetail(data.FreeCardList, gameType);
+        }.bind(this));
+        if (!data.FreeCardList || data.FreeCardList.length === 0) {
+            this.freeCardL.string = 0;
+            this.freeTimeBox.active = false;
+        } else {
+            this.freeTimeBox.active = true;
+            var minTime = data.FreeCardList[0].ExpiredAt,
+                freeCard = data.FreeCardList[0].Cnt;
+            for (var i in data.FreeCardList) {
+                var time = data.FreeCardList[i].ExpiredAt;
+                if (minTime > time) {
+                    minTime = time;
+                    freeCard = data.FreeCardList[i].Cnt;
+                }
+            }
+            var t = new Date(minTime * 1000);
+            var date = t.getFullYear().toString().substr(2, 2) + '年' + (t.getMonth() + 1) + '月' + t.getDate() + '日';
+            this.freeTimeL.string = date + '过期';
+            this.freeCardL.string = freeCard;
+        }
     },
     onBtnCreateRoomClick: function onBtnCreateRoomClick() {
         var req = {

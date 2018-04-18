@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tachuang_00",
+    "texture": "f4b4ef33-cb24-46a7-9cf8-b6ac6767de30",
+    "atlas": "ce2c7bbd-ecd9-498e-9eaf-c3238e4dd784",
+    "rect": [
+      223,
+      123,
+      37,
+      27
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      37,
+      27
+    ],
+    "rotated": 1
+  }
+}

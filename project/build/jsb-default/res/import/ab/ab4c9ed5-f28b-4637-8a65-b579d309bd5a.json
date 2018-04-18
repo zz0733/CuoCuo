@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Haishang",
+    "texture": "24EctYbGFN5qVLmnDH6eB9",
+    "rect": [
+      0,
+      0,
+      73,
+      183
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      73,
+      183
+    ]
+  }
+}

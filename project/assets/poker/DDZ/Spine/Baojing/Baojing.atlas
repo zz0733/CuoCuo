@@ -1,0 +1,34 @@
+
+Baojing.png
+size: 128,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Deng
+  rotate: false
+  xy: 2, 23
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+Deng1
+  rotate: false
+  xy: 38, 23
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+Deng2
+  rotate: false
+  xy: 74, 23
+  size: 34, 39
+  orig: 34, 39
+  offset: 0, 0
+  index: -1
+Guang
+  rotate: false
+  xy: 2, 2
+  size: 19, 19
+  orig: 19, 19
+  offset: 0, 0
+  index: -1

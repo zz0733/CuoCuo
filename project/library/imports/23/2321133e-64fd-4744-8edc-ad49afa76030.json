@@ -10,9 +10,6 @@
     "anniu_18": {
       "__uuid__": "740f3ae5-8123-46d6-be95-589f1279d831"
     },
-    "cjRoom": {
-      "__uuid__": "0c2e725b-95a1-4e44-b323-5f880a5e24a4"
-    },
     "cjRoom1": {
       "__uuid__": "2f3bba7f-e3c3-47e5-b66a-afacca0b5ac2"
     },
@@ -22,32 +19,11 @@
     "cjRoom3": {
       "__uuid__": "f1deb162-81d8-4ab1-87a4-d99b0fffce8b"
     },
-    "cjRoom4": {
-      "__uuid__": "29baddcc-b053-45ab-89d1-0457c463a8b7"
-    },
     "cjRoom5": {
       "__uuid__": "aab7f8a1-e00a-4310-aa84-cd0fd5a6e649"
     },
-    "cjRoom6": {
-      "__uuid__": "1a33e9ef-68cb-492e-a6ec-8413665acddf"
-    },
     "cjRoom7": {
       "__uuid__": "9d0692e7-28de-4050-8b9a-b2c93e89701d"
-    },
-    "cjRoom8": {
-      "__uuid__": "47067f55-5291-4422-aa06-e97daff2afd9"
-    },
-    "cjRooma": {
-      "__uuid__": "1020fc75-a766-443d-bb21-6a992f67e28a"
-    },
-    "cjRoomb": {
-      "__uuid__": "34e3fb85-1082-4d2c-b3bb-969e53a22cc5"
-    },
-    "cjRoomc": {
-      "__uuid__": "81382aca-e80c-4524-811c-c099954464a3"
-    },
-    "cjRoomd": {
-      "__uuid__": "b34c25a4-3194-4dd4-9df0-55105f5030e3"
     },
     "mail_duihuan": {
       "__uuid__": "2e5fc9c4-82a3-4388-8f37-4070296d93e4"
@@ -60,27 +36,6 @@
     },
     "sg_cj_di": {
       "__uuid__": "1a4b69ab-2dc4-455c-ae40-ebfd85f76709"
-    },
-    "tachuang_0": {
-      "__uuid__": "2bc3eb03-1121-4ad5-b857-e7f95a41209d"
-    },
-    "tachuang_00": {
-      "__uuid__": "83a6ebd4-0b35-4dc6-acbb-65c8c82d8809"
-    },
-    "tachuang_1": {
-      "__uuid__": "b0697862-e648-4ee2-87bc-b426691564e1"
-    },
-    "tachuang_2": {
-      "__uuid__": "46ee5a39-4771-4864-a9f1-1cb9a3402c11"
-    },
-    "tachuang_3": {
-      "__uuid__": "b7aa1875-f736-42c6-b285-a8c350a4d175"
-    },
-    "tachuang_4": {
-      "__uuid__": "7aa1a056-636e-4f55-88af-ebd62c6e04e8"
-    },
-    "tachuang_5": {
-      "__uuid__": "08ea044a-7853-4d22-8fc1-70d772fca0c6"
     },
     "ty_anniu_0": {
       "__uuid__": "4fca13b9-0960-4edc-81f1-70a8ec83d299"
@@ -124,9 +79,6 @@
     "ty_anniu_renzheng": {
       "__uuid__": "c6baa10f-69c9-4bfb-9ac8-a17eafc6f63d"
     },
-    "ty_anniu_shop": {
-      "__uuid__": "30c32702-553e-426d-af4a-1c1fee573dbe"
-    },
     "ty_anniu_xiangqing": {
       "__uuid__": "a5334aab-d81b-4deb-9f8f-85abf921d328"
     },
@@ -159,12 +111,6 @@
     },
     "ty_biaoti_shezhi": {
       "__uuid__": "6250b933-91b7-49a0-9a16-c7d9f5d04387"
-    },
-    "ty_biaoti_shop1": {
-      "__uuid__": "b41e4894-2ab2-46e7-b04c-4c4c29b892d4"
-    },
-    "ty_biaoti_shop2": {
-      "__uuid__": "be37f822-6ef5-4320-b1d0-0d04a8a2a7d9"
     },
     "ty_biaoti_xiaoxi": {
       "__uuid__": "54a65bdd-558b-405c-ba5a-aa7cc86c9ef9"
@@ -202,9 +148,6 @@
     "ty_dikuang_shezhi": {
       "__uuid__": "21d300a8-f2bf-4b90-888c-dfd756d13f92"
     },
-    "ty_dikuang_shop": {
-      "__uuid__": "cddef846-7fe8-48a3-9a35-a6d82e90f7e6"
-    },
     "ty_dikuang_zhanji0": {
       "__uuid__": "27cab6aa-cf69-42c3-b3d9-cc14fbefb6bd"
     },
@@ -232,23 +175,11 @@
     "ty_dikuang_zhanji7": {
       "__uuid__": "53737604-bb50-42de-a68c-7c9193a13140"
     },
-    "ty_fangka_1": {
-      "__uuid__": "ed322b02-168e-4a4b-98ee-7eec3be46cea"
-    },
-    "ty_fangka_3": {
-      "__uuid__": "45b367ef-8d64-4d51-a07b-efb9ed614501"
-    },
-    "ty_fangka_4": {
-      "__uuid__": "1b437b75-f7f0-46a2-88f7-a1201864e5af"
-    },
-    "ty_fangka_5": {
-      "__uuid__": "a1019fd7-034e-4767-832e-4edc43c75f9a"
-    },
-    "ty_fangka_6": {
-      "__uuid__": "56b0a936-7b96-4323-a357-5cb6ff3b15da"
-    },
     "ty_fangka_cj": {
       "__uuid__": "5542073c-6b5c-4e55-9ec5-cf737d0fdc05"
+    },
+    "ty_fk_ddz": {
+      "__uuid__": "d6aa97e2-682d-442d-949d-970b6cb4b883"
     },
     "ty_fk_huangyan": {
       "__uuid__": "565a345d-3c86-4067-800c-32574d0f0c02"
@@ -258,6 +189,9 @@
     },
     "ty_fk_sg": {
       "__uuid__": "5900eced-207b-419a-9401-4221594e537b"
+    },
+    "ty_fk_sichuang": {
+      "__uuid__": "21c5606b-19f0-4f32-90ed-d8c5fc91c701"
     },
     "ty_fk_wahua": {
       "__uuid__": "37a539b0-a931-4d17-ac24-fdbe84b2f4e2"
@@ -300,12 +234,6 @@
     },
     "ty_shezhi_f": {
       "__uuid__": "043189fd-72a1-44e0-bf62-77edbb699032"
-    },
-    "ty_shop_bg": {
-      "__uuid__": "8e9eab32-ed5a-4bb9-9ee6-1dd66f5d3794"
-    },
-    "ty_shop_bgkuang": {
-      "__uuid__": "77afeb73-e1f8-47c8-b53a-71f126da81ff"
     },
     "ty_shurukuang": {
       "__uuid__": "43748029-6b49-4ebd-871e-632296db5dd7"

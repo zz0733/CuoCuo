@@ -37,8 +37,6 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
-        cc.log('--- mjVotingPopUI ---');
-
         this.timeLabel.string = "";
         this.playerList.children.forEach(function (value) {
             value.active = false;

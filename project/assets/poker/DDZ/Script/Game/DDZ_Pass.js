@@ -13,6 +13,7 @@ cc.Class({
 //     optional int64 userId = 1;
 // }
     onClickPassCard: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_PASS_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
         });

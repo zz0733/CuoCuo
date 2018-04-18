@@ -1,0 +1,22 @@
+{
+  "androidStudio": true,
+  "apiLevel": "android-20",
+  "appABIs": [
+    "armeabi-v7a",
+    "armeabi"
+  ],
+  "buildPath": "./build",
+  "debug": true,
+  "includeEruda": false,
+  "keystoreAlias": "youlehymjAndroid",
+  "keystoreAliasPassword": "youle2014",
+  "keystorePassword": "youle2014",
+  "keystorePath": "/Users/youle/Desktop/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/keystore/youlehymjAndroid.keystore",
+  "platform": "ios",
+  "previewHeight": "720",
+  "previewWidth": "1280",
+  "sourceMaps": false,
+  "template": "default",
+  "useDebugKeystore": false,
+  "vsVersion": "auto"
+}

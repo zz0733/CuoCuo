@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_fx",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      2,
+      738,
+      241,
+      94
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      241,
+      94
+    ],
+    "rotated": 1
+  }
+}

@@ -1,4 +1,4 @@
-const version = 'version:2.0.6.7030';
+const version = 'version:2.1.0.7315';
 /*苹果审核
  更新时间：2018年3月6日
  更新版本：2.0.6.6927
@@ -10,17 +10,6 @@ const version = 'version:2.0.6.7030';
  Version: 2.0.8
  Build: 2.0.8
  */
-/*苹果审核
- 更新时间：2018年3月9日
- 更新版本：2.0.6.6953
- 更新内容：
- 1.优化游戏体验
- :::4.0.1
-
- Bundle Identifier: com.youle2011.hymajiang
- Version: 2.0.9
- Build: 2.0.9
- */
 /*渔船用户
  更新时间：2018年3月26日
  更新版本：2.0.6.7030
@@ -31,6 +20,17 @@ const version = 'version:2.0.6.7030';
  Bundle Identifier: com.scyoule.cuocuo
  Version: 2.0.10
  Build: 2.0.10
+ */
+
+/*热更新(强制更新)
+更新时间：2018年04月17日
+更新版本：2.1.0.7313
+更新内容：
+1.游戏界面大翻新
+2.新增限时卡，可以在指定时间内自己使用或赠送他人
+3.修复部分已知BUG
+4.优化游戏体验
+:::4.0.2
  */
 
 const logLevel = cc.Enum({
@@ -59,19 +59,24 @@ const forceUpdateUrl = cc.Enum({
     ios: 'https://itunes.apple.com/cn/app/id1261810679?mt=8',
 });
 
+const commonUrl = cc.Enum({
+    timeLimitCard: 'http://download.game2me.net/sharePage/index.html',
+});
+
 const loginUrl = [
-    'ws://192.168.1.77:9999/ws',
-    // 'ws://118.31.23.181:9901/ws',    //内网 ws://192.168.1.77:9999/ws
-    'ws://am.fmgames.cn:29990/ws',  //外网 'ws://70.103.170.210:29990/ws'
-    'ws://118.31.23.181:9901/ws',   //测试
-    'ws://118.31.23.181:9901/ws',   //苹果审核上架  以前 ws://121.42.39.15:9901/ws
+    'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+    'ws://am.fmgames.cn:29990/ws',     //外网 'ws://70.103.170.210:29990/ws'
+    'ws://yuchuan.fmgames.cn:9901/ws', //渔船 'ws://208.185.128.236:9901/ws'
+    'ws://sh.fmgames.cn:9901/ws',      //苹果审核
+    'ws://208.185.128.235:9901/ws',    //测试
 ];
 
 const loginUrlType = cc.Enum({
     intranet: 0,
     extranet: 1,
-    test: 2,
+    fisher: 2,
     apple: 3,
+    test: 4,
 });
 
 const loginType = cc.Enum({
@@ -101,6 +106,7 @@ const gameType = cc.Enum({
     niuNiu: 4,
     digFlower: 5,
     DDZ: 6,
+    scMahjong: 7,
 });
 
 const gameTypeSceneNameMap = {
@@ -110,6 +116,7 @@ const gameTypeSceneNameMap = {
     [gameType.niuNiu]: "puke",
     [gameType.digFlower]: "wahua",
     [gameType.DDZ]: "DouDiZhu",
+    [gameType.scMahjong]: "majiang",
 };
 
 const gameTypeZhNameMap = {
@@ -119,6 +126,7 @@ const gameTypeZhNameMap = {
     [gameType.niuNiu]: "牛牛",
     [gameType.digFlower]: "温岭挖花",
     [gameType.DDZ]: "斗地主",
+    [gameType.scMahjong]: "四川麻将",
 };
 
 const wltest = {
@@ -147,12 +155,14 @@ const releaseName = [
     'normal',
     'apple',
     'release',
+    'fisher',
 ];
 
 const releaseType = cc.Enum({
     normal: 0,
     apple: 1,
     release: 2,
+    fisher: 3,
 });
 
 const itemCsv = cc.Enum({
@@ -183,6 +193,7 @@ module.exports = {
     version: version,
     logLevel: logLevel,
     forceUpdateUrl: forceUpdateUrl,
+    commonUrl: commonUrl,
     logTags: logTags,
     loginUrl: loginUrl,
     loginUrlType: loginUrlType,

@@ -1,0 +1,53 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "CardDetail.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "cjRoom4": {
+      "__uuid__": "be2a8b09-e8a5-4856-a169-e501e3d0f32c"
+    },
+    "cjRoom8": {
+      "__uuid__": "95204088-da55-456b-af6b-90989afa90d4"
+    },
+    "cjRoom9": {
+      "__uuid__": "825d7429-4a80-42eb-a3be-4233a3db0620"
+    },
+    "cjRooma": {
+      "__uuid__": "dbc81531-c7e8-487d-9b4c-2f135426f72b"
+    },
+    "cjRoomb": {
+      "__uuid__": "3eceb4fb-fb7c-4b14-aeee-bbdbbb3ba46e"
+    },
+    "cjRoomc": {
+      "__uuid__": "49ddfcc5-0b83-42a4-b7c1-666b9f1e3868"
+    },
+    "cjRoomd": {
+      "__uuid__": "b3c8b865-4a1f-4dcc-98ca-e51440fc0516"
+    },
+    "cjRoome": {
+      "__uuid__": "2b1e40e4-7bff-4280-8a03-03e098f0059b"
+    },
+    "tachuang_0": {
+      "__uuid__": "7d2140d0-5d37-4d86-979e-36586a271ed2"
+    },
+    "tachuang_00": {
+      "__uuid__": "07f80e21-aa9f-4b1d-af65-82a89ada8f49"
+    },
+    "tachuang_1": {
+      "__uuid__": "d12b2108-14b6-4fac-975b-d03bc9e290cc"
+    },
+    "tachuang_2": {
+      "__uuid__": "4076a70f-52d8-40eb-ac13-50a1a7da135b"
+    },
+    "tachuang_3": {
+      "__uuid__": "7373d0f6-5366-4764-92a2-0e3b38c7f742"
+    },
+    "tachuang_4": {
+      "__uuid__": "fa195a21-e00f-4547-9249-1abdcad85fda"
+    },
+    "tachuang_5": {
+      "__uuid__": "20edef95-0659-493d-969d-2b30516adac0"
+    }
+  }
+}

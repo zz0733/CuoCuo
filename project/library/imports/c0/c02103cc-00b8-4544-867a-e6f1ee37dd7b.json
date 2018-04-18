@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_dajiesuan_t2",
+    "texture": "17aadd32-8f4d-4011-9d4f-6f7ad1ff0552",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      268,
+      74
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      268,
+      74
+    ]
+  }
+}

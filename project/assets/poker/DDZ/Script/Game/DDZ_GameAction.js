@@ -40,7 +40,11 @@ GameAction.startJiaoFen = function (data) {
     //广播
     this.bindNodeName();
     this.BtnNode.removeAllChildren();
+    this.selfNodeComp.showHeadAnimation(false);
+    this.rightNodeComp.showHeadAnimation(false);
+    this.leftNodeComp.showHeadAnimation(false);
     if (data.retMsg.userId == this.selfID) {
+        this.selfNodeComp.showHeadAnimation(true);
         var jiaoFenPre = this.BtnNode.getComponent("DDZ_PlayerBtn").JiaoFen;
         var jiaoFenNode = this.BtnNode.getChildByName("DDZ_JiaoFen") ?
             this.BtnNode.getChildByName("DDZ_JiaoFen") :
@@ -51,10 +55,10 @@ GameAction.startJiaoFen = function (data) {
         jiaoFenNode.getComponent("DDZ_JiaoFen").initJIaoFenUI(data);
     }
     if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
-        this.rightNodeComp.updateOutWord(0);
+        this.rightNodeComp.showHeadAnimation(true);
     }
     if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
-        this.leftNodeComp.updateOutWord(0);
+        this.leftNodeComp.showHeadAnimation(true);
     }
 };
 GameAction.updateJiaoFen = function (data) {
@@ -68,16 +72,19 @@ GameAction.updateJiaoFen = function (data) {
         data.fen != 0
             ? this.selfNodeComp.updateOutWord(parseInt(data.fen + 3))
             : this.selfNodeComp.updateOutWord(3);
+        this.selfNodeComp.hideOffline();
     }
     if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         data.fen != 0
             ? this.rightNodeComp.updateOutWord(parseInt(data.fen + 3))
             : this.rightNodeComp.updateOutWord(3);
+        this.rightNodeComp.hideOffline();
     }
     if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
         data.fen != 0
-            ? this.rightNodeComp.updateOutWord(parseInt(data.fen + 3))
-            : this.rightNodeComp.updateOutWord(3);
+            ? this.leftNodeComp.updateOutWord(parseInt(data.fen + 3))
+            : this.leftNodeComp.updateOutWord(3);
+        this.leftNodeComp.hideOffline();
     }
 };
 GameAction.endJiaoFen = function () {
@@ -92,6 +99,9 @@ GameAction.startJiaBei = function (data) {
     // 开始加倍的操作
     // 初始化加倍的预制
     this.bindNodeName();
+    this.selfNodeComp.showHeadAnimation(false);
+    this.rightNodeComp.showHeadAnimation(false);
+    this.leftNodeComp.showHeadAnimation(false);
     if (data.retMsg.userId = this.selfID) {
         var jiaBeiPre = this.BtnNode.getComponent("DDZ_PlayerBtn").JiaBei;
         this.BtnNode.removeAllChildren();
@@ -115,21 +125,24 @@ GameAction.updateJiaBei = function (data) {
             this.BtnNode.getChildByName("DDZ_JiaBei").destroy();
         }
         data.jiaBeiResult == true ?
-            this.selfNodeComp.updateOutWord(2):
-            this.selfNodeComp.updateOutWord(0);
-        this.selfNodeComp.showRate();
+            this.selfNodeComp.updateOutWord(2) :
+            this.selfNodeComp.updateOutWord(13);
+        this.selfNodeComp.showRate(data.jiaBeiResult);
+        this.selfNodeComp.hideOffline();
     }
     if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         data.jiaBeiResult == true ?
-            this.rightNodeComp.updateOutWord(2):
-            this.rightNodeComp.updateOutWord(0);
-        this.rightNodeComp.showRate();
+            this.rightNodeComp.updateOutWord(2) :
+            this.rightNodeComp.updateOutWord(13);
+        this.rightNodeComp.showRate(data.jiaBeiResult);
+        this.rightNodeComp.hideOffline();
     }
     if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
         data.jiaBeiResult == true ?
-            this.leftNodeComp.updateOutWord(2):
-            this.leftNodeComp.updateOutWord(0);
-        this.leftNodeComp.showRate();
+            this.leftNodeComp.updateOutWord(2) :
+            this.leftNodeComp.updateOutWord(13);
+        this.leftNodeComp.showRate(data.jiaBeiResult);
+        this.leftNodeComp.hideOffline();
     }
 
 };
@@ -141,10 +154,10 @@ GameAction.endJiaBei = function () {
         this.BtnNode.getChildByName("DDZ_JiaBei").destroy();
     }
 };
-GameAction.showDiPai = function (data) {
+GameAction.showDiPai = function (data,isReconnect) {
     // 渲染底牌//3张底牌
     var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/DiPaiNode");
-    node.getComponent("DDZ_DiPai").initDiPai(data.diPais);
+    node.getComponent("DDZ_DiPai").initDiPai(data.diPais,isReconnect);
 
 };
 GameAction.removeDiPai = function () {
@@ -154,15 +167,22 @@ GameAction.removeDiPai = function () {
 };
 GameAction.overTurn = function (data) {
     cc.YL.info("收到overturn 当前操作玩家", data.activeUser);
-    // optional int64 activeUser = 1; //该谁操作
-    // optional playerActType actType = 2;
-    // optional int32 actTime = 3; // 操作时间
-    // optional bool canOut = 4; //是否大得起上家出的牌
     this.bindNodeName();
     this.selfHandPokerNodeComp.setTouchEvent(true);
+    this.selfNodeComp.showHeadAnimation(false);
+    this.rightNodeComp.showHeadAnimation(false);
+    this.leftNodeComp.showHeadAnimation(false);
+    for (var i = 0; i < data.playerRate.length; i++) {
+        if (this.selfID == data.playerRate[i].userId) {
+            var UIROOT = cc.find("DDZ_UIROOT");
+            cc.YL.DDZSelfRate = data.playerRate[i].rate;
+            UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initRate(data.playerRate[i].rate);// 只显示自己的倍数
+        }
+    }
+
     if (this.selfID == data.activeUser) {
-        var UIROOT = cc.find("DDZ_UIROOT");
-        UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initRate(data.rate);
+        this.selfNodeComp.updateOutWord(0);
+        this.selfNodeComp.showHeadAnimation(true);
         this.BtnNode.removeAllChildren();
         this.selfOutNode.removeAllChildren();
         if (data.canOut == false) {
@@ -185,9 +205,20 @@ GameAction.overTurn = function (data) {
             outCardNode.getComponent("DDZ_OutCard").initBtnStatus(data.isNewRound);
         }
     } else if (data.activeUser == cc.YL.DDZrightPlayerInfo.userId) {
+        this.rightNodeComp.showHeadAnimation(true);
         this.rightOutNode.removeAllChildren();
     } else if (data.activeUser == cc.YL.DDZleftPlayerInfo.userId) {
+        this.leftNodeComp.showHeadAnimation(true);
         this.leftOutNode.removeAllChildren();
+    }
+    if (data.isNewRound == true) {
+        setTimeout(function () {
+            this.selfNodeComp.updateOutWord(0);
+            this.rightNodeComp.updateOutWord(0);
+            this.leftNodeComp.updateOutWord(0);
+            this.leftOutNode.removeAllChildren();
+            this.rightOutNode.removeAllChildren();
+        }.bind(this), 300);
     }
 };
 GameAction.showPass = function (data) {
@@ -198,14 +229,31 @@ GameAction.showPass = function (data) {
     this.bindNodeName();
     if (this.selfID == data.retMsg.userId) {
         this.selfNodeComp.updateOutWord(1);
+        this.selfNodeComp.hideOffline();
     }
     if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         this.rightNodeComp.updateOutWord(1);
+        this.rightNodeComp.hideOffline();
     }
     if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
         this.leftNodeComp.updateOutWord(1);
+        this.leftNodeComp.hideOffline();
     }
 };
+GameAction.showDissUI = function (data) {
 
+    var UIROOT = cc.find("DDZ_UIROOT");
+    UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showDissUI(data);
+};
+GameAction.showDissResult = function (data) {
+
+    var UIROOT = cc.find("DDZ_UIROOT");
+    UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showDissResult("房间已解散");
+};
+GameAction.outCardFail = function () {
+    this.selfHandPokerNodeComp.setTouchEvent(true);
+    var UIROOT = cc.find("DDZ_UIROOT");
+    UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").showTipStr("非法牌型，出牌失败");
+};
 module.exports = GameAction;
 cc.YL.DDZGameAction = GameAction;

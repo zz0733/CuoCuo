@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pz_heng",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      406,
+      236,
+      58,
+      52
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      58,
+      52
+    ],
+    "rotated": 1
+  }
+}

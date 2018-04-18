@@ -17,36 +17,31 @@ cc._RF.push(module, '6d2e8GplfZOpbXGi5Jy8LaR', 'DDZ_PlayerLeftPoker');
  * 左边玩家对于手牌的更新
  * 初始化
  * 等
- * 包含打出的牌******/
+ * ***/
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        cardNum: 0
     },
 
     // LIFE-CYCLE CALLBACKS:
 
     // onLoad () {},
 
-    start: function start() {}
-}
+    start: function start() {},
 
-// update (dt) {},
-);
+    initHandPokerCount: function initHandPokerCount(cardNum) {
+        cc.YL.info("左边玩家的手牌数", cardNum);
+        this.cardNum = cardNum;
+        this.node.getChildByName("CardBG").getChildByName("Num").getComponent(cc.Label).string = this.cardNum;
+        this.node.getChildByName("CardBG").active = true;
+    },
+    cleanHandPokerCount: function cleanHandPokerCount() {
+        this.node.getChildByName("CardBG").getChildByName("Num").getComponent(cc.Label).string = "";
+        this.node.getChildByName("CardBG").active = false;
+    }
+    // update (dt) {},
+});
 
 cc._RF.pop();

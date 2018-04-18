@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_win",
+    "texture": "bf62de56-1ceb-46bb-a3e2-1d40eb66e59e",
+    "atlas": "a72d33c6-e180-414d-aa3b-ccf7fc33cce8",
+    "rect": [
+      98,
+      2,
+      164,
+      137
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      168,
+      139
+    ],
+    "rotated": 1
+  }
+}

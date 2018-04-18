@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cjRoom",
+    "texture": "935b02f6-19ff-42dc-8d79-a8aa0b125af5",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      191,
+      650
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      193,
+      652
+    ],
+    "capInsets": [
+      168,
+      0,
+      20,
+      0
+    ]
+  }
+}

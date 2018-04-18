@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_bikuang_gdyx2",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      172,
+      842,
+      133,
+      31
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      31
+    ]
+  }
+}

@@ -1,0 +1,727 @@
+[
+  {
+    "__type__": "cc.SceneAsset",
+    "_name": "login",
+    "scene": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Scene",
+    "_name": "New Node",
+    "_children": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      }
+    ],
+    "_anchorPoint": {
+      "__type__": "cc.Vec2"
+    },
+    "autoReleaseAssets": {}
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "global",
+    "_parent": {
+      "__id__": 1
+    },
+    "_components": [
+      {
+        "__type__": "697327HsPFER4ZHPSO4LnVQ",
+        "node": {
+          "__id__": 2
+        },
+        "enableUpdate": false,
+        "musicValume": 0.9
+      },
+      {
+        "__type__": "37bdfj7iy9Brp6KX7ZHC2BL",
+        "node": {
+          "__id__": 2
+        },
+        "zhuanquanPre": {
+          "__uuid__": "37Yn48LRFIPr4BGy3LMdJB"
+        },
+        "minSingleButtonPre": {
+          "__uuid__": "edvNmPkAFDxIDDqB28pVSk"
+        },
+        "minDoubleButtonPre": {
+          "__uuid__": "3bYi4euANCGJwLqR9lN7nX"
+        }
+      }
+    ],
+    "_id": "45Y/8ckfZAKb5seVOCle19",
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 667,
+      "y": 375
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Canvas",
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [
+      {
+        "__id__": 4
+      },
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 6
+      },
+      {
+        "__id__": 9
+      },
+      {
+        "__id__": 11
+      },
+      {
+        "__id__": 12
+      },
+      {
+        "__id__": 13
+      },
+      {
+        "__id__": 14
+      },
+      {
+        "__id__": 15
+      },
+      {
+        "__id__": 16
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Canvas",
+        "node": {
+          "__id__": 3
+        },
+        "_designResolution": {
+          "__type__": "cc.Size",
+          "width": 1334,
+          "height": 750
+        },
+        "_fitWidth": true
+      },
+      {
+        "__type__": "e7e75qCAadM+6Ba47D54W/o",
+        "node": {
+          "__id__": 3
+        }
+      },
+      {
+        "__type__": "c424aYwfbtDuqqMAFrvKD9U",
+        "node": {
+          "__id__": 3
+        },
+        "manifestUrl": {
+          "__uuid__": "21cHsQY/FGJqHw4aMwGJfl"
+        },
+        "updatePanelPrefab": {
+          "__uuid__": "d68D57S1RAYLeQrpjbyc3x"
+        }
+      }
+    ],
+    "_id": "601ahZgpxLLLybHCqfGZWp",
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1334,
+      "height": 750
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 667,
+      "y": 375
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "bg",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 4
+        },
+        "_spriteFrame": {
+          "__uuid__": "9c5Ee8rWlJp4yg+sqY1FCr"
+        },
+        "_sizeMode": 0
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1334,
+      "height": 750
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "editBox",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.EditBox",
+        "node": {
+          "__id__": 5
+        },
+        "_useOriginalSize": false,
+        "_N$backgroundImage": {
+          "__uuid__": "675ovJ2tVK2aLYfgPUWOMv"
+        },
+        "_N$returnType": 1,
+        "_N$inputMode": 6,
+        "_N$fontSize": 29,
+        "_N$fontColor": {
+          "__type__": "cc.Color"
+        },
+        "_N$placeholder": " Enter ID",
+        "_N$placeholderFontSize": 40,
+        "_N$maxLength": 6
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 160,
+      "height": 40
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 176,
+      "y": -28
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "btnWxLogin",
+    "_parent": {
+      "__id__": 3
+    },
+    "_children": [
+      {
+        "__id__": 7
+      },
+      {
+        "__id__": 8
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 6
+        },
+        "_spriteFrame": {
+          "__uuid__": "74DzrlgSNG1r6VWJ8Sedgx"
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      },
+      {
+        "__type__": "cc.Button",
+        "node": {
+          "__id__": 6
+        },
+        "transition": 3,
+        "pressedColor": {
+          "__type__": "cc.Color",
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "zoomScale": 1.1,
+        "pressedSprite": {
+          "__uuid__": "e97GVMl6JHh5Ml5qEDdSGa"
+        },
+        "_N$normalColor": {
+          "__type__": "cc.Color",
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "_N$disabledColor": {
+          "__type__": "cc.Color",
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "_N$disabledSprite": {
+          "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
+        },
+        "_N$target": {
+          "__id__": 6
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 260,
+      "height": 100
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -180,
+      "y": -120
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "wechat",
+    "_parent": {
+      "__id__": 6
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 7
+        },
+        "_spriteFrame": {
+          "__uuid__": "7cr17ZChZJNZ5yd++fj/eL"
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 52,
+      "height": 53
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -79,
+      "y": 5
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Label",
+    "_parent": {
+      "__id__": 6
+    },
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 8
+        },
+        "_useOriginalSize": false,
+        "_actualFontSize": 34,
+        "_fontSize": 36,
+        "_enableWrapText": false,
+        "_N$file": {
+          "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+        },
+        "_isSystemFontUsed": false,
+        "_N$string": "微信登录",
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1,
+        "_N$overflow": 2
+      },
+      {
+        "__type__": "cc.LabelOutline",
+        "node": {
+          "__id__": 8
+        },
+        "_color": {
+          "__type__": "cc.Color",
+          "r": 17,
+          "g": 121,
+          "b": 42
+        },
+        "_width": 2
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 254,
+      "g": 254,
+      "b": 254
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 140,
+      "height": 50
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 21,
+      "y": 5
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "btnYkLogin",
+    "_parent": {
+      "__id__": 3
+    },
+    "_children": [
+      {
+        "__id__": 10
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 9
+        },
+        "_spriteFrame": {
+          "__uuid__": "74DzrlgSNG1r6VWJ8Sedgx"
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      },
+      {
+        "__type__": "cc.Button",
+        "node": {
+          "__id__": 9
+        },
+        "transition": 3,
+        "pressedColor": {
+          "__type__": "cc.Color",
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "zoomScale": 1.1,
+        "pressedSprite": {
+          "__uuid__": "e97GVMl6JHh5Ml5qEDdSGa"
+        },
+        "_N$normalColor": {
+          "__type__": "cc.Color",
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "_N$disabledColor": {
+          "__type__": "cc.Color",
+          "r": 255,
+          "g": 255,
+          "b": 255
+        },
+        "_N$disabledSprite": {
+          "__uuid__": "29FYIk+N1GYaeWH/q1NxQO"
+        },
+        "_N$target": {
+          "__id__": 9
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 260,
+      "height": 100
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 180,
+      "y": -120
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Label",
+    "_parent": {
+      "__id__": 9
+    },
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 10
+        },
+        "_useOriginalSize": false,
+        "_actualFontSize": 34,
+        "_fontSize": 36,
+        "_enableWrapText": false,
+        "_N$file": {
+          "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+        },
+        "_isSystemFontUsed": false,
+        "_N$string": "游客登录",
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1,
+        "_N$overflow": 2
+      },
+      {
+        "__type__": "cc.LabelOutline",
+        "node": {
+          "__id__": 10
+        },
+        "_color": {
+          "__type__": "cc.Color",
+          "r": 17,
+          "g": 121,
+          "b": 42
+        },
+        "_width": 2
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 254,
+      "g": 254,
+      "b": 254
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 140,
+      "height": 50
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": 5
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label1",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 11
+        },
+        "_useOriginalSize": false,
+        "_actualFontSize": 18,
+        "_fontSize": 18,
+        "_lineHeight": 24,
+        "_N$file": {
+          "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+        },
+        "_isSystemFontUsed": false,
+        "_N$string": "本游戏适合10岁以上的用户使用，为了您的健康，请合理安排游戏时间",
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+      },
+      {
+        "__type__": "cc.LabelOutline",
+        "node": {
+          "__id__": 11
+        },
+        "_color": {
+          "__type__": "cc.Color"
+        }
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 243,
+      "g": 97,
+      "b": 40
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 564.99,
+      "height": 24
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": -246
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label2",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 12
+        },
+        "_useOriginalSize": false,
+        "_actualFontSize": 18,
+        "_fontSize": 18,
+        "_lineHeight": 24,
+        "_N$file": {
+          "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+        },
+        "_isSystemFontUsed": false,
+        "_N$string": "抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。",
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+      },
+      {
+        "__type__": "cc.LabelOutline",
+        "node": {
+          "__id__": 12
+        },
+        "_color": {
+          "__type__": "cc.Color"
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1010,
+      "height": 24
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": -285
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "version",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 13
+        },
+        "_useOriginalSize": false,
+        "_actualFontSize": 20,
+        "_fontSize": 20,
+        "_lineHeight": 20,
+        "_enableWrapText": false,
+        "_isSystemFontUsed": false,
+        "_N$string": "version:1.0.0",
+        "_N$horizontalAlign": 2,
+        "_N$verticalAlign": 1
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 229,
+      "b": 90
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 114.51,
+      "height": 20
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 655,
+      "y": -355
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Haishang",
+    "_parent": {
+      "__id__": 3
+    },
+    "_active": false,
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 14
+        },
+        "_spriteFrame": {
+          "__uuid__": "abTJ7V8otGN4pltXnTCb1a"
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 73,
+      "height": 183
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 301,
+      "y": 192
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Title",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 15
+        },
+        "defaultAnimation": "animation",
+        "_N$skeletonData": {
+          "__uuid__": "faftqPCJ5Hja0xxX62BaDh"
+        }
+      }
+    ],
+    "_scaleX": 0.9,
+    "_scaleY": 0.9,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": 58
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label3",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 16
+        },
+        "_useOriginalSize": false,
+        "_actualFontSize": 18,
+        "_fontSize": 18,
+        "_lineHeight": 24,
+        "_N$file": {
+          "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+        },
+        "_isSystemFontUsed": false,
+        "_N$string": "经营许可证编号：川B2-20170147   川网文：(2016)0729-016号   出版物号：ISBN978-7-498-02876-1   软著登记字第2097671号\n",
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+      },
+      {
+        "__type__": "cc.LabelOutline",
+        "node": {
+          "__id__": 16
+        },
+        "_color": {
+          "__type__": "cc.Color"
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 1157.8,
+      "height": 48
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": -333
+    }
+  }
+]

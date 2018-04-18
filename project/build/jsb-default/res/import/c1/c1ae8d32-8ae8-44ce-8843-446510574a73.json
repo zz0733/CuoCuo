@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_kubile",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      520,
+      2,
+      105,
+      106
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      107,
+      108
+    ]
+  }
+}

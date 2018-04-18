@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_shengpai",
+    "texture": "36hssLDwlGtJrkeNGNd9ut",
+    "rect": [
+      214,
+      2,
+      36,
+      45
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      36,
+      45
+    ]
+  }
+}

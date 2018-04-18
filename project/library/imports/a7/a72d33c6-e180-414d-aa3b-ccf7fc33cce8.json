@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "dajiesuan.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "dz_dajiesuan_0": {
+      "__uuid__": "05514249-d0fb-4617-9a7d-b3d271e3b345"
+    },
+    "dz_dajiesuan_4": {
+      "__uuid__": "c7b8a2db-224b-4367-a3db-d185d5c16e26"
+    },
+    "dz_dajiesuan_di1": {
+      "__uuid__": "48da7a72-db4c-4e8b-b480-6e80333f993a"
+    },
+    "dz_dajiesuan_di2": {
+      "__uuid__": "16a7839c-2add-4264-8144-ca0a5213f208"
+    },
+    "dz_dajiesuan_di3": {
+      "__uuid__": "1c49243b-ca84-41dc-a54f-3d11ac748576"
+    },
+    "dz_dajiesuan_t3": {
+      "__uuid__": "a34281b0-deeb-47e1-bd01-647bb127574f"
+    },
+    "dz_win": {
+      "__uuid__": "ec3af22e-4d4c-4f7a-9af8-a770fd248458"
+    }
+  }
+}

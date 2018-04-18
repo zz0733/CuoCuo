@@ -659,7 +659,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 238,
+      "width": 178,
       "height": 46
     },
     "_rotationX": 0,
@@ -690,7 +690,7 @@
       "__uuid__": "083756aa-7a5b-4b41-8019-f905ca53cede"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -6258,8 +6258,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 231.87,
-      "height": 40
+      "width": 192.87,
+      "height": 51
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -6268,7 +6268,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 293,
-      "y": 325
+      "y": 326
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -6286,8 +6286,8 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_actualFontSize": 33,
-    "_fontSize": 33,
+    "_actualFontSize": 29,
+    "_fontSize": 29,
     "_lineHeight": 33,
     "_enableWrapText": true,
     "_N$file": {

@@ -1,0 +1,141 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "dating.plist",
+  "_spriteFrames": {
+    "2": {
+      "__uuid__": "90Vw+Kjs1PTKOyEebzCEbQ"
+    },
+    "anniu_huodong1": {
+      "__uuid__": "24f3np8edEZ5fc9itISmCz"
+    },
+    "anniu_huodong2": {
+      "__uuid__": "e427C2CR9HUYWNe5oEznH/"
+    },
+    "doudizhu": {
+      "__uuid__": "e2RXjz87VFt4NaIl0OA5Su"
+    },
+    "gong": {
+      "__uuid__": "48FZkCC2NJc5SU/LuIeNxr"
+    },
+    "shengming": {
+      "__uuid__": "9eHmX89VFKXqXs5NZyB3Ub"
+    },
+    "ty_anniu_shop": {
+      "__uuid__": "c77zuh95FM3rG7zmOw57D+"
+    },
+    "ty_biankuang_gdyx1": {
+      "__uuid__": "bacjvQFlBGOahs/i0ZL0NL"
+    },
+    "ty_biaoti_lingque": {
+      "__uuid__": "e2iUsZW71CTZ1o0xaZxO63"
+    },
+    "ty_biaoti_shop1": {
+      "__uuid__": "b8U8A94nFFjZbpSHwfLo4A"
+    },
+    "ty_biaoti_shop2": {
+      "__uuid__": "08N1aqeltLQYAZ+QXKU87e"
+    },
+    "ty_bikuang_gdyx2": {
+      "__uuid__": "13jr9S8b9PmJtMgGDviXQG"
+    },
+    "ty_dating_anniu1": {
+      "__uuid__": "ea4Ur0tSRAsb2PlF0PHHMD"
+    },
+    "ty_dating_anniu2": {
+      "__uuid__": "a3PUFd+itL6604a2UwPxc2"
+    },
+    "ty_dating_anniu3": {
+      "__uuid__": "7axRyyifdPYKF67o04AmC/"
+    },
+    "ty_dating_anniu4": {
+      "__uuid__": "512ny6xAhBZIZUZnA55Esq"
+    },
+    "ty_dating_anniu5": {
+      "__uuid__": "dcFHdmzKVPdqr6f8IIjZDq"
+    },
+    "ty_dating_di": {
+      "__uuid__": "c21z4UmDFLHbxlf/igWynN"
+    },
+    "ty_dating_dian": {
+      "__uuid__": "46usTOYHxEo6cDmVwy3mA2"
+    },
+    "ty_dating_renzheng": {
+      "__uuid__": "03KESV2NZGsYZ8n+NSXXCc"
+    },
+    "ty_dikuang_dating1": {
+      "__uuid__": "73XpC4CelCu7hvggwRGQiv"
+    },
+    "ty_dikuang_dating4": {
+      "__uuid__": "bfCzpohYZMEbwyXWW7k4YL"
+    },
+    "ty_fangka_1": {
+      "__uuid__": "66w5SSpqFFgquVL26PcKyH"
+    },
+    "ty_fangka_3": {
+      "__uuid__": "3aoIHTN8ZMRJqcmAu/0ZpE"
+    },
+    "ty_fangka_4": {
+      "__uuid__": "c0Tz/WMbJJOp+WBP+VwVgz"
+    },
+    "ty_fangka_5": {
+      "__uuid__": "48Ym5p6txKzJFogGxnwd1a"
+    },
+    "ty_fangka_6": {
+      "__uuid__": "8dJ1xhL/BO1rOupHswPF5h"
+    },
+    "ty_fx_mj1": {
+      "__uuid__": "f9yiFbXg5N7LEkRvU/Inf6"
+    },
+    "ty_fx_mj2": {
+      "__uuid__": "65MyMgdJxHjJ3rgGyMSNDU"
+    },
+    "ty_fx_niuniu": {
+      "__uuid__": "434Be4A5VOV6C7lWpcklt8"
+    },
+    "ty_fx_sg": {
+      "__uuid__": "6fz7+l9lFMpptr2jcB2qii"
+    },
+    "ty_fx_wahua": {
+      "__uuid__": "66RLA1XU5CMoj86RR8NZTW"
+    },
+    "ty_gonggao1": {
+      "__uuid__": "9f1k1yyv5CKKzLEqmr6Wdx"
+    },
+    "ty_gonggao2": {
+      "__uuid__": "b7awg2ASJLHqpzNocdEqru"
+    },
+    "ty_jiaan_gdyx": {
+      "__uuid__": "a1QjAL/zZObp6cKjVk7lj7"
+    },
+    "ty_shop_bg": {
+      "__uuid__": "1a5pe5D7BFd5NyINw13TyP"
+    },
+    "ty_shop_bgkuang": {
+      "__uuid__": "7de60r13VLeZ/NfSfeiSMY"
+    },
+    "ty_zi_gdyx 1": {
+      "__uuid__": "68qU7hhTtIcrK3a22Qkty8"
+    },
+    "ty_zi_gdyx": {
+      "__uuid__": "bbwH75rDNH7K9qZZt8opcx"
+    },
+    "ty_zi_gdyx2": {
+      "__uuid__": "9fziLWjXRNnYk1Ie2Dilpy"
+    },
+    "wenlingwahua": {
+      "__uuid__": "cdCCauM0FB/YRj1oJuuBCP"
+    },
+    "zhanji_ddz": {
+      "__uuid__": "26GLlWLPxHe4HeQKbQof6B"
+    },
+    "zhanji_ddz1": {
+      "__uuid__": "bfFouMyPNPj51kKDbLOI0S"
+    },
+    "zhanji_scmj": {
+      "__uuid__": "5ayqe586RLlZINNLCM4WvT"
+    },
+    "zhanji_scmj1": {
+      "__uuid__": "bako4/TDJMQLzmKXtp/cOy"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_zi_zhang",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      146,
+      976,
+      42,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      44,
+      46
+    ]
+  }
+}

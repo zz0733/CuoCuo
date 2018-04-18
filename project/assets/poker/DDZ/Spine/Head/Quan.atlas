@@ -1,0 +1,76 @@
+
+Quan.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Huan01
+  rotate: true
+  xy: 706, 3
+  size: 95, 96
+  orig: 97, 98
+  offset: 1, 1
+  index: -1
+Huan02
+  rotate: true
+  xy: 902, 4
+  size: 94, 96
+  orig: 96, 98
+  offset: 1, 1
+  index: -1
+Huan03
+  rotate: false
+  xy: 804, 3
+  size: 96, 95
+  orig: 98, 97
+  offset: 1, 1
+  index: -1
+Huan04
+  rotate: false
+  xy: 508, 3
+  size: 97, 95
+  orig: 99, 97
+  offset: 1, 1
+  index: -1
+Huan05
+  rotate: false
+  xy: 2, 4
+  size: 101, 94
+  orig: 103, 96
+  offset: 1, 1
+  index: -1
+Huan06
+  rotate: false
+  xy: 105, 6
+  size: 101, 92
+  orig: 103, 94
+  offset: 1, 1
+  index: -1
+Huan07
+  rotate: false
+  xy: 208, 2
+  size: 99, 96
+  orig: 101, 98
+  offset: 1, 1
+  index: -1
+Huan08
+  rotate: false
+  xy: 409, 2
+  size: 97, 96
+  orig: 99, 98
+  offset: 1, 1
+  index: -1
+Huan09
+  rotate: true
+  xy: 309, 2
+  size: 96, 98
+  orig: 98, 100
+  offset: 1, 1
+  index: -1
+Huan10
+  rotate: true
+  xy: 607, 3
+  size: 95, 97
+  orig: 97, 99
+  offset: 1, 1
+  index: -1

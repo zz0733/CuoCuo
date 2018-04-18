@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_id_dikuang2",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      763,
+      848,
+      109,
+      26
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      109,
+      26
+    ],
+    "rotated": 1
+  }
+}

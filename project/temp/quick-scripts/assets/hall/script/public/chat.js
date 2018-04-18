@@ -28,6 +28,7 @@ cc.Class({
         }
         for (var _i = 0; _i < exporText.length; _i++) {
             var text = textList.getChildByName("text" + _i);
+            text.active = true;
             var content = text.getChildByName('content').getComponent(cc.Label);
             content.string = exporText[_i];
             text.on('click', this.onTextClick.bind(this, _i));

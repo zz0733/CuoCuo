@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "huodong1",
+    "texture": "f7b8YSnYZPtpa1cYXQeUM4",
+    "rect": [
+      0,
+      0,
+      717,
+      545
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      717,
+      545
+    ]
+  }
+}

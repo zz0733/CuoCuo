@@ -24,15 +24,20 @@ cc.Class({
     },
     // update (dt) {},
 
-    show(data, startWorldPos, endWoldPos){
+    show(data, startWorldPos, endWoldPos,isExchange){
         this.hideAll();
-        var startPos         = this.node.convertToNodeSpaceAR(startWorldPos);
-        var endPos           = this.node.convertToNodeSpaceAR(endWoldPos);
-        var nodeName         = interactCfg[data.content].node
+        if(isExchange == true){
+            var startPos         = startWorldPos;
+            var endPos           = endWoldPos;
+        }else{
+            var startPos         = this.node.convertToNodeSpaceAR(startWorldPos);
+            var endPos           = this.node.convertToNodeSpaceAR(endWoldPos);
+        }
+        var nodeName         = interactCfg[data.content].node;
         this.animNode        = this.node.getChildByName(nodeName);
         this.animNode.active = true;
         this.animNode.setPosition(startPos);
-        this.spAnim          = this.animNode.getComponent(sp.Skeleton)
+        this.spAnim          = this.animNode.getComponent(sp.Skeleton);
         var moveTime         = cc.pDistance(startPos, endPos)/1500;
         var moveAct          = cc.sequence(cc.moveTo(moveTime, endPos), cc.callFunc(function(){
             Audio.playEffect('hall', data.content + '.mp3');

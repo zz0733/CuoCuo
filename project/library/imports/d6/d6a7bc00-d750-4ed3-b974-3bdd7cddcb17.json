@@ -73,10 +73,10 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 286
+        "__id__": 299
       },
       {
-        "__id__": 287
+        "__id__": 300
       }
     ],
     "_prefab": null,
@@ -923,7 +923,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 286,
+      "width": 255,
       "height": 86
     },
     "_rotationX": 0,
@@ -932,7 +932,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 153,
+      "x": 147,
       "y": -2
     },
     "_skewX": 0,
@@ -954,7 +954,7 @@
       "__uuid__": "735e90b8-09e9-42bb-b86f-820c111908af"
     },
     "_type": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 0,
     "_fillType": 0,
     "_fillCenter": {
       "__type__": "cc.Vec2",
@@ -1013,7 +1013,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 1
+      "y": 0
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1093,7 +1093,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 0
+      "y": -1
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2889,7 +2889,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "wenlingwahua",
+    "_name": "doudizhu",
     "_objFlags": 0,
     "_parent": {
       "__id__": 70
@@ -2903,7 +2903,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "3ewT9DbfdDd5S+MJ3enrBM",
+    "_id": "33PlJSYxtIL55gEYXL3vz2",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -2920,7 +2920,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 344,
+      "width": 346,
       "height": 265
     },
     "_rotationX": 0,
@@ -2929,7 +2929,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 8,
+      "x": 10,
       "y": 10
     },
     "_skewX": 0,
@@ -2948,7 +2948,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "cd0826ae-3341-41fd-8463-d6826eb8108f"
+      "__uuid__": "e24578f3-f3b5-45b7-835a-225d0e0394ae"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -2983,7 +2983,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "68j1wOgQhKxbGjWiAbHthE",
+    "_id": "65XiGshfxDJp9vS2eCsmgZ",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3009,7 +3009,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 4,
       "y": 0
     },
     "_skewX": 0,
@@ -3029,11 +3029,11 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Zikuang",
+    "defaultAnimation": "Doudizhu",
     "loop": true,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "f9f0e7b0-07d1-4f07-9bd6-4fb35879a63c"
+      "__uuid__": "fe9f6d55-0dd5-4edf-9bf6-b42ff809c2a4"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -3055,7 +3055,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "a7ten47wxAP4B8znMcI1mS",
+    "_id": "fd+WDnJMRBzoGJM+AKX7bz",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3081,7 +3081,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 4,
       "y": 0
     },
     "_skewX": 0,
@@ -3104,9 +3104,7 @@
     "defaultAnimation": "Niuniu_ying",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "52b211e6-b5a1-45a8-93b4-6fc6e502c7ee"
-    },
+    "_N$skeletonData": null,
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3127,7 +3125,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "fdk5c6VS1OKYjV+nhsAJiT",
+    "_id": "a144oxR09MzJYluf+FinxW",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3153,7 +3151,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 4,
       "y": 0
     },
     "_skewX": 0,
@@ -3173,12 +3171,10 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Zisaoguang",
+    "defaultAnimation": "Lansaoguang",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "47b67076-8a7b-497f-88ce-83bd72360f9c"
-    },
+    "_N$skeletonData": null,
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3199,7 +3195,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "faCXvg25xFRaFc2rbgWQJR",
+    "_id": "e5iODkErtL8Z04hSjA5zyR",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3225,7 +3221,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 4,
       "y": 0
     },
     "_skewX": 0,
@@ -3248,9 +3244,7 @@
     "defaultAnimation": "Niuniu",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "46f25e6a-2681-4e2c-968c-f1a3e7ee7a5e"
-    },
+    "_N$skeletonData": null,
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3271,7 +3265,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "b4WsM3lLJPA6mjPqku38Xr",
+    "_id": "43hTxUFSBE9p++lwT3f59c",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3297,7 +3291,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": 4,
       "y": 0
     },
     "_skewX": 0,
@@ -3317,12 +3311,10 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Zi_niuniu",
+    "defaultAnimation": "Lan_niuniu",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": {
-      "__uuid__": "f0550f5c-90ab-421c-9a8f-26b33e9dd3aa"
-    },
+    "_N$skeletonData": null,
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3464,7 +3456,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "doudizhu",
+    "_name": "wenlingwahua",
     "_objFlags": 0,
     "_parent": {
       "__id__": 85
@@ -3478,7 +3470,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "33PlJSYxtIL55gEYXL3vz2",
+    "_id": "3ewT9DbfdDd5S+MJ3enrBM",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3495,7 +3487,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 346,
+      "width": 344,
       "height": 265
     },
     "_rotationX": 0,
@@ -3504,7 +3496,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 6,
+      "x": 5,
       "y": 10
     },
     "_skewX": 0,
@@ -3523,7 +3515,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "e24578f3-f3b5-45b7-835a-225d0e0394ae"
+      "__uuid__": "cd0826ae-3341-41fd-8463-d6826eb8108f"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -3558,7 +3550,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "65XiGshfxDJp9vS2eCsmgZ",
+    "_id": "68j1wOgQhKxbGjWiAbHthE",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3584,7 +3576,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -3,
       "y": 0
     },
     "_skewX": 0,
@@ -3604,11 +3596,11 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Gengduoyouxi",
+    "defaultAnimation": "Zikuang",
     "loop": true,
     "_premultipliedAlpha": true,
     "_N$skeletonData": {
-      "__uuid__": "fe9f6d55-0dd5-4edf-9bf6-b42ff809c2a4"
+      "__uuid__": "f9f0e7b0-07d1-4f07-9bd6-4fb35879a63c"
     },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
@@ -3630,7 +3622,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "fd+WDnJMRBzoGJM+AKX7bz",
+    "_id": "a7ten47wxAP4B8znMcI1mS",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3656,7 +3648,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -3,
       "y": 0
     },
     "_skewX": 0,
@@ -3679,7 +3671,9 @@
     "defaultAnimation": "Niuniu_ying",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "52b211e6-b5a1-45a8-93b4-6fc6e502c7ee"
+    },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3700,7 +3694,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "a144oxR09MzJYluf+FinxW",
+    "_id": "fdk5c6VS1OKYjV+nhsAJiT",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3726,7 +3720,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -3,
       "y": 0
     },
     "_skewX": 0,
@@ -3746,10 +3740,12 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Lansaoguang",
+    "defaultAnimation": "Zisaoguang",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "47b67076-8a7b-497f-88ce-83bd72360f9c"
+    },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3770,7 +3766,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "e5iODkErtL8Z04hSjA5zyR",
+    "_id": "faCXvg25xFRaFc2rbgWQJR",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3796,7 +3792,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -3,
       "y": 0
     },
     "_skewX": 0,
@@ -3819,7 +3815,9 @@
     "defaultAnimation": "Niuniu",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "46f25e6a-2681-4e2c-968c-f1a3e7ee7a5e"
+    },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -3840,7 +3838,7 @@
       }
     ],
     "_prefab": null,
-    "_id": "43hTxUFSBE9p++lwT3f59c",
+    "_id": "b4WsM3lLJPA6mjPqku38Xr",
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
@@ -3866,7 +3864,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 0,
+      "x": -3,
       "y": 0
     },
     "_skewX": 0,
@@ -3886,10 +3884,12 @@
     "_enabled": true,
     "_paused": false,
     "defaultSkin": "",
-    "defaultAnimation": "Lan_niuniu",
+    "defaultAnimation": "Zi_niuniu",
     "loop": true,
     "_premultipliedAlpha": true,
-    "_N$skeletonData": null,
+    "_N$skeletonData": {
+      "__uuid__": "f0550f5c-90ab-421c-9a8f-26b33e9dd3aa"
+    },
     "_N$timeScale": 1,
     "_N$debugSlots": false,
     "_N$debugBones": false
@@ -4414,7 +4414,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 123,
-      "height": 102
+      "height": 96
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -4553,7 +4553,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 122,
-      "height": 86
+      "height": 82
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -4696,7 +4696,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 130,
-      "height": 86
+      "height": 82
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -4915,7 +4915,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 124,
-      "height": 95
+      "height": 91
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -5054,7 +5054,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 123,
-      "height": 95
+      "height": 91
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -10412,7 +10412,7 @@
     "_active": false,
     "_components": [
       {
-        "__id__": 285
+        "__id__": 298
       }
     ],
     "_prefab": null,
@@ -10552,27 +10552,6 @@
     "_children": [
       {
         "__id__": 262
-      },
-      {
-        "__id__": 268
-      },
-      {
-        "__id__": 272
-      },
-      {
-        "__id__": 275
-      },
-      {
-        "__id__": 277
-      },
-      {
-        "__id__": 279
-      },
-      {
-        "__id__": 281
-      },
-      {
-        "__id__": 283
       }
     ],
     "_tag": -1,
@@ -10617,7 +10596,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "bg",
+    "_name": "box",
     "_objFlags": 0,
     "_parent": {
       "__id__": 261
@@ -10627,14 +10606,75 @@
         "__id__": 263
       },
       {
-        "__id__": 265
+        "__id__": 269
+      },
+      {
+        "__id__": 273
+      },
+      {
+        "__id__": 295
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_id": "dcS+Wiuq1Lvb0S/t5xNeH2",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 0,
+      "height": 0
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "bg",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 262
+    },
+    "_children": [
+      {
+        "__id__": 264
+      },
+      {
+        "__id__": 266
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 267
+        "__id__": 268
       }
     ],
     "_prefab": null,
@@ -10660,8 +10700,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -10679,14 +10719,14 @@
     "_name": "ty_dikuang_zhanji1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 262
+      "__id__": 263
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 264
+        "__id__": 265
       }
     ],
     "_prefab": null,
@@ -10731,7 +10771,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 263
+      "__id__": 264
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10759,14 +10799,14 @@
     "_name": "shengming1",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 262
+      "__id__": 263
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 266
+        "__id__": 267
       }
     ],
     "_prefab": null,
@@ -10811,7 +10851,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 265
+      "__id__": 266
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10837,7 +10877,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 262
+      "__id__": 263
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -10865,18 +10905,18 @@
     "_name": "title",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 261
+      "__id__": 262
     },
     "_children": [
       {
-        "__id__": 269
+        "__id__": 270
       }
     ],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 271
+        "__id__": 272
       }
     ],
     "_prefab": null,
@@ -10907,7 +10947,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 325
+      "y": 268
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -10921,14 +10961,14 @@
     "_name": "titel",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 268
+      "__id__": 269
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 270
+        "__id__": 271
       }
     ],
     "_prefab": null,
@@ -10973,7 +11013,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 269
+      "__id__": 270
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11001,7 +11041,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 268
+      "__id__": 269
     },
     "_enabled": true,
     "_spriteFrame": null,
@@ -11022,20 +11062,856 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "btnClose",
+    "_name": "scrollView",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 261
+      "__id__": 262
+    },
+    "_children": [
+      {
+        "__id__": 274
+      },
+      {
+        "__id__": 280
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 294
+      },
+      {
+        "__id__": 278
+      }
+    ],
+    "_prefab": null,
+    "_id": "30czZ9icdAR7HEiLRvowHG",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 184,
+      "g": 184,
+      "b": 184,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 750,
+      "height": 450
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "scrollBar",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 273
+    },
+    "_children": [
+      {
+        "__id__": 275
+      }
+    ],
+    "_tag": -1,
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 277
+      },
+      {
+        "__id__": 292
+      },
+      {
+        "__id__": 293
+      }
+    ],
+    "_prefab": null,
+    "_id": "90Pqp4r/9OW4u9WDEKmNXq",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 238,
+      "g": 217,
+      "b": 227,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 12,
+      "height": 540
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 450,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "bar",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 274
     },
     "_children": [],
     "_tag": -1,
     "_active": true,
     "_components": [
       {
-        "__id__": 273
+        "__id__": 276
+      }
+    ],
+    "_prefab": null,
+    "_id": "5fPyi9kIdE6a+WFC6m81tG",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 236,
+      "g": 241,
+      "b": 245,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 10,
+      "height": 30
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -1,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 275
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "5c3bb932-6c3c-468f-88a9-c8c61d458641"
+    },
+    "_type": 1,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "cc.Scrollbar",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 274
+    },
+    "_enabled": true,
+    "_scrollView": {
+      "__id__": 278
+    },
+    "_touching": false,
+    "_opacity": 255,
+    "enableAutoHide": true,
+    "autoHideTime": 1,
+    "_N$handle": {
+      "__id__": 276
+    },
+    "_N$direction": 1
+  },
+  {
+    "__type__": "cc.ScrollView",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 273
+    },
+    "_enabled": true,
+    "content": {
+      "__id__": 279
+    },
+    "horizontal": false,
+    "vertical": true,
+    "inertia": true,
+    "brake": 0.75,
+    "elastic": true,
+    "bounceDuration": 0.28,
+    "scrollEvents": [],
+    "cancelInnerEvents": true,
+    "_N$horizontalScrollBar": null,
+    "_N$verticalScrollBar": {
+      "__id__": 277
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "content",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 280
+    },
+    "_children": [
+      {
+        "__id__": 282
       },
       {
-        "__id__": 274
+        "__id__": 284
+      },
+      {
+        "__id__": 286
+      },
+      {
+        "__id__": 288
+      },
+      {
+        "__id__": 290
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [],
+    "_prefab": null,
+    "_id": "b1TEP//J1A05If0C+Mr40t",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 1
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 750,
+      "height": 720
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 229
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "view",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 273
+    },
+    "_children": [
+      {
+        "__id__": 279
+      }
+    ],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 281
+      }
+    ],
+    "_prefab": null,
+    "_id": "b1TNYk/pBPtInCAlhX7Gmj",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 750,
+      "height": 450
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Mask",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 280
+    },
+    "_enabled": true,
+    "_type": 0,
+    "_segements": 64,
+    "_N$spriteFrame": null,
+    "_N$alphaThreshold": 1,
+    "_N$inverted": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label1",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 279
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 283
+      }
+    ],
+    "_prefab": null,
+    "_id": "f7luIDTUdP+K5tPZgi58sB",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 88,
+      "g": 39,
+      "b": 24,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 204.1,
+      "height": 23
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -360,
+      "y": -23
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 282
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 22,
+    "_fontSize": 22,
+    "_lineHeight": 23,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "亲爱的搓搓麻将用户:",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label2",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 279
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 285
+      }
+    ],
+    "_prefab": null,
+    "_id": "a6VnFUQrlFBbDYzM52p5gE",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 88,
+      "g": 39,
+      "b": 24,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 1
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 725.31,
+      "height": 75
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -360,
+      "y": -50
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 284
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 22,
+    "_fontSize": 22,
+    "_lineHeight": 25,
+    "_enableWrapText": false,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "      近期，国家主管部门发文要求行业规范自身，规范游戏市场，净化网络\n环境。我们作为行业 的一员，愿与广大用户一同维护健康、绿色的娱乐环\n境。",
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label3",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 279
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 287
+      }
+    ],
+    "_prefab": null,
+    "_id": "16iIG0R0lNuoHpMYtNKpui",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 88,
+      "g": 39,
+      "b": 24,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 748,
+      "height": 392
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -360,
+      "y": -308
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 286
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 22,
+    "_fontSize": 22,
+    "_lineHeight": 28,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "      我们在此郑重声明：\n      一、每局游戏结算后的积分仅仅是游戏对战后的成绩记录，在每个房间\n游戏结束后积分清零，不具备货币属性，不可流通，也不具有任何价值。\n      二、游戏里的房卡只属于游戏里的一个道具，仅能开设游戏房间使用，\n不具备其他功能，没有任何用途。\n      三、搓搓麻将严禁用户之间出现任何赌博行为，对用户所拥有的积分、\n房卡等不提供任何形式的回购、直接或变相兑换现金、实物、相互赠予、转\n让等服务及相关功能。\n      四、任何人不得以任何方式利用本游戏开设网上赌局、从事坐庄设赌\n“抽水”等网络赌博活动；不得提供游戏积分交易、兑换现金、财物的服务。\n      五、搓搓麻将设立公众号和官方客服两种监督举报方式，欢迎广大用户\n监督举报，一旦发现涉嫌赌博等违规违法行为，我司将立即封停账号，并向\n相关部门举报。\n",
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label4",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 279
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 289
+      }
+    ],
+    "_prefab": null,
+    "_id": "770NTIvNpF7Ji+8aZ9PGU5",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 88,
+      "g": 39,
+      "b": 24,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 726,
+      "height": 108
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -360,
+      "y": -535
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 288
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 22,
+    "_fontSize": 22,
+    "_lineHeight": 27,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "      棋牌文化作为中国传统文化的组成部分之一，已成为国民生活中不可或\n缺的娱乐休闲活动。为了共同营造一个健康、绿色的娱乐环境，需要各位用\n户的支持与配合，希望各位玩家文明游戏，拒绝赌博！搓搓麻将将继续专注\n于为玩家提供更具本地特色棋牌游戏服务，提倡玩家健康游戏，阳光娱乐！",
+    "_N$horizontalAlign": 0,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label5",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 279
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 291
+      }
+    ],
+    "_prefab": null,
+    "_id": "76wCU8T8tMb7DSXIyVV2d8",
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 88,
+      "g": 39,
+      "b": 24,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 176,
+      "height": 92
+    },
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 191,
+      "y": -659
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_opacityModifyRGB": false,
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Label",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 290
+    },
+    "_enabled": true,
+    "_useOriginalSize": false,
+    "_actualFontSize": 22,
+    "_fontSize": 22,
+    "_lineHeight": 23,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+    "_spacingX": 0,
+    "_N$string": "搓搓麻将运营团队\n2018年2月1日\n\n",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$fontFamily": "Arial",
+    "_N$overflow": 0
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 274
+    },
+    "_enabled": true,
+    "isAlignOnce": true,
+    "_target": null,
+    "_alignFlags": 37,
+    "_left": 350.07654921020657,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 237
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 274
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "5fe5dcaa-b513-4dc5-a166-573627b3a159"
+    },
+    "_type": 1,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 273
+    },
+    "_enabled": true,
+    "_spriteFrame": null,
+    "_type": 1,
+    "_sizeMode": 0,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "btnClose",
+    "_objFlags": 0,
+    "_parent": {
+      "__id__": 262
+    },
+    "_children": [],
+    "_tag": -1,
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 296
+      },
+      {
+        "__id__": 297
       }
     ],
     "_prefab": null,
@@ -11065,8 +11941,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 515,
-      "y": 322
+      "x": 405,
+      "y": 265
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -11080,7 +11956,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 272
+      "__id__": 295
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -11108,7 +11984,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 272
+      "__id__": 295
     },
     "_enabled": true,
     "transition": 3,
@@ -11150,388 +12026,8 @@
     "_N$normalSprite": null,
     "_N$disabledSprite": null,
     "_N$target": {
-      "__id__": 272
+      "__id__": 295
     }
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "New Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 261
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 276
-      }
-    ],
-    "_prefab": null,
-    "_id": "f7luIDTUdP+K5tPZgi58sB",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 88,
-      "g": 39,
-      "b": 24,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 204.1,
-      "height": 23
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": -357,
-      "y": 260
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 275
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 22,
-    "_fontSize": 22,
-    "_lineHeight": 23,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_N$string": "亲爱的搓搓麻将用户:",
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "New Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 261
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 278
-      }
-    ],
-    "_prefab": null,
-    "_id": "a6VnFUQrlFBbDYzM52p5gE",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 88,
-      "g": 39,
-      "b": 24,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 930.53,
-      "height": 50
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 6,
-      "y": 214
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 277
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 22,
-    "_fontSize": 22,
-    "_lineHeight": 25,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_N$string": "      近期，国家主管部门发文要求行业规范自身，规范游戏市场，净化网络环境。我们作为行业 \n的一员，愿与广大用户一同维护健康、绿色的娱乐环境。",
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "New Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 261
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 280
-      }
-    ],
-    "_prefab": null,
-    "_id": "16iIG0R0lNuoHpMYtNKpui",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 88,
-      "g": 39,
-      "b": 24,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 945.31,
-      "height": 336
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 8,
-      "y": 13
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 279
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 22,
-    "_fontSize": 22,
-    "_lineHeight": 28,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_N$string": "      我们在此郑重声明：\n      一、每局游戏结算后的积分仅仅是游戏对战后的成绩记录，在每个房间游戏结束后积分清零，\n不具备货币属性，不可流通，也不具有任何价值。\n      二、游戏里的房卡只属于游戏里的一个道具，仅能开设游戏房间使用，不具备其他功能，没\n有任何用途。\n      三、搓搓麻将严禁用户之间出现任何赌博行为，对用户所拥有的积分、房卡等不提供任何形\n式的回购、直接或变相兑换现金、实物、相互赠予、转让等服务及相关功能。\n      四、任何人不得以任何方式利用本游戏开设网上赌局、从事坐庄设赌“抽水”等网络赌博活\n动；不得提供游戏积分交易、兑换现金、财物的服务。\n      五、搓搓麻将设立公众号和官方客服两种监督举报方式，欢迎广大用户监督举报，一旦发现\n涉嫌赌博等违规违法行为，我司将立即封停账号，并向相关部门举报。\n",
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "New Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 261
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 282
-      }
-    ],
-    "_prefab": null,
-    "_id": "770NTIvNpF7Ji+8aZ9PGU5",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 88,
-      "g": 39,
-      "b": 24,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 946,
-      "height": 108
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 6,
-      "y": -185
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 281
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 22,
-    "_fontSize": 22,
-    "_lineHeight": 27,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_N$string": "      棋牌文化作为中国传统文化的组成部分之一，已成为国民生活中不可或缺的娱乐休闲活动。\n为了共同营造一个健康、绿色的娱乐环境，需要各位用户的支持与配合，希望各位玩家文明游戏，\n拒绝赌博！搓搓麻将将继续专注于为玩家提供更具本地特色棋牌游戏服务，提倡玩家健康游戏，\n阳光娱乐！",
-    "_N$horizontalAlign": 0,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "New Label",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 261
-    },
-    "_children": [],
-    "_tag": -1,
-    "_active": true,
-    "_components": [
-      {
-        "__id__": 284
-      }
-    ],
-    "_prefab": null,
-    "_id": "76wCU8T8tMb7DSXIyVV2d8",
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 88,
-      "g": 39,
-      "b": 24,
-      "a": 255
-    },
-    "_cascadeOpacityEnabled": true,
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 176,
-      "height": 92
-    },
-    "_rotationX": 0,
-    "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
-    "_position": {
-      "__type__": "cc.Vec2",
-      "x": 356,
-      "y": -285
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_localZOrder": 0,
-    "_globalZOrder": 0,
-    "_opacityModifyRGB": false,
-    "groupIndex": 0
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 283
-    },
-    "_enabled": true,
-    "_useOriginalSize": false,
-    "_actualFontSize": 22,
-    "_fontSize": 22,
-    "_lineHeight": 23,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_N$string": "搓搓麻将运营团队\n2018年2月1日\n\n",
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 0
   },
   {
     "__type__": "cc.Animation",
@@ -11591,6 +12087,12 @@
     "createRoomWahua": {
       "__uuid__": "3c40ba87-9213-4423-ba85-bdaa3c5a13c5"
     },
+    "createRoomDDZ": {
+      "__uuid__": "c6906fff-3b22-43dc-aa00-e89d4b6ad5ea"
+    },
+    "createRoomXuezhan": {
+      "__uuid__": "093aef42-b57a-4b1b-905c-dd9a6f301b2b"
+    },
     "zhanjiLayerPre": {
       "__uuid__": "343daefb-2236-4d99-bcbf-af4a6fa07268"
     },
@@ -11614,9 +12116,6 @@
     },
     "storePre": {
       "__uuid__": "a72ec386-6d0a-44d1-8da3-675247f30381"
-    },
-    "saiZi": {
-      "__uuid__": "cb612dc8-4e5e-470b-9584-5638146df491"
     }
   }
 ]

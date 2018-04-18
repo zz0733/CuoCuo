@@ -56,6 +56,19 @@
                 <key>sourceSize</key>
                 <string>{46,490}</string>
             </dict>
+            <key>dz_dajiesuan_di3.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{213,168},{31,27}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <false/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{31,27}}</string>
+                <key>sourceSize</key>
+                <string>{31,27}</string>
+            </dict>
             <key>dz_dajiesuan_t3.png</key>
             <dict>
                 <key>frame</key>
@@ -92,7 +105,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:6ae5db68421169b95886f4a903c9da8a$</string>
+            <string>$TexturePacker:SmartUpdate:a27c0a814c5974bf15652fb7584e78f3$</string>
             <key>textureFileName</key>
             <string>dajiesuan.png</string>
         </dict>

@@ -1,0 +1,108 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "DDZ.plist",
+  "_spriteFrames": {
+    "2": {
+      "__uuid__": "03qVvRe4NG3Kavl5yHhOOW"
+    },
+    "3": {
+      "__uuid__": "5czDLbEgBC2aYtOhTn/3tg"
+    },
+    "4": {
+      "__uuid__": "27zOj4FgRHd6QeWroJlbVo"
+    },
+    "5": {
+      "__uuid__": "b79oTAut1NAJXt3/p9PnC1"
+    },
+    "6": {
+      "__uuid__": "83YkZodYJJarwxJ7lxz8VP"
+    },
+    "7": {
+      "__uuid__": "02rZSlYuVF3K9byK/Zehc6"
+    },
+    "8": {
+      "__uuid__": "cdSL6D3pdNPKOWqQpfQybP"
+    },
+    "9": {
+      "__uuid__": "44yLuem6lNAb1llqN9FMJ/"
+    },
+    "10": {
+      "__uuid__": "e8Akx6r9xHVYTJjHu4Af9B"
+    },
+    "01": {
+      "__uuid__": "2fYYK5iApJyaef23xM24Tb"
+    },
+    "02": {
+      "__uuid__": "96bfL5GZZFb5RsYNMpuUpu"
+    },
+    "03": {
+      "__uuid__": "d2jahWc0lEe7wAgAVXSQBZ"
+    },
+    "04": {
+      "__uuid__": "90r3Xfmy1LCo6VoU1DGRPl"
+    },
+    "10a": {
+      "__uuid__": "dcOET/O+dCTpeYZHmcNZyv"
+    },
+    "2a": {
+      "__uuid__": "e4Xfg8DnFDB5jBoITMVR0m"
+    },
+    "3a": {
+      "__uuid__": "67JrcYaEBIAa1tlDIDI02U"
+    },
+    "4a": {
+      "__uuid__": "531vMBKfxE1r9xjYN3Ibtm"
+    },
+    "5a": {
+      "__uuid__": "40+k1zx5ND/7JYOJcwwk5K"
+    },
+    "6a": {
+      "__uuid__": "2cRae747FBJaBuNeMrGxbt"
+    },
+    "7a": {
+      "__uuid__": "deNhLm/HFGPrgqALEd3Bsb"
+    },
+    "8a": {
+      "__uuid__": "503SX0qEFAQpuXRlKu1/Pc"
+    },
+    "9a": {
+      "__uuid__": "d2MtMzeQpCS7kRIBYZw0CF"
+    },
+    "A": {
+      "__uuid__": "58Z7oeza1FBpJ0yOfZ6jeV"
+    },
+    "A1": {
+      "__uuid__": "3fGGfqlsVCF5239YktlmVK"
+    },
+    "B": {
+      "__uuid__": "64J6psJABPl5FAamM1rK3Z"
+    },
+    "D": {
+      "__uuid__": "80o5++N91KNqLDwboOLn1T"
+    },
+    "J": {
+      "__uuid__": "25Tv6FAoVPz4LlGPeORJhq"
+    },
+    "J1": {
+      "__uuid__": "8bwRO4YgBNZKu+tCQ9SgxC"
+    },
+    "K": {
+      "__uuid__": "a4wFCsitlBMoL5mHxqgZ+m"
+    },
+    "K1": {
+      "__uuid__": "35Ug/7s0FEi7RpGtEGMDVz"
+    },
+    "Q": {
+      "__uuid__": "dbQ7FVtmVPoL25JCCo3HsQ"
+    },
+    "Q1": {
+      "__uuid__": "93THdV+CBCW5ULQeOSt14L"
+    },
+    "W": {
+      "__uuid__": "ddKjCx3RpI3p26stKNrxOX"
+    },
+    "W1": {
+      "__uuid__": "3cLnqP/JdKs7X3/eVHIclV"
+    }
+  }
+}

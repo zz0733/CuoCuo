@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "15c5f42b-26b5-4385-bd56-a71f7ed19a56",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Maozi": {
+      "ver": "1.0.3",
+      "uuid": "fee6859e-2355-42af-913f-f02ef097c5fc",
+      "rawTextureUuid": "15c5f42b-26b5-4385-bd56-a71f7ed19a56",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -7.5,
+      "offsetY": 19,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 1005,
+      "height": 470,
+      "rawWidth": 1024,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

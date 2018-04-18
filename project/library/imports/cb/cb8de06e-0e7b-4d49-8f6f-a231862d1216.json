@@ -4,6 +4,15 @@
   "_objFlags": 0,
   "_rawFiles": null,
   "_spriteFrames": {
+    "2": {
+      "__uuid__": "90570f8a-8ecd-4f4c-a3b2-11e6f30846d0"
+    },
+    "anniu_huodong1": {
+      "__uuid__": "247f79e9-f1e7-4467-97dc-f62b484a60b3"
+    },
+    "anniu_huodong2": {
+      "__uuid__": "e4dbb0b6-091f-4751-858d-7b9a04ce71ff"
+    },
     "doudizhu": {
       "__uuid__": "e24578f3-f3b5-45b7-835a-225d0e0394ae"
     },
@@ -13,8 +22,20 @@
     "shengming": {
       "__uuid__": "9e1e65fc-f551-4a5e-a5ec-e4d67207751b"
     },
+    "ty_anniu_shop": {
+      "__uuid__": "c7ef3ba1-f791-4cde-b1bb-ce63b0e7b0fe"
+    },
     "ty_biankuang_gdyx1": {
       "__uuid__": "ba723bd0-1650-4639-a86c-fe2d192f434b"
+    },
+    "ty_biaoti_lingque": {
+      "__uuid__": "e2894b19-5bbd-424d-9d68-d31699c4eeb7"
+    },
+    "ty_biaoti_shop1": {
+      "__uuid__": "b853c03d-e271-458d-96e9-487c1f2e8e00"
+    },
+    "ty_biaoti_shop2": {
+      "__uuid__": "083756aa-7a5b-4b41-8019-f905ca53cede"
     },
     "ty_bikuang_gdyx2": {
       "__uuid__": "138ebf52-f1bf-4f98-9b4c-8060ef897406"
@@ -49,6 +70,21 @@
     "ty_dikuang_dating4": {
       "__uuid__": "bf0b3a68-8586-4c11-bc32-5d65bb93860b"
     },
+    "ty_fangka_1": {
+      "__uuid__": "66c39492-a6a1-4582-ab95-2f6e8f70ac87"
+    },
+    "ty_fangka_3": {
+      "__uuid__": "3aa081d3-37c6-4c44-9a9c-980bbfd19a44"
+    },
+    "ty_fangka_4": {
+      "__uuid__": "c04f3fd6-31b2-493a-9f96-04ff95c15833"
+    },
+    "ty_fangka_5": {
+      "__uuid__": "48626e69-eadc-4acc-9168-806c67c1dd5a"
+    },
+    "ty_fangka_6": {
+      "__uuid__": "8d275c61-2ff0-4ed6-b3ae-a47b303c5e61"
+    },
     "ty_fx_mj1": {
       "__uuid__": "f9ca215b-5e0e-4dec-b124-46f53f2277fa"
     },
@@ -73,6 +109,12 @@
     "ty_jiaan_gdyx": {
       "__uuid__": "a142300b-ff36-4e6e-9e9c-2a3564ee58fb"
     },
+    "ty_shop_bg": {
+      "__uuid__": "1ae697b9-0fb0-4577-9372-20dc35dd3c8f"
+    },
+    "ty_shop_bgkuang": {
+      "__uuid__": "7d7bad2b-d775-4b79-9fcd-7d27de892318"
+    },
     "ty_zi_gdyx 1": {
       "__uuid__": "68a94ee1-853b-4872-b2b7-6b6d9092dcbc"
     },
@@ -84,6 +126,18 @@
     },
     "wenlingwahua": {
       "__uuid__": "cd0826ae-3341-41fd-8463-d6826eb8108f"
+    },
+    "zhanji_ddz": {
+      "__uuid__": "2618b956-2cfc-477b-81de-40a6d0a1fe81"
+    },
+    "zhanji_ddz1": {
+      "__uuid__": "bf168b8c-c8f3-4f8f-9d64-2836cb388d12"
+    },
+    "zhanji_scmj": {
+      "__uuid__": "5acaa7b9-f3a4-4b95-920d-34b08ce16bd3"
+    },
+    "zhanji_scmj1": {
+      "__uuid__": "ba928e3f-4c32-4c40-bce6-297b69fdc3b2"
     }
   }
 }

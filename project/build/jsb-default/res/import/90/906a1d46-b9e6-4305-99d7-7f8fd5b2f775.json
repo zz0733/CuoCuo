@@ -1,0 +1,33 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "zuoOut",
+  "_duration": 0.36666666666666664,
+  "wrapMode": 36,
+  "curveData": {
+    "props": {
+      "position": [
+        {
+          "frame": 0,
+          "value": [
+            -815,
+            21
+          ]
+        },
+        {
+          "frame": 0.3333333333333333,
+          "value": [
+            -569,
+            21
+          ]
+        },
+        {
+          "frame": 0.36666666666666664,
+          "value": [
+            -577,
+            21
+          ]
+        }
+      ]
+    }
+  }
+}

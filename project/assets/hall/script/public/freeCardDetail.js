@@ -30,7 +30,8 @@ cc.Class({
     },
 
     setDetail(data, gameType) {
-        if (data && data.length !== 0) {
+        if (!data) return;
+        if (data.length !== 0) {
             this.noCard.active = false;
             for (let i in data) {
                 let item = cc.instantiate(this.itemPrefab);

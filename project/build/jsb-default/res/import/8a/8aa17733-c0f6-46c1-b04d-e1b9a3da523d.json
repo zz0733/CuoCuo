@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_fangwei_zhuanpan1",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      167,
+      574,
+      171,
+      170
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      173,
+      172
+    ]
+  }
+}

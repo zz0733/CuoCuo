@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wifi_3",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      697,
+      132,
+      36,
+      27
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      38,
+      29
+    ],
+    "rotated": 1
+  }
+}

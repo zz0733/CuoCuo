@@ -22,7 +22,7 @@ cc.Class({
         this.node.removeAllChildren();
         this._cardsList= [];
     },
-    initHandPoker: function (handPokerListID) {
+    initHandPoker: function (handPokerListID,isNewFaPai) {
         this.clearHandPoker();
         this.handPokerIDs = handPokerListID;
         this.selfPlayerHandPoker = [];
@@ -32,8 +32,9 @@ cc.Class({
             this.selfPlayerHandPoker.push(pokerObj);
         }
         this.selfPlayerHandPoker = this._sortPokerArrObj(this.selfPlayerHandPoker);
+        this.selfPlayerHandPoker.reverse();
         cc.YL.DDZHandPokerList = this.selfPlayerHandPoker;
-        this._updateHandPoker(this.selfPlayerHandPoker);
+        this._updateHandPoker(this.selfPlayerHandPoker,isNewFaPai);
         cc.YL.DDZPokerTip.startAnalysis();// 出牌更新玩家当前手牌后，分析手牌
     },
     _sortPokerArrObj: function (selfPlayerHandPoker) {
@@ -42,7 +43,7 @@ cc.Class({
         });
 
     },
-    _updateHandPoker: function (pokerList) {
+    _updateHandPoker: function (pokerList,isNewFaPai) {
         for (var i = 0; i < pokerList.length; i++) {
             var pokerNode = cc.instantiate(this.pokerPrefab);
             pokerNode.getComponent("DDZ_Poker").initPoker(pokerList[i]);
@@ -60,12 +61,26 @@ cc.Class({
             } else {
                 pokerNode.getChildByName("OwnerSign").active = false;
             }
+            if(isNewFaPai == true){
+                pokerNode.active  = false;
+            }
             this.node.addChild(pokerNode);
             this._cardsList.push(pokerNode);
         }
-        this.node.setPosition(this._pos);
+        this.node.setPosition(cc.p(30, -250));
+        if(isNewFaPai == true){
+            this.node.parent.getChildByName("HandPokerTouch").active = false;
+        }else{
+            this.setTouchEvent(true);
+        }
+
     },
     setTouchEvent: function (isTouch) {
+        var children = this.node.children;
+        for (var i = 0; i < children.length; i++) {
+            children[i].setPositionY(0);
+        }
+        cc.YL.playerOutPokerArr = [];
         if (isTouch == false) {
             this.node.parent.getChildByName("HandPokerTouch").active = false;
             var children = this.node.children;
@@ -73,13 +88,25 @@ cc.Class({
                 children[i].getChildByName("Cover").active = true;
             }
         } else {
-            this.node.parent.getChildByName("HandPokerTouch").active = true;
-            var children = this.node.children;
-            for (var i = 0; i < children.length; i++) {
-                children[i].getChildByName("Cover").active = false;
+            var BtnNode = cc.find("DDZ_UIROOT/MainNode/PlayerBtnNode");
+            if(BtnNode.getChildByName("DDZ_Pass")){
+                this.node.parent.getChildByName("HandPokerTouch").active = false;
+                var children = this.node.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].getChildByName("Cover").active = true;
+                }
+            }else{
+                this.node.parent.getChildByName("HandPokerTouch").active = true;
+                var children = this.node.children;
+                for (var i = 0; i < children.length; i++) {
+                    children[i].getChildByName("Cover").active = false;
+                }
             }
+
         }
 
 
     },
+
+
 });

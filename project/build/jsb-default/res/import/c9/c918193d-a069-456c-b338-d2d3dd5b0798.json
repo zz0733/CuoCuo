@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shang_tang",
+    "texture": "739MSisvhBGIvb3r+HgUoi",
+    "rect": [
+      358,
+      516,
+      43,
+      61
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      43,
+      61
+    ],
+    "rotated": 1
+  }
+}

@@ -1,7 +1,7 @@
 {
   "appKey": "",
   "appSecret": "",
-  "encryptJs": true,
+  "encryptJs": false,
   "excludeScenes": [],
   "includeAnySDK": false,
   "includeSDKBox": false,
@@ -18,7 +18,7 @@
     "portrait": false,
     "upsideDown": false
   },
-  "packageName": "com.youle.cuocuo",
+  "packageName": "com.scyoule.mahjong",
   "privateKey": "",
   "renderMode": "0",
   "startScene": "6714a913-0406-4bb5-a898-4c7e68ab15a1",

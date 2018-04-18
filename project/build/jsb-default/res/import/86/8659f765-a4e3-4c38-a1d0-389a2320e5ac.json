@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_pengyouquan_fx",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      336,
+      437,
+      50,
+      49
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      49
+    ]
+  }
+}

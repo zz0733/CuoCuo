@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_liaotian_biaoti",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      53,
+      379,
+      191,
+      58
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      191,
+      58
+    ],
+    "rotated": 1
+  }
+}

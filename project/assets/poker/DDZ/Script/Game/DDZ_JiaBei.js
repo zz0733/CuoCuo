@@ -13,12 +13,14 @@ cc.Class({
 //     optional bool isJiaBei = 2;
 // }
     onClickJiaBei: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_JIABEI_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             isJiaBei: true,
         });
     },
     onClickNoJiaBei: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_JIABEI_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             isJiaBei: false,

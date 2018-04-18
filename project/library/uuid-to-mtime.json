@@ -4,96 +4,6 @@
     "meta": 1511259271000,
     "relativePath": "image"
   },
-  "71561142-4c83-4933-afca-cb7a17f67053": {
-    "asset": 1511259271000,
-    "meta": 1521445072056,
-    "relativePath": "image/default_btn_disabled.png"
-  },
-  "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
-    "asset": 1511259271000,
-    "meta": 1521445072072,
-    "relativePath": "image/default_btn_normal.png"
-  },
-  "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
-    "asset": 1511259271000,
-    "meta": 1521445072084,
-    "relativePath": "image/default_btn_pressed.png"
-  },
-  "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
-    "asset": 1511259271000,
-    "meta": 1521445072096,
-    "relativePath": "image/default_panel.png"
-  },
-  "99170b0b-d210-46f1-b213-7d9e3f23098a": {
-    "asset": 1511259271000,
-    "meta": 1521445072099,
-    "relativePath": "image/default_progressbar_bg.png"
-  },
-  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
-    "asset": 1511259271000,
-    "meta": 1521445072122,
-    "relativePath": "image/default_progressbar.png"
-  },
-  "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
-    "asset": 1511259271000,
-    "meta": 1521445072125,
-    "relativePath": "image/default_radio_button_off.png"
-  },
-  "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
-    "asset": 1511259271000,
-    "meta": 1521445072149,
-    "relativePath": "image/default_radio_button_on.png"
-  },
-  "4bab67cb-18e6-4099-b840-355f0473f890": {
-    "asset": 1511259271000,
-    "meta": 1521445072153,
-    "relativePath": "image/default_scrollbar_bg.png"
-  },
-  "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
-    "asset": 1511259271000,
-    "meta": 1521445072172,
-    "relativePath": "image/default_scrollbar_vertical_bg.png"
-  },
-  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
-    "asset": 1511259271000,
-    "meta": 1521445072180,
-    "relativePath": "image/default_scrollbar_vertical.png"
-  },
-  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
-    "asset": 1511259271000,
-    "meta": 1521445072202,
-    "relativePath": "image/default_sprite_splash.png"
-  },
-  "0291c134-b3da-4098-b7b5-e397edbe947f": {
-    "asset": 1511259271000,
-    "meta": 1521445072206,
-    "relativePath": "image/default_scrollbar.png"
-  },
-  "6e056173-d285-473c-b206-40a7fff5386e": {
-    "asset": 1511259271000,
-    "meta": 1521445072224,
-    "relativePath": "image/default_sprite.png"
-  },
-  "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
-    "asset": 1511259271000,
-    "meta": 1521445072232,
-    "relativePath": "image/default_toggle_checkmark.png"
-  },
-  "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
-    "asset": 1511259271000,
-    "meta": 1521445072253,
-    "relativePath": "image/default_toggle_disabled.png"
-  },
-  "d29077ba-1627-4a72-9579-7b56a235340c": {
-    "asset": 1511259271000,
-    "meta": 1521445072262,
-    "relativePath": "image/default_toggle_normal.png"
-  },
-  "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
-    "asset": 1511259271000,
-    "meta": 1521445072268,
-    "relativePath": "image/default_toggle_pressed.png"
-  },
   "fc09f9bd-2cce-4605-b630-8145ef809ed6": {
     "asset": 1511259271000,
     "meta": 1511259271000,
@@ -128,96 +38,6 @@
     "asset": 1511259271000,
     "meta": 1511259271000,
     "relativePath": "prefab"
-  },
-  "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
-    "asset": 1511259271000,
-    "meta": 1521445072299,
-    "relativePath": "prefab/button.prefab"
-  },
-  "2c937608-2562-40ea-b264-7395df6f0cea": {
-    "asset": 1511259271000,
-    "meta": 1521445072302,
-    "relativePath": "prefab/canvas.prefab"
-  },
-  "61aeb05b-3b32-452b-8eed-2b76deeed554": {
-    "asset": 1511259271000,
-    "meta": 1521445072307,
-    "relativePath": "prefab/editbox.prefab"
-  },
-  "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
-    "asset": 1511259271000,
-    "meta": 1521445072309,
-    "relativePath": "prefab/label.prefab"
-  },
-  "785a442c-3ceb-45be-a46e-7317f625f3b9": {
-    "asset": 1511259271000,
-    "meta": 1521445072313,
-    "relativePath": "prefab/layout.prefab"
-  },
-  "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
-    "asset": 1511259271000,
-    "meta": 1521445072314,
-    "relativePath": "prefab/pageview.prefab"
-  },
-  "cd33edea-55f5-46c2-958d-357a01384a36": {
-    "asset": 1511259271000,
-    "meta": 1521445072320,
-    "relativePath": "prefab/particlesystem.prefab"
-  },
-  "5965ffac-69da-4b55-bcde-9225d0613c28": {
-    "asset": 1511259271000,
-    "meta": 1521445072323,
-    "relativePath": "prefab/progressBar.prefab"
-  },
-  "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
-    "asset": 1511259271000,
-    "meta": 1521445072328,
-    "relativePath": "prefab/richtext.prefab"
-  },
-  "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
-    "asset": 1511259271000,
-    "meta": 1521445072329,
-    "relativePath": "prefab/scrollview.prefab"
-  },
-  "1f55e3be-b89b-4b79-88de-47fd31018044": {
-    "asset": 1511259271000,
-    "meta": 1521445072336,
-    "relativePath": "prefab/sprite_splash.prefab"
-  },
-  "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
-    "asset": 1511259271000,
-    "meta": 1521445072337,
-    "relativePath": "prefab/slider.prefab"
-  },
-  "7de03a80-4457-438d-95a7-3e7cdffd6086": {
-    "asset": 1511259271000,
-    "meta": 1521445072342,
-    "relativePath": "prefab/tiledmap.prefab"
-  },
-  "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
-    "asset": 1511259271000,
-    "meta": 1521445072343,
-    "relativePath": "prefab/sprite.prefab"
-  },
-  "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
-    "asset": 1511259271000,
-    "meta": 1521445072370,
-    "relativePath": "prefab/toggleGroup.prefab"
-  },
-  "0d784963-d024-4ea6-a7db-03be0ad63010": {
-    "asset": 1511259271000,
-    "meta": 1521445072372,
-    "relativePath": "prefab/toggle.prefab"
-  },
-  "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
-    "asset": 1511259271000,
-    "meta": 1521445072380,
-    "relativePath": "prefab/videoplayer.prefab"
-  },
-  "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
-    "asset": 1511259271000,
-    "meta": 1521445072383,
-    "relativePath": "prefab/webview.prefab"
   },
   "d77d2c9e-e225-4f60-bb2b-16396b49c857": {
     "asset": 1521444738000,
@@ -510,7 +330,7 @@
     "relativePath": "hall/spine/store/Shang.png"
   },
   "8a1252ea-6462-4a1a-b21f-5ffe1c034576": {
-    "asset": 1521454917541,
+    "asset": 1523873561649,
     "meta": 1521444740000,
     "relativePath": "hall/texture"
   },
@@ -524,63 +344,13 @@
     "meta": 1521511121827,
     "relativePath": "hall/spine/Title/Title.png"
   },
-  "cb8de06e-0e7b-4d49-8f6f-a231862d1216": {
-    "asset": 1521444740000,
-    "meta": 1521511132495,
-    "relativePath": "hall/texture/dating.plist"
-  },
-  "8b523d2d-8659-4ce7-81db-2568e3a58aea": {
-    "asset": 1521444740000,
-    "meta": 1521511121972,
-    "relativePath": "hall/texture/dating.png"
-  },
-  "f76fc612-9d86-4fb6-96b5-7185d0794338": {
-    "asset": 1521444740000,
-    "meta": 1521511122018,
-    "relativePath": "hall/texture/huodong1.jpg"
-  },
-  "71eb717a-ee50-4061-96f4-fbd2860cd9fe": {
-    "asset": 1521444740000,
-    "meta": 1521511122048,
-    "relativePath": "hall/texture/huodong2.jpg"
-  },
-  "fd8b3e5d-87b1-422d-89fe-e28c2822e2a9": {
-    "asset": 1521444740000,
-    "meta": 1521511132571,
-    "relativePath": "hall/texture/pjCommon.plist"
-  },
-  "0d7c644c-4a40-487c-a796-26226b203681": {
-    "asset": 1521444740000,
-    "meta": 1521511122071,
-    "relativePath": "hall/texture/pk_jiesuan_di.jpg"
-  },
-  "7c4d8294-4348-4dab-bf80-5b910ff6d159": {
-    "asset": 1521444740000,
-    "meta": 1521511122110,
-    "relativePath": "hall/texture/shengming1.png"
-  },
-  "17823eeb-a966-487d-8886-e5fb6ceb7630": {
-    "asset": 1521444740000,
-    "meta": 1521511122133,
-    "relativePath": "hall/texture/singleColor.png"
-  },
-  "5034f319-51ce-4054-bca6-db8cb7c1dbba": {
-    "asset": 1521444740000,
-    "meta": 1521511122165,
-    "relativePath": "hall/texture/ty_bg_dating.jpg"
-  },
-  "0984a2d4-db25-49d7-bff0-ab6853b36796": {
-    "asset": 1521444740000,
-    "meta": 1521511122176,
-    "relativePath": "hall/texture/pjCommon.png"
-  },
   "6b03cf57-d0fd-4882-90d2-71f81a38d58d": {
     "asset": 1521444740000,
     "meta": 1521511122191,
     "relativePath": "hall/texture/ty_bg_fx.jpg"
   },
   "c88774e4-5e73-4758-826d-a09d876fca0f": {
-    "asset": 1521454917156,
+    "asset": 1522829913447,
     "meta": 1521444762000,
     "relativePath": "mahjong"
   },
@@ -625,7 +395,7 @@
     "relativePath": "mahjong/Anim/zuoIn.anim"
   },
   "e27561ef-e895-4927-b4c3-aea93269174d": {
-    "asset": 1521454917143,
+    "asset": 1521711023936,
     "meta": 1521444746000,
     "relativePath": "mahjong/font"
   },
@@ -634,43 +404,8 @@
     "meta": 1521511122212,
     "relativePath": "mahjong/Anim/zuoOut.anim"
   },
-  "731ea8f4-9a6f-4ca7-83b9-bc2ea405a01b": {
-    "asset": 1521444740000,
-    "meta": 1521511132581,
-    "relativePath": "mahjong/font/mj_add.fnt"
-  },
-  "98c5c7dd-1a7a-4cfa-adb9-e69f8711d2ad": {
-    "asset": 1521444740000,
-    "meta": 1521511122236,
-    "relativePath": "mahjong/font/mj_add_0.png"
-  },
-  "bb60c865-d2aa-41c9-9a7d-793e9f8a7c44": {
-    "asset": 1521444740000,
-    "meta": 1521511132586,
-    "relativePath": "mahjong/font/mj_red.fnt"
-  },
-  "4a2f6dc4-cb06-4118-8a83-bdc506485439": {
-    "asset": 1521444740000,
-    "meta": 1521511122239,
-    "relativePath": "mahjong/font/mj_red_0.png"
-  },
-  "73cf1a52-d3f9-4863-a024-3564d28c3ec2": {
-    "asset": 1521444740000,
-    "meta": 1521511132587,
-    "relativePath": "mahjong/font/wh_jiesuan1.fnt"
-  },
-  "31af7f3c-2926-41ae-b95a-387f35ac4b7c": {
-    "asset": 1521444740000,
-    "meta": 1521511122262,
-    "relativePath": "mahjong/font/wh_jiesuan1_0.png"
-  },
-  "0c04c4b1-8975-4ebb-ade3-d28bd2efb872": {
-    "asset": 1521444740000,
-    "meta": 1521511132589,
-    "relativePath": "mahjong/font/wh_jiesuan2.fnt"
-  },
   "a8e17ad5-c692-45fa-8e1e-e609a8eb777f": {
-    "asset": 1521454917084,
+    "asset": 1521711024024,
     "meta": 1521444746000,
     "relativePath": "mahjong/prefab"
   },
@@ -678,11 +413,6 @@
     "asset": 1521444741000,
     "meta": 1521511122272,
     "relativePath": "mahjong/prefab/mjChiDetailPrefab.prefab"
-  },
-  "944653ba-9693-4c78-95cc-f97eb078b0ba": {
-    "asset": 1521444740000,
-    "meta": 1521511122267,
-    "relativePath": "mahjong/font/wh_jiesuan2_0.png"
   },
   "6846a6a4-9947-4dee-bcab-73ec63df828a": {
     "asset": 1521444741000,
@@ -729,20 +459,10 @@
     "meta": 1521511122322,
     "relativePath": "mahjong/prefab/mjReportItemPrefab.prefab"
   },
-  "9307c1bd-7a05-4f99-9b09-ade72917270d": {
-    "asset": 1521444741000,
-    "meta": 1521511122326,
-    "relativePath": "mahjong/prefab/mjReportPrefab.prefab"
-  },
   "cb612dc8-4e5e-470b-9584-5638146df491": {
     "asset": 1521444741000,
     "meta": 1521511122328,
     "relativePath": "mahjong/prefab/mjSaiziPrefab.prefab"
-  },
-  "cef95612-4ea0-49a9-9893-d1ad84914bdb": {
-    "asset": 1521444741000,
-    "meta": 1521511122332,
-    "relativePath": "mahjong/prefab/mjSkin.prefab"
   },
   "97ef30cf-5362-4bad-ae76-d7e05b253fcc": {
     "asset": 1521444741000,
@@ -750,52 +470,32 @@
     "relativePath": "mahjong/prefab/mjStatusPrefab.prefab"
   },
   "f3d5c4e5-2720-49ae-917c-6ba59dae6821": {
-    "asset": 1521444741000,
-    "meta": 1521511122338,
+    "asset": 1522738956411,
+    "meta": 1522738956437,
     "relativePath": "mahjong/prefab/mjVoting.prefab"
   },
   "09f149c1-fc7d-40e1-86c5-11d9f28e6505": {
-    "asset": 1521511089767,
+    "asset": 1522660290959,
     "meta": 1521444742000,
     "relativePath": "mahjong/prefab/waHua"
   },
   "203a1ad6-af0c-40c8-b3de-ac89c0d31b53": {
-    "asset": 1521444741000,
-    "meta": 1521511122347,
+    "asset": 1522738974944,
+    "meta": 1522738974961,
     "relativePath": "mahjong/prefab/mjVotingPop.prefab"
   },
-  "0b42c859-cd89-43b4-a503-feacf8c5c421": {
-    "asset": 1521444740000,
-    "meta": 1521511122376,
-    "relativePath": "mahjong/prefab/waHua/AllAccountWahua.prefab"
-  },
-  "07b602b8-d6f5-4c47-9a19-0e0d127ebcd1": {
-    "asset": 1521444740000,
-    "meta": 1521511122415,
-    "relativePath": "mahjong/prefab/waHua/OneAccountWahua.prefab"
-  },
   "e5412df6-878a-4ef1-93e1-c2abef9ec61d": {
-    "asset": 1521511089779,
+    "asset": 1523873561781,
     "meta": 1521444746000,
     "relativePath": "mahjong/scene"
   },
-  "78b7561c-0c31-4969-9839-22b1b6a6af52": {
-    "asset": 1521444741000,
-    "meta": 1521511122426,
-    "relativePath": "mahjong/prefab/waHua/whSkin.prefab"
-  },
-  "4cf1b60e-82e1-40d2-a6be-fff5ac5ce271": {
-    "asset": 1521444742000,
-    "meta": 1521511122555,
-    "relativePath": "mahjong/scene/majiang.fire"
-  },
   "eeb6d65f-8caa-486b-b541-97d68567f49b": {
-    "asset": 1521454917015,
+    "asset": 1523515869203,
     "meta": 1521444746000,
     "relativePath": "mahjong/script"
   },
   "76f6bf76-dee3-4afb-b3e8-e54e37a88e95": {
-    "asset": 1521454916985,
+    "asset": 1523599373848,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/config"
   },
@@ -825,7 +525,7 @@
     "relativePath": "mahjong/script/game"
   },
   "c0ed1ed2-fd02-4e50-aa06-88418ee3fed1": {
-    "asset": 1521527164435,
+    "asset": 1523843676642,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/game/common"
   },
@@ -833,16 +533,6 @@
     "asset": 1521444742000,
     "meta": 1521511122913,
     "relativePath": "mahjong/script/game/common/mjAnimHelper.js"
-  },
-  "f0f65d7f-7dd4-44df-84b4-43de2fc127e5": {
-    "asset": 1521444742000,
-    "meta": 1521511123015,
-    "relativePath": "mahjong/script/game/common/mjDataMgr.js"
-  },
-  "967f735e-1f60-4793-96a4-4eb2c50cd543": {
-    "asset": 1521444742000,
-    "meta": 1521511123558,
-    "relativePath": "mahjong/script/game/common/mjGameDefine.js"
   },
   "fc92741c-e6fa-4a38-a82b-9a09066d9b7b": {
     "asset": 1521444742000,
@@ -955,7 +645,7 @@
     "relativePath": "mahjong/script/ui/mjReportUI.js"
   },
   "d74cbaa7-f4d2-47bb-ae26-84c129ea6516": {
-    "asset": 1521454916975,
+    "asset": 1521711023760,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/ui/prefab"
   },
@@ -984,16 +674,6 @@
     "meta": 1521511125287,
     "relativePath": "mahjong/script/ui/prefab/mjPaiUI.js"
   },
-  "2192bb79-91dd-4a4d-a4ad-c3a406ef048c": {
-    "asset": 1521444743000,
-    "meta": 1521511125329,
-    "relativePath": "mahjong/script/ui/prefab/mjSaiziUI.js"
-  },
-  "1889cf26-870a-40c7-97cc-6f31aae332b9": {
-    "asset": 1521444743000,
-    "meta": 1521511125363,
-    "relativePath": "mahjong/script/ui/prefab/mjVotingPopUI.js"
-  },
   "04d29ddc-d486-4abd-83de-6cd94da2a6bc": {
     "asset": 1521444743000,
     "meta": 1521511125364,
@@ -1020,34 +700,19 @@
     "relativePath": "mahjong/script/wahua/account/oneAccountWahua.js"
   },
   "0366cb45-a9f4-4dcd-890a-99e8fb4d6d65": {
-    "asset": 1521455566273,
+    "asset": 1522665287067,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/wahua/common"
   },
   "15f244f9-c0bd-4323-8f0d-4be77c12f53b": {
-    "asset": 1521454917028,
+    "asset": 1521627928381,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/wahua/config"
   },
   "9ee51404-8031-4824-a97e-342fa26a0e6e": {
-    "asset": 1521511089828,
+    "asset": 1522665287101,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/wahua/desk"
-  },
-  "f926180d-0a82-4e86-8169-e29db683e468": {
-    "asset": 1521444743000,
-    "meta": 1521511125478,
-    "relativePath": "mahjong/script/wahua/config/WahuaCfg.js"
-  },
-  "a45a974a-4fc8-4fa8-b0a7-2b75f5452c98": {
-    "asset": 1521455566274,
-    "meta": 1521511125596,
-    "relativePath": "mahjong/script/wahua/desk/commonWahua.js"
-  },
-  "629818c3-3506-41c2-9bd1-ecb96911f62c": {
-    "asset": 1521455566274,
-    "meta": 1521511125627,
-    "relativePath": "mahjong/script/wahua/desk/gameMgrWahua.js"
   },
   "bfd6db7b-f8d7-46f0-ab69-18c29c117806": {
     "asset": 1521444743000,
@@ -1065,14 +730,9 @@
     "relativePath": "mahjong/script/wahua/desk/roomDescScvWahua.js"
   },
   "bef3e1ac-7f0f-428e-b3cf-423c7d571b45": {
-    "asset": 1521454917040,
+    "asset": 1522633629401,
     "meta": 1521444743000,
     "relativePath": "mahjong/script/wahua/prefab"
-  },
-  "33f57c68-3f84-490e-adf8-376aa3992d5e": {
-    "asset": 1521444743000,
-    "meta": 1521511125798,
-    "relativePath": "mahjong/script/wahua/prefab/whMenu.js"
   },
   "4d0ab58b-9264-413c-834d-76840956b658": {
     "asset": 1521444743000,
@@ -1290,7 +950,7 @@
     "relativePath": "mahjong/texture"
   },
   "9d7ab5a7-78cc-4860-b30f-b0dada584f86": {
-    "asset": 1521454917129,
+    "asset": 1522049494316,
     "meta": 1521444746000,
     "relativePath": "mahjong/texture/paiJu"
   },
@@ -1304,63 +964,13 @@
     "meta": 1521511132726,
     "relativePath": "mahjong/spine/store/Jiesuan.json"
   },
-  "2dd864ad-1b21-4e23-9ad7-e72a2cac2053": {
-    "asset": 1521444745000,
-    "meta": 1521511132801,
-    "relativePath": "mahjong/texture/paiJu/paiju1.plist"
-  },
-  "9fd2680d-bbc0-418b-91a3-d95c6b915c17": {
-    "asset": 1521444745000,
-    "meta": 1521511132836,
-    "relativePath": "mahjong/texture/paiJu/paiju2.plist"
-  },
-  "c33b3bfa-c3fe-4e5e-a95b-78e9f20bf649": {
-    "asset": 1521444745000,
-    "meta": 1521511126222,
-    "relativePath": "mahjong/texture/paiJu/paiju2.png"
-  },
-  "40b0d5f1-874d-46c2-bd89-76da49015cce": {
-    "asset": 1521444745000,
-    "meta": 1521511126230,
-    "relativePath": "mahjong/texture/paiJu/paiju1.png"
-  },
   "9dce136d-7f38-43d6-bb72-dae49cf786fe": {
-    "asset": 1521454917104,
+    "asset": 1521711024658,
     "meta": 1521444746000,
     "relativePath": "mahjong/texture/paiMian"
   },
-  "26f4c73a-8b54-4a91-8ecb-ad36c66e0c03": {
-    "asset": 1521444745000,
-    "meta": 1521511126248,
-    "relativePath": "mahjong/texture/paiJu/singleColor.png"
-  },
-  "5eeaebae-98e7-4baf-bff1-03879de744a0": {
-    "asset": 1521444746000,
-    "meta": 1521511132870,
-    "relativePath": "mahjong/texture/paiMian/3dPai.plist"
-  },
-  "4ba1c278-bd74-4fe3-bf7c-6508aa743e71": {
-    "asset": 1521444746000,
-    "meta": 1521511132930,
-    "relativePath": "mahjong/texture/paiMian/paiList.plist"
-  },
-  "2e4b9b0b-4eca-4331-9e39-23e0fbae858a": {
-    "asset": 1521444746000,
-    "meta": 1521511126330,
-    "relativePath": "mahjong/texture/paiMian/paiList.png"
-  },
-  "1f94a468-8fb2-4eac-9a2e-317a7b503f35": {
-    "asset": 1521444746000,
-    "meta": 1521511126380,
-    "relativePath": "mahjong/texture/paiMian/3dPai.png"
-  },
-  "48e27686-0eb3-45fd-8af5-f67e6aaaf76a": {
-    "asset": 1521444746000,
-    "meta": 1521511133009,
-    "relativePath": "mahjong/texture/paiMian/paiMianWh.plist"
-  },
   "c8b55333-cce1-4e27-9057-dfee9f6b9c0e": {
-    "asset": 1521454917168,
+    "asset": 1523347915673,
     "meta": 1521444762000,
     "relativePath": "phone"
   },
@@ -1368,11 +978,6 @@
     "asset": 1521444747000,
     "meta": 1521511126426,
     "relativePath": "phone/JSPhoneBaiDu.js"
-  },
-  "73f4c4a2-b2f8-4118-8bdb-debf87814a22": {
-    "asset": 1521444746000,
-    "meta": 1521511126450,
-    "relativePath": "mahjong/texture/paiMian/paiMianWh.png"
   },
   "44cc5c34-15e6-4038-b2d6-90f6a8078f88": {
     "asset": 1521444747000,
@@ -1395,14 +1000,9 @@
     "relativePath": "phone/JSPhoneVoice.js"
   },
   "5238e19f-2b4e-450d-bc12-82e242d9e36e": {
-    "asset": 1521534836535,
+    "asset": 1521628015254,
     "meta": 1521444762000,
     "relativePath": "poker"
-  },
-  "d77eb8c2-2e8b-42be-9029-dcdbd53063eb": {
-    "asset": 1521444747000,
-    "meta": 1521511126582,
-    "relativePath": "phone/JSPhoneWeChat.js"
   },
   "3fee2406-0d73-4004-9e50-9de3ea8c1971": {
     "asset": 1521454914781,
@@ -1640,7 +1240,7 @@
     "relativePath": "poker/spine/Xuanzhuang/Xuanzhuang.png"
   },
   "5d514a5a-fce7-4d06-b6dd-e397a32b1b14": {
-    "asset": 1521454914775,
+    "asset": 1521711023671,
     "meta": 1521444749000,
     "relativePath": "poker/texture"
   },
@@ -1689,13 +1289,8 @@
     "meta": 1521511129068,
     "relativePath": "poker/texture/singleUI/singleColor.png"
   },
-  "21707b10-63f1-4626-a1f0-e1a3301897e5": {
-    "asset": 1521444762000,
-    "meta": 1521444762000,
-    "relativePath": "project.manifest"
-  },
   "394e79a1-eca4-414a-ae08-20d542bd49d3": {
-    "asset": 1521454916849,
+    "asset": 1522824372206,
     "meta": 1521444762000,
     "relativePath": "resources"
   },
@@ -3885,7 +3480,7 @@
     "relativePath": "resources/mahjong/background/yxmj_zhuomian3d.jpg"
   },
   "33c3110e-7e15-4cd5-9301-82444caf3fc9": {
-    "asset": 1521454915815,
+    "asset": 1522824372204,
     "meta": 1521444762000,
     "relativePath": "resources/poker"
   },
@@ -6575,7 +6170,7 @@
     "relativePath": "hall"
   },
   "b58c6879-771f-4646-8c7a-ce53783301e5": {
-    "asset": 1521454917321,
+    "asset": 1523873561158,
     "meta": 1521444740000,
     "relativePath": "hall/animation"
   },
@@ -6588,16 +6183,6 @@
     "asset": 1521444730000,
     "meta": 1521511116599,
     "relativePath": "hall/animation/mainBasicAnim.anim"
-  },
-  "a676a4a1-8a2a-4c77-ab7d-08f616133799": {
-    "asset": 1521444730000,
-    "meta": 1521511116601,
-    "relativePath": "hall/animation/popScaleAnim.anim"
-  },
-  "bdf12e6f-caa9-4c93-a959-03684a68b9da": {
-    "asset": 1521444730000,
-    "meta": 1521511116602,
-    "relativePath": "hall/animation/popScaleOut.anim"
   },
   "f8c989e1-0f11-441d-af00-f8a9a90e2d89": {
     "asset": 1521454917586,
@@ -6665,7 +6250,7 @@
     "relativePath": "hall/prefab"
   },
   "22f65ab8-afe9-4477-a11c-948c2339f943": {
-    "asset": 1521454917425,
+    "asset": 1523873561579,
     "meta": 1521444734000,
     "relativePath": "hall/prefab/createRoom"
   },
@@ -6680,14 +6265,9 @@
     "relativePath": "hall/prefab/createRoom/createPukeRoomSg.prefab"
   },
   "7f2c9bf1-90ba-4e9e-86ed-5846e6e2f90a": {
-    "asset": 1521454917466,
+    "asset": 1523930102937,
     "meta": 1521444734000,
     "relativePath": "hall/prefab/hall"
-  },
-  "af3248c9-73fc-4989-8655-23b1202a6f25": {
-    "asset": 1521444732000,
-    "meta": 1521511116901,
-    "relativePath": "hall/prefab/hall/hallActivity.prefab"
   },
   "f6412100-7ea8-42d8-b876-2be3285f9226": {
     "asset": 1521444732000,
@@ -6698,16 +6278,6 @@
     "asset": 1521444732000,
     "meta": 1521511116910,
     "relativePath": "hall/prefab/hall/hallRenzheng.prefab"
-  },
-  "af2d7508-54e6-4881-841b-7ecc3c82a90d": {
-    "asset": 1521444732000,
-    "meta": 1521511116915,
-    "relativePath": "hall/prefab/hall/hallShare.prefab"
-  },
-  "81cf290e-91e9-45bd-b5ec-0db741319610": {
-    "asset": 1521444732000,
-    "meta": 1521511116918,
-    "relativePath": "hall/prefab/hall/hallShareHuanka.prefab"
   },
   "4e136b83-b6ac-47f9-b019-08d13c9912c9": {
     "asset": 1521454917476,
@@ -6725,7 +6295,7 @@
     "relativePath": "hall/prefab/mailLayer/mailDetail.prefab"
   },
   "0e2e864a-9b28-49da-8056-aa80b3dd5512": {
-    "asset": 1521454917454,
+    "asset": 1523864764029,
     "meta": 1521444734000,
     "relativePath": "hall/prefab/public"
   },
@@ -6735,8 +6305,8 @@
     "relativePath": "hall/prefab/mailLayer/mailLayer.prefab"
   },
   "d52ed6c7-ac4a-410d-a119-3520e1ad3518": {
-    "asset": 1521444733000,
-    "meta": 1521511116944,
+    "asset": 1523870171389,
+    "meta": 1523870171420,
     "relativePath": "hall/prefab/public/chat.prefab"
   },
   "57edf4a8-523c-46c8-abd7-4fcb3250c854": {
@@ -6745,8 +6315,8 @@
     "relativePath": "hall/prefab/public/emoji.prefab"
   },
   "ec46e55a-4f42-46c8-8c90-32b92981deba": {
-    "asset": 1521444733000,
-    "meta": 1521511116949,
+    "asset": 1522808537833,
+    "meta": 1522808537854,
     "relativePath": "hall/prefab/public/interact.prefab"
   },
   "228d278a-54de-4639-966d-43beccdd82b4": {
@@ -6754,30 +6324,15 @@
     "meta": 1521511116951,
     "relativePath": "hall/prefab/public/menu.prefab"
   },
-  "69cf5bb2-aa7c-4168-a88c-c203ce95e14c": {
-    "asset": 1521444733000,
-    "meta": 1521511116955,
-    "relativePath": "hall/prefab/public/playerDetail.prefab"
-  },
-  "b1b4171f-a3fb-4d76-a72d-b290300fcefc": {
-    "asset": 1521444733000,
-    "meta": 1521511116961,
-    "relativePath": "hall/prefab/public/playerMap.prefab"
-  },
   "718c94c4-74bd-4329-a56c-86e534a0f048": {
     "asset": 1521444733000,
     "meta": 1521511116962,
     "relativePath": "hall/prefab/public/roomGongGao.prefab"
   },
   "b52eeffb-b73a-43ef-8470-f88071da8f73": {
-    "asset": 1521444733000,
-    "meta": 1521511116970,
+    "asset": 1523355238971,
+    "meta": 1523355239009,
     "relativePath": "hall/prefab/public/set.prefab"
-  },
-  "a72ec386-6d0a-44d1-8da3-675247f30381": {
-    "asset": 1521444733000,
-    "meta": 1521511116977,
-    "relativePath": "hall/prefab/public/store.prefab"
   },
   "d6f03e7b-4b54-4060-b790-ae98dbc9cdf1": {
     "asset": 1521444733000,
@@ -6785,7 +6340,7 @@
     "relativePath": "hall/prefab/public/updatePanel.prefab"
   },
   "4f95b492-3f7a-4769-adc3-0b91e436ad26": {
-    "asset": 1521454917433,
+    "asset": 1523265611044,
     "meta": 1521444734000,
     "relativePath": "hall/prefab/tishi"
   },
@@ -6793,11 +6348,6 @@
     "asset": 1521444733000,
     "meta": 1521511116981,
     "relativePath": "hall/prefab/public/voiceHint.prefab"
-  },
-  "f9c7cc3c-41cf-4228-88f3-982f0a71de56": {
-    "asset": 1521444733000,
-    "meta": 1521511116986,
-    "relativePath": "hall/prefab/tishi/duanxian.prefab"
   },
   "3b622e1e-b803-4218-9c0b-a91f6537b9d7": {
     "asset": 1521444733000,
@@ -6809,13 +6359,8 @@
     "meta": 1521511116990,
     "relativePath": "hall/prefab/tishi/zhuanquan.prefab"
   },
-  "edbcd98f-9001-43c4-80c3-a81dbca554a4": {
-    "asset": 1521444733000,
-    "meta": 1521511116991,
-    "relativePath": "hall/prefab/tishi/minSingleButtonPop.prefab"
-  },
   "786ece82-d477-4eb2-876e-ffcc64fd8f7d": {
-    "asset": 1521454917472,
+    "asset": 1523527089403,
     "meta": 1521444734000,
     "relativePath": "hall/prefab/zhanji"
   },
@@ -6825,24 +6370,14 @@
     "relativePath": "hall/prefab/zhanji/majiangZhanji.prefab"
   },
   "9944fdf3-bc47-420b-b0e8-67fe1651b48c": {
-    "asset": 1521444734000,
-    "meta": 1521511117002,
+    "asset": 1523418528307,
+    "meta": 1523418528356,
     "relativePath": "hall/prefab/zhanji/pukeZhanji.prefab"
   },
   "ec7c7eeb-0faa-4c9a-9035-734eacd9836f": {
-    "asset": 1521454917591,
+    "asset": 1523930093077,
     "meta": 1521444740000,
     "relativePath": "hall/scene"
-  },
-  "343daefb-2236-4d99-bcbf-af4a6fa07268": {
-    "asset": 1521444734000,
-    "meta": 1521511117013,
-    "relativePath": "hall/prefab/zhanji/zhanjiLayer.prefab"
-  },
-  "d6a7bc00-d750-4ed3-b974-3bdd7cddcb17": {
-    "asset": 1521444734000,
-    "meta": 1521511117030,
-    "relativePath": "hall/scene/hall.fire"
   },
   "006298a7-fa48-4947-a2d8-5341498d849b": {
     "asset": 1521514711159,
@@ -6850,7 +6385,7 @@
     "relativePath": "hall/script"
   },
   "5d99d81d-cd06-446d-a593-6db32c9db42c": {
-    "asset": 1521517652218,
+    "asset": 1521791237867,
     "meta": 1521444737000,
     "relativePath": "hall/script/comm"
   },
@@ -6865,44 +6400,19 @@
     "relativePath": "hall/script/comm/Audio.js"
   },
   "94717db2-740d-45e2-925f-5c8b218eba6e": {
-    "asset": 1521454917335,
+    "asset": 1523930102944,
     "meta": 1521444737000,
     "relativePath": "hall/script/config"
   },
-  "c424a630-7dbb-43ba-aa8c-005aef283f54": {
-    "asset": 1521444735000,
-    "meta": 1521511118493,
-    "relativePath": "hall/script/comm/hotUpdate.js"
-  },
-  "b97d80b7-291a-473d-9f40-467dd7e62410": {
-    "asset": 1521444735000,
-    "meta": 1521511118552,
-    "relativePath": "hall/script/config/ChatCfg.js"
-  },
-  "7d53da4f-707b-4991-b2aa-08f1a9018480": {
-    "asset": 1521444735000,
-    "meta": 1521511118673,
-    "relativePath": "hall/script/config/GameCfg.js"
-  },
   "55e91418-1c44-4aeb-88fe-038a62100697": {
-    "asset": 1521454917330,
+    "asset": 1523873561104,
     "meta": 1521444737000,
     "relativePath": "hall/script/createRoom"
-  },
-  "5e2feaed-7baf-4791-97f4-8b7d6113fd0d": {
-    "asset": 1521444735000,
-    "meta": 1521511118798,
-    "relativePath": "hall/script/config/MessageCfg.js"
   },
   "5c2c9f3a-9448-4c8b-b373-1aef6ab391f5": {
     "asset": 1521444735000,
     "meta": 1521511119033,
     "relativePath": "hall/script/createRoom/createNiuNiuRoom.js"
-  },
-  "b71e9b0f-0339-4785-8e2a-91690d11fe40": {
-    "asset": 1521444735000,
-    "meta": 1521511119109,
-    "relativePath": "hall/script/createRoom/createRoomSys.js"
   },
   "3d0df429-2a4d-459b-93ab-30a77befe3c2": {
     "asset": 1521444735000,
@@ -6910,14 +6420,9 @@
     "relativePath": "hall/script/createRoom/createSanGongRoom.js"
   },
   "2e0f7e37-d8be-48c2-aa7f-4a7ab1f2c1e5": {
-    "asset": 1521454917348,
+    "asset": 1523873561121,
     "meta": 1521444737000,
     "relativePath": "hall/script/fun"
-  },
-  "69e7d1db-a178-4eb0-978a-b51928e18db8": {
-    "asset": 1521444735000,
-    "meta": 1521511119292,
-    "relativePath": "hall/script/createRoom/createWahuaRoom.js"
   },
   "ef735ea0-a9cd-46d9-9c68-db6dfda7e5b2": {
     "asset": 1521444735000,
@@ -6944,25 +6449,10 @@
     "meta": 1521511119703,
     "relativePath": "hall/script/fun/funLog.js"
   },
-  "fc6d8c9c-6759-45c9-bced-82438f23e4cd": {
-    "asset": 1521444735000,
-    "meta": 1521511119800,
-    "relativePath": "hall/script/fun/funNetMgr.js"
-  },
-  "69732ec7-b0f1-4447-8647-3d23b82e7550": {
-    "asset": 1521444735000,
-    "meta": 1521511119918,
-    "relativePath": "hall/script/fun/initFun.js"
-  },
   "17959789-0070-4207-b023-611d6a8b85f7": {
-    "asset": 1521517311667,
+    "asset": 1523932000241,
     "meta": 1521444737000,
     "relativePath": "hall/script/hall"
-  },
-  "3af18cc9-0965-469b-adb5-1a494fb379e2": {
-    "asset": 1521444736000,
-    "meta": 1521511120173,
-    "relativePath": "hall/script/hall/hallActivity.js"
   },
   "7a36ea24-4ecc-46c7-8037-85449b5edf40": {
     "asset": 1521444736000,
@@ -6984,30 +6474,15 @@
     "meta": 1521511120321,
     "relativePath": "hall/script/hall/hallRenzheng.js"
   },
-  "860a3f9d-1eee-41b5-8a6f-cbbc3c2d5160": {
-    "asset": 1521444736000,
-    "meta": 1521511120363,
-    "relativePath": "hall/script/hall/hallShare.js"
-  },
   "901c6590-1d24-4865-8aef-96817c7aa609": {
     "asset": 1521444736000,
     "meta": 1521511120363,
     "relativePath": "hall/script/hall/hallSpineBtn.js"
   },
   "d705deff-bb61-40e1-9216-2d1f0595bf0d": {
-    "asset": 1521454917394,
+    "asset": 1523873561143,
     "meta": 1521444737000,
     "relativePath": "hall/script/login"
-  },
-  "37bdf8fb-8b2f-41ae-9e8a-5fb6470b604b": {
-    "asset": 1521444736000,
-    "meta": 1521511120473,
-    "relativePath": "hall/script/login/globalUI.js"
-  },
-  "e7e75a82-01a7-4cfb-a05a-e3b0f9e16fe8": {
-    "asset": 1521444736000,
-    "meta": 1521511120475,
-    "relativePath": "hall/script/login/login.js"
   },
   "850b4771-ad7d-4eb9-90b0-af4892e0fc87": {
     "asset": 1521454917406,
@@ -7035,19 +6510,9 @@
     "relativePath": "hall/script/mailLayer/mailLayer.js"
   },
   "dff6e4e0-e0cd-495e-b73c-4bde725c4c83": {
-    "asset": 1521454917374,
+    "asset": 1523870157458,
     "meta": 1521444737000,
     "relativePath": "hall/script/public"
-  },
-  "073dd58e-8e17-44dd-9557-c7958c25edf9": {
-    "asset": 1521444736000,
-    "meta": 1521511120645,
-    "relativePath": "hall/script/public/chat.js"
-  },
-  "fc1ad36b-1fc0-4970-ae8a-5ad60f9cc21a": {
-    "asset": 1521444736000,
-    "meta": 1521511120687,
-    "relativePath": "hall/script/public/interact.js"
   },
   "e144c456-6e69-46c8-92f9-cecdd0386e9f": {
     "asset": 1521444736000,
@@ -7059,20 +6524,10 @@
     "meta": 1521511120769,
     "relativePath": "hall/script/public/playerMap.js"
   },
-  "31d00201-beea-482e-b527-39cc875bc8a7": {
-    "asset": 1521444736000,
-    "meta": 1521511120827,
-    "relativePath": "hall/script/public/publicVoiceBtn.js"
-  },
   "86755668-da8f-48b5-a987-09842a1012a4": {
     "asset": 1521444736000,
     "meta": 1521511120878,
     "relativePath": "hall/script/public/roomGongGao.js"
-  },
-  "a0c0acda-1cbc-426a-a107-02f746998179": {
-    "asset": 1521444736000,
-    "meta": 1521511120951,
-    "relativePath": "hall/script/public/set.js"
   },
   "117a1cce-7b45-4771-b66e-de76a19b403f": {
     "asset": 1521444736000,
@@ -7110,7 +6565,7 @@
     "relativePath": "hall/script/tishi/minSingleButtonPop.js"
   },
   "7f58c331-845f-4d1a-82d7-2db3bffd1688": {
-    "asset": 1521454917402,
+    "asset": 1523418093402,
     "meta": 1521444737000,
     "relativePath": "hall/script/zhanji"
   },
@@ -7124,20 +6579,10 @@
     "meta": 1521511121189,
     "relativePath": "hall/script/zhanji/zhanjiDetail.js"
   },
-  "f615221c-fa22-495c-ae08-814b3d70ac59": {
-    "asset": 1521444737000,
-    "meta": 1521511121232,
-    "relativePath": "hall/script/zhanji/zhanjiDetailItem.js"
-  },
   "a6f982f6-f5b6-4773-8b57-552afdeb47d9": {
     "asset": 1521444737000,
     "meta": 1521511121264,
     "relativePath": "hall/script/zhanji/zhanjiItem.js"
-  },
-  "82ff77d1-3949-4cd4-bb32-333c68ec7538": {
-    "asset": 1521444737000,
-    "meta": 1521511121297,
-    "relativePath": "hall/script/zhanji/zhanjiLayer.js"
   },
   "f36dad1e-f79c-4a01-9f48-21064a7a2b08": {
     "asset": 1521454917316,
@@ -7190,49 +6635,24 @@
     "relativePath": "hall/spine/chat/biaoqing/Biaoqing.json"
   },
   "53da2498-9a60-4bf9-9620-b3cecf6a5e8f": {
-    "asset": 1521455566267,
-    "meta": 1521511122418,
-    "relativePath": "mahjong/prefab/waHua/whHengPeng.prefab"
+    "asset": 1522633629237,
+    "meta": 1522633697083,
+    "relativePath": "mahjong/prefab/waHua/whTangHeng.prefab"
   },
   "7008fef0-031d-4ab6-a0f6-4b3ec0ddf9b3": {
-    "asset": 1521455566267,
-    "meta": 1521511122420,
-    "relativePath": "mahjong/prefab/waHua/whShangPai.prefab"
-  },
-  "60976195-dcf0-4e91-ad8a-da5b16e05327": {
-    "asset": 1521455566268,
-    "meta": 1521511122423,
-    "relativePath": "mahjong/prefab/waHua/whShangPeng.prefab"
-  },
-  "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1": {
-    "asset": 1521511089767,
-    "meta": 1521511122428,
-    "relativePath": "mahjong/prefab/waHua/whXiaPai.prefab"
-  },
-  "ad1551a2-b298-4315-ad91-a4dec858145f": {
-    "asset": 1521455566269,
-    "meta": 1521511122430,
-    "relativePath": "mahjong/prefab/waHua/whXiaPeng.prefab"
+    "asset": 1522633629227,
+    "meta": 1522633697076,
+    "relativePath": "mahjong/prefab/waHua/whPaiShang.prefab"
   },
   "78392d53-79e7-4e54-8b3f-5f674a41c60e": {
-    "asset": 1521455566270,
-    "meta": 1521511122432,
-    "relativePath": "mahjong/prefab/waHua/whYouPai.prefab"
+    "asset": 1522633629232,
+    "meta": 1522633697079,
+    "relativePath": "mahjong/prefab/waHua/whPaiYou.prefab"
   },
   "3860846b-832e-4aa0-be05-bef19ed8e8c3": {
-    "asset": 1521455566270,
-    "meta": 1521511122435,
-    "relativePath": "mahjong/prefab/waHua/whZuoPai.prefab"
-  },
-  "b66127a8-6ac9-48d0-9ab4-0e2aae3558d6": {
-    "asset": 1521455566273,
-    "meta": 1521511125422,
-    "relativePath": "mahjong/script/wahua/common/whDefine.js"
-  },
-  "0c53c119-7d63-445c-bd41-31ff82bc7d1b": {
-    "asset": 1521517409240,
-    "meta": 1521517513910,
-    "relativePath": "mahjong/script/game/common/mjNetMgr.js"
+    "asset": 1522633629235,
+    "meta": 1522633697082,
+    "relativePath": "mahjong/prefab/waHua/whPaiZuo.prefab"
   },
   "9a96ec59-962a-4dd1-bbca-743bdf788a15": {
     "asset": 1521517397224,
@@ -7249,289 +6669,2264 @@
     "meta": 1521527168309,
     "relativePath": "mahjong/script/game/common/hymjNetMgr.js"
   },
-  "ff61b188-8bdb-46b1-a29b-77a248dabfee": {
-    "asset": 1521527164433,
-    "meta": 1521527168311,
-    "relativePath": "mahjong/script/game/common/mjGameManager.js"
+  "e851e89b-faa2-4484-bea6-5c01dd9f06e2": {
+    "asset": 1511259271000,
+    "meta": 1521616031439,
+    "relativePath": "image/default_btn_normal.png"
   },
-  "3d752fe9-ba97-4198-8410-dede33d875a6": {
-    "asset": 1521534901468,
-    "meta": 1521534832253,
+  "71561142-4c83-4933-afca-cb7a17f67053": {
+    "asset": 1511259271000,
+    "meta": 1521616031443,
+    "relativePath": "image/default_btn_disabled.png"
+  },
+  "d81ec8ad-247c-4e62-aa3c-d35c4193c7af": {
+    "asset": 1511259271000,
+    "meta": 1521616031476,
+    "relativePath": "image/default_panel.png"
+  },
+  "b43ff3c2-02bb-4874-81f7-f2dea6970f18": {
+    "asset": 1511259271000,
+    "meta": 1521616031483,
+    "relativePath": "image/default_btn_pressed.png"
+  },
+  "99170b0b-d210-46f1-b213-7d9e3f23098a": {
+    "asset": 1511259271000,
+    "meta": 1521616031487,
+    "relativePath": "image/default_progressbar_bg.png"
+  },
+  "cfef78f1-c8df-49b7-8ed0-4c953ace2621": {
+    "asset": 1511259271000,
+    "meta": 1521616031503,
+    "relativePath": "image/default_progressbar.png"
+  },
+  "567dcd80-8bf4-4535-8a5a-313f1caf078a": {
+    "asset": 1511259271000,
+    "meta": 1521616031518,
+    "relativePath": "image/default_radio_button_off.png"
+  },
+  "9d60001f-b5f4-4726-a629-2659e3ded0b8": {
+    "asset": 1511259271000,
+    "meta": 1521616031533,
+    "relativePath": "image/default_radio_button_on.png"
+  },
+  "4bab67cb-18e6-4099-b840-355f0473f890": {
+    "asset": 1511259271000,
+    "meta": 1521616031536,
+    "relativePath": "image/default_scrollbar_bg.png"
+  },
+  "617323dd-11f4-4dd3-8eec-0caf6b3b45b9": {
+    "asset": 1511259271000,
+    "meta": 1521616031565,
+    "relativePath": "image/default_scrollbar_vertical_bg.png"
+  },
+  "d6d3ca85-4681-47c1-b5dd-d036a9d39ea2": {
+    "asset": 1511259271000,
+    "meta": 1521616031568,
+    "relativePath": "image/default_scrollbar_vertical.png"
+  },
+  "0291c134-b3da-4098-b7b5-e397edbe947f": {
+    "asset": 1511259271000,
+    "meta": 1521616031584,
+    "relativePath": "image/default_scrollbar.png"
+  },
+  "0275e94c-56a7-410f-bd1a-fc7483f7d14a": {
+    "asset": 1511259271000,
+    "meta": 1521616031587,
+    "relativePath": "image/default_sprite_splash.png"
+  },
+  "6e056173-d285-473c-b206-40a7fff5386e": {
+    "asset": 1511259271000,
+    "meta": 1521616031608,
+    "relativePath": "image/default_sprite.png"
+  },
+  "73a0903d-d80e-4e3c-aa67-f999543c08f5": {
+    "asset": 1511259271000,
+    "meta": 1521616031612,
+    "relativePath": "image/default_toggle_checkmark.png"
+  },
+  "c25b9d50-c8fc-4d27-beeb-6e7c1f2e5c0f": {
+    "asset": 1511259271000,
+    "meta": 1521616031630,
+    "relativePath": "image/default_toggle_disabled.png"
+  },
+  "d29077ba-1627-4a72-9579-7b56a235340c": {
+    "asset": 1511259271000,
+    "meta": 1521616031638,
+    "relativePath": "image/default_toggle_normal.png"
+  },
+  "972b9a4d-47ee-4c74-b5c3-61d8a69bc29f": {
+    "asset": 1511259271000,
+    "meta": 1521616031644,
+    "relativePath": "prefab/button.prefab"
+  },
+  "b181c1e4-0a72-4a91-bfb0-ae6f36ca60bd": {
+    "asset": 1511259271000,
+    "meta": 1521616031647,
+    "relativePath": "image/default_toggle_pressed.png"
+  },
+  "2c937608-2562-40ea-b264-7395df6f0cea": {
+    "asset": 1511259271000,
+    "meta": 1521616031650,
+    "relativePath": "prefab/canvas.prefab"
+  },
+  "61aeb05b-3b32-452b-8eed-2b76deeed554": {
+    "asset": 1511259271000,
+    "meta": 1521616031653,
+    "relativePath": "prefab/editbox.prefab"
+  },
+  "27756ebb-3d33-44b0-9b96-e858fadd4dd4": {
+    "asset": 1511259271000,
+    "meta": 1521616031656,
+    "relativePath": "prefab/label.prefab"
+  },
+  "785a442c-3ceb-45be-a46e-7317f625f3b9": {
+    "asset": 1511259271000,
+    "meta": 1521616031659,
+    "relativePath": "prefab/layout.prefab"
+  },
+  "ca8401fe-ad6e-41a8-bd46-8e3e4e9945be": {
+    "asset": 1511259271000,
+    "meta": 1521616031663,
+    "relativePath": "prefab/pageview.prefab"
+  },
+  "cd33edea-55f5-46c2-958d-357a01384a36": {
+    "asset": 1511259271000,
+    "meta": 1521616031666,
+    "relativePath": "prefab/particlesystem.prefab"
+  },
+  "5965ffac-69da-4b55-bcde-9225d0613c28": {
+    "asset": 1511259271000,
+    "meta": 1521616031691,
+    "relativePath": "prefab/progressBar.prefab"
+  },
+  "4a37dd57-78cd-4cec-aad4-f11a73d12b63": {
+    "asset": 1511259271000,
+    "meta": 1521616031692,
+    "relativePath": "prefab/richtext.prefab"
+  },
+  "0004d1cf-a0ad-47d8-ab17-34d3db9d35a3": {
+    "asset": 1511259271000,
+    "meta": 1521616031697,
+    "relativePath": "prefab/slider.prefab"
+  },
+  "32044bd2-481f-4cf1-a656-e2b2fb1594eb": {
+    "asset": 1511259271000,
+    "meta": 1521616031698,
+    "relativePath": "prefab/scrollview.prefab"
+  },
+  "1f55e3be-b89b-4b79-88de-47fd31018044": {
+    "asset": 1511259271000,
+    "meta": 1521616031702,
+    "relativePath": "prefab/sprite_splash.prefab"
+  },
+  "96083d03-c332-4a3f-9386-d03e2d19e8ee": {
+    "asset": 1511259271000,
+    "meta": 1521616031705,
+    "relativePath": "prefab/sprite.prefab"
+  },
+  "7de03a80-4457-438d-95a7-3e7cdffd6086": {
+    "asset": 1511259271000,
+    "meta": 1521616031708,
+    "relativePath": "prefab/tiledmap.prefab"
+  },
+  "0d784963-d024-4ea6-a7db-03be0ad63010": {
+    "asset": 1511259271000,
+    "meta": 1521616031711,
+    "relativePath": "prefab/toggle.prefab"
+  },
+  "bf0a434c-84dd-4a8e-a08a-7a36f180cc75": {
+    "asset": 1511259271000,
+    "meta": 1521616031713,
+    "relativePath": "prefab/toggleGroup.prefab"
+  },
+  "232d2782-c4bd-4bb4-9e01-909f03d6d3b9": {
+    "asset": 1511259271000,
+    "meta": 1521616031716,
+    "relativePath": "prefab/videoplayer.prefab"
+  },
+  "8c5001fd-07ee-4a4b-a8a0-63e15195e94d": {
+    "asset": 1511259271000,
+    "meta": 1521616031719,
+    "relativePath": "prefab/webview.prefab"
+  },
+  "1889cf26-870a-40c7-97cc-6f31aae332b9": {
+    "asset": 1521627928368,
+    "meta": 1521628036730,
+    "relativePath": "mahjong/script/ui/prefab/mjVotingPopUI.js"
+  },
+  "f926180d-0a82-4e86-8169-e29db683e468": {
+    "asset": 1521627928380,
+    "meta": 1521628036792,
+    "relativePath": "mahjong/script/wahua/config/WahuaCfg.js"
+  },
+  "ef17becb-5b56-4cb4-86f1-79dcb9f044c0": {
+    "asset": 1523176746986,
+    "meta": 1521628015254,
     "relativePath": "poker/DDZ"
   },
   "591ec1c5-0e2e-4d6e-83ab-5cbb4fc2d00e": {
-    "asset": 1521534840042,
+    "asset": 1523873561705,
     "meta": 1521534840043,
     "relativePath": "poker/DDZ/Atlas"
   },
+  "3987eac2-5a12-4b6a-9c2d-0b723ddb4aaa": {
+    "asset": 1522652032063,
+    "meta": 1521534880954,
+    "relativePath": "poker/DDZ/Font"
+  },
   "f5f57623-1ee4-4a9a-9942-e92bfbc18c6a": {
-    "asset": 1521534847439,
+    "asset": 1523874564492,
     "meta": 1521534847439,
     "relativePath": "poker/DDZ/Prefab"
   },
   "f28e6a33-7fc5-40a0-9003-8d9cdbc9e3d8": {
-    "asset": 1521534854186,
+    "asset": 1523874564469,
     "meta": 1521534854187,
     "relativePath": "poker/DDZ/Scene"
   },
-  "c2a0160f-beda-40e9-a596-b042fc781252": {
-    "asset": 1521534862649,
-    "meta": 1521534862651,
-    "relativePath": "poker/DDZ/Texture"
-  },
-  "2f554a5c-e2aa-4c62-8956-b3b76522fcf8": {
-    "asset": 1521534871447,
-    "meta": 1521534871448,
-    "relativePath": "poker/DDZ/Animation"
-  },
-  "3987eac2-5a12-4b6a-9c2d-0b723ddb4aaa": {
-    "asset": 1521534880951,
-    "meta": 1521534880954,
-    "relativePath": "poker/DDZ/Font"
+  "28fe1ad1-46f9-4e85-95f5-971fe53bae01": {
+    "asset": 1523346819904,
+    "meta": 1523346819927,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Poker.prefab"
   },
   "d5838f5a-c260-4f10-9048-2880514a3507": {
-    "asset": 1521535347705,
+    "asset": 1523265979489,
     "meta": 1521534890676,
     "relativePath": "poker/DDZ/Script"
   },
-  "6ecf3e87-9d28-4d85-aa7d-c774b7ebfb56": {
-    "asset": 1521535187187,
-    "meta": 1521534914128,
-    "relativePath": "poker/DDZ/Script/Network"
-  },
   "616dc655-037c-468c-a208-4ccbba0e19da": {
-    "asset": 1521535053550,
+    "asset": 1523861334927,
     "meta": 1521534932553,
     "relativePath": "poker/DDZ/Script/Common"
   },
+  "9b06b08a-8bb5-468d-bed1-ec8e52456b7a": {
+    "asset": 1521599973992,
+    "meta": 1521628037223,
+    "relativePath": "poker/DDZ/Script/Common/DDZ_Tools.js"
+  },
   "a84b34bb-b561-48dd-97c0-088a0900baa8": {
-    "asset": 1521535092081,
+    "asset": 1523864547111,
     "meta": 1521534940168,
     "relativePath": "poker/DDZ/Script/Config"
   },
   "7243f2aa-ae07-4ea1-8055-73832f829da7": {
-    "asset": 1521535225123,
+    "asset": 1523936907600,
     "meta": 1521535003530,
     "relativePath": "poker/DDZ/Script/Desk"
   },
-  "c1d7c5a5-49c3-41d0-8aad-d00a54f31d86": {
-    "asset": 1521535490027,
-    "meta": 1521535011930,
-    "relativePath": "poker/DDZ/Script/Player"
+  "301172fe-8728-44c6-9ebd-df9ebc98d7e3": {
+    "asset": 1521536788412,
+    "meta": 1521628037294,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_DeskInfo.js"
   },
   "9a4b9db4-c44d-4343-994f-df16784fe57b": {
-    "asset": 1521535446900,
+    "asset": 1523940069593,
     "meta": 1521535017968,
     "relativePath": "poker/DDZ/Script/Game"
   },
   "96e3df8c-70f4-46d3-886e-c7450e5c5c5b": {
-    "asset": 1521535251779,
+    "asset": 1523846400766,
     "meta": 1521535022743,
     "relativePath": "poker/DDZ/Script/Gameover"
   },
-  "b8a6c6c7-e29e-4b5f-9f96-913e30b4979a": {
-    "asset": 1521535259959,
-    "meta": 1521535338108,
-    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerSelfInfo.js"
+  "6ecf3e87-9d28-4d85-aa7d-c774b7ebfb56": {
+    "asset": 1523526916844,
+    "meta": 1521534914128,
+    "relativePath": "poker/DDZ/Script/Network"
   },
-  "853f85d8-cb23-4c6a-81d0-3bd6038ac33e": {
-    "asset": 1521535282213,
-    "meta": 1521535454405,
-    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerRightInfo.js"
+  "c1d7c5a5-49c3-41d0-8aad-d00a54f31d86": {
+    "asset": 1523870852370,
+    "meta": 1521535011930,
+    "relativePath": "poker/DDZ/Script/Player"
   },
   "b444337d-208f-4c89-86d6-8cb923426c97": {
-    "asset": 1521535425951,
+    "asset": 1523870574174,
     "meta": 1521535343692,
     "relativePath": "poker/DDZ/Script/Poker"
   },
-  "e77313cc-be32-4527-ac80-69e4dbd07133": {
-    "asset": 1521535466575,
-    "meta": 1521535473375,
-    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerRightPoker.js"
+  "c2a0160f-beda-40e9-a596-b042fc781252": {
+    "asset": 1523176747097,
+    "meta": 1521534862651,
+    "relativePath": "poker/DDZ/Texture"
   },
-  "6714a913-0406-4bb5-a898-4c7e68ab15a1": {
-    "asset": 1521535769013,
-    "meta": 1521535810832,
-    "relativePath": "hall/scene/login.fire"
+  "e5df4970-76b3-4e7f-904d-4b9900ef8cb8": {
+    "asset": 1521627928334,
+    "meta": 1521628037747,
+    "relativePath": "mahjong/prefab/waHua/whVoting.prefab"
   },
-  "294c0e96-37c0-48df-a2b5-d493bf51b8a8": {
-    "asset": 1521535768922,
-    "meta": 1521535811479,
-    "relativePath": "hall/script/fun/funUtils.js"
-  },
-  "35796d52-caf0-4f64-bcc9-dd2f87fa3c89": {
-    "asset": 1521535768910,
-    "meta": 1521535811560,
-    "relativePath": "hall/script/hall/hall.js"
-  },
-  "a2188269-2d06-4907-8485-d582ee8820e8": {
-    "asset": 1521535769047,
-    "meta": 1521535811591,
-    "relativePath": "mahjong/scene/wahua.fire"
-  },
-  "23e805dd-600f-48a7-a107-f46685fe6f41": {
-    "asset": 1521535769025,
-    "meta": 1521535811733,
-    "relativePath": "mahjong/script/wahua/common/whUtils.js"
-  },
-  "5957823a-7f15-425d-a3cf-f8433fce6a8f": {
-    "asset": 1521535769030,
-    "meta": 1521535811748,
-    "relativePath": "mahjong/script/wahua/desk/playerUiWahua.js"
-  },
-  "12dfe22d-c9d9-4439-b784-80e693c70ae1": {
-    "asset": 1521535710845,
-    "meta": 1521535811753,
-    "relativePath": "poker/DDZ/Script/Common/DDZ_Sound.js"
-  },
-  "cecbb050-3391-48e9-8617-5030c86c941e": {
-    "asset": 1521539295136,
-    "meta": 1521539295144,
-    "relativePath": "poker/DDZ/Scene/DDZ_GameScene.fire"
+  "63120577-102d-4293-b7a2-1dcfb35bc913": {
+    "asset": 1521627928424,
+    "meta": 1521628037786,
+    "relativePath": "mahjong/script/wahua/prefab/whVoting.js"
   },
   "92227cc0-a668-494d-b074-cad06b3b0319": {
-    "asset": 1521536722295,
-    "meta": 1521536722688,
+    "asset": 1521698941295,
+    "meta": 1521698941699,
     "relativePath": "poker/DDZ/Script/Config/DDZ_CardTypeConfig.js"
   },
-  "301172fe-8728-44c6-9ebd-df9ebc98d7e3": {
-    "asset": 1521536788412,
-    "meta": 1521536788779,
-    "relativePath": "poker/DDZ/Script/Desk/DDZ_DeskInfo.js"
+  "81cf290e-91e9-45bd-b5ec-0db741319610": {
+    "asset": 1521711024751,
+    "meta": 1521711057297,
+    "relativePath": "hall/prefab/hall/hallShareHuanka.prefab"
   },
-  "a1639b7d-5d47-4400-9359-d2601eb6037c": {
-    "asset": 1521536845257,
-    "meta": 1521536845529,
-    "relativePath": "poker/DDZ/Script/Desk/DDZ_Main.js"
+  "b1b4171f-a3fb-4d76-a72d-b290300fcefc": {
+    "asset": 1523864917532,
+    "meta": 1523864917558,
+    "relativePath": "hall/prefab/public/playerMap.prefab"
+  },
+  "71eb717a-ee50-4061-96f4-fbd2860cd9fe": {
+    "asset": 1521711025211,
+    "meta": 1521711057596,
+    "relativePath": "hall/texture/huodong2.jpg"
+  },
+  "f76fc612-9d86-4fb6-96b5-7185d0794338": {
+    "asset": 1521711025208,
+    "meta": 1521711057681,
+    "relativePath": "hall/texture/huodong1.jpg"
+  },
+  "0d7c644c-4a40-487c-a796-26226b203681": {
+    "asset": 1521711025225,
+    "meta": 1521711057715,
+    "relativePath": "hall/texture/pk_jiesuan_di.jpg"
+  },
+  "7c4d8294-4348-4dab-bf80-5b910ff6d159": {
+    "asset": 1521711025230,
+    "meta": 1521711057747,
+    "relativePath": "hall/texture/shengming1.png"
+  },
+  "17823eeb-a966-487d-8886-e5fb6ceb7630": {
+    "asset": 1521711025232,
+    "meta": 1521711057754,
+    "relativePath": "hall/texture/singleColor.png"
+  },
+  "0984a2d4-db25-49d7-bff0-ab6853b36796": {
+    "asset": 1521711025222,
+    "meta": 1521711057790,
+    "relativePath": "hall/texture/pjCommon.png"
+  },
+  "9307c1bd-7a05-4f99-9b09-ade72917270d": {
+    "asset": 1521711024020,
+    "meta": 1521711057794,
+    "relativePath": "mahjong/prefab/mjReportPrefab.prefab"
+  },
+  "5034f319-51ce-4054-bca6-db8cb7c1dbba": {
+    "asset": 1521711025234,
+    "meta": 1521711057796,
+    "relativePath": "hall/texture/ty_bg_dating.jpg"
+  },
+  "cef95612-4ea0-49a9-9893-d1ad84914bdb": {
+    "asset": 1521711024024,
+    "meta": 1521711057800,
+    "relativePath": "mahjong/prefab/mjSkin.prefab"
+  },
+  "0b42c859-cd89-43b4-a503-feacf8c5c421": {
+    "asset": 1521711023983,
+    "meta": 1521711057825,
+    "relativePath": "mahjong/prefab/waHua/AllAccountWahua.prefab"
+  },
+  "07b602b8-d6f5-4c47-9a19-0e0d127ebcd1": {
+    "asset": 1521711023989,
+    "meta": 1521711057851,
+    "relativePath": "mahjong/prefab/waHua/OneAccountWahua.prefab"
+  },
+  "78b7561c-0c31-4969-9839-22b1b6a6af52": {
+    "asset": 1521711023991,
+    "meta": 1521711057855,
+    "relativePath": "mahjong/prefab/waHua/whSkin.prefab"
+  },
+  "2192bb79-91dd-4a4d-a4ad-c3a406ef048c": {
+    "asset": 1521711023760,
+    "meta": 1521711058621,
+    "relativePath": "mahjong/script/ui/prefab/mjSaiziUI.js"
+  },
+  "a45a974a-4fc8-4fa8-b0a7-2b75f5452c98": {
+    "asset": 1521711023834,
+    "meta": 1521711059398,
+    "relativePath": "mahjong/script/wahua/desk/commonWahua.js"
+  },
+  "33f57c68-3f84-490e-adf8-376aa3992d5e": {
+    "asset": 1521711023852,
+    "meta": 1521711059753,
+    "relativePath": "mahjong/script/wahua/prefab/whMenu.js"
+  },
+  "2dd864ad-1b21-4e23-9ad7-e72a2cac2053": {
+    "asset": 1521711024375,
+    "meta": 1521711061171,
+    "relativePath": "mahjong/texture/paiJu/paiju1.plist"
+  },
+  "40b0d5f1-874d-46c2-bd89-76da49015cce": {
+    "asset": 1521711024387,
+    "meta": 1521711060085,
+    "relativePath": "mahjong/texture/paiJu/paiju1.png"
+  },
+  "5eeaebae-98e7-4baf-bff1-03879de744a0": {
+    "asset": 1521711024627,
+    "meta": 1521711061243,
+    "relativePath": "mahjong/texture/paiMian/3dPai.plist"
+  },
+  "26f4c73a-8b54-4a91-8ecb-ad36c66e0c03": {
+    "asset": 1521711024400,
+    "meta": 1521711060145,
+    "relativePath": "mahjong/texture/paiJu/singleColor.png"
+  },
+  "1f94a468-8fb2-4eac-9a2e-317a7b503f35": {
+    "asset": 1521711024634,
+    "meta": 1521711060261,
+    "relativePath": "mahjong/texture/paiMian/3dPai.png"
+  },
+  "4ba1c278-bd74-4fe3-bf7c-6508aa743e71": {
+    "asset": 1521711024639,
+    "meta": 1521711061311,
+    "relativePath": "mahjong/texture/paiMian/paiList.plist"
+  },
+  "48e27686-0eb3-45fd-8af5-f67e6aaaf76a": {
+    "asset": 1521711024648,
+    "meta": 1521711061392,
+    "relativePath": "mahjong/texture/paiMian/paiMianWh.plist"
+  },
+  "2e4b9b0b-4eca-4331-9e39-23e0fbae858a": {
+    "asset": 1521711024645,
+    "meta": 1521711060475,
+    "relativePath": "mahjong/texture/paiMian/paiList.png"
+  },
+  "73f4c4a2-b2f8-4118-8bdb-debf87814a22": {
+    "asset": 1521711024655,
+    "meta": 1521711060619,
+    "relativePath": "mahjong/texture/paiMian/paiMianWh.png"
+  },
+  "935b02f6-19ff-42dc-8d79-a8aa0b125af5": {
+    "asset": 1521711025153,
+    "meta": 1521711060666,
+    "relativePath": "hall/texture/cjRoom.png"
+  },
+  "55149692-642e-4112-884c-05f0e0331d74": {
+    "asset": 1521711025202,
+    "meta": 1521711060681,
+    "relativePath": "hall/texture/gps_ditu.png"
+  },
+  "1c3e3c08-e2dd-4de4-a7e7-c74c1fa51d72": {
+    "asset": 1521711025227,
+    "meta": 1521711060690,
+    "relativePath": "hall/texture/pk_tishi_huafu2.png"
+  },
+  "9aa37816-acd4-4197-ade9-5eed8a4d6e05": {
+    "asset": 1521711025236,
+    "meta": 1521711060711,
+    "relativePath": "hall/texture/ty_dikuang_shop.png"
+  },
+  "ca7d7cbf-1ea5-4ebb-a3af-de34f4b0bc67": {
+    "asset": 1521711023738,
+    "meta": 1521711060752,
+    "relativePath": "poker/DDZ/Texture/B1.png"
+  },
+  "c424a630-7dbb-43ba-aa8c-005aef283f54": {
+    "asset": 1521791237866,
+    "meta": 1521791261146,
+    "relativePath": "hall/script/comm/hotUpdate.js"
+  },
+  "69e7d1db-a178-4eb0-978a-b51928e18db8": {
+    "asset": 1522032687232,
+    "meta": 1522032696227,
+    "relativePath": "hall/script/createRoom/createWahuaRoom.js"
+  },
+  "294c0e96-37c0-48df-a2b5-d493bf51b8a8": {
+    "asset": 1522032687237,
+    "meta": 1522032696553,
+    "relativePath": "hall/script/fun/funUtils.js"
+  },
+  "fd8b3e5d-87b1-422d-89fe-e28c2822e2a9": {
+    "asset": 1521711025212,
+    "meta": 1522639011456,
+    "relativePath": "hall/texture/pjCommon.plist"
+  },
+  "0a00ea15-1102-4cb6-8c54-05e2b5f05bba": {
+    "asset": 1522032687365,
+    "meta": 1522032696693,
+    "relativePath": "mahjong/prefab/waHua/whVotingPop.prefab"
+  },
+  "f2a4e68f-c25f-488a-9674-d8a1313d3bc4": {
+    "asset": 1522032687467,
+    "meta": 1522032697338,
+    "relativePath": "mahjong/script/wahua/prefab/whVotingPop.js"
+  },
+  "5ba26673-2c2d-4d53-af44-94658dd82e7e": {
+    "asset": 1522035606624,
+    "meta": 1522035607084,
+    "relativePath": "poker/DDZ/Script/Config/DDZ_CardValueConfig.js"
+  },
+  "9fd2680d-bbc0-418b-91a3-d95c6b915c17": {
+    "asset": 1522049494309,
+    "meta": 1522049510702,
+    "relativePath": "mahjong/texture/paiJu/paiju2.plist"
+  },
+  "c33b3bfa-c3fe-4e5e-a95b-78e9f20bf649": {
+    "asset": 1522049494314,
+    "meta": 1522049510672,
+    "relativePath": "mahjong/texture/paiJu/paiju2.png"
+  },
+  "e0ba4704-d730-472a-a09d-2a2febb8e74c": {
+    "asset": 1522059756551,
+    "meta": 1522060565625,
+    "relativePath": "hall/prefab/public/freeCardDetail.prefab"
+  },
+  "0fd9ccce-2ea6-4246-ad0e-acd1852c21f1": {
+    "asset": 1522633629230,
+    "meta": 1522633697079,
+    "relativePath": "mahjong/prefab/waHua/whPaiXia.prefab"
+  },
+  "474c5e98-878e-4a8b-9334-8f6d6e7cd822": {
+    "asset": 1523255622107,
+    "meta": 1523255622118,
+    "relativePath": "poker/DDZ/Prefab/DDZ_JiaBei.prefab"
+  },
+  "60976195-dcf0-4e91-ad8a-da5b16e05327": {
+    "asset": 1522633629239,
+    "meta": 1522633697086,
+    "relativePath": "mahjong/prefab/waHua/whTangShu.prefab"
+  },
+  "ad1551a2-b298-4315-ad91-a4dec858145f": {
+    "asset": 1522633629241,
+    "meta": 1522633697087,
+    "relativePath": "mahjong/prefab/waHua/whTangXia.prefab"
+  },
+  "d7220aa3-852f-4f7c-b643-e5e9e625039e": {
+    "asset": 1522142265115,
+    "meta": 1522143012507,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_PlayerBtn.js"
+  },
+  "a14d2e90-89ee-4c4b-84f4-3276c4ae0cd0": {
+    "asset": 1522233775237,
+    "meta": 1522233797245,
+    "relativePath": "poker/DDZ/Texture/DDZ_BackGround.jpg"
+  },
+  "fc6d8c9c-6759-45c9-bced-82438f23e4cd": {
+    "asset": 1522633629081,
+    "meta": 1522633697064,
+    "relativePath": "hall/script/fun/funNetMgr.js"
+  },
+  "6d2e81a9-95f6-4ea5-b5c6-8b9272f0b691": {
+    "asset": 1522311991140,
+    "meta": 1522312231366,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js"
+  },
+  "e77313cc-be32-4527-ac80-69e4dbd07133": {
+    "asset": 1522311991143,
+    "meta": 1522312231460,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerRightPoker.js"
+  },
+  "edbcd98f-9001-43c4-80c3-a81dbca554a4": {
+    "asset": 1522400376416,
+    "meta": 1522400714218,
+    "relativePath": "hall/prefab/tishi/minSingleButtonPop.prefab"
+  },
+  "b66127a8-6ac9-48d0-9ab4-0e2aae3558d6": {
+    "asset": 1522400376524,
+    "meta": 1522400714447,
+    "relativePath": "mahjong/script/wahua/common/whDefine.js"
+  },
+  "62d985ba-f662-4cb2-a5bd-8433972176ca": {
+    "asset": 1522403494827,
+    "meta": 1522403510085,
+    "relativePath": "poker/DDZ/Atlas/DDZ.plist"
+  },
+  "88676506-9a21-4f65-92a3-450a94a3061a": {
+    "asset": 1522403494829,
+    "meta": 1522403509907,
+    "relativePath": "poker/DDZ/Atlas/DDZ.png"
+  },
+  "90c51241-0d37-45a3-836d-24db9420ad53": {
+    "asset": 1522403494761,
+    "meta": 1522403510004,
+    "relativePath": "poker/DDZ/Texture/dz_tu1.png"
+  },
+  "c089ae83-df4b-416b-abdd-71fad908757c": {
+    "asset": 1522403494763,
+    "meta": 1522403510025,
+    "relativePath": "poker/DDZ/Texture/dz_tu2.png"
+  },
+  "a1133f25-8080-4151-ac09-72f5ffc24167": {
+    "asset": 1522403494765,
+    "meta": 1522403510030,
+    "relativePath": "poker/DDZ/Texture/dz_tu3.png"
+  },
+  "6d7485d1-2c10-48b3-8449-a7c9b5ecb0a4": {
+    "asset": 1522403494767,
+    "meta": 1522403510050,
+    "relativePath": "poker/DDZ/Texture/dz_tu4.png"
+  },
+  "44c809fd-4603-4ff4-b8ab-4ab003c7b0db": {
+    "asset": 1522404873791,
+    "meta": 1522404952894,
+    "relativePath": "poker/DDZ/Font/dz_add.fnt"
+  },
+  "1a0653f5-a50c-4858-bc1a-dfb1a65220ae": {
+    "asset": 1522404873794,
+    "meta": 1522404952762,
+    "relativePath": "poker/DDZ/Font/dz_add_0.png"
+  },
+  "5aeee39c-50ff-4b1c-a6d2-3156ad644330": {
+    "asset": 1522404873796,
+    "meta": 1522404952897,
+    "relativePath": "poker/DDZ/Font/dz_red.fnt"
+  },
+  "2d2aeb07-985d-41ad-8b35-7a04d0c043c4": {
+    "asset": 1522404873799,
+    "meta": 1522404952774,
+    "relativePath": "poker/DDZ/Font/dz_red_0.png"
+  },
+  "517b7978-9495-4325-bdfe-757c1ff35712": {
+    "asset": 1522404873802,
+    "meta": 1522404952900,
+    "relativePath": "poker/DDZ/Font/dz_score.fnt"
+  },
+  "cab8bd84-093f-483a-a274-d3e693436946": {
+    "asset": 1522404873805,
+    "meta": 1522404952781,
+    "relativePath": "poker/DDZ/Font/dz_score_0.png"
+  },
+  "999e14e6-590f-4431-86a3-ced29ab5a15d": {
+    "asset": 1522633629392,
+    "meta": 1522633697871,
+    "relativePath": "mahjong/script/wahua/desk/opsWahua.js"
+  },
+  "83efce97-389d-422f-ac1c-f95bf422b061": {
+    "asset": 1522633629401,
+    "meta": 1522633698021,
+    "relativePath": "mahjong/script/wahua/prefab/whPaiTouch.js"
+  },
+  "3190eeb3-c2ae-4bd2-93fc-bd317065422c": {
+    "asset": 1522648465793,
+    "meta": 1522648469446,
+    "relativePath": "poker/DDZ/Script/Common/DDZ_OSDate.js"
+  },
+  "09c3ffa7-a845-49fe-aa7f-b02c2fe4c654": {
+    "asset": 1522652032049,
+    "meta": 1522652057608,
+    "relativePath": "poker/DDZ/Font/dajiesuan_add.fnt"
+  },
+  "9b9bb858-bf8e-4678-95d8-d85734edac6f": {
+    "asset": 1522652032052,
+    "meta": 1522652057426,
+    "relativePath": "poker/DDZ/Font/dajiesuan_add_0.png"
+  },
+  "20710b79-b0bd-46ad-a770-bd1486fb7fe8": {
+    "asset": 1522652032055,
+    "meta": 1522652057612,
+    "relativePath": "poker/DDZ/Font/dajiesuan_red.fnt"
+  },
+  "c92ab9a2-a7d2-4b06-910b-60513fb8c879": {
+    "asset": 1522652032061,
+    "meta": 1522652057438,
+    "relativePath": "poker/DDZ/Font/dajiesuan_red_0.png"
+  },
+  "41c0ff24-bade-42ce-883f-ae0da728c455": {
+    "asset": 1522652032213,
+    "meta": 1522652057485,
+    "relativePath": "poker/DDZ/Texture/dz_xiaojiesuan0.png"
+  },
+  "63f2891c-c2ef-4b9c-9b0c-30478cd31041": {
+    "asset": 1522653508908,
+    "meta": 1522653516705,
+    "relativePath": "poker/DDZ/Atlas/xiaojiesuan.png"
+  },
+  "17aadd32-8f4d-4011-9d4f-6f7ad1ff0552": {
+    "asset": 1522653508886,
+    "meta": 1522653516724,
+    "relativePath": "poker/DDZ/Texture/dz_dajiesuan_t2.png"
+  },
+  "deab0f51-c79a-4cf6-840e-f7ddebf37b6f": {
+    "asset": 1522653508886,
+    "meta": 1522654906424,
+    "relativePath": "poker/DDZ/Texture/dz_xiaojiesuan.png"
+  },
+  "a3d5d75c-e310-4fd7-b62b-063e6f3601b0": {
+    "asset": 1522660290959,
+    "meta": 1522660314798,
+    "relativePath": "mahjong/prefab/waHua/whOptCard.prefab"
+  },
+  "a2188269-2d06-4907-8485-d582ee8820e8": {
+    "asset": 1522660290993,
+    "meta": 1522660315226,
+    "relativePath": "mahjong/scene/wahua.fire"
+  },
+  "14d63f61-9bec-4b77-92e6-a91b8c0075d4": {
+    "asset": 1522660290951,
+    "meta": 1522660316151,
+    "relativePath": "mahjong/prefab/waHua/whHuShang.prefab"
+  },
+  "bee26a22-bda4-4d14-834f-035014b33f8e": {
+    "asset": 1522660290952,
+    "meta": 1522660316155,
+    "relativePath": "mahjong/prefab/waHua/whHuXia.prefab"
+  },
+  "d71a9be6-3f2e-43b1-aa41-7b05a4e22db0": {
+    "asset": 1522660290954,
+    "meta": 1522660316159,
+    "relativePath": "mahjong/prefab/waHua/whHuYou.prefab"
+  },
+  "f9adc683-e45d-4ce2-b843-191d60dfa3e4": {
+    "asset": 1522660290956,
+    "meta": 1522660316191,
+    "relativePath": "mahjong/prefab/waHua/whHuZuo.prefab"
+  },
+  "7750985e-fb23-4cfd-ba4e-8794f93ffef1": {
+    "asset": 1523436609686,
+    "meta": 1523436609698,
+    "relativePath": "poker/DDZ/Prefab/DDZ_JiaoFen.prefab"
+  },
+  "23e805dd-600f-48a7-a107-f46685fe6f41": {
+    "asset": 1522665287067,
+    "meta": 1522719894694,
+    "relativePath": "mahjong/script/wahua/common/whUtils.js"
+  },
+  "629818c3-3506-41c2-9bd1-ecb96911f62c": {
+    "asset": 1522665287094,
+    "meta": 1522719895290,
+    "relativePath": "mahjong/script/wahua/desk/gameMgrWahua.js"
+  },
+  "5957823a-7f15-425d-a3cf-f8433fce6a8f": {
+    "asset": 1522665287100,
+    "meta": 1522719895529,
+    "relativePath": "mahjong/script/wahua/desk/playerUiWahua.js"
+  },
+  "272a01d7-11d3-4360-98d3-9d3c779358d9": {
+    "asset": 1522653508907,
+    "meta": 1522724558938,
+    "relativePath": "poker/DDZ/Atlas/xiaojiesuan.plist"
+  },
+  "0c5c9ab9-21cb-4b4a-9b80-582c3f2c53b1": {
+    "asset": 1522735382034,
+    "meta": 1522735420140,
+    "relativePath": "poker/DDZ/Script/Poker/DDZ_Poker.js"
+  },
+  "54d1d8b8-1def-4fe4-a235-e6ae4d621e74": {
+    "asset": 1522822644067,
+    "meta": 1522822644081,
+    "relativePath": "poker/DDZ/Prefab/DDZ_votingPop.prefab"
+  },
+  "c0f96643-ed07-4d9f-8643-c4380c9e2ec3": {
+    "asset": 1523255927598,
+    "meta": 1523255927612,
+    "relativePath": "poker/DDZ/Prefab/DDZ_voting.prefab"
+  },
+  "8b2ba19a-7680-40ad-862b-0350763ee5ff": {
+    "asset": 1522809653762,
+    "meta": 1522050296621,
+    "relativePath": "poker/DDZ/Script/Config/ddz_code.proto"
+  },
+  "17fe2dad-a079-4124-8843-9478b0536d0f": {
+    "asset": 1522812146739,
+    "meta": 1522050296624,
+    "relativePath": "poker/DDZ/Script/Config/ddz_desk.proto"
+  },
+  "1e24aa21-6c63-4737-85bf-63fc8e51d0a9": {
+    "asset": 1522821537595,
+    "meta": 1522821537603,
+    "relativePath": "poker/DDZ/Prefab/DDZ_popWin.prefab"
+  },
+  "2c583347-c525-46f1-ac8f-d6a4b252046d": {
+    "asset": 1523258923032,
+    "meta": 1522822944158,
+    "relativePath": "resources/poker/DDZ/Audio"
+  },
+  "5202de9d-dbfc-4185-94b8-67a9cc322b5c": {
+    "asset": 1522829814366,
+    "meta": 1522822963820,
+    "relativePath": "resources/poker/DDZ/Audio/Man"
+  },
+  "9ebc6a3c-b23f-4104-b31e-08c1be845b3e": {
+    "asset": 1523521398388,
+    "meta": 1522822969078,
+    "relativePath": "resources/poker/DDZ/Audio/Woman"
+  },
+  "ca8202b1-ac47-4f07-8bc1-8ce7b74729e4": {
+    "asset": 1522813561513,
+    "meta": 1522824181203,
+    "relativePath": "resources/poker/DDZ/Audio/Man/bujiabei.mp3"
+  },
+  "ae19c9e7-d6a5-4f8c-b4ca-df5da25e49d8": {
+    "asset": 1522813561515,
+    "meta": 1522824181205,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiaofen_0.mp3"
+  },
+  "8ff3a425-3a70-481c-8468-3c6b78566d75": {
+    "asset": 1522813561517,
+    "meta": 1522824181206,
+    "relativePath": "resources/poker/DDZ/Audio/Man/daguo_1.mp3"
+  },
+  "78b4e45e-3f93-4688-83b7-eae7cc7a915f": {
+    "asset": 1522813561519,
+    "meta": 1522824181207,
+    "relativePath": "resources/poker/DDZ/Audio/Man/daguo_2.mp3"
+  },
+  "4694f57c-fd25-4aa2-8939-573aa75bd9b1": {
+    "asset": 1522813561521,
+    "meta": 1522824181209,
+    "relativePath": "resources/poker/DDZ/Audio/Man/daguo_3.mp3"
+  },
+  "1eb4c741-fd7d-4fdb-849d-72852e41a805": {
+    "asset": 1522813561525,
+    "meta": 1522824181210,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_10.mp3"
+  },
+  "ea9cf1a3-c137-4a17-b4da-164ebf9401dc": {
+    "asset": 1522813561546,
+    "meta": 1522824181212,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_11.mp3"
+  },
+  "2c661c11-6aa1-4011-bdb1-4f7d410bc04b": {
+    "asset": 1522813561551,
+    "meta": 1522824181216,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_12.mp3"
+  },
+  "f9c994d3-483d-44c4-a245-5bd213f56c14": {
+    "asset": 1522813561550,
+    "meta": 1522824181217,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_13.mp3"
+  },
+  "ea9a5f7a-701b-4220-8c1f-1edcf4bfeedf": {
+    "asset": 1522813561544,
+    "meta": 1522824181218,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_14.mp3"
+  },
+  "0493fb95-b56f-4bc9-8d9e-947c33aa38d1": {
+    "asset": 1522813561526,
+    "meta": 1522824181219,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_15.mp3"
+  },
+  "556b9815-0f87-47d6-93db-c68f7fed2922": {
+    "asset": 1522813561528,
+    "meta": 1522824181220,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_3.mp3"
+  },
+  "136010fe-628e-4eb5-89af-097d2c557d2f": {
+    "asset": 1522813561530,
+    "meta": 1522824181221,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_4.mp3"
+  },
+  "cfe6f1e7-1e6c-4e57-8416-7a96f8c19562": {
+    "asset": 1522813561532,
+    "meta": 1522824181223,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_5.mp3"
+  },
+  "ecc90386-3be2-45bf-b105-41fc5ecce247": {
+    "asset": 1522813561533,
+    "meta": 1522824181223,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_6.mp3"
+  },
+  "b974acb7-a95b-4edf-a06f-a35f6af58fb2": {
+    "asset": 1522813561535,
+    "meta": 1522824181224,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_7.mp3"
+  },
+  "e710bc92-c743-4d00-989d-4deafcc9ebd8": {
+    "asset": 1522813561538,
+    "meta": 1522824181225,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_8.mp3"
+  },
+  "737e8a7f-8cec-4f04-aece-06c1d8c6cb9f": {
+    "asset": 1522813561541,
+    "meta": 1522824181227,
+    "relativePath": "resources/poker/DDZ/Audio/Man/dui_9.mp3"
+  },
+  "2471a8e4-3b89-42d1-8004-98f8ee85b118": {
+    "asset": 1522813561553,
+    "meta": 1522824181228,
+    "relativePath": "resources/poker/DDZ/Audio/Man/feiji.mp3"
+  },
+  "0446ed59-08a4-4086-817b-dd67bb9c6ca2": {
+    "asset": 1522813561557,
+    "meta": 1522824181230,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiabei.mp3"
+  },
+  "afda64c3-3a64-4643-8894-3ac72168e9d6": {
+    "asset": 1522813561471,
+    "meta": 1522824181232,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiaofen_1.mp3"
+  },
+  "e1ee0c14-214e-4bd7-87cb-a96496f1763c": {
+    "asset": 1522813561477,
+    "meta": 1522824181234,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiaofen_2.mp3"
+  },
+  "51e50e15-d77f-4cf6-b1a6-4a380ead0a2a": {
+    "asset": 1522813561489,
+    "meta": 1522824181236,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiaofen_3.mp3"
+  },
+  "1cfbddbb-436f-4b71-bec3-815142e63955": {
+    "asset": 1522813561501,
+    "meta": 1522824181237,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiaofen_6.mp3"
+  },
+  "aeebe5b8-1526-409d-8349-399ffec7a5bf": {
+    "asset": 1522813561510,
+    "meta": 1522824181239,
+    "relativePath": "resources/poker/DDZ/Audio/Man/jiaofen_9.mp3"
+  },
+  "e002e6ed-c74d-4893-b862-a2e7c8a2e47d": {
+    "asset": 1522813561473,
+    "meta": 1522824181241,
+    "relativePath": "resources/poker/DDZ/Audio/Man/last_1.mp3"
+  },
+  "5eab7b81-5ed4-4ce4-aa4c-6d826f30c4bd": {
+    "asset": 1522813561479,
+    "meta": 1522824181243,
+    "relativePath": "resources/poker/DDZ/Audio/Man/last_2.mp3"
+  },
+  "96da85c3-263d-405e-94cf-e279c689ba46": {
+    "asset": 1522813561560,
+    "meta": 1522824181244,
+    "relativePath": "resources/poker/DDZ/Audio/Man/liandui.mp3"
+  },
+  "ad818dc5-f157-474e-88cf-5f78cf6d3694": {
+    "asset": 1522813561572,
+    "meta": 1522824181246,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk001.mp3"
+  },
+  "883c6dcf-af9f-4ff4-9267-0767dc85431e": {
+    "asset": 1522813561574,
+    "meta": 1522824181247,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk002.mp3"
+  },
+  "494f1b00-3c79-4d55-9e2f-b560587f1bc4": {
+    "asset": 1522813561576,
+    "meta": 1522824181249,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk003.mp3"
+  },
+  "901743d1-baab-46a9-ac36-fc5ed0a86eb8": {
+    "asset": 1522813561578,
+    "meta": 1522824181250,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk004.mp3"
+  },
+  "b168b030-f269-440a-bcd6-cd4a04c70255": {
+    "asset": 1522813561581,
+    "meta": 1522824181252,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk005.mp3"
+  },
+  "0c595117-d25c-4079-8587-83755c5642bc": {
+    "asset": 1522813561583,
+    "meta": 1522824181253,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk006.mp3"
+  },
+  "327e9741-a219-4498-bf14-2d39a304a1a1": {
+    "asset": 1522813561586,
+    "meta": 1522824181255,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk007.mp3"
+  },
+  "1ab7ab2d-8a0c-4372-9e4b-4b6896f99bdb": {
+    "asset": 1522813561588,
+    "meta": 1522824181257,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk008.mp3"
+  },
+  "99a15233-7f71-445f-a489-833c42c5430f": {
+    "asset": 1522813561590,
+    "meta": 1522824181259,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk009.mp3"
+  },
+  "1a9d0876-9f30-4b97-8683-77523481b00f": {
+    "asset": 1522813561593,
+    "meta": 1522824181265,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk010.mp3"
+  },
+  "d1e30d9d-74c5-4ca7-a080-5c075ab56b9b": {
+    "asset": 1522813561595,
+    "meta": 1522824181267,
+    "relativePath": "resources/poker/DDZ/Audio/Man/male_talk011.mp3"
+  },
+  "9ffbcfb2-f2c7-4e9c-a94a-994bae5fdbd8": {
+    "asset": 1522813561601,
+    "meta": 1522824181269,
+    "relativePath": "resources/poker/DDZ/Audio/Man/zadan.mp3"
+  },
+  "d5f12bfd-9aa2-4808-a8fa-a2756266f88e": {
+    "asset": 1522813561562,
+    "meta": 1522824181271,
+    "relativePath": "resources/poker/DDZ/Audio/Man/pass_1.mp3"
+  },
+  "e65e7f34-16f5-4c56-acce-43b4a66c0d78": {
+    "asset": 1522813561563,
+    "meta": 1522824181272,
+    "relativePath": "resources/poker/DDZ/Audio/Man/pass_2.mp3"
+  },
+  "14abadd1-a016-4dc2-9000-c302b4c88615": {
+    "asset": 1522813561565,
+    "meta": 1522824181274,
+    "relativePath": "resources/poker/DDZ/Audio/Man/pass_3.mp3"
+  },
+  "2ada8a4d-efe9-4535-b66b-d05015a68c63": {
+    "asset": 1522813561470,
+    "meta": 1522824181275,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_10.mp3"
+  },
+  "f71ff8b0-0aa4-4666-a2c5-69a1ca58baf1": {
+    "asset": 1522813561555,
+    "meta": 1522824181277,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_11.mp3"
+  },
+  "8f4b7183-1a6b-48b3-aa7e-abdc605c8164": {
+    "asset": 1522813561567,
+    "meta": 1522824181278,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_12.mp3"
+  },
+  "c014ba14-4ed4-4d7c-a2c5-8d35ea4f711b": {
+    "asset": 1522813561559,
+    "meta": 1522824181280,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_13.mp3"
+  },
+  "ee3a7056-c694-4b90-a9e3-d03859fb3717": {
+    "asset": 1522813561511,
+    "meta": 1522824181281,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_14.mp3"
+  },
+  "0e6fbd54-8bf1-4a51-9fef-47ffa8977ca9": {
+    "asset": 1522813561475,
+    "meta": 1522824181283,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_15.mp3"
+  },
+  "8accdfc4-8253-4c3e-8c46-fda2f6fe93c9": {
+    "asset": 1522813561481,
+    "meta": 1522824181285,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_3.mp3"
+  },
+  "21cfaf1d-30ad-4716-a6e6-30f15dda21a4": {
+    "asset": 1522813561491,
+    "meta": 1522824181286,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_4.mp3"
+  },
+  "38b28d4e-5a57-4c90-b908-7a9edc082c70": {
+    "asset": 1522813561496,
+    "meta": 1522824181288,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_5.mp3"
+  },
+  "0538a9a2-ec35-462e-8e50-5a33c8a40b9b": {
+    "asset": 1522813561599,
+    "meta": 1522824181289,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_53.mp3"
+  },
+  "59b3d8b1-5ffa-432c-b055-a8a160cab0c8": {
+    "asset": 1522813561523,
+    "meta": 1522824181291,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_54.mp3"
+  },
+  "232f8fac-0e52-4293-bd1c-5562e885cf39": {
+    "asset": 1522813561499,
+    "meta": 1522824181292,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_6.mp3"
+  },
+  "72c1175d-ce49-4589-a0c5-247558ae940e": {
+    "asset": 1522813561503,
+    "meta": 1522824181294,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_7.mp3"
+  },
+  "d185e733-98db-48b4-85f1-c80665ffd3cc": {
+    "asset": 1522813561505,
+    "meta": 1522824181295,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_8.mp3"
+  },
+  "005640b6-f20d-4136-ba7d-496f0fe826e6": {
+    "asset": 1522813561507,
+    "meta": 1522824181297,
+    "relativePath": "resources/poker/DDZ/Audio/Man/s_9.mp3"
+  },
+  "2d57e742-e397-45d4-a5dc-fe7c4338a371": {
+    "asset": 1522813561484,
+    "meta": 1522824181298,
+    "relativePath": "resources/poker/DDZ/Audio/Man/sanbudai.mp3"
+  },
+  "1ed0b8f4-596e-4100-876f-d7faae05fbb9": {
+    "asset": 1522813561488,
+    "meta": 1522824181300,
+    "relativePath": "resources/poker/DDZ/Audio/Man/sandaidui.mp3"
+  },
+  "3215a1e5-2a96-43ad-92f5-92b7bfd0bb5c": {
+    "asset": 1522813561487,
+    "meta": 1522824181301,
+    "relativePath": "resources/poker/DDZ/Audio/Man/sandaiyi.mp3"
+  },
+  "69e5247e-7d75-4d96-83c9-505393466ebc": {
+    "asset": 1522813561569,
+    "meta": 1522824181303,
+    "relativePath": "resources/poker/DDZ/Audio/Man/shunzi.mp3"
+  },
+  "47facc41-b221-410b-871f-08558ae2d74a": {
+    "asset": 1522813561495,
+    "meta": 1522824181304,
+    "relativePath": "resources/poker/DDZ/Audio/Man/sidaidui.mp3"
+  },
+  "27c34484-a913-4cf6-b6e4-ccf8ed9c1361": {
+    "asset": 1522813561493,
+    "meta": 1522824181306,
+    "relativePath": "resources/poker/DDZ/Audio/Man/sidaier.mp3"
+  },
+  "3f31f4ef-1bb9-4cb7-830a-58164333e894": {
+    "asset": 1522813561597,
+    "meta": 1522824181308,
+    "relativePath": "resources/poker/DDZ/Audio/Man/wangza.mp3"
+  },
+  "820754f9-c978-4f3a-8f01-98ae09c27095": {
+    "asset": 1522813560907,
+    "meta": 1522824261804,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/bujiabei.mp3"
+  },
+  "977f4bc5-8442-4ceb-90c7-89a68a085af9": {
+    "asset": 1522813560909,
+    "meta": 1522824261812,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiaofen_0.mp3"
+  },
+  "59225d22-e47d-43be-9991-362feb3ae011": {
+    "asset": 1522813560913,
+    "meta": 1522824261815,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/daguo_1.mp3"
+  },
+  "056ba0a6-d88c-4862-8993-72fcb010a655": {
+    "asset": 1522813560916,
+    "meta": 1522824261819,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/daguo_2.mp3"
+  },
+  "07b4c346-f36a-42aa-b5bf-bc3850a079a0": {
+    "asset": 1522813560918,
+    "meta": 1522824261822,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/daguo_3.mp3"
+  },
+  "1075deba-856a-49ee-bdd8-0b8ff7b9f1fd": {
+    "asset": 1522813560931,
+    "meta": 1522824261825,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_10.mp3"
+  },
+  "1e3e689d-ca45-4d01-8840-dce10d4656aa": {
+    "asset": 1522813560926,
+    "meta": 1522824261827,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_11.mp3"
+  },
+  "cfd29132-90f9-45f5-b0e6-032cf2755d70": {
+    "asset": 1522813560929,
+    "meta": 1522824261830,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_12.mp3"
+  },
+  "49d643af-3e9d-4731-bc6f-9419a2e9cd4c": {
+    "asset": 1522813560927,
+    "meta": 1522824261832,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_13.mp3"
+  },
+  "72e24419-225f-478b-a15c-f7560802efc6": {
+    "asset": 1522813560924,
+    "meta": 1522824261835,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_14.mp3"
+  },
+  "2b26ec4c-6471-4254-8933-467c22c9bffe": {
+    "asset": 1522813560932,
+    "meta": 1522824261837,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_15.mp3"
+  },
+  "50e6a2e0-77f7-4c04-b885-06951259487f": {
+    "asset": 1522813560935,
+    "meta": 1522824261839,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_3.mp3"
+  },
+  "b08fcef4-a4c7-42d1-ba42-1137c908858e": {
+    "asset": 1522813560937,
+    "meta": 1522824261841,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_4.mp3"
+  },
+  "1dde9685-a17b-40e9-a74b-b50e43e04a47": {
+    "asset": 1522813560938,
+    "meta": 1522824261843,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_5.mp3"
+  },
+  "02e5b410-243a-445e-91d6-93d28de82a43": {
+    "asset": 1522813560941,
+    "meta": 1522824261845,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_6.mp3"
+  },
+  "f01158ea-07e5-4358-9076-00dbdb85c71a": {
+    "asset": 1522813560942,
+    "meta": 1522824261847,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_7.mp3"
+  },
+  "a69b2dea-1032-4562-9c61-5d9249579be7": {
+    "asset": 1522813560944,
+    "meta": 1522824261849,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_8.mp3"
+  },
+  "87899131-3b79-47e8-b892-9e1dd3808934": {
+    "asset": 1522813560946,
+    "meta": 1522824261852,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/dui_9.mp3"
+  },
+  "5cd22449-fbfb-43f9-b45e-ce39a923414b": {
+    "asset": 1522813560948,
+    "meta": 1522824261855,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/feiji.mp3"
+  },
+  "338a83b2-8dd7-43c3-ae78-3d174e410a34": {
+    "asset": 1522813560976,
+    "meta": 1522824261857,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk001.mp3"
+  },
+  "2f292172-9c55-4844-8092-9785485faaac": {
+    "asset": 1522813560978,
+    "meta": 1522824261860,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk002.mp3"
+  },
+  "87acac83-0d52-4851-8575-6c0badc8dfd5": {
+    "asset": 1522813560981,
+    "meta": 1522824261862,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk003.mp3"
+  },
+  "10c7bbf7-1134-430c-ad71-99615d72e9f6": {
+    "asset": 1522813560983,
+    "meta": 1522824261864,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk004.mp3"
+  },
+  "ec9fd36d-f151-4255-addb-e3b5a058a56b": {
+    "asset": 1522813560986,
+    "meta": 1522824261867,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk005.mp3"
+  },
+  "c168b85f-9d34-4f08-b9dc-7609c4022b61": {
+    "asset": 1522813560989,
+    "meta": 1522824261871,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk006.mp3"
+  },
+  "364a51a0-1321-44f9-aba9-23651b1e8d72": {
+    "asset": 1522813560992,
+    "meta": 1522824261875,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk007.mp3"
+  },
+  "c28ce9a4-e361-49b1-a529-ffed188a125a": {
+    "asset": 1522813560995,
+    "meta": 1522824261878,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk008.mp3"
+  },
+  "422efe71-9f01-416e-8dc4-a375267bdae6": {
+    "asset": 1522813560998,
+    "meta": 1522824261882,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk009.mp3"
+  },
+  "7586aff6-5aac-4df1-a624-e86008827fa8": {
+    "asset": 1522813561006,
+    "meta": 1522824261885,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk010.mp3"
+  },
+  "51739d12-5461-4bc4-b41b-d125902aafbd": {
+    "asset": 1522813561009,
+    "meta": 1522824261889,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/male_talk011.mp3"
+  },
+  "00c0bc21-3358-4355-a043-7b6a0db47d2a": {
+    "asset": 1522813561014,
+    "meta": 1522824261893,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/zadan.mp3"
+  },
+  "8cff0928-1109-4ab9-88b3-af9df3b1242a": {
+    "asset": 1522813560952,
+    "meta": 1522824261896,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiabei.mp3"
+  },
+  "fe07966d-6025-4167-b3dc-e4fb6c406eca": {
+    "asset": 1522813560870,
+    "meta": 1522824261900,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiaofen_1.mp3"
+  },
+  "e9982764-dc53-4262-95c6-cba4cad09029": {
+    "asset": 1522813560875,
+    "meta": 1522824261903,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiaofen_2.mp3"
+  },
+  "36857ad9-f51c-4d35-a066-00b8df78eaf9": {
+    "asset": 1522813560885,
+    "meta": 1522824261906,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiaofen_3.mp3"
+  },
+  "320f2de6-d66c-460c-89df-2a9a060e5f76": {
+    "asset": 1522813560896,
+    "meta": 1522824261910,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiaofen_6.mp3"
+  },
+  "5b105441-b621-4aac-b741-11cc400cb088": {
+    "asset": 1522813560902,
+    "meta": 1522824261913,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/jiaofen_9.mp3"
+  },
+  "11560cfd-2703-43f4-b2ba-ad4b064a27f4": {
+    "asset": 1522813560872,
+    "meta": 1522824261917,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/last_1.mp3"
+  },
+  "6abd83de-7441-4d6c-b65c-fe52a9e1150f": {
+    "asset": 1522813560877,
+    "meta": 1522824261921,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/last_2.mp3"
+  },
+  "b6afcd91-b555-4a97-a200-5214b078b974": {
+    "asset": 1522813560956,
+    "meta": 1522824261924,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/liandui.mp3"
+  },
+  "dd694ebf-7108-43d3-b6bc-fbc165b83b1e": {
+    "asset": 1522813560958,
+    "meta": 1522824261928,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/pass_1.mp3"
+  },
+  "26f84085-e708-4096-9b98-535495fa5111": {
+    "asset": 1522813560959,
+    "meta": 1522824261930,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/pass_2.mp3"
+  },
+  "d6473e0a-798c-4b7a-97ef-db93e06747e2": {
+    "asset": 1522813560963,
+    "meta": 1522824261933,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/pass_3.mp3"
+  },
+  "634f505e-9979-4389-bc7b-a8b921d5a554": {
+    "asset": 1522813560868,
+    "meta": 1522824261936,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_10.mp3"
+  },
+  "ddeee6af-0f79-469b-979e-de6d86e3197f": {
+    "asset": 1522813560950,
+    "meta": 1522824261940,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_11.mp3"
+  },
+  "e5af664f-e411-4148-ac5b-693d3c1302f3": {
+    "asset": 1522813560966,
+    "meta": 1522824261944,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_12.mp3"
+  },
+  "68dbc5eb-20e0-4874-81a4-d8926347d465": {
+    "asset": 1522813560954,
+    "meta": 1522824261963,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_13.mp3"
+  },
+  "b5e1f8b8-e862-4a68-bff2-792a162d1aa0": {
+    "asset": 1522813560904,
+    "meta": 1522824261968,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_14.mp3"
+  },
+  "e0ad19e4-5382-414e-b844-dde1f4d2eff4": {
+    "asset": 1522813560873,
+    "meta": 1522824261971,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_15.mp3"
+  },
+  "812136d4-98d4-41c4-8594-c8254e9a324e": {
+    "asset": 1522813560878,
+    "meta": 1522824261973,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_3.mp3"
+  },
+  "1082a4b9-a75d-4a45-8414-d0b73069adf7": {
+    "asset": 1522813560887,
+    "meta": 1522824261974,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_4.mp3"
+  },
+  "fc2f6434-ae3c-40af-bcdc-dd0cc949519b": {
+    "asset": 1522813560893,
+    "meta": 1522824261975,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_5.mp3"
+  },
+  "5d769e85-3e73-44e4-81a7-6342c012af0a": {
+    "asset": 1522813561012,
+    "meta": 1522824261977,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_53.mp3"
+  },
+  "bd07413e-5372-4a8d-a34a-92db38f693e7": {
+    "asset": 1522813560921,
+    "meta": 1522824261978,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_54.mp3"
+  },
+  "ae9d133c-b5af-4d33-9011-a3c4b6859a50": {
+    "asset": 1522813560894,
+    "meta": 1522824261980,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_6.mp3"
+  },
+  "ff9a3476-278a-462c-bca0-7cd838ed2ccd": {
+    "asset": 1522813560897,
+    "meta": 1522824261982,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_7.mp3"
+  },
+  "6a7f9e16-5b39-475c-a0e4-d48138384687": {
+    "asset": 1522813560898,
+    "meta": 1522824261983,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_8.mp3"
+  },
+  "88011130-8ab7-498c-9ee3-e02316737a62": {
+    "asset": 1522813560900,
+    "meta": 1522824261986,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/s_9.mp3"
+  },
+  "b9872b8e-65e2-4832-8e9b-983f14e5c7ae": {
+    "asset": 1522813560880,
+    "meta": 1522824261987,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/sanbudai.mp3"
+  },
+  "5023ad72-47c5-48bd-84f1-d78f10f77bee": {
+    "asset": 1522813560883,
+    "meta": 1522824261989,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/sandaidui.mp3"
+  },
+  "0aa826a8-1483-4e64-8574-4a04c1fb9ab0": {
+    "asset": 1522813560881,
+    "meta": 1522824261990,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/sandaiyi.mp3"
+  },
+  "9c8b3d00-bb49-41b1-8234-7d0d9358a0d2": {
+    "asset": 1522813560971,
+    "meta": 1522824261992,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/shunzi.mp3"
+  },
+  "338a57db-e2ad-4541-a91d-c6c8bce99b6f": {
+    "asset": 1522813560891,
+    "meta": 1522824261993,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/sidaidui.mp3"
+  },
+  "84ea09f6-1b4f-4cb9-b206-c8da5d20b9d7": {
+    "asset": 1522813560889,
+    "meta": 1522824261995,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/sidaier.mp3"
+  },
+  "cd0de865-6777-435c-82fc-bc7b11cfc7c2": {
+    "asset": 1522813561011,
+    "meta": 1522824261997,
+    "relativePath": "resources/poker/DDZ/Audio/Woman/wangza.mp3"
+  },
+  "c278b741-ea7b-45c2-8781-97d3f961bd3a": {
+    "asset": 1522824372201,
+    "meta": 1522824283602,
+    "relativePath": "resources/poker/DDZ"
+  },
+  "ce2c7bbd-ecd9-498e-9eaf-c3238e4dd784": {
+    "asset": 1522829635940,
+    "meta": 1522829691712,
+    "relativePath": "hall/texture/CardDetail.plist"
+  },
+  "2321133e-64fd-4744-8edc-ad49afa76030": {
+    "asset": 1522829635948,
+    "meta": 1522829691792,
+    "relativePath": "hall/texture/common.plist"
+  },
+  "f4b4ef33-cb24-46a7-9cf8-b6ac6767de30": {
+    "asset": 1522829635945,
+    "meta": 1522829691555,
+    "relativePath": "hall/texture/CardDetail.png"
+  },
+  "c7134a7a-fa0a-4dad-a5b2-0f8d77db859c": {
+    "asset": 1522829635957,
+    "meta": 1522829691673,
+    "relativePath": "hall/texture/common.png"
+  },
+  "7ab52214-cf83-425a-8947-d2255e59fac6": {
+    "asset": 1523343799993,
+    "meta": 1522829932764,
+    "relativePath": "poker/DDZ/Spine"
+  },
+  "f44f5e8a-4781-4139-91b1-59ebe1991166": {
+    "asset": 1523343811080,
+    "meta": 1522829941591,
+    "relativePath": "poker/DDZ/Spine/Spring"
+  },
+  "2d86bed3-8d9f-4659-b723-98c63f3481f4": {
+    "asset": 1522830043867,
+    "meta": 1522829948646,
+    "relativePath": "poker/DDZ/Spine/Baojing"
+  },
+  "8b740a30-140e-459b-9015-6f95463abd50": {
+    "asset": 1523343845492,
+    "meta": 1522829957766,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType"
+  },
+  "3ccbab80-bc8a-40a5-b0af-a42bb6d49b94": {
+    "asset": 1522830043881,
+    "meta": 1522829969725,
+    "relativePath": "poker/DDZ/Spine/Dizhu"
+  },
+  "b1425418-f3a9-43c5-9731-28b7896fa388": {
+    "asset": 1522749273943,
+    "meta": 1522830043860,
+    "relativePath": "poker/DDZ/Spine/Baojing/Baojing.atlas"
+  },
+  "6204c89f-d9b2-4b77-9511-4774dc22b172": {
+    "asset": 1522749274610,
+    "meta": 1522830043869,
+    "relativePath": "poker/DDZ/Spine/Dizhu/Maozi.atlas"
+  },
+  "4ba708a5-a54b-4e2e-9740-e51006c64bf7": {
+    "asset": 1522749273945,
+    "meta": 1522830043978,
+    "relativePath": "poker/DDZ/Spine/Baojing/Baojing.png"
+  },
+  "590c1cf8-792f-42ce-9fd3-976b80509e9a": {
+    "asset": 1522749273944,
+    "meta": 1522830044260,
+    "relativePath": "poker/DDZ/Spine/Baojing/Baojing.json"
+  },
+  "ac9e5057-8bbf-461c-abf5-c703873b2aec": {
+    "asset": 1522749275196,
+    "meta": 1522830043883,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Shuai.atlas"
+  },
+  "8607070a-2951-49a1-9e1a-409a8dee73b6": {
+    "asset": 1522749274611,
+    "meta": 1522830044286,
+    "relativePath": "poker/DDZ/Spine/Dizhu/Maozi.json"
+  },
+  "15c5f42b-26b5-4385-bd56-a71f7ed19a56": {
+    "asset": 1522749274613,
+    "meta": 1522830044031,
+    "relativePath": "poker/DDZ/Spine/Dizhu/Maozi.png"
+  },
+  "adcc1388-5ba1-4554-a461-62a98534ee9b": {
+    "asset": 1522749276351,
+    "meta": 1522830043897,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Wangzha.atlas"
+  },
+  "931b5bf0-8110-4ac7-a3ad-34d49373d5a4": {
+    "asset": 1522749276357,
+    "meta": 1522830044113,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Wangzha.png"
+  },
+  "e0cbfc3f-486a-4b12-83f6-1d4cc0b36dd3": {
+    "asset": 1522749276793,
+    "meta": 1522830043909,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Zhadan.atlas"
+  },
+  "28eb80cf-2d61-43e4-b33b-4ecc7cacb6e7": {
+    "asset": 1522749276362,
+    "meta": 1522830044146,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Wangzha2.png"
+  },
+  "08259f89-d8f5-4b0a-9564-17f0195b893b": {
+    "asset": 1522749274397,
+    "meta": 1522830043916,
+    "relativePath": "poker/DDZ/Spine/Spring/Chuntian.atlas"
+  },
+  "176df4e7-cb7c-470d-95ba-6c2078455c5b": {
+    "asset": 1522749276798,
+    "meta": 1522830044191,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Zhadan.png"
+  },
+  "5fa86c80-9021-443d-bbfc-7795786eff6d": {
+    "asset": 1522749274402,
+    "meta": 1522830044225,
+    "relativePath": "poker/DDZ/Spine/Spring/Chuntian.png"
+  },
+  "20e93210-038a-42f9-ad7d-744727b555b3": {
+    "asset": 1523158868867,
+    "meta": 1523158868885,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Spring.prefab"
+  },
+  "f2347569-67e8-4f53-9479-5cb953c497ee": {
+    "asset": 1522831044178,
+    "meta": 1522831044183,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Rocket.prefab"
+  },
+  "a76dc50d-e2d4-4070-afb1-541d142ed6a9": {
+    "asset": 1522831047739,
+    "meta": 1522831047744,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Boom.prefab"
+  },
+  "ecdd55b6-f5b6-41ea-991b-a2f5e767dcc2": {
+    "asset": 1523157487464,
+    "meta": 1523157487486,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Shunzi.prefab"
+  },
+  "325cf00e-02d3-403b-8812-4f6f96f1882c": {
+    "asset": 1522831051522,
+    "meta": 1522831051525,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Dizhu.prefab"
+  },
+  "d71d9830-c66c-4a5d-aa03-52f938558132": {
+    "asset": 1522831053440,
+    "meta": 1522831053445,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Waring.prefab"
+  },
+  "4e184240-a6bd-4810-9905-c46acde5113e": {
+    "asset": 1523157336088,
+    "meta": 1523157404620,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Shuai.png"
+  },
+  "65de7b5d-2e42-4c76-a2f5-9900f1facdeb": {
+    "asset": 1523174304838,
+    "meta": 1523174294046,
+    "relativePath": "poker/DDZ/Spine/Head"
+  },
+  "2646cdc0-ecb9-4d46-9ea6-a505de79fbab": {
+    "asset": 1523174164608,
+    "meta": 1523174304831,
+    "relativePath": "poker/DDZ/Spine/Head/Quan.atlas"
+  },
+  "c7085ce7-49b4-4d2c-a41c-eaaee17b5127": {
+    "asset": 1523174164612,
+    "meta": 1523174304896,
+    "relativePath": "poker/DDZ/Spine/Head/Quan.png"
+  },
+  "4e5eba99-3a15-4972-a744-3a3a6f30ec53": {
+    "asset": 1523174164610,
+    "meta": 1523174304912,
+    "relativePath": "poker/DDZ/Spine/Head/Quan.json"
+  },
+  "2f554a5c-e2aa-4c62-8956-b3b76522fcf8": {
+    "asset": 1523344626272,
+    "meta": 1523176746985,
+    "relativePath": "poker/DDZ/Animation"
+  },
+  "2b7d2d22-622c-4916-a54c-c94baa37b780": {
+    "asset": 1523176746975,
+    "meta": 1523176762047,
+    "relativePath": "poker/DDZ/Animation/DDZ_HeadScale.anim"
+  },
+  "319b6667-46bf-4e08-a157-722377be3772": {
+    "asset": 1523176747095,
+    "meta": 1523176762078,
+    "relativePath": "poker/DDZ/Texture/DDZ_bg.jpg"
+  },
+  "87859782-2b10-4ee2-9de0-3e4f356171d5": {
+    "asset": 1523182474370,
+    "meta": 1523182474739,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_Ready.js"
+  },
+  "8af9a378-24fb-4484-8b4b-5e214b683dbe": {
+    "asset": 1523182570945,
+    "meta": 1523182571982,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_JiaBei.js"
+  },
+  "a9af3c0c-50a9-4e96-aceb-ccac6983c2fb": {
+    "asset": 1523182570959,
+    "meta": 1523182572023,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_OutCard.js"
+  },
+  "4f2c37bb-e186-4075-badb-49147f71d15e": {
+    "asset": 1523182570941,
+    "meta": 1523182572068,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_Pass.js"
+  },
+  "6ba20b1f-bfb1-4bbf-9de6-244ac4971ce5": {
+    "asset": 1523182629405,
+    "meta": 1523182629762,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_Disslove.js"
+  },
+  "a0296f3d-7926-47b6-b4b9-fb8b32f9cfd0": {
+    "asset": 1523182652479,
+    "meta": 1523182654044,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_LeaveAndDiss.js"
+  },
+  "b97d80b7-291a-473d-9f40-467dd7e62410": {
+    "asset": 1523182899243,
+    "meta": 1523182904521,
+    "relativePath": "hall/script/config/ChatCfg.js"
+  },
+  "7cc65aca-12f6-4eb6-b195-10aa309bce84": {
+    "asset": 1523255879705,
+    "meta": 1522050296619,
+    "relativePath": "poker/DDZ/Script/Config/ddz_base.proto"
+  },
+  "f54aa182-985e-47b9-9938-396d00b62d7f": {
+    "asset": 1523255879714,
+    "meta": 1522050296626,
+    "relativePath": "poker/DDZ/Script/Config/ddz_play.proto"
+  },
+  "bc007876-9808-4927-8b63-0af0d45e37c5": {
+    "asset": 1523257581044,
+    "meta": 1523257581447,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_JiaoFen.js"
+  },
+  "e9875eba-fb31-46c1-bc34-c1230cd518c2": {
+    "asset": 1523258931511,
+    "meta": 1523258919065,
+    "relativePath": "resources/poker/DDZ/Audio/Common"
+  },
+  "5fee44c6-5ecd-43d8-8609-cbbeef17b1c5": {
+    "asset": 1523258852880,
+    "meta": 1523258931491,
+    "relativePath": "resources/poker/DDZ/Audio/Common/alert.mp3"
+  },
+  "68234002-2a0d-4b97-ad71-35895bbbc7dc": {
+    "asset": 1523258852873,
+    "meta": 1523258931494,
+    "relativePath": "resources/poker/DDZ/Audio/Common/Bomb.mp3"
+  },
+  "e068f4de-832f-4dc7-8cb5-be863a66a0e8": {
+    "asset": 1523258852875,
+    "meta": 1523258931497,
+    "relativePath": "resources/poker/DDZ/Audio/Common/Chuntian.mp3"
+  },
+  "bfd67c9e-9ff7-42ce-9429-f25d4de27095": {
+    "asset": 1523258852883,
+    "meta": 1523258931501,
+    "relativePath": "resources/poker/DDZ/Audio/Common/plane.mp3"
+  },
+  "2d1a6f1f-89a4-4d6e-bcbf-477b0f11ea61": {
+    "asset": 1523258852876,
+    "meta": 1523258931506,
+    "relativePath": "resources/poker/DDZ/Audio/Common/SelectCard.mp3"
+  },
+  "642cf328-b404-42df-954f-da96858523fd": {
+    "asset": 1523258852878,
+    "meta": 1523258931508,
+    "relativePath": "resources/poker/DDZ/Audio/Common/Special_star.mp3"
+  },
+  "669340d9-fd0c-4845-8ec3-eecfdb316593": {
+    "asset": 1523258852884,
+    "meta": 1523258931511,
+    "relativePath": "resources/poker/DDZ/Audio/Common/wang_Bomb.mp3"
+  },
+  "2b805267-f929-49f6-919e-65cbb27f34cd": {
+    "asset": 1523260113682,
+    "meta": 1523260273122,
+    "relativePath": "poker/DDZ/Script/Common/DDZ_Animation.js"
+  },
+  "f9c7cc3c-41cf-4228-88f3-982f0a71de56": {
+    "asset": 1523265611044,
+    "meta": 1523265633251,
+    "relativePath": "hall/prefab/tishi/duanxian.prefab"
+  },
+  "58cca94b-6d52-4d65-b5a0-79eb881056c7": {
+    "asset": 1523602119931,
+    "meta": 1523265976712,
+    "relativePath": "poker/DDZ/Script/Replay"
+  },
+  "1b25a4a0-e5b1-4a03-8b3f-ded3a895caf8": {
+    "asset": 1523268936492,
+    "meta": 1523269054843,
+    "relativePath": "hall/texture/huodong3.jpg"
+  },
+  "5b5eedab-9420-4de3-acb1-af24110ea1b9": {
+    "asset": 1523269339406,
+    "meta": 1523269449340,
+    "relativePath": "poker/DDZ/Script/Gameover/DDZ_OneGameOverItem.js"
+  },
+  "810b0984-ef02-4a7c-9ec1-afdbb795a458": {
+    "asset": 1523343640920,
+    "meta": 1523344414760,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Shuai.json"
+  },
+  "354e0e49-ca95-4b1d-9a85-fc341d86c0da": {
+    "asset": 1523343640928,
+    "meta": 1523344414768,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Wangzha.json"
+  },
+  "ba4b6047-d45e-44f1-823c-e85eb7fe0a8d": {
+    "asset": 1523343640910,
+    "meta": 1523344414800,
+    "relativePath": "poker/DDZ/Spine/Spring/Chuntian.json"
+  },
+  "3b6f13cb-b454-403a-81b2-778f143e1cc1": {
+    "asset": 1523343640936,
+    "meta": 1523344414805,
+    "relativePath": "poker/DDZ/Spine/SpecialCardType/Zhadan.json"
+  },
+  "a487bbd6-0249-4c3a-9502-feb36ecbace7": {
+    "asset": 1523345467680,
+    "meta": 1523345491916,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerLeftOutPoker.js"
+  },
+  "b85d9b37-e649-4a46-818c-da8d4fa648a2": {
+    "asset": 1523345467624,
+    "meta": 1523345492126,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerRightOutPoker.js"
+  },
+  "3ccf590e-0297-47e8-bad8-8871226b2d6e": {
+    "asset": 1523345518385,
+    "meta": 1523345639585,
+    "relativePath": "poker/DDZ/Script/Common/DDZ_AnimationManager.js"
+  },
+  "a38e9530-e4cd-4594-8e9e-e50b5b596d4f": {
+    "asset": 1523347631739,
+    "meta": 1523347888887,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerSelfOutPoker.js"
+  },
+  "5e2feaed-7baf-4791-97f4-8b7d6113fd0d": {
+    "asset": 1523347915656,
+    "meta": 1523347937570,
+    "relativePath": "hall/script/config/MessageCfg.js"
+  },
+  "d77eb8c2-2e8b-42be-9029-dcdbd53063eb": {
+    "asset": 1523347915673,
+    "meta": 1523347937636,
+    "relativePath": "phone/JSPhoneWeChat.js"
+  },
+  "723dff9a-7c19-4ac7-857e-2771adf6f863": {
+    "asset": 1523601627466,
+    "meta": 1523601627509,
+    "relativePath": "poker/DDZ/Prefab/ReplayNode.prefab"
+  },
+  "a72ec386-6d0a-44d1-8da3-675247f30381": {
+    "asset": 1523431976272,
+    "meta": 1523431982927,
+    "relativePath": "hall/prefab/public/store.prefab"
+  },
+  "cb8de06e-0e7b-4d49-8f6f-a231862d1216": {
+    "asset": 1523431976392,
+    "meta": 1523431983164,
+    "relativePath": "hall/texture/dating.plist"
+  },
+  "8b523d2d-8659-4ce7-81db-2568e3a58aea": {
+    "asset": 1523431976400,
+    "meta": 1523431983115,
+    "relativePath": "hall/texture/dating.png"
+  },
+  "858f5f03-0e89-4ddb-84a3-a67e528fdd32": {
+    "asset": 1523433563183,
+    "meta": 1523433565104,
+    "relativePath": "poker/DDZ/Script/Gameover/DDZ_OneGameOver.js"
+  },
+  "7979986b-8302-499d-a0f7-bb80139c4e96": {
+    "asset": 1523516008874,
+    "meta": 1523516008886,
+    "relativePath": "poker/DDZ/Prefab/DDZ_FaPaiNode.prefab"
+  },
+  "33399ba4-8ec0-493b-b8e9-cdab338e0179": {
+    "asset": 1523499705166,
+    "meta": 1523499705171,
+    "relativePath": "poker/DDZ/Prefab/DDZ_FaPaiPoker.prefab"
+  },
+  "8e6f4aa6-9ef9-4e02-851d-2d97cfacb77a": {
+    "asset": 1523502995627,
+    "meta": 1523502997583,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_FaiPaiAction.js"
+  },
+  "6b99aec8-d17e-49cd-aab3-840e0265eedb": {
+    "asset": 1523504381818,
+    "meta": 1523504690664,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_PopWin.js"
+  },
+  "37bdf8fb-8b2f-41ae-9e8a-5fb6470b604b": {
+    "asset": 1523513755246,
+    "meta": 1523513756725,
+    "relativePath": "hall/script/login/globalUI.js"
+  },
+  "accf15f6-e6fb-4dc7-83ef-3ccfa10266d3": {
+    "asset": 1523515869157,
+    "meta": 1523515949450,
+    "relativePath": "hall/script/public/freeCardItem.js"
+  },
+  "97df713e-2f99-4698-9a0e-9b0b66141ec4": {
+    "asset": 1523515869161,
+    "meta": 1523515949739,
+    "relativePath": "hall/script/public/shareCardItem.js"
+  },
+  "630c5491-a7a0-445d-bff8-52261bb2485d": {
+    "asset": 1523522827558,
+    "meta": 1523522828972,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_DiPai.js"
+  },
+  "fc1ad36b-1fc0-4970-ae8a-5ad60f9cc21a": {
+    "asset": 1523523444610,
+    "meta": 1523523490377,
+    "relativePath": "hall/script/public/interact.js"
+  },
+  "df2fe970-a91d-4451-bc6c-39e83ea011cf": {
+    "asset": 1523526916843,
+    "meta": 1523526966437,
+    "relativePath": "poker/DDZ/Script/Network/DDZ_NetEventManager.js"
+  },
+  "8d24dca5-29f7-4215-980c-4f23452edb08": {
+    "asset": 1523527089387,
+    "meta": 1523527143436,
+    "relativePath": "hall/prefab/public/shareCardItem.prefab"
+  },
+  "688b519f-5ddd-46e9-8b17-1c19df21de5a": {
+    "asset": 1523527089386,
+    "meta": 1523527143437,
+    "relativePath": "hall/prefab/public/freeCardItem.prefab"
+  },
+  "343daefb-2236-4d99-bcbf-af4a6fa07268": {
+    "asset": 1523527089402,
+    "meta": 1523527143469,
+    "relativePath": "hall/prefab/zhanji/zhanjiLayer.prefab"
+  },
+  "2411cb58-6c61-4de6-a54b-9a70c7e9e07d": {
+    "asset": 1523527089465,
+    "meta": 1523527144091,
+    "relativePath": "hall/texture/Haishang.png"
+  },
+  "d741888c-9bfa-4962-9291-e4557e49fb4f": {
+    "asset": 1523527261939,
+    "meta": 1523527305299,
+    "relativePath": "poker/DDZ/Script/Gameover/DDZ_AllGameOver.js"
+  },
+  "06152eac-bba6-449f-9ce5-432e82d11142": {
+    "asset": 1523586938092,
+    "meta": 1523586938122,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Set.prefab"
+  },
+  "a0c0acda-1cbc-426a-a107-02f746998179": {
+    "asset": 1523529139499,
+    "meta": 1523529148969,
+    "relativePath": "hall/script/public/set.js"
+  },
+  "68d6d9df-879b-429c-b7da-83f3422f27ae": {
+    "asset": 1523600246631,
+    "meta": 1523600246647,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Voice.prefab"
+  },
+  "ff61b188-8bdb-46b1-a29b-77a248dabfee": {
+    "asset": 1523599373879,
+    "meta": 1523599386485,
+    "relativePath": "mahjong/script/game/common/mjGameManager.js"
+  },
+  "0c53c119-7d63-445c-bd41-31ff82bc7d1b": {
+    "asset": 1523599373880,
+    "meta": 1523599386651,
+    "relativePath": "mahjong/script/game/common/mjNetMgr.js"
+  },
+  "ea14fdb5-2697-4537-bc3e-9c0a2abadb3e": {
+    "asset": 1523599373846,
+    "meta": 1523599386738,
+    "relativePath": "mahjong/script/config/scMjCfg.js"
+  },
+  "e83d6fb3-9a43-43a0-b042-02e4b232f64f": {
+    "asset": 1523602119926,
+    "meta": 1523602122120,
+    "relativePath": "poker/DDZ/Script/Replay/DDZ_ReplayMain.js"
+  },
+  "4538f15f-6686-42ee-b5f4-3b5d8cccd738": {
+    "asset": 1523843676578,
+    "meta": 1523843686880,
+    "relativePath": "hall/script/createRoom/createScMahjongRoom.js"
+  },
+  "f0f65d7f-7dd4-44df-84b4-43de2fc127e5": {
+    "asset": 1523843676637,
+    "meta": 1523843687385,
+    "relativePath": "mahjong/script/game/common/mjDataMgr.js"
+  },
+  "967f735e-1f60-4793-96a4-4eb2c50cd543": {
+    "asset": 1523843676640,
+    "meta": 1523843687470,
+    "relativePath": "mahjong/script/game/common/mjGameDefine.js"
+  },
+  "12a0cb1a-42e3-40a5-a366-2cc926d3d633": {
+    "asset": 1523843676642,
+    "meta": 1523843687471,
+    "relativePath": "mahjong/script/game/common/scmjNetMgr.js"
+  },
+  "d2774420-b174-412a-8f94-71f67e689aab": {
+    "asset": 1523848710182,
+    "meta": 1523849075286,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Pass.prefab"
+  },
+  "02040391-4a0e-428b-926d-3d0742c64a6a": {
+    "asset": 1523848710183,
+    "meta": 1523849075764,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Ready.prefab"
+  },
+  "31d00201-beea-482e-b527-39cc875bc8a7": {
+    "asset": 1523860989992,
+    "meta": 1523860994035,
+    "relativePath": "hall/script/public/publicVoiceBtn.js"
+  },
+  "12dfe22d-c9d9-4439-b784-80e693c70ae1": {
+    "asset": 1523861334925,
+    "meta": 1523861337879,
+    "relativePath": "poker/DDZ/Script/Common/DDZ_Sound.js"
+  },
+  "6cbe4e67-c097-42b2-bca8-5483ce1e2e4c": {
+    "asset": 1523862037617,
+    "meta": 1523862044232,
+    "relativePath": "hall/script/createRoom/createDDZRoom.js"
+  },
+  "30c3d116-5e44-42db-81d3-50ebd9dc4c86": {
+    "asset": 1523863450015,
+    "meta": 1523863454742,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_Chat.js"
+  },
+  "e478fb21-81fa-43e3-9022-53c0ccd28bcd": {
+    "asset": 1523864547110,
+    "meta": 1523864548931,
+    "relativePath": "poker/DDZ/Script/Config/DDZ_MsgConfig.js"
+  },
+  "cf3d9863-b885-4f23-871e-61f0faf4d6a0": {
+    "asset": 1523864764077,
+    "meta": 1523864779816,
+    "relativePath": "poker/DDZ/Atlas/ddz_kaichang.plist"
+  },
+  "69cf5bb2-aa7c-4168-a88c-c203ce95e14c": {
+    "asset": 1523864764028,
+    "meta": 1523864779739,
+    "relativePath": "hall/prefab/public/playerDetail.prefab"
+  },
+  "f205a6d1-2a09-45ae-bfcb-3cf022fc846e": {
+    "asset": 1523864764136,
+    "meta": 1523864779768,
+    "relativePath": "poker/DDZ/Prefab/DDZ_OneGameOverItem.prefab"
+  },
+  "3686cb0b-0f09-46b4-9ae4-78d18d77dbad": {
+    "asset": 1523864764082,
+    "meta": 1523864779776,
+    "relativePath": "poker/DDZ/Atlas/ddz_kaichang.png"
+  },
+  "35c7f6e5-44e4-4900-b3d3-12e0e8056755": {
+    "asset": 1523864764056,
+    "meta": 1523864779800,
+    "relativePath": "poker/DDZ/Scene/DDZ_ReplayScene.fire"
+  },
+  "64f19b2a-b237-4c92-a239-704bddfda689": {
+    "asset": 1523868733003,
+    "meta": 1523868733033,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Map.prefab"
+  },
+  "2b3f7af1-6f77-4e5c-9cff-dbc39e2229d4": {
+    "asset": 1523865490144,
+    "meta": 1523865691253,
+    "relativePath": "poker/DDZ/Prefab/DDZ_playerinfoNode.prefab"
+  },
+  "1a3054b4-f42f-4cdd-aa25-699a62297e1b": {
+    "asset": 1523866010505,
+    "meta": 1523866012638,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js"
+  },
+  "853f85d8-cb23-4c6a-81d0-3bd6038ac33e": {
+    "asset": 1523866010510,
+    "meta": 1523866012703,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerRightInfo.js"
+  },
+  "b8a6c6c7-e29e-4b5f-9f96-913e30b4979a": {
+    "asset": 1523866010518,
+    "meta": 1523866012720,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerSelfInfo.js"
+  },
+  "9272329a-d5d2-4ef8-ad3a-1124742a4d9e": {
+    "asset": 1523868426323,
+    "meta": 1523868439892,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_PlayerGPS.js"
   },
   "1970827d-e730-43b9-9110-05ec946b0e72": {
-    "asset": 1521536944009,
-    "meta": 1521536945673,
+    "asset": 1523869925423,
+    "meta": 1523869930505,
     "relativePath": "poker/DDZ/Script/Game/DDZ_GameAction.js"
   },
   "4f7f29d2-dfe4-42a1-a3c5-3307dc67ddf9": {
-    "asset": 1521536991119,
-    "meta": 1521536991379,
+    "asset": 1523869925432,
+    "meta": 1523869930506,
     "relativePath": "poker/DDZ/Script/Game/DDZ_GameManager.js"
   },
-  "9a5cbc25-25b6-426e-a19d-b4a8398e5f36": {
-    "asset": 1521537017361,
-    "meta": 1521537017633,
-    "relativePath": "poker/DDZ/Script/Game/DDZ_PokerTip.js"
+  "073dd58e-8e17-44dd-9557-c7958c25edf9": {
+    "asset": 1523870157456,
+    "meta": 1523870165141,
+    "relativePath": "hall/script/public/chat.js"
   },
-  "d741888c-9bfa-4962-9291-e4557e49fb4f": {
-    "asset": 1521537091825,
-    "meta": 1521537092179,
-    "relativePath": "poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js"
-  },
-  "858f5f03-0e89-4ddb-84a3-a67e528fdd32": {
-    "asset": 1521537136183,
-    "meta": 1521537136446,
-    "relativePath": "poker/DDZ/Script/Gameover/DDZ_OneGameOver.js"
-  },
-  "df2fe970-a91d-4451-bc6c-39e83ea011cf": {
-    "asset": 1521537175737,
-    "meta": 1521537176020,
-    "relativePath": "poker/DDZ/Script/Network/DDZ_NetEventManager.js"
-  },
-  "1a3054b4-f42f-4cdd-aa25-699a62297e1b": {
-    "asset": 1521537228091,
-    "meta": 1521537228335,
-    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js"
-  },
-  "6d2e81a9-95f6-4ea5-b5c6-8b9272f0b691": {
-    "asset": 1521537269401,
-    "meta": 1521537269691,
-    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js"
-  },
-  "0c5c9ab9-21cb-4b4a-9b80-582c3f2c53b1": {
-    "asset": 1521537308136,
-    "meta": 1521537355658,
-    "relativePath": "poker/DDZ/Script/Poker/DDZ_PokerAction.js"
-  },
-  "253ec01d-a634-4b93-a711-79edf58feed2": {
-    "asset": 1521509660000,
-    "meta": 1521538521452,
-    "relativePath": "poker/DDZ/Texture/DDZ_BackGround.png"
-  },
-  "28fe1ad1-46f9-4e85-95f5-971fe53bae01": {
-    "asset": 1521538764288,
-    "meta": 1521538764293,
-    "relativePath": "poker/DDZ/Prefab/DDZ_Poker.prefab"
-  },
-  "5ba26673-2c2d-4d53-af44-94658dd82e7e": {
-    "asset": 1521540480645,
-    "meta": 1521540481079,
-    "relativePath": "poker/DDZ/Script/Config/DDZ_CardValueConfig.js"
+  "1c1bfeac-5841-4497-8546-62de2c523d91": {
+    "asset": 1523870574172,
+    "meta": 1523870576059,
+    "relativePath": "poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js"
   },
   "3959aff2-fbe1-4bfb-8ef8-de6b66113c3a": {
-    "asset": 1521539465535,
-    "meta": 1521540481080,
+    "asset": 1523870822930,
+    "meta": 1523870823397,
     "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js"
   },
+  "7eb68869-dd58-455d-8a2b-a18d8cdf5eb0": {
+    "asset": 1523871821635,
+    "meta": 1523871823000,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_Setting.js"
+  },
   "43083875-e51f-4397-bb24-850cefd1b32e": {
-    "asset": 1521541629066,
-    "meta": 1521541705725,
+    "asset": 1523873561560,
+    "meta": 1523873591999,
     "relativePath": "hall/prefab/createRoom/createMajiangRoomHy.prefab"
   },
   "1afde643-bbb8-4321-a48d-bd25c8f4ad51": {
-    "asset": 1521541629069,
-    "meta": 1521541705736,
+    "asset": 1523873561563,
+    "meta": 1523873592000,
     "relativePath": "hall/prefab/createRoom/createMajiangRoomWl.prefab"
   },
   "c6906fff-3b22-43dc-aa00-e89d4b6ad5ea": {
-    "asset": 1521541629071,
-    "meta": 1521541705746,
+    "asset": 1523873561570,
+    "meta": 1523873592015,
     "relativePath": "hall/prefab/createRoom/createPukeRoomDdz.prefab"
   },
   "3c40ba87-9213-4423-ba85-bdaa3c5a13c5": {
-    "asset": 1521541629075,
-    "meta": 1521541706140,
+    "asset": 1523873561574,
+    "meta": 1523873592031,
     "relativePath": "hall/prefab/createRoom/createRoomWahua.prefab"
   },
-  "2321133e-64fd-4744-8edc-ad49afa76030": {
-    "asset": 1521541629302,
-    "meta": 1521541706570,
-    "relativePath": "hall/texture/common.plist"
+  "093aef42-b57a-4b1b-905c-dd9a6f301b2b": {
+    "asset": 1523873561578,
+    "meta": 1523873592054,
+    "relativePath": "hall/prefab/createRoom/createScMahjongRoom.prefab"
   },
   "38afae76-c4fc-4aa9-86f6-e54238f632bf": {
-    "asset": 1521541629143,
-    "meta": 1521541706219,
+    "asset": 1523873561101,
+    "meta": 1523873593679,
     "relativePath": "hall/script/createRoom/createMajiangRoom.js"
   },
-  "e0ba4704-d730-472a-a09d-2a2febb8e74c": {
-    "asset": 1521541629131,
-    "meta": 1521541706249,
-    "relativePath": "hall/prefab/public/freeCardDetail.prefab"
+  "b71e9b0f-0339-4785-8e2a-91690d11fe40": {
+    "asset": 1523873561103,
+    "meta": 1523873594393,
+    "relativePath": "hall/script/createRoom/createRoomSys.js"
   },
-  "688b519f-5ddd-46e9-8b17-1c19df21de5a": {
-    "asset": 1521541629133,
-    "meta": 1521541706255,
-    "relativePath": "hall/prefab/public/freeCardItem.prefab"
+  "69732ec7-b0f1-4447-8647-3d23b82e7550": {
+    "asset": 1523873561120,
+    "meta": 1523873595275,
+    "relativePath": "hall/script/fun/initFun.js"
+  },
+  "3af18cc9-0965-469b-adb5-1a494fb379e2": {
+    "asset": 1523930102954,
+    "meta": 1523930572224,
+    "relativePath": "hall/script/hall/hallActivity.js"
+  },
+  "e7e75a82-01a7-4cfb-a05a-e3b0f9e16fe8": {
+    "asset": 1523873561143,
+    "meta": 1523873596323,
+    "relativePath": "hall/script/login/login.js"
+  },
+  "6f6d4f6d-18b6-4369-b7e7-c31993f1423a": {
+    "asset": 1522032687350,
+    "meta": 1523873596363,
+    "relativePath": "hall/texture/cjRoom6.png"
+  },
+  "4cf1b60e-82e1-40d2-a6be-fff5ac5ce271": {
+    "asset": 1523873561781,
+    "meta": 1523873596610,
+    "relativePath": "mahjong/scene/majiang.fire"
+  },
+  "892da0df-30e6-4a20-9cdf-705bad0b5330": {
+    "asset": 1523873561720,
+    "meta": 1523873596626,
+    "relativePath": "poker/DDZ/Prefab/DDZ_OutCard.prefab"
+  },
+  "9d48742d-cc9c-4249-a33f-2d25b07d6241": {
+    "asset": 1523873561722,
+    "meta": 1523873596640,
+    "relativePath": "poker/DDZ/Prefab/DDZ_Text.prefab"
+  },
+  "21707b10-63f1-4626-a1f0-e1a3301897e5": {
+    "asset": 1523873561804,
+    "meta": 1521444762000,
+    "relativePath": "project.manifest"
+  },
+  "6cb6e028-f251-4a29-a2b6-2b93711869b4": {
+    "asset": 1523873561648,
+    "meta": 1523873596666,
+    "relativePath": "hall/texture/cjRoomX.png"
+  },
+  "dc123ebc-a62d-45aa-8ea2-32eb83bd5686": {
+    "asset": 1523874564488,
+    "meta": 1523874572885,
+    "relativePath": "poker/DDZ/Prefab/DDZ_AllGameOver.prefab"
+  },
+  "2afea7b8-8d53-480a-9b99-9e150f7405fd": {
+    "asset": 1523954638764,
+    "meta": 1523954638790,
+    "relativePath": "poker/DDZ/Prefab/DDZ_OneGameOver.prefab"
+  },
+  "a676a4a1-8a2a-4c77-ab7d-08f616133799": {
+    "asset": 1523944146368,
+    "meta": 1523949456641,
+    "relativePath": "hall/animation/popScaleAnim.anim"
+  },
+  "bdf12e6f-caa9-4c93-a959-03684a68b9da": {
+    "asset": 1523944146371,
+    "meta": 1523949456648,
+    "relativePath": "hall/animation/popScaleOut.anim"
+  },
+  "a72d33c6-e180-414d-aa3b-ccf7fc33cce8": {
+    "asset": 1523944146474,
+    "meta": 1523949458462,
+    "relativePath": "poker/DDZ/Atlas/dajiesuan.plist"
+  },
+  "c04cd97e-6059-407d-8a2c-112a5c5a832d": {
+    "asset": 1523944146484,
+    "meta": 1523949458485,
+    "relativePath": "poker/DDZ/Atlas/ddz_game.plist"
+  },
+  "bf62de56-1ceb-46bb-a3e2-1d40eb66e59e": {
+    "asset": 1523944146482,
+    "meta": 1523949457457,
+    "relativePath": "poker/DDZ/Atlas/dajiesuan.png"
+  },
+  "4899bec5-db24-4c78-85fa-3e57f89175e6": {
+    "asset": 1523955351614,
+    "meta": 1523955351642,
+    "relativePath": "poker/DDZ/Prefab/DDZ_AllGameOverItem.prefab"
+  },
+  "a973e058-177b-4a5e-ac3d-e9f38992cc81": {
+    "asset": 1523944146492,
+    "meta": 1523949457509,
+    "relativePath": "poker/DDZ/Atlas/ddz_game.png"
+  },
+  "cecbb050-3391-48e9-8617-5030c86c941e": {
+    "asset": 1523960339024,
+    "meta": 1523960339055,
+    "relativePath": "poker/DDZ/Scene/DDZ_GameScene.fire"
+  },
+  "3555ea7f-5dfe-4bb9-91d2-f256c974519c": {
+    "asset": 1523944146431,
+    "meta": 1523949458443,
+    "relativePath": "poker/DDZ/Animation/DDZ_ReadyOk.anim"
+  },
+  "a1639b7d-5d47-4400-9359-d2601eb6037c": {
+    "asset": 1523954131134,
+    "meta": 1523954169347,
+    "relativePath": "poker/DDZ/Script/Desk/DDZ_Main.js"
+  },
+  "06e48ba1-09b4-47df-b80e-6235b8efab21": {
+    "asset": 1523955493403,
+    "meta": 1523955691098,
+    "relativePath": "poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js"
+  },
+  "9a5cbc25-25b6-426e-a19d-b4a8398e5f36": {
+    "asset": 1523955778709,
+    "meta": 1523955782194,
+    "relativePath": "poker/DDZ/Script/Game/DDZ_PokerTip.js"
+  },
+  "af2d7508-54e6-4881-841b-7ecc3c82a90d": {
+    "asset": 1523958885022,
+    "meta": 1523958975629,
+    "relativePath": "hall/prefab/hall/hallShare.prefab"
+  },
+  "af3248c9-73fc-4989-8655-23b1202a6f25": {
+    "asset": 1523958885018,
+    "meta": 1523958975631,
+    "relativePath": "hall/prefab/hall/hallActivity.prefab"
+  },
+  "6714a913-0406-4bb5-a898-4c7e68ab15a1": {
+    "asset": 1523958905561,
+    "meta": 1523958975661,
+    "relativePath": "hall/scene/login.fire"
+  },
+  "d6a7bc00-d750-4ed3-b974-3bdd7cddcb17": {
+    "asset": 1523958905560,
+    "meta": 1523958975825,
+    "relativePath": "hall/scene/hall.fire"
+  },
+  "7d53da4f-707b-4991-b2aa-08f1a9018480": {
+    "asset": 1523958905571,
+    "meta": 1523958976281,
+    "relativePath": "hall/script/config/GameCfg.js"
+  },
+  "35796d52-caf0-4f64-bcc9-dd2f87fa3c89": {
+    "asset": 1523958905581,
+    "meta": 1523958976385,
+    "relativePath": "hall/script/hall/hall.js"
+  },
+  "860a3f9d-1eee-41b5-8a6f-cbbc3c2d5160": {
+    "asset": 1523958905582,
+    "meta": 1523958976452,
+    "relativePath": "hall/script/hall/hallShare.js"
   },
   "e7ebd0a6-68ce-4d87-b944-fd9326c1b785": {
-    "asset": 1521541629161,
-    "meta": 1521541706307,
+    "asset": 1523958905588,
+    "meta": 1523958976522,
     "relativePath": "hall/script/public/freeCardDetail.js"
   },
-  "accf15f6-e6fb-4dc7-83ef-3ccfa10266d3": {
-    "asset": 1521541629163,
-    "meta": 1521541706339,
-    "relativePath": "hall/script/public/freeCardItem.js"
+  "f615221c-fa22-495c-ae08-814b3d70ac59": {
+    "asset": 1523958974980,
+    "meta": 1523958976581,
+    "relativePath": "hall/script/zhanji/zhanjiDetailItem.js"
   },
-  "aaec41f4-2cd1-4ce6-991f-6078d2270dc9": {
-    "asset": 1521541629006,
-    "meta": 1521541706671,
-    "relativePath": "poker/texture/DdzPuke.plist"
+  "82ff77d1-3949-4cd4-bb32-333c68ec7538": {
+    "asset": 1523958974972,
+    "meta": 1523958976593,
+    "relativePath": "hall/script/zhanji/zhanjiLayer.js"
   },
-  "ee71fb16-3ae1-4ce2-a259-175f5c54a37d": {
-    "asset": 1521541629009,
-    "meta": 1521541706425,
-    "relativePath": "poker/texture/DdzPuke.png"
+  "ba93547d-7778-4d4e-960d-18a503363135": {
+    "asset": 1523959031842,
+    "meta": 1523959910099,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js"
   },
-  "c7134a7a-fa0a-4dad-a5b2-0f8d77db859c": {
-    "asset": 1521541629322,
-    "meta": 1521541706428,
-    "relativePath": "hall/texture/common.png"
+  "8858f066-895b-475b-8385-3122c6265a94": {
+    "asset": 1523960264106,
+    "meta": 1523960265452,
+    "relativePath": "poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js"
   }
 }

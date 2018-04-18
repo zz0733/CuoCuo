@@ -7,7 +7,7 @@
             <key>cjRoom4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{48,94},{95,47}}</string>
+                <string>{{2,462},{95,47}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -20,7 +20,7 @@
             <key>cjRoom8.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,2},{173,36}}</string>
+                <string>{{48,146},{173,36}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -30,10 +30,23 @@
                 <key>sourceSize</key>
                 <string>{173,36}</string>
             </dict>
+            <key>cjRoom9.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{2,2},{65,247}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{0,0},{65,247}}</string>
+                <key>sourceSize</key>
+                <string>{65,247}</string>
+            </dict>
             <key>cjRooma.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{48,198},{53,55}}</string>
+                <string>{{176,294},{53,55}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -46,7 +59,7 @@
             <key>cjRoomb.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{105,182},{53,55}}</string>
+                <string>{{185,239},{53,55}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -59,7 +72,7 @@
             <key>cjRoomc.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{48,143},{53,55}}</string>
+                <string>{{185,184},{53,55}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -72,7 +85,7 @@
             <key>cjRoomd.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{162,182},{53,53}}</string>
+                <string>{{48,374},{53,53}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -82,10 +95,23 @@
                 <key>sourceSize</key>
                 <string>{53,53}</string>
             </dict>
+            <key>cjRoome.png</key>
+            <dict>
+                <key>frame</key>
+                <string>{{99,321},{51,54}}</string>
+                <key>offset</key>
+                <string>{0,0}</string>
+                <key>rotated</key>
+                <true/>
+                <key>sourceColorRect</key>
+                <string>{{1,0},{51,54}}</string>
+                <key>sourceSize</key>
+                <string>{53,54}</string>
+            </dict>
             <key>tachuang_0.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,103},{44,391}}</string>
+                <string>{{2,69},{44,391}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -98,11 +124,11 @@
             <key>tachuang_00.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{135,40},{37,27}}</string>
+                <string>{{223,123},{37,27}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{37,27}}</string>
                 <key>sourceSize</key>
@@ -111,11 +137,11 @@
             <key>tachuang_1.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{242,56},{7,45}}</string>
+                <string>{{48,69},{7,45}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <false/>
+                <true/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{7,45}}</string>
                 <key>sourceSize</key>
@@ -124,11 +150,11 @@
             <key>tachuang_2.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{174,56},{41,66}}</string>
+                <string>{{48,78},{41,66}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
-                <true/>
+                <false/>
                 <key>sourceColorRect</key>
                 <string>{{0,0},{41,66}}</string>
                 <key>sourceSize</key>
@@ -137,7 +163,7 @@
             <key>tachuang_3.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{2,40},{131,52}}</string>
+                <string>{{99,69},{131,52}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -150,7 +176,7 @@
             <key>tachuang_4.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{177,2},{75,52}}</string>
+                <string>{{99,267},{75,52}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -163,7 +189,7 @@
             <key>tachuang_5.png</key>
             <dict>
                 <key>frame</key>
-                <string>{{145,99},{81,84}}</string>
+                <string>{{99,184},{81,84}}</string>
                 <key>offset</key>
                 <string>{0,0}</string>
                 <key>rotated</key>
@@ -183,7 +209,7 @@
             <key>size</key>
             <string>{256,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:efa5c138388281ed8bf2a88e3cfa470b$</string>
+            <string>$TexturePacker:SmartUpdate:7f2f15fc0bff92a5da3368c274d8a599$</string>
             <key>textureFileName</key>
             <string>CardDetail.png</string>
         </dict>

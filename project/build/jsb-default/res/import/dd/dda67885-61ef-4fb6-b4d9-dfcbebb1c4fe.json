@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yx_dajiesuan_di3",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      747,
+      709,
+      27,
+      89
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      27,
+      89
+    ],
+    "capInsets": [
+      11,
+      0,
+      9,
+      0
+    ]
+  }
+}

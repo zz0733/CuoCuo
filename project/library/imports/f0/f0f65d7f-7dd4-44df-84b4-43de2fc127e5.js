@@ -307,6 +307,117 @@ var wlDataSys = function wlDataSys() {
     };
 };
 
+var scmjDataSys = function scmjDataSys() {
+    this.data = {
+        CfgData: {
+            gameName: "四川麻将",
+            zhuangPaiCount: 13, //庄家牌的数量 
+            totalPai: 108, //总共好多张牌
+            liujupai: 0, //当剩余牌数为这个数目的时候就是流局
+            paiScale: 0.84,
+            isPuhua: true,
+            Dialect: "scmj/"
+        },
+        createDate: GameDefine.CREATROOMSC
+    };
+    this.initRoomPlayers = function (playerArray) {
+        var SelfIdx = 0;
+        for (var i = 0; i < playerArray.length; i++) {
+            var playerData = playerArray[i];
+            if (!playerData) {
+                continue;
+            }
+            playerData.isSelfPlayed = false;
+            // cc.log("---mjDataMgr.KEYS.UID---", this.get(mjDataMgr.KEYS.UID, playerData));
+            if (playerData.UserId == this.get(mjDataMgr.KEYS.UID)) {
+                SelfIdx = i;
+            }
+            var PlayerIdx = playerData.RoomOrder;
+            playerData.PlayerIdx = PlayerIdx;
+            this.setPlayerData(playerData, PlayerIdx);
+        }
+        var playerData = this.getPlayerData(SelfIdx);
+        this.set(mjDataMgr.KEYS.SELFID, playerData.RoomOrder);
+        this.refreshDeskType();
+        playerData.isSelfPlayed = true;
+    };
+    this.setPlayerData = function (playerData, posIndex) {
+        if (playerData) {
+            var roomInfo = this.get(mjDataMgr.KEYS.ROOMINFO);
+            playerData.Icon = playerData.HeadUrl || "";
+            var isTruePlayer = true; //playerData.Icon.length > 4; //正式玩家服务器会返回来玩家icon
+            playerData.name = playerData.UserName || playerData.Name;
+            playerData.showName = isTruePlayer ? playerData.name : "游客" + playerData.UserId;
+            playerData.showName = mjDataMgr.sliceName(playerData.showName);
+            playerData.isTruePlayer = isTruePlayer;
+            playerData.xdhs = playerData.Score || 0;
+            playerData.Status = playerData.Ready ? GameDefine.PLAYER_READY.READY : GameDefine.PLAYER_READY.NO_READY;
+        }
+        var roomPlayers = this.get(mjDataMgr.KEYS.PLAYERS) || {};
+        roomPlayers[posIndex] = playerData;
+        this.set(mjDataMgr.KEYS.PLAYERS, roomPlayers);
+    };
+    this.isRoomMaster = function () {
+        return this.get(mjDataMgr.KEYS.UID) == this.get(mjDataMgr.KEYS.ROOMINFO).Owner.UserId;
+    };
+
+    this.initRoomInfo = function () {
+        var roomInfo = fun.db.getData('RoomInfo');
+        var createDate = this.data.createDate;
+        cc.log('--- createDate: ', createDate);
+        cc.log('--- createDate.MoShi: ', createDate.MoShi);
+        var moshi = { name: createDate.MoShi.name, content: '' };
+        var moShiL = '';
+        for (var i = 0; i < roomInfo.MoShi.toString().length; ++i) {
+            cc.log('--- i: ', i);
+            moShiL = moShiL + createDate.MoShi.data[i][roomInfo.MoShi.substr(i, 1)];
+            cc.log('--- moshiL : ', moShiL);
+        }
+        cc.log('--- moshiL2 : ', moShiL);
+        roomInfo.showList = [];
+        roomInfo.showList.push(this.getCeateItem("WanFa", roomInfo));
+        // roomInfo.showList.push(this.getCeateItem("MoShi", roomInfo));
+        roomInfo.showList.push(this.getCeateItem("FengDing", roomInfo));
+        roomInfo.showList.push(this.getCeateItem("DiFen", roomInfo));
+        roomInfo.showList.push(this.getCeateItem("FangFei", roomInfo));
+        roomInfo.showList.push(this.getCeateItem("GuiZe", roomInfo));
+        cc.log('--- sxxsss : ', this.getCeateItem("JuShu", roomInfo));
+        roomInfo.showList.push(this.getCeateItem("JuShu", roomInfo));
+        roomInfo.DingWeiN = roomInfo.DingWei ? 1 : 0;
+        roomInfo.showList.push(this.getCeateItem("DingWei", roomInfo));
+        roomInfo.GameNum = roomInfo.JuShu;
+        roomInfo.Round = roomInfo.Round || 0;
+        var playInfoList = new Array(4);
+        if (roomInfo.Players) {
+            //enter room
+            roomInfo.Players.forEach(function (item, index) {
+                playInfoList[item.RoomOrder] = item;
+            });
+        } else {
+            //create room
+            var player = fun.db.getData('UserInfo');
+            player.Status = GameDefine.PLAYER_READY.NO_READY;
+            player.OnLine = true;
+            player.RoomOrder = roomInfo.Owner;
+            player.HeadUrl = player.UserHeadUrl;
+            player.Address = player.location;
+            player.Sex = player.UserSex;
+            playInfoList[roomInfo.Owner] = player;
+        }
+        this.initRoomPlayers(playInfoList);
+        this.set(mjDataMgr.KEYS.ROOMINFO, roomInfo);
+        this.set(mjDataMgr.KEYS.ROOMID, roomInfo.RoomId);
+        this.refreRoomCount();
+    };
+
+    this.refreRoomCount = function () {
+        var roomInfo = this.get(mjDataMgr.KEYS.ROOMINFO);
+        roomInfo.gameCountStr = "";
+        var totalJu = roomInfo.JuShu;
+        roomInfo.gameCountStr = roomInfo.Round + "/" + totalJu + "<color=#B1C3C4>" + "局" + "</c>";
+    };
+};
+
 //黄岩回放
 var hyReDataSys = function hyReDataSys() {
     var oldData = new mjDataSys();
@@ -363,6 +474,7 @@ var hyReDataSys = function hyReDataSys() {
 
 wlDataSys.prototype = new mjDataSys();
 hyReDataSys.prototype = new mjDataSys();
+scmjDataSys.prototype = new mjDataSys();
 
 var instance;
 var mjDataMgr = {
@@ -376,6 +488,7 @@ var mjDataMgr = {
         } else {
             dfDataList[gameConst.gameType.maJiangHuangYan] = mjDataSys;
         }
+        dfDataList[gameConst.gameType.scMahjong] = scmjDataSys;
 
         var roomInfo = fun.db.getData('RoomInfo');
         var curGameType = roomInfo.GameType;

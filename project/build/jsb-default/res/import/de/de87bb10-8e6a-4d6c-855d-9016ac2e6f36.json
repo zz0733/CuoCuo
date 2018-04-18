@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dian2",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      190,
+      976,
+      43,
+      43
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      45,
+      47
+    ]
+  }
+}

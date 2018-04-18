@@ -1,0 +1,38 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "DDZ_Spring",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "DDZ_Spring",
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 1
+        },
+        "loop": false,
+        "_N$skeletonData": {
+          "__uuid__": "baS2BH1F5E8YI86F63/gqN"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "206TIQA4pC+a19dEcntVWz"
+      },
+      "fileId": "54HMSfyedNP401Zu9cBzyC"
+    },
+    "_scaleX": 2,
+    "_scaleY": 2
+  }
+]

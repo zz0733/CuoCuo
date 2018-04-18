@@ -107,11 +107,18 @@ cc.Class({
                 fun.gameCfg[key] = gameConst.compileContent[this.compileType][key];
             }
         }
-        if(fun.gameCfg.releaseType === gameConst.releaseType.apple){
-            fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.apple];
-        }
-        if(fun.gameCfg.releaseType === gameConst.releaseType.release){
-            fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.extranet];
+        switch (fun.gameCfg.releaseType) {
+            case gameConst.releaseType.apple:
+                fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.apple];
+                break;
+            case gameConst.releaseType.release:
+                fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.extranet];
+                break;
+            case gameConst.releaseType.fisher:
+                fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.fisher];
+                break;
+            default:
+                break;
         }
         fun.logger = new logger();
         fun.log = fun.logger.log.bind(fun.logger);

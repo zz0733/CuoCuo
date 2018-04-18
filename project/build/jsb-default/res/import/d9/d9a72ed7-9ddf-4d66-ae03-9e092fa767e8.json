@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_liaotian_di2",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      2,
+      2,
+      49,
+      582
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      49,
+      582
+    ],
+    "capInsets": [
+      17,
+      0,
+      17,
+      0
+    ]
+  }
+}

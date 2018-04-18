@@ -26,17 +26,20 @@ cc.Class({
         }
     },
     onClickOutCard: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_OUTCARD_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             paiIds: cc.YL.playerOutPokerArr,
         });
     },
     onClickPassCard: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_PASS_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
         });
     },
     onClickTiShiCard: function () {
+        cc.YL.DDZAudio.playBtnClick();
         cc.YL.DDZPokerTip.clickTipsBtn(cc.YL.lastOutCardData.outType, cc.YL.lastOutCardData.paiIds.length, cc.YL.lastOutCardData.paiIds);
     },
 });

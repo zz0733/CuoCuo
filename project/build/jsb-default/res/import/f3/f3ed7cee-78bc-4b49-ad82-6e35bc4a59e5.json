@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gps_ditu",
+    "texture": "55FJaSZC5BEohMBfDgMx10",
+    "rect": [
+      0,
+      0,
+      433,
+      254
+    ],
+    "offset": [
+      -1,
+      1
+    ],
+    "originalSize": [
+      435,
+      256
+    ]
+  }
+}

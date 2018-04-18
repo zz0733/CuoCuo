@@ -1,0 +1,87 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "caishenshineIn",
+  "_duration": 1.8333333333333333,
+  "curveData": {
+    "paths": {
+      "pai": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 2.5
+            },
+            {
+              "frame": 0.15,
+              "value": 3
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": 2.99
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0,
+              "value": 1
+            },
+            {
+              "frame": 0.06666666666666667,
+              "value": 2.5
+            },
+            {
+              "frame": 0.15,
+              "value": 3
+            },
+            {
+              "frame": 1.7666666666666666,
+              "value": 2.99
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      },
+      "residue": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 0
+            },
+            {
+              "frame": 1.7833333333333334,
+              "value": 1
+            },
+            {
+              "frame": 1.8333333333333333,
+              "value": 255
+            }
+          ],
+          "scaleX": [
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 1.8333333333333333,
+              "value": 1
+            }
+          ]
+        }
+      }
+    }
+  }
+}

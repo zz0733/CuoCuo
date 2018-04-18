@@ -1,0 +1,42 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "mjStatusPrefab",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "content",
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 1
+        },
+        "loop": false,
+        "_N$skeletonData": {
+          "__uuid__": "bcqKUoKD9LJ7tIL5aqgEJ4"
+        }
+      },
+      {
+        "__type__": "ef0a7mGJM5PUJwxj8c1CjOP",
+        "node": {
+          "__id__": 1
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "977zDPU2JLra521+BbJT/M"
+      },
+      "fileId": "9e077vlzy5CRLav0EmtICvT"
+    }
+  }
+]

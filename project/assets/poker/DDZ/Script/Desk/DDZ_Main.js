@@ -10,11 +10,12 @@ cc.Class({
         playerInfoNode: cc.Prefab,
         oneGameOverNode: cc.Prefab,
         allGameOverNode: cc.Prefab,
-        roomAtlas: cc.SpriteAtlas,
         settingPre: cc.Prefab,
         leavePre: cc.Prefab,
         leavePopPre: cc.Prefab,
-        chatPre:cc.Prefab,
+        chatPre: cc.Prefab,
+        popWinPre: cc.Prefab,
+        faPaiPre: cc.Prefab,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -23,28 +24,57 @@ cc.Class({
         cc.YL.DDZEventManager.init();//网络事件注册初始化
         fun.event.add('PhoneNetPhoneStatusDDZ', 'PhoneNet', this.onPhoneNetEvent.bind(this));
         fun.event.add('PhoneBatteryPhoneStatusDDZ', 'PhoneBattery', this.onPhoneBatteryEvent.bind(this));
+        fun.event.add("DDZReconnect", "ReconnectInGame", this.initUI.bind(this));
         require("JSPhoneNetBattery").getNetBatteryStatus();
+        cc.YL.info("斗地主初始化");
+        this.initUI();
+
+    },
+    update(){
+        this.mobileInfoNode.getChildByName("Time").getComponent(cc.Label).string = cc.YL.DDZ_Osdate.showTime();
+
+    },
+    onDestroy(){
+        cc.YL.DDZEventManager.destroy();//网络事件取消注册
+        fun.event.remove('PhoneNetPhoneStatusDDZ');
+        fun.event.remove('PhoneBatteryPhoneStatusDDZ');
+        fun.event.remove("DDZReconnect");
+        fun.db.setData('RoomInfo', {
+            GameType: 0,
+        });
+        var userInfo = fun.db.getData('UserInfo');
+        userInfo.RoomId = 0;
+        fun.db.setData('UserInfo', userInfo);
+        cc.YL.DDZAllGameOverData = null;
+        cc.YL.DDZDeskInfo = null;
+        cc.YL.DDZselfPlayerInfo = null;
+        cc.YL.DDZleftPlayerInfo = null;
+        cc.YL.DDZrightPlayerInfo = null;
+        cc.YL.DDZCurrentRound = null;
+        cc.YL.DDZSelfRate = "";
+        cc.YL.DeskDiFen = "";
+        this.unschedule(this.DDZNetDelayTime);
+    },
+    initUI: function () {
+        cc.YL.info("initUI");
         this.bindNodeValue();
         this.reconnctAndJoinUI();
-        fun.net.send("PID_LOGINSERVER", {
+        this.phoenNetState = null;
+        fun.net.send("PID_LOGINSERVER_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
         });
         cc.YL.DDZPlayerInfoList = [];
         fun.db.setData('RoomInfo', {
-            GameType:6,
+            GameType: 6,
         });
+        cc.YL.DDZAudio.playBGM();
+        fun.event.dispatch('Zhuanquan', false);
+        this.startShowDelayTime();
     },
-    update(){
-        this.mobileInfoNode.getChildByName("Time").getComponent(cc.Label).string = cc.YL.DDZ_Osdate.showTime();
-    },
-    onDestroy(){
-        cc.YL.DDZEventManager.destroy();//网络事件取消注册
-    },
-
     initDeskUI: function (data) {
         this.initRoomInfo(data);
-        this.initDiFen(data.roomInfo.base);
-        this.initRate();
+        this.initDiFen(data.diFen);
+        this.initRate(cc.YL.DDZSelfRate);
         this.initRuleInfo();
     },
 
@@ -72,6 +102,8 @@ cc.Class({
         this.clearRate();
         this.clearDiFen();
         this.clearRoomInfo();
+        this.clearAnimationNode();
+        cc.YL.DDZGameAction.removeDiPai();
         this.selfHandPokerNodeComp.clearHandPoker();
         this.rightHandPokerNodeComp.cleanHandPokerCount();
         this.leftHandPokerNodeComp.cleanHandPokerCount();
@@ -82,6 +114,14 @@ cc.Class({
         this.rightNodeComp.clearNodeUI();
         this.leftNodeComp.clearNodeUI();
         this.BtnNode.removeAllChildren();
+        this.selfNodeComp.clearRate();
+        this.selfNodeComp.showDiZhuIcon(false);
+        this.rightNodeComp.clearRate();
+        this.rightNodeComp.showDiZhuIcon(false);
+        this.leftNodeComp.clearRate();
+        this.leftNodeComp.showDiZhuIcon(false);
+        this.node.getChildByName("ChatRoot").removeAllChildren();
+
     },
     GameOverUI: function () {
         this.selfHandPokerNodeComp.clearHandPoker();
@@ -90,17 +130,28 @@ cc.Class({
         this.selfOutNodeComp.clearOutPoker();
         this.rightOutNodeComp.clearOutPoker();
         this.leftOutNodeComp.clearOutPoker();
+        this.selfNodeComp.clearRate();
+        this.selfNodeComp.showDiZhuIcon(false);
+        this.rightNodeComp.clearRate();
+        this.rightNodeComp.showDiZhuIcon(false);
+        this.leftNodeComp.clearRate();
+        this.leftNodeComp.showDiZhuIcon(false);
         this.BtnNode.removeAllChildren();
         this.clearRate();
-        this.clearDiFen();
+        this.clearAnimationNode();
+        cc.YL.DDZGameAction.removeDiPai();
+        this.initDiFen(cc.YL.DDZDeskInfo.diFen);
+        this.node.getChildByName("ChatRoot").removeAllChildren();
     },
     initRoomInfo: function (data) {
         var roomInfo = cc.find("DDZ_UIROOT/MainNode/BtnNode/RoomInfo/RoomNum");
         roomInfo.getComponent(cc.Label).string = "房号: "
             + data.password
             + "  局数: "
-            + 0 + "/"
+            + data.currentRound + "/"
             + data.roomInfo.RoundLimit;
+        cc.YL.DDZCurrentRound = data.currentRound;
+        cc.YL.loaderID = data.diZhu;
     },
     updateRoomInfo: function (juShu) {
         var roomInfo = cc.find("DDZ_UIROOT/MainNode/BtnNode/RoomInfo/RoomNum");
@@ -115,31 +166,51 @@ cc.Class({
         roomInfo.getComponent(cc.Label).string = "";
     },
     onPhoneNetEvent: function (msg) {
-        var atlas = this.roomAtlas;
-        if (msg.status == 5) {
-            this.mobileInfoNode.getChildByName("Wifi").active = true;
-            this.mobileInfoNode.getChildByName("Net").active = false;
-            this.mobileInfoNode.getChildByName("Wifi").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame("wifi_" + msg.strength);
+        cc.YL.log("斗地主onPhoneNetEvent>>>>msg.status",msg.status);
+        this.phoenNetState =  msg.status;
+        this.DDZNetDelayTime();
 
-        } else if (msg.status == 0) {
-            this.mobileInfoNode.getChildByName("Wifi").active = false;
-            this.mobileInfoNode.getChildByName("Net").active = false;
-            this.mobileInfoNode.getChildByName("Wifi").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame("xinhao5");
-        } else {
-            this.mobileInfoNode.getChildByName("Wifi").active = false;
-            this.mobileInfoNode.getChildByName("Net").active = true;
-            var singleArr = ["xinhao5","xinhao4","xinhao3","xinhao2","xinhao1"];
-            this.mobileInfoNode.getChildByName("Wifi").getComponent(cc.Sprite).spriteFrame = atlas.getSpriteFrame(singleArr[msg.signal]);
+    },
+    startShowDelayTime: function(){
+        this.DDZNetDelayTime();
+        this.schedule(this.DDZNetDelayTime,10);
+    },
+    DDZNetDelayTime: function () {
+        if(this.phoenNetState == null){
+            return;
         }
-
+        this.mobileInfoNode = cc.find("DDZ_UIROOT/MainNode/BtnNode/MobileInfo");
+        var time = fun.db.getData('NetDelayTime');
+        this.mobileInfoNode.getChildByName("DelayTime").getComponent(cc.Label).string = time + "ms";
+        let state = fun.utils.getNetDelayTime(time);
+        for (var i = 0; i < this.mobileInfoNode.getChildByName("Wifi").children.length; i++) {
+            this.mobileInfoNode.getChildByName("Wifi").children[i].color = new cc.Color(state.rgb);
+            this.mobileInfoNode.getChildByName("Wifi").children[i].active = false;
+        }
+        for (var i = 0; i < this.mobileInfoNode.getChildByName("Net").children.length; i++) {
+            this.mobileInfoNode.getChildByName("Net").children[i].color = new cc.Color(state.rgb);
+            this.mobileInfoNode.getChildByName("Net").children[i].active = false;
+        }
+        if(this.phoenNetState == 5){
+            this.mobileInfoNode.getChildByName("Wifi").getChildByName("Wifi" + state.idx).active = true;
+            cc.YL.log("开启的节点name", this.mobileInfoNode.getChildByName("Wifi").getChildByName("Wifi" + state.idx).name);
+        }else{
+            this.mobileInfoNode.getChildByName("Net").getChildByName("Net" + state.idx).active = true;
+            cc.YL.log("开启的节点name", this.mobileInfoNode.getChildByName("Net").getChildByName("Net" + state.idx).name);
+        }
+        cc.YL.log("斗地主DDZNetDelayTime>>>>state.idx",state.idx);
 
     },
 
     onPhoneBatteryEvent: function (msg) {
-        msg.status == 2 ?
-            this.mobileInfoNode.getChildByName("Battery").getChildByName("isCharge").active = true :
+        this.mobileInfoNode = cc.find("DDZ_UIROOT/MainNode/BtnNode/MobileInfo");
+        cc.YL.log("斗地主onPhoneBatteryEvent>>>>msg.status",msg.status);
+        if( msg.status >= 2){
+            this.mobileInfoNode.getChildByName("Battery").getChildByName("isCharge").active = true;
+        }else{
             this.mobileInfoNode.getChildByName("Battery").getChildByName("isCharge").active = false;
-        this.mobileInfoNode.getChildByName("Battery").getChildByName("BatteryIn").width = (msg.level / 39) * 39;
+        }
+        this.mobileInfoNode.getChildByName("Battery").getChildByName("BatteryIn").width = (msg.level / 100) * 39;
     },
     initReady: function (isReady) {
         if (isReady == true) {
@@ -166,12 +237,14 @@ cc.Class({
         node.getComponent(cc.Label).string = "";
     },
     initRate: function (rate) {
-        var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Beishu/Num");
-        node.getComponent(cc.Label).string = rate + "";
+        if (rate) {
+            var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Beishu/Num");
+            node.getComponent(cc.Label).string = rate + "";
+        }
     },
     clearRate: function () {
         var node = cc.find("DDZ_UIROOT/MainNode/BtnNode/GameInfo/Beishu/Num");
-        node.getComponent(cc.Label).string = "";
+        node.getComponent(cc.Label).string = "1";
     },
     initPlayerInfoNode: function (info, index) {
         var playerInfoNode = this.chatNode.getChildByName("DDZ_playerinfoNode") ?
@@ -189,7 +262,7 @@ cc.Class({
             cc.instantiate(this.allGameOverNode);
         this.node.getChildByName("DDZ_AllGameOver") ?
             this.node.getChildByName("DDZ_AllGameOver").active = true :
-            this.node.addChild(allGameOverNode);
+            this.node.addChild(allGameOverNode, 400);
         allGameOverNode.getComponent("DDZ_AllGameOver").initAllGameOverNode(data);
     },
     showOneGameOver: function (data) {
@@ -199,9 +272,54 @@ cc.Class({
             cc.instantiate(this.oneGameOverNode);
         this.node.getChildByName("DDZ_OneGameOver") ?
             this.node.getChildByName("DDZ_OneGameOver").active = true :
-            this.node.addChild(oneGameOverNode);
+            this.node.addChild(oneGameOverNode, 100);
         oneGameOverNode.getComponent("DDZ_OneGameOver").initNodeForSimple(data);
     },
+    showDissUI: function (data) {
+
+        var DissNode = this.node.getChildByName("DDZ_votingPop") ?
+            this.node.getChildByName("DDZ_votingPop") :
+            cc.instantiate(this.leavePopPre);
+        this.node.getChildByName("DDZ_votingPop") ?
+            this.node.getChildByName("DDZ_votingPop").active = true :
+            this.node.addChild(DissNode);
+        DissNode.getComponent("DDZ_Disslove").initUI(data);
+    },
+    showDissResult: function (str) {
+        this.showPopWin(str, 2);
+    },
+    showPopWin: function (str, type) {
+        if (this.node.getChildByName("DDZ_votingPop")) {
+            this.node.getChildByName("DDZ_votingPop").active = false;
+            this.node.getChildByName("DDZ_votingPop").destroy();
+        }
+        var popNode = this.node.getChildByName("DDZ_popWin") ?
+            this.node.getChildByName("DDZ_popWin") :
+            cc.instantiate(this.popWinPre);
+        this.node.getChildByName("DDZ_popWin") ?
+            this.node.getChildByName("DDZ_popWin").active = true :
+            this.node.addChild(popNode);
+        popNode.getComponent("DDZ_PopWin").initPopStr(str, type);
+    },
+    showTipStr: function (str) {
+        this.node.getChildByName("TipNode").getComponent(cc.Label).string = str;
+        setTimeout(function () {
+            this.node.getChildByName("TipNode").getComponent(cc.Label).string = "";
+        }.bind(this), 500);
+    },
+    clearAnimationNode: function () {
+        cc.find("DDZ_UIROOT/MainNode/AnimationRoot").removeAllChildren();
+    },
+    showFaPaiAction: function () {
+        var actionNode = this.node.getChildByName("DDZ_FaPaiNode") ?
+            this.node.getChildByName("DDZ_FaPaiNode") :
+            cc.instantiate(this.faPaiPre);
+        this.node.getChildByName("DDZ_FaPaiNode") ?
+            this.node.getChildByName("DDZ_FaPaiNode").active = true :
+            this.node.addChild(actionNode);
+        actionNode.getComponent("DDZ_FaiPaiAction").startFaPai();
+    },
+    /******************************************************************/
     bindNodeValue: function () {
         this.selfID = fun.db.getData('UserInfo').UserId;
         this.selfNode = cc.find("DDZ_UIROOT/MainNode/SelfPlayerInfo");
@@ -233,6 +351,7 @@ cc.Class({
     /*************************************界面的按钮交互**************************************/
     onClickSetting: function () {
         cc.YL.log("设置按钮");
+        cc.YL.DDZAudio.playBtnClick();
         var settingNode = this.node.getChildByName("set") ?
             this.node.getChildByName("set") :
             cc.instantiate(this.settingPre);
@@ -244,6 +363,7 @@ cc.Class({
 
     onClickMessage: function () {
         cc.YL.log("消息按钮");
+        cc.YL.DDZAudio.playBtnClick();
         var messageNode = this.node.getChildByName("chat") ?
             this.node.getChildByName("chat") :
             cc.instantiate(this.chatPre);
@@ -253,19 +373,21 @@ cc.Class({
     },
 
 
-
     onClickLeave: function () {
         cc.YL.log("离开按钮");
+        cc.YL.DDZAudio.playBtnClick();
         var leaveNode = this.node.getChildByName("DDZ_voting") ?
             this.node.getChildByName("DDZ_voting") :
             cc.instantiate(this.leavePre);
         this.node.getChildByName("DDZ_voting") ?
             this.node.getChildByName("DDZ_voting").active = true :
             this.node.addChild(leaveNode);
+        leaveNode.getComponent("DDZ_LeaveAndDiss").initUIByStatus();
     },
 
     onClickRule: function (event) {
         cc.YL.log("规则按钮");
+        cc.YL.DDZAudio.playBtnClick();
         this.ruleInfoNode.parent.stopAllActions();
         this.ruleInfoNode.parent.setPosition(-1334, 0);
         this.ruleInfoNode.parent.runAction(cc.moveTo(0.1, cc.p(0, 0)));
@@ -274,6 +396,7 @@ cc.Class({
 
     },
     onClickCloseRule: function () {
+        cc.YL.DDZAudio.playBtnClick();
         cc.find("DDZ_UIROOT/MainNode/BtnNode/Rule").active = true;
         this.ruleInfoNode.parent.stopAllActions();
         this.ruleInfoNode.parent.setPosition(0, 0);

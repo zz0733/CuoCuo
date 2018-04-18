@@ -19,27 +19,45 @@ cc.Class({
         }
     },
     onClickNoPoint: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_JIAOFEN_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             fen: 0,
         });
     },
     onClickOnePoint: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_JIAOFEN_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             fen: 1,
         });
     },
     onClickTwoPoint: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_JIAOFEN_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             fen: 2,
         });
     },
     onClickThreePoint: function () {
+        cc.YL.DDZAudio.playBtnClick();
         fun.net.send("PID_JIAOFEN_REQ", {
             userId: fun.db.getData('UserInfo').UserId,
             fen: 3,
+        });
+    },
+    onClickSixPoint: function () {
+        cc.YL.DDZAudio.playBtnClick();
+        fun.net.send("PID_JIAOFEN_REQ", {
+            userId: fun.db.getData('UserInfo').UserId,
+            fen: 6,
+        });
+    },
+    onClickNinePoint: function () {
+        cc.YL.DDZAudio.playBtnClick();
+        fun.net.send("PID_JIAOFEN_REQ", {
+            userId: fun.db.getData('UserInfo').UserId,
+            fen: 9,
         });
     },
     // update (dt) {},

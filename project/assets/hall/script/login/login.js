@@ -18,6 +18,10 @@
 
         // let isRelease = fun.gameCfg.releaseType === gameConst.releaseType.release ? true : false;
         this._isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple ? true : false;
+        this._isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher ? true : false;
+        if (this._isFisher) {
+            this.node.getChildByName('Haishang').active = true;
+        }
 
         this.editBox = this.node.getChildByName('editBox');
         this.editBox.active = false;

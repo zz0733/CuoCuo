@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wait",
+    "texture": "c3Ozv6w/5OXqlbeOnyC/ZJ",
+    "rect": [
+      28,
+      533,
+      87,
+      88
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      89,
+      90
+    ],
+    "rotated": 1
+  }
+}

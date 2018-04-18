@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shengzhang",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      167,
+      746,
+      178,
+      104
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      178,
+      104
+    ],
+    "capInsets": [
+      31,
+      22,
+      31,
+      22
+    ]
+  }
+}

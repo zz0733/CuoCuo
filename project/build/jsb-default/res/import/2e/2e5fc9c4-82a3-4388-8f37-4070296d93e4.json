@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "mail_duihuan",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      836,
+      736,
+      91,
+      77
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      93,
+      79
+    ],
+    "rotated": 1
+  }
+}

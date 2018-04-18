@@ -1,0 +1,258 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Hu",
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "m2/1eDqo0P2wRXdbM/aQNld3RR8",
+      "spine": "3.5.46",
+      "width": 1334,
+      "height": 901.05,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Guang",
+        "parent": "root",
+        "x": 285.42,
+        "y": 327.83,
+        "scaleX": 1.2,
+        "scaleY": 1.2
+      },
+      {
+        "name": "Quan",
+        "parent": "root",
+        "x": 448,
+        "y": 440.32,
+        "scaleY": 1.145
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Quan",
+        "bone": "Quan",
+        "attachment": "Quan5",
+        "blend": "additive"
+      },
+      {
+        "name": "Guang",
+        "bone": "Guang",
+        "attachment": "Guang1",
+        "blend": "additive"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Guang": {
+          "Guang1": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang2": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang3": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang4": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang5": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang6": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang7": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang8": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          },
+          "Guang9": {
+            "x": -6.45,
+            "y": 61.68,
+            "width": 98,
+            "height": 182
+          }
+        },
+        "Quan": {
+          "Quan1": {
+            "width": 173,
+            "height": 93
+          },
+          "Quan2": {
+            "width": 173,
+            "height": 93
+          },
+          "Quan3": {
+            "width": 173,
+            "height": 93
+          },
+          "Quan4": {
+            "width": 173,
+            "height": 93
+          },
+          "Quan5": {
+            "width": 173,
+            "height": 93
+          }
+        }
+      }
+    },
+    "animations": {
+      "Hu": {
+        "slots": {
+          "Guang": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.3,
+                "name": "Guang1"
+              },
+              {
+                "time": 0.3667,
+                "name": "Guang2"
+              },
+              {
+                "time": 0.4333,
+                "name": "Guang3"
+              },
+              {
+                "time": 0.5,
+                "name": "Guang4"
+              },
+              {
+                "time": 0.5667,
+                "name": "Guang5"
+              },
+              {
+                "time": 0.6333,
+                "name": "Guang6"
+              },
+              {
+                "time": 0.7,
+                "name": "Guang7"
+              },
+              {
+                "time": 0.7667,
+                "name": "Guang8"
+              },
+              {
+                "time": 0.8333,
+                "name": "Guang9"
+              },
+              {
+                "time": 0.9,
+                "name": null
+              }
+            ]
+          },
+          "Quan": {
+            "attachment": [
+              {
+                "time": 0,
+                "name": null
+              },
+              {
+                "time": 0.2667,
+                "name": "Quan1"
+              },
+              {
+                "time": 0.3333,
+                "name": "Quan2"
+              },
+              {
+                "time": 0.4,
+                "name": "Quan3"
+              },
+              {
+                "time": 0.4667,
+                "name": "Quan4"
+              },
+              {
+                "time": 0.5333,
+                "name": "Quan5"
+              },
+              {
+                "time": 0.6,
+                "name": null
+              }
+            ]
+          }
+        },
+        "bones": {
+          "Quan": {
+            "translate": [
+              {
+                "time": 0,
+                "x": -439.72,
+                "y": -448.13
+              }
+            ]
+          },
+          "Guang": {
+            "translate": [
+              {
+                "time": 0,
+                "x": -277.48,
+                "y": -330.96
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1.054,
+                "y": 1.348
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nHu.png\nsize: 256,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nGuang1\n  rotate: false\n  xy: 47, 2\n  size: 42, 67\n  orig: 49, 91\n  offset: 5, 1\n  index: -1\nGuang2\n  rotate: true\n  xy: 91, 24\n  size: 45, 79\n  orig: 49, 91\n  offset: 4, 1\n  index: -1\nGuang3\n  rotate: true\n  xy: 100, 116\n  size: 46, 84\n  orig: 49, 91\n  offset: 3, 0\n  index: -1\nGuang4\n  rotate: false\n  xy: 2, 166\n  size: 46, 88\n  orig: 49, 91\n  offset: 3, 3\n  index: -1\nGuang5\n  rotate: true\n  xy: 115, 164\n  size: 41, 86\n  orig: 49, 91\n  offset: 5, 2\n  index: -1\nGuang6\n  rotate: false\n  xy: 51, 85\n  size: 47, 84\n  orig: 49, 91\n  offset: 0, 3\n  index: -1\nGuang7\n  rotate: true\n  xy: 100, 71\n  size: 43, 84\n  orig: 49, 91\n  offset: 4, 4\n  index: -1\nGuang8\n  rotate: false\n  xy: 2, 5\n  size: 43, 72\n  orig: 49, 91\n  offset: 4, 1\n  index: -1\nGuang9\n  rotate: true\n  xy: 172, 26\n  size: 43, 70\n  orig: 49, 91\n  offset: 5, 3\n  index: -1\nQuan1\n  rotate: false\n  xy: 50, 171\n  size: 63, 34\n  orig: 87, 47\n  offset: 12, 7\n  index: -1\nQuan2\n  rotate: true\n  xy: 186, 83\n  size: 79, 44\n  orig: 87, 47\n  offset: 4, 2\n  index: -1\nQuan3\n  rotate: false\n  xy: 50, 207\n  size: 87, 47\n  orig: 87, 47\n  offset: 0, 0\n  index: -1\nQuan4\n  rotate: true\n  xy: 2, 79\n  size: 85, 47\n  orig: 87, 47\n  offset: 1, 0\n  index: -1\nQuan5\n  rotate: false\n  xy: 139, 207\n  size: 87, 47\n  orig: 87, 47\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "c8OyKug1lMwYXoKy9hjdio"
+  },
+  "textures": [
+    {
+      "__uuid__": "1fDYTDq4VBoYq9BFCrA54J"
+    }
+  ]
+}

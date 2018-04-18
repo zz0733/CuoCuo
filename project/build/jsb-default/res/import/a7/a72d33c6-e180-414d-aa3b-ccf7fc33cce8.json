@@ -1,0 +1,24 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "dajiesuan.plist",
+  "_spriteFrames": {
+    "dz_dajiesuan_0": {
+      "__uuid__": "05UUJJ0PtGF5p9s9Jx47NF"
+    },
+    "dz_dajiesuan_4": {
+      "__uuid__": "c7uKLbIktDZ6Pb0YXVwW4m"
+    },
+    "dz_dajiesuan_di1": {
+      "__uuid__": "482npy20xOi7SAboAzP5k6"
+    },
+    "dz_dajiesuan_di2": {
+      "__uuid__": "16p4OcKt1CZIFEygpSE/II"
+    },
+    "dz_dajiesuan_t3": {
+      "__uuid__": "a3QoGw3utH4b0BZHuxJ1dP"
+    },
+    "dz_win": {
+      "__uuid__": "ecOvIuTUxPepr4p3D9JIRY"
+    }
+  }
+}

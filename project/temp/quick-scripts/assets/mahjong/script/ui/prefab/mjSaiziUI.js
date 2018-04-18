@@ -15,7 +15,6 @@ cc.Class({
 
     // use this for initialization
     onLoad: function onLoad() {
-        cc.log('--- saizi onlocad ---');
         var DefineType = GameDefine.DESKPOS_TYPE;
         this.directionList = {};
         this.directionList[DefineType.SHANG] = "Shang";

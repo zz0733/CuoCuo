@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tachuang_2",
+    "texture": "f4tO8zyyRGp5z4tqxnZ94w",
+    "rect": [
+      48,
+      78,
+      41,
+      66
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      41,
+      66
+    ],
+    "capInsets": [
+      17,
+      0,
+      17,
+      0
+    ]
+  }
+}

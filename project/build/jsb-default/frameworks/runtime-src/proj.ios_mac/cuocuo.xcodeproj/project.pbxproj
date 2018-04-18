@@ -38,6 +38,8 @@
 		016727661FF0E58500FAD83F /* ASIDataCompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0167275F1FF0E58500FAD83F /* ASIDataCompressor.m */; };
 		016727671FF0E58500FAD83F /* ASIDataDecompressor.m in Sources */ = {isa = PBXBuildFile; fileRef = 016727611FF0E58500FAD83F /* ASIDataDecompressor.m */; };
 		018381E5204E9E7D00D13552 /* LaunchScreenBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 018381E4204E9E7D00D13552 /* LaunchScreenBackground.png */; };
+		01A20FA62085A25B00082C5A /* LaunchImg in Resources */ = {isa = PBXBuildFile; fileRef = 01A20FA52085A25900082C5A /* LaunchImg */; };
+		01D201A3208444E900943577 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 01D201A2208444E800943577 /* Icon.png */; };
 		01DB9D0B2011C99000F8520A /* OCPhoneDevice.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01DB9D092011C99000F8520A /* OCPhoneDevice.mm */; };
 		01DB9D1A2011C9D800F8520A /* uuid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01DB9D182011C9D800F8520A /* uuid.mm */; };
 		01DB9D1B2011C9D800F8520A /* ApplePay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01DB9D192011C9D800F8520A /* ApplePay.mm */; };
@@ -207,6 +209,8 @@
 		016727601FF0E58500FAD83F /* ASIInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASIInputStream.h; sourceTree = "<group>"; };
 		016727611FF0E58500FAD83F /* ASIDataDecompressor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASIDataDecompressor.m; sourceTree = "<group>"; };
 		018381E4204E9E7D00D13552 /* LaunchScreenBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LaunchScreenBackground.png; path = ios/LaunchScreenBackground.png; sourceTree = "<group>"; };
+		01A20FA52085A25900082C5A /* LaunchImg */ = {isa = PBXFileReference; lastKnownFileType = folder; name = LaunchImg; path = ios/LaunchImg; sourceTree = "<group>"; };
+		01D201A2208444E800943577 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ios/Icon.png; sourceTree = "<group>"; };
 		01DB9D092011C99000F8520A /* OCPhoneDevice.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPhoneDevice.mm; sourceTree = "<group>"; };
 		01DB9D0A2011C99000F8520A /* OCPhoneDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCPhoneDevice.h; sourceTree = "<group>"; };
 		01DB9D162011C9D800F8520A /* uuid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = uuid.h; path = Apple/uuid.h; sourceTree = "<group>"; };
@@ -605,10 +609,12 @@
 		D45446CC156DE73F00887EB5 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				01A20FA52085A25900082C5A /* LaunchImg */,
 				016726EA1FF0A8D200FAD83F /* AppIcon */,
 				1AFFCD841F7A5DCD00628F2C /* Images.xcassets */,
 				1AFFCD821F7A5DCC00628F2C /* LaunchScreen.storyboard */,
 				018381E4204E9E7D00D13552 /* LaunchScreenBackground.png */,
+				01D201A2208444E800943577 /* Icon.png */,
 				509D4AB817EBB2AB00697056 /* main.m */,
 				509D4AB917EBB2AB00697056 /* Prefix.pch */,
 				509D4ABA17EBB2AB00697056 /* RootViewController.h */,
@@ -783,6 +789,8 @@
 				1AD7E0A818C9DB93004817A6 /* main.js in Resources */,
 				1AFFCD851F7A5DCF00628F2C /* Images.xcassets in Resources */,
 				1AFFCD861F7A5DCF00628F2C /* LaunchScreen.storyboard in Resources */,
+				01D201A3208444E900943577 /* Icon.png in Resources */,
+				01A20FA62085A25B00082C5A /* LaunchImg in Resources */,
 				C03780EB18BEE0E400FE4F13 /* src in Resources */,
 				C0799CB918BAE62000E9C828 /* res in Resources */,
 			);
@@ -1015,6 +1023,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -1061,6 +1070,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

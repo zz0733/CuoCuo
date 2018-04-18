@@ -54,14 +54,14 @@ cc.Class({
     onClickGPSDetail: function () {
         cc.YL.log("点击打开GPS详情");
         var rootUI = cc.find("DDZ_UIROOT/MainNode");
-        var gpsNode = rootUI.getChildByName("playerMap") ?
-            rootUI.getChildByName("playerMap") :
+        var gpsNode = rootUI.getChildByName("DDZ_Map") ?
+            rootUI.getChildByName("DDZ_Map") :
             cc.instantiate(this.GPSPre);
-        rootUI.getChildByName("playerMap") ?
-            rootUI.getChildByName("playerMap").active = true :
+        rootUI.getChildByName("DDZ_Map") ?
+            rootUI.getChildByName("DDZ_Map").active = true :
             rootUI.addChild(gpsNode);
         var playerinfos = this.playerInfos();
-        gpsNode.getComponent("playerMap").show(playerinfos);
+        gpsNode.getComponent("DDZ_PlayerGPS").show(playerinfos);
     },
     onClickTools: function (event, custom) {
         var outside = {
@@ -80,7 +80,8 @@ cc.Class({
         var tempArr = [];
         if (cc.YL.DDZselfPlayerInfo) {
             tempArr.push({
-                Address: null,
+                Address: cc.YL.DDZselfPlayerInfo.gps ? cc.YL.DDZselfPlayerInfo.gps : null,
+                // Address:{"lat":"30.544779","lng":"104.062456","locdesc":"中国四川省成都市武侯区大源1线在成都移动互联创业大厦附近"},
                 Feng: null,
                 HeadUrl: cc.YL.DDZselfPlayerInfo.headUrl,
                 Ip:cc.YL.DDZselfPlayerInfo.ip,
@@ -90,14 +91,15 @@ cc.Class({
                 name:cc.YL.DDZselfPlayerInfo.nickName,
                 showName:cc.YL.DDZselfPlayerInfo.nickName,
                 PlayerIdx: cc.YL.DDZselfPlayerInfo.index,
-                Icon:"",
+                Icon:cc.YL.DDZrightPlayerInfo.headUrl,
                 isSelfPlayed:true,
                 isTruePlayer:true,
             });
         }
         if (cc.YL.DDZrightPlayerInfo) {
             tempArr.push({
-                Address: null,
+                Address: cc.YL.DDZrightPlayerInfo.gps? cc.YL.DDZrightPlayerInfo.gps : null,
+                // Address:{"lat":"30.544779","lng":"104.062456","locdesc":"中国四川省成都市武侯区大源1线在成都移动互联创业大厦附近"},
                 Feng: null,
                 HeadUrl: cc.YL.DDZrightPlayerInfo.headUrl,
                 Ip:cc.YL.DDZrightPlayerInfo.ip,
@@ -107,14 +109,15 @@ cc.Class({
                 name:cc.YL.DDZrightPlayerInfo.nickName,
                 showName:cc.YL.DDZrightPlayerInfo.nickName,
                 PlayerIdx: cc.YL.DDZrightPlayerInfo.index,
-                Icon:"",
+                Icon:cc.YL.DDZrightPlayerInfo.headUrl,
                 isSelfPlayed:false,
                 isTruePlayer:true,
             });
         }
         if (cc.YL.DDZleftPlayerInfo) {
             tempArr.push({
-                Address: null,
+                Address: cc.YL.DDZleftPlayerInfo.gps? cc.YL.DDZleftPlayerInfo.gps : null,
+                // Address:{"lat":"30.544779","lng":"104.062456","locdesc":"中国四川省成都市武侯区大源1线在成都移动互联创业大厦附近"},
                 Feng: null,
                 HeadUrl: cc.YL.DDZleftPlayerInfo.headUrl,
                 Ip:cc.YL.DDZleftPlayerInfo.ip,
@@ -124,7 +127,7 @@ cc.Class({
                 name:cc.YL.DDZleftPlayerInfo.nickName,
                 showName:cc.YL.DDZleftPlayerInfo.nickName,
                 PlayerIdx: cc.YL.DDZleftPlayerInfo.index,
-                Icon:"",
+                Icon:cc.YL.DDZrightPlayerInfo.headUrl,
                 isSelfPlayed:false,
                 isTruePlayer:true,
             });

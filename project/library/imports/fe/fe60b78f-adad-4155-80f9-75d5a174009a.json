@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_tishi_huafu2",
+    "texture": "1c3e3c08-e2dd-4de4-a7e7-c74c1fa51d72",
+    "atlas": "",
+    "rect": [
+      1,
+      1,
+      410,
+      235
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      412,
+      237
+    ]
+  }
+}

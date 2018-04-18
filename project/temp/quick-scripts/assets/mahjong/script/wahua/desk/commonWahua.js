@@ -35,14 +35,17 @@ cc.Class({
             saizi.destroy();
         }, this);
     },
-    initDisbandRoom: function initDisbandRoom() {
-        cc.log('--- initDisbandRoom ---');
+    initDisbandRoom: function initDisbandRoom(data) {
+        if (!data) {
+            this.disbandRoom.active = false;
+            return;
+        }
         if (!this.disbandRoom) {
             this.disbandRoom = cc.instantiate(this.disbandRoomPerfab);
             this.disbandRoom.parent = this.node;
-            this.disbandRoom.getComponent('mjVotingPopUI').enabled = false;
-            // this.disbandRoom.addComponent('wahuaVotingPopUI');
         }
+        this.disbandRoom.active = true;
+        this.disbandRoom.getComponent('whVotingPop').setData(data);
     }
 });
 

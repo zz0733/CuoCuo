@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "whShangPeng",
+    "_name": "whTangShu",
     "_objFlags": 0,
     "_rawFiles": null,
     "data": {
@@ -105,8 +105,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 0.5,
-    "_scaleY": 0.5,
+    "_scaleX": 0.4,
+    "_scaleY": 0.4,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -153,7 +153,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
     },
     "fileId": "dccNIkpTNFq5o7LV77cXMq",
     "sync": false
@@ -192,7 +192,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "60976195-dcf0-4e91-ad8a-da5b16e05327"
     },
     "fileId": "09OmigIRdMoKeJOvCfKAtn",
     "sync": false

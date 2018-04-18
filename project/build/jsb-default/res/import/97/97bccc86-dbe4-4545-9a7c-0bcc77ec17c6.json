@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Heng3",
+    "texture": "53h1b1AMlGaqXvTYbMIPIp",
+    "rect": [
+      8,
+      114,
+      962,
+      880
+    ],
+    "offset": [
+      -23,
+      -42
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}

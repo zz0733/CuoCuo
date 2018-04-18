@@ -72,7 +72,15 @@ var MessageCfg = {
 
 	GoodCnt: { id: "GoodCnt", desc: "获取物品数量", req: 133, rsp: 233, notify: 333 },
 
-	ExchgGood: { id: "ExchgGood", desc: "兑换物品", req: 134, rsp: 234, notify: 334 }
+	ExchgGood: { id: "ExchgGood", desc: "兑换物品", req: 134, rsp: 234, notify: 334 },
+
+	TimeCardList: { id: "TimeCardList", desc: "获取限时卡列表", req: 135, rsp: 235, notify: 335 },
+
+	ShareTimeCard: { id: "ShareTimeCard", desc: "分享限时卡", req: 136, rsp: 236, notify: 336 },
+
+	ReceiveTimeCard: { id: "ReceiveTimeCard", desc: "领取限时卡", req: 137, rsp: 237, notify: 337 },
+
+	SharedTimeCardList: { id: "SharedTimeCardList", desc: "分享的限时卡列表", req: 138, rsp: 238, notify: 338 }
 
 };
 

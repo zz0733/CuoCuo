@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_biaoti_renzheng1",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      769,
+      204,
+      249,
+      65
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      249,
+      65
+    ]
+  }
+}

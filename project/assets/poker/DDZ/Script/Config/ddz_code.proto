@@ -56,5 +56,10 @@ enum ddzErrorCode {
     SENDMSGFAIL_NOT_FOUND_DESK = -162; //发送消息失败，未找到指定房间！
 
     LOTTERYFAIL_LOST_BILL = -163; //结算失败，账单丢失
-    LOTTERYFAIL_WRONG_STATUS = -164;//结算失败，状态错误
+    LOTTERYFAIL_WRONG_STATUS = -164; //结算失败，状态错误
+
+    LOGINFAIL = -165; //登录验证失败
+
+    LEAVEFAIL =-166;//离开失败
+    LEAVEFAIL_OPENED = -167;//离开失败，已开局
 }

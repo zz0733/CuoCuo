@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "gong",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      2,
+      384,
+      137,
+      141
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      139,
+      143
+    ],
+    "rotated": 1
+  }
+}

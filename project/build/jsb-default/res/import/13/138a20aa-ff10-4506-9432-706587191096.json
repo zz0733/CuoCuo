@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zhanji_wahua",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      295,
+      399,
+      147,
+      39
+    ],
+    "offset": [
+      1,
+      1
+    ],
+    "originalSize": [
+      149,
+      41
+    ],
+    "rotated": 1
+  }
+}

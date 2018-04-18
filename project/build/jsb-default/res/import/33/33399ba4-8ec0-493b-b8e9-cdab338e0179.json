@@ -1,0 +1,42 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "DDZ_FaPaiPoker",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "DDZ_FaPaiPoker",
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_spriteFrame": {
+          "__uuid__": "d7jRM9VExMKY1Xp3ye+XPP"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__id__": 0
+      },
+      "fileId": "3fHoYmlQlGXI8JvxIW4OfG"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 170,
+      "height": 230
+    },
+    "_scaleX": 0.3,
+    "_scaleY": 0.3
+  }
+]

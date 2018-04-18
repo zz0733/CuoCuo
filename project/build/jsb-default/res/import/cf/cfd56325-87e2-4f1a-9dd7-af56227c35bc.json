@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "xia_tang",
+    "texture": "739MSisvhBGIvb3r+HgUoi",
+    "rect": [
+      2,
+      904,
+      68,
+      105
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      68,
+      105
+    ]
+  }
+}

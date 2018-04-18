@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_time_chongdian",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      149,
+      547,
+      15,
+      22
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      17,
+      24
+    ]
+  }
+}

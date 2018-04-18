@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dikuang_shezhi",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      538,
+      737,
+      29,
+      220
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      29,
+      220
+    ],
+    "capInsets": [
+      10,
+      12,
+      10,
+      12
+    ]
+  }
+}

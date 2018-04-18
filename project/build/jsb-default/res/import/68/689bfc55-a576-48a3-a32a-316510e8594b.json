@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_fapai",
+    "texture": "a9c+BYF3tKXqw96fOJksyB",
+    "rect": [
+      444,
+      372,
+      65,
+      96
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      65,
+      96
+    ]
+  }
+}

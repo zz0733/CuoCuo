@@ -1,0 +1,40 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "whPaiShang",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "whShangPai",
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_spriteFrame": {
+          "__uuid__": "97jVWYZQ1Gsb8zwdlkZjsV"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "70CP7wAx1KtqD2Sz7A3fmz"
+      },
+      "fileId": "71pE65fLBLU7/odGqwY1Fw"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 42,
+      "height": 62
+    }
+  }
+]

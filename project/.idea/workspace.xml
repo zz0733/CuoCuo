@@ -2,21 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="4db54bc4-3ea0-4c79-aade-a3d8a69e371d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/mahjong/script/game/common/mjGameManager.js" afterPath="$PROJECT_DIR$/assets/mahjong/script/game/common/mjGameManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardTypeConfig.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardTypeConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardValueConfig.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardValueConfig.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_DeskInfo.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_DeskInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/ios/Icon.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-hdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-mdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xxhdpi/ic_launcher.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/cuocuo.xcworkspace/xcuserdata/szm.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/cuocuo.xcworkspace/xcuserdata/szm.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" afterPath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" afterPath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_AllGameOverItem.prefab" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_AllGameOverItem.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerAction.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerAction.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build.json" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_command.txt" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_command.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_output.txt" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_output.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi/android_gradle_build.json" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi/android_gradle_build.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi/ndkBuild_build_command.txt" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi/ndkBuild_build_command.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi/ndkBuild_build_output.txt" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi/ndkBuild_build_output.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/AndroidManifest.xml" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build.gradle" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/cuocuo.iml" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/cuocuo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Android.mk" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Android.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Application.mk" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Application.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/local.properties" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/values/strings.xml" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/src/org/cocos2dx/javascript/AppActivity.java" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/src/org/cocos2dx/javascript/AppActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/build.gradle" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/gradle.properties" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/gradle.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/local.properties" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android/ant.properties" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android/ant.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android/jni/Application.mk" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android/jni/Application.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/main.js" afterPath="$PROJECT_DIR$/build/jsb-default/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/builder.json" afterPath="$PROJECT_DIR$/settings/builder.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings/project.json" afterPath="$PROJECT_DIR$/settings/project.json" />
     </list>
     <ignored path="project.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,71 +58,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DDZ_GameManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="260">
+              <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DDZ_PokerTip.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+            <state relative-caret-position="376">
+              <caret line="276" column="21" selection-start-line="276" selection-start-column="21" selection-end-line="276" selection-end-column="21" />
+              <folding>
+                <element signature="e#9045#9561#0" expanded="false" />
+                <element signature="e#9579#10432#0" expanded="false" />
+                <element signature="e#10450#11303#0" expanded="false" />
+                <element signature="e#11321#12793#0" expanded="false" />
+                <element signature="e#12810#14252#0" expanded="false" />
+                <element signature="e#14269#15166#0" expanded="false" />
+                <element signature="e#15183#16109#0" expanded="false" />
+                <element signature="e#16126#16971#0" expanded="false" />
+                <element signature="e#16988#18396#0" expanded="false" />
+                <element signature="e#18413#19819#0" expanded="false" />
+                <element signature="e#19836#20696#0" expanded="false" />
+                <element signature="e#20713#21863#0" expanded="false" />
+                <element signature="e#21880#23511#0" expanded="false" />
+                <element signature="e#23529#23577#0" expanded="false" />
+                <element signature="e#23627#23843#0" expanded="false" />
+                <element signature="e#23884#24084#0" expanded="false" />
+                <element signature="e#24127#24283#0" expanded="false" />
+                <element signature="e#24355#26661#0" expanded="false" />
+                <element signature="e#26699#27074#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="zhanjiLayer.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="166">
+              <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DDDZ_AllGameOver.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js">
+      <file leaf-file-name="zhanjiDetailItem.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="431">
+              <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DDZ_OneGameOver.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js">
+      <file leaf-file-name="DDZ_PlayerInfoNode.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="361">
+              <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DDZ_NetEventManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js">
+      <file leaf-file-name="DDZ_Main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+            <state relative-caret-position="841">
+              <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DDZ_PlayerLeftInfo.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js">
+      <file leaf-file-name="DDZ_OutCard.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_OutCard.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+            <state relative-caret-position="630">
+              <caret line="42" column="17" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DDZ_PlayerLeftPoker.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js">
+      <file leaf-file-name="DDZ_PokerTouchEvent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DDZ_PokerAction.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerAction.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+            <state relative-caret-position="931">
+              <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,30 +161,18 @@
       <file leaf-file-name="DDZ_PlayerSelfPoker.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestLog.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/TestLog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="841">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="121" selection-end-column="25" />
+            <state relative-caret-position="421">
+              <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DDZ_CardValueConfig.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardValueConfig.js">
+      <file leaf-file-name="DDZ_NetEventManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="1815">
+              <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -146,29 +183,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/mahjong/script/ui/prefab/mjPaiUI.js" />
-        <option value="$PROJECT_DIR$/assets/hall/script/comm/AppLog.js" />
-        <option value="$PROJECT_DIR$/assets/hall/script/hall/hall.js" />
-        <option value="$PROJECT_DIR$/assets/mahjong/script/ui/mjGameUI.js" />
-        <option value="$PROJECT_DIR$/assets/mahjong/script/game/common/mjNetMgr.js" />
-        <option value="$PROJECT_DIR$/assets/hall/script/comm/TestLog.js" />
-        <option value="$PROJECT_DIR$/assets/mahjong/script/game/common/hymjNetMgr.js" />
-        <option value="$PROJECT_DIR$/assets/mahjong/script/game/common/mjGameManager.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_Ready.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_OutCard.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_Pass.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_JiaBei.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Disslove.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_LeaveAndDiss.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/config/ChatCfg.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/ddz_play.proto" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/ddz_base.proto" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_JiaoFen.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Common/DDZ_Animation.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOverItem.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerRightOutPoker.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftOutPoker.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Common/DDZ_AnimationManager.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfOutPoker.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/login/login.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_PopWin.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/login/globalUI.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_DiPai.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/interact.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOver.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/set.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_FaiPaiAction.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Replay/DDZ_ReplayMain.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/publicVoiceBtn.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Common/DDZ_Sound.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardTypeConfig.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_DeskInfo.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/createRoom/createDDZRoom.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Chat.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_MsgConfig.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfInfo.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerRightInfo.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_PlayerGPS.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerAction.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/chat.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js" />
-        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardValueConfig.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Setting.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/hall/hall.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" />
       </list>
     </option>
   </component>
@@ -179,9 +244,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="876" />
+    <option name="x" value="676" />
     <option name="y" value="22" />
-    <option name="width" value="1187" />
+    <option name="width" value="1244" />
     <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -255,126 +320,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DDZ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DDZ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DDZ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Player" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="poker" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DDZ" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Script" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Config" />
+              <option name="myItemId" value="phone" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/casino_client/DDZ" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -475,24 +432,57 @@
       <workItem from="1521511148676" duration="2012000" />
       <workItem from="1521514475098" duration="3890000" />
       <workItem from="1521523933121" duration="9187000" />
+      <workItem from="1521598048208" duration="5165000" />
+      <workItem from="1521610356792" duration="3907000" />
+      <workItem from="1521616050232" duration="6157000" />
+      <workItem from="1521683786328" duration="11597000" />
+      <workItem from="1521769946230" duration="4803000" />
+      <workItem from="1521783097807" duration="11466000" />
+      <workItem from="1522028954707" duration="6177000" />
+      <workItem from="1522042362218" duration="9853000" />
+      <workItem from="1522052931358" duration="6478000" />
+      <workItem from="1522115701818" duration="19238000" />
+      <workItem from="1522202265176" duration="12816000" />
+      <workItem from="1522288330816" duration="4302000" />
+      <workItem from="1522300762055" duration="13439000" />
+      <workItem from="1522376983248" duration="16365000" />
+      <workItem from="1522633679142" duration="4422000" />
+      <workItem from="1522647248205" duration="12784000" />
+      <workItem from="1522719952109" duration="20474000" />
+      <workItem from="1522806504421" duration="18157000" />
+      <workItem from="1523152689527" duration="18054000" />
+      <workItem from="1523179661492" duration="4108000" />
+      <workItem from="1523238458430" duration="6417000" />
+      <workItem from="1523251789246" duration="14159000" />
+      <workItem from="1523325069140" duration="17353000" />
+      <workItem from="1523411833053" duration="19090000" />
+      <workItem from="1523498038909" duration="2617000" />
+      <workItem from="1523502312621" duration="15892000" />
+      <workItem from="1523584541948" duration="11946000" />
+      <workItem from="1523615570831" duration="5000" />
+      <workItem from="1523615635411" duration="112000" />
+      <workItem from="1523843546557" duration="3856000" />
+      <workItem from="1523856787356" duration="10463000" />
+      <workItem from="1523930563606" duration="5993000" />
+      <workItem from="1523943023056" duration="13992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21798000" />
+    <option name="totallyTimeSpent" value="353455000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="876" y="22" width="1187" height="1058" extended-state="0" />
-    <editor active="false" />
+    <frame x="676" y="22" width="1244" height="1058" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26453245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22347267" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962587" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -515,407 +505,498 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="7" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/initFun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/hall/hall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="92" column="67" selection-start-line="92" selection-start-column="67" selection-end-line="92" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/TestLog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1665">
-          <caret line="111" column="33" selection-start-line="111" selection-start-column="33" selection-end-line="111" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/prefab/mjPaiUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1830">
-          <caret line="122" column="22" selection-start-line="122" selection-start-column="22" selection-end-line="122" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjEndUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="41" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjNetMgr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/hymjNetMgr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjGameManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjReadyUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2175">
-          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjGameUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/login/globalUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="17" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/config/GameCfg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="56" column="30" selection-start-line="56" selection-start-column="30" selection-end-line="56" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/AppLog.js" />
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/hymjNetMgr.js.meta">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/login/globalUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="80" selection-start-line="42" selection-start-column="80" selection-end-line="42" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/initFun.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="33" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/font/mj_red.fnt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjReadyUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/funNetMgr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="184" column="27" selection-start-line="184" selection-start-column="14" selection-end-line="184" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjPai.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/hall/hall.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
-          <caret line="85" column="25" selection-start-line="85" selection-start-column="25" selection-end-line="85" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjGameUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="931">
-          <caret line="222" column="24" selection-start-line="222" selection-start-column="24" selection-end-line="222" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjPlayerPai.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/paiju/mjPaijuShang.js">
+    <entry file="file://$PROJECT_DIR$/assets/phone/JSPhoneWeChat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="705">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="4" selection-end-line="47" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/public/set.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/Audio.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="90" column="4" selection-start-line="90" selection-start-column="4" selection-end-line="90" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/login/globalUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="586">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="70" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/script/pukeComm/PukeChatUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="80" column="26" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="431" column="0" selection-start-line="431" selection-start-column="0" selection-end-line="431" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjPlayerUI.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-550">
-          <caret line="140" column="4" selection-start-line="140" selection-start-column="4" selection-end-line="140" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjNetMgr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="24" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/config/hyMjCfg.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="108" column="42" selection-start-line="108" selection-start-column="27" selection-end-line="108" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/hymjNetMgr.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="54" column="61" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjEndUI.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2430">
-          <caret line="148" column="50" selection-start-line="148" selection-start-column="50" selection-end-line="148" selection-end-column="50" />
-          <folding />
+        <state relative-caret-position="320">
+          <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="676">
-          <caret line="452" column="25" selection-start-line="452" selection-start-column="25" selection-end-line="452" selection-end-column="25" />
+        <state relative-caret-position="481">
+          <caret line="439" column="22" selection-start-line="439" selection-start-column="22" selection-end-line="439" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjChatUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/public/voiceQueueMgr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_FaiPaiAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjGameUI.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="607" column="9" selection-start-line="607" selection-start-column="9" selection-end-line="607" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/funUtils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="226" column="12" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_Ready.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/phone/JSPhoneNetBattery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="56" selection-start-line="14" selection-start-column="56" selection-end-line="14" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Replay/DDZ_ReplayMain.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="493" column="6" selection-start-line="493" selection-start-column="6" selection-end-line="493" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjGameManager.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="836">
-          <caret line="706" column="7" selection-start-line="706" selection-start-column="7" selection-end-line="706" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="510">
+          <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/paiju/mjPaijuXia.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/public/publicVoiceBtn.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="273" column="40" selection-start-line="273" selection-start-column="40" selection-end-line="273" selection-end-column="40" />
-          <folding />
+        <state relative-caret-position="934">
+          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="149" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/paiju/mjPaijuZuo.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/createRoom/createDDZRoom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="118" column="23" selection-start-line="118" selection-start-column="9" selection-end-line="118" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="911">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/prefab/mjPaiUI.js">
+    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/config/hyMjCfg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="77" column="22" selection-start-line="77" selection-start-column="22" selection-end-line="77" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="900">
+          <caret line="60" column="82" selection-start-line="60" selection-start-column="81" selection-end-line="60" selection-end-column="82" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/paiju/mjPaijuMgr.js">
+    <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/hymjNetMgr.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Common/DDZ_Sound.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/public/playerMap.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="60">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardTypeConfig.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/config/MessageCfg.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="360">
+          <caret line="24" column="41" selection-start-line="24" selection-start-column="41" selection-end-line="24" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_DeskInfo.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_MsgConfig.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="376">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Chat.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="405">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="39" selection-end-line="61" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_playerinfoNode.prefab">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerRightInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="45" column="39" selection-start-line="45" selection-start-column="39" selection-end-line="45" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Config/ddz_base.proto">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="194" column="32" selection-start-line="194" selection-start-column="32" selection-end-line="194" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/phone/JSPhoneBaiDu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="52" column="9" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_PlayerGPS.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="45" column="80" selection-start-line="45" selection-start-column="80" selection-end-line="45" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfInfo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="73" column="8" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/public/chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="316">
+          <caret line="98" column="14" selection-start-line="98" selection-start-column="14" selection-end-line="98" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Setting.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="1155">
+          <caret line="77" column="0" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/hall/hall.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-          <folding />
+        <state relative-caret-position="6090">
+          <caret line="407" column="36" selection-start-line="407" selection-start-column="36" selection-end-line="407" selection-end-column="36" />
+          <folding>
+            <marker date="1523958905581" expanded="true" signature="118:1535" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="149:216" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="247:314" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="347:414" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="446:513" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="541:608" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="634:701" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="731:798" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="825:892" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="916:983" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1008:1075" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1099:1166" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1191:1258" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1282:1349" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1373:1440" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1461:1528" ph="{&quot;type&quot;: cc.Prefab...}" />
+            <marker date="1523958905581" expanded="true" signature="1551:4032" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="2197:2264" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="3160:3436" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="3956:4012" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="4018:4032" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="4075:4933" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="4158:4912" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="4209:4894" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="4588:4870" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="4756:4842" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="5227:5442" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="7119:8165" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="7148:8159" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8197:8970" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8229:8964" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8311:8941" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8369:8529" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8414:8492" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8535:8927" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8595:8727" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8733:8909" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="8782:8868" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9015:9072" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9101:9664" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9298:9645" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9368:9440" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9446:9634" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9701:10037" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="9791:10031" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10075:10357" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10133:10272" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10278:10351" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10399:10563" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10435:10487" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10493:10556" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10598:11870" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10743:10800" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="10862:10919" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="11061:11238" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="11244:11864" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="11335:11674" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="11381:11451" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="11510:11658" ph="{&quot;okBtnStr&quot;: &quot;前往充值&quot;...}" />
+            <marker date="1523958905581" expanded="true" signature="11680:11792" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="11897:12420" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="12146:12313" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="12319:12414" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="12448:12737" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="12531:12621" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="12792:13063" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="13091:13736" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="13190:13730" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="13573:13720" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="13762:13809" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="13838:16683" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="13917:16677" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="14047:14373" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="14537:14862" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="15126:15449" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="15479:15951" ph="/** 挖花 ...*/" />
+            <marker date="1523958905581" expanded="true" signature="16011:16226" ph="//..." />
+            <marker date="1523958905581" expanded="true" signature="16323:16630" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="16711:16957" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="16983:17404" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="17189:17385" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="17429:17957" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="17571:17938" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="17625:17750" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="17991:18453" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="17994:18100" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="18106:18447" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="18185:18424" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="18476:18631" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="18657:18812" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="18836:19027" ph="{...}" />
+            <marker date="1523958905581" expanded="true" signature="19052:19198" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="1125">
+          <caret line="75" column="15" selection-start-line="75" selection-start-column="4" selection-end-line="75" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        <state relative-caret-position="1815">
+          <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Common/DDZ_Sound.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        <state relative-caret-position="571">
+          <caret line="209" column="45" selection-start-line="209" selection-start-column="45" selection-end-line="209" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftPoker.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_OutCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerAction.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="38" column="20" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="20" />
+        <state relative-caret-position="630">
+          <caret line="42" column="17" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="421">
+          <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="931">
+          <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/TestLog.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="841">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="121" selection-end-column="25" />
+        <state relative-caret-position="260">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_CardValueConfig.js">
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        <state relative-caret-position="841">
+          <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="276" column="21" selection-start-line="276" selection-start-column="21" selection-end-line="276" selection-end-column="21" />
+          <folding>
+            <element signature="e#9045#9561#0" expanded="false" />
+            <element signature="e#9579#10432#0" expanded="false" />
+            <element signature="e#10450#11303#0" expanded="false" />
+            <element signature="e#11321#12793#0" expanded="false" />
+            <element signature="e#12810#14252#0" expanded="false" />
+            <element signature="e#14269#15166#0" expanded="false" />
+            <element signature="e#15183#16109#0" expanded="false" />
+            <element signature="e#16126#16971#0" expanded="false" />
+            <element signature="e#16988#18396#0" expanded="false" />
+            <element signature="e#18413#19819#0" expanded="false" />
+            <element signature="e#19836#20696#0" expanded="false" />
+            <element signature="e#20713#21863#0" expanded="false" />
+            <element signature="e#21880#23511#0" expanded="false" />
+            <element signature="e#23529#23577#0" expanded="false" />
+            <element signature="e#23627#23843#0" expanded="false" />
+            <element signature="e#23884#24084#0" expanded="false" />
+            <element signature="e#24127#24283#0" expanded="false" />
+            <element signature="e#24355#26661#0" expanded="false" />
+            <element signature="e#26699#27074#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
           <folding />
         </state>
       </provider>

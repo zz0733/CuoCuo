@@ -36,29 +36,55 @@ cc.Class({
 
     },
     initOutPoker: function (outcardlist, type) {
-        this.outCards = outcardlist;
-        this.clearOutPoker();
-        this.node.setScale(0.58);
-        this.updateOutCard(outcardlist, type);
+        if(outcardlist) {
+            this.outCards = outcardlist;
+            this.clearOutPoker();
+            this.node.setScale(0.58);
+            this.updateOutCard(outcardlist, type);
+        }
     },
     clearOutPoker: function () {
         this.node.removeAllChildren();
+    },
+    _sortPokerArrObj: function (arr) {
+        return arr.sort(function (a, b) {
+            return a.Num - b.Num
+        });
+
     },
     updateOutCard: function (outcardlist, type) {
         switch (type) {
             case 1: {
                 // 单张
-                this.showPokerNode(outcardlist,0);
+                var temp =[];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                this.showPokerNode(temp,0);
                 break;
             }
             case 2: {
                 //对子
-                this.showPokerNode(outcardlist,0);
+                var temp =[];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                this.showPokerNode(temp,0);
                 break;
             }
             case 3: {
                 //三不带
-                this.showPokerNode(outcardlist,0);
+                var temp =[];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                this.showPokerNode(temp,0);
                 break;
             }
             case 4: {
@@ -68,13 +94,13 @@ cc.Class({
                 for (var i = 0; i < outcardlist.length; i++) {
                     var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
                     if (pokerObj.Num == cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[0]).Num) {
-                        temp_1.push(outcardlist[i]);
+                        temp_1.push(pokerObj);
                     } else {
-                        temp_2.push(outcardlist[i]);
+                        temp_2.push(pokerObj);
                     }
                 }
-                temp_1 = cc.YL.DDZTools.SortPoker(temp_1);
-                temp_2 = cc.YL.DDZTools.SortPoker(temp_2);
+                temp_1 = this._sortPokerArrObj(temp_1);
+                temp_2 = this._sortPokerArrObj(temp_2);
                 if (temp_1.length == 3) {
                     outcardlist = temp_1.concat(temp_2);
                 } else {
@@ -90,13 +116,13 @@ cc.Class({
                 for (var i = 0; i < outcardlist.length; i++) {
                     var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
                     if (pokerObj.Num == cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[0]).Num) {
-                        temp_1.push(outcardlist[i]);
+                        temp_1.push(pokerObj);
                     } else {
-                        temp_2.push(outcardlist[i]);
+                        temp_2.push(pokerObj);
                     }
                 }
-                temp_1 = cc.YL.DDZTools.SortPoker(temp_1);
-                temp_2 = cc.YL.DDZTools.SortPoker(temp_2);
+                temp_1 = this._sortPokerArrObj(temp_1);
+                temp_2 = this._sortPokerArrObj(temp_2);
                 if (temp_1.length == 3) {
                     outcardlist = temp_1.concat(temp_2);
                 } else {
@@ -106,21 +132,38 @@ cc.Class({
                 break;
             }
             case 6: {
-                outcardlist = cc.YL.DDZTools.SortPoker(outcardlist);
-                this.showPokerNode(outcardlist,1);
+                var temp = [];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                temp.reverse();
+                this.showPokerNode(temp,1);
                 // 顺子
                 break;
             }
             case 7: {
                 //连对
-                outcardlist = cc.YL.DDZTools.SortPoker(outcardlist);
-                this.showPokerNode(outcardlist,1);
+                var temp = [];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                temp.reverse();
+                this.showPokerNode(temp,1);
                 break;
             }
             case 8: {
                 //飞机不带
-                outcardlist = cc.YL.DDZTools.SortPoker(outcardlist);
-                this.showPokerNode(outcardlist,2);
+                var temp = [];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                this.showPokerNode(temp,2);
                 break;
             }
             case 9: {
@@ -136,13 +179,13 @@ cc.Class({
                         }
                     }
                     if (times == 3) {
-                        temp_1.push(outcardlist[i]);
+                        temp_1.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     } else {
-                        temp_2.push(outcardlist[i]);
+                        temp_2.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     }
                 }
-                temp_1 = cc.YL.DDZTools.SortPoker(temp_1);
-                temp_2 = cc.YL.DDZTools.SortPoker(temp_2);
+                temp_1 = this._sortPokerArrObj(temp_1);
+                temp_2 = this._sortPokerArrObj(temp_2);
                 if (temp_1.length > temp_2.length) {
                     outcardlist = temp_1.concat(temp_2);
                 } else {
@@ -164,13 +207,13 @@ cc.Class({
                         }
                     }
                     if (times == 3) {
-                        temp_1.push(outcardlist[i]);
+                        temp_1.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     } else {
-                        temp_2.push(outcardlist[i]);
+                        temp_2.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     }
                 }
-                temp_1 = cc.YL.DDZTools.SortPoker(temp_1);
-                temp_2 = cc.YL.DDZTools.SortPoker(temp_2);
+                temp_1 = this._sortPokerArrObj(temp_1);
+                temp_2 = this._sortPokerArrObj(temp_2);
                 if (temp_1.length > temp_2.length) {
                     outcardlist = temp_1.concat(temp_2);
                 } else {
@@ -179,25 +222,31 @@ cc.Class({
                 this.showPokerNode(outcardlist,2);
                 break;
             }
-            case 11: {
+            case 13: {
                 //炸弹
-                this.showPokerNode(outcardlist,3);
+                var temp =[];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                this.showPokerNode(temp,4);
                 break;
             }
-            case 12: {
+            case 11: {
                 //四带两单张
                 var temp_1 = [];
                 var temp_2 = [];
                 for (var i = 0; i < outcardlist.length; i++) {
                     var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
                     if (pokerObj.Num == cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[0]).Num) {
-                        temp_1.push(outcardlist[i]);
+                        temp_1.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     } else {
-                        temp_2.push(outcardlist[i]);
+                        temp_2.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     }
                 }
-                temp_1 = cc.YL.DDZTools.SortPoker(temp_1);
-                temp_2 = cc.YL.DDZTools.SortPoker(temp_2);
+                temp_1 = this._sortPokerArrObj(temp_1);
+                temp_2 = this._sortPokerArrObj(temp_2);
                 if (temp_1.length == 4) {
                     outcardlist = temp_1.concat(temp_2);
                 } else {
@@ -206,20 +255,20 @@ cc.Class({
                 this.showPokerNode(outcardlist,0);
                 break;
             }
-            case 13: {
+            case 12: {
                 //四带两对子
                 var temp_1 = [];
                 var temp_2 = [];
                 for (var i = 0; i < outcardlist.length; i++) {
                     var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
                     if (pokerObj.Num == cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[0]).Num) {
-                        temp_1.push(outcardlist[i]);
+                        temp_1.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     } else {
-                        temp_2.push(outcardlist[i]);
+                        temp_2.push(cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]));
                     }
                 }
-                temp_1 = cc.YL.DDZTools.SortPoker(temp_1);
-                temp_2 = cc.YL.DDZTools.SortPoker(temp_2);
+                temp_1 = this._sortPokerArrObj(temp_1);
+                temp_2 = this._sortPokerArrObj(temp_2);
                 if (temp_1.length == 4) {
                     outcardlist = temp_1.concat(temp_2);
                 } else {
@@ -230,15 +279,20 @@ cc.Class({
             }
             case 14: {
                 //王炸
-                outcardlist = cc.YL.DDZTools.SortPoker(outcardlist);
-                this.showPokerNode(outcardlist,4);
+                var temp =[];
+                for (var i = 0; i < outcardlist.length; i++) {
+                    var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(outcardlist[i]);
+                    temp.push(pokerObj);
+                }
+                temp = this._sortPokerArrObj(temp);
+                this.showPokerNode(temp,4);
                 break;
             }
 
         }
     },
-    initPoker: function (ID) {
-        var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(ID);
+    initPoker: function (pokerObj) {
+        // var pokerObj = cc.YL.cardtypeArrTrans.TransPokertypeArr(ID);
         var newNode = cc.instantiate(this.pokerPre);
         newNode.getComponent("DDZ_Poker").initPoker(pokerObj);
         this.node.addChild(newNode);
@@ -246,6 +300,7 @@ cc.Class({
     },
     showPokerNode: function (list,animaType) {
         list = list.reverse();
+        this.node.opacity = 200;
         for (var i = 0; i < list.length; i++) {
             var pokerNode = this.initPoker(list[i]);
             var posX = -(i * 50);
@@ -267,7 +322,12 @@ cc.Class({
                 pokerNode.getChildByName("OwnerSign").active = false;
             }
         }
-        this.showSpecialAnim(animaType);
+        this.node.stopAllActions();
+        this.node.active = true;
+        var finishaFunc = cc.callFunc(function () {
+            this.showSpecialAnim(animaType);
+        }.bind(this));
+        this.node.runAction(cc.sequence(cc.spawn(cc.fadeTo(0.2,255),cc.scaleTo(0.2,0.9)),cc.scaleTo(0.15,0.58).easing(cc.easeBackOut()),finishaFunc));
     },
     showSpecialAnim: function (animaType) {
         // 顺子 1

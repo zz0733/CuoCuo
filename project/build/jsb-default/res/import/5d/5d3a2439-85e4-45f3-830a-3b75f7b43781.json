@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_fangjiandi",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      453,
+      1351,
+      19,
+      21
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      19,
+      21
+    ],
+    "rotated": 1,
+    "capInsets": [
+      8,
+      8,
+      8,
+      8
+    ]
+  }
+}
