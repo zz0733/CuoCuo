@@ -16,6 +16,15 @@
     "originalSize": [
       652,
       70
+<<<<<<< HEAD
+=======
+    ],
+    "capInsets": [
+      301,
+      0,
+      0,
+      0
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     ]
   }
 }

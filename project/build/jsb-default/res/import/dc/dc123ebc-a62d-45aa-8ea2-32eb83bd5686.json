@@ -101,6 +101,15 @@
       },
       "fileId": "4aIJwLttNNQruJrZygX/on"
     },
+<<<<<<< HEAD
+=======
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 153,
+      "g": 153,
+      "b": 153
+    },
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1334,

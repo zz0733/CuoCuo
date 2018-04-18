@@ -785,9 +785,13 @@ require = function e(t, n, r) {
     cc.Class({
       extends: cc.Component,
       properties: {
+<<<<<<< HEAD
         atlas: cc.SpriteAtlas,
         winFont: cc.Font,
         loseFont: cc.Font
+=======
+        atlas: cc.SpriteAtlas
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       },
       start: function start() {},
       initItemNode: function initItemNode(data) {
@@ -808,6 +812,10 @@ require = function e(t, n, r) {
         this.liandui = this.totalInfoNode.getChildByName("title3").getChildByName("Num");
         this.spring = this.totalInfoNode.getChildByName("title4").getChildByName("Num");
         this.totalCoin = this.totalCoinNode.getChildByName("Title").getChildByName("Num");
+<<<<<<< HEAD
+=======
+        this.totalCoin_l = this.totalCoinNode.getChildByName("Title").getChildByName("Num_l");
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this.useFangKa = this.fangKaNode.getChildByName("cardSpr").getChildByName("Num");
         this.leaveFangKa = this.fangKaNode.getChildByName("cardSpr_1").getChildByName("Num");
       },
@@ -828,10 +836,22 @@ require = function e(t, n, r) {
         this.feiji.getComponent(cc.Label).string = data.airCount;
         this.liandui.getComponent(cc.Label).string = data.lianDuiCount;
         this.spring.getComponent(cc.Label).string = data.springCount;
+<<<<<<< HEAD
         this.totalCoin.getComponent(cc.Label).string = data.score;
         this.useFangKa.getComponent(cc.Label).string = data.expendCardsCount;
         this.leaveFangKa.getComponent(cc.Label).string = data.remainCardsCount;
         data.score >= 0 ? this.totalCoin.getComponent(cc.Label).Font = this.winFont : this.totalCoin.getComponent(cc.Label).Font = this.loseFont;
+=======
+        this.useFangKa.getComponent(cc.Label).string = data.expendCardsCount;
+        this.leaveFangKa.getComponent(cc.Label).string = data.remainCardsCount;
+        if (data.score >= 0) {
+          this.totalCoin.getComponent(cc.Label).string = data.score;
+          this.totalCoin_l.active = false;
+        } else {
+          this.totalCoin_l.getComponent(cc.Label).string = data.score;
+          this.totalCoin.active = false;
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     });
     cc._RF.pop();
@@ -1797,9 +1817,22 @@ require = function e(t, n, r) {
           this.BtnNode.getChildByName("DDZ_JiaoFen").destroy();
         }
         0 != data.fen ? this.selfNodeComp.updateOutWord(parseInt(data.fen + 3)) : this.selfNodeComp.updateOutWord(3);
+<<<<<<< HEAD
       }
       data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId && (0 != data.fen ? this.rightNodeComp.updateOutWord(parseInt(data.fen + 3)) : this.rightNodeComp.updateOutWord(3));
       data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId && (0 != data.fen ? this.leftNodeComp.updateOutWord(parseInt(data.fen + 3)) : this.leftNodeComp.updateOutWord(3));
+=======
+        this.selfNodeComp.hideOffline();
+      }
+      if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
+        0 != data.fen ? this.rightNodeComp.updateOutWord(parseInt(data.fen + 3)) : this.rightNodeComp.updateOutWord(3);
+        this.rightNodeComp.hideOffline();
+      }
+      if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
+        0 != data.fen ? this.leftNodeComp.updateOutWord(parseInt(data.fen + 3)) : this.leftNodeComp.updateOutWord(3);
+        this.leftNodeComp.hideOffline();
+      }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     GameAction.endJiaoFen = function() {
       this.bindNodeName();
@@ -1829,14 +1862,26 @@ require = function e(t, n, r) {
         }
         true == data.jiaBeiResult ? this.selfNodeComp.updateOutWord(2) : this.selfNodeComp.updateOutWord(13);
         this.selfNodeComp.showRate(data.jiaBeiResult);
+<<<<<<< HEAD
+=======
+        this.selfNodeComp.hideOffline();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
       if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         true == data.jiaBeiResult ? this.rightNodeComp.updateOutWord(2) : this.rightNodeComp.updateOutWord(13);
         this.rightNodeComp.showRate(data.jiaBeiResult);
+<<<<<<< HEAD
+=======
+        this.rightNodeComp.hideOffline();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
       if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
         true == data.jiaBeiResult ? this.leftNodeComp.updateOutWord(2) : this.leftNodeComp.updateOutWord(13);
         this.leftNodeComp.showRate(data.jiaBeiResult);
+<<<<<<< HEAD
+=======
+        this.leftNodeComp.hideOffline();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     };
     GameAction.endJiaBei = function() {
@@ -1899,9 +1944,24 @@ require = function e(t, n, r) {
     };
     GameAction.showPass = function(data) {
       this.bindNodeName();
+<<<<<<< HEAD
       this.selfID == data.retMsg.userId && this.selfNodeComp.updateOutWord(1);
       data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId && this.rightNodeComp.updateOutWord(1);
       data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId && this.leftNodeComp.updateOutWord(1);
+=======
+      if (this.selfID == data.retMsg.userId) {
+        this.selfNodeComp.updateOutWord(1);
+        this.selfNodeComp.hideOffline();
+      }
+      if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
+        this.rightNodeComp.updateOutWord(1);
+        this.rightNodeComp.hideOffline();
+      }
+      if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
+        this.leftNodeComp.updateOutWord(1);
+        this.leftNodeComp.hideOffline();
+      }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     GameAction.showDissUI = function(data) {
       var UIROOT = cc.find("DDZ_UIROOT");
@@ -1998,9 +2058,24 @@ require = function e(t, n, r) {
     };
     DDZGameManager.updateReady = function(data) {
       this.bindNodeValue();
+<<<<<<< HEAD
       this.selfID == data.retMsg.userId && this.selfNodeComp.showAndHideReady(data.isReadyOk);
       data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId && this.rightNodeComp.showAndHideReady(data.isReadyOk);
       data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId && this.leftNodeComp.showAndHideReady(data.isReadyOk);
+=======
+      if (this.selfID == data.retMsg.userId) {
+        this.selfNodeComp.showAndHideReady(data.isReadyOk);
+        this.selfNodeComp.hideOffline();
+      }
+      if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
+        this.rightNodeComp.showAndHideReady(data.isReadyOk);
+        this.rightNodeComp.hideOffline();
+      }
+      if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
+        this.leftNodeComp.showAndHideReady(data.isReadyOk);
+        this.leftNodeComp.hideOffline();
+      }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     DDZGameManager.gameOpen = function(data) {
       var UIROOT = cc.find("DDZ_UIROOT");
@@ -2160,6 +2235,10 @@ require = function e(t, n, r) {
           cc.YL.DDZAudio.playWaring(cc.YL.DDZselfPlayerInfo.userId, this.selfHandPokerNodeComp.handPokerIDs.length);
         }
         playerIndex = 0;
+<<<<<<< HEAD
+=======
+        this.selfNodeComp.hideOffline();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
       if (data.retMsg.userId == cc.YL.DDZrightPlayerInfo.userId) {
         this.rightHandPokerNodeComp.initHandPokerCount(data.remainPaiCount);
@@ -2169,6 +2248,10 @@ require = function e(t, n, r) {
           cc.YL.DDZAudio.playWaring(cc.YL.DDZrightPlayerInfo.userId, data.remainPaiCount);
         }
         playerIndex = 1;
+<<<<<<< HEAD
+=======
+        this.rightNodeComp.hideOffline();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
       if (data.retMsg.userId == cc.YL.DDZleftPlayerInfo.userId) {
         this.leftHandPokerNodeComp.initHandPokerCount(data.remainPaiCount);
@@ -2178,6 +2261,10 @@ require = function e(t, n, r) {
           cc.YL.DDZAudio.playWaring(cc.YL.DDZleftPlayerInfo.userId, data.remainPaiCount);
         }
         playerIndex = 2;
+<<<<<<< HEAD
+=======
+        this.leftNodeComp.hideOffline();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
       cc.YL.DDZAnimation.playAnimationByType(playerIndex, data.outType);
     };
@@ -3042,7 +3129,11 @@ require = function e(t, n, r) {
         cc.YL.DDZGameManager.updateJiaoFen(msg);
         cc.YL.DDZAudio.playSpecialEffect(msg.retMsg.userId, "jiaofen_" + msg.fen);
         var UIROOT = cc.find("DDZ_UIROOT");
+<<<<<<< HEAD
         UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initDiFen(msg.fen);
+=======
+        0 != msg.fen && UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initDiFen(msg.fen);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     };
     DDZ_EventManager.PID_JIABEI = function(msg) {
@@ -3686,7 +3777,11 @@ require = function e(t, n, r) {
       playerInfos: function playerInfos() {
         var tempArr = [];
         cc.YL.DDZselfPlayerInfo && tempArr.push({
+<<<<<<< HEAD
           Address: cc.YL.DDZselfPlayerInfo.gps,
+=======
+          Address: cc.YL.DDZselfPlayerInfo.gps ? cc.YL.DDZselfPlayerInfo.gps : null,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           Feng: null,
           HeadUrl: cc.YL.DDZselfPlayerInfo.headUrl,
           Ip: cc.YL.DDZselfPlayerInfo.ip,
@@ -3701,7 +3796,11 @@ require = function e(t, n, r) {
           isTruePlayer: true
         });
         cc.YL.DDZrightPlayerInfo && tempArr.push({
+<<<<<<< HEAD
           Address: cc.YL.DDZrightPlayerInfo.gps,
+=======
+          Address: cc.YL.DDZrightPlayerInfo.gps ? cc.YL.DDZrightPlayerInfo.gps : null,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           Feng: null,
           HeadUrl: cc.YL.DDZrightPlayerInfo.headUrl,
           Ip: cc.YL.DDZrightPlayerInfo.ip,
@@ -3716,7 +3815,11 @@ require = function e(t, n, r) {
           isTruePlayer: true
         });
         cc.YL.DDZleftPlayerInfo && tempArr.push({
+<<<<<<< HEAD
           Address: cc.YL.DDZleftPlayerInfo.gps,
+=======
+          Address: cc.YL.DDZleftPlayerInfo.gps ? cc.YL.DDZleftPlayerInfo.gps : null,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           Feng: null,
           HeadUrl: cc.YL.DDZleftPlayerInfo.headUrl,
           Ip: cc.YL.DDZleftPlayerInfo.ip,
@@ -4295,6 +4398,28 @@ require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {} ],
+<<<<<<< HEAD
+=======
+  DDZ_PlayerSelfCloseUpPoker: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "ba935R9d3hNTpYNGKUDNjE1", "DDZ_PlayerSelfCloseUpPoker");
+    "use strict";
+    cc.Class({
+      extends: cc.Component,
+      properties: {},
+      start: function start() {},
+      onClickClosUpPoker: function onClickClosUpPoker() {
+        cc.YL.playerOutPokerArr = [];
+        var pokerNode = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+        if (0 != pokerNode.children.length) {
+          var children = pokerNode.children;
+          for (var i = 0; i < children.length; i++) children[i].setPositionY(0);
+        }
+      }
+    });
+    cc._RF.pop();
+  }, {} ],
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   DDZ_PlayerSelfInfo: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "b8a6cbH4p5LX5+WkT4wtJea", "DDZ_PlayerSelfInfo");
@@ -4643,6 +4768,7 @@ require = function e(t, n, r) {
     cc._RF.push(module, "9a5cbwlJbZCbqGdtKg5jl82", "DDZ_PokerTip");
     "use strict";
     var DDZPokerTip = cc.Class({});
+<<<<<<< HEAD
     DDZPokerTip.typeEnum = {
       "单张": 1,
       "对子": 2,
@@ -4674,6 +4800,15 @@ require = function e(t, n, r) {
       this.flyPoint = null;
       this.boomPoint = null;
       for (var i = 0; i < tempArr.length; i++) this.handPokerList.push(tempArr[i].Num);
+=======
+    DDZPokerTip.startAnalysis = function() {
+      var tempArr = cc.YL.DDZHandPokerList;
+      this.handPokerList = [];
+      this.handPokerListRever = [];
+      this.pokerActionPoint = null;
+      for (var i = 0; i < tempArr.length; i++) this.handPokerList.push(tempArr[i].Num);
+      for (var i = tempArr.length - 1; i > 0; i--) this.handPokerListRever.push(tempArr[i].Num);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       this.analysis();
     };
     DDZPokerTip.analysis = function() {
@@ -4695,6 +4830,10 @@ require = function e(t, n, r) {
         1 == times && this.singleArr.push(tempArr[i]);
       }
       this.singleArr = this.zipArr(this.singleArr);
+<<<<<<< HEAD
+=======
+      this.singleArr = this.singleArr.reverse();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     DDZPokerTip.double = function() {
       this.doubleArr = [];
@@ -4705,6 +4844,10 @@ require = function e(t, n, r) {
         2 == times && this.doubleArr.push(tempArr[i]);
       }
       this.doubleArr = this.zipArr(this.doubleArr);
+<<<<<<< HEAD
+=======
+      this.doubleArr = this.doubleArr.reverse();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     DDZPokerTip.three = function() {
       this.threeArr = [];
@@ -4715,6 +4858,10 @@ require = function e(t, n, r) {
         3 == times && this.threeArr.push(tempArr[i]);
       }
       this.threeArr = this.zipArr(this.threeArr);
+<<<<<<< HEAD
+=======
+      this.threeArr = this.threeArr.reverse();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     DDZPokerTip.four = function() {
       this.fourArr = [];
@@ -4725,6 +4872,10 @@ require = function e(t, n, r) {
         4 == times && this.fourArr.push(tempArr[i]);
       }
       this.fourArr = this.zipArr(this.fourArr);
+<<<<<<< HEAD
+=======
+      this.fourArr = this.fourArr.reverse();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     DDZPokerTip.rocket = function() {
       this.rocketArr = [];
@@ -4807,6 +4958,36 @@ require = function e(t, n, r) {
         return time_4[0];
       }
     };
+<<<<<<< HEAD
+=======
+    DDZPokerTip.PokerAction = function(list) {
+      this.initPokerNode();
+      var isDone = false;
+      for (var i = 0; i < list.length; i++) if (false == isDone) if (null == this.pokerActionPoint) {
+        for (var j = 0; j < list[0].Pokers.length; j++) {
+          this.upPoker(list[0].Pokers[j]);
+          isDone = true;
+        }
+        this.pokerActionPoint = 1;
+      } else if (this.pokerActionPoint < list.length) {
+        for (var j = 0; j < list[this.pokerActionPoint].Pokers.length; j++) {
+          this.upPoker(list[this.pokerActionPoint].Pokers[j]);
+          isDone = true;
+        }
+        this.pokerActionPoint++;
+        this.pokerActionPoint > list.length - 1 && (this.pokerActionPoint = null);
+      } else this.pokerActionPoint = null;
+    };
+    DDZPokerTip.upPoker = function(pokerNum) {
+      var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
+      var times = 0;
+      for (var j = 0; j < pokerRoot.children.length; j++) if (pokerNum == pokerRoot.children[j].getComponent("DDZ_Poker").pokerNum && 0 == pokerRoot.children[j].y && 0 == times) {
+        pokerRoot.children[j].y = 20;
+        cc.YL.playerOutPokerArr.push(pokerRoot.children[j].getComponent("DDZ_Poker").pokerID);
+        times++;
+      }
+    };
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     DDZPokerTip.clickTipsBtn = function(type, num, list) {
       this.lastPokerType = type;
       this.lastPokerNum = num;
@@ -4818,6 +4999,7 @@ require = function e(t, n, r) {
       this.selfHandPokerNode = this.selfActiveNode.getChildByName("HandPoker");
       this.selfHandPokerNodeComp = this.selfHandPokerNode.getComponent("DDZ_PlayerSelfPoker");
       this.selfHandPokerNodeComp.setTouchEvent(true);
+<<<<<<< HEAD
       cc.YL.info("点击了提示按钮数据为", type, num, this.lastPokerList);
       switch (this.lastPokerType) {
        case 13:
@@ -4829,10 +5011,21 @@ require = function e(t, n, r) {
         }
         tipFourCardArr = cc.YL.DDZTools.SortPoker(tipFourCardArr);
         0 == tipFourCardArr.length || this.fourAction(tipFourCardArr);
+=======
+      switch (this.lastPokerType) {
+       case 13:
+        var tipFourCardArr = [];
+        for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.lastPokerList[0] && tipFourCardArr.push({
+          Pokers: [ this.fourArr[i], this.fourArr[i], this.fourArr[i], this.fourArr[i] ]
+        });
+        tipFourCardArr = this.findRocket(tipFourCardArr);
+        this.PokerAction(tipFourCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 12:
         var tipFourAndTowCardArr = [];
+<<<<<<< HEAD
         var doubleCard = null;
         var doubleCard_1 = null;
         for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.findOutCardList(this.lastPokerList, 4) && tipFourAndTowCardArr.push(this.fourArr[i]);
@@ -4861,10 +5054,23 @@ require = function e(t, n, r) {
             }
           }
         }
+=======
+        for (var i = 0; i < this.fourArr.length; i++) if (this.fourArr[i] > this.findOutCardList(this.lastPokerList, 4)) {
+          var doubleArr = this.findOtherPoker(4, this.fourArr[i]);
+          var tempArr = doubleArr.push(this.fourArr[i], this.fourArr[i], this.fourArr[i], this.fourArr[i]);
+          8 == tempArr && tipFourAndTowCardArr.push({
+            Pokers: doubleArr
+          });
+        }
+        tipFourAndTowCardArr = this.findBoom(tipFourAndTowCardArr);
+        tipFourAndTowCardArr = this.findRocket(tipFourAndTowCardArr);
+        this.PokerAction(tipFourAndTowCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 11:
         var tipFourAndTowCardArr = [];
+<<<<<<< HEAD
         var singleCard = null;
         var singleCard_1 = null;
         var s = null;
@@ -4891,10 +5097,23 @@ require = function e(t, n, r) {
             }
           }
         }
+=======
+        for (var i = 0; i < this.fourArr.length; i++) if (this.fourArr[i] > this.findOutCardList(this.lastPokerList, 4)) {
+          var singleArr = this.findOtherPoker(2, this.fourArr[i]);
+          var tempArr = singleArr.push(this.fourArr[i], this.fourArr[i], this.fourArr[i], this.fourArr[i]);
+          6 == tempArr && tipFourAndTowCardArr.push({
+            Pokers: singleArr
+          });
+        }
+        tipFourAndTowCardArr = this.findBoom(tipFourAndTowCardArr);
+        tipFourAndTowCardArr = this.findRocket(tipFourAndTowCardArr);
+        this.PokerAction(tipFourAndTowCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 10:
         var tipFlyWithDoubleCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.flyArr.length; i++) this.flyArr[i].min > this.findOutCardList(this.lastPokerList, 3) && 3 * this.flyArr[i].len + 2 * this.flyArr[i].len == this.lastPokerNum && tipFlyWithDoubleCardArr.push(this.flyArr[i]);
         2 == this.rocketArr.length && tipFlyWithDoubleCardArr.push({
           min: this.rocketArr[0],
@@ -4902,10 +5121,31 @@ require = function e(t, n, r) {
           len: 2
         });
         0 == tipFlyWithDoubleCardArr.length ? this.upBoom() : this.flyWithAction(tipFlyWithDoubleCardArr, true, 2);
+=======
+        for (var i = 0; i < this.flyArr.length; i++) if (this.flyArr[i].min > this.findOutCardList(this.lastPokerList, 3) && 3 * this.flyArr[i].len + 2 * this.flyArr[i].len == this.lastPokerNum) {
+          var tempArr = [];
+          for (var k = 0; k < this.flyArr[i].len; k++) {
+            tempArr.push(this.flyArr[i].min + k);
+            tempArr.push(this.flyArr[i].min + k);
+            tempArr.push(this.flyArr[i].min + k);
+          }
+          if (tempArr.length == 3 * this.flyArr[i].len) {
+            var doubleArr = this.findOtherPoker(6, this.flyArr[i].min, this.flyArr[i].max, this.flyArr[i].len);
+            var newTemp = tempArr.concat(doubleArr);
+            newTemp.length == 3 * this.flyArr[i].len + 2 * this.flyArr[i].len && tipFlyWithDoubleCardArr.push({
+              Pokers: newTemp
+            });
+          }
+        }
+        tipFlyWithDoubleCardArr = this.findBoom(tipFlyWithDoubleCardArr);
+        tipFlyWithDoubleCardArr = this.findRocket(tipFlyWithDoubleCardArr);
+        this.PokerAction(tipFlyWithDoubleCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 9:
         var tipFlyWithOneCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.flyArr.length; i++) this.flyArr[i].min > this.findOutCardList(this.lastPokerList, 3) && 3 * this.flyArr[i].len + this.flyArr[i].len == this.lastPokerNum && tipFlyWithOneCardArr.push(this.flyArr[i]);
         2 == this.rocketArr.length && tipFlyWithOneCardArr.push({
           min: this.rocketArr[0],
@@ -4913,10 +5153,31 @@ require = function e(t, n, r) {
           len: 2
         });
         0 == tipFlyWithOneCardArr.length ? this.upBoom() : this.flyWithAction(tipFlyWithOneCardArr, true, 1);
+=======
+        for (var i = 0; i < this.flyArr.length; i++) if (this.flyArr[i].min > this.findOutCardList(this.lastPokerList, 3) && 3 * this.flyArr[i].len + this.flyArr[i].len == this.lastPokerNum) {
+          var tempArr = [];
+          for (var k = 0; k < this.flyArr[i].len; k++) {
+            tempArr.push(this.flyArr[i].min + k);
+            tempArr.push(this.flyArr[i].min + k);
+            tempArr.push(this.flyArr[i].min + k);
+          }
+          if (tempArr.length == 3 * this.flyArr[i].len) {
+            var singleArr = this.findOtherPoker(5, this.flyArr[i].min, this.flyArr[i].max, this.flyArr[i].len);
+            var newTemp = tempArr.concat(singleArr);
+            newTemp.length == 3 * this.flyArr[i].len + this.flyArr[i].len && tipFlyWithOneCardArr.push({
+              Pokers: newTemp
+            });
+          }
+        }
+        tipFlyWithOneCardArr = this.findBoom(tipFlyWithOneCardArr);
+        tipFlyWithOneCardArr = this.findRocket(tipFlyWithOneCardArr);
+        this.PokerAction(tipFlyWithOneCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 8:
         var tipFlyCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.flyArr.length; i++) this.flyArr[i].min > this.findOutCardList(this.lastPokerList, 3) && this.flyArr[i].len == this.lastPokerNum / 3 && tipFlyCardArr.push(this.flyArr[i]);
         2 == this.rocketArr.length && tipFlyCardArr.push({
           min: this.rocketArr[0],
@@ -4924,10 +5185,27 @@ require = function e(t, n, r) {
           len: 2
         });
         0 == tipFlyCardArr.length ? this.upBoom() : this.flyWithAction(tipFlyCardArr, false, null);
+=======
+        for (var i = 0; i < this.flyArr.length; i++) if (this.flyArr[i].min > this.findOutCardList(this.lastPokerList, 3) && this.flyArr[i].len == this.lastPokerNum / 3) {
+          var tempArr = [];
+          for (var k = 0; k < this.flyArr[i].len; k++) {
+            tempArr.push(this.flyArr[i].min + k);
+            tempArr.push(this.flyArr[i].min + k);
+            tempArr.push(this.flyArr[i].min + k);
+          }
+          tipFlyCardArr.push({
+            Pokers: tempArr
+          });
+        }
+        tipFlyCardArr = this.findBoom(tipFlyCardArr);
+        tipFlyCardArr = this.findRocket(tipFlyCardArr);
+        this.PokerAction(tipFlyCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 7:
         var tipDoubleShunziCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.doubleShunZiArr.length; i++) this.doubleShunZiArr[i].min > this.lastPokerList[0] && this.doubleShunZiArr[i].len == this.lastPokerNum / 2 && tipDoubleShunziCardArr.push(this.doubleShunZiArr[i]);
         2 == this.rocketArr.length && tipDoubleShunziCardArr.push({
           min: this.rocketArr[0],
@@ -4935,10 +5213,26 @@ require = function e(t, n, r) {
           len: 2
         });
         0 == tipDoubleShunziCardArr.length ? this.upBoom() : this.doubleShunZiAction(tipDoubleShunziCardArr);
+=======
+        for (var i = 0; i < this.doubleShunZiArr.length; i++) if (this.doubleShunZiArr[i].min > this.lastPokerList[0] && this.doubleShunZiArr[i].len == this.lastPokerNum / 2) {
+          var tempArr = [];
+          for (var k = 0; k < this.doubleShunZiArr[i].len; k++) {
+            tempArr.push(this.doubleShunZiArr[i].min + k);
+            tempArr.push(this.doubleShunZiArr[i].min + k);
+          }
+          tipDoubleShunziCardArr.push({
+            Pokers: tempArr
+          });
+        }
+        tipDoubleShunziCardArr = this.findBoom(tipDoubleShunziCardArr);
+        tipDoubleShunziCardArr = this.findRocket(tipDoubleShunziCardArr);
+        this.PokerAction(tipDoubleShunziCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 6:
         var tipShunziCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.shunZiArr.length; i++) this.shunZiArr[i].min > this.lastPokerList[0] && this.shunZiArr[i].len == this.lastPokerNum && tipShunziCardArr.push(this.shunZiArr[i]);
         2 == this.rocketArr.length && tipShunziCardArr.push({
           min: this.rocketArr[0],
@@ -4946,10 +5240,23 @@ require = function e(t, n, r) {
           len: 2
         });
         0 == tipShunziCardArr.length ? this.upBoom() : this.shunZiAction(tipShunziCardArr);
+=======
+        for (var i = 0; i < this.shunZiArr.length; i++) if (this.shunZiArr[i].min > this.lastPokerList[0] && this.shunZiArr[i].len == this.lastPokerNum) {
+          var tempArr = [];
+          for (var k = 0; k < this.shunZiArr[i].len; k++) tempArr.push(this.shunZiArr[i].min + k);
+          tipShunziCardArr.push({
+            Pokers: tempArr
+          });
+        }
+        tipShunziCardArr = this.findBoom(tipShunziCardArr);
+        tipShunziCardArr = this.findRocket(tipShunziCardArr);
+        this.PokerAction(tipShunziCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 5:
         var tipThreeAndTwoCardArr = [];
+<<<<<<< HEAD
         var doubleCard = null;
         for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.findOutCardList(this.lastPokerList, 3) && tipThreeAndTwoCardArr.push(this.threeArr[i]);
         for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.findOutCardList(this.lastPokerList, 3) && tipThreeAndTwoCardArr.push(this.fourArr[i]);
@@ -4967,10 +5274,30 @@ require = function e(t, n, r) {
             isDone = true;
           }
         }
+=======
+        for (var i = 0; i < this.threeArr.length; i++) if (this.threeArr[i] > this.findOutCardList(this.lastPokerList, 3)) {
+          var DoubleNumArr = this.findOtherPoker(3, this.threeArr[i]);
+          var OneObj = DoubleNumArr.push(this.threeArr[i], this.threeArr[i], this.threeArr[i]);
+          5 == OneObj && tipThreeAndTwoCardArr.push({
+            Pokers: DoubleNumArr
+          });
+        }
+        for (var i = 0; i < this.fourArr.length; i++) if (this.fourArr[i] > this.findOutCardList(this.lastPokerList, 3)) {
+          var DoubleNumArr = this.findOtherPoker(3, this.fourArr[i]);
+          var OneObj = DoubleNumArr.push(this.fourArr[i], this.fourArr[i], this.fourArr[i]);
+          5 == OneObj && tipThreeAndTwoCardArr.push({
+            Pokers: DoubleNumArr
+          });
+        }
+        tipThreeAndTwoCardArr = this.findBoom(tipThreeAndTwoCardArr);
+        tipThreeAndTwoCardArr = this.findRocket(tipThreeAndTwoCardArr);
+        this.PokerAction(tipThreeAndTwoCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 4:
         var tipThreeAndOneCardArr = [];
+<<<<<<< HEAD
         var singleCard = null;
         for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.findOutCardList(this.lastPokerList, 3) && tipThreeAndOneCardArr.push(this.threeArr[i]);
         for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.findOutCardList(this.lastPokerList, 3) && tipThreeAndOneCardArr.push(this.fourArr[i]);
@@ -4988,10 +5315,30 @@ require = function e(t, n, r) {
             isDone = true;
           }
         }
+=======
+        for (var i = 0; i < this.threeArr.length; i++) if (this.threeArr[i] > this.findOutCardList(this.lastPokerList, 3)) {
+          var singleNumArr = this.findOtherPoker(1, this.threeArr[i]);
+          var OneObj = singleNumArr.push(this.threeArr[i], this.threeArr[i], this.threeArr[i]);
+          4 == OneObj && tipThreeAndOneCardArr.push({
+            Pokers: singleNumArr
+          });
+        }
+        for (var i = 0; i < this.fourArr.length; i++) if (this.fourArr[i] > this.findOutCardList(this.lastPokerList, 3)) {
+          var singleNumArr = this.findOtherPoker(1, this.fourArr[i]);
+          var OneObj = singleNumArr.push(this.fourArr[i], this.fourArr[i], this.fourArr[i]);
+          4 == OneObj && tipThreeAndOneCardArr.push({
+            Pokers: singleNumArr
+          });
+        }
+        tipThreeAndOneCardArr = this.findBoom(tipThreeAndOneCardArr);
+        tipThreeAndOneCardArr = this.findRocket(tipThreeAndOneCardArr);
+        this.PokerAction(tipThreeAndOneCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 3:
         var tipThreeCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.lastPokerList[0] && tipThreeCardArr.push(this.threeArr[i]);
         for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.lastPokerList[0] && tipThreeCardArr.push(this.fourArr[i]);
         if (2 == this.rocketArr.length) {
@@ -5003,10 +5350,22 @@ require = function e(t, n, r) {
           tipThreeCardArr = this.zipArr(tipThreeCardArr);
           this.threeAction(tipThreeCardArr);
         }
+=======
+        for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.lastPokerList[0] && tipThreeCardArr.push({
+          Pokers: [ this.threeArr[i], this.threeArr[i], this.threeArr[i] ]
+        });
+        for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.lastPokerList[0] && tipThreeCardArr.push({
+          Pokers: [ this.fourArr[i], this.fourArr[i], this.fourArr[i] ]
+        });
+        tipThreeCardArr = this.findBoom(tipThreeCardArr);
+        tipThreeCardArr = this.findRocket(tipThreeCardArr);
+        this.PokerAction(tipThreeCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 2:
         var tipDoubleCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.doubleArr.length; i++) this.doubleArr[i] > this.lastPokerList[0] && tipDoubleCardArr.push(this.doubleArr[i]);
         for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.lastPokerList[0] && tipDoubleCardArr.push(this.threeArr[i]);
         for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.lastPokerList[0] && tipDoubleCardArr.push(this.fourArr[i]);
@@ -5019,10 +5378,25 @@ require = function e(t, n, r) {
           tipDoubleCardArr = this.zipArr(tipDoubleCardArr);
           this.doubleAction(tipDoubleCardArr);
         }
+=======
+        for (var i = 0; i < this.doubleArr.length; i++) this.doubleArr[i] > this.lastPokerList[0] && tipDoubleCardArr.push({
+          Pokers: [ this.doubleArr[i], this.doubleArr[i] ]
+        });
+        for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.lastPokerList[0] && tipDoubleCardArr.push({
+          Pokers: [ this.threeArr[i], this.threeArr[i] ]
+        });
+        for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.lastPokerList[0] && tipDoubleCardArr.push({
+          Pokers: [ this.fourArr[i], this.fourArr[i] ]
+        });
+        tipDoubleCardArr = this.findBoom(tipDoubleCardArr);
+        tipDoubleCardArr = this.findRocket(tipDoubleCardArr);
+        this.PokerAction(tipDoubleCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        case 1:
         var tipSingleCardArr = [];
+<<<<<<< HEAD
         for (var i = 0; i < this.singleArr.length; i++) this.singleArr[i] > this.lastPokerList[0] && 53 != this.singleArr[i] && 54 != this.singleArr[i] && tipSingleCardArr.push(this.singleArr[i]);
         tipSingleCardArr = cc.YL.DDZTools.SortPoker(tipSingleCardArr);
         tipSingleCardArr = this.zipArr(tipSingleCardArr);
@@ -5038,10 +5412,28 @@ require = function e(t, n, r) {
         three = this.zipArr(three);
         four = cc.YL.DDZTools.SortPoker(four);
         four = this.zipArr(four);
+=======
+        for (var i = 0; i < this.singleArr.length; i++) this.singleArr[i] > this.lastPokerList[0] && tipSingleCardArr.push({
+          Pokers: [ this.singleArr[i] ]
+        });
+        var double = [];
+        var three = [];
+        var four = [];
+        for (var i = 0; i < this.doubleArr.length; i++) this.doubleArr[i] > this.lastPokerList[0] && double.push({
+          Pokers: [ this.doubleArr[i] ]
+        });
+        for (var i = 0; i < this.threeArr.length; i++) this.threeArr[i] > this.lastPokerList[0] && three.push({
+          Pokers: [ this.threeArr[i] ]
+        });
+        for (var i = 0; i < this.fourArr.length; i++) this.fourArr[i] > this.lastPokerList[0] && four.push({
+          Pokers: [ this.fourArr[i] ]
+        });
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         var tempArr = tipSingleCardArr.concat(double);
         var tempArr_1 = tempArr.concat(three);
         var tempArr_2 = tempArr_1.concat(four);
         tipSingleCardArr = tempArr_2;
+<<<<<<< HEAD
         if (2 == this.rocketArr.length) {
           tipSingleCardArr.push(this.rocketArr[0]);
           tipSingleCardArr.push(this.rocketArr[1]);
@@ -5050,6 +5442,11 @@ require = function e(t, n, r) {
         break;
 
        case 14:
+=======
+        tipSingleCardArr = this.findBoom(tipSingleCardArr);
+        tipSingleCardArr = this.findRocket(tipSingleCardArr);
+        this.PokerAction(tipSingleCardArr);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         break;
 
        default:
@@ -5061,6 +5458,7 @@ require = function e(t, n, r) {
       cc.YL.playerOutPokerArr = [];
       for (var i = 0; i < pokerRoot.children.length; i++) pokerRoot.children[i].y = 0;
     };
+<<<<<<< HEAD
     DDZPokerTip.singleAction = function(list) {
       this.initPokerNode();
       var pokerRoot = cc.find("DDZ_UIROOT/MainNode/SelfPlayerPoker/HandPoker");
@@ -5437,10 +5835,34 @@ require = function e(t, n, r) {
         if (pokerIndex + 1 < pokerRoot.children.length) {
           pokerRoot.children[pokerIndex + 1].y = 20;
           cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 1].getComponent("DDZ_Poker").pokerID);
+=======
+    DDZPokerTip.findBoom = function(list) {
+      for (var i = 0; i < this.fourArr.length; i++) list.push({
+        Pokers: [ this.fourArr[i], this.fourArr[i], this.fourArr[i], this.fourArr[i] ]
+      });
+      return list;
+    };
+    DDZPokerTip.findRocket = function(list) {
+      2 == this.rocketArr.length && list.push({
+        Pokers: [ this.rocketArr[0], this.rocketArr[1] ]
+      });
+      return list;
+    };
+    DDZPokerTip.findOtherPoker = function(type, notNum_1, notNum_2, len) {
+      var list = [];
+      switch (type) {
+       case 1:
+        var times = 0;
+        var arr = this.handPokerListRever;
+        for (var i = 0; i < arr.length; i++) if (arr[i] != notNum_1 && 0 == times) {
+          list.push(arr[i]);
+          times++;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
         break;
 
        case 2:
+<<<<<<< HEAD
         pokerRoot.children[pokerIndex].y = 20;
         cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
         if (pokerIndex + 1 < pokerRoot.children.length) {
@@ -5450,10 +5872,18 @@ require = function e(t, n, r) {
         if (pokerIndex + 2 < pokerRoot.children.length) {
           pokerRoot.children[pokerIndex + 2].y = 20;
           cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 2].getComponent("DDZ_Poker").pokerID);
+=======
+        var times = 0;
+        var arr = this.handPokerListRever;
+        for (var i = 0; i < arr.length; i++) if (arr[i] != notNum_1 && times < 2) {
+          list.push(arr[i]);
+          times++;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
         break;
 
        case 3:
+<<<<<<< HEAD
         pokerRoot.children[pokerIndex].y = 20;
         cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
         if (pokerIndex + 1 < pokerRoot.children.length) {
@@ -5467,19 +5897,37 @@ require = function e(t, n, r) {
         if (pokerIndex + 3 < pokerRoot.children.length) {
           pokerRoot.children[pokerIndex + 3].y = 20;
           cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex + 3].getComponent("DDZ_Poker").pokerID);
+=======
+        var times = 0;
+        var arr = this.ConCatArr();
+        for (var i = 0; i < arr.length; i++) if (arr[i] != notNum_1 && 0 == times) {
+          list.push(arr[i]);
+          list.push(arr[i]);
+          times++;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
         break;
 
        case 4:
+<<<<<<< HEAD
         pokerRoot.children[pokerIndex].y = 20;
         cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
         if (pokerIndex - 1 >= 0) {
           pokerRoot.children[pokerIndex - 1].y = 20;
           cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex - 1].getComponent("DDZ_Poker").pokerID);
+=======
+        var times = 0;
+        var arr = this.ConCatArr();
+        for (var i = 0; i < arr.length; i++) if (arr[i] != notNum_1 && times < 2) {
+          list.push(arr[i]);
+          list.push(arr[i]);
+          times++;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
         break;
 
        case 5:
+<<<<<<< HEAD
         pokerRoot.children[pokerIndex].y = 20;
         cc.YL.playerOutPokerArr.push(pokerRoot.children[pokerIndex].getComponent("DDZ_Poker").pokerID);
         if (pokerIndex - 1 < pokerRoot.children.length) {
@@ -5528,6 +5976,38 @@ require = function e(t, n, r) {
           isDone = true;
         }
       } else this.boomPoint == list[list.length - 1] && (this.boomPoint = null);
+=======
+        var times = 0;
+        var arr = this.handPokerListRever;
+        for (var i = 0; i < arr.length; i++) if ((arr[i] < notNum_1 || arr[i] > notNum_2) && times < len) {
+          list.push(arr[i]);
+          times++;
+        }
+        break;
+
+       case 6:
+        var times = 0;
+        var arr = this.ConCatArr();
+        for (var i = 0; i < arr.length; i++) if ((arr[i] < notNum_1 || arr[i] > notNum_2) && times < len) {
+          list.push(arr[i]);
+          list.push(arr[i]);
+          times++;
+        }
+      }
+      return list;
+    };
+    DDZPokerTip.ConCatArr = function() {
+      var double = this.doubleArr;
+      var three = this.threeArr;
+      var four = this.fourArr;
+      double = cc.YL.DDZTools.SortPoker(double);
+      three = cc.YL.DDZTools.SortPoker(three);
+      four = cc.YL.DDZTools.SortPoker(four);
+      var tempArr = double.concat(three);
+      var tempArr_1 = tempArr.concat(four);
+      tempArr_1 = this.zipArr(tempArr_1);
+      return tempArr_1;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     };
     cc.YL.DDZPokerTip = DDZPokerTip;
     module.exports = DDZPokerTip;
@@ -6213,6 +6693,10 @@ require = function e(t, n, r) {
         0 === this._musicProgress ? this.musicToggle.isChecked = false : this.musicToggle.isChecked = true;
       },
       onSoundToggleClicked: function onSoundToggleClicked() {
+<<<<<<< HEAD
+=======
+        true == this.soundToggle.isChecked && (this._soundProgress = .5);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this._soundVolum = this.soundToggle.isChecked ? this._soundProgress : 0;
         fun.gameCfg.soundValume = this._soundVolum;
         this.soundProgress.progress = this._soundVolum;
@@ -6220,6 +6704,10 @@ require = function e(t, n, r) {
         this.soundSlider.getComponent(cc.Slider).progress = this._soundProgress;
       },
       onMusicToggleClicked: function onMusicToggleClicked() {
+<<<<<<< HEAD
+=======
+        true == this.musicToggle.isChecked && (this._musicProgress = .5);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this._musicVolum = this.musicToggle.isChecked ? this._musicProgress : 0;
         fun.gameCfg.musicValume = this._musicVolum;
         this.musicProgress.progress = this._musicVolum;
@@ -6232,7 +6720,10 @@ require = function e(t, n, r) {
         false == this.musicToggle.isChecked && (this._musicProgress = 0);
         fun.gameCfg.musicValume = this._musicProgress;
         fun.gameCfg.soundValume = this._soundProgress;
+<<<<<<< HEAD
         cc.YL.info(this.soundToggle.isChecked, this.musicToggle.isChecked, this._musicProgress, this._soundProgress);
+=======
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         var valumeData = JSON.stringify({
           sound: fun.gameCfg.soundValume,
           music: fun.gameCfg.musicValume
@@ -6410,7 +6901,11 @@ require = function e(t, n, r) {
       }) : obj[key] = value;
       return obj;
     }
+<<<<<<< HEAD
     var version = "version:2.0.6.7259";
+=======
+    var version = "version:2.1.0.7315";
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     var logLevel = cc.Enum({
       none: 0,
       error: 1,
@@ -6437,6 +6932,7 @@ require = function e(t, n, r) {
     var commonUrl = cc.Enum({
       timeLimitCard: "http://download.game2me.net/sharePage/index.html"
     });
+<<<<<<< HEAD
     var loginUrl = [ "ws://192.168.1.77:9999/ws", "ws://am.fmgames.cn:29990/ws", "ws://118.31.23.181:9901/ws", "ws://118.31.23.181:9901/ws", "ws://208.185.128.235:9901/ws" ];
     var loginUrlType = cc.Enum({
       intranet: 0,
@@ -6444,6 +6940,15 @@ require = function e(t, n, r) {
       test: 2,
       apple: 3,
       test2: 4
+=======
+    var loginUrl = [ "ws://192.168.1.77:9999/ws", "ws://am.fmgames.cn:29990/ws", "ws://yuchuan.fmgames.cn:9901/ws", "ws://sh.fmgames.cn:9901/ws", "ws://208.185.128.235:9901/ws" ];
+    var loginUrlType = cc.Enum({
+      intranet: 0,
+      extranet: 1,
+      fisher: 2,
+      apple: 3,
+      test: 4
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     });
     var loginType = cc.Enum({
       weChat: 0,
@@ -6496,11 +7001,20 @@ require = function e(t, n, r) {
       wltest: 1
     });
     var compileContent = [ {}, wltest ];
+<<<<<<< HEAD
     var releaseName = [ "normal", "apple", "release" ];
     var releaseType = cc.Enum({
       normal: 0,
       apple: 1,
       release: 2
+=======
+    var releaseName = [ "normal", "apple", "release", "fisher" ];
+    var releaseType = cc.Enum({
+      normal: 0,
+      apple: 1,
+      release: 2,
+      fisher: 3
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     });
     var itemCsv = cc.Enum({
       huangYan: 1,
@@ -10884,6 +11398,10 @@ require = function e(t, n, r) {
         exporText.length > 8 ? textScroll.getComponent(cc.ScrollView).vertical = true : textScroll.getComponent(cc.ScrollView).vertical = false;
         for (var _i = 0; _i < exporText.length; _i++) {
           var text = textList.getChildByName("text" + _i);
+<<<<<<< HEAD
+=======
+          text.active = true;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           var content = text.getChildByName("content").getComponent(cc.Label);
           content.string = exporText[_i];
           text.on("click", this.onTextClick.bind(this, _i));
@@ -11577,6 +12095,17 @@ require = function e(t, n, r) {
         var store;
       },
       showRoomCard: function showRoomCard(data, gameType) {
+<<<<<<< HEAD
+=======
+        var isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher;
+        if (isFisher) {
+          var cardShowN = this.node.getChildByName("back").getChildByName("down").getChildByName("cardShow");
+          cardShowN.getChildByName("xskback").active = false;
+          cardShowN.getChildByName("fkback").active = true;
+          cardShowN.getChildByName("xianshika").active = false;
+          return;
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this.roomCard.string = data.TollCardCnt || data.Total || 0;
         this.freeBtn.on("click", function() {
           var detail = cc.instantiate(this.detailPrefab);
@@ -11846,7 +12375,11 @@ require = function e(t, n, r) {
         this.allHideList = {};
         this.createN = node.getChildByName("back").getChildByName("down");
         this.btnCreateN = this.createN.getChildByName("btnCreateRoom");
+<<<<<<< HEAD
         this.btnRechargeN = this.createN.getChildByName("btnRecharge");
+=======
+        this.btnRechargeN = this.createN.getChildByName("cardShow").getChildByName("fangka").getChildByName("btnRecharge");
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this.btnCreateN.on("touchend", this.onCreateClicked, this);
         this.btnRechargeN.on("touchend", this.onRechargeClicked, this);
         this.oldCreate = fun.utils.getCreateRoomData(gameType) || {};
@@ -12648,7 +13181,12 @@ require = function e(t, n, r) {
         this.btnClose.on("click", this.onBtnCloseClick, this);
       },
       setDetail: function setDetail(data, gameType) {
+<<<<<<< HEAD
         if (data && 0 !== data.length) {
+=======
+        if (!data) return;
+        if (0 !== data.length) {
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           this.noCard.active = false;
           for (var i in data) {
             var item = cc.instantiate(this.itemPrefab);
@@ -14150,6 +14688,15 @@ require = function e(t, n, r) {
       ddz: 6,
       scmj: 7
     });
+<<<<<<< HEAD
+=======
+    var LingQuError = cc.Enum({
+      FAILED: 1,
+      RECIVED: 2,
+      NOT_EXIST: 3,
+      NO_SELF: 4
+    });
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     cc.Class({
       extends: cc.Component,
       properties: {
@@ -14172,6 +14719,15 @@ require = function e(t, n, r) {
         this.clips = this.animation.getClips();
         var isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple;
         isApple && (this.leftBox.getChildByName("btnActivity2").active = false);
+<<<<<<< HEAD
+=======
+        var isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher;
+        if (isFisher) {
+          this.leftBox.getChildByName("btnActivity3").destroy();
+          this.leftBox.getChildByName("btnDown3").destroy();
+          this._menuNum--;
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       },
       onEnable: function onEnable() {
         this.animation.play(this.clips[0].name);
@@ -14272,9 +14828,21 @@ require = function e(t, n, r) {
             if (!rsp || rsp.RetCode || rsp.Status) fun.event.dispatch("MinSingleButtonPop", {
               contentStr: "分享限时房卡失败！"
             }); else {
+<<<<<<< HEAD
               for (var i = 0; i < this.shareScrollViewCont.children.length; ++i) if (this.shareScrollViewCont.children[i].orderId === this._shareContentList.OrderId) {
                 var itemL = this.shareScrollViewCont.children[i].getChildByName("card").getComponent(cc.Label);
                 itemL.string = "x" + (parseInt(itemL.string.substr(1, itemL.string.length - 1)) - inputL);
+=======
+              for (var i = 0; i < this.shareScrollViewCont.children.length; ++i) {
+                var item = this.shareScrollViewCont.children[i];
+                if (item.orderId === this._shareContentList.OrderId) {
+                  var itemL = item.getChildByName("card").getComponent(cc.Label);
+                  var newCardNum = parseInt(itemL.string.substr(1, itemL.string.length - 1)) - inputL;
+                  itemL.string = "x" + newCardNum;
+                  this._shareContentList.Cnt = newCardNum;
+                  item.getComponent("shareCardItem").setData(this._shareContentList);
+                }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               }
               this.wxShareFriendCard(rsp.Order, this._shareContentList.ExpiredAt, inputL, this._shareContentList.date);
             }
@@ -14342,9 +14910,38 @@ require = function e(t, n, r) {
           }) : fun.net.pSend("ReceiveTimeCard", {
             Order: editLabel
           }, function(rsp) {
+<<<<<<< HEAD
             if (!rsp || rsp.RetCode || rsp.Status) fun.event.dispatch("MinSingleButtonPop", {
               contentStr: "领取限时房卡失败！"
             }); else {
+=======
+            if (!rsp || rsp.RetCode) fun.event.dispatch("MinSingleButtonPop", {
+              contentStr: "领取限时房卡失败！"
+            }); else if (rsp.Status) switch (rsp.Status) {
+             case LingQuError.NO_SELF:
+              fun.event.dispatch("MinSingleButtonPop", {
+                contentStr: "不能领取自己分享的限时卡！"
+              });
+              break;
+
+             case LingQuError.RECIVED:
+              fun.event.dispatch("MinSingleButtonPop", {
+                contentStr: "领取码已被使用！"
+              });
+              break;
+
+             case LingQuError.NOT_EXIST:
+              fun.event.dispatch("MinSingleButtonPop", {
+                contentStr: "领取码错误或限时卡过期！"
+              });
+              break;
+
+             default:
+              fun.event.dispatch("MinSingleButtonPop", {
+                contentStr: "领取限时房卡失败！"
+              });
+            } else {
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               this.lingCardBox.getChildByName("img").getChildByName("ka" + rsp.GameType).active = true;
               this.lingCardBox.getChildByName("num").getComponent(cc.Label).string = "x" + rsp.Cnt;
               var t = new Date(1e3 * rsp.ExpireAt);
@@ -14766,11 +15363,19 @@ require = function e(t, n, r) {
         fun.net.pSend("RoomCard", {
           GameType: gameConst.gameType.maJiangHuangYan
         }, function(data) {
+<<<<<<< HEAD
           void 0 !== data.Total && (this.btnGame1.getChildByName("num").getComponent(cc.Label).string = data.Total);
           fun.net.pSend("RoomCard", {
             GameType: gameConst.gameType.maJiangWenLing
           }, function(data) {
             void 0 !== data.Total && (this.btnGame2.getChildByName("num").getComponent(cc.Label).string = data.Total);
+=======
+          void 0 !== data.TollCardCnt && (this.btnGame1.getChildByName("num").getComponent(cc.Label).string = data.TollCardCnt);
+          fun.net.pSend("RoomCard", {
+            GameType: gameConst.gameType.maJiangWenLing
+          }, function(data) {
+            void 0 !== data.TollCardCnt && (this.btnGame2.getChildByName("num").getComponent(cc.Label).string = data.TollCardCnt);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           }.bind(this));
         }.bind(this));
         this.btnGame3.getChildByName("num").getComponent(cc.Label).string = 0;
@@ -14965,6 +15570,10 @@ require = function e(t, n, r) {
         cc.YL._isTestServer = this._isTestnet || this._isIntranet;
         this._isRelease = fun.gameCfg.releaseType === gameConst.releaseType.release;
         this._isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple;
+<<<<<<< HEAD
+=======
+        this._isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         cc.sys.isNative && require("JSPhoneBaiDu").getBaiDuLocation();
         this.enterRoomHandle = [];
         this.addEnterRoomHandle(gameConst.gameType.universal, this.platformEnterRoomHandle.bind(this));
@@ -14990,7 +15599,11 @@ require = function e(t, n, r) {
         this.head.on("click", this.onHeadClick, this);
         var userInfo = fun.db.getData("UserInfo");
         this.showUserInfo(userInfo);
+<<<<<<< HEAD
         if (userInfo.RoomId && 0 != userInfo.RoomId) this.enterRoom(userInfo.RoomId); else if (!this._isIntranet && !this._isTestnet) {
+=======
+        if (userInfo.RoomId && 0 != userInfo.RoomId) this.enterRoom(userInfo.RoomId); else {
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           var initNode = this.node;
           setTimeout(function() {
             if (!fun.db.getNeedNotice()) {
@@ -14998,7 +15611,11 @@ require = function e(t, n, r) {
               notice.getComponent(cc.Animation).play("popScaleAnim");
               notice.active = true;
               fun.db.setNeedNotice(true);
+<<<<<<< HEAD
               notice.getChildByName("back").getChildByName("btnClose").on("click", function() {
+=======
+              notice.getChildByName("back").getChildByName("box").getChildByName("btnClose").on("click", function() {
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
                 var animState = notice.getComponent(cc.Animation).play("popScaleOut");
                 animState.once("finished", function() {
                   notice.active = false;
@@ -15016,9 +15633,15 @@ require = function e(t, n, r) {
           this.gameBtns[i].active = true;
           this.gameBtns[i].on("click", this.onBtnGameClick.bind(this, i));
         }
+<<<<<<< HEAD
         this.appleReview();
         this.gameBtns.push(this.rightNode.getChildByName("btnGameMore"));
         this.gameBtns[this.gameBtns.length - 1].on("click", this.onBtnGameClick.bind(this, this.gameBtns.length - 1));
+=======
+        this.gameBtns.push(this.rightNode.getChildByName("btnGameMore"));
+        this.gameBtns[this.gameBtns.length - 1].on("click", this.onBtnGameClick.bind(this, this.gameBtns.length - 1));
+        this.appleReview();
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this.buttomNode = this._mainBasic.getChildByName("buttom");
         this.buttomNode.getChildByName("recordBtn").on("click", this.onRecordBtnClick, this);
         this.buttomNode.getChildByName("shareBtn").on("click", this.onShareBtnClick, this);
@@ -15219,6 +15842,7 @@ require = function e(t, n, r) {
 
          case 2:
           fun.net.pSend("RoomCard", {
+<<<<<<< HEAD
             GameType: gameConst.gameType.scMahjong
           }, function(data) {
             var xzNode = cc.instantiate(this.createRoomXuezhan);
@@ -15229,6 +15853,8 @@ require = function e(t, n, r) {
 
          case 3:
           fun.net.pSend("RoomCard", {
+=======
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
             GameType: gameConst.gameType.DDZ
           }, function(data) {
             if (data.RetCode && 0 !== data.RetCode) return;
@@ -15236,6 +15862,16 @@ require = function e(t, n, r) {
             DDZNode.parent = this.node;
             DDZNode.getComponent("createDDZRoom").showRoomCard(data, gameConst.gameType.DDZ);
           }.bind(this));
+<<<<<<< HEAD
+=======
+          break;
+
+         case 3:
+          fun.event.dispatch("MinSingleButtonPop", {
+            contentStr: "敬请期待！"
+          });
+          return;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
       },
       onBtnGameMoreClick: function onBtnGameMoreClick() {
@@ -15276,7 +15912,11 @@ require = function e(t, n, r) {
       },
       onNewsBtnClick: function onNewsBtnClick() {
         Audio.playEffect("hall", "button_nomal.mp3");
+<<<<<<< HEAD
         if (this._isApple) {
+=======
+        if (this._isApple || this._isRelease) {
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           var news = cc.instantiate(this.newsLayerPre);
           news.parent = this.node;
         } else fun.net.pSend("MailList", {
@@ -16204,8 +16844,23 @@ require = function e(t, n, r) {
           }
         };
         if (this.compileType > gameConst.compileType.custom) for (var key in gameConst.compileContent[this.compileType]) fun.gameCfg[key] = gameConst.compileContent[this.compileType][key];
+<<<<<<< HEAD
         fun.gameCfg.releaseType === gameConst.releaseType.apple && (fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.apple]);
         fun.gameCfg.releaseType === gameConst.releaseType.release && (fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.extranet]);
+=======
+        switch (fun.gameCfg.releaseType) {
+         case gameConst.releaseType.apple:
+          fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.apple];
+          break;
+
+         case gameConst.releaseType.release:
+          fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.extranet];
+          break;
+
+         case gameConst.releaseType.fisher:
+          fun.gameCfg.loginUrl = gameConst.loginUrl[gameConst.loginUrlType.fisher];
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         fun.logger = new logger();
         fun.log = fun.logger.log.bind(fun.logger);
         fun.base64 = require("funBase64");
@@ -16483,6 +17138,11 @@ require = function e(t, n, r) {
           require("JSPhoneBaiDu").getBaiDuLocation();
         }
         this._isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple;
+<<<<<<< HEAD
+=======
+        this._isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher;
+        this._isFisher && (this.node.getChildByName("Haishang").active = true);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         this.editBox = this.node.getChildByName("editBox");
         this.editBox.active = false;
         this.wxLoginBtn = this.node.getChildByName("btnWxLogin");
@@ -27818,6 +28478,12 @@ require = function e(t, n, r) {
         this.clips = this.animation.getClips();
         this.btnView.on("click", this.onBtnViewClick, this);
         this.btnClose.on("click", this.onBtnCloseClick, this);
+<<<<<<< HEAD
+=======
+        var intranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet];
+        var ddz = this.toggleGroupNode.getChildByName("DDZ");
+        ddz.active = !!intranet;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       },
       init: function init(gameType, data) {
         cc.YL.info("战绩gametype", gameType, data);
@@ -27974,4 +28640,8 @@ require = function e(t, n, r) {
     });
     cc._RF.pop();
   }, {} ]
+<<<<<<< HEAD
 }, {}, [ "AesUtils", "Audio", "TestLog", "hotUpdate", "ChatCfg", "GameCfg", "MessageCfg", "createDDZRoom", "createMajiangRoom", "createNiuNiuRoom", "createRoomSys", "createSanGongRoom", "createScMahjongRoom", "createWahuaRoom", "funBase64", "funCsv", "funDB", "funEvent", "funLog", "funNetMgr", "funUtils", "initFun", "hall", "hallActivity", "hallEnterNum", "hallGangGao", "hallMoreGame", "hallRenzheng", "hallShare", "hallSpineBtn", "globalUI", "login", "mailDetail", "mailItem", "mailLayer", "chat", "freeCardDetail", "freeCardItem", "interact", "playerDetailUI", "playerMap", "publicVoiceBtn", "roomGongGao", "set", "shareCardItem", "store", "updatePanel", "voiceHint", "voiceQueueMgr", "minDoubleButtonPop", "minSingleButtonPop", "zhuanquan", "zhanjiDetail", "zhanjiDetailItem", "zhanjiItem", "zhanjiLayer", "zhanjiScv", "hyMjCfg", "scMjCfg", "wlMjCfg", "hymjNetMgr", "mjAnimHelper", "mjDataMgr", "mjGameDefine", "mjGameManager", "mjNetMgr", "mjPai", "mjPlayer", "mjPlayerPai", "mjReconnectMgr", "mjReplayMgr", "scmjNetMgr", "wlmjNetMgr", "mjPaijuMgr", "mjPaijuShang", "mjPaijuXia", "mjPaijuYou", "mjPaijuZuo", "mjChatUI", "mjEndUI", "mjGameUI", "mjInteractUI", "mjMenuUI", "mjPlayerUI", "mjReadyUI", "mjReplayUI", "mjReportListUI", "mjReportUI", "mjChiDetailUI", "mjDpaoUI", "mjHuAnimUI", "mjOptsUI", "mjPaiUI", "mjSaiziUI", "mjVotingPopUI", "mjVotingUI", "allAccountWahua", "oneAccountWahua", "whDefine", "whUtils", "WahuaCfg", "commonWahua", "gameMgrWahua", "opsWahua", "phoneStatusWahua", "playerDataWahua", "playerUiWahua", "roomDescScvWahua", "whMenu", "whPaiTouch", "whSkin", "whVoting", "whVotingPop", "JSPhoneBaiDu", "JSPhoneDevice", "JSPhoneNetBattery", "JSPhoneUmeng", "JSPhoneVoice", "JSPhoneWeChat", "DDZ_Animation", "DDZ_AnimationManager", "DDZ_OSDate", "DDZ_Sound", "DDZ_Tools", "DDZ_CardTypeConfig", "DDZ_CardValueConfig", "DDZ_MsgConfig", "DDZ_Chat", "DDZ_DeskInfo", "DDZ_Disslove", "DDZ_LeaveAndDiss", "DDZ_Main", "DDZ_PlayerGPS", "DDZ_PopWin", "DDZ_Setting", "DDZ_DiPai", "DDZ_FaiPaiAction", "DDZ_GameAction", "DDZ_GameManager", "DDZ_JiaBei", "DDZ_JiaoFen", "DDZ_OutCard", "DDZ_Pass", "DDZ_PlayerBtn", "DDZ_PokerTip", "DDZ_Ready", "DDZ_AllGameOver", "DDZ_AllGameOverItem", "DDZ_OneGameOver", "DDZ_OneGameOverItem", "DDZ_NetEventManager", "DDZ_PlayerInfoNode", "DDZ_PlayerLeftInfo", "DDZ_PlayerLeftOutPoker", "DDZ_PlayerLeftPoker", "DDZ_PlayerRightInfo", "DDZ_PlayerRightOutPoker", "DDZ_PlayerRightPoker", "DDZ_PlayerSelfInfo", "DDZ_PlayerSelfOutPoker", "DDZ_PlayerSelfPoker", "DDZ_Poker", "DDZ_PokerTouchEvent", "DDZ_ReplayMain", "PukeUI", "PukeAccount", "PukeAccountBox", "PukeDisband", "PukeSkin", "NiuNiuCfg", "SanGongCfg", "CuoPai", "NiuNiuManager", "PukeChatUI", "PukeCommUI", "PukeData", "PukeDefine", "SanGongManager", "PukeUtils", "papaparse.min" ]);
+=======
+}, {}, [ "AesUtils", "Audio", "TestLog", "hotUpdate", "ChatCfg", "GameCfg", "MessageCfg", "createDDZRoom", "createMajiangRoom", "createNiuNiuRoom", "createRoomSys", "createSanGongRoom", "createScMahjongRoom", "createWahuaRoom", "funBase64", "funCsv", "funDB", "funEvent", "funLog", "funNetMgr", "funUtils", "initFun", "hall", "hallActivity", "hallEnterNum", "hallGangGao", "hallMoreGame", "hallRenzheng", "hallShare", "hallSpineBtn", "globalUI", "login", "mailDetail", "mailItem", "mailLayer", "chat", "freeCardDetail", "freeCardItem", "interact", "playerDetailUI", "playerMap", "publicVoiceBtn", "roomGongGao", "set", "shareCardItem", "store", "updatePanel", "voiceHint", "voiceQueueMgr", "minDoubleButtonPop", "minSingleButtonPop", "zhuanquan", "zhanjiDetail", "zhanjiDetailItem", "zhanjiItem", "zhanjiLayer", "zhanjiScv", "hyMjCfg", "scMjCfg", "wlMjCfg", "hymjNetMgr", "mjAnimHelper", "mjDataMgr", "mjGameDefine", "mjGameManager", "mjNetMgr", "mjPai", "mjPlayer", "mjPlayerPai", "mjReconnectMgr", "mjReplayMgr", "scmjNetMgr", "wlmjNetMgr", "mjPaijuMgr", "mjPaijuShang", "mjPaijuXia", "mjPaijuYou", "mjPaijuZuo", "mjChatUI", "mjEndUI", "mjGameUI", "mjInteractUI", "mjMenuUI", "mjPlayerUI", "mjReadyUI", "mjReplayUI", "mjReportListUI", "mjReportUI", "mjChiDetailUI", "mjDpaoUI", "mjHuAnimUI", "mjOptsUI", "mjPaiUI", "mjSaiziUI", "mjVotingPopUI", "mjVotingUI", "allAccountWahua", "oneAccountWahua", "whDefine", "whUtils", "WahuaCfg", "commonWahua", "gameMgrWahua", "opsWahua", "phoneStatusWahua", "playerDataWahua", "playerUiWahua", "roomDescScvWahua", "whMenu", "whPaiTouch", "whSkin", "whVoting", "whVotingPop", "JSPhoneBaiDu", "JSPhoneDevice", "JSPhoneNetBattery", "JSPhoneUmeng", "JSPhoneVoice", "JSPhoneWeChat", "DDZ_Animation", "DDZ_AnimationManager", "DDZ_OSDate", "DDZ_Sound", "DDZ_Tools", "DDZ_CardTypeConfig", "DDZ_CardValueConfig", "DDZ_MsgConfig", "DDZ_Chat", "DDZ_DeskInfo", "DDZ_Disslove", "DDZ_LeaveAndDiss", "DDZ_Main", "DDZ_PlayerGPS", "DDZ_PopWin", "DDZ_Setting", "DDZ_DiPai", "DDZ_FaiPaiAction", "DDZ_GameAction", "DDZ_GameManager", "DDZ_JiaBei", "DDZ_JiaoFen", "DDZ_OutCard", "DDZ_Pass", "DDZ_PlayerBtn", "DDZ_PokerTip", "DDZ_Ready", "DDZ_AllGameOver", "DDZ_AllGameOverItem", "DDZ_OneGameOver", "DDZ_OneGameOverItem", "DDZ_NetEventManager", "DDZ_PlayerInfoNode", "DDZ_PlayerLeftInfo", "DDZ_PlayerLeftOutPoker", "DDZ_PlayerLeftPoker", "DDZ_PlayerRightInfo", "DDZ_PlayerRightOutPoker", "DDZ_PlayerRightPoker", "DDZ_PlayerSelfCloseUpPoker", "DDZ_PlayerSelfInfo", "DDZ_PlayerSelfOutPoker", "DDZ_PlayerSelfPoker", "DDZ_Poker", "DDZ_PokerTouchEvent", "DDZ_ReplayMain", "PukeUI", "PukeAccount", "PukeAccountBox", "PukeDisband", "PukeSkin", "NiuNiuCfg", "SanGongCfg", "CuoPai", "NiuNiuManager", "PukeChatUI", "PukeCommUI", "PukeData", "PukeDefine", "SanGongManager", "PukeUtils", "papaparse.min" ]);
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac

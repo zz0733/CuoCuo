@@ -4,8 +4,13 @@
     "name": "anniu_hui2",
     "texture": "a9c+BYF3tKXqw96fOJksyB",
     "rect": [
+<<<<<<< HEAD
       258,
       463,
+=======
+      304,
+      379,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       81,
       84
     ],

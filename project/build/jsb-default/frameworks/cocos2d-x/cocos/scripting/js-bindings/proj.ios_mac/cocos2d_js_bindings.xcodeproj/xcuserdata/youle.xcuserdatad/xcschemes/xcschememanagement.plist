@@ -12,7 +12,11 @@
 		<key>libjscocos2d iOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>4</integer>
+=======
+			<integer>5</integer>
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
 		</dict>
 	</dict>
 </dict>

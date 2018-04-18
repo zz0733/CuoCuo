@@ -8,7 +8,11 @@ var _gameTypeSceneNameMap, _gameTypeZhNameMap;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+<<<<<<< HEAD
 var version = 'version:2.1.0.7308';
+=======
+var version = 'version:2.1.0.7315';
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
 /*苹果审核
  更新时间：2018年3月6日
  更新版本：2.0.6.6927
@@ -34,7 +38,11 @@ var version = 'version:2.1.0.7308';
 
 /*热更新(强制更新)
 更新时间：2018年04月17日
+<<<<<<< HEAD
 更新版本：2.1.0.7305
+=======
+更新版本：2.1.0.7313
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
 更新内容：
 1.游戏界面大翻新
 2.新增限时卡，可以在指定时间内自己使用或赠送他人
@@ -74,6 +82,13 @@ var commonUrl = cc.Enum({
 });
 
 var loginUrl = ['ws://192.168.1.77:9999/ws', //内网 'ws://192.168.1.77:9999/ws'
+<<<<<<< HEAD
+=======
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
 'ws://am.fmgames.cn:29990/ws', //外网 'ws://70.103.170.210:29990/ws'
 'ws://yuchuan.fmgames.cn:9901/ws', //渔船 'ws://208.185.128.236:9901/ws'
 'ws://sh.fmgames.cn:9901/ws', //苹果审核

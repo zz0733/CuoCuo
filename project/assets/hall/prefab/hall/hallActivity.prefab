@@ -4008,7 +4008,11 @@
       }
     ],
     "_tag": -1,
+<<<<<<< HEAD
     "_active": false,
+=======
+    "_active": true,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_components": [
       {
         "__id__": 134
@@ -4155,7 +4159,11 @@
     },
     "_children": [],
     "_tag": -1,
+<<<<<<< HEAD
     "_active": false,
+=======
+    "_active": true,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_components": [
       {
         "__id__": 128
@@ -4404,7 +4412,11 @@
       "__id__": 128
     },
     "checkEvents": [],
+<<<<<<< HEAD
     "_N$isChecked": false
+=======
+    "_N$isChecked": true
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.PrefabInfo",

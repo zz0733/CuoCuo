@@ -1213,7 +1213,11 @@
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "wenlingwahua",
+=======
+    "_name": "doudizhu",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_parent": {
       "__id__": 36
     },
@@ -1224,18 +1228,30 @@
           "__id__": 37
         },
         "_spriteFrame": {
+<<<<<<< HEAD
           "__uuid__": "cdCCauM0FB/YRj1oJuuBCP"
+=======
+          "__uuid__": "e2RXjz87VFt4NaIl0OA5Su"
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
       }
     ],
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 344,
+=======
+      "width": 346,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 265
     },
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": 8,
+=======
+      "x": 10,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "y": 10
     }
   },
@@ -1252,12 +1268,25 @@
         "node": {
           "__id__": 38
         },
+<<<<<<< HEAD
         "defaultAnimation": "Zikuang",
         "_N$skeletonData": {
           "__uuid__": "f98OewB9FPB5vWT7NYeaY8"
         }
       }
     ]
+=======
+        "defaultAnimation": "Doudizhu",
+        "_N$skeletonData": {
+          "__uuid__": "fen21VDdVO35v2tC/4CcKk"
+        }
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 4
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1272,12 +1301,22 @@
         "node": {
           "__id__": 39
         },
+<<<<<<< HEAD
         "defaultAnimation": "Niuniu_ying",
         "_N$skeletonData": {
           "__uuid__": "52shHmtaFFqJO0b8blAsfu"
         }
       }
     ]
+=======
+        "defaultAnimation": "Niuniu_ying"
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 4
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1292,12 +1331,22 @@
         "node": {
           "__id__": 40
         },
+<<<<<<< HEAD
         "defaultAnimation": "Zisaoguang",
         "_N$skeletonData": {
           "__uuid__": "47tnB2intJf4jOg71yNg+c"
         }
       }
     ]
+=======
+        "defaultAnimation": "Lansaoguang"
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 4
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1312,12 +1361,22 @@
         "node": {
           "__id__": 41
         },
+<<<<<<< HEAD
         "defaultAnimation": "Niuniu",
         "_N$skeletonData": {
           "__uuid__": "468l5qJoFOLJaM8aPn7npe"
         }
       }
     ]
+=======
+        "defaultAnimation": "Niuniu"
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 4
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1332,12 +1391,22 @@
         "node": {
           "__id__": 42
         },
+<<<<<<< HEAD
         "defaultAnimation": "Zi_niuniu",
         "_N$skeletonData": {
           "__uuid__": "f0VQ9ckKtCHJqPJrM+ndOq"
         }
       }
     ]
+=======
+        "defaultAnimation": "Lan_niuniu"
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 4
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1397,7 +1466,11 @@
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "doudizhu",
+=======
+    "_name": "wenlingwahua",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_parent": {
       "__id__": 43
     },
@@ -1408,18 +1481,30 @@
           "__id__": 44
         },
         "_spriteFrame": {
+<<<<<<< HEAD
           "__uuid__": "e2RXjz87VFt4NaIl0OA5Su"
+=======
+          "__uuid__": "cdCCauM0FB/YRj1oJuuBCP"
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
       }
     ],
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 346,
+=======
+      "width": 344,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 265
     },
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": 6,
+=======
+      "x": 5,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "y": 10
     }
   },
@@ -1436,12 +1521,25 @@
         "node": {
           "__id__": 45
         },
+<<<<<<< HEAD
         "defaultAnimation": "Doudizhu",
         "_N$skeletonData": {
           "__uuid__": "fen21VDdVO35v2tC/4CcKk"
         }
       }
     ]
+=======
+        "defaultAnimation": "Zikuang",
+        "_N$skeletonData": {
+          "__uuid__": "f98OewB9FPB5vWT7NYeaY8"
+        }
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -3
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1456,9 +1554,22 @@
         "node": {
           "__id__": 46
         },
+<<<<<<< HEAD
         "defaultAnimation": "Niuniu_ying"
       }
     ]
+=======
+        "defaultAnimation": "Niuniu_ying",
+        "_N$skeletonData": {
+          "__uuid__": "52shHmtaFFqJO0b8blAsfu"
+        }
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -3
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1473,9 +1584,22 @@
         "node": {
           "__id__": 47
         },
+<<<<<<< HEAD
         "defaultAnimation": "Lansaoguang"
       }
     ]
+=======
+        "defaultAnimation": "Zisaoguang",
+        "_N$skeletonData": {
+          "__uuid__": "47tnB2intJf4jOg71yNg+c"
+        }
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -3
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1490,9 +1614,22 @@
         "node": {
           "__id__": 48
         },
+<<<<<<< HEAD
         "defaultAnimation": "Niuniu"
       }
     ]
+=======
+        "defaultAnimation": "Niuniu",
+        "_N$skeletonData": {
+          "__uuid__": "468l5qJoFOLJaM8aPn7npe"
+        }
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -3
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -1507,9 +1644,22 @@
         "node": {
           "__id__": 49
         },
+<<<<<<< HEAD
         "defaultAnimation": "Lan_niuniu"
       }
     ]
+=======
+        "defaultAnimation": "Zi_niuniu",
+        "_N$skeletonData": {
+          "__uuid__": "f0VQ9ckKtCHJqPJrM+ndOq"
+        }
+      }
+    ],
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -3
+    }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.Node",
@@ -4330,17 +4480,36 @@
     "_children": [
       {
         "__id__": 116
+<<<<<<< HEAD
       },
       {
         "__id__": 119
       },
       {
         "__id__": 121
+=======
+      }
+    ]
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "box",
+    "_parent": {
+      "__id__": 115
+    },
+    "_children": [
+      {
+        "__id__": 117
+      },
+      {
+        "__id__": 120
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       },
       {
         "__id__": 122
       },
       {
+<<<<<<< HEAD
         "__id__": 123
       },
       {
@@ -4351,6 +4520,9 @@
       },
       {
         "__id__": 126
+=======
+        "__id__": 135
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     ]
   },
@@ -4358,6 +4530,7 @@
     "__type__": "cc.Node",
     "_name": "bg",
     "_parent": {
+<<<<<<< HEAD
       "__id__": 115
     },
     "_children": [
@@ -4366,13 +4539,27 @@
       },
       {
         "__id__": 118
+=======
+      "__id__": 116
+    },
+    "_children": [
+      {
+        "__id__": 118
+      },
+      {
+        "__id__": 119
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     ],
     "_components": [
       {
         "__type__": "cc.Sprite",
         "node": {
+<<<<<<< HEAD
           "__id__": 116
+=======
+          "__id__": 117
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_spriteFrame": {
           "__uuid__": "0aRfOdmwFL0JPuFNE+cXbq"
@@ -4386,6 +4573,11 @@
       "width": 1051,
       "height": 698
     },
+<<<<<<< HEAD
+=======
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_position": {
       "__type__": "cc.Vec2",
       "y": -7
@@ -4395,13 +4587,21 @@
     "__type__": "cc.Node",
     "_name": "ty_dikuang_zhanji1",
     "_parent": {
+<<<<<<< HEAD
       "__id__": 116
+=======
+      "__id__": 117
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Sprite",
         "node": {
+<<<<<<< HEAD
           "__id__": 117
+=======
+          "__id__": 118
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_spriteFrame": {
           "__uuid__": "a7tFidI7RBYa9zRVhEWkaF"
@@ -4426,13 +4626,21 @@
     "__type__": "cc.Node",
     "_name": "shengming1",
     "_parent": {
+<<<<<<< HEAD
       "__id__": 116
+=======
+      "__id__": 117
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Sprite",
         "node": {
+<<<<<<< HEAD
           "__id__": 118
+=======
+          "__id__": 119
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_spriteFrame": {
           "__uuid__": "f88K+ND4BOR5FJgCgSuF7P"
@@ -4450,18 +4658,30 @@
     "__type__": "cc.Node",
     "_name": "title",
     "_parent": {
+<<<<<<< HEAD
       "__id__": 115
     },
     "_children": [
       {
         "__id__": 120
+=======
+      "__id__": 116
+    },
+    "_children": [
+      {
+        "__id__": 121
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     ],
     "_components": [
       {
         "__type__": "cc.Sprite",
         "node": {
+<<<<<<< HEAD
           "__id__": 119
+=======
+          "__id__": 120
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         }
       }
     ],
@@ -4472,20 +4692,32 @@
     },
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "y": 325
+=======
+      "y": 268
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
     "__type__": "cc.Node",
     "_name": "titel",
     "_parent": {
+<<<<<<< HEAD
       "__id__": 119
+=======
+      "__id__": 120
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Sprite",
         "node": {
+<<<<<<< HEAD
           "__id__": 120
+=======
+          "__id__": 121
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_spriteFrame": {
           "__uuid__": "9eHmX89VFKXqXs5NZyB3Ub"
@@ -4504,14 +4736,30 @@
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "btnClose",
     "_parent": {
       "__id__": 115
     },
+=======
+    "_name": "scrollView",
+    "_parent": {
+      "__id__": 116
+    },
+    "_children": [
+      {
+        "__id__": 123
+      },
+      {
+        "__id__": 129
+      }
+    ],
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_components": [
       {
         "__type__": "cc.Sprite",
         "node": {
+<<<<<<< HEAD
           "__id__": 121
         },
         "_spriteFrame": {
@@ -4539,19 +4787,242 @@
       "__type__": "cc.Vec2",
       "x": 515,
       "y": 322
+=======
+          "__id__": 122
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      },
+      {
+        "__id__": 127
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 184,
+      "g": 184,
+      "b": 184
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 750,
+      "height": 450
     }
   },
   {
     "__type__": "cc.Node",
+    "_name": "scrollBar",
+    "_parent": {
+      "__id__": 122
+    },
+    "_children": [
+      {
+        "__id__": 124
+      }
+    ],
+    "_active": false,
+    "_components": [
+      {
+        "__id__": 126
+      },
+      {
+        "__type__": "cc.Widget",
+        "node": {
+          "__id__": 123
+        },
+        "_alignFlags": 37,
+        "_left": 350.07654921020657,
+        "_originalHeight": 237
+      },
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 123
+        },
+        "_spriteFrame": {
+          "__uuid__": "5f5dyqtRNNxaFmVzYns6FZ"
+        },
+        "_type": 1,
+        "_sizeMode": 0
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 238,
+      "g": 217,
+      "b": 227
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 12,
+      "height": 540
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 450
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
+    }
+  },
+  {
+    "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "New Label",
     "_parent": {
       "__id__": 115
+=======
+    "_name": "bar",
+    "_parent": {
+      "__id__": 123
+    },
+    "_components": [
+      {
+        "__id__": 125
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 236,
+      "g": 241,
+      "b": 245
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 1
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 10,
+      "height": 30
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -1
+    }
+  },
+  {
+    "__type__": "cc.Sprite",
+    "node": {
+      "__id__": 124
+    },
+    "_spriteFrame": {
+      "__uuid__": "5cO7kybDxGj4ipyMYdRYZB"
+    },
+    "_type": 1,
+    "_sizeMode": 0
+  },
+  {
+    "__type__": "cc.Scrollbar",
+    "node": {
+      "__id__": 123
+    },
+    "_scrollView": {
+      "__id__": 127
+    },
+    "_N$handle": {
+      "__id__": 125
+    },
+    "_N$direction": 1
+  },
+  {
+    "__type__": "cc.ScrollView",
+    "node": {
+      "__id__": 122
+    },
+    "content": {
+      "__id__": 128
+    },
+    "horizontal": false,
+    "brake": 0.75,
+    "bounceDuration": 0.28,
+    "_N$horizontalScrollBar": null,
+    "_N$verticalScrollBar": {
+      "__id__": 126
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "content",
+    "_parent": {
+      "__id__": 129
+    },
+    "_children": [
+      {
+        "__id__": 130
+      },
+      {
+        "__id__": 131
+      },
+      {
+        "__id__": 132
+      },
+      {
+        "__id__": 133
+      },
+      {
+        "__id__": 134
+      }
+    ],
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 1
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 750,
+      "height": 720
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": 229
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "view",
+    "_parent": {
+      "__id__": 122
+    },
+    "_children": [
+      {
+        "__id__": 128
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Mask",
+        "node": {
+          "__id__": 129
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 750,
+      "height": 450
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "label1",
+    "_parent": {
+      "__id__": 128
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Label",
         "node": {
+<<<<<<< HEAD
           "__id__": 122
+=======
+          "__id__": 130
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_useOriginalSize": false,
         "_actualFontSize": 22,
@@ -4572,6 +5043,13 @@
       "g": 39,
       "b": 24
     },
+<<<<<<< HEAD
+=======
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "y": 0.5
+    },
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 204.1,
@@ -4579,31 +5057,54 @@
     },
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": -357,
       "y": 260
+=======
+      "x": -360,
+      "y": -23
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "New Label",
     "_parent": {
       "__id__": 115
+=======
+    "_name": "label2",
+    "_parent": {
+      "__id__": 128
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Label",
         "node": {
+<<<<<<< HEAD
           "__id__": 123
+=======
+          "__id__": 131
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_useOriginalSize": false,
         "_actualFontSize": 22,
         "_fontSize": 22,
         "_lineHeight": 25,
+<<<<<<< HEAD
+=======
+        "_enableWrapText": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$file": {
           "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
         },
         "_isSystemFontUsed": false,
+<<<<<<< HEAD
         "_N$string": "      近期，国家主管部门发文要求行业规范自身，规范游戏市场，净化网络环境。我们作为行业 \n的一员，愿与广大用户一同维护健康、绿色的娱乐环境。",
+=======
+        "_N$string": "      近期，国家主管部门发文要求行业规范自身，规范游戏市场，净化网络\n环境。我们作为行业 的一员，愿与广大用户一同维护健康、绿色的娱乐环\n境。",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$verticalAlign": 1
       }
     ],
@@ -4613,6 +5114,7 @@
       "g": 39,
       "b": 24
     },
+<<<<<<< HEAD
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 930.53,
@@ -4622,19 +5124,44 @@
       "__type__": "cc.Vec2",
       "x": 6,
       "y": 214
+=======
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "y": 1
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 725.31,
+      "height": 75
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -360,
+      "y": -50
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "New Label",
     "_parent": {
       "__id__": 115
+=======
+    "_name": "label3",
+    "_parent": {
+      "__id__": 128
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Label",
         "node": {
+<<<<<<< HEAD
           "__id__": 124
+=======
+          "__id__": 132
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_useOriginalSize": false,
         "_actualFontSize": 22,
@@ -4644,7 +5171,11 @@
           "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
         },
         "_isSystemFontUsed": false,
+<<<<<<< HEAD
         "_N$string": "      我们在此郑重声明：\n      一、每局游戏结算后的积分仅仅是游戏对战后的成绩记录，在每个房间游戏结束后积分清零，\n不具备货币属性，不可流通，也不具有任何价值。\n      二、游戏里的房卡只属于游戏里的一个道具，仅能开设游戏房间使用，不具备其他功能，没\n有任何用途。\n      三、搓搓麻将严禁用户之间出现任何赌博行为，对用户所拥有的积分、房卡等不提供任何形\n式的回购、直接或变相兑换现金、实物、相互赠予、转让等服务及相关功能。\n      四、任何人不得以任何方式利用本游戏开设网上赌局、从事坐庄设赌“抽水”等网络赌博活\n动；不得提供游戏积分交易、兑换现金、财物的服务。\n      五、搓搓麻将设立公众号和官方客服两种监督举报方式，欢迎广大用户监督举报，一旦发现\n涉嫌赌博等违规违法行为，我司将立即封停账号，并向相关部门举报。\n",
+=======
+        "_N$string": "      我们在此郑重声明：\n      一、每局游戏结算后的积分仅仅是游戏对战后的成绩记录，在每个房间\n游戏结束后积分清零，不具备货币属性，不可流通，也不具有任何价值。\n      二、游戏里的房卡只属于游戏里的一个道具，仅能开设游戏房间使用，\n不具备其他功能，没有任何用途。\n      三、搓搓麻将严禁用户之间出现任何赌博行为，对用户所拥有的积分、\n房卡等不提供任何形式的回购、直接或变相兑换现金、实物、相互赠予、转\n让等服务及相关功能。\n      四、任何人不得以任何方式利用本游戏开设网上赌局、从事坐庄设赌\n“抽水”等网络赌博活动；不得提供游戏积分交易、兑换现金、财物的服务。\n      五、搓搓麻将设立公众号和官方客服两种监督举报方式，欢迎广大用户\n监督举报，一旦发现涉嫌赌博等违规违法行为，我司将立即封停账号，并向\n相关部门举报。\n",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$verticalAlign": 1
       }
     ],
@@ -4654,6 +5185,7 @@
       "g": 39,
       "b": 24
     },
+<<<<<<< HEAD
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 945.31,
@@ -4663,19 +5195,44 @@
       "__type__": "cc.Vec2",
       "x": 8,
       "y": 13
+=======
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 748,
+      "height": 392
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -360,
+      "y": -308
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "New Label",
     "_parent": {
       "__id__": 115
+=======
+    "_name": "label4",
+    "_parent": {
+      "__id__": 128
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Label",
         "node": {
+<<<<<<< HEAD
           "__id__": 125
+=======
+          "__id__": 133
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_useOriginalSize": false,
         "_actualFontSize": 22,
@@ -4685,7 +5242,11 @@
           "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
         },
         "_isSystemFontUsed": false,
+<<<<<<< HEAD
         "_N$string": "      棋牌文化作为中国传统文化的组成部分之一，已成为国民生活中不可或缺的娱乐休闲活动。\n为了共同营造一个健康、绿色的娱乐环境，需要各位用户的支持与配合，希望各位玩家文明游戏，\n拒绝赌博！搓搓麻将将继续专注于为玩家提供更具本地特色棋牌游戏服务，提倡玩家健康游戏，\n阳光娱乐！",
+=======
+        "_N$string": "      棋牌文化作为中国传统文化的组成部分之一，已成为国民生活中不可或\n缺的娱乐休闲活动。为了共同营造一个健康、绿色的娱乐环境，需要各位用\n户的支持与配合，希望各位玩家文明游戏，拒绝赌博！搓搓麻将将继续专注\n于为玩家提供更具本地特色棋牌游戏服务，提倡玩家健康游戏，阳光娱乐！",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$verticalAlign": 1
       }
     ],
@@ -4695,28 +5256,53 @@
       "g": 39,
       "b": 24
     },
+<<<<<<< HEAD
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 946,
+=======
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 726,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 108
     },
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": 6,
       "y": -185
+=======
+      "x": -360,
+      "y": -535
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
     "__type__": "cc.Node",
+<<<<<<< HEAD
     "_name": "New Label",
     "_parent": {
       "__id__": 115
+=======
+    "_name": "label5",
+    "_parent": {
+      "__id__": 128
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_components": [
       {
         "__type__": "cc.Label",
         "node": {
+<<<<<<< HEAD
           "__id__": 126
+=======
+          "__id__": 134
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_useOriginalSize": false,
         "_actualFontSize": 22,
@@ -4737,6 +5323,13 @@
       "g": 39,
       "b": 24
     },
+<<<<<<< HEAD
+=======
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "y": 0.5
+    },
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 176,
@@ -4744,8 +5337,52 @@
     },
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": 356,
       "y": -285
+=======
+      "x": 191,
+      "y": -659
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "btnClose",
+    "_parent": {
+      "__id__": 116
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 135
+        },
+        "_spriteFrame": {
+          "__uuid__": "52uU+8CflHHY5PQb7IDTwu"
+        }
+      },
+      {
+        "__type__": "cc.Button",
+        "node": {
+          "__id__": 135
+        },
+        "transition": 3,
+        "zoomScale": 1.1,
+        "_N$target": {
+          "__id__": 135
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 78,
+      "height": 83
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 405,
+      "y": 265
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   }
 ]

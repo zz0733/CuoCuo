@@ -170,6 +170,13 @@ _CCSettings = {
                 "hall/texture/cjRoom6.png",
                 "cc.Texture2D"
             ],
+<<<<<<< HEAD
+=======
+            "6ctuAo8lFKKaK2K5NxGGm0": [
+                "hall/texture/cjRoomX.png",
+                "cc.Texture2D"
+            ],
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
             "c7E0p6+gpNraWyD41324Wc": [
                 "hall/texture/common.png",
                 "cc.Texture2D"

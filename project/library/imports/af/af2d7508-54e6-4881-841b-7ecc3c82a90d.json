@@ -2310,7 +2310,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 12.35,
+=======
+      "width": 0,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 24
     },
     "_rotationX": 0,
@@ -2347,7 +2351,11 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
+<<<<<<< HEAD
     "_N$string": "0",
+=======
+    "_N$string": "",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",
@@ -2951,7 +2959,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 12.35,
+=======
+      "width": 0,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 24
     },
     "_rotationX": 0,
@@ -2988,7 +3000,11 @@
     },
     "_isSystemFontUsed": false,
     "_spacingX": 0,
+<<<<<<< HEAD
     "_N$string": "0",
+=======
+    "_N$string": "",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_N$horizontalAlign": 1,
     "_N$verticalAlign": 1,
     "_N$fontFamily": "Arial",

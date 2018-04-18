@@ -27778,7 +27778,11 @@
     ],
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 96,
+=======
+      "width": 92,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 55
     },
     "_position": {
@@ -29128,7 +29132,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 79.2,
+=======
+      "width": 76,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 33
     },
     "_position": {
@@ -29187,7 +29195,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 80.76,
+=======
+      "width": 77.56,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 33
     },
     "_position": {
@@ -30815,7 +30827,11 @@
     ],
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 116,
+=======
+      "width": 112,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 40
     },
     "_position": {
@@ -31018,7 +31034,11 @@
     ],
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 116,
+=======
+      "width": 112,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 40
     },
     "_position": {

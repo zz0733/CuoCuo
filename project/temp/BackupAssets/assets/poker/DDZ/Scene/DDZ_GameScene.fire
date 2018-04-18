@@ -9323,7 +9323,11 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 4,
+<<<<<<< HEAD
       "height": 40
+=======
+      "height": 60
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_rotationX": 0,
     "_rotationY": 0,
@@ -9332,7 +9336,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
+<<<<<<< HEAD
       "y": -80
+=======
+      "y": 20
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -9350,12 +9358,23 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 40,
     "_fontSize": 40,
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
+=======
+    "_actualFontSize": 38,
+    "_fontSize": 38,
+    "_lineHeight": 60,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_spacingX": 0,
     "_N$string": "",
     "_N$horizontalAlign": 1,
@@ -9373,9 +9392,15 @@
     "_enabled": true,
     "_color": {
       "__type__": "cc.Color",
+<<<<<<< HEAD
       "r": 65,
       "g": 32,
       "b": 2,
+=======
+      "r": 207,
+      "g": 119,
+      "b": 39,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "a": 255
     },
     "_width": 2

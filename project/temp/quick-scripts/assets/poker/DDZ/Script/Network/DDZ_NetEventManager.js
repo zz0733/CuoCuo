@@ -145,7 +145,13 @@ DDZ_EventManager.PID_JIAOFEN_ACK = function (msg) {
         cc.YL.DDZGameManager.updateJiaoFen(msg);
         cc.YL.DDZAudio.playSpecialEffect(msg.retMsg.userId, "jiaofen_" + msg.fen);
         var UIROOT = cc.find("DDZ_UIROOT");
+<<<<<<< HEAD
         UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initDiFen(msg.fen);
+=======
+        if (msg.fen != 0) {
+            UIROOT.getChildByName("MainNode").getComponent("DDZ_Main").initDiFen(msg.fen);
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
 };
 DDZ_EventManager.PID_JIABEI = function (msg) {

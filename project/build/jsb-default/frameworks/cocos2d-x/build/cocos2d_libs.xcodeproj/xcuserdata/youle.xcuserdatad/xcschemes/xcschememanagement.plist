@@ -7,7 +7,11 @@
 		<key>libcocos2d Mac.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>5</integer>
+=======
+			<integer>4</integer>
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
 		</dict>
 		<key>libcocos2d iOS.xcscheme</key>
 		<dict>

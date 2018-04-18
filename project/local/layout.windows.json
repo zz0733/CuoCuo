@@ -5,9 +5,15 @@
       "main": true,
       "url": "app://editor/index.html",
       "windowType": "dockable",
+<<<<<<< HEAD
       "x": 92,
       "y": 22,
       "width": 1644,
+=======
+      "x": 66,
+      "y": 22,
+      "width": 1506,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 1058,
       "layout": {
         "children": [
@@ -18,23 +24,35 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 462,
+                "height": 482,
                 "type": "panel",
+<<<<<<< HEAD
                 "width": 340
+=======
+                "width": 249
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 502,
+                "height": 482,
                 "type": "panel",
+<<<<<<< HEAD
                 "width": 340
+=======
+                "width": 249
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               }
             ],
             "height": 967,
             "type": "dock-v",
+<<<<<<< HEAD
             "width": 340
+=======
+            "width": 249
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           },
           {
             "children": [
@@ -43,9 +61,15 @@
                 "children": [
                   "scene"
                 ],
+<<<<<<< HEAD
                 "height": 612,
                 "type": "panel",
                 "width": 988
+=======
+                "height": 482,
+                "type": "panel",
+                "width": 873
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               },
               {
                 "active": 0,
@@ -53,14 +77,24 @@
                   "console",
                   "timeline"
                 ],
+<<<<<<< HEAD
                 "height": 352,
                 "type": "panel",
                 "width": 988
+=======
+                "height": 482,
+                "type": "panel",
+                "width": 873
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               }
             ],
             "height": 967,
             "type": "dock-v",
+<<<<<<< HEAD
             "width": 988
+=======
+            "width": 873
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           },
           {
             "active": 0,
@@ -69,7 +103,7 @@
             ],
             "height": 967,
             "type": "panel",
-            "width": 304
+            "width": 372
           }
         ],
         "type": "dock-h"
@@ -94,8 +128,13 @@
     "store": {
       "x": 58,
       "y": 26,
+<<<<<<< HEAD
       "width": 1022,
       "height": 737
+=======
+      "width": 1242,
+      "height": 862
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "builder": {
       "x": 104,
@@ -110,10 +149,23 @@
       "height": 522
     },
     "project-settings": {
+<<<<<<< HEAD
       "x": 393,
       "y": 230,
       "width": 584,
       "height": 548
+=======
+      "x": 464,
+      "y": 180,
+      "width": 584,
+      "height": 548
+    },
+    "hot-update-tools": {
+      "x": 299,
+      "y": 102,
+      "width": 900,
+      "height": 922
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   }
 }

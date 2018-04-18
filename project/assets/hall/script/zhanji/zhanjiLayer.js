@@ -47,6 +47,7 @@ cc.Class({
         this.btnView.on('click', this.onBtnViewClick, this);
         this.btnClose.on('click', this.onBtnCloseClick, this);
         //todo
+<<<<<<< HEAD
         // let intranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet] ? true : false;
         let ddz = this.toggleGroupNode.getChildByName('DDZ');
         // if (intranet) {
@@ -54,6 +55,15 @@ cc.Class({
         // } else {
             ddz.active = false;
         // }
+=======
+        let intranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet] ? true : false;
+        let ddz = this.toggleGroupNode.getChildByName('DDZ');
+        if (intranet) {
+            ddz.active = true;
+        } else {
+            ddz.active = false;
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
 
     init (gameType, data) {

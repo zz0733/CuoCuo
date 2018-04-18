@@ -364,8 +364,13 @@ cc.Class({
                 }.bind(this));
                 break;
             case 2:
+<<<<<<< HEAD
                 fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
                 return;
+=======
+                // fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
+                // return;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
                 // let sgNode = cc.instantiate(this.createSanGongRoomPre);
                 // sgNode.parent = this.node;
                 fun.net.pSend('RoomCard', { GameType: gameConst.gameType.DDZ }, function (data) {

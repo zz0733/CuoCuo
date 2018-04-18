@@ -35,7 +35,10 @@
         "node": {
           "__id__": 2
         },
+<<<<<<< HEAD
         "enableUpdate": false,
+=======
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "musicValume": 0.9
       },
       {

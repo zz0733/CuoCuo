@@ -1815,7 +1815,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -266,
+<<<<<<< HEAD
       "y": 189
+=======
+      "y": 187
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
@@ -1995,7 +1999,12 @@
         },
         "checkMark": {
           "__id__": 44
+<<<<<<< HEAD
         }
+=======
+        },
+        "_N$isChecked": false
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       }
     ],
     "_prefab": {
@@ -2016,7 +2025,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -266,
+<<<<<<< HEAD
       "y": 116
+=======
+      "y": 114
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
@@ -2060,6 +2073,10 @@
     "_parent": {
       "__id__": 41
     },
+<<<<<<< HEAD
+=======
+    "_active": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_components": [
       {
         "__id__": 44
@@ -2150,7 +2167,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 128,
+=======
+      "width": 132,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 40
     },
     "_position": {
@@ -2211,7 +2232,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -266,
+<<<<<<< HEAD
       "y": 43
+=======
+      "y": 41
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
@@ -2406,7 +2431,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -266,
+<<<<<<< HEAD
       "y": -30
+=======
+      "y": -32
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {
@@ -2890,13 +2919,22 @@
           "__id__": 65
         },
         "_useOriginalSize": false,
+<<<<<<< HEAD
         "_actualFontSize": 28,
         "_fontSize": 28,
+=======
+        "_actualFontSize": 26,
+        "_fontSize": 26,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$file": {
           "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
         },
         "_isSystemFontUsed": false,
+<<<<<<< HEAD
         "_N$string": "分享记录",
+=======
+        "_N$string": "未领取记录",
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$horizontalAlign": 1,
         "_N$verticalAlign": 1
       },
@@ -2926,7 +2964,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 116,
+=======
+      "width": 134,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 40
     },
     "_position": {
@@ -4225,7 +4267,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 89,
+=======
+      "width": 85,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 40
     },
     "_position": {
@@ -4344,7 +4390,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 89,
+=======
+      "width": 85,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 40
     },
     "_position": {
@@ -5436,7 +5486,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 555,
+=======
+      "width": 584,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 345
     }
   },
@@ -5520,7 +5574,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 490,
+=======
+      "width": 520,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 280
     }
   },
@@ -5555,7 +5613,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 458,
+=======
+      "width": 481,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 147
     },
     "_position": {
@@ -5989,9 +6051,15 @@
           "__id__": 133
         },
         "_useOriginalSize": false,
+<<<<<<< HEAD
         "_actualFontSize": 28,
         "_fontSize": 28,
         "_lineHeight": 48,
+=======
+        "_actualFontSize": 26,
+        "_fontSize": 26,
+        "_lineHeight": 35,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$file": {
           "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
         },
@@ -6020,15 +6088,25 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 451.75,
       "height": 48
+=======
+      "width": 518.75,
+      "height": 77
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_scaleX": 0.9,
     "_scaleY": 0.9,
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": -3,
       "y": 29
+=======
+      "x": -1,
+      "y": 21
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   }
 ]

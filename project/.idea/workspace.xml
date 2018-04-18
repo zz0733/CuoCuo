@@ -2,18 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="4db54bc4-3ea0-4c79-aade-a3d8a69e371d" name="Default" comment="">
+<<<<<<< HEAD
       <change type="DELETED" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/ios/Icon.png" afterPath="" />
+=======
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/cuocuo.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/cuocuo.xcworkspace/xcshareddata" afterPath="" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-hdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-mdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-mdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/res/mipmap-xxhdpi/ic_launcher.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/cuocuo.xcworkspace/xcuserdata/szm.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.ios_mac/cuocuo.xcworkspace/xcuserdata/szm.xcuserdatad/UserInterfaceState.xcuserstate" />
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" afterPath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" afterPath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_AllGameOverItem.prefab" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_AllGameOverItem.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/scene/login.fire" afterPath="$PROJECT_DIR$/assets/hall/scene/login.fire" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/config/GameCfg.js" afterPath="$PROJECT_DIR$/assets/hall/script/config/GameCfg.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/hall/hall.js" afterPath="$PROJECT_DIR$/assets/hall/script/hall/hall.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" afterPath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" afterPath="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_OneGameOver.prefab" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_OneGameOver.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_Pass.prefab" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_Pass.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_Ready.prefab" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Prefab/DDZ_Ready.prefab" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Scene/DDZ_GameScene.fire" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Scene/DDZ_GameScene.fire" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Scene/DDZ_ReplayScene.fire" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Scene/DDZ_ReplayScene.fire" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" afterPath="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build.json" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/android_gradle_build.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_command.txt" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_command.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_output.txt" afterPath="$PROJECT_DIR$/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/.externalNativeBuild/ndkBuild/debug/armeabi-v7a/ndkBuild_build_output.txt" />
@@ -58,16 +77,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_GameManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
               <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+=======
+      <file leaf-file-name="GameCfg.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/config/GameCfg.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_PokerTip.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,60 +122,109 @@
                 <element signature="e#24355#26661#0" expanded="false" />
                 <element signature="e#26699#27074#0" expanded="false" />
               </folding>
+=======
+      <file leaf-file-name="initFun.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/initFun.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1425">
+              <caret line="95" column="28" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="28" />
+              <folding />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="zhanjiLayer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="166">
               <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+=======
+      <file leaf-file-name="login.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/login/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="555">
+              <caret line="37" column="57" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="57" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="zhanjiDetailItem.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="431">
               <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+=======
+      <file leaf-file-name="hotUpdate.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/hotUpdate.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="566">
+              <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_PlayerInfoNode.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="361">
               <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+=======
+      <file leaf-file-name="hall.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/hall/hall.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="404" column="36" selection-start-line="404" selection-start-column="36" selection-end-line="404" selection-end-column="36" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="841">
               <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+=======
+      <file leaf-file-name="DDZ_NetEventManager.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="177" column="35" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_OutCard.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_OutCard.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="630">
               <caret line="42" column="17" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+=======
+      <file leaf-file-name="DDZ_GameAction.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="255" column="69" selection-start-line="255" selection-start-column="69" selection-end-line="255" selection-end-column="69" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_PokerTouchEvent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -163,16 +240,31 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="421">
               <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="37" />
+=======
+      <file leaf-file-name="DDZ_Main.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="303" column="29" selection-start-line="303" selection-start-column="29" selection-end-line="303" selection-end-column="29" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="DDZ_NetEventManager.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1815">
               <caret line="121" column="34" selection-start-line="121" selection-start-column="34" selection-end-line="121" selection-end-column="34" />
+=======
+      <file leaf-file-name="funNetMgr.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/funNetMgr.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2595">
+              <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
               <folding />
             </state>
           </provider>
@@ -183,7 +275,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_Ready.js" />
+=======
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_OutCard.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_Pass.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_JiaBei.js" />
@@ -206,6 +301,7 @@
         <option value="$PROJECT_DIR$/assets/hall/script/login/globalUI.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_DiPai.js" />
         <option value="$PROJECT_DIR$/assets/hall/script/public/interact.js" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOver.js" />
         <option value="$PROJECT_DIR$/assets/hall/script/public/set.js" />
@@ -234,6 +330,37 @@
         <option value="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js" />
         <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" />
+=======
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOver.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/set.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_FaiPaiAction.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Replay/DDZ_ReplayMain.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/publicVoiceBtn.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Common/DDZ_Sound.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/createRoom/createDDZRoom.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Chat.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Config/DDZ_MsgConfig.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfInfo.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerLeftInfo.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerRightInfo.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_PlayerGPS.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameManager.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/public/chat.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfPoker.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Setting.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiLayer.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/zhanji/zhanjiDetailItem.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/config/GameCfg.js" />
+        <option value="$PROJECT_DIR$/assets/hall/script/hall/hall.js" />
+        <option value="$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       </list>
     </option>
   </component>
@@ -292,6 +419,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="project" />
@@ -324,6 +452,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+=======
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -465,11 +595,21 @@
       <workItem from="1523856787356" duration="10463000" />
       <workItem from="1523930563606" duration="5993000" />
       <workItem from="1523943023056" duration="13992000" />
+<<<<<<< HEAD
+=======
+      <workItem from="1524019029239" duration="433000" />
+      <workItem from="1524020767489" duration="1949000" />
+      <workItem from="1524030392751" duration="2538000" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="353455000" />
+=======
+    <option name="totallyTimeSpent" value="358375000" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   </component>
   <component name="ToolWindowManager">
     <frame x="676" y="22" width="1244" height="1058" extended-state="0" />
@@ -511,6 +651,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -561,12 +702,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/mahjong/script/ui/mjPlayerUI.js">
+=======
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/config/GameCfg.js">
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="80" column="4" selection-start-line="80" selection-start-column="4" selection-end-line="80" selection-end-column="4" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/mahjong/script/game/common/mjPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="481">
@@ -585,11 +730,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/initFun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="28" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/login/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="57" />
+          <folding />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_FaiPaiAction.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="650">
           <caret line="47" column="9" selection-start-line="47" selection-start-column="9" selection-end-line="47" selection-end-column="9" />
         </state>
@@ -606,11 +767,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="511">
           <caret line="226" column="12" selection-start-line="226" selection-start-column="12" selection-end-line="226" selection-end-column="12" />
+=======
+        <state relative-caret-position="900">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_Ready.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="585">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
         </state>
@@ -627,12 +794,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="77">
           <caret line="493" column="6" selection-start-line="493" selection-start-column="6" selection-end-line="493" selection-end-column="40" />
+=======
+        <state relative-caret-position="1725">
+          <caret line="115" column="22" selection-start-line="115" selection-start-column="22" selection-end-line="115" selection-end-column="22" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/hall/script/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="510">
           <caret line="48" column="42" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="42" />
         </state>
@@ -879,12 +1051,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="571">
           <caret line="209" column="45" selection-start-line="209" selection-start-column="45" selection-end-line="209" selection-end-column="45" />
+=======
+        <state relative-caret-position="2595">
+          <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_OutCard.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="630">
           <caret line="42" column="17" selection-start-line="42" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
@@ -895,20 +1072,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
           <caret line="82" column="6" selection-start-line="82" selection-start-column="6" selection-end-line="82" selection-end-column="37" />
+=======
+        <state relative-caret-position="1815">
+          <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/config/GameCfg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Poker/DDZ_PokerTouchEvent.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="170" column="0" selection-start-line="170" selection-start-column="0" selection-end-line="170" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/initFun.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1425">
+          <caret line="95" column="28" selection-start-line="95" selection-start-column="16" selection-end-line="95" selection-end-column="28" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_OneGameOver.js">
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="345">
           <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
@@ -921,26 +1117,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="121" column="25" selection-start-line="121" selection-start-column="25" selection-end-line="121" selection-end-column="25" />
+=======
+        <state relative-caret-position="555">
+          <caret line="37" column="57" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/comm/hotUpdate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="69" column="63" selection-start-line="69" selection-start-column="63" selection-end-line="69" selection-end-column="63" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
+          <folding />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="841">
           <caret line="405" column="0" selection-start-line="405" selection-start-column="0" selection-end-line="405" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/fun/funNetMgr.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2595">
+          <caret line="173" column="34" selection-start-line="173" selection-start-column="34" selection-end-line="173" selection-end-column="34" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Gameover/DDZ_AllGameOverItem.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="526">
           <caret line="40" column="46" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/hall/script/hall/hall.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="404" column="36" selection-start-line="404" selection-start-column="36" selection-end-line="404" selection-end-column="36" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_PokerTip.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="376">
@@ -973,10 +1196,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="48" column="14" selection-start-line="48" selection-start-column="14" selection-end-line="48" selection-end-column="14" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Network/DDZ_NetEventManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="177" column="35" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="35" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerSelfCloseUpPoker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -989,14 +1219,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="76" column="48" selection-start-line="76" selection-start-column="48" selection-end-line="76" selection-end-column="48" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Game/DDZ_GameAction.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="255" column="69" selection-start-line="255" selection-start-column="69" selection-end-line="255" selection-end-column="69" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Player/DDZ_PlayerInfoNode.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="105" column="49" selection-start-line="105" selection-start-column="49" selection-end-line="105" selection-end-column="49" />
+=======
+    <entry file="file://$PROJECT_DIR$/assets/poker/DDZ/Script/Desk/DDZ_Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="303" column="29" selection-start-line="303" selection-start-column="29" selection-end-line="303" selection-end-column="29" />
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
           <folding />
         </state>
       </provider>

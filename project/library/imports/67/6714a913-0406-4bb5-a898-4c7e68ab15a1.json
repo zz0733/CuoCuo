@@ -114,8 +114,13 @@
       "__id__": 2
     },
     "_enabled": true,
+<<<<<<< HEAD
     "loginUrl": 4,
     "loginType": 2,
+=======
+    "loginUrl": 0,
+    "loginType": 0,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "enableUpdate": true,
     "voiceLanguage": 0,
     "soundValume": 0.8,

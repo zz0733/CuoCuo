@@ -4,6 +4,7 @@
     "name": "dz_zt6",
     "texture": "a9c+BYF3tKXqw96fOJksyB",
     "rect": [
+<<<<<<< HEAD
       365,
       218,
       145,
@@ -17,5 +18,21 @@
       145,
       74
     ]
+=======
+      404,
+      218,
+      77,
+      98
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      77,
+      98
+    ],
+    "rotated": 1
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   }
 }

@@ -4,8 +4,13 @@
     "name": "dz_jiesuan_icon1",
     "texture": "a9c+BYF3tKXqw96fOJksyB",
     "rect": [
+<<<<<<< HEAD
       154,
       241,
+=======
+      365,
+      269,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       108,
       23
     ],

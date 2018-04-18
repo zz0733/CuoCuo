@@ -95,9 +95,15 @@ cc.Class({
             }
         }
         //todo
+<<<<<<< HEAD
         // if(this.node.getChildByName("head6").active == false){
         //     this.node.getChildByName("BtnBG").active = true;
         // }
+=======
+        if (this.node.getChildByName("head6").active == false) {
+            this.node.getChildByName("BtnBG").active = true;
+        }
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     onBtnShareClick: function onBtnShareClick() {
         Audio.playEffect('hall', 'button_nomal.mp3');

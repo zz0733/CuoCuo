@@ -4,8 +4,13 @@
     "name": "dz_zt2",
     "texture": "a9c+BYF3tKXqw96fOJksyB",
     "rect": [
+<<<<<<< HEAD
       179,
       347,
+=======
+      2,
+      503,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       131,
       77
     ],

@@ -809,12 +809,23 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 23,
     "_fontSize": 30,
     "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
+=======
+    "_actualFontSize": 21,
+    "_fontSize": 30,
+    "_lineHeight": 30,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_spacingX": 0,
     "_N$string": "17",
     "_N$horizontalAlign": 1,
@@ -1333,12 +1344,23 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 23,
     "_fontSize": 30,
     "_lineHeight": 30,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
+=======
+    "_actualFontSize": 21,
+    "_fontSize": 30,
+    "_lineHeight": 30,
+    "_enableWrapText": true,
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_spacingX": 0,
     "_N$string": "17",
     "_N$horizontalAlign": 1,
@@ -2028,8 +2050,13 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 20,
     "_fontSize": 40,
+=======
+    "_actualFontSize": 14,
+    "_fontSize": 27,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -2191,8 +2218,13 @@
     "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": -606.6,
       "y": 188.9
+=======
+      "x": -608,
+      "y": 192.1
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2378,7 +2410,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -572.4,
+<<<<<<< HEAD
       "y": 90.7
+=======
+      "y": 88.7
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2559,8 +2595,13 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": -551.5,
       "y": 61.4
+=======
+      "x": -556.5,
+      "y": 60.4
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2578,8 +2619,13 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 28,
     "_fontSize": 40,
+=======
+    "_actualFontSize": 23,
+    "_fontSize": 33,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -3104,8 +3150,13 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 22,
     "_fontSize": 40,
+=======
+    "_actualFontSize": 15,
+    "_fontSize": 27,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -3360,8 +3411,13 @@
     "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": 572,
       "y": 190.9
+=======
+      "x": 570.2,
+      "y": 192.7
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3547,7 +3603,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 592.7,
+<<<<<<< HEAD
       "y": 90.5
+=======
+      "y": 88.5
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3728,8 +3788,13 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": 613.6,
       "y": 61.9
+=======
+      "x": 608.6,
+      "y": 60.9
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -3747,8 +3812,13 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 28,
     "_fontSize": 40,
+=======
+    "_actualFontSize": 23,
+    "_fontSize": 33,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -4117,8 +4187,13 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 27,
     "_fontSize": 40,
+=======
+    "_actualFontSize": 19,
+    "_fontSize": 28,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_lineHeight": 40,
     "_enableWrapText": true,
     "_N$file": {
@@ -4653,7 +4728,11 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": -593.5,
+<<<<<<< HEAD
       "y": -282.2
+=======
+      "y": -283.2
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -4741,8 +4820,13 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
+<<<<<<< HEAD
       "x": -552.3,
       "y": -332.4
+=======
+      "x": -554.3,
+      "y": -335.4
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -6565,7 +6649,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 28.13,
+=======
+      "width": 32.52,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 23
     },
     "_rotationX": 0,
@@ -6597,8 +6685,15 @@
     "_fontSize": 23,
     "_lineHeight": 23,
     "_enableWrapText": true,
+<<<<<<< HEAD
     "_N$file": null,
     "_isSystemFontUsed": true,
+=======
+    "_N$file": {
+      "__uuid__": "beca134a-22f8-44e7-ac66-b43bede617de"
+    },
+    "_isSystemFontUsed": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_spacingX": 0,
     "_N$string": "X1",
     "_N$horizontalAlign": 1,

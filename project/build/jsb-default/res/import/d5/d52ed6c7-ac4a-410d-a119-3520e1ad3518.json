@@ -2899,6 +2899,10 @@
         "__id__": 61
       }
     ],
+<<<<<<< HEAD
+=======
+    "_active": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_components": [
       {
         "__type__": "cc.Sprite",

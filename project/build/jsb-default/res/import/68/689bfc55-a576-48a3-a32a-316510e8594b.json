@@ -4,8 +4,13 @@
     "name": "dz_fapai",
     "texture": "a9c+BYF3tKXqw96fOJksyB",
     "rect": [
+<<<<<<< HEAD
       444,
       372,
+=======
+      390,
+      297,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       65,
       96
     ],
@@ -16,6 +21,11 @@
     "originalSize": [
       65,
       96
+<<<<<<< HEAD
     ]
+=======
+    ],
+    "rotated": 1
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   }
 }

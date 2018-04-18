@@ -60,7 +60,11 @@
           "__id__": 2
         },
         "_spriteFrame": {
+<<<<<<< HEAD
           "__uuid__": "ffT3zc7utLxbIlWYd3sZay"
+=======
+          "__uuid__": "f35g204aFK4atmGgk5nywa"
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_sizeMode": 0
       },
@@ -163,9 +167,15 @@
         },
         "_color": {
           "__type__": "cc.Color",
+<<<<<<< HEAD
           "r": 78,
           "g": 62,
           "b": 118
+=======
+          "r": 74,
+          "g": 90,
+          "b": 114
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         },
         "_width": 2
       }

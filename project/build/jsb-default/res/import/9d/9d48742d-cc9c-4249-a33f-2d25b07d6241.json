@@ -44,7 +44,11 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
+<<<<<<< HEAD
       "width": 86,
+=======
+      "width": 76,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
       "height": 60
     },
     "_position": {
@@ -66,9 +70,19 @@
           "__id__": 2
         },
         "_useOriginalSize": false,
+<<<<<<< HEAD
         "_actualFontSize": 26,
         "_fontSize": 26,
         "_lineHeight": 26,
+=======
+        "_actualFontSize": 24,
+        "_fontSize": 24,
+        "_lineHeight": 26,
+        "_N$file": {
+          "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+        },
+        "_isSystemFontUsed": false,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
         "_N$string": "看数",
         "_N$verticalAlign": 1,
         "_N$overflow": 2
@@ -91,12 +105,21 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 52,
+<<<<<<< HEAD
       "height": 26
     },
     "_position": {
       "__type__": "cc.Vec2",
       "x": 17.4,
       "y": 7.4
+=======
+      "height": 34
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": 16.4,
+      "y": 5.4
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   }
 ]

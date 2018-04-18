@@ -291,9 +291,13 @@
       "__id__": 6
     },
     "_enabled": true,
+<<<<<<< HEAD
     "_spriteFrame": {
       "__uuid__": "3c2e7a8f-fc97-4ab3-b5f7-fde54721c955"
     },
+=======
+    "_spriteFrame": null,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_type": 0,
     "_sizeMode": 1,
     "_fillType": 0,
@@ -307,9 +311,13 @@
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
+<<<<<<< HEAD
     "_atlas": {
       "__uuid__": "62d985ba-f662-4cb2-a5bd-8433972176ca"
     }
+=======
+    "_atlas": null
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -419,9 +427,13 @@
       "__id__": 2
     },
     "_enabled": true,
+<<<<<<< HEAD
     "_spriteFrame": {
       "__uuid__": "6427aa6c-2400-4f97-9140-6a6335acadd9"
     },
+=======
+    "_spriteFrame": null,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_type": 0,
     "_sizeMode": 0,
     "_fillType": 0,
@@ -435,9 +447,13 @@
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
+<<<<<<< HEAD
     "_atlas": {
       "__uuid__": "62d985ba-f662-4cb2-a5bd-8433972176ca"
     }
+=======
+    "_atlas": null
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -603,9 +619,13 @@
       "__id__": 17
     },
     "_enabled": true,
+<<<<<<< HEAD
     "_spriteFrame": {
       "__uuid__": "80a39fbe-37dd-4a36-a2c3-c1ba0e2e7d53"
     },
+=======
+    "_spriteFrame": null,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_type": 0,
     "_sizeMode": 1,
     "_fillType": 0,
@@ -619,9 +639,13 @@
     "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
+<<<<<<< HEAD
     "_atlas": {
       "__uuid__": "62d985ba-f662-4cb2-a5bd-8433972176ca"
     }
+=======
+    "_atlas": null
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -823,7 +847,11 @@
     },
     "_enabled": true,
     "pokerAtals": {
+<<<<<<< HEAD
       "__uuid__": "62d985ba-f662-4cb2-a5bd-8433972176ca"
+=======
+      "__uuid__": "7e01b328-5a2e-4563-a796-c336d2cc4915"
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     }
   },
   {

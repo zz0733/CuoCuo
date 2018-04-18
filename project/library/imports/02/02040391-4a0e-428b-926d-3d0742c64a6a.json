@@ -639,8 +639,13 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
+<<<<<<< HEAD
     "_actualFontSize": 35,
     "_fontSize": 35,
+=======
+    "_actualFontSize": 36,
+    "_fontSize": 36,
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
     "_lineHeight": 40,
     "_enableWrapText": false,
     "_N$file": {

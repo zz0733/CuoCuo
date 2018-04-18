@@ -61,12 +61,21 @@ cc.Class({
     },
     checkRoomCard: function checkRoomCard() {
         fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangHuangYan }, function (data) {
+<<<<<<< HEAD
             if (data.TollCardCnt !== undefined) {
                 this.btnGame1.getChildByName('num').getComponent(cc.Label).string = data.TollCardCnt;
             }
             fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangWenLing }, function (data) {
                 if (data.TollCardCnt !== undefined) {
                     this.btnGame2.getChildByName('num').getComponent(cc.Label).string = data.TollCardCnt;
+=======
+            if (data.TollCardCnt !== undefined || data.Total) {
+                this.btnGame1.getChildByName('num').getComponent(cc.Label).string = data.TollCardCnt || data.Total;
+            }
+            fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangWenLing }, function (data) {
+                if (data.TollCardCnt !== undefined || data.Total) {
+                    this.btnGame2.getChildByName('num').getComponent(cc.Label).string = data.TollCardCnt || data.Total;
+>>>>>>> f8a5a6134d18df4ab898a5e431e5f0b36bc013ac
                 }
             }.bind(this));
         }.bind(this));
