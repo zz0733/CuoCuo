@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shengming",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      690,
+      497,
+      197,
+      62
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      197,
+      62
+    ],
+    "rotated": 1
+  }
+}

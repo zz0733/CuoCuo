@@ -1,0 +1,47 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "puke",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "puke",
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_spriteFrame": {
+          "__uuid__": "3f4booWIBJFY02vWgvc5t9"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "f1YSAjPWpDVJCiC4ubaB9x"
+      },
+      "fileId": "1eh0MT+PlNzoGHXF3VpZLE"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 160,
+      "height": 230
+    },
+    "_scaleX": 0.6,
+    "_scaleY": 0.6,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -781,
+      "y": 176
+    }
+  }
+]

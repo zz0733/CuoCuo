@@ -29,14 +29,15 @@ cc.Class({
         this.btnClose.on('click', this.onBtnCloseClick, this);
     },
 
-    setDetail(data) {
-        if (data && data.length !== 0) {
+    setDetail(data, gameType) {
+        if (!data) return;
+        if (data.length !== 0) {
             this.noCard.active = false;
             for (let i in data) {
                 let item = cc.instantiate(this.itemPrefab);
-                item.setPosition(cc.p(0, -item.getContentSize().height * (parseInt(i) + 0.5)));
+                item.setPosition(cc.p(18, -item.getContentSize().height * (parseInt(i) + 0.5)));
                 item.parent = this.content;
-                item.getComponent('freeCardItem').setData(data[i]);
+                item.getComponent('freeCardItem').setData(data[i], gameType);
             }
         }
         let itemsHight = 68 * data.length;

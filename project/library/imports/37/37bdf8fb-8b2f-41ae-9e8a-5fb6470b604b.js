@@ -72,14 +72,14 @@ cc.Class({
 
         fun.event.add('GlobalUIMinSingleButtonPop', 'MinSingleButtonPop', function (data) {
             var mnode = cc.instantiate(this.minSingleButtonPre);
-            mnode.parent = cc.director.getScene().getChildByName('Canvas');
+            mnode.parent = cc.director.getScene().getChildByName('Canvas') || cc.director.getScene().getChildByName('DDZ_UIROOT') || cc.director.getScene().getChildByName('DDZ_Replay');
             mnode.setSiblingIndex(9999);
             mnode.getComponent('minSingleButtonPop').init(data);
         }.bind(this));
 
         fun.event.add('GlobalUIMinDoubleButtonPop', 'MinDoubleButtonPop', function (data) {
             var mnode = cc.instantiate(this.minDoubleButtonPre);
-            mnode.parent = cc.director.getScene().getChildByName('Canvas');
+            mnode.parent = cc.director.getScene().getChildByName('Canvas') || cc.director.getScene().getChildByName('DDZ_UIROOT') || cc.director.getScene().getChildByName('DDZ_Replay');
             mnode.setSiblingIndex(9999);
             mnode.getComponent('minDoubleButtonPop').init(data);
         }.bind(this));

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_shop_bgkuang",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      518,
+      924,
+      237,
+      38
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      239,
+      38
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_dajiesuan_11",
+    "texture": "63f2891c-c2ef-4b9c-9b0c-30478cd31041",
+    "atlas": "272a01d7-11d3-4360-98d3-9d3c779358d9",
+    "rect": [
+      57,
+      305,
+      25,
+      71
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      25,
+      71
+    ],
+    "rotated": 1,
+    "capInsets": [
+      7,
+      11,
+      6,
+      18
+    ]
+  }
+}

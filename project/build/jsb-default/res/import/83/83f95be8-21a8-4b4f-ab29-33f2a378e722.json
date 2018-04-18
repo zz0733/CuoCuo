@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_3",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      388,
+      495,
+      241,
+      99
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      241,
+      99
+    ],
+    "rotated": 1,
+    "capInsets": [
+      31,
+      17,
+      22,
+      25
+    ]
+  }
+}

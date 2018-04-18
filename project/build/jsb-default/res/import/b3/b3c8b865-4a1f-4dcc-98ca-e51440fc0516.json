@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cjRoomd",
+    "texture": "f4tO8zyyRGp5z4tqxnZ94w",
+    "rect": [
+      48,
+      374,
+      53,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      53,
+      53
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_shop",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      872,
+      588,
+      162,
+      70
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      162,
+      70
+    ],
+    "rotated": 1
+  }
+}

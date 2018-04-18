@@ -16,9 +16,6 @@
     "gps2": {
       "__uuid__": "707fce4d-b669-428c-aaa2-86a7b7a8faea"
     },
-    "gps_ditu": {
-      "__uuid__": "8bf42cea-bb9c-4d33-928f-a63a7d4a2f94"
-    },
     "gps_touxiangdikuang": {
       "__uuid__": "079bba05-6e45-4179-bc68-1e66c7b7da16"
     },
@@ -141,9 +138,6 @@
     },
     "pk_tishi_di3": {
       "__uuid__": "719d90bb-d48f-4928-9160-b90ea15c46ec"
-    },
-    "pk_tishi_huafu2": {
-      "__uuid__": "c4dcaeb6-5b2a-4878-b3ce-3d251058899c"
     },
     "pk_tishi_huanfu": {
       "__uuid__": "9b830566-360f-4512-96e7-0e6ace079f8b"

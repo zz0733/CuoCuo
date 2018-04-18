@@ -1,0 +1,307 @@
+
+Chuntian.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Chuntian
+  rotate: false
+  xy: 372, 114
+  size: 272, 140
+  orig: 368, 147
+  offset: 48, 4
+  index: -1
+Fanchun
+  rotate: false
+  xy: 2, 107
+  size: 368, 147
+  orig: 368, 147
+  offset: 0, 0
+  index: -1
+Hua1
+  rotate: false
+  xy: 646, 148
+  size: 114, 106
+  orig: 118, 110
+  offset: 2, 2
+  index: -1
+Hua10
+  rotate: false
+  xy: 847, 110
+  size: 69, 65
+  orig: 73, 69
+  offset: 2, 2
+  index: -1
+Hua11
+  rotate: false
+  xy: 267, 39
+  size: 70, 66
+  orig: 74, 70
+  offset: 2, 2
+  index: -1
+Hua12
+  rotate: false
+  xy: 466, 17
+  size: 42, 42
+  orig: 46, 46
+  offset: 2, 2
+  index: -1
+Hua13
+  rotate: false
+  xy: 918, 180
+  size: 63, 74
+  orig: 67, 78
+  offset: 2, 2
+  index: -1
+Hua14
+  rotate: true
+  xy: 510, 39
+  size: 29, 59
+  orig: 33, 63
+  offset: 2, 2
+  index: -1
+Hua15
+  rotate: false
+  xy: 458, 61
+  size: 50, 51
+  orig: 54, 55
+  offset: 2, 2
+  index: -1
+Hua16
+  rotate: false
+  xy: 571, 2
+  size: 39, 36
+  orig: 43, 40
+  offset: 2, 2
+  index: -1
+Hua17
+  rotate: false
+  xy: 847, 177
+  size: 69, 77
+  orig: 73, 81
+  offset: 2, 2
+  index: -1
+Hua18
+  rotate: true
+  xy: 339, 41
+  size: 64, 60
+  orig: 68, 64
+  offset: 2, 2
+  index: -1
+Hua19
+  rotate: false
+  xy: 631, 72
+  size: 29, 30
+  orig: 33, 34
+  offset: 2, 2
+  index: -1
+Hua2
+  rotate: false
+  xy: 2, 20
+  size: 90, 85
+  orig: 94, 89
+  offset: 2, 2
+  index: -1
+Hua20
+  rotate: false
+  xy: 762, 164
+  size: 83, 90
+  orig: 87, 94
+  offset: 2, 2
+  index: -1
+Hua22
+  rotate: false
+  xy: 662, 76
+  size: 26, 26
+  orig: 30, 30
+  offset: 2, 2
+  index: -1
+Hua23
+  rotate: false
+  xy: 182, 43
+  size: 83, 62
+  orig: 87, 66
+  offset: 2, 2
+  index: -1
+Hua3
+  rotate: false
+  xy: 763, 123
+  size: 38, 39
+  orig: 42, 43
+  offset: 2, 2
+  index: -1
+Hua4
+  rotate: true
+  xy: 542, 8
+  size: 29, 25
+  orig: 33, 29
+  offset: 2, 2
+  index: -1
+Hua5
+  rotate: false
+  xy: 94, 27
+  size: 86, 78
+  orig: 90, 82
+  offset: 2, 2
+  index: -1
+Hua6
+  rotate: false
+  xy: 918, 129
+  size: 63, 49
+  orig: 67, 53
+  offset: 2, 2
+  index: -1
+Hua7
+  rotate: true
+  xy: 763, 102
+  size: 19, 30
+  orig: 23, 34
+  offset: 2, 2
+  index: -1
+Hua8
+  rotate: false
+  xy: 510, 7
+  size: 30, 30
+  orig: 34, 34
+  offset: 2, 2
+  index: -1
+Hua9
+  rotate: true
+  xy: 918, 93
+  size: 34, 63
+  orig: 38, 67
+  offset: 2, 2
+  index: -1
+Ye11_1
+  rotate: false
+  xy: 94, 2
+  size: 45, 23
+  orig: 49, 27
+  offset: 2, 2
+  index: -1
+Ye11_2
+  rotate: false
+  xy: 690, 76
+  size: 26, 26
+  orig: 30, 30
+  offset: 2, 2
+  index: -1
+Ye13_1
+  rotate: false
+  xy: 401, 27
+  size: 63, 32
+  orig: 67, 36
+  offset: 2, 2
+  index: -1
+Ye13_2
+  rotate: true
+  xy: 298, 9
+  size: 28, 41
+  orig: 32, 45
+  offset: 2, 2
+  index: -1
+Ye1_1
+  rotate: false
+  xy: 182, 2
+  size: 61, 39
+  orig: 65, 43
+  offset: 2, 2
+  index: -1
+Ye1_2
+  rotate: false
+  xy: 713, 104
+  size: 48, 42
+  orig: 52, 46
+  offset: 2, 2
+  index: -1
+Ye20_1
+  rotate: true
+  xy: 646, 104
+  size: 42, 65
+  orig: 46, 69
+  offset: 2, 2
+  index: -1
+Ye20_2
+  rotate: false
+  xy: 510, 70
+  size: 59, 42
+  orig: 63, 46
+  offset: 2, 2
+  index: -1
+Ye20_3
+  rotate: false
+  xy: 571, 70
+  size: 58, 42
+  orig: 62, 46
+  offset: 2, 2
+  index: -1
+Ye20_4
+  rotate: true
+  xy: 983, 193
+  size: 61, 39
+  orig: 65, 43
+  offset: 2, 2
+  index: -1
+Ye21
+  rotate: true
+  xy: 571, 40
+  size: 28, 48
+  orig: 32, 52
+  offset: 2, 2
+  index: -1
+Ye22
+  rotate: false
+  xy: 401, 61
+  size: 55, 51
+  orig: 59, 55
+  offset: 2, 2
+  index: -1
+Ye22_1
+  rotate: true
+  xy: 2, 2
+  size: 16, 23
+  orig: 20, 27
+  offset: 2, 2
+  index: -1
+Ye23_1
+  rotate: false
+  xy: 341, 13
+  size: 38, 26
+  orig: 42, 30
+  offset: 2, 2
+  index: -1
+Ye5_1
+  rotate: true
+  xy: 983, 130
+  size: 61, 39
+  orig: 65, 43
+  offset: 2, 2
+  index: -1
+Ye5_2
+  rotate: true
+  xy: 983, 67
+  size: 61, 39
+  orig: 65, 43
+  offset: 2, 2
+  index: -1
+Ye6_1
+  rotate: false
+  xy: 245, 2
+  size: 51, 35
+  orig: 55, 39
+  offset: 2, 2
+  index: -1
+Ye8_1
+  rotate: false
+  xy: 141, 6
+  size: 32, 19
+  orig: 36, 23
+  offset: 2, 2
+  index: -1
+Ye8_2
+  rotate: false
+  xy: 803, 137
+  size: 39, 25
+  orig: 43, 29
+  offset: 2, 2
+  index: -1

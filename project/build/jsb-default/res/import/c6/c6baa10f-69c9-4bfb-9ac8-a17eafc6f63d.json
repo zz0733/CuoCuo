@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_renzheng",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      582,
+      320,
+      177,
+      62
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      177,
+      62
+    ]
+  }
+}

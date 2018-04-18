@@ -1,0 +1,36 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "xiaojiesuan.plist",
+  "_spriteFrames": {
+    "dz_dajiesuan_1": {
+      "__uuid__": "ced821puNEwb81PKmrg3Br"
+    },
+    "dz_dajiesuan_11": {
+      "__uuid__": "f2VvdKraxIGpKeyGKNLCe4"
+    },
+    "dz_dajiesuan_3": {
+      "__uuid__": "feXjnd2fBHqYIDjUwEYqZA"
+    },
+    "dz_time": {
+      "__uuid__": "348+egxZdALpWH3aHTkOz0"
+    },
+    "dz_xiaojiesuan1": {
+      "__uuid__": "72rZ8BD4ROOZbE9Jh9fmLp"
+    },
+    "dz_xiaojiesuan2": {
+      "__uuid__": "18TI+WNBxHpai8dhhvOLp6"
+    },
+    "dz_xiaojiesuan3": {
+      "__uuid__": "24W5VjRldC5qSg6LhZ6NVC"
+    },
+    "dz_xiaojiesuan4": {
+      "__uuid__": "5baGCF0otMo5SFGW+zO8hU"
+    },
+    "dz_xiaojiesuan5": {
+      "__uuid__": "7d1aE5zo9Kgrs4S93/sE/I"
+    },
+    "dz_xiaojiesuan6": {
+      "__uuid__": "f5ilTEJZNMM4u4I5HWwqpZ"
+    }
+  }
+}

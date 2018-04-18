@@ -24,6 +24,10 @@ cc.Class({
 
         // let isRelease = fun.gameCfg.releaseType === gameConst.releaseType.release ? true : false;
         this._isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple ? true : false;
+        this._isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher ? true : false;
+        if (this._isFisher) {
+            this.node.getChildByName('Haishang').active = true;
+        }
 
         this.editBox = this.node.getChildByName('editBox');
         this.editBox.active = false;
@@ -53,7 +57,8 @@ cc.Class({
             this.ykLoginBtn.active = true;
         } else {
             this.wxLoginBtn.active = true;
-            this.ykLoginBtn.active = true;
+            this.wxLoginBtn.setPositionX(0);
+            this.ykLoginBtn.active = false;
         }
     },
     initLogin: function initLogin() {
@@ -67,8 +72,11 @@ cc.Class({
                 this.wxLoginBtn.active = true;
                 this.wxLoginBtn.setPositionX(0);
                 this.ykLoginBtn.active = false;
-            } else {
+            } else if (cc.sys.os === cc.sys.OS_IOS) {
                 this.isWxAppInstalled(require('JSPhoneWeChat').WxAppIsInstalled());
+            } else {
+                this.wxLoginBtn.active = true;
+                this.ykLoginBtn.active = true;
             }
             if (fun.gameCfg.loginType === gameConst.loginType.ID) {
                 this.editBox.active = true;

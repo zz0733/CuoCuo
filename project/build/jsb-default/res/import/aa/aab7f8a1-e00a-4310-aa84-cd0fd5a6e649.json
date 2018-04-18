@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "cjRoom5",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      753,
+      442,
+      65,
+      247
+    ],
+    "offset": [
+      -1,
+      1
+    ],
+    "originalSize": [
+      67,
+      255
+    ],
+    "rotated": 1
+  }
+}

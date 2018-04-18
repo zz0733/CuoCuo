@@ -47,19 +47,24 @@ cc.Class({
     onBtnSettingClick: function onBtnSettingClick() {
         var set = cc.instantiate(this.setPrefab);
         set.parent = this.node.parent;
+        this.onMenuActive();
     },
     onBtnSkinClick: function onBtnSkinClick() {
         var skin = cc.instantiate(this.skinPrefab);
         skin.parent = this.node.parent;
+        this.onMenuActive();
     },
     onBtnQuitClick: function onBtnQuitClick() {
         fun.event.dispatch('wahuaQuitFromSetting');
+        this.onMenuActive();
     },
     onBtnTwoDClick: function onBtnTwoDClick() {
         cc.log('--- onBtnTwoDClick ---');
+        this.onMenuActive();
     },
     onBtnThreeClick: function onBtnThreeClick() {
         cc.log('--- onBtnThreeClick ---');
+        this.onMenuActive();
     },
     onBtnMenuClick: function onBtnMenuClick() {
         this.menu.active = !this.menu.active;

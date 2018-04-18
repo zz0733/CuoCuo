@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_boli",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      137,
+      571,
+      133,
+      252
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      252
+    ],
+    "capInsets": [
+      48,
+      54,
+      47,
+      173
+    ]
+  }
+}

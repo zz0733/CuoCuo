@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_xiaojiesuan",
+    "texture": "deqw9Rx5pM9oQO993r83tv",
+    "rect": [
+      0,
+      0,
+      320,
+      171
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      320,
+      171
+    ],
+    "capInsets": [
+      177,
+      60,
+      131,
+      59
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_liaotian_guanbi",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      941,
+      603,
+      78,
+      83
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      78,
+      83
+    ]
+  }
+}

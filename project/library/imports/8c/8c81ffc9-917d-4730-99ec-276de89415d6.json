@@ -1,0 +1,29 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_guize1",
+    "texture": "3686cb0b-0f09-46b4-9ae4-78d18d77dbad",
+    "atlas": "cf3d9863-b885-4f23-871e-61f0faf4d6a0",
+    "rect": [
+      89,
+      148,
+      33,
+      161
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      33,
+      161
+    ],
+    "rotated": 1,
+    "capInsets": [
+      13,
+      75,
+      14,
+      74
+    ]
+  }
+}

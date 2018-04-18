@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dikuang_cj2",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      2,
+      62,
+      49,
+      582
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      49,
+      582
+    ],
+    "rotated": 1,
+    "capInsets": [
+      21,
+      25,
+      21,
+      32
+    ]
+  }
+}

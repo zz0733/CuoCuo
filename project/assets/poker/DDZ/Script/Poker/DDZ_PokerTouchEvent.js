@@ -40,9 +40,9 @@ cc.Class({
         this.pokerUpHeight = 20;
         this.pokerSpacing = 50;
         this.clickFirstPos = 147.5;
-        this.posYMin = 80;
-        this.posYMax = 285;
-        this.playerOutPokerArr = [];
+        this.posYMin = 20;
+        this.posYMax = 230;
+        cc.YL.playerOutPokerArr = [];
 
     },
     update: function () {
@@ -53,12 +53,10 @@ cc.Class({
     },
     onStartTouch: function (event) {
         this.startTouchPos = event.getStartLocation();
-        cc.YL.info("点击坐标", this.startTouchPos.x, this.startTouchPos.y);
     },
     onCancelTouch: function (event) {
         this.endTouchPos = event.getLocation();
         this.clickPoker();
-        cc.YL.info("结束点击坐标", this.startTouchPos.x, this.startTouchPos.y);
     },
     onMoveTouch: function (event) {
         var moveTouchPos = event.getLocation();
@@ -66,16 +64,43 @@ cc.Class({
             // 滑动y轴的有效范围
             //记录在有效的范围里面，最后的坐标
             this.moveTouchPos = moveTouchPos;
+            if (this.moveTouchPos.y >= this.posYMin && this.moveTouchPos.y <= this.posYMax) {
+                // 最后结束的时候，y坐标在牌里面，视为成功，否则用滑动中最后一次的坐标
+                var delatX = this.moveTouchPos.x - this.startTouchPos.x;
+                var index_1 = this.caculateIndex(this.startTouchPos.x);
+                var index_2 = this.caculateIndex(this.moveTouchPos.x);
+            }
+            if (delatX == 0) {
+                //单击一次手牌
+                var pokerIndex = this.caculateIndex(this.moveTouchPos.x);
+                this.node.parent.getChildByName("HandPoker").getChildByTag(pokerIndex).getChildByName("Cover").active = true;
+            } else if (delatX > 0) {
+                for (var i = index_1; i <= index_2; i++) {
+                    this.node.parent.getChildByName("HandPoker").getChildByTag(i).getChildByName("Cover").active = true;
+                }
+                //从左向右
+            } else if (delatX < 0) {
+                //从右向左
+                for (var i = index_2; i <= index_1; i++) {
+                    if(i>= 0 && i < this.node.parent.getChildByName("HandPoker").children.length){
+                        this.node.parent.getChildByName("HandPoker").getChildByTag(i).getChildByName("Cover").active = true;
+                    }
+                }
+            }
+
         }
     },
     onEndTouch: function (event) {
         this.endTouchPos = event.getLocation();
+        var childNodeList = this.node.parent.getChildByName("HandPoker").children;
+        for(var i = 0; i < childNodeList.length;i++){
+            childNodeList[i].getChildByName("Cover").active = false;
+        }
         this.clickPoker();
-        cc.YL.info("结束点击坐标", this.startTouchPos.x, this.startTouchPos.y);
     },
     // update (dt) {},
     clickPoker: function () {
-
+        cc.YL.DDZAudio.playCommonBGM(2);
         // 从左到右的起点坐标
         if (this.endTouchPos.y >= this.posYMin && this.endTouchPos.y <= this.posYMax) {
             // 最后结束的时候，y坐标在牌里面，视为成功，否则用滑动中最后一次的坐标
@@ -108,20 +133,27 @@ cc.Class({
         } else if (delatX < 0) {
             //从右向左
             for (var i = index_2; i <= index_1; i++) {
-                if (this.node.parent.getChildByName("HandPoker").getChildByTag(i).y == this.pokerUpHeight) {
-                    this.node.parent.getChildByName("HandPoker").getChildByTag(i).y = this.pokerSourceHeight;
+                if(i>= 0 && i < this.node.parent.getChildByName("HandPoker").children.length) {
+                    if (this.node.parent.getChildByName("HandPoker").getChildByTag(i).y == this.pokerUpHeight) {
+                        this.node.parent.getChildByName("HandPoker").getChildByTag(i).y = this.pokerSourceHeight;
 
-                } else {
-                    this.node.parent.getChildByName("HandPoker").getChildByTag(i).y = this.pokerUpHeight;
+                    } else {
+                        this.node.parent.getChildByName("HandPoker").getChildByTag(i).y = this.pokerUpHeight;
 
+                    }
                 }
             }
         }
-        this.playerOutPokerArr = [];
+        var childNodeList = this.node.parent.getChildByName("HandPoker").children;
+        for(var i = 0; i < childNodeList.length;i++){
+            childNodeList[i].getChildByName("Cover").active = false;
+        }
+        cc.YL.info("重制手牌节点的cover为false");
+        cc.YL.playerOutPokerArr = [];
         var children = this.node.parent.getChildByName("HandPoker").children;
         for(var i = 0; i < children.length;i++){
             if(children[i].y == this.pokerUpHeight){
-                this.playerOutPokerArr.push(children[i].getComponent("DDZ_Poker").pokerID);
+                cc.YL.playerOutPokerArr.push(children[i].getComponent("DDZ_Poker").pokerID);
             }
         }
 
@@ -136,4 +168,5 @@ cc.Class({
             : this.node.parent.getChildByName("HandPoker").children.length - 1;
         return pokerIndex;
     },
+
 });

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_fangjianSan",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      86,
+      785,
+      66,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      66,
+      44
+    ]
+  }
+}

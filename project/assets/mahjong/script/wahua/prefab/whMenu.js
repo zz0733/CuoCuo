@@ -42,23 +42,28 @@ cc.Class({
     onBtnSettingClick() {
         let set = cc.instantiate(this.setPrefab);
         set.parent = this.node.parent;
+        this.onMenuActive();
     },
 
     onBtnSkinClick() {
         let skin = cc.instantiate(this.skinPrefab);
         skin.parent = this.node.parent;
+        this.onMenuActive();
     },
 
     onBtnQuitClick() {
         fun.event.dispatch('wahuaQuitFromSetting');
+        this.onMenuActive();
     },
 
     onBtnTwoDClick() {
         cc.log('--- onBtnTwoDClick ---');
+        this.onMenuActive();
     },
 
     onBtnThreeClick() {
         cc.log('--- onBtnThreeClick ---');
+        this.onMenuActive();
     },
 
     onBtnMenuClick() {

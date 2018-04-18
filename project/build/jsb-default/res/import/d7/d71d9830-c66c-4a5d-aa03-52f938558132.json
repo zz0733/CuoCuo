@@ -1,0 +1,35 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "DDZ_Waring",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "DDZ_Waring",
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 1
+        },
+        "_N$skeletonData": {
+          "__uuid__": "59DBz4eS9Czp/Tl2uAUJ6a"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__id__": 0
+      },
+      "fileId": "34LV9UdwRCIY4B+mfVkaW7"
+    }
+  }
+]

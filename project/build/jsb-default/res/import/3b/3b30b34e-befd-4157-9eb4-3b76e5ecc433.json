@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sg_cj_anniu1",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      922,
+      893,
+      67,
+      68
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      67,
+      68
+    ]
+  }
+}

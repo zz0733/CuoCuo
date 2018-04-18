@@ -1,0 +1,51 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "CardDetail.plist",
+  "_spriteFrames": {
+    "cjRoom4": {
+      "__uuid__": "beKosJ6KVIVqFp5QHj0PMs"
+    },
+    "cjRoom8": {
+      "__uuid__": "95IECI2lVFa69rkJia+pDU"
+    },
+    "cjRoom9": {
+      "__uuid__": "82XXQpSoBC66O+QjOj2wYg"
+    },
+    "cjRooma": {
+      "__uuid__": "dbyBUxx+hIfZtMLxNUJvcr"
+    },
+    "cjRoomb": {
+      "__uuid__": "3ezrT7+3xLFK7uu9u7O6Ru"
+    },
+    "cjRoomc": {
+      "__uuid__": "493fzFC4NCpLfBZmufHjho"
+    },
+    "cjRoomd": {
+      "__uuid__": "b3yLhlSh9NzJjK5RRA/AUW"
+    },
+    "cjRoome": {
+      "__uuid__": "2bHkDke/9CgIoDA+CY8AWb"
+    },
+    "tachuang_0": {
+      "__uuid__": "7dIUDQXTdNhpeeNlhqJx7S"
+    },
+    "tachuang_00": {
+      "__uuid__": "07+A4hqp9LHa9lgqia2o9J"
+    },
+    "tachuang_1": {
+      "__uuid__": "d1KyEIFLZPrJdb0DvJ4pDM"
+    },
+    "tachuang_2": {
+      "__uuid__": "40dqcPUthA66wTUKGn2hNb"
+    },
+    "tachuang_3": {
+      "__uuid__": "73c9D2U2ZHZJKiDjs4x/dC"
+    },
+    "tachuang_4": {
+      "__uuid__": "faGVoh4A9FR5JJGr3K2F/a"
+    },
+    "tachuang_5": {
+      "__uuid__": "207e+VBllJPZadKzBRatrA"
+    }
+  }
+}

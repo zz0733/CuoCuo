@@ -12,21 +12,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        cardNum:0,
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -36,6 +22,15 @@ cc.Class({
     start () {
 
     },
+    initHandPokerCount: function(cardNum){
+        this.cardNum = cardNum;
+        cc.YL.info("右边玩家的手牌数",cardNum);
+        this.node.getChildByName("CardBG").getChildByName("Num").getComponent(cc.Label).string = this.cardNum;
+        this.node.getChildByName("CardBG").active = true;
 
-    // update (dt) {},
+    },
+    cleanHandPokerCount: function(){
+        this.node.getChildByName("CardBG").getChildByName("Num").getComponent(cc.Label).string = "";
+        this.node.getChildByName("CardBG").active = false
+    },
 });

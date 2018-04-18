@@ -1,0 +1,77 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "ddz_game.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "anniu_hui0": {
+      "__uuid__": "a05eedf3-b30f-4227-95f4-093fd7094267"
+    },
+    "anniu_hui1": {
+      "__uuid__": "7eb0de35-7002-4f36-8a6e-9b458ac30fcc"
+    },
+    "anniu_hui2": {
+      "__uuid__": "2b324c1d-7afb-463c-86c4-dbc570d4d489"
+    },
+    "anniu_hui3": {
+      "__uuid__": "73f29714-cf60-4bad-b1f6-6abc9da4fcba"
+    },
+    "dz_an1": {
+      "__uuid__": "ff4f7cdc-eeeb-4bc5-b225-598777b196b2"
+    },
+    "dz_an2": {
+      "__uuid__": "a84297cc-7a0d-4573-a8e6-b8ae38259cac"
+    },
+    "dz_an3": {
+      "__uuid__": "4045f99a-b6c0-4f6c-a06c-b3a811f9493c"
+    },
+    "dz_an4": {
+      "__uuid__": "f3e60db4-e1a1-4ae1-ab66-1a09399f2c1a"
+    },
+    "dz_an5": {
+      "__uuid__": "3cb7cef2-cb78-467a-b43d-ef78e5e2aa44"
+    },
+    "dz_fapai": {
+      "__uuid__": "689bfc55-a576-48a3-a32a-316510e8594b"
+    },
+    "dz_jiesuan_icon1": {
+      "__uuid__": "e0c9b12e-e72d-456c-91c3-03981f75f44e"
+    },
+    "dz_liaotiankuang": {
+      "__uuid__": "74de8c63-60ef-4086-97b2-0bf9d465fe56"
+    },
+    "dz_zt": {
+      "__uuid__": "b4f62791-2796-4e15-84a6-cf6d371cb66b"
+    },
+    "dz_zt0": {
+      "__uuid__": "b0fc39e7-5e66-4b72-bb1d-cce8ccf1eb2b"
+    },
+    "dz_zt00": {
+      "__uuid__": "be730570-7000-4221-a36e-ed52c912507e"
+    },
+    "dz_zt000": {
+      "__uuid__": "ccb2665d-4980-45e3-bc39-d4256b74727a"
+    },
+    "dz_zt1": {
+      "__uuid__": "9214f954-946e-4159-b81f-d4c00137ee25"
+    },
+    "dz_zt2": {
+      "__uuid__": "79e93aba-455e-4cc7-b5d2-d8995b690ff9"
+    },
+    "dz_zt3": {
+      "__uuid__": "07001b8e-f4da-419e-85ac-d65d8e810ff3"
+    },
+    "dz_zt4": {
+      "__uuid__": "bf4a964c-3592-4e33-acd6-a23225e487bd"
+    },
+    "dz_zt5": {
+      "__uuid__": "2043dd84-21bc-42fc-9dd2-0614acd92162"
+    },
+    "dz_zt6": {
+      "__uuid__": "fc5003bb-6e5b-4e2c-891a-c77d24d6aed6"
+    },
+    "dz_zt7": {
+      "__uuid__": "f2c44331-43cf-4532-afb8-f29d91f140a1"
+    }
+  }
+}

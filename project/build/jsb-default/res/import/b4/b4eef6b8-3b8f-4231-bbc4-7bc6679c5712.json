@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_qiang_0",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      2,
+      1378,
+      131,
+      47
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      131,
+      47
+    ],
+    "rotated": 1,
+    "capInsets": [
+      14,
+      17,
+      16,
+      13
+    ]
+  }
+}

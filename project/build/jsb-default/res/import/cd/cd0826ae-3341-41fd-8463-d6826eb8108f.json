@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wenlingwahua",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      738,
+      2,
+      344,
+      265
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      346,
+      267
+    ],
+    "rotated": 1
+  }
+}

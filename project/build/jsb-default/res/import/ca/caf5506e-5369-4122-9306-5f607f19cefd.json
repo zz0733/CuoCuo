@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_shuiyin1",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      364,
+      1099,
+      160,
+      144
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      160,
+      144
+    ],
+    "rotated": 1
+  }
+}

@@ -1,0 +1,1491 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Jiaru",
+  "_rawFiles": [
+    "raw-skeleton.json"
+  ],
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "/pfCHZT7aIgrc36U29UlbMfDRDQ",
+      "spine": "3.5.46",
+      "width": 1336,
+      "height": 896.2,
+      "images": "./images/"
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "Anniu",
+        "parent": "root",
+        "x": -2.96,
+        "y": 44.76,
+        "color": "000fffff"
+      },
+      {
+        "name": "Guang",
+        "parent": "Anniu",
+        "x": -107.57,
+        "y": -49.22,
+        "color": "000000ff"
+      },
+      {
+        "name": "Kuang",
+        "parent": "root",
+        "x": -0.05,
+        "y": -0.21,
+        "color": "ff0000ff"
+      },
+      {
+        "name": "Xian",
+        "parent": "Anniu",
+        "x": -75.9,
+        "y": -94.16,
+        "color": "000fffff"
+      },
+      {
+        "name": "Xing",
+        "parent": "root",
+        "x": 648.31,
+        "y": -307.1
+      },
+      {
+        "name": "Xingguang",
+        "parent": "root",
+        "x": 481.73,
+        "y": -24.2,
+        "scaleX": 0.862,
+        "scaleY": 0.862,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Xingguang2",
+        "parent": "root",
+        "x": 582.32,
+        "y": -80.43,
+        "scaleX": 0.831,
+        "scaleY": 0.831,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Xingguang3",
+        "parent": "root",
+        "x": 532.03,
+        "y": -79.91,
+        "scaleX": 0.793,
+        "scaleY": 0.793,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Xingguang4",
+        "parent": "root",
+        "x": 483.78,
+        "y": -79.53,
+        "scaleX": 0.927,
+        "scaleY": 0.927,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Xingguang5",
+        "parent": "root",
+        "x": 529.4,
+        "y": -24.76,
+        "scaleX": 0.686,
+        "scaleY": 0.686,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Xingguang6",
+        "parent": "root",
+        "x": 575.7,
+        "y": -25.6,
+        "scaleX": 1.025,
+        "scaleY": 1.025,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Xingguang7",
+        "parent": "root",
+        "x": 625.77,
+        "y": -25.01,
+        "scaleX": 0.791,
+        "scaleY": 0.791,
+        "color": "0aff00ff"
+      },
+      {
+        "name": "Zi",
+        "parent": "Anniu",
+        "x": 39.2,
+        "y": -44.84,
+        "color": "9600ffff"
+      }
+    ],
+    "slots": [
+      {
+        "name": "Bg",
+        "bone": "root"
+      },
+      {
+        "name": "Yingzi",
+        "bone": "Anniu",
+        "color": "fffdfd9a",
+        "attachment": "Yingzi",
+        "blend": "multiply"
+      },
+      {
+        "name": "Anniu",
+        "bone": "Anniu",
+        "attachment": "Anniu"
+      },
+      {
+        "name": "Anniu2",
+        "bone": "Anniu",
+        "attachment": "Anniu",
+        "blend": "additive"
+      },
+      {
+        "name": "Kuang",
+        "bone": "Kuang",
+        "attachment": "Kuang",
+        "blend": "additive"
+      },
+      {
+        "name": "Jiaruying",
+        "bone": "Zi",
+        "attachment": "Jiaruying"
+      },
+      {
+        "name": "Jiaruying2",
+        "bone": "Zi",
+        "attachment": "Jiaruying",
+        "blend": "additive"
+      },
+      {
+        "name": "Guang",
+        "bone": "Guang",
+        "color": "ffffff6b",
+        "attachment": "Guang",
+        "blend": "additive"
+      },
+      {
+        "name": "Jiaru",
+        "bone": "Zi",
+        "attachment": "Jiaru"
+      },
+      {
+        "name": "Jiaru2",
+        "bone": "Zi",
+        "attachment": "Jiaru",
+        "blend": "additive"
+      },
+      {
+        "name": "Xian",
+        "bone": "Xian",
+        "attachment": "Xian",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang",
+        "bone": "Xingguang",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang2",
+        "bone": "Xingguang2",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang3",
+        "bone": "Xingguang3",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang4",
+        "bone": "Xingguang4",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang5",
+        "bone": "Xingguang5",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang6",
+        "bone": "Xingguang6",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xingguang7",
+        "bone": "Xingguang7",
+        "attachment": "Yuan",
+        "blend": "additive"
+      },
+      {
+        "name": "Xing",
+        "bone": "Xing",
+        "attachment": "Xing",
+        "blend": "additive"
+      }
+    ],
+    "skins": {
+      "default": {
+        "Anniu": {
+          "Anniu": {
+            "x": -1.63,
+            "y": -47.16,
+            "width": 385,
+            "height": 119
+          }
+        },
+        "Anniu2": {
+          "Anniu": {
+            "x": -1.63,
+            "y": -47.16,
+            "width": 385,
+            "height": 119
+          }
+        },
+        "Guang": {
+          "Guang": {
+            "x": -32.66,
+            "width": 113,
+            "height": 127
+          }
+        },
+        "Jiaru": {
+          "Jiaru": {
+            "x": 4.17,
+            "y": 3.19,
+            "width": 211,
+            "height": 60
+          }
+        },
+        "Jiaru2": {
+          "Jiaru": {
+            "x": 4.17,
+            "y": 3.19,
+            "width": 211,
+            "height": 60
+          }
+        },
+        "Jiaruying": {
+          "Jiaruying": {
+            "x": 5.17,
+            "y": -36.81,
+            "width": 211,
+            "height": 24
+          }
+        },
+        "Jiaruying2": {
+          "Jiaruying": {
+            "x": 5.17,
+            "y": -36.81,
+            "width": 211,
+            "height": 24
+          }
+        },
+        "Kuang": {
+          "Kuang": {
+            "x": -4.53,
+            "y": -3.69,
+            "width": 387,
+            "height": 120
+          }
+        },
+        "Xian": {
+          "Xian": {
+            "x": -41.57,
+            "y": -0.34,
+            "width": 137,
+            "height": 7
+          }
+        },
+        "Xing": {
+          "Xing": {
+            "x": -0.28,
+            "y": -0.01,
+            "width": 50,
+            "height": 50
+          }
+        },
+        "Xingguang": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Xingguang2": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Xingguang3": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Xingguang4": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Xingguang5": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Xingguang6": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Xingguang7": {
+          "Yuan": {
+            "x": -0.78,
+            "y": 0.22,
+            "width": 24,
+            "height": 24
+          }
+        },
+        "Yingzi": {
+          "Yingzi": {
+            "x": -1.63,
+            "y": -51.16,
+            "width": 389,
+            "height": 127
+          }
+        }
+      }
+    },
+    "animations": {
+      "Jiarufangjian": {
+        "slots": {
+          "Anniu2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff36"
+              },
+              {
+                "time": 1.1667,
+                "color": "ffffff3d"
+              },
+              {
+                "time": 1.6667,
+                "color": "ffffff26"
+              },
+              {
+                "time": 2.1667,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Guang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.6667,
+                "color": "ffc08539"
+              },
+              {
+                "time": 1.0667,
+                "color": "ffffff53"
+              },
+              {
+                "time": 1.4667,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Jiaru": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffffb5"
+              },
+              {
+                "time": 1.8333,
+                "color": "ffffffff"
+              }
+            ]
+          },
+          "Jiaru2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffff32"
+              },
+              {
+                "time": 1.3333,
+                "color": "ffffff60"
+              },
+              {
+                "time": 1.8333,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Jiaruying": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffffad"
+              },
+              {
+                "time": 1.8333,
+                "color": "ffffffff"
+              }
+            ]
+          },
+          "Jiaruying2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffff32"
+              },
+              {
+                "time": 1.3333,
+                "color": "ffffff48"
+              },
+              {
+                "time": 1.8333,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Kuang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.5,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffffab"
+              },
+              {
+                "time": 1.5,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Xian": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.4,
+                "color": "ffffff89"
+              },
+              {
+                "time": 0.9333,
+                "color": "ffffffe8"
+              },
+              {
+                "time": 1.5667,
+                "color": "ff916300"
+              }
+            ]
+          },
+          "Xing": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffff00"
+              },
+              {
+                "time": 1.5,
+                "color": "ffffffff"
+              },
+              {
+                "time": 2.3333,
+                "color": "ffffff00"
+              }
+            ]
+          },
+          "Xingguang": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.4667,
+                "color": "ffffffcb"
+              },
+              {
+                "time": 0.8,
+                "color": "ffffffc7"
+              },
+              {
+                "time": 1.1667,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Xingguang2": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4667,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.9333,
+                "color": "ffffffd8"
+              },
+              {
+                "time": 1.2667,
+                "color": "ffffff92"
+              },
+              {
+                "time": 1.6333,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Xingguang3": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 0.9333,
+                "color": "ffffff00"
+              },
+              {
+                "time": 1.4,
+                "color": "ffffff85"
+              },
+              {
+                "time": 1.7333,
+                "color": "ffffff99"
+              },
+              {
+                "time": 2.1,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Xingguang4": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 1.0333,
+                "color": "ffffff00"
+              },
+              {
+                "time": 1.5,
+                "color": "ffffffb1"
+              },
+              {
+                "time": 1.8667,
+                "color": "ffffff90"
+              },
+              {
+                "time": 2.2,
+                "color": "ffffff00"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Xingguang5": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff5b"
+              },
+              {
+                "time": 0.2333,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 1.4,
+                "color": "ffffff00"
+              },
+              {
+                "time": 1.8667,
+                "color": "ffffff7d"
+              },
+              {
+                "time": 2.2,
+                "color": "ffffff88"
+              },
+              {
+                "time": 2.3333,
+                "color": "ffffff5b"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Xingguang6": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff72"
+              },
+              {
+                "time": 0.3333,
+                "color": "ffffff52"
+              },
+              {
+                "time": 0.7,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 1.8667,
+                "color": "ffffff00"
+              },
+              {
+                "time": 2.3333,
+                "color": "ffffff72"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Xingguang7": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff60"
+              },
+              {
+                "time": 0.2333,
+                "color": "ffffffc0"
+              },
+              {
+                "time": 0.5667,
+                "color": "ffffffa1"
+              },
+              {
+                "time": 0.9333,
+                "color": "ffffff00",
+                "curve": "stepped"
+              },
+              {
+                "time": 2.1,
+                "color": "ffffff00"
+              },
+              {
+                "time": 2.3333,
+                "color": "ffffff60"
+              }
+            ],
+            "attachment": [
+              {
+                "time": 0,
+                "name": "Yuan"
+              }
+            ]
+          },
+          "Yingzi": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.8333,
+                "color": "ffffff6c"
+              },
+              {
+                "time": 2.1667,
+                "color": "ffffffff"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "root": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Anniu": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Guang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -55.22,
+                "y": 0
+              },
+              {
+                "time": 0.6667,
+                "x": 78.59,
+                "y": 0
+              },
+              {
+                "time": 1.2667,
+                "x": 225.14,
+                "y": 0
+              },
+              {
+                "time": 1.5667,
+                "x": 311.18,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.469,
+                "y": 1
+              },
+              {
+                "time": 0.3,
+                "x": 1.002,
+                "y": 1
+              },
+              {
+                "time": 0.8333,
+                "x": 2.29,
+                "y": 1
+              },
+              {
+                "time": 1.2667,
+                "x": 2.12,
+                "y": 1
+              },
+              {
+                "time": 1.8333,
+                "x": 0.353,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Kuang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.986,
+                "y": 0.986,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.5,
+                "x": 0.986,
+                "y": 0.986
+              },
+              {
+                "time": 1.5,
+                "x": 1.025,
+                "y": 1.118
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Zi": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xian": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -90.62,
+                "y": 0.52
+              },
+              {
+                "time": 0.6667,
+                "x": 43.78,
+                "y": 0.52
+              },
+              {
+                "time": 1.2,
+                "x": 181.17,
+                "y": 0.52
+              },
+              {
+                "time": 1.5667,
+                "x": 240.67,
+                "y": 0.52
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.155,
+                "y": 1
+              },
+              {
+                "time": 0.6667,
+                "x": 0.918,
+                "y": 1
+              },
+              {
+                "time": 1.2,
+                "x": 1.292,
+                "y": 1
+              },
+              {
+                "time": 1.5667,
+                "x": 0.459,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang7": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -606.22,
+                "y": -2.91
+              },
+              {
+                "time": 0.2333,
+                "x": -606.22,
+                "y": 6.83
+              },
+              {
+                "time": 0.5667,
+                "x": -609.36,
+                "y": 22.59
+              },
+              {
+                "time": 0.9333,
+                "x": -609.98,
+                "y": 28.81
+              },
+              {
+                "time": 2.1,
+                "x": -606.22,
+                "y": -12.65
+              },
+              {
+                "time": 2.3333,
+                "x": -606.22,
+                "y": -2.91
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -553.17,
+                "y": -12.5
+              },
+              {
+                "time": 0.4667,
+                "x": -552.59,
+                "y": 0.46
+              },
+              {
+                "time": 0.8,
+                "x": -554.09,
+                "y": 14.1
+              },
+              {
+                "time": 1.1667,
+                "x": -560.26,
+                "y": 27.64
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang2": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -586.82,
+                "y": 26.82,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.4667,
+                "x": -586.82,
+                "y": 26.82
+              },
+              {
+                "time": 0.9333,
+                "x": -585.82,
+                "y": 45.02
+              },
+              {
+                "time": 1.2667,
+                "x": -589.8,
+                "y": 55.18
+              },
+              {
+                "time": 1.6333,
+                "x": -590.29,
+                "y": 73.09
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang5": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -506.83,
+                "y": 23.5
+              },
+              {
+                "time": 0.2333,
+                "x": -504.21,
+                "y": 36.52
+              },
+              {
+                "time": 1.4,
+                "x": -515.05,
+                "y": -12.02
+              },
+              {
+                "time": 1.8667,
+                "x": -511.6,
+                "y": 1.11
+              },
+              {
+                "time": 2.2,
+                "x": -508.14,
+                "y": 17
+              },
+              {
+                "time": 2.3333,
+                "x": -506.83,
+                "y": 23.5
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang3": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -489,
+                "y": 27.66,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.9333,
+                "x": -489,
+                "y": 27.66
+              },
+              {
+                "time": 1.4,
+                "x": -478.35,
+                "y": 47.2
+              },
+              {
+                "time": 1.7333,
+                "x": -480.12,
+                "y": 60.52
+              },
+              {
+                "time": 2.1,
+                "x": -473.02,
+                "y": 71.17
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang6": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -469.36,
+                "y": 14.52
+              },
+              {
+                "time": 0.3333,
+                "x": -471.75,
+                "y": 29.12
+              },
+              {
+                "time": 0.7,
+                "x": -467.41,
+                "y": 44.4
+              },
+              {
+                "time": 1.8667,
+                "x": -459.41,
+                "y": -7.19
+              },
+              {
+                "time": 2.3333,
+                "x": -469.36,
+                "y": 14.52
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xingguang4": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -583.95,
+                "y": 29.8,
+                "curve": "stepped"
+              },
+              {
+                "time": 1.0333,
+                "x": -583.95,
+                "y": 29.8
+              },
+              {
+                "time": 1.5,
+                "x": -575.83,
+                "y": 44.23
+              },
+              {
+                "time": 1.8667,
+                "x": -573.12,
+                "y": 57.76
+              },
+              {
+                "time": 2.2,
+                "x": -568.61,
+                "y": 72.47
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 1
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          },
+          "Xing": {
+            "rotate": [
+              {
+                "time": 0,
+                "angle": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 1,
+                "angle": 0
+              },
+              {
+                "time": 1.4333,
+                "angle": 270
+              },
+              {
+                "time": 1.8667,
+                "angle": 180
+              },
+              {
+                "time": 2.3333,
+                "angle": 90
+              }
+            ],
+            "translate": [
+              {
+                "time": 0,
+                "x": -597.09,
+                "y": 257.92,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8333,
+                "x": -597.09,
+                "y": 257.92
+              }
+            ],
+            "scale": [
+              {
+                "time": 0,
+                "x": 0.662,
+                "y": 0.662,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8333,
+                "x": 0.662,
+                "y": 0.662
+              },
+              {
+                "time": 1.5,
+                "x": 1.338,
+                "y": 1.338
+              },
+              {
+                "time": 2.3333,
+                "x": 0.606,
+                "y": 0.606
+              }
+            ],
+            "shear": [
+              {
+                "time": 0,
+                "x": 0,
+                "y": 0,
+                "curve": "stepped"
+              },
+              {
+                "time": 0.8333,
+                "x": 0,
+                "y": 0
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nJiaru.png\nsize: 1024,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nAnniu\n  rotate: false\n  xy: 391, 130\n  size: 383, 117\n  orig: 385, 119\n  offset: 1, 1\n  index: -1\nGuang\n  rotate: true\n  xy: 776, 50\n  size: 113, 127\n  orig: 113, 127\n  offset: 0, 0\n  index: -1\nJiaru\n  rotate: false\n  xy: 776, 189\n  size: 209, 58\n  orig: 211, 60\n  offset: 1, 1\n  index: -1\nJiaruying\n  rotate: false\n  xy: 776, 165\n  size: 209, 22\n  orig: 211, 24\n  offset: 1, 1\n  index: -1\nKuang\n  rotate: false\n  xy: 2, 2\n  size: 385, 118\n  orig: 387, 120\n  offset: 1, 1\n  index: -1\nXian\n  rotate: false\n  xy: 391, 121\n  size: 137, 7\n  orig: 137, 7\n  offset: 0, 0\n  index: -1\nXing\n  rotate: false\n  xy: 905, 113\n  size: 50, 50\n  orig: 50, 50\n  offset: 0, 0\n  index: -1\nYingzi\n  rotate: false\n  xy: 2, 122\n  size: 387, 125\n  orig: 389, 127\n  offset: 1, 1\n  index: -1\nYuan\n  rotate: false\n  xy: 987, 223\n  size: 24, 24\n  orig: 24, 24\n  offset: 0, 0\n  index: -1\n",
+  "atlasUrl": {
+    "__uuid__": "99jBr3F5FAy503EE0Gyy0J"
+  },
+  "textures": [
+    {
+      "__uuid__": "a8PmtoRBlKW67S/XKcAa3l"
+    }
+  ]
+}

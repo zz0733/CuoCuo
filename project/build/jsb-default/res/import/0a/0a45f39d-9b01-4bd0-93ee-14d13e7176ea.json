@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dikuang_boli",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      769,
+      69,
+      133,
+      252
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      252
+    ],
+    "rotated": 1,
+    "capInsets": [
+      43,
+      58,
+      43,
+      175
+    ]
+  }
+}

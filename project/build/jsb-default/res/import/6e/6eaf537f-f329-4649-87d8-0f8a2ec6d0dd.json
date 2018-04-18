@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "z_d_2",
+    "texture": "1flKRoj7JOrJouMXp7UD81",
+    "rect": [
+      2,
+      150,
+      72,
+      57
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      72,
+      57
+    ],
+    "rotated": 1
+  }
+}

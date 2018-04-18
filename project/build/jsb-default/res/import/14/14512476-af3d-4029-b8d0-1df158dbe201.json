@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_hudong_yan",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      733,
+      2,
+      48,
+      68
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      66,
+      72
+    ],
+    "rotated": 1
+  }
+}

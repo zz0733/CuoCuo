@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "anniu_20",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      110,
+      529,
+      84,
+      36
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      84,
+      36
+    ],
+    "rotated": 1,
+    "capInsets": [
+      0,
+      16,
+      0,
+      16
+    ]
+  }
+}

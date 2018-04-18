@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_jiaru",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      345,
+      865,
+      191,
+      105
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      199,
+      109
+    ]
+  }
+}

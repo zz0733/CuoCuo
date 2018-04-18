@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_bishi",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      224,
+      247,
+      129,
+      112
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      131,
+      114
+    ],
+    "rotated": 1
+  }
+}

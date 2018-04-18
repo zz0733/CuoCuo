@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pj_73",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      318,
+      222,
+      70,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      70,
+      86
+    ],
+    "rotated": 1
+  }
+}

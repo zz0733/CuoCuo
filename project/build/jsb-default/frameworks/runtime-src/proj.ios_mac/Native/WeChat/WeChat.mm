@@ -80,7 +80,7 @@ NSString * wxFriendOrCircle = @"";
     NSString * wxcontent = [dic objectForKey:@"content"];
     message.title = wxtitle;
     message.description = wxcontent;
-    [message setThumbImage:[UIImage imageNamed:@"appIcon29x29@2x.png"]];
+    [message setThumbImage:[UIImage imageNamed:@"Icon.png"]];
     WXWebpageObject *ext = [WXWebpageObject object];
     ext.webpageUrl = [dic objectForKey:@"url"];
     message.mediaObject = ext;

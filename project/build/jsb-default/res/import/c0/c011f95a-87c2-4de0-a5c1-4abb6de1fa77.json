@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "x_tang",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      249,
+      2,
+      68,
+      105
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      68,
+      105
+    ],
+    "rotated": 1
+  }
+}

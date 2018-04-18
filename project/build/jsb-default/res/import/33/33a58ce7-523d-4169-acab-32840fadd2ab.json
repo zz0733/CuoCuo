@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_jiesuan_win",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      276,
+      1346,
+      163,
+      146
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      163,
+      146
+    ],
+    "rotated": 1
+  }
+}

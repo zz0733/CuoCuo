@@ -34,14 +34,15 @@ cc.Class({
         this.content = this.view.getChildByName('content');
         this.btnClose.on('click', this.onBtnCloseClick, this);
     },
-    setDetail: function setDetail(data) {
-        if (data && data.length !== 0) {
+    setDetail: function setDetail(data, gameType) {
+        if (!data) return;
+        if (data.length !== 0) {
             this.noCard.active = false;
             for (var i in data) {
                 var item = cc.instantiate(this.itemPrefab);
-                item.setPosition(cc.p(0, -item.getContentSize().height * (parseInt(i) + 0.5)));
+                item.setPosition(cc.p(18, -item.getContentSize().height * (parseInt(i) + 0.5)));
                 item.parent = this.content;
-                item.getComponent('freeCardItem').setData(data[i]);
+                item.getComponent('freeCardItem').setData(data[i], gameType);
             }
         }
         var itemsHight = 68 * data.length;

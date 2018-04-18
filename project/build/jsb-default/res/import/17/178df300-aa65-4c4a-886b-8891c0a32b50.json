@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_time_dichi",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      166,
+      547,
+      48,
+      19
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      21
+    ]
+  }
+}

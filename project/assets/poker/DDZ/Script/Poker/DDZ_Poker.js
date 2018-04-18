@@ -31,12 +31,44 @@ cc.Class({
         this._ownerSign = this.node.getChildByName("OwnerSign");
         this._cardNum = this.node.getChildByName("CardNum");
     },
-    initPoker: function (ID) {
+    initPoker: function (object) {
         //todo
         this.bindNode();
-        this.pokerID = ID;
-        var newPokerValue = cc.YL.cardValueTrans.TransPokerValue(10);
-        this._frontNode.getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(newPokerValue.value+"");
+        this.pokerID = object.ID;
+        this.pokerTypeArr = object.typeArr;
+        this.pokerValue = object.valueArr;
+        this.pokerNum = object.Num;
+        // cc.YL.info("initPoker扑克牌的ID:%s，type:%s，图集名:%s，值:%s",this.pokerID,this.pokerTypeArr,this.pokerValue,this.pokerNum);
+        if(this.pokerTypeArr == "00"){
+            this._frontNode.getChildByName("typeSmall").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerValue);
+            this._frontNode.getChildByName("typeSmall").setPosition(cc.p(0,0));
+            this._frontNode.getChildByName("typeSmall").width = 154;
+            this._frontNode.getChildByName("typeSmall").height = 208;
+            this._frontNode.getChildByName("typeSmall").setScale(0.9);
+            this._frontNode.getChildByName("typeSmall").active = true;
+            this._frontNode.getChildByName("typeBig").active = false;
+            this._frontNode.getChildByName("Num").active = false;
+
+        } else {
+            this._frontNode.getChildByName("typeBig").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerTypeArr);
+            this._frontNode.getChildByName("typeSmall").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerTypeArr);
+            this._frontNode.getChildByName("Num").getComponent(cc.Sprite).spriteFrame = this.pokerAtals.getSpriteFrame(this.pokerValue);
+            this._frontNode.getChildByName("typeBig").setPosition(10,-47);
+            this._frontNode.getChildByName("typeBig").width = 105;
+            this._frontNode.getChildByName("typeBig").height = 85;
+            this._frontNode.getChildByName("typeBig").setScale(1);
+            this._frontNode.getChildByName("typeSmall").setPosition(-43,26.7);
+            this._frontNode.getChildByName("typeSmall").width = 105;
+            this._frontNode.getChildByName("typeSmall").height = 85;
+            this._frontNode.getChildByName("typeSmall").setScale(0.35);
+            this._frontNode.getChildByName("Num").setPosition(-43,72);
+            this._frontNode.getChildByName("Num").width = 50;
+            this._frontNode.getChildByName("Num").height = 51;
+            this._frontNode.getChildByName("Num").setScale(0.9);
+            this._frontNode.getChildByName("typeBig").active = true;
+            this._frontNode.getChildByName("typeSmall").active = true;
+            this._frontNode.getChildByName("Num").active = true;
+        }
         this._bgNode.active = false;
         this._frontNode.active = true;
         this._ownerSign.active = false;

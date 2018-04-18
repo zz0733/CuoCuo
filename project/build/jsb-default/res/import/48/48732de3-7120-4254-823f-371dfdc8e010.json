@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_han",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      803,
+      2,
+      113,
+      104
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      115,
+      106
+    ]
+  }
+}

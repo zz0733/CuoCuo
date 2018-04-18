@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_time_di",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      86,
+      1065,
+      190,
+      34
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      190,
+      34
+    ],
+    "rotated": 1
+  }
+}

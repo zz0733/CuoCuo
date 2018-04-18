@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dating_anniu3",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      2,
+      616,
+      130,
+      82
+    ],
+    "offset": [
+      0,
+      -2
+    ],
+    "originalSize": [
+      132,
+      88
+    ],
+    "rotated": 1
+  }
+}

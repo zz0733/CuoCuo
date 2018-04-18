@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dajiesuan_add_0",
+    "texture": "9bm7hYv45GeJXY2Fc07axv",
+    "rect": [
+      0,
+      1,
+      219,
+      29
+    ],
+    "offset": [
+      -18.5,
+      14.5
+    ],
+    "originalSize": [
+      256,
+      60
+    ]
+  }
+}

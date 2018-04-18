@@ -1,0 +1,47 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "gold",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "gold",
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_spriteFrame": {
+          "__uuid__": "77rv2vKMhBx40cUjBwhufN"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "bfzF7pZ+hPf7zVpCe1qFHM"
+      },
+      "fileId": "3civgXM0lDg5TVoWEN5btV"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 52,
+      "height": 36
+    },
+    "_scaleX": 0.5,
+    "_scaleY": 0.5,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -774,
+      "y": -24
+    }
+  }
+]

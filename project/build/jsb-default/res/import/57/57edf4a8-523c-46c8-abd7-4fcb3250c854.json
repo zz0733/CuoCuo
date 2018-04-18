@@ -1,0 +1,36 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "emoji",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "emoji",
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 1
+        },
+        "defaultAnimation": "bishi",
+        "_N$skeletonData": {
+          "__uuid__": "a2t+o1H09Ku6KRGg+wudWF"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "577fSoUjxGyKvXT8syUMhU"
+      },
+      "fileId": "53Q7hT1aNNQZvX4qdqoh5o"
+    }
+  }
+]

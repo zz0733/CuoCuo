@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_dikuang_boli",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      680,
+      2,
+      133,
+      252
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      252
+    ],
+    "rotated": 1,
+    "capInsets": [
+      48,
+      55,
+      45,
+      174
+    ]
+  }
+}

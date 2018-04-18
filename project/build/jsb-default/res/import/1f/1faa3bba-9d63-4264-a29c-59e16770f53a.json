@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shushuzi_0",
+    "texture": "57jyvOPrxAd5Pcuk9IDNTq",
+    "rect": [
+      1,
+      0,
+      247,
+      91
+    ],
+    "offset": [
+      -3.5,
+      14.5
+    ],
+    "originalSize": [
+      256,
+      120
+    ]
+  }
+}

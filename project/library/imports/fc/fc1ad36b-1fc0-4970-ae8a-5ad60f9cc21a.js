@@ -27,10 +27,15 @@ cc.Class({
 
     // update (dt) {},
 
-    show: function show(data, startWorldPos, endWoldPos) {
+    show: function show(data, startWorldPos, endWoldPos, isExchange) {
         this.hideAll();
-        var startPos = this.node.convertToNodeSpaceAR(startWorldPos);
-        var endPos = this.node.convertToNodeSpaceAR(endWoldPos);
+        if (isExchange == true) {
+            var startPos = startWorldPos;
+            var endPos = endWoldPos;
+        } else {
+            var startPos = this.node.convertToNodeSpaceAR(startWorldPos);
+            var endPos = this.node.convertToNodeSpaceAR(endWoldPos);
+        }
         var nodeName = interactCfg[data.content].node;
         this.animNode = this.node.getChildByName(nodeName);
         this.animNode.active = true;

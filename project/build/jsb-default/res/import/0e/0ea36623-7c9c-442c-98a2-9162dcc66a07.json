@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_biaoti",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      2,
+      414,
+      286,
+      112
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      286,
+      112
+    ],
+    "capInsets": [
+      122,
+      0,
+      73,
+      0
+    ]
+  }
+}

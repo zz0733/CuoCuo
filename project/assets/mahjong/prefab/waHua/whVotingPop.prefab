@@ -29,13 +29,10 @@
       },
       {
         "__id__": 119
-      },
-      {
-        "__id__": 120
       }
     ],
     "_prefab": {
-      "__id__": 121
+      "__id__": 120
     },
     "_id": "",
     "_opacity": 255,
@@ -3762,39 +3759,30 @@
     "playOnLoad": false
   },
   {
-    "__type__": "1889c8mhwpAx5fMbzGq4zK5",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 1
-    },
-    "_enabled": false,
-    "btnAgree": {
-      "__id__": 105
-    },
-    "btnDisagree": {
-      "__id__": 97
-    },
-    "playerList": {
-      "__id__": 25
-    },
-    "timeLabel": {
-      "__id__": 23
-    },
-    "titleLabel": {
-      "__id__": 17
-    }
-  },
-  {
     "__type__": "f2a4eaPwl9IipZ02KExPTvE",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 1
     },
-    "_enabled": false,
+    "_enabled": true,
     "back": {
       "__id__": 6
+    },
+    "playerList": {
+      "__id__": 25
+    },
+    "applicantTabel": {
+      "__id__": 17
+    },
+    "TimeLabel": {
+      "__id__": 23
+    },
+    "btnDisagree": {
+      "__id__": 97
+    },
+    "btnAgree": {
+      "__id__": 105
     }
   },
   {

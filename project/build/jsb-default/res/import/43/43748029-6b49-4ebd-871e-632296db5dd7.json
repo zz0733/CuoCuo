@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_shurukuang",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      98,
+      737,
+      45,
+      73
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      45,
+      73
+    ],
+    "capInsets": [
+      17,
+      0,
+      17,
+      0
+    ]
+  }
+}

@@ -47,6 +47,7 @@ module.exports = {
         var definedList = {};
         definedList[gameConst.gameType.maJiangWenLing] = require("wlmjNetMgr").new();
         definedList[gameConst.gameType.maJiangHuangYan] = require("hymjNetMgr").new();
+        definedList[gameConst.gameType.scMahjong] = require("scmjNetMgr").new();
 
         var curGameType = fun.db.getData('RoomInfo').GameType;
         var mgrSys = definedList[curGameType];

@@ -1,0 +1,20 @@
+
+Shang.png
+size: 256,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Bian
+  rotate: false
+  xy: 2, 8
+  size: 138, 109
+  orig: 138, 109
+  offset: 0, 0
+  index: -1
+Shang
+  rotate: true
+  xy: 142, 2
+  size: 115, 92
+  orig: 115, 92
+  offset: 0, 0
+  index: -1

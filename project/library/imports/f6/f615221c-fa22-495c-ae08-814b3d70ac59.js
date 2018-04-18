@@ -94,6 +94,10 @@ cc.Class({
                 head.active = false;
             }
         }
+        //todo
+        if (this.node.getChildByName("head6").active == false) {
+            this.node.getChildByName("BtnBG").active = true;
+        }
     },
     onBtnShareClick: function onBtnShareClick() {
         Audio.playEffect('hall', 'button_nomal.mp3');

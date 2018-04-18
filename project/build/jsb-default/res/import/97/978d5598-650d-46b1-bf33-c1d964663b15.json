@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "shang_shou",
+    "texture": "739MSisvhBGIvb3r+HgUoi",
+    "rect": [
+      421,
+      516,
+      42,
+      62
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      42,
+      62
+    ],
+    "rotated": 1
+  }
+}

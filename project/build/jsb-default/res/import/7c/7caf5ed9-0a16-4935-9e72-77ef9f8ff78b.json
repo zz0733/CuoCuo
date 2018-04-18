@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_denglu_wei",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      640,
+      970,
+      52,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      52,
+      53
+    ],
+    "rotated": 1
+  }
+}

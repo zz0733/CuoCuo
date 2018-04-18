@@ -1,0 +1,23 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_biaoti_shop2",
+    "texture": "8b523d2d-8659-4ce7-81db-2568e3a58aea",
+    "atlas": "cb8de06e-0e7b-4d49-8f6f-a231862d1216",
+    "rect": [
+      887,
+      348,
+      238,
+      46
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      238,
+      46
+    ],
+    "rotated": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "wx_share_circle",
+    "texture": "b1Ny/01N5NE6QUYWSzf4lU",
+    "rect": [
+      0,
+      0,
+      1000,
+      1779
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      1000,
+      1779
+    ]
+  }
+}

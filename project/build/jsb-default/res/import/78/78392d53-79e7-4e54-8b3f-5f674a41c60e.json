@@ -1,0 +1,40 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "whPaiYou",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "whYouPai",
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_spriteFrame": {
+          "__uuid__": "11oXi4ec1Gn5UOJLl1XzN/"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "78OS1TeedOVIs/X2dKQcYO"
+      },
+      "fileId": "7dh4lcWv1MSbeeA9OtCC4T"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 26,
+      "height": 55
+    }
+  }
+]

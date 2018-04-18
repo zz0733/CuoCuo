@@ -1,0 +1,36 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "DDZ_Shunzi",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "DDZ_Shunzi",
+    "_components": [
+      {
+        "__type__": "sp.Skeleton",
+        "node": {
+          "__id__": 1
+        },
+        "defaultAnimation": "Shunzi_Zuo",
+        "_N$skeletonData": {
+          "__uuid__": "81CwmE7wJKfJ7Br9u3laRY"
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "ec3VW29bZB6pkbovXnZ9zC"
+      },
+      "fileId": "44VZp93+BIHbfALxrEl8+i"
+    }
+  }
+]

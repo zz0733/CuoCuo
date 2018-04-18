@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yx_xiaojiesuan_wei",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      780,
+      794,
+      52,
+      53
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      52,
+      53
+    ],
+    "rotated": 1
+  }
+}

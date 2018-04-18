@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_xiazhu3",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      51,
+      1378,
+      102,
+      90
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      102,
+      90
+    ],
+    "rotated": 1
+  }
+}

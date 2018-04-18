@@ -8,29 +8,40 @@ var _gameTypeSceneNameMap, _gameTypeZhNameMap;
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var version = 'version:2.0.6.6953';
+var version = 'version:2.1.0.7315';
 /*苹果审核
-    更新时间：2018年3月6日
-    更新版本：2.0.6.6927
-    更新内容：
-    1.优化游戏体验
-    :::4.0.1
+ 更新时间：2018年3月6日
+ 更新版本：2.0.6.6927
+ 更新内容：
+ 1.优化游戏体验
+ :::4.0.1
 
-    Bundle Identifier: com.youle2011.hymajiang
-    Version: 2.0.8
-    Build: 2.0.8
-*/
-/*
-    更新时间：2018年3月9日
-    更新版本：2.0.6.6953
-    更新内容：
-    1.优化游戏体验
-    :::4.0.1
+ Bundle Identifier: com.youle2011.hymajiang
+ Version: 2.0.8
+ Build: 2.0.8
+ */
+/*渔船用户
+ 更新时间：2018年3月26日
+ 更新版本：2.0.6.7030
+ 更新内容：
+ 1.优化游戏体验
+ :::3.0.10
 
-    Bundle Identifier: com.youle2011.hymajiang
-    Version: 2.0.9
-    Build: 2.0.9
-*/
+ Bundle Identifier: com.scyoule.cuocuo
+ Version: 2.0.10
+ Build: 2.0.10
+ */
+
+/*热更新(强制更新)
+更新时间：2018年04月17日
+更新版本：2.1.0.7313
+更新内容：
+1.游戏界面大翻新
+2.新增限时卡，可以在指定时间内自己使用或赠送他人
+3.修复部分已知BUG
+4.优化游戏体验
+:::4.0.2
+ */
 
 var logLevel = cc.Enum({
     none: 0,
@@ -58,15 +69,26 @@ var forceUpdateUrl = cc.Enum({
     ios: 'https://itunes.apple.com/cn/app/id1261810679?mt=8'
 });
 
-var loginUrl = ['ws://192.168.1.77:9999/ws', //内网
+var commonUrl = cc.Enum({
+    timeLimitCard: 'http://download.game2me.net/sharePage/index.html'
+});
+
+var loginUrl = ['ws://192.168.1.77:9999/ws', //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
+// 'ws://192.168.1.77:9999/ws',       //内网 'ws://192.168.1.77:9999/ws'
 'ws://am.fmgames.cn:29990/ws', //外网 'ws://70.103.170.210:29990/ws'
-'ws://121.42.39.15:9901/ws', //测试
-'ws://121.42.39.15:9901/ws'];
+'ws://yuchuan.fmgames.cn:9901/ws', //渔船 'ws://208.185.128.236:9901/ws'
+'ws://sh.fmgames.cn:9901/ws', //苹果审核
+'ws://208.185.128.235:9901/ws'];
+
 var loginUrlType = cc.Enum({
     intranet: 0,
     extranet: 1,
-    test: 2,
-    apple: 3
+    fisher: 2,
+    apple: 3,
+    test: 4
 });
 
 var loginType = cc.Enum({
@@ -94,12 +116,14 @@ var gameType = cc.Enum({
     sanGong: 2,
     maJiangHuangYan: 3,
     niuNiu: 4,
-    digFlower: 5
+    digFlower: 5,
+    DDZ: 6,
+    scMahjong: 7
 });
 
-var gameTypeSceneNameMap = (_gameTypeSceneNameMap = {}, _defineProperty(_gameTypeSceneNameMap, gameType.maJiangHuangYan, "majiang"), _defineProperty(_gameTypeSceneNameMap, gameType.maJiangWenLing, "majiang"), _defineProperty(_gameTypeSceneNameMap, gameType.sanGong, "puke"), _defineProperty(_gameTypeSceneNameMap, gameType.niuNiu, "puke"), _defineProperty(_gameTypeSceneNameMap, gameType.digFlower, "wahua"), _gameTypeSceneNameMap);
+var gameTypeSceneNameMap = (_gameTypeSceneNameMap = {}, _defineProperty(_gameTypeSceneNameMap, gameType.maJiangHuangYan, "majiang"), _defineProperty(_gameTypeSceneNameMap, gameType.maJiangWenLing, "majiang"), _defineProperty(_gameTypeSceneNameMap, gameType.sanGong, "puke"), _defineProperty(_gameTypeSceneNameMap, gameType.niuNiu, "puke"), _defineProperty(_gameTypeSceneNameMap, gameType.digFlower, "wahua"), _defineProperty(_gameTypeSceneNameMap, gameType.DDZ, "DouDiZhu"), _defineProperty(_gameTypeSceneNameMap, gameType.scMahjong, "majiang"), _gameTypeSceneNameMap);
 
-var gameTypeZhNameMap = (_gameTypeZhNameMap = {}, _defineProperty(_gameTypeZhNameMap, gameType.maJiangHuangYan, "黄岩麻将"), _defineProperty(_gameTypeZhNameMap, gameType.maJiangWenLing, "温岭麻将"), _defineProperty(_gameTypeZhNameMap, gameType.sanGong, "三公"), _defineProperty(_gameTypeZhNameMap, gameType.niuNiu, "牛牛"), _defineProperty(_gameTypeZhNameMap, gameType.digFlower, "温岭挖花"), _gameTypeZhNameMap);
+var gameTypeZhNameMap = (_gameTypeZhNameMap = {}, _defineProperty(_gameTypeZhNameMap, gameType.maJiangHuangYan, "黄岩麻将"), _defineProperty(_gameTypeZhNameMap, gameType.maJiangWenLing, "温岭麻将"), _defineProperty(_gameTypeZhNameMap, gameType.sanGong, "三公"), _defineProperty(_gameTypeZhNameMap, gameType.niuNiu, "牛牛"), _defineProperty(_gameTypeZhNameMap, gameType.digFlower, "温岭挖花"), _defineProperty(_gameTypeZhNameMap, gameType.DDZ, "斗地主"), _defineProperty(_gameTypeZhNameMap, gameType.scMahjong, "四川麻将"), _gameTypeZhNameMap);
 
 var wltest = {
     logUrl: "ws://192.168.1.89:6868/websocket",
@@ -120,12 +144,13 @@ var compileType = cc.Enum({
 
 var compileContent = [{}, wltest];
 
-var releaseName = ['normal', 'apple', 'release'];
+var releaseName = ['normal', 'apple', 'release', 'fisher'];
 
 var releaseType = cc.Enum({
     normal: 0,
     apple: 1,
-    release: 2
+    release: 2,
+    fisher: 3
 });
 
 var itemCsv = cc.Enum({
@@ -156,6 +181,7 @@ module.exports = {
     version: version,
     logLevel: logLevel,
     forceUpdateUrl: forceUpdateUrl,
+    commonUrl: commonUrl,
     logTags: logTags,
     loginUrl: loginUrl,
     loginUrlType: loginUrlType,

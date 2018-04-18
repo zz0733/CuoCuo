@@ -34,6 +34,16 @@ cc.Class({
             default: null
         },
 
+        createRoomDDZ: {
+            type: cc.Prefab,
+            default: null
+        },
+
+        createRoomXuezhan: {
+            type: cc.Prefab,
+            default: null
+        },
+
         zhanjiLayerPre: {
             type: cc.Prefab,
             default: null
@@ -76,15 +86,12 @@ cc.Class({
     },
 
     onLoad: function onLoad() {
-        //测试
-
-        //
-
         this._isTestnet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.test] ? true : false;
         this._isIntranet = fun.gameCfg.loginUrl === gameConst.loginUrl[gameConst.loginUrlType.intranet] ? true : false;
         cc.YL._isTestServer = this._isTestnet || this._isIntranet; // 保存当前的服务器类型，是否是测试
         this._isRelease = fun.gameCfg.releaseType === gameConst.releaseType.release ? true : false;
         this._isApple = fun.gameCfg.releaseType === gameConst.releaseType.apple ? true : false;
+        this._isFisher = fun.gameCfg.releaseType === gameConst.releaseType.fisher ? true : false;
         if (cc.sys.isNative) {
             require('JSPhoneBaiDu').getBaiDuLocation();
         }
@@ -93,7 +100,8 @@ cc.Class({
         this.addEnterRoomHandle(gameConst.gameType.maJiangHuangYan, this.mahjongEnterRoomHandle.bind(this));
         this.addEnterRoomHandle(gameConst.gameType.maJiangWenLing, this.mahjongEnterRoomHandle.bind(this));
         this.addEnterRoomHandle(gameConst.gameType.digFlower, this.digFlowerEnterRoomHandle.bind(this));
-
+        this.addEnterRoomHandle(gameConst.gameType.DDZ, this.DDZEnterRoomHandle.bind(this));
+        this.addEnterRoomHandle(gameConst.gameType.scMahjong, this.mahjongEnterRoomHandle.bind(this));
         fun.net.setGameMsgCfg({});
         fun.gameCfg.voiceLanguage = cc.sys.localStorage.getItem('voiceLanguage') || fun.gameCfg.voiceLanguage;
         var valumeData = cc.sys.localStorage.getItem('valumeData');
@@ -113,26 +121,26 @@ cc.Class({
         this.head.on('click', this.onHeadClick, this);
         var userInfo = fun.db.getData('UserInfo');
         this.showUserInfo(userInfo);
-        if (userInfo.RoomId && userInfo.RoomId !== 0) {
+        if (userInfo.RoomId && userInfo.RoomId != 0) {
             this.enterRoom(userInfo.RoomId);
         } else {
-            if (!this._isIntranet && !this._isTestnet) {
-                var initNode = this.node;
-                setTimeout(function () {
-                    if (!fun.db.getNeedNotice()) {
-                        var notice = initNode.getChildByName('notice');
-                        notice.getComponent(cc.Animation).play('popScaleAnim');
-                        notice.active = true;
-                        fun.db.setNeedNotice(true);
-                        notice.getChildByName('back').getChildByName('btnClose').on('click', function () {
-                            var animState = notice.getComponent(cc.Animation).play('popScaleOut');
-                            animState.once('finished', function () {
-                                notice.active = false;
-                            });
+            // if (!this._isIntranet && !this._isTestnet) {
+            var initNode = this.node;
+            setTimeout(function () {
+                if (!fun.db.getNeedNotice()) {
+                    var notice = initNode.getChildByName('notice');
+                    notice.getComponent(cc.Animation).play('popScaleAnim');
+                    notice.active = true;
+                    fun.db.setNeedNotice(true);
+                    notice.getChildByName('back').getChildByName('box').getChildByName('btnClose').on('click', function () {
+                        var animState = notice.getComponent(cc.Animation).play('popScaleOut');
+                        animState.once('finished', function () {
+                            notice.active = false;
                         });
-                    }
-                }, 500);
-            }
+                    });
+                }
+            }, 500);
+            // }
         }
         this.leftNode = this._mainBasic.getChildByName('left');
         this.leftNode.getChildByName('btnJoin').on('click', this.onBtnJoinClick, this);
@@ -144,12 +152,10 @@ cc.Class({
             this.gameBtns[i].active = true;
             this.gameBtns[i].on('click', this.onBtnGameClick.bind(this, i));
         }
-        this.appleReview(); //苹果审核用
-
         this.gameBtns.push(this.rightNode.getChildByName('btnGameMore'));
         this.gameBtns[this.gameBtns.length - 1].on('click', this.onBtnGameClick.bind(this, this.gameBtns.length - 1));
-        // this.gameBtns[this.gameBtns.length - 1].on('click', this.onBtnGameMoreClick, this);
 
+        this.appleReview(); //苹果审核用
         this.buttomNode = this._mainBasic.getChildByName('buttom');
         this.buttomNode.getChildByName('recordBtn').on('click', this.onRecordBtnClick, this);
         this.buttomNode.getChildByName('shareBtn').on('click', this.onShareBtnClick, this);
@@ -244,6 +250,14 @@ cc.Class({
             fun.event.dispatch('Zhuanquan', { flag: false });
         }
     },
+
+    DDZEnterRoomHandle: function DDZEnterRoomHandle(data) {
+        if (data.retMsg.code < 0) {
+            cc.YL.err(data.retMsg.code);
+        } else {
+            cc.director.loadScene("DDZ_GameScene");
+        }
+    },
     mahjongEnterRoomHandle: function mahjongEnterRoomHandle(data) {
         var codeCfg = {};
         var mjGameDefine = require("mjGameDefine");
@@ -251,6 +265,8 @@ cc.Class({
             codeCfg = mjGameDefine.HYRETCODE;
         } else if (data.GameType == gameConst.gameType.maJiangWenLing) {
             codeCfg = mjGameDefine.WLRETCODE;
+        } else if (data.GameType == gameConst.gameType.scMahjong) {
+            codeCfg = mjGameDefine.SCRETCODE;
         }
         if (!data.RetCode) {
             data.EnterRoom = 'enter';
@@ -263,7 +279,11 @@ cc.Class({
                 var gotoStore = function gotoStore() {
                     self.showStore(data.GameType);
                 };
-                fun.event.dispatch('MinSingleButtonPop', { contentStr: codeCfg[data.RetCode], okBtnStr: "前往充值", okCb: gotoStore });
+                fun.event.dispatch('MinSingleButtonPop', {
+                    contentStr: codeCfg[data.RetCode],
+                    okBtnStr: "前往充值",
+                    okCb: gotoStore
+                });
             } else {
                 fun.event.dispatch('MinSingleButtonPop', { contentStr: codeCfg[data.RetCode] });
             }
@@ -305,6 +325,12 @@ cc.Class({
             case gameConst.gameType.maJiangHuangYan:
                 require("mjReplayMgr").setReplayData(gameConst.gameType.maJiangHuangYan, data);
                 break;
+            case gameConst.gameType.DDZ:
+                {
+                    cc.YL.DDZReplayData = data.record;
+                    cc.director.loadScene("DDZ_ReplayScene");
+                    break;
+                }
         }
     },
     onNewMailIdIn: function onNewMailIdIn(mId) {
@@ -315,31 +341,50 @@ cc.Class({
         switch (index) {
             case 0:
                 fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangHuangYan }, function (data) {
-                    // if (data.RetCode && data.RetCode !== 0) return;
+                    if (data.RetCode && data.RetCode !== 0) return;
                     var hyNode = cc.instantiate(this.createMajiangRoomHY);
                     hyNode.parent = this.node;
-                    hyNode.getComponent('createMajiangRoom').showRoomCard(data);
+                    hyNode.getComponent('createMajiangRoom').showRoomCard(data, gameConst.gameType.maJiangHuangYan);
                 }.bind(this));
                 break;
             case 1:
                 fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangWenLing }, function (data) {
-                    // if (data.RetCode && data.RetCode !== 0) return;
+                    if (data.RetCode && data.RetCode !== 0) return;
                     var wlNode = cc.instantiate(this.createMajiangRoomWL);
                     wlNode.parent = this.node;
-                    wlNode.getComponent('createMajiangRoom').showRoomCard(data);
+                    wlNode.getComponent('createMajiangRoom').showRoomCard(data, gameConst.gameType.maJiangWenLing);
                 }.bind(this));
                 break;
             case 2:
                 // fun.event.dispatch('MinSingleButtonPop', {contentStr: '敬请期待！'});
                 // return;
-                var nnNode = cc.instantiate(this.createRoomWahua);
-                nnNode.parent = this.node;
+                // let sgNode = cc.instantiate(this.createSanGongRoomPre);
+                // sgNode.parent = this.node;
+                fun.net.pSend('RoomCard', { GameType: gameConst.gameType.DDZ }, function (data) {
+                    if (data.RetCode && data.RetCode !== 0) return;
+                    var DDZNode = cc.instantiate(this.createRoomDDZ);
+                    DDZNode.parent = this.node;
+                    DDZNode.getComponent('createDDZRoom').showRoomCard(data, gameConst.gameType.DDZ);
+                }.bind(this));
                 break;
             case 3:
                 fun.event.dispatch('MinSingleButtonPop', { contentStr: '敬请期待！' });
                 return;
-                var sgNode = cc.instantiate(this.createSanGongRoomPre);
-                sgNode.parent = this.node;
+                fun.net.pSend('RoomCard', { GameType: gameConst.gameType.scMahjong }, function (data) {
+                    // if (data.RetCode && data.RetCode !== 0) return;
+                    var xzNode = cc.instantiate(this.createRoomXuezhan);
+                    xzNode.parent = this.node;
+                    xzNode.getComponent('createScMahjongRoom').showRoomCard(data, gameConst.gameType.scMahjong);
+                }.bind(this));
+                /**
+                 * 挖花
+                fun.net.pSend('RoomCard', {GameType: gameConst.gameType.digFlower}, function (data) {
+                    if (data.RetCode && data.RetCode !== 0) return;
+                    let whNode = cc.instantiate(this.createRoomWahua);
+                    whNode.parent = this.node;
+                    whNode.getComponent('createWahuaRoom').showRoomCard(data, gameConst.gameType.digFlower);
+                }.bind(this));
+                */
                 break;
         }
     },
@@ -373,7 +418,7 @@ cc.Class({
     },
     onNewsBtnClick: function onNewsBtnClick() {
         Audio.playEffect('hall', 'button_nomal.mp3');
-        if (this._isApple) {
+        if (this._isApple || this._isRelease) {
             var news = cc.instantiate(this.newsLayerPre);
             news.parent = this.node;
         } else {

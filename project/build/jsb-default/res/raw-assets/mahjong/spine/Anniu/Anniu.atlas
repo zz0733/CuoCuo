@@ -1,0 +1,132 @@
+
+Anniu.png
+size: 1024,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Chi
+  rotate: false
+  xy: 2, 63
+  size: 165, 170
+  orig: 165, 170
+  offset: 0, 0
+  index: -1
+Gang
+  rotate: false
+  xy: 169, 63
+  size: 165, 170
+  orig: 165, 170
+  offset: 0, 0
+  index: -1
+Guo
+  rotate: false
+  xy: 336, 63
+  size: 165, 170
+  orig: 165, 170
+  offset: 0, 0
+  index: -1
+Hu
+  rotate: false
+  xy: 670, 64
+  size: 165, 169
+  orig: 165, 170
+  offset: 0, 0
+  index: -1
+Huan1
+  rotate: false
+  xy: 837, 177
+  size: 59, 56
+  orig: 59, 60
+  offset: 0, 3
+  index: -1
+Huan10
+  rotate: false
+  xy: 2, 2
+  size: 57, 59
+  orig: 59, 60
+  offset: 2, 0
+  index: -1
+Huan11
+  rotate: false
+  xy: 61, 3
+  size: 57, 58
+  orig: 59, 60
+  offset: 2, 1
+  index: -1
+Huan12
+  rotate: false
+  xy: 355, 5
+  size: 56, 56
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Huan13
+  rotate: false
+  xy: 957, 177
+  size: 57, 56
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Huan2
+  rotate: false
+  xy: 837, 119
+  size: 57, 56
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Huan3
+  rotate: false
+  xy: 179, 6
+  size: 57, 55
+  orig: 59, 60
+  offset: 2, 4
+  index: -1
+Huan4
+  rotate: false
+  xy: 898, 177
+  size: 57, 56
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Huan5
+  rotate: false
+  xy: 120, 5
+  size: 57, 56
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Huan6
+  rotate: false
+  xy: 955, 119
+  size: 56, 56
+  orig: 59, 60
+  offset: 3, 3
+  index: -1
+Huan7
+  rotate: true
+  xy: 297, 6
+  size: 55, 56
+  orig: 59, 60
+  offset: 3, 4
+  index: -1
+Huan8
+  rotate: false
+  xy: 896, 119
+  size: 57, 56
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Huan9
+  rotate: false
+  xy: 238, 6
+  size: 57, 55
+  orig: 59, 60
+  offset: 2, 3
+  index: -1
+Peng
+  rotate: false
+  xy: 503, 63
+  size: 165, 170
+  orig: 165, 170
+  offset: 0, 0
+  index: -1

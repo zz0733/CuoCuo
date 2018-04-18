@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Haishang",
+    "texture": "2411cb58-6c61-4de6-a54b-9a70c7e9e07d",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      73,
+      183
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      73,
+      183
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zuo_caishen",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      429,
+      202,
+      32,
+      26
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      32,
+      26
+    ],
+    "rotated": 1
+  }
+}

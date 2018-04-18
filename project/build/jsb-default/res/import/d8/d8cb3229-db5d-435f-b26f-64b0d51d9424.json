@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_bg_fx",
+    "texture": "6bA89X0P1IgpDScfgaONWN",
+    "rect": [
+      0,
+      0,
+      849,
+      169
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      849,
+      169
+    ]
+  }
+}

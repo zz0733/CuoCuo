@@ -1,0 +1,239 @@
+[
+  {
+    "__type__": "cc.Prefab",
+    "_name": "voiceHint",
+    "data": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "voiceHint",
+    "_children": [
+      {
+        "__id__": 2
+      },
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 6
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 1
+        },
+        "_spriteFrame": {
+          "__uuid__": "0fqVskzOdNZKLvwxd5oWyB"
+        }
+      },
+      {
+        "__type__": "14dbfPHo1hG5KZXrOuACCs1",
+        "node": {
+          "__id__": 1
+        },
+        "progressSprite": {
+          "__id__": 5
+        },
+        "cancelLabel": {
+          "__id__": 7
+        }
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "97ee2M7qpHJ64kqDUYDKAO"
+      },
+      "fileId": "a1JlKk5QpNUr5SRo+b77wJ"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 243,
+      "height": 243
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "bg",
+    "_parent": {
+      "__id__": 1
+    },
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 2
+        },
+        "_spriteFrame": {
+          "__uuid__": "e2rHtfBstIO6l3zx09dT04"
+        },
+        "_sizeMode": 0
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "97ee2M7qpHJ64kqDUYDKAO"
+      },
+      "fileId": "0e+71rLdlBearczT39Mddj"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 222,
+      "height": 32
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": -90
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "timeBar",
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [
+      {
+        "__id__": 4
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Sprite",
+        "node": {
+          "__id__": 3
+        },
+        "_spriteFrame": {
+          "__uuid__": "c7yb501k5NArEgeMrnoOXU"
+        },
+        "_sizeMode": 0
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "97ee2M7qpHJ64kqDUYDKAO"
+      },
+      "fileId": "1fvu0c8idLGrlCJa07wtGy"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 167,
+      "height": 167
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": 23
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "content",
+    "_parent": {
+      "__id__": 3
+    },
+    "_components": [
+      {
+        "__id__": 5
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "97ee2M7qpHJ64kqDUYDKAO"
+      },
+      "fileId": "fb0JL7QWhBV6s1dQeqFEWA"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 167,
+      "height": 167
+    },
+    "_rotationX": -90,
+    "_rotationY": -90
+  },
+  {
+    "__type__": "cc.Sprite",
+    "node": {
+      "__id__": 4
+    },
+    "_spriteFrame": {
+      "__uuid__": "bbEyDRmZtHcIGzbrzq6/eS"
+    },
+    "_type": 3,
+    "_sizeMode": 0,
+    "_fillType": 2,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "cancel",
+    "_parent": {
+      "__id__": 1
+    },
+    "_components": [
+      {
+        "__id__": 7
+      }
+    ],
+    "_prefab": {
+      "__type__": "cc.PrefabInfo",
+      "root": {
+        "__id__": 1
+      },
+      "asset": {
+        "__uuid__": "97ee2M7qpHJ64kqDUYDKAO"
+      },
+      "fileId": "2ciPdxlIJJjbNKItSOnZMi"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 240,
+      "height": 26
+    },
+    "_position": {
+      "__type__": "cc.Vec2",
+      "y": -90
+    }
+  },
+  {
+    "__type__": "cc.Label",
+    "node": {
+      "__id__": 6
+    },
+    "_useOriginalSize": false,
+    "_actualFontSize": 24,
+    "_fontSize": 24,
+    "_lineHeight": 24,
+    "_N$file": {
+      "__uuid__": "beyhNKIvhE56xmtDvt5hfe"
+    },
+    "_isSystemFontUsed": false,
+    "_N$string": "手指上划, 取消发送",
+    "_N$horizontalAlign": 1,
+    "_N$verticalAlign": 1,
+    "_N$overflow": 2
+  }
+]

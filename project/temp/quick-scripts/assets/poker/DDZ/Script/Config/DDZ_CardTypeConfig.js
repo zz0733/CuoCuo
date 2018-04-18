@@ -26,36 +26,21 @@ cc._RF.push(module, '92227zApmhJTbB0ytBrOwMZ', 'DDZ_CardTypeConfig', __filename)
  *  飞机带翅膀和四带二按其中的三顺和四张部分来比，带的牌不影响大小。
  *
  *  *******/
-cc.Class({
-    extends: cc.Component,
-
-    properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
-    },
-
-    // LIFE-CYCLE CALLBACKS:
-
-    // onLoad () {},
-
-    start: function start() {}
-}
-
-// update (dt) {},
-);
+var DDZPokerType = cc.Class({});
+DDZPokerType.typeEnum = {
+  "王炸": 12,
+  "炸弹": 11,
+  "单张": 10,
+  "对子": 9,
+  "三张": 8,
+  "三带一": 7,
+  "三带二": 6,
+  "顺子": 5,
+  "连对": 4,
+  "飞机带单张": 3,
+  "飞机带对子": 2,
+  "四带二": 1
+};
 
 cc._RF.pop();
         }

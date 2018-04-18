@@ -1,0 +1,152 @@
+
+Wangzha.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Guang1
+  rotate: false
+  xy: 917, 529
+  size: 94, 52
+  orig: 96, 54
+  offset: 1, 1
+  index: -1
+Guang4
+  rotate: true
+  xy: 917, 269
+  size: 127, 72
+  orig: 129, 74
+  offset: 1, 1
+  index: -1
+Guang5
+  rotate: true
+  xy: 917, 398
+  size: 129, 72
+  orig: 131, 74
+  offset: 1, 1
+  index: -1
+Huo
+  rotate: false
+  xy: 412, 16
+  size: 69, 131
+  orig: 69, 131
+  offset: 0, 0
+  index: -1
+Huojian
+  rotate: true
+  xy: 232, 8
+  size: 139, 178
+  orig: 139, 178
+  offset: 0, 0
+  index: -1
+MZha
+  rotate: false
+  xy: 2, 4
+  size: 228, 143
+  orig: 228, 143
+  offset: 0, 0
+  index: -1
+Mogu2
+  rotate: false
+  xy: 2, 599
+  size: 503, 419
+  orig: 505, 421
+  offset: 1, 1
+  index: -1
+Mogu3
+  rotate: true
+  xy: 2, 149
+  size: 448, 460
+  orig: 450, 462
+  offset: 1, 1
+  index: -1
+Mogu5
+  rotate: false
+  xy: 507, 583
+  size: 473, 435
+  orig: 475, 437
+  offset: 1, 1
+  index: -1
+Mogu6
+  rotate: false
+  xy: 464, 166
+  size: 451, 415
+  orig: 453, 417
+  offset: 1, 1
+  index: -1
+Yan2
+  rotate: false
+  xy: 483, 2
+  size: 261, 162
+  orig: 265, 256
+  offset: 0, 13
+  index: -1
+Yan3
+  rotate: false
+  xy: 746, 4
+  size: 264, 160
+  orig: 265, 256
+  offset: 1, 0
+  index: -1
+
+Wangzha2.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Guang2
+  rotate: false
+  xy: 702, 305
+  size: 117, 67
+  orig: 119, 69
+  offset: 1, 1
+  index: -1
+Guang3
+  rotate: false
+  xy: 854, 840
+  size: 130, 70
+  orig: 132, 72
+  offset: 1, 1
+  index: -1
+Mogu1
+  rotate: false
+  xy: 2, 120
+  size: 441, 348
+  orig: 443, 350
+  offset: 1, 1
+  index: -1
+Mogu4
+  rotate: false
+  xy: 2, 470
+  size: 448, 440
+  orig: 450, 442
+  offset: 1, 1
+  index: -1
+Mogu7
+  rotate: false
+  xy: 452, 626
+  size: 400, 284
+  orig: 402, 286
+  offset: 1, 1
+  index: -1
+Mogu8
+  rotate: false
+  xy: 452, 374
+  size: 391, 250
+  orig: 393, 252
+  offset: 1, 1
+  index: -1
+Yan1
+  rotate: false
+  xy: 445, 140
+  size: 255, 232
+  orig: 265, 256
+  offset: 3, 24
+  index: -1
+Zha
+  rotate: false
+  xy: 2, 2
+  size: 184, 116
+  orig: 228, 143
+  offset: 20, 14
+  index: -1

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dikuang_zhanji33",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      60,
+      528,
+      31,
+      34
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      31,
+      34
+    ],
+    "rotated": 1,
+    "capInsets": [
+      12,
+      13,
+      12,
+      13
+    ]
+  }
+}

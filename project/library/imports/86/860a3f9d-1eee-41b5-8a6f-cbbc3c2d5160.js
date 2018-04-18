@@ -61,12 +61,12 @@ cc.Class({
     },
     checkRoomCard: function checkRoomCard() {
         fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangHuangYan }, function (data) {
-            if (data.Total !== undefined) {
-                this.btnGame1.getChildByName('num').getComponent(cc.Label).string = data.Total;
+            if (data.TollCardCnt !== undefined || data.Total) {
+                this.btnGame1.getChildByName('num').getComponent(cc.Label).string = data.TollCardCnt || data.Total;
             }
             fun.net.pSend('RoomCard', { GameType: gameConst.gameType.maJiangWenLing }, function (data) {
-                if (data.Total !== undefined) {
-                    this.btnGame2.getChildByName('num').getComponent(cc.Label).string = data.Total;
+                if (data.TollCardCnt !== undefined || data.Total) {
+                    this.btnGame2.getChildByName('num').getComponent(cc.Label).string = data.TollCardCnt || data.Total;
                 }
             }.bind(this));
         }.bind(this));

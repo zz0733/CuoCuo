@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "x_gai",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      142,
+      2,
+      69,
+      105
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      69,
+      105
+    ],
+    "rotated": 1
+  }
+}

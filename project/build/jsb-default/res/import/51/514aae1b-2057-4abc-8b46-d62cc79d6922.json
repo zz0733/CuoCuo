@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "HHeng3",
+    "texture": "6bUkCgKrZAy63lDDfkIM2s",
+    "rect": [
+      8,
+      114,
+      962,
+      880
+    ],
+    "offset": [
+      -23,
+      -42
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}

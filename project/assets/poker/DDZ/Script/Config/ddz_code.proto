@@ -1,0 +1,65 @@
+syntax = "proto2";
+
+package ylproto;
+
+enum ddzErrorCode {
+    NOERROR = 0; //
+
+    CREATEFAIL = -100; //创建房间失败
+    CREATEFAIL_EXIST_IN_THE_DESK = -101; //创建房间失败，已经在房间中
+    CREATEFAIL_LACK_OF_ROOM_CARD = -102; //创建房间失败，房卡不足
+    CREATEFAIL_LACK_OF_GPS = -103; //创建房间失败，没有GPS信息
+
+    ENTERFAIL = -110; //进入房间失败
+    ENTERFAIL_ROOM_FULL = -111; //加入房间失败, 房间已满
+    ENTERFAIL_WRONG_PASSWORD = -112; //加入房间失败，房间号输入错误
+    ENTERFAIL_LACK_OF_GPS = -113; //进入房间失败,请打GPS开定位！
+
+    DISSOLVEFAIL = -120; //解散房间失败
+    DISSOLVEFAIL_NOT_DISSOLVE_STATUS = -121; //解散房间失败，房间不处于解散状态！
+    DISSOLVEFAIL_REPEATE_REQ = -122; //重复请求
+
+    READYFAIL = -130; //准备失败
+    READYFAIL_WRONG_STATUS = -131; //准备失败，当前状态无法准备！
+
+    ERROR_NOT_FOUND_USER = -132; //未找到指定ID玩家
+
+    JIAOFENFAIL = -133; //叫分失败
+    JIAOFENFAIL_REPEAT_JIAO_FEN = -134; //重复叫分
+
+    JIABEIFAIL = -135; //加倍失败
+    JIABEIFAIL_REPEATE_JIA_BEI = -136; //重复加倍
+
+    OUTCARDSFAIL = -137; //出牌失败
+    OUTCARDSFAIL_NOT_CHOOSE_CARDS = -138; //出牌失败，请先选择要出的牌！
+    OUTCARDSFAIL_WRONG_STATUS = -139; //出牌失败，状态错误！
+    OUTCARDSFAIL_NOT_ACTIVE_USER = -140; //出牌失败，非活动玩家！
+    OUTCARDSFAIL_WRONG_PAI_TYPE = -141; //出牌失败，错误牌型！
+    OUTCARDSFAIL_WRONG_PAI_COUNT = -142; //出牌失败，张数错误！
+    OUTCARDSFAIL_COMPARE_FAIL = -143; //出牌失败，出牌必须大于上家出的牌！
+    OUTCARDSFAIL_REPEATE_ID = -144; //出牌失败，牌值重复！
+    OUTCARDSFAIL_LOST_HAND_PAI = -145; //出牌失败，手牌丢失！
+    OUTCARDSFAIL_CANNOT_SANDAIDUI = -146; //出牌失败，不能三代对子
+    OUTCARDSFAIL_CANNOT_SIDAIDUI = -147; //出牌失败，不能四带对子
+    OUTCARDSFAIL_CANNOT_SANZHANG = -148; //出牌失败，不能出三张！
+
+    JIAOFENFAIL_NOONE_JIAO_FEN = -149; //叫分失败，没人叫分
+
+    PASSFAIL = -150; //请求过牌失败
+    PASSFAIL_WRONG_DESK_STATUS = -151; //过牌失败，DESK状态错误
+    PASSFAIL_NOT_ACTIVE_USER = -152; //过牌失败，不是活动玩家
+    PASSFAIL_SHOULD_ACT_OUT = -153; //过牌失败，该出牌
+
+    OPENINGFAIL_GET_DIPAI_FAIL = -160; //开局失败，获取底牌失败...
+
+    SENDMSGFAIL = -161; //发送消息失败
+    SENDMSGFAIL_NOT_FOUND_DESK = -162; //发送消息失败，未找到指定房间！
+
+    LOTTERYFAIL_LOST_BILL = -163; //结算失败，账单丢失
+    LOTTERYFAIL_WRONG_STATUS = -164; //结算失败，状态错误
+
+    LOGINFAIL = -165; //登录验证失败
+
+    LEAVEFAIL =-166;//离开失败
+    LEAVEFAIL_OPENED = -167;//离开失败，已开局
+}

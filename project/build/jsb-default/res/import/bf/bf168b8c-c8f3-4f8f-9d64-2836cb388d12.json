@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "zhanji_ddz1",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      261,
+      711,
+      100,
+      42
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      100,
+      42
+    ]
+  }
+}

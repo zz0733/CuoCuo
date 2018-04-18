@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_red_0",
+    "texture": "2dKusHmF1BrYs1egTQwEPE",
+    "rect": [
+      0,
+      0,
+      251,
+      105
+    ],
+    "offset": [
+      -2.5,
+      7.5
+    ],
+    "originalSize": [
+      256,
+      120
+    ]
+  }
+}

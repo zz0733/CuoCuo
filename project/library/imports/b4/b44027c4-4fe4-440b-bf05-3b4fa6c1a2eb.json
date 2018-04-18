@@ -5,8 +5,8 @@
     "texture": "c33b3bfa-c3fe-4e5e-a95b-78e9f20bf649",
     "atlas": "9fd2680d-bbc0-418b-91a3-d95c6b915c17",
     "rect": [
-      30,
-      1104,
+      339,
+      299,
       158,
       26
     ],
@@ -18,7 +18,6 @@
       158,
       26
     ],
-    "rotated": 1,
     "capInsets": [
       24,
       0,

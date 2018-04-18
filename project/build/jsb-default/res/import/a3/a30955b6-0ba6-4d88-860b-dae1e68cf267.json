@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_tishi_biaoti",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      297,
+      378,
+      166,
+      61
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      166,
+      61
+    ],
+    "rotated": 1
+  }
+}

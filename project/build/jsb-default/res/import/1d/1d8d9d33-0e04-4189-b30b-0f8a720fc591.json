@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_tishi_di1",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      470,
+      89,
+      41,
+      44
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      41,
+      44
+    ],
+    "rotated": 1,
+    "capInsets": [
+      18,
+      19,
+      18,
+      19
+    ]
+  }
+}

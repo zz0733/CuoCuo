@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_wifi_3",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      120,
+      1482,
+      36,
+      27
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      38,
+      29
+    ]
+  }
+}

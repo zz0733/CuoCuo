@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_jiesuan_anniu2",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      134,
+      891,
+      235,
+      96
+    ],
+    "offset": [
+      0,
+      1
+    ],
+    "originalSize": [
+      235,
+      98
+    ]
+  }
+}

@@ -76,11 +76,17 @@
     "guize2": {
       "__uuid__": "3ee33df0-7f32-4929-a043-1c29e3449ae0"
     },
+    "huan": {
+      "__uuid__": "97e18213-2700-4a7e-93e1-2d6c11d02673"
+    },
     "tianjia": {
       "__uuid__": "6ef27282-e0d6-46dc-a7c5-2630a8bf9309"
     },
     "tipaianniu": {
       "__uuid__": "6fc231b0-8e51-4fa9-aeac-05381269bc93"
+    },
+    "wahua_huan": {
+      "__uuid__": "28943546-7c9e-4667-b432-6606b453612b"
     },
     "wahua_jia": {
       "__uuid__": "5bccedf6-2dae-4613-b227-3b718607a193"
@@ -97,11 +103,8 @@
     "wh_xiaojiesuan3": {
       "__uuid__": "fc42c031-e039-4f06-a81d-ba0fb36d8ecc"
     },
-    "wh_xiaojiesuan34": {
-      "__uuid__": "f81d3cab-417e-4534-9c6b-3da06802672c"
-    },
     "wl_kaiju": {
-      "__uuid__": "96a22bae-d716-4eb7-a26c-8bff4f436b73"
+      "__uuid__": "66aab594-2521-4b02-b8e6-aad59e273e0c"
     },
     "wl_xiaojiesuan": {
       "__uuid__": "1e815f58-9c86-437d-84bf-9c801a64027c"

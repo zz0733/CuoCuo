@@ -1,0 +1,47 @@
+syntax = "proto2";
+
+package ylproto;
+import public "ddz_base.proto";
+
+//聊天
+message ddz_desk_send_msg_req {
+
+}
+
+message ddz_desk_send_msg_ack {
+    optional Header retMsg = 1;
+}
+
+//申请解散房间的msg
+message ddz_desk_dissolve_req {
+    optional int64 userId = 1; //申请解散玩家的ID
+}
+
+//广播玩家是否同意
+message ddz_desk_dissolveBro {
+    optional Header retMsg = 1;
+    optional int64 applyer = 2; //申请人
+    optional int64 responseUser = 3; //回复的人
+    optional bool isAgree = 4; //是否同意解散房间
+    optional int32 remainSeconds = 5; //剩余时间
+}
+
+//回复解散房间的请求，同意还是拒绝
+message ddz_desk_dissolve_reply {
+    optional int64 userId = 1; //
+    optional bool isAgree = 2; //是否同意
+}
+
+//解散房间成功后发的消息，广播
+message ddz_desk_dissolveDesk {
+    optional Header retMsg = 1;
+}
+
+message ddz_desk_leaveDesk_req {
+    optional int64 userId = 1; //请求离开的玩家
+}
+
+message ddz_desk_leaveDesk_ack {
+    optional Header retMsg = 1; //
+    optional bool isOk = 2; //是否操作成功
+}

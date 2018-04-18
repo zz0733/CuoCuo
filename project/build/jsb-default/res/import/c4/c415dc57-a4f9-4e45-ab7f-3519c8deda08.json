@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "card_0_2_4",
+    "texture": "739MSisvhBGIvb3r+HgUoi",
+    "rect": [
+      288,
+      891,
+      87,
+      125
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      87,
+      125
+    ]
+  }
+}

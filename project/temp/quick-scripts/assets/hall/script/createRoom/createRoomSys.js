@@ -10,7 +10,7 @@ var createSys = function createSys() {
         this.allHideList = {};
         this.createN = node.getChildByName('back').getChildByName('down');
         this.btnCreateN = this.createN.getChildByName("btnCreateRoom");
-        this.btnRechargeN = this.createN.getChildByName("btnRecharge");
+        this.btnRechargeN = this.createN.getChildByName('cardShow').getChildByName('fangka').getChildByName("btnRecharge");
         this.btnCreateN.on("touchend", this.onCreateClicked, this);
         this.btnRechargeN.on("touchend", this.onRechargeClicked, this);
         this.oldCreate = fun.utils.getCreateRoomData(gameType) || {};

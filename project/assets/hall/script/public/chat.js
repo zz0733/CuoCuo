@@ -24,6 +24,7 @@ cc.Class({
         }
         for (let i = 0; i < exporText.length; i++) {
             let text = textList.getChildByName("text" + i);
+            text.active = true;
             let content = text.getChildByName('content').getComponent(cc.Label);
             content.string = exporText[i];
             text.on('click', this.onTextClick.bind(this, i));

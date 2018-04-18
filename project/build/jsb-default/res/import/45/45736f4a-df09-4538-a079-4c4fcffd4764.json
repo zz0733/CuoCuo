@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dikuang_juli",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      404,
+      822,
+      131,
+      30
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      133,
+      32
+    ],
+    "rotated": 1
+  }
+}

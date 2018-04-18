@@ -26,7 +26,7 @@ let wechat = {
          * info.content = '房间信息'
          * require('JSPhoneWeChat').WxShareFriend(info);
          */
-        info.url = appUrl;
+        info.url = info.url ? info.url : appUrl;
         if(cc.sys.os === cc.sys.OS_ANDROID)
             jsb.reflection.callStaticMethod(className, 'WxShareFriend', '(Ljava/lang/String;)V', JSON.stringify(info));
         else if (cc.sys.os === cc.sys.OS_IOS)
@@ -77,7 +77,7 @@ let wechat = {
     WxReShareResult : function(result){
         console.log('---* js WxReShareResult *---');
         console.log('result: ' + result);
-        fun.event.dispatch('PhoneWeChatShareResult', result);
+        fun.event.dispatch('PhoneWeChatShareResult', result === '0' ? false : result);
     },
     //-- 服务器返回 微信支付结果 android-true/false ios-1/0
     WxRePayResult : function(result){

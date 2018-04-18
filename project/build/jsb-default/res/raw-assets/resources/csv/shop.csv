@@ -1,0 +1,13 @@
+﻿INT_Index,INT_Game,INT_ItemID,INT_OpValue,INT_GiveValue,INT_Price,STR_ID,STR_Desc,STR_ItemDesc
+1,3,1,30,0,600,applepay_room_card_6,黄岩麻将房卡 x30,
+2,3,1,60,0,1200,applepay_room_card_18,黄岩麻将房卡 x60,
+3,3,1,90,0,1800,applepay_room_card_50,黄岩麻将房卡 x90,
+4,3,1,125,0,2500,applepay_room_card_128,黄岩麻将房卡 x125,
+5,3,1,150,0,3000,applepay_room_card_298,黄岩麻将房卡 x150,
+6,3,1,250,0,5000,applepay_room_card_618,黄岩麻将房卡 x250,
+7,1,2,30,0,600,wenlingMajiang_card_6,温岭麻将房卡 x30,
+8,1,2,60,0,1200,wenlingMajiang_card_12,温岭麻将房卡 x60,
+9,1,2,90,0,1800,wenlingMajiang_card_18,温岭麻将房卡 x90,
+10,1,2,125,0,2500,wenlingMajiang_card_25,温岭麻将房卡 x125,
+11,1,2,150,0,3000,wenlingMajiang_card_30,温岭麻将房卡 x150,
+12,1,2,250,0,5000,wenlingMajiang_card_50,温岭麻将房卡 x250,

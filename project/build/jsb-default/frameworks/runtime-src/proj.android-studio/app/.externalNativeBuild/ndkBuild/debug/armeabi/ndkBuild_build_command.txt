@@ -1,17 +1,17 @@
-Executable : /SongZeming/AndroidStutio/Tools/android-ndk-r10e/ndk-build
+Executable : /Users/youle/Library/Android/sdk/ndk-bundle/ndk-build
 arguments : 
 NDK_PROJECT_PATH=null
-APP_BUILD_SCRIPT=/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Android.mk
-NDK_APPLICATION_MK=/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Application.mk
+APP_BUILD_SCRIPT=/Users/youle/Desktop/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Android.mk
+NDK_APPLICATION_MK=/Users/youle/Desktop/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/jni/Application.mk
 APP_ABI=armeabi
 NDK_ALL_ABIS=armeabi
 NDK_DEBUG=1
-APP_PLATFORM=android-9
-NDK_OUT=/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj
-NDK_LIBS_OUT=/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/lib
+APP_PLATFORM=android-14
+NDK_OUT=/Users/youle/Desktop/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/obj
+NDK_LIBS_OUT=/Users/youle/Desktop/project/build/jsb-default/frameworks/runtime-src/proj.android-studio/app/build/intermediates/ndkBuild/debug/lib
 NDK_TOOLCHAIN_VERSION=4.9
 APP_PLATFORM=android-20
-NDK_MODULE_PATH=/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/cocos2d-x:/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/cocos2d-x/cocos:/SongZeming/CocosCreator/cuocuo/project/build/jsb-default/frameworks/cocos2d-x/external
+NDK_MODULE_PATH=/Users/youle/Desktop/project/build/jsb-default/frameworks/cocos2d-x:/Users/youle/Desktop/project/build/jsb-default/frameworks/cocos2d-x/cocos:/Users/youle/Desktop/project/build/jsb-default/frameworks/cocos2d-x/external
 -j4
 NDK_DEBUG=1
 APP_SHORT_COMMANDS=false

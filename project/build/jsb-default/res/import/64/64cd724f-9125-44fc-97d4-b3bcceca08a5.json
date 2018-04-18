@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_shezhi_b",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      323,
+      976,
+      43,
+      33
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      43,
+      33
+    ],
+    "rotated": 1,
+    "capInsets": [
+      18,
+      0,
+      18,
+      0
+    ]
+  }
+}

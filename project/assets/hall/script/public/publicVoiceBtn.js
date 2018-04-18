@@ -8,7 +8,7 @@ cc.Class({
             type: cc.Prefab,
             default: null,
         },
-        bgResN : cc.Node,
+        bgResN: cc.Node,
 
     },
 
@@ -28,11 +28,11 @@ cc.Class({
         this.userId = fun.db.getData('UserInfo').UserId;
         this.queueMgr = require("voiceQueueMgr").new();
         this.queueMgr.init();
-        if(this.bgResN){
-            this.bgResN._showHide = function(){
+        if (this.bgResN) {
+            this.bgResN._showHide = function () {
                 this.bgResN.color = new cc.Color(255, 255, 255)
             }.bind(this)
-            this.bgResN._showNormal = function(){
+            this.bgResN._showNormal = function () {
                 this.bgResN.color = new cc.Color(100, 100, 100);
             }.bind(this)
             this.bgResN._showNormal();
@@ -75,12 +75,14 @@ cc.Class({
     },
 
     onTouchBegan (event) {
-        if(!this.queueMgr.isCanRecord()){
+        if (!this.queueMgr.isCanRecord()) {
             //可给用户添加点提示
             return
         }
         this.voiceHint = cc.instantiate(this.voiceHintPre);
-        this.voiceHint.parent = cc.director.getScene().getChildByName('Canvas');
+        this.voiceHint.parent = cc.director.getScene().getChildByName('Canvas')
+            || cc.director.getScene().getChildByName('DDZ_UIROOT')
+            || cc.director.getScene().getChildByName('DDZ_Replay');
         this.voiceHintCtr = this.voiceHint.getComponent('voiceHint');
         this.voiceHintCtr.showMove();
         this.sumTime = 0;
@@ -89,7 +91,9 @@ cc.Class({
     },
 
     onTouchMoved (event) {
-        if(!this.touching){return}
+        if (!this.touching) {
+            return
+        }
         let pos = event.getTouches()[0].getLocation();
         if (cc.rectContainsPoint(this.mRect, pos)) {
             this.voiceHintCtr.showMove();
@@ -99,7 +103,9 @@ cc.Class({
     },
 
     onTouchEnded (event) {
-        if(!this.touching){return}
+        if (!this.touching) {
+            return
+        }
         this.touching = false;
         this.voiceHint.destroy();
         this.stopRecord();
@@ -113,16 +119,25 @@ cc.Class({
     },
 
     checkHide(data){
-        if(!this.bgResN){return}
-        if(this.queueMgr.isCanRecord()){
+        if (!this.bgResN) {
+            return
+        }
+        if(!this.queueMgr){
+            return
+        }
+        if (this.queueMgr.isCanRecord()) {
             this.bgResN._showNormal();
-        }{
+        }
+        {
             this.bgResN._showHide();
         }
     },
 
     update (dt) {
         this.checkHide()
+        if(!this.queueMgr){
+            return
+        }
         this.queueMgr.update(dt);
         if (!this.touching) {
             return;

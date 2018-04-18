@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "whXiaPeng",
+    "_name": "whTangXia",
     "_objFlags": 0,
     "_rawFiles": null,
     "data": {
@@ -51,8 +51,8 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -105,12 +105,12 @@
     },
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.8,
+    "_scaleY": 0.8,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
-      "y": 22
+      "y": 20
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -153,7 +153,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
     },
     "fileId": "6e3cGRkAtE65YzfmXKuz4R",
     "sync": false
@@ -192,7 +192,7 @@
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "ad1551a2-b298-4315-ad91-a4dec858145f"
     },
     "fileId": "bf6/fWzY9FgJu+jwESxE1k",
     "sync": false

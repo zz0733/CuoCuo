@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_biaoti_shezhi",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      581,
+      453,
+      170,
+      66
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      170,
+      66
+    ]
+  }
+}

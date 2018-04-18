@@ -192,6 +192,7 @@ cc.Class({
             case jsb.EventAssetsManager.UPDATE_PROGRESSION:
                 if(!this._getTotalBytes && event.getTotalBytes() !== 0){
                     console.log('--- event: ', event);
+                    console.log('--- event.str: ', JSON.stringify(event));
                     console.log('--- getTotalBytes: ', event.getTotalBytes());
                     console.log('--- getTotalFiles: ', event.getTotalFiles());
                     console.log('--- getPercent: ', event.getPercent());

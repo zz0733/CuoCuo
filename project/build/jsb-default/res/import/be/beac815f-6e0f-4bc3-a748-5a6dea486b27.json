@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dikuang1_4",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      791,
+      848,
+      82,
+      73
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      84,
+      75
+    ],
+    "rotated": 1,
+    "capInsets": [
+      17,
+      16,
+      17,
+      16
+    ]
+  }
+}

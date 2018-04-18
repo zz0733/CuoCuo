@@ -38,7 +38,9 @@ var WahuaCfg = {
 
 	QuitRoom: { id: "QuitRoom", desc: "退出房间（牌局未开始)", req: 423, rsp: 523, notify: 623 },
 
-	AllAccount: { id: "AllAccount", desc: "总结算", req: 424, rsp: 524, notify: 624 }
+	AllAccount: { id: "AllAccount", desc: "总结算", req: 424, rsp: 524, notify: 624 },
+
+	EscapeFlower: { id: "EscapeFlower", desc: "桃花或者过", req: 425, rsp: 525, notify: 625 }
 
 };
 

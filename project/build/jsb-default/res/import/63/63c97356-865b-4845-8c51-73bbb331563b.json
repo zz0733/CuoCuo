@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Heng2",
+    "texture": "01ypnpZ4tNdKyua5p+I4v0",
+    "rect": [
+      8,
+      4,
+      962,
+      990
+    ],
+    "offset": [
+      -23,
+      13
+    ],
+    "originalSize": [
+      1024,
+      1024
+    ]
+  }
+}

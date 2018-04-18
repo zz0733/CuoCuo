@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_fangka_4",
+    "texture": "8bUj0thllM54HbJWjjpYrq",
+    "rect": [
+      757,
+      785,
+      171,
+      143
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      171,
+      143
+    ],
+    "rotated": 1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_jindutiao1",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      336,
+      488,
+      50,
+      39
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      39
+    ],
+    "capInsets": [
+      22,
+      0,
+      22,
+      0
+    ]
+  }
+}

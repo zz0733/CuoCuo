@@ -1,0 +1,188 @@
+
+Zhadan.png
+size: 1024,1024
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Guang1
+  rotate: false
+  xy: 427, 387
+  size: 94, 52
+  orig: 96, 54
+  offset: 1, 1
+  index: -1
+Guang2
+  rotate: false
+  xy: 822, 743
+  size: 117, 67
+  orig: 119, 69
+  offset: 1, 1
+  index: -1
+Guang3
+  rotate: true
+  xy: 750, 681
+  size: 130, 70
+  orig: 132, 72
+  offset: 1, 1
+  index: -1
+Guang4
+  rotate: true
+  xy: 700, 40
+  size: 127, 72
+  orig: 129, 74
+  offset: 1, 1
+  index: -1
+Guang5
+  rotate: false
+  xy: 610, 169
+  size: 129, 72
+  orig: 131, 74
+  offset: 1, 1
+  index: -1
+MZha
+  rotate: true
+  xy: 873, 812
+  size: 210, 129
+  orig: 210, 129
+  offset: 0, 0
+  index: -1
+Zha
+  rotate: true
+  xy: 643, 639
+  size: 169, 105
+  orig: 210, 129
+  offset: 19, 12
+  index: -1
+Zha01
+  rotate: true
+  xy: 822, 651
+  size: 90, 93
+  orig: 92, 95
+  offset: 1, 1
+  index: -1
+Zha02
+  rotate: true
+  xy: 530, 3
+  size: 162, 168
+  orig: 164, 170
+  offset: 1, 1
+  index: -1
+Zha03
+  rotate: true
+  xy: 621, 441
+  size: 195, 171
+  orig: 197, 173
+  offset: 1, 1
+  index: -1
+Zha04
+  rotate: true
+  xy: 610, 243
+  size: 196, 188
+  orig: 198, 190
+  offset: 1, 1
+  index: -1
+Zha05
+  rotate: false
+  xy: 427, 441
+  size: 192, 195
+  orig: 194, 197
+  offset: 1, 1
+  index: -1
+Zha06
+  rotate: true
+  xy: 218, 378
+  size: 210, 207
+  orig: 212, 209
+  offset: 1, 1
+  index: -1
+Zha07
+  rotate: false
+  xy: 2, 376
+  size: 214, 212
+  orig: 216, 214
+  offset: 1, 1
+  index: -1
+Zha08
+  rotate: false
+  xy: 441, 810
+  size: 214, 212
+  orig: 216, 214
+  offset: 1, 1
+  index: -1
+Zha09
+  rotate: true
+  xy: 2, 158
+  size: 216, 207
+  orig: 218, 209
+  offset: 1, 1
+  index: -1
+Zha10
+  rotate: false
+  xy: 2, 590
+  size: 218, 213
+  orig: 220, 215
+  offset: 1, 1
+  index: -1
+Zha11
+  rotate: false
+  xy: 2, 805
+  size: 219, 217
+  orig: 221, 219
+  offset: 1, 1
+  index: -1
+Zha12
+  rotate: false
+  xy: 223, 807
+  size: 216, 215
+  orig: 218, 217
+  offset: 1, 1
+  index: -1
+Zha13
+  rotate: false
+  xy: 657, 813
+  size: 214, 209
+  orig: 216, 211
+  offset: 1, 1
+  index: -1
+Zha14
+  rotate: true
+  xy: 211, 162
+  size: 212, 201
+  orig: 214, 203
+  offset: 1, 1
+  index: -1
+Zha15
+  rotate: true
+  xy: 414, 167
+  size: 209, 194
+  orig: 211, 196
+  offset: 1, 1
+  index: -1
+Zha16
+  rotate: false
+  xy: 441, 638
+  size: 200, 170
+  orig: 202, 172
+  offset: 1, 1
+  index: -1
+Zha17
+  rotate: false
+  xy: 334, 2
+  size: 194, 158
+  orig: 196, 160
+  offset: 1, 1
+  index: -1
+Zha18
+  rotate: false
+  xy: 2, 2
+  size: 172, 154
+  orig: 174, 156
+  offset: 1, 1
+  index: -1
+Zhadan
+  rotate: true
+  xy: 176, 2
+  size: 154, 156
+  orig: 156, 158
+  offset: 1, 1
+  index: -1

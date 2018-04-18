@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_luyin",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      167,
+      2,
+      243,
+      243
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      245,
+      245
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yxmj_anniu_tishi",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      916,
+      116,
+      70,
+      71
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      72,
+      73
+    ],
+    "rotated": 1
+  }
+}

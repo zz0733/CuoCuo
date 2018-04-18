@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_liaotiankuang",
+    "texture": "a9c+BYF3tKXqw96fOJksyB",
+    "rect": [
+      390,
+      364,
+      130,
+      89
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      130,
+      89
+    ],
+    "rotated": 1,
+    "capInsets": [
+      52,
+      35,
+      31,
+      38
+    ]
+  }
+}

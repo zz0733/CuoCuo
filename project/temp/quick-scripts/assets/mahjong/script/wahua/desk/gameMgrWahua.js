@@ -5,6 +5,7 @@ cc._RF.push(module, '62981jDNQZBwpvR7LlpEfYs', 'gameMgrWahua', __filename);
 'use strict';
 
 var WhUtils = require('whUtils');
+var WhDefine = require('whDefine');
 
 cc.Class({
     extends: cc.Component,
@@ -34,10 +35,10 @@ cc.Class({
     onLoad: function onLoad() {
         fun.event.dispatch('Zhuanquan', { flag: false });
         fun.net.setGameMsgCfg(require('WahuaCfg'));
-        this._userId = fun.db.getData('UserInfo').UserId;
+        this._userId = fun.db.getData('UserInfo').UserId.toString();
         var roomInfo = fun.db.getData('RoomInfo');
         this._gameStatu = roomInfo.roomRule.gameStatu;
-        this._isRoomOwner = this._userId.toString() === roomInfo.roomRule.roomOwner;
+        this._isRoomOwner = this._userId === roomInfo.roomRule.roomOwner;
         this._playerNum = roomInfo.roomRule.playerNum;
         this._seat = new Array();
         this._seatDir = ['xia', 'you', 'shang', 'zuo'];
@@ -49,6 +50,9 @@ cc.Class({
     },
     start: function start() {
         this.reconnet();
+        this.escapeFlowerN = this.node.getChildByName('guo');
+        this.escapeFlowerN.getChildByName('taohua').on('click', this.onBtnTaohuaClick.bind(this, 1));
+        this.escapeFlowerN.getChildByName('guo').on('click', this.onBtnTaohuaClick.bind(this, 2));
     },
     registerListener: function registerListener() {
         fun.net.pListen('EnterRoom', this.onEnterRoomIn.bind(this));
@@ -71,7 +75,14 @@ cc.Class({
         fun.net.listen('OneAccount', this.onOneAccountIn.bind(this));
         fun.net.listen('QuitRoom', this.onQuitRoomIn.bind(this));
         fun.net.listen('AllAccount', this.onAllAccountIn.bind(this));
+        fun.net.listen('EscapeFlower', this.onEscapeFlowerIn.bind(this));
 
+        fun.event.add('gameMgrWahuaNeedReSortCards', 'whNeedReSortCards', function (data) {
+            this.showCardById(this._userId, WhUtils.setSortByCards(data));
+        }.bind(this));
+        fun.event.add('gameMgrWahuaUpdatedCards', 'whUpdatedCards', function (data) {
+            this._xiaCards = data;
+        }.bind(this));
         fun.event.add('gameMgrWahuaInitCompleted', 'wahuaInitCompleted', this.updateSeats.bind(this));
         fun.event.add('gameMgrWahuaQuitFromSetting', 'wahuaQuitFromSetting', this.onBtnExitClick.bind(this));
     },
@@ -96,7 +107,10 @@ cc.Class({
         fun.net.rmListen('OneAccount');
         fun.net.rmListen('QuitRoom');
         fun.net.rmListen('AllAccount');
+        fun.net.rmListen('EscapeFlower');
 
+        fun.event.remove('gameMgrWahuaNeedReSortCards');
+        fun.event.remove('gameMgrWahuaUpdatedCards');
         fun.event.remove('gameMgrWahuaInitCompleted');
         fun.event.remove('gameMgrWahuaQuitFromSetting');
     },
@@ -104,6 +118,7 @@ cc.Class({
         this.removeListener();
         this._seat = [];
         this._seatDir = [];
+        this._xiaCards = [];
     },
     updateSeats: function updateSeats(p) {
         if (!p && p !== 0) return;
@@ -111,7 +126,7 @@ cc.Class({
         this._seat[p].ui = this.node.getChildByName(this._seatDir[p]).getComponent('playerUiWahua');
         this._seat[p].pos = p;
         this._seat[p].id = this._seat[p].ui.data ? this._seat[p].ui.data.userId : undefined;
-        cc.log('--- this._seat: ', this._seat);
+        // cc.log('--- this._seat: ', this._seat);
     },
     getSeatByUserId: function getSeatByUserId(id) {
         for (var i = 0; i < this._seat.length; ++i) {
@@ -134,8 +149,30 @@ cc.Class({
             this.showYaoZhang(roomRule.rollChessDice, true);
         }
         for (var id in userMap) {
-            if (!userMap[id].alreadyChess) return;
-            this.showCardById(id, userMap[id].alreadyChess);
+            var seat = this.getSeatByUserId(id);
+            var chessCard = userMap[id].alreadyChess;
+            var chessNum = userMap[id].alreadyChessNum;
+            var overChess = userMap[id].overChess;
+            if (chessCard) {
+                this.showCardById(id, WhUtils.setSortByCards(chessCard));
+            } else if (chessNum && chessNum !== 0) {
+                this.showCardById(id, chessNum);
+            }
+            if (overChess && overChess.length !== 0) {
+                for (var i = 0; i < overChess.length; ++i) {
+                    seat.ui.chuPai(overChess[i]);
+                }
+            }
+            var buhuaChess = userMap[id].buhuaChess;
+            if (buhuaChess && buhuaChess.length !== 0) {
+                seat.ui.setBuhuaText(buhuaChess.length);
+            }
+            var gangAndEatChess = userMap[id].gangAndEatChess;
+            if (gangAndEatChess && gangAndEatChess.length !== 0) {
+                for (var _i = 0; _i < gangAndEatChess.length; ++_i) {
+                    seat.ui.setChiGang(gangAndEatChess[_i]);
+                }
+            }
         }
     },
     showYaoZhang: function showYaoZhang(yaozhang, isReconnet) {
@@ -153,6 +190,13 @@ cc.Class({
         var seat = this.getSeatByUserId(id);
         if (!seat) return;
         seat.ui.setCardShow(cards);
+    },
+    setEscapeFlowerShow: function setEscapeFlowerShow(flag) {
+        this.escapeFlowerN.active = flag;
+    },
+    onBtnTaohuaClick: function onBtnTaohuaClick(type) {
+        fun.net.send('EscapeFlower', { isRunaway: type });
+        this.setEscapeFlowerShow(false);
     },
     setReadyState: function setReadyState(flag) {
         this.btnReady.active = flag;
@@ -192,20 +236,15 @@ cc.Class({
         if (this._gameStatu === 1) {
             if (this._isRoomOwner) {
                 fun.net.send('DisbandRoom', {}, function (rsp) {
-                    cc.log('DisbandRoom-----------', rsp);
                     this.exitRoom();
                 }.bind(this));
             } else {
                 fun.net.send('QuitRoom', {}, function (rsp) {
-                    cc.log('QuitRoom---------', rsp);
                     this.exitRoom();
                 }.bind(this));
             }
         } else {
-            fun.net.send('DisbandRoomVote', { applyStatu: 0 }, function (rsp) {
-                cc.log('DisbandRoomVote--------', rsp);
-                this.exitRoom();
-            }.bind(this));
+            fun.net.send('DisbandRoomVote', { applyStatu: 0 });
         }
     },
     onBtnReadyClick: function onBtnReadyClick() {
@@ -235,18 +274,15 @@ cc.Class({
         }
     },
     onReadyIn: function onReadyIn(data) {
-        cc.log('onReadyIn--------', data);
         if (!data.ready) return;
         var seat = this.getSeatByUserId(data.ready);
         if (!seat) return;
         seat.ui.showReady(true);
     },
     onReadyNextIn: function onReadyNextIn(data) {
-        cc.log('onReadyNextIn--------', data);
         this.setReadyState(true);
     },
     onBankerIn: function onBankerIn(data) {
-        cc.log('onBankerIn--------', data);
         this._gameStatu = 2;
         this.setJiaWeiShow(data.Zhuangjia);
         this.setReadyState(false);
@@ -257,7 +293,6 @@ cc.Class({
         }
     },
     onRockCardIn: function onRockCardIn(data) {
-        cc.log('onRockCardIn--------', data);
         var yzNode = this.node.getChildByName('yaozhang');
         this.showYaoZhang(data.rollChessDice);
         var szCallback = function szCallback() {
@@ -268,35 +303,83 @@ cc.Class({
         fun.event.dispatch('wahuaSaiziEnd', { point: szPoint, callback: szCallback });
     },
     onUserRefreshIn: function onUserRefreshIn(data) {
-        cc.log('onUserRefreshIn--------', data);
+        cc.log('onUserRefreshIn--------');
     },
     onNoneOpsIn: function onNoneOpsIn(data) {
-        cc.log('onNoneOpsIn--------', data);
+        cc.log('onNoneOpsIn--------');
     },
     onStartGameIn: function onStartGameIn(data) {
-        cc.log('onStartGameIn--------', data);
-        this.showCardById(this._userId, data.alreadyChess);
+        this.setEscapeFlowerShow(true);
+        this.showCardById(this._userId, WhUtils.setSortByCards(data.alreadyChess));
+        for (var i = 0; i < this._seat.length; ++i) {
+            if (this._seat[i] && this._seat[i].id && this._seat[i].id !== this._userId) {
+                this._seat[i].ui.setCardShow(WhDefine.InitCardsNumber);
+            }
+        }
+    },
+    onEscapeFlowerIn: function onEscapeFlowerIn(data) {
+        this.setEscapeFlowerShow(true);
     },
     onPlayCardIn: function onPlayCardIn(data) {
-        cc.log('onPlayCardIn--------', data);
+        if (data.playChessUser) {
+            var seat = this.getSeatByUserId(data.playChessUser);
+            if (data.hint && data.playChessUser !== this._userId) {
+                seat.ui.showQuan();
+            } else {
+                seat.ui.chuPai(data.playChess, true);
+            }
+        }
     },
     onDrawCardIn: function onDrawCardIn(data) {
-        cc.log('onDrawCardIn--------', data);
+        if (data.fetchChess && data.playGetChessUser === this._userId) {
+            cc.log('--- xia 摸牌 ---');
+            this._xiaCards.cardArr.push(data.fetchChess);
+        }
+        var seat = this.getSeatByUserId(data.playGetChessUser);
+        seat.ui.moPai(data.fetchChess);
     },
     onOpsAcceptIn: function onOpsAcceptIn(data) {
-        cc.log('onOpsAcceptIn--------', data);
+        if (data.hint && data.hint === 1) {
+            fun.event.dispatch('wahuaOpsEvent', data);
+        } else {
+            if (data.isHu) {
+                for (var id in data.other_chess) {
+                    cc.log('--- id, card: ', id, data.other_chess[id]);
+                    var _seat = this.getSeatByUserId(id);
+                    cc.log('--- seat: ', _seat);
+                    _seat.ui.setHu(data.other_chess[id]);
+                }
+                return;
+            }
+            var seat = this.getSeatByUserId(data.playChessUser);
+            if (data.isReplaceWhite) {
+                seat.ui.setHuan(data.playChess);
+            } else {
+                seat.ui.setChiGang(data.playChess, true);
+            }
+        }
     },
     onRepairCardIn: function onRepairCardIn(data) {
-        cc.log('onRepairCardIn--------', data);
+        if (!data.buhuaChess || !data.buhua_player) return;
+        var seat = this.getSeatByUserId(data.buhua_player);
+        seat.ui.setBuhuaText(data.buhuaChess.length);
+        if (!data.buhuaReplaceWhiteChess) return;
+        for (var i = 0; i < data.buhuaChess.length; ++i) {
+            for (var j = 0; j < this._xiaCards.cardArr.length; ++j) {
+                if (data.buhuaChess[i] === this._xiaCards.cardArr[j]) {
+                    this._xiaCards.cardArr[j] = data.buhuaReplaceWhiteChess[i];
+                }
+            }
+        }
+        this.showCardById(data.buhua_player, WhUtils.setSortByCards(this._xiaCards.cardArr));
     },
     onOneAccountIn: function onOneAccountIn(data) {
-        cc.log('onOneAccountIn--------', data);
+        cc.log('onOneAccountIn--------');
     },
     onAllAccountIn: function onAllAccountIn(data) {
-        cc.log('onAllAccountIn--------', data);
+        cc.log('onAllAccountIn--------');
     },
     onDisbandRoomIn: function onDisbandRoomIn(data) {
-        cc.log('onDisbandRoomIn--------', data);
         this.exitRoom();
     },
     onQuitRoomIn: function onQuitRoomIn(data) {
@@ -305,10 +388,37 @@ cc.Class({
         fun.db.setData('RoomInfo', roomInfo);
     },
     onDisbandRoomVoteIn: function onDisbandRoomVoteIn(data) {
-        cc.log('onDisbandRoomVoteIn--------', data);
+        if (this.applyStatu) {
+            for (var id1 in this.applyStatu) {
+                for (var id2 in data.applyStatu) {
+                    if (id1 === id2) {
+                        this.applyStatu[id1].state = data.applyStatu[id2];
+                    }
+                }
+            }
+        } else {
+            this.applyStatu = {};
+            for (var i = 0; i < this._seat.length; ++i) {
+                for (var id in data.applyStatu) {
+                    var seat = this._seat[i];
+                    if (seat && seat.id && seat.id === id) {
+                        this.applyStatu[id] = {};
+                        this.applyStatu[id].state = data.applyStatu[id];
+                        this.applyStatu[id].name = seat.ui.data.userName;
+                        this.applyStatu[id].headUrl = seat.ui.data.UserHeadUrl;
+                    }
+                }
+            }
+        }
+        data.applyStatu = this.applyStatu;
+        fun.event.dispatch('wahuaDisbandRoom', data);
     },
     onDisbandRoomResultIn: function onDisbandRoomResultIn(data) {
-        cc.log("DisbandRoomResult---------------", data);
+        if (data.breakStatu && data.breakStatu === 1) {
+            this.exitRoom();
+        } else if (data.breakStatu && data.breakStatu === 2) {
+            fun.event.dispatch('wahuaDisbandRoom', false);
+        }
     },
     onOffLineIn: function onOffLineIn(data) {
         fun.event.dispatch('OffLineState', { flag: true, userId: parseInt(data.outLine) });

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "fx_heng",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      249,
+      72,
+      90,
+      84
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      90,
+      84
+    ]
+  }
+}

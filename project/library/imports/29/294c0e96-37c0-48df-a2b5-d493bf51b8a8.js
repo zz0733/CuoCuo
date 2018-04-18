@@ -238,20 +238,11 @@ var utils = {
         return count;
     },
 
-    //
     setBtnEnabled: function setBtnEnabled(btnNode, isEnabled) {
         btnNode.color = isEnabled ? cc.Color.WHITE : cc.Color.GRAY;
         btnNode.scale = isEnabled ? 1 : 0.94;
         if (btnNode.getComponent(cc.Button)) {
             btnNode.getComponent(cc.Button).enabled = isEnabled;
-        }
-    },
-
-    getMinMaxByArray: function getMinMaxByArray(type, data) {
-        if (type === 'min') {
-            return Math.min.apply(Math, data);
-        } else {
-            return Math.max.apply(Math, data);
         }
     }
 };

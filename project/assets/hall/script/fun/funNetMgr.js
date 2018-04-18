@@ -336,6 +336,7 @@ cc.Class({
                 fun.log('net', '_onMessage json error ', err);
             }
         }
+        // cc.YL.network("服务器推送的消息cmd:%s",cmd);
         if (cmd < MaxPlatformCmd) {
             this._ponMessage(cmd, message);
         } else {

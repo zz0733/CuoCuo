@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_shengqi",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      918,
+      2,
+      101,
+      112
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      103,
+      114
+    ]
+  }
+}

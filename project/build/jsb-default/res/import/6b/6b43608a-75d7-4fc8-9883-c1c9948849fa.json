@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_id_di2",
+    "texture": "9340YtnONPsp4sDX0Y/O59",
+    "rect": [
+      122,
+      1065,
+      164,
+      32
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      164,
+      32
+    ],
+    "rotated": 1,
+    "capInsets": [
+      8,
+      0,
+      102,
+      0
+    ]
+  }
+}

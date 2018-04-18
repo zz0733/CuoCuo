@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_anniu_huifang",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      493,
+      347,
+      85,
+      86
+    ],
+    "offset": [
+      0,
+      -1
+    ],
+    "originalSize": [
+      85,
+      88
+    ],
+    "rotated": 1
+  }
+}

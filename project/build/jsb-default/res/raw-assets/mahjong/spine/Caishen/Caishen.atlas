@@ -1,0 +1,41 @@
+
+Caishen.png
+size: 1024,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Guang
+  rotate: false
+  xy: 592, 2
+  size: 116, 114
+  orig: 116, 114
+  offset: 0, 0
+  index: -1
+Zi1
+  rotate: false
+  xy: 2, 14
+  size: 165, 102
+  orig: 165, 102
+  offset: 0, 0
+  index: -1
+Zi3
+  rotate: false
+  xy: 169, 23
+  size: 151, 93
+  orig: 165, 102
+  offset: 7, 5
+  index: -1
+Zi5
+  rotate: false
+  xy: 322, 30
+  size: 138, 86
+  orig: 165, 102
+  offset: 13, 8
+  index: -1
+Zi7
+  rotate: false
+  xy: 462, 36
+  size: 128, 80
+  orig: 165, 102
+  offset: 18, 11
+  index: -1

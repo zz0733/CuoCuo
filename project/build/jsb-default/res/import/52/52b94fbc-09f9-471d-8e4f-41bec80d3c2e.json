@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_guanbi",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      2,
+      653,
+      78,
+      83
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      78,
+      83
+    ]
+  }
+}

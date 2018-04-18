@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "dz_guize2",
+    "texture": "36hssLDwlGtJrkeNGNd9ut",
+    "rect": [
+      170,
+      2,
+      42,
+      83
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      44,
+      85
+    ]
+  }
+}

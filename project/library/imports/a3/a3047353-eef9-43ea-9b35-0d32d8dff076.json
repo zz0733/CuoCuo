@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ddz_kaichang",
+    "texture": "3686cb0b-0f09-46b4-9ae4-78d18d77dbad",
+    "atlas": "",
+    "rect": [
+      2,
+      2,
+      250,
+      244
+    ],
+    "offset": [
+      -1,
+      4
+    ],
+    "originalSize": [
+      256,
+      256
+    ]
+  }
+}

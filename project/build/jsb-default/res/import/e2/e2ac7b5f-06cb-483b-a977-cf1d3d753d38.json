@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_luyinquxiao",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      272,
+      547,
+      222,
+      32
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      222,
+      32
+    ],
+    "rotated": 1
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pz_tang",
+    "texture": "2eS5sLTspDMZ45I+D7roWK",
+    "rect": [
+      460,
+      201,
+      50,
+      74
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      50,
+      74
+    ]
+  }
+}

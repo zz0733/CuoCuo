@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "xia_caishen",
+    "texture": "1flKRoj7JOrJouMXp7UD81",
+    "rect": [
+      212,
+      472,
+      31,
+      28
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      33,
+      30
+    ],
+    "rotated": 1
+  }
+}

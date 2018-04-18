@@ -1,0 +1,83 @@
+
+Maozi.png
+size: 1024,512
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+GMao
+  rotate: false
+  xy: 2, 2
+  size: 95, 62
+  orig: 95, 62
+  offset: 0, 0
+  index: -1
+Guang01
+  rotate: false
+  xy: 947, 329
+  size: 53, 54
+  orig: 228, 220
+  offset: 85, 83
+  index: -1
+Guang02
+  rotate: false
+  xy: 406, 281
+  size: 192, 191
+  orig: 228, 220
+  offset: 21, 5
+  index: -1
+Guang03
+  rotate: false
+  xy: 206, 274
+  size: 198, 198
+  orig: 228, 220
+  offset: 17, 3
+  index: -1
+Guang04
+  rotate: false
+  xy: 2, 269
+  size: 202, 203
+  orig: 228, 220
+  offset: 14, 2
+  index: -1
+Guang05
+  rotate: false
+  xy: 2, 66
+  size: 201, 201
+  orig: 228, 220
+  offset: 14, 4
+  index: -1
+Guang06
+  rotate: false
+  xy: 600, 286
+  size: 186, 186
+  orig: 228, 220
+  offset: 21, 14
+  index: -1
+Guang07
+  rotate: false
+  xy: 788, 318
+  size: 157, 154
+  orig: 228, 220
+  offset: 35, 31
+  index: -1
+Mao
+  rotate: false
+  xy: 99, 13
+  size: 77, 51
+  orig: 95, 62
+  offset: 9, 6
+  index: -1
+MaoXian
+  rotate: true
+  xy: 947, 385
+  size: 87, 60
+  orig: 95, 62
+  offset: 4, 2
+  index: -1
+Xing
+  rotate: false
+  xy: 788, 266
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1

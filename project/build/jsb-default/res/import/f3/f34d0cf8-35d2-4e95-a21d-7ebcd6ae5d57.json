@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "yx_dajiesuan_biaoti",
+    "texture": "40sNXxh01Gwr2JdtpJAVzO",
+    "rect": [
+      2,
+      618,
+      353,
+      86
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      353,
+      86
+    ],
+    "rotated": 1
+  }
+}

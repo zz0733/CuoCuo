@@ -1,6 +1,6 @@
 "use strict";
-cc._RF.push(module, 'd7418iMm/pJYpKR5FV+SftP', 'DDDZ_AllGameOver');
-// poker/DDZ/Script/Gameover/DDDZ_AllGameOver.js
+cc._RF.push(module, 'd7418iMm/pJYpKR5FV+SftP', 'DDZ_AllGameOver');
+// poker/DDZ/Script/Gameover/DDZ_AllGameOver.js
 
 "use strict";
 
@@ -22,31 +22,44 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        // foo: {
-        //     // ATTRIBUTES:
-        //     default: null,        // The default value will be used only when the component attaching
-        //                           // to a node for the first time
-        //     type: cc.SpriteFrame, // optional, default is typeof default
-        //     serializable: true,   // optional, default is true
-        // },
-        // bar: {
-        //     get () {
-        //         return this._bar;
-        //     },
-        //     set (value) {
-        //         this._bar = value;
-        //     }
-        // },
+        item: cc.Prefab
+
     },
 
-    // LIFE-CYCLE CALLBACKS:
+    // //全局结算
+    // message ddz_play_lottery {
+    //     optional Header retMsg = 1;
+    //     repeated ddz_play_userLotteryInfo usersLotteryInfo = 2; //所有玩家的结算信息
+    //     optional int32 round = 3; //当前第几局ai
+    //     optional uint32 password = 4; //房间号
+    // }
 
-    // onLoad () {},
+    start: function start() {},
 
-    start: function start() {}
-}
-
-// update (dt) {},
-);
+    initAllGameOverNode: function initAllGameOverNode(data) {
+        this.node.getChildByName("BG").getChildByName("Mid").removeAllChildren();
+        for (var i = 0; i < data.usersLotteryInfo.length; i++) {
+            var itemNode = cc.instantiate(this.item);
+            this.node.getChildByName("BG").getChildByName("Mid").addChild(itemNode);
+            itemNode.getComponent("DDZ_AllGameOverItem").initItemNode(data.usersLotteryInfo[i]);
+        }
+        this.node.getChildByName("BG").getChildByName("Top").getChildByName("TimeBG").getChildByName("time").getComponent(cc.Label).string = cc.YL.DDZ_Osdate.LocalTimeString().toString();
+        this.node.getChildByName("BG").getChildByName("Buttom").getChildByName("RoomInfo").getChildByName("lun").getComponent(cc.Label).string = "第" + data.round + "局";
+        this.node.getChildByName("BG").getChildByName("Buttom").getChildByName("RoomInfo").getChildByName("PassWord").getComponent(cc.Label).string = data.password;
+        cc.YL.DDZAllGameOverData = null;
+    },
+    onShareClick: function onShareClick() {
+        require("JSPhoneWeChat").WxShareFriendScreen();
+    },
+    onClickExitClick: function onClickExitClick(event) {
+        cc.YL.DDZAudio.playBtnClick();
+        cc.director.loadScene("hall");
+        fun.db.setData('RoomInfo', {
+            GameType: 0
+        });
+        event.target.active = false;
+    }
+});
+// RoomInfo
 
 cc._RF.pop();

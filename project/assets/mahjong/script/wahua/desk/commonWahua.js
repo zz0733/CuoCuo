@@ -33,12 +33,16 @@ cc.Class({
     },
 
     initDisbandRoom(data) {
-        cc.log('--- initDisbandRoom ---')
+        if (!data) {
+            this.disbandRoom.active = false;
+            return;
+        }
         if (!this.disbandRoom) {
             this.disbandRoom = cc.instantiate(this.disbandRoomPerfab);
             this.disbandRoom.parent = this.node;
         }
-        this.disbandRoom.getComponent('whVotingPopUI').setData(data);
+        this.disbandRoom.active = true;
+        this.disbandRoom.getComponent('whVotingPop').setData(data);
     },
 
 });

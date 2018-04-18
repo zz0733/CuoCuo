@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "ty_dikuang_shop",
+    "texture": "9aa37816-acd4-4197-ade9-5eed8a4d6e05",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      256,
+      298
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      256,
+      298
+    ]
+  }
+}

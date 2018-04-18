@@ -1,0 +1,22 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "pk_tishi_huanfu",
+    "texture": "09hKLU2yVJ17/wq2hTs2eW",
+    "rect": [
+      150,
+      825,
+      147,
+      60
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      147,
+      60
+    ],
+    "rotated": 1
+  }
+}

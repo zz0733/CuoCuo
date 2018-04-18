@@ -1,0 +1,38 @@
+{
+  "__type__": "cc.SpriteAtlas",
+  "_name": "xiaojiesuan.plist",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_spriteFrames": {
+    "dz_dajiesuan_1": {
+      "__uuid__": "ce77cdb5-a6e3-44c1-bf35-3ca9ab83706b"
+    },
+    "dz_dajiesuan_11": {
+      "__uuid__": "f256f74a-adac-481a-929e-c8628d2c27b8"
+    },
+    "dz_dajiesuan_3": {
+      "__uuid__": "fe5e39dd-d9f0-47a9-8203-8d4c0462a640"
+    },
+    "dz_time": {
+      "__uuid__": "34f3e7a0-c597-402e-9587-dda1d390ecf4"
+    },
+    "dz_xiaojiesuan1": {
+      "__uuid__": "72ad9f01-0f84-4e39-96c4-f4987d7e62e9"
+    },
+    "dz_xiaojiesuan2": {
+      "__uuid__": "184c8f96-341c-47a5-a8bc-76186f38ba7a"
+    },
+    "dz_xiaojiesuan3": {
+      "__uuid__": "245b9563-4657-42e6-a4a0-e8b859e8d542"
+    },
+    "dz_xiaojiesuan4": {
+      "__uuid__": "5b686085-d28b-4ca3-9485-196fb33bc854"
+    },
+    "dz_xiaojiesuan5": {
+      "__uuid__": "7dd5a139-ce8f-4a82-bb38-4bddffb04fc8"
+    },
+    "dz_xiaojiesuan6": {
+      "__uuid__": "f58a54c4-2593-4c33-8bb8-2391d6c2aa59"
+    }
+  }
+}

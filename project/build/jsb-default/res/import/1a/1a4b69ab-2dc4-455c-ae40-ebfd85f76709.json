@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "sg_cj_di",
+    "texture": "c7E0p6+gpNraWyD41324Wc",
+    "rect": [
+      82,
+      653,
+      82,
+      72
+    ],
+    "offset": [
+      -1,
+      0
+    ],
+    "originalSize": [
+      86,
+      74
+    ],
+    "rotated": 1,
+    "capInsets": [
+      37,
+      0,
+      37,
+      0
+    ]
+  }
+}

@@ -12,15 +12,11 @@ cc._RF.push(module, 'ff61bGIi9tGsaKbd6JI2r/u', 'mjGameManager', __filename);
  ******/
 var GameDefine = require("mjGameDefine");
 // var NetMessageMgr   = require("NetMessageMgr");
-////var Audio.           = require("Audio");
 // var NetProtocolList = require("NetProtocolList");
 var ReconnectMgr = require("mjReconnectMgr");
 var mjNetMgr = require("mjNetMgr");
 var mjDataMgr = require("mjDataMgr");
 var log = cc.log;
-
-// var FromPhone       = require("FromPhone");
-
 
 var GameManager = {};
 //初始化数据
@@ -423,7 +419,6 @@ GameManager.initReplayPai = function (paiData) {
 };
 
 GameManager.initStartPai = function (paiData) {
-	cc.YL.info("黄岩麻将开始发牌initStartPai");
 	var totalList = paiData.TileCount;
 	this.startPaiData = [];
 	var meDeskIndex = mjDataMgr.getInstance().get(mjDataMgr.KEYS.SELFID);
@@ -1442,7 +1437,6 @@ GameManager.onPaiTimeChange = function (data) {
 };
 
 // /* ---------------- End Net Message --------------------------*/
-
 
 module.exports = GameManager;
 
